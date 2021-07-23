@@ -320,3 +320,9 @@ button:focus {
         padding: 13% 5% 10%;
     }
 }
+
+@media only screen and (max-width: 340px) {
+    body {
+        padding: 13% 1% 10%;
+    }
+}
