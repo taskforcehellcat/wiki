@@ -53,6 +53,7 @@ a {
 }
 
 .highlight-anim:after {
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     content: "";
     position: absolute;
@@ -248,4 +249,68 @@ button:focus {
 #content #gen_submit {
     display: flex;
     justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1060px) {
+    body {
+        padding: 5% 10% 5%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    body {
+        padding: 10% 10% 5%;
+    }
+    #navigation .text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    body {
+        padding: 8% 10% 5%;
+    }
+    #title {
+        font-size: 40pt;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        padding: 13% 10% 5%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #content .gen_inputfield {
+        padding: 3% 3% 3% 15%;
+    }
+}
+
+@media only screen and (max-width: 945px) {
+    #content .gen_inputfield {
+        padding: 3% 3% 3% 6%;
+        grid-template-columns: 1.5fr 3fr;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    #content .gen_inputfield {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #content .gen_inputfield {
+        grid-template-columns: 2.5fr 3fr;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    #content .gen_inputfield {
+        grid-template-columns: 2.5fr 3fr;
+    }
+    #logo-title {
+        margin-bottom: 50px;
+    }
 }
