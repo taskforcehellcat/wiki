@@ -78,28 +78,10 @@ a {
     background: #fff;
 }
 
-.highlight-anim.highlight-anim-blue:focus:after,
-.highlight-anim.highlight-anim-blue.active:after,
-.highlight-anim.highlight-anim-blue:hover:after {
-    background: #10afaa;
-}
-
-.highlight-anim.highlight-anim-orange:focus:after,
-.highlight-anim.highlight-anim-orange.active:after,
-.highlight-anim.highlight-anim-orange:hover:after {
-    background: #c48214;
-}
-
-.highlight-anim.highlight-anim-green:focus:after,
-.highlight-anim.highlight-anim-green.active:after,
-.highlight-anim.highlight-anim-green:hover:after {
-    background: #608938;
-}
-
-.highlight-anim.highlight-anim-purple:focus:after,
-.highlight-anim.highlight-anim-purple.active:after,
-.highlight-anim.highlight-anim-purple:hover:after {
-    background: #6072AB;
+.highlight-anim.highlight-anim:focus:after,
+.highlight-anim.highlight-anim.active:after,
+.highlight-anim.highlight-anim:hover:after {
+    background: #ff0000;
 }
 
 #navigation {
@@ -178,13 +160,16 @@ a {
     margin-right: 4px;
 }
 
-#content .gen_inputfield {
+#content .gen_inputfield,
+.gen_category_title {
     background: rgba(0, 0, 0, 0.65);
-    min-height: 120px;
     padding: 3% 3% 3% 32%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#content .gen_inputfield {
+    min-height: 120px;
 }
 
 #content .input_title {
@@ -203,11 +188,13 @@ a {
 }
 
 #content input,
-select {
+select,
+button,
+textarea {
     background: #313131;
     border: 1px solid #3E3E3E;
     height: 35px;
-    width: 600px;
+    width: 100%;
     color: #fff;
     padding: 0% 2% 0% 2%;
     font-family: inherit;
@@ -215,7 +202,50 @@ select {
     font-weight: 400;
 }
 
+#content button {
+    width: 200px;
+    height: 45px;
+}
+
+#content button:hover {
+    cursor: pointer;
+}
+
 #content .bigbox {
     height: 100px;
     line-height: 10px;
+}
+
+#content #gen_submit {
+    min-height: 20px;
+    height: fit-content;
+}
+
+#content .smallbutton {
+    width: calc(50% - 3px);
+}
+
+#content textarea:focus,
+input:focus,
+button:focus {
+    outline: solid 1px;
+}
+
+#content textarea {
+    resize: none;
+    padding: 2%;
+}
+
+#content .gen_category_title {
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.80);
+}
+
+#content #gen_submit button {
+    float: right;
+}
+
+#content #gen_submit {
+    display: flex;
+    justify-content: flex-end;
 }

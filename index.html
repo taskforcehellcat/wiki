@@ -12,13 +12,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/vdq8apz.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>A3 Mission Report Maker</title>
-    <script
-        src='utilfncs.js'>
-    </script>
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"></script>
+    <script src='utilfncs.js'></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,51 +32,53 @@
 
     <form>
         <div id="content">
-
-            <div id="gen_title" class="gen_inputfield">
+            <!-- --------------------------------- General Titel ----------------------------------->
+            <div class="gen_category_title">General</div>
+            <!-- --------------------------------- Missionstitel ----------------------------------->
+            <div id="gen_title" class="gen_inputfield gen_general">
                 <div class="input_desc">
                     <p class="input_title">Missionstitel</p>
-                    <p class="input_subline">3-30 Zeichen</p>
+                    <p class="input_subline">0-30 Zeichen</p>
                 </div>
-                <input name='title' placeholder="Steelhammer 123...">
+                <input name='title' placeholder="Steelhammer 123..." maxlength="30">
             </div>
-
-            <div id="gen_own_kia" class="gen_inputfield">
+            <!-- ---------------------------------- Eigene KIA ------------------------------------->
+            <div id="gen_own_kia" class="gen_inputfield gen_general">
                 <div class="input_desc">
                     <p class="input_title">Eigene KIA</p>
                     <p class="input_subline">0-3 Zeichen</p>
                 </div>
-                <input name='own_kia' placeholder="1/2/3...">
+                <input name='own_kia' placeholder="1/2/3..." maxlength="3">
             </div>
-
-            <div id="gen_civ_kia" class="gen_inputfield">
+            <!-- ---------------------------------- Zivile KIA ------------------------------------->
+            <div id="gen_civ_kia" class="gen_inputfield gen_general">
                 <div class="input_desc">
                     <p class="input_title">Zivile KIA</p>
                     <p class="input_subline">0-3 Zeichen</p>
                 </div>
-                <input name='civ_kia' placeholder="1/2/3...">
+                <input name='civ_kia' placeholder="1/2/3..." maxlength="3">
             </div>
-
-            <div id="gen_location" class="gen_inputfield">
+            <!-- --------------------------------- Einsatzgebiet ----------------------------------->
+            <div id="gen_location" class="gen_inputfield gen_general">
                 <div class="input_desc">
                     <p class="input_title">Einsatzgebiet</p>
-                    <p class="input_subline">3-30 Zeichen</p>
+                    <p class="input_subline">0-30 Zeichen</p>
                 </div>
-                <input name='location' placeholder="Wiesbaden...">
+                <input name='location' placeholder="Wiesbaden..." maxlength="30">
             </div>
-
-            <div id="gen_objective" class="gen_inputfield">
+            <!-- --------------------------------- Missionsziel ------------------------------------>
+            <div id="gen_objective" class="gen_inputfield gen_general">
                 <div class="input_desc">
                     <p class="input_title">Missionsziel</p>
-                    <p class="input_subline">10-50 Zeichen</p>
+                    <p class="input_subline">0-50 Zeichen</p>
                 </div>
-                <input name='objective' placeholder="Einsatzgebiet befreien..." class="bigbox">
+                <textarea name='objective' placeholder="Einsatzgebiet befreien... " maxlength="50" class="bigbox"></textarea>
             </div>
-
-            <div id="gen_status" class="gen_inputfield">
+            <!-- --------------------------------- Missionsstatus ---------------------------------->
+            <div id="gen_status" class="gen_inputfield gen_general">
                 <div class="input_desc">
                     <p class="input_title">Missionsstatus</p>
-                    <p class="input_subline">wählen ></p>
+                    <p class="input_subline">wählen...></p>
                 </div>
                 <select name='status' placeholder="auswählen...">
                     <option value="completed">Abgeschlossen</option>
@@ -89,83 +86,99 @@
                     <option value="planning">In Planung</option>
                 </select>
             </div>
-
-            <div id="gen_captives " class="gen_inputfield ">
+            <!-- ----------------------------------- Gefangene -------------------------------------->
+            <div id="gen_captives " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Gefangene</p>
-                    <p class="input_subline ">1-100 Zeichen</p>
+                    <p class="input_subline ">0-100 Zeichen</p>
                 </div>
-                <input name='captives' placeholder="1/2/3...">
+                <input name='captives' placeholder="1/2/3..." maxlength="100">
             </div>
-
-            <div id="gen_civrep " class="gen_inputfield ">
+            <!-- -----------------------------------Final CivRep ------------------------------------>
+            <div id="gen_civrep " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Finale CivRep</p>
-                    <p class="input_subline ">1-100 Zeichen</p>
+                    <p class="input_subline ">0-100 Zeichen</p>
                 </div>
-                <input name='civrep' placeholder="-20/0/20...">
+                <input name='civrep' placeholder="-20/0/20..." maxlength="100">
             </div>
-
-            <div id="gen_intel " class="gen_inputfield ">
+            <!-- ---------------------------------- Finale Intel ------------------------------------>
+            <div id="gen_intel " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Finale Intel</p>
-                    <p class="input_subline ">1-100 Zeichen</p>
+                    <p class="input_subline ">0-100 Zeichen</p>
                 </div>
-                <input name='intel' placeholder="0/10/20...">
+                <input name='intel' placeholder="0/10/20..." maxlength="100">
             </div>
-
-            <div id="gen_attention " class="gen_inputfield ">
+            <!-- -------------------------------- Finale Attention ---------------------------------->
+            <div id="gen_attention " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Finale Attention</p>
-                    <p class="input_subline ">1-100 Zeichen</p>
+                    <p class="input_subline ">0-100 Zeichen</p>
                 </div>
-                <input name='attention' placeholder="30%/40%/50%... ">
+                <input name='attention' placeholder="30%/40%/50%... " maxlength="100">
             </div>
-
-            <div id="gen_leader " class="gen_inputfield ">
+            <!-- --------------------------------- Gruppenführung ----------------------------------->
+            <div id="gen_leader " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Gruppenführung</p>
-                    <p class="input_subline ">3-100 Zeichen</p>
+                    <p class="input_subline ">wählen...</p>
                 </div>
-                <input name='leader' placeholder="OStFw Hallat... ">
+                <select name='leader' placeholder="OStFw Hallat...">
+                    <option value="leon">OStFw Leon</option>
+                    <option value="mav">HptFw Mav</option>
+                    <option value="ptolemy">StUffz ptolemy</option>
+                </select>
             </div>
-
-            <div id="gen_time " class="gen_inputfield ">
+            <!-- ---------------------------------- Missionszeit ------------------------------------>
+            <div id="gen_time " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Missionszeit</p>
-                    <p class="input_subline ">5-20 Zeichen</p>
+                    <p class="input_subline ">Datum & Uhrzeit</p>
                 </div>
-                <input name='time' placeholder="22.07.21, 2259... ">
+                <div class="input-container">
+                    <input name='time' type="date" class="smallbutton">
+                    <input name='time' type="time" class="smallbutton">
+                </div>
             </div>
-
-            <div id="gen_additional " class="gen_inputfield ">
+            <!-- ----------------------------------- Ergänzungen ------------------------------------->
+            <div id="gen_additional " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Ergänzungen</p>
                     <p class="input_subline ">0-1000 Zeichen</p>
                 </div>
-                <input name='additional' placeholder="... " class="bigbox">
+                <textarea name='additional' placeholder="... " maxlength="1000" class="bigbox"></textarea>
             </div>
-
-            <div id="gen_gridsquare " class="gen_inputfield ">
+            <!-- ------------------------------------ Map Titel -------------------------------------->
+            <div class="gen_category_title">Map-Daten</div>
+            <!-- ----------------------------------- Planquadrat ------------------------------------->
+            <div id="gen_gridsquare " class="gen_inputfield gen_general">
                 <div class="input_desc ">
                     <p class="input_title ">Planquadrat</p>
-                    <p class="input_subline ">1-6 Zeichen</p>
+                    <p class="input_subline ">6 Zeichen</p>
                 </div>
-                <input name='gridquare' placeholder="585735... ">
+                <input name='gridquare' placeholder="585735... " maxlength="6">
             </div>
-
-            <div id="gen_radius " class="gen_inputfield ">
+            <!-- ------------------------------------- Radius ---------------------------------------->
+            <div id="gen_radius " class="gen_inputfield gen_map">
                 <div class="input_desc ">
                     <p class="input_title ">Radius</p>
                     <p class="input_subline ">0-100 Zeichen</p>
                 </div>
-                <input name='radius' placeholder="500m... ">
+                <input name='radius' placeholder="300/500/... in Metern " maxlength="100">
+            </div>
+            <!-- ------------------------------------ Einreichen -------------------------------------->
+            <div id="gen_submit" class="gen_inputfield gen_map">
+                <div class="input_desc ">
+                </div>
+                <button type="submit" class="nav-gridcell highlight-anim">Einreichen</button>
             </div>
 
         </div>
-        <button type="submit">Einreichen</button>
+
     </form>
 
+    <!-- <script src='collapse_grid.js'></script> -->
     <script src='log_submitting.js'></script>
 </body>
 
