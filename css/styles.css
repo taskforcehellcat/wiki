@@ -1,3 +1,5 @@
+/* available purista font weights: 200, 300, 400, 600, 700 */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,39 +7,215 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: calc(fit-content + 10em);
     background-image: url(https://units.arma3.com/assets/img/bg/default.jpg);
     background-repeat: repeat-y;
     background-position: center top;
     background-attachment: fixed;
-    overflow-x: hidden;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-family: purista-web, sans-serif;
+    font-weight: bold;
+    padding: 5% 15% 5%;
 }
 
-header {
-    background: #3e3e3e;
+.noselect {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.highlight-anim:after {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: rgba(245, 245, 245, 0);
+    transition: 0.25s;
+}
+
+.highlight-anim {
+    position: relative;
+}
+
+.highlight-anim:after {
+    -webkit-backface-visibility: hidden;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: rgba(245, 245, 245, 0);
+    transition: 0.25s;
+}
+
+.highlight-anim:focus,
+.highlight-anim.active,
+.highlight-anim:hover {
+    color: #fff;
+}
+
+.highlight-anim:focus:after,
+.highlight-anim.active:after,
+.highlight-anim:hover:after {
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.highlight-anim.highlight-anim-blue:focus:after,
+.highlight-anim.highlight-anim-blue.active:after,
+.highlight-anim.highlight-anim-blue:hover:after {
+    background: #10afaa;
+}
+
+.highlight-anim.highlight-anim-orange:focus:after,
+.highlight-anim.highlight-anim-orange.active:after,
+.highlight-anim.highlight-anim-orange:hover:after {
+    background: #c48214;
+}
+
+.highlight-anim.highlight-anim-green:focus:after,
+.highlight-anim.highlight-anim-green.active:after,
+.highlight-anim.highlight-anim-green:hover:after {
+    background: #608938;
+}
+
+.highlight-anim.highlight-anim-purple:focus:after,
+.highlight-anim.highlight-anim-purple.active:after,
+.highlight-anim.highlight-anim-purple:hover:after {
+    background: #6072AB;
+}
+
+#navigation {
     width: 100%;
     height: 50px;
-    padding: 0 50px;
-    position: relative;
-    z-index: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 11pt;
 }
 
-nav {
-    width: 100%;
-    height: 47px;
-    background: rgba(165, 165, 165, 0.2);
-    box-shadow: 0 0 5px 0px #000;
-}
-
-#header-logo {
-    height: 45px;
-}
-
-#header-nav {
-    width: 200px;
+#navigation a {
     height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+#navigation a:hover {
+    background: rgba(34, 34, 34, .5);
+}
+
+#navigation img {
+    width: 160px;
+    height: 160px;
+    margin-top: -50px;
+}
+
+#logo-title {
+    border: red 1px solid;
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    margin: auto;
+    margin-top: 70px;
+    font-weight: bolder;
+    margin-bottom: 80px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+    background-color: #0c0c0c;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(90, 90, 90);
+}
+
+#title {
+    text-transform: uppercase;
+    font-size: 50pt;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+#content {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 1px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#navigation a .material-icons {
+    margin-right: 4px;
+}
+
+#content .gen_inputfield {
+    background: rgba(0, 0, 0, 0.65);
+    min-height: 120px;
+    padding: 3% 3% 3% 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content .input_title {
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#content .input_subline {
+    font-size: 13pt;
+    font-weight: 500;
+}
+
+#content .input_desc {
+    height: fit-content;
+    display: inline-block;
+}
+
+#content input,
+select {
+    background: #313131;
+    border: 1px solid #3E3E3E;
+    height: 35px;
+    width: 600px;
+    color: #fff;
+    padding: 0% 2% 0% 2%;
+    font-family: inherit;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+#content .bigbox {
+    height: 100px;
+    line-height: 10px;
 }
