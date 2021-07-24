@@ -11,12 +11,14 @@ body {
     height: calc(fit-content + 10em);
     background-image: url(https://units.arma3.com/assets/img/bg/default.jpg);
     background-repeat: repeat-y;
+    background-size: 120vw;
     background-position: center top;
     background-attachment: fixed;
+    background-color: black;
     /* font-family: 'Inter', sans-serif; */
     font-family: sans-serif;
     color: #fff;
-    font-size: 14px;
+    font-size: .875rem;
     font-family: purista-web, sans-serif;
     font-weight: bold;
     padding: 5% 15% 5%;
@@ -43,7 +45,7 @@ a {
     bottom: 0;
     left: 50%;
     width: 0;
-    height: 3px;
+    height: .188rem;
     background: rgba(245, 245, 245, 0);
     transition: 0.25s;
 }
@@ -60,7 +62,7 @@ a {
     bottom: 0;
     left: 50%;
     width: 0;
-    height: 3px;
+    height: .188rem;
     background: rgba(245, 245, 245, 0);
     transition: 0.25s;
 }
@@ -87,7 +89,7 @@ a {
 
 #navigation {
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     background: rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-evenly;
@@ -101,7 +103,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: 12.5rem;
 }
 
 #navigation a:hover {
@@ -109,29 +111,29 @@ a {
 }
 
 #navigation img {
-    width: 160px;
-    height: 160px;
-    margin-top: -50px;
+    width: 10rem;
+    height: 10rem;
+    margin-top: -3.125rem;
 }
 
 #logo-title {
-    border: red 1px solid;
-    width: 200px;
+    border: red .063rem solid;
+    width: 12.5rem;
     text-align: center;
-    height: 30px;
+    height: 1.875rem;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
     margin: auto;
-    margin-top: 70px;
+    margin-top: 4.375rem;
     font-weight: bolder;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 10px;
+    width: .313rem;
+    height: .625rem;
     background-color: #0c0c0c;
 }
 
@@ -143,22 +145,22 @@ a {
     text-transform: uppercase;
     font-size: 50pt;
     font-weight: 900;
-    margin-bottom: 15px;
+    margin-bottom: .938rem;
 }
 
 #content {
     background: rgba(0, 0, 0, 0);
     width: 100%;
     height: fit-content;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.6);
     display: grid;
     grid-auto-rows: min-content;
-    gap: 1px;
+    gap: .063rem;
     color: rgba(255, 255, 255, 0.8);
 }
 
 #navigation a .material-icons {
-    margin-right: 4px;
+    margin-right: .25rem;
 }
 
 #content .gen_inputfield,
@@ -170,7 +172,7 @@ a {
 }
 
 #content .gen_inputfield {
-    min-height: 120px;
+    min-height: 7.5rem;
 }
 
 #content .input_title {
@@ -193,8 +195,8 @@ select,
 button,
 textarea {
     background: #313131;
-    border: 1px solid #3E3E3E;
-    height: 35px;
+    border: .063rem solid #3E3E3E;
+    height: 2.188rem;
     width: 100%;
     color: #fff;
     padding: 0% 2% 0% 2%;
@@ -204,8 +206,8 @@ textarea {
 }
 
 #content button {
-    width: 200px;
-    height: 45px;
+    width: 12.5rem;
+    height: 2.813rem;
 }
 
 #content button:hover {
@@ -213,23 +215,23 @@ textarea {
 }
 
 #content .bigbox {
-    height: 100px;
-    line-height: 10px;
+    height: 6.25rem;
+    line-height: .625rem;
 }
 
 #content #gen_submit {
-    min-height: 20px;
+    min-height: 1.25rem;
     height: fit-content;
 }
 
 #content .smallbutton {
-    width: calc(50% - 3px);
+    width: calc(50% - .188rem);
 }
 
 #content textarea:focus,
 input:focus,
 button:focus {
-    outline: solid 1px;
+    outline: solid .063rem;
 }
 
 #content textarea {
@@ -251,13 +253,13 @@ button:focus {
     justify-content: flex-end;
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 66.25rem) {
     body {
         padding: 5% 10% 5%;
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 59.375rem) {
     body {
         padding: 10% 10% 5%;
     }
@@ -266,7 +268,7 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 71.25rem) {
     body {
         padding: 8% 10% 5%;
     }
@@ -275,53 +277,53 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 40.625rem) {
     body {
         padding: 13% 10% 5%;
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 87.5rem) {
     #content .gen_inputfield {
         padding: 3% 3% 3% 15%;
     }
 }
 
-@media only screen and (max-width: 945px) {
+@media only screen and (max-width: 59.063rem) {
     #content .gen_inputfield {
         padding: 3% 3% 3% 6%;
         grid-template-columns: 1.5fr 3fr;
     }
 }
 
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 39.375rem) {
     #content .gen_inputfield {
         grid-template-columns: 2fr 3fr;
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 42.5rem) {
     #content .gen_inputfield {
         grid-template-columns: 2.5fr 3fr;
     }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 42.5rem) {
     #content .gen_inputfield {
         grid-template-columns: 2.5fr 3fr;
     }
     #logo-title {
-        margin-bottom: 50px;
+        margin-bottom: 3.125rem;
     }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 32.5rem) {
     body {
         padding: 13% 5% 10%;
     }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 21.25rem) {
     body {
         padding: 13% 1% 10%;
     }
