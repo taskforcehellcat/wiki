@@ -3,6 +3,7 @@
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (event) => {
+    document.getElementById('submit_btn').setAttribute('disabled', true);
     event.preventDefault();
 
     const formData = new FormData(event.target);
@@ -11,7 +12,6 @@ form.addEventListener('submit', (event) => {
     const options = {
         method: 'POST',
         headers: {
-            'mode': 'no-cors',
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
@@ -19,6 +19,8 @@ form.addEventListener('submit', (event) => {
 
     // POSTing here
     console.log(data);
-    fetch('/log-submit', options);
 
+    fetch('/log-submit', options).then(response => {
+        alert("log sent");
+    });
 });
