@@ -1,11 +1,13 @@
-var content;
+var bodyContent;
 $.get('body-template.html', function(data) {
-    content = data;
-    $('body').prepend(content);
+    bodyContent = data;
+    $('body').prepend(bodyContent);
 });
 
-$(function() {
-    $("head").load("head-template.html");
+var headContent;
+$.get('head-template.html', function(data) {
+    headContent = data;
+    $('head').prepend(headContent);
 });
 
 /*

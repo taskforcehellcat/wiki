@@ -151,7 +151,7 @@ a {
     margin-bottom: .938rem;
 }
 
-#content {
+form {
     background: rgba(0, 0, 0, 0);
     width: 100%;
     height: fit-content;
@@ -166,37 +166,38 @@ a {
     margin-right: .25rem;
 }
 
-#content .gen_inputfield,
-.gen_category_title {
+form .form_inputfield,
+.form_category_title {
     background: rgba(0, 0, 0, 0.65);
     padding: 3% 3% 3% 32%;
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
 
-#content .gen_inputfield {
+form .form_inputfield {
     min-height: 7.5rem;
+    align-items: center;
 }
 
-#content .input_title {
+form .input_title {
     font-size: 15pt;
     font-weight: bold;
 }
 
-#content .input_subline {
+form .input_subline {
     font-size: 13pt;
     font-weight: 500;
 }
 
-#content .input_desc {
+form .input_desc {
     height: fit-content;
     display: inline-block;
 }
 
-#content input,
-select,
-button,
-textarea {
+form input,
+form select,
+form button,
+form textarea {
     background: #313131;
     border: .063rem solid #3E3E3E;
     height: 2.188rem;
@@ -208,53 +209,56 @@ textarea {
     font-weight: 400;
 }
 
-#content button {
+form button {
     width: 12.5rem;
     height: 2.813rem;
 }
 
-#content button:hover {
+form button:hover {
     cursor: pointer;
 }
 
-#content .bigbox {
+form .bigbox {
     height: 6.25rem;
     line-height: 16pt;
 }
 
-#content #gen_submit {
+#mlg-form #form_submit {
     min-height: 1.25rem;
     height: fit-content;
 }
 
-#content .smallbutton {
+form .smallbutton {
     width: calc(50% - .188rem);
 }
 
-#content textarea:focus,
-input:focus,
-button:focus {
+form textarea:focus,
+form input:focus,
+form button:focus {
     outline: solid .063rem;
 }
 
-#content textarea {
+form textarea {
     resize: none;
     padding: 2%;
 }
 
-#content .gen_category_title {
+form .form_category_title {
     padding: 1%;
     background: rgba(0, 0, 0, 0.80);
 }
 
-#content #gen_submit button {
+#mlg-form #form_submit button {
     float: right;
 }
 
-#content #gen_submit {
+#mlg-form #form_submit {
     display: flex;
     justify-content: flex-end;
 }
+
+
+/* media queries to make site responsive */
 
 @media only screen and (max-width: 66.25rem) {
     body {
@@ -262,7 +266,7 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 59.375rem) {
+@media only screen and (max-width: 59.37rem) {
     body {
         padding: 10% 10% 5%;
     }
@@ -280,39 +284,39 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 40.625rem) {
+@media only screen and (max-width: 40.62rem) {
     body {
         padding: 13% 10% 5%;
     }
 }
 
 @media only screen and (max-width: 87.5rem) {
-    #content .gen_inputfield {
+    #mlg-form .form_inputfield {
         padding: 3% 3% 3% 15%;
     }
 }
 
-@media only screen and (max-width: 59.063rem) {
-    #content .gen_inputfield {
+@media only screen and (max-width: 59rem) {
+    #mlg-form .form_inputfield {
         padding: 3% 3% 3% 6%;
         grid-template-columns: 1.5fr 3fr;
     }
 }
 
-@media only screen and (max-width: 39.375rem) {
-    #content .gen_inputfield {
+@media only screen and (max-width: 39.38rem) {
+    #mlg-form .form_inputfield {
         grid-template-columns: 2fr 3fr;
     }
 }
 
 @media only screen and (max-width: 42.5rem) {
-    #content .gen_inputfield {
+    #mlg-form .form_inputfield {
         grid-template-columns: 2.5fr 3fr;
     }
 }
 
 @media only screen and (max-width: 42.5rem) {
-    #content .gen_inputfield {
+    #mlg-form .form_inputfield {
         grid-template-columns: 2.5fr 3fr;
     }
     #logo-title {
@@ -349,3 +353,45 @@ button:focus {
     pointer-events: none;
 }
 */
+
+
+/* Missions Page */
+
+#no-missions {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20pt;
+    gap: 10px;
+}
+
+#no-missions a {
+    background: red;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10000px;
+    font-size: 15pt;
+}
+
+
+/* Gallery Page */
+
+#gallery #gallery-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+#gallery #gallery-wrapper img {
+    width: 100%;
+}
+
+#gallery #gallery-wrapper div {
+    width: 80%;
+}
