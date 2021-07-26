@@ -3,14 +3,12 @@
 const form = document.querySelector('form');
 
 form.addEventListener('submit', (event) => {
-    document.getElementById('submit_btn').setAttribute('disabled', true);
     event.preventDefault();
 
     let formData = new FormData(event.target);
     formData.append("timestamp", Date.now());
 
     const data = Object.fromEntries(formData.entries());
-
 
     const options = {
         method: 'POST',
@@ -20,10 +18,16 @@ form.addEventListener('submit', (event) => {
         body: JSON.stringify(data)
     };
 
-    // POSTing here
-    console.log(data);
+    console.log(data); // DEBUG
 
     fetch('/log-submit', options).then(response => {
-        alert("log sent");
+        // when response is received, deactivate the submit button
+        button = document.getElementById('submit_btn');
+
+        button.setAttribute('disabled', true);
+        button.innerHTML = 'Eingereicht!';
+        button.className = ''; // TODO: add proper class name for 'used' button
+
+        console.log(response.body); // DEBUG
     });
 });
