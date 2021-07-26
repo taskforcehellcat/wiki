@@ -25,7 +25,10 @@ body {
 }
 
 .noselect {
+    user-drag: none;
+    -moz-user-drag: none;
     -webkit-user-drag: none;
+    -ms-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -216,7 +219,7 @@ textarea {
 
 #content .bigbox {
     height: 6.25rem;
-    line-height: .625rem;
+    line-height: 16pt;
 }
 
 #content #gen_submit {
