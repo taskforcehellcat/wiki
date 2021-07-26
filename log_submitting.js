@@ -6,9 +6,12 @@ form.addEventListener('submit', (event) => {
     document.getElementById('submit_btn').setAttribute('disabled', true);
     event.preventDefault();
 
-    const formData = new FormData(event.target);
+    let formData = new FormData(event.target);
+    formData.append("timestamp", Date.now());
 
     const data = Object.fromEntries(formData.entries());
+
+
     const options = {
         method: 'POST',
         headers: {
