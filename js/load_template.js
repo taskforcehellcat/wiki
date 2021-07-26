@@ -5,7 +5,7 @@ $.get('body-template.html', function(data) {
 });
 
 $(function() {
-    $("head").load("../head-template.html");
+    $("head").load("head-template.html");
 });
 
 /*
