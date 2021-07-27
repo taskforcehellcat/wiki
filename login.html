@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        #login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0;
+            font-family: monospace;
+            font-size: 25pt;
+        }
+        
+        #login div div:nth-child(3) {
+            display: flex;
+            align-items: flex-end;
+            width: 100% !important;
+            margin: 1.3rem 0 0 0;
+        }
+        
+        #login div div:nth-child(3) button {
+            width: 30% !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #login div div:nth-child(3) button img {
+            width: 2rem;
+            transform: scaleX(-1);
+        }
+        
+        #login #login-page {
+            width: 25rem;
+            height: 24rem;
+            background: rgba(0, 0, 0, 0.75);
+            display: flex;
+            padding: 3.1rem 3.8rem 3.1rem 3.8rem;
+            align-items: center;
+            flex-direction: column;
+            gap: .6rem;
+        }
+        
+        #login #login-page>div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+        }
+        
+        #login #login-page div>div {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            font-size: 14pt;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="login">
+        <form id="login-page">
+            <span>login</span>
+            <div>
+                <div>
+                    username
+                    <input name="username">
+                </div>
+                <div>
+                    password
+                    <input name="password">
+                </div>
+                <div>
+                    <button name="login" required="required" value><img src="img/login.svg"></button>
+                </div>
+            </div>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
