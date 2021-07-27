@@ -5,37 +5,40 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
-        #contact #contact-form .form_inputfield {
-            padding: 3% 20% 3% 20%;
+        #navigation>a:nth-child(5):after {
+            left: 0;
+            width: 100%;
+            background: #fff;
         }
     </style>
 </head>
 
-<body id="contact">
-    <form id="contact-form">
-        <!-- --------------------------------- Email Titel ----------------------------------->
-        <div class="form_category_title">Write us an email!</div>
-        <!-- ------------------------------------- Name ---------------------------------------->
-        <div id="form_title" class="form_inputfield form_general">
-            <div class="input_desc">
-                <p class="input_title">Name</p>
+<body>
+    <main id="contact">
+        <form id="contact-form">
+            <!-- --------------------------------- Email Titel ----------------------------------->
+            <div class="form_category_title">Write us an email!</div>
+            <!-- ------------------------------------- Name ---------------------------------------->
+            <div id="form_title" class="form_inputfield form_general">
+                <div class="input_desc">
+                    <p class="input_title">Name</p>
+                </div>
+                <div class="input-container">
+                    <input name='name' class="smallbutton" placeholder="First name">
+                    <input name='name' class="smallbutton" placeholder="Last name">
+                </div>
             </div>
-            <div class="input-container">
-                <input name='name' class="smallbutton" placeholder="First name">
-                <input name='name' class="smallbutton" placeholder="Last name">
+            <!-- ---------------------------------- Betreff ------------------------------------->
+            <div id="form_own_kia" class="form_inputfield form_general">
+                <div class="input_desc">
+                    <p class="input_title">Subject</p>
+                </div>
+                <input name='subject' placeholder="..." maxlength="3">
             </div>
-        </div>
-        <!-- ---------------------------------- Betreff ------------------------------------->
-        <div id="form_own_kia" class="form_inputfield form_general">
-            <div class="input_desc">
-                <p class="input_title">Subject</p>
-            </div>
-            <input name='subject' placeholder="..." maxlength="3">
-        </div>
-    </form>
+        </form>
 
 
-    <!--
+        <!--
 
         <label for="country">Country</label>
         <select id="country" name="country">
@@ -50,6 +53,7 @@
         <input type="submit" value="Submit">
 
 -->
+    </main>
     <script src="js/load_template.js "></script>
 </body>
 

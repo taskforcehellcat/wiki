@@ -4,17 +4,26 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        #navigation>a:nth-child(4):after {
+            left: 0;
+            width: 100%;
+            background: #fff;
+        }
+    </style>
 </head>
 
-<body id="gallery">
-    <div id="gallery-wrapper">
-        <div><img src="img/armapic1.png"></div>
-        <div><img src="img/armapic2.png"></div>
-        <div><img src="img/armapic3.png"></div>
-        <div><img src="img/armapic4.png"></div>
-        <div><img src="img/armapic5.png"></div>
-        <div><img src="img/armapic6.png"></div>
-    </div>
+<body>
+    <main id="gallery">
+        <div id="gallery-wrapper">
+            <div><img src="img/armapic1.png"></div>
+            <div><img src="img/armapic2.png"></div>
+            <div><img src="img/armapic3.png"></div>
+            <div><img src="img/armapic4.png"></div>
+            <div><img src="img/armapic5.png"></div>
+            <div><img src="img/armapic6.png"></div>
+        </div>
+    </main>
 
     <script src="js/load_template.js "></script>
 </body>

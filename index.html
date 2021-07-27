@@ -3,15 +3,36 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        #navigation>a:nth-child(1):after {
+            left: 0;
+            width: 100%;
+            background: #fff;
+        }
+        
+        #pic {
+            width: 80%;
+        }
+        
+        #pic-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
-<body id="home">
-    <div id="title">task force hellcat</div>
-    <div id="content">
+<body>
+    <main id="home">
+        <div id="title">task force hellcat</div>
+        <div id="pic-wrapper">
+            <img id="pic" src="img/armapic4.png">
+        </div>
+    </main>
 
-    </div>
     <script src="js/load_template.js"></script>
 </body>
 
