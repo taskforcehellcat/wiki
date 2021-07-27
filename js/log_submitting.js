@@ -22,12 +22,15 @@ form.addEventListener('submit', (event) => {
 
     fetch('/log-submit', options).then(response => {
         // when response is received, deactivate the submit button
-        let button = document.getElementById('submit_btn');
+        if (response.status === 201) {
+            let button = document.getElementById('submit_btn');
 
-        button.setAttribute('disabled', true);
-        button.innerHTML = 'Eingereicht!';
-        //button.className = ''; // TODO: add proper class name for 'used' button
-
-        console.log(response.body); // DEBUG
+            button.setAttribute('disabled', true);
+            button.innerHTML = 'Eingereicht!';
+            //button.className = ''; // TODO: add proper class name for 'used' button
+            console.log(response.body); // DEBUG
+        } else {
+            console.log(response.status);
+        }
     });
 });
