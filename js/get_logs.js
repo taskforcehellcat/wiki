@@ -1,7 +1,7 @@
 getLogs()
 
 async function getLogs() {
-    const response = await fetch('/get_logs');
+    const response = await fetch('/get-logs');
     const data = await response.json();
     console.log(data); // debug
 
