@@ -8,7 +8,7 @@
 
 body {
     width: 100%;
-    background-image: url(https://units.arma3.com/assets/img/bg/default.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat: repeat-y;
     background-size: 120vw;
     background-position: center top;
@@ -23,11 +23,18 @@ body {
     overflow-y: auto;
 }
 
-.noselect {
+.nointeract {
     user-drag: none;
     -moz-user-drag: none;
     -webkit-user-drag: none;
     -ms-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.noselect {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -133,7 +140,7 @@ a {
     margin-bottom: 5rem;
 }
 
-::-webkit-scrollbar {
+ ::-webkit-scrollbar {
     width: .313rem;
     height: .625rem;
     background-color: #0c0c0c;
@@ -257,99 +264,20 @@ form .form_category_title {
 }
 
 
-/* media queries to make site responsive */
-
-@media only screen and (max-width: 66.25rem) {
-    body {
-        padding: 5% 10% 5%;
-    }
-}
-
-@media only screen and (max-width: 59.37rem) {
-    body {
-        padding: 10% 10% 5%;
-    }
-    #navigation .text {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 71.25rem) {
-    body {
-        padding: 8% 10% 5%;
-    }
-    #title {
-        font-size: 40pt;
-    }
-}
-
-@media only screen and (max-width: 40.62rem) {
-    body {
-        padding: 13% 10% 5%;
-    }
-}
-
-@media only screen and (max-width: 87.5rem) {
-    #mlg-form .form_inputfield {
-        padding: 3% 3% 3% 15%;
-    }
-}
-
-@media only screen and (max-width: 59rem) {
-    #mlg-form .form_inputfield {
-        padding: 3% 3% 3% 6%;
-        grid-template-columns: 1.5fr 3fr;
-    }
-}
-
-@media only screen and (max-width: 39.38rem) {
-    #mlg-form .form_inputfield {
-        grid-template-columns: 2fr 3fr;
-    }
-}
-
-@media only screen and (max-width: 42.5rem) {
-    #mlg-form .form_inputfield {
-        grid-template-columns: 2.5fr 3fr;
-    }
-}
-
-@media only screen and (max-width: 42.5rem) {
-    #mlg-form .form_inputfield {
-        grid-template-columns: 2.5fr 3fr;
-    }
-    #logo-title {
-        margin-bottom: 3.125rem;
-    }
-}
-
-@media only screen and (max-width: 32.5rem) {
-    body {
-        padding: 13% 5% 10%;
-    }
-}
-
-@media only screen and (max-width: 21.25rem) {
-    body {
-        padding: 13% 1% 10%;
-    }
-}
-
-
 /*
 #loadingscreen {
-    opacity: 1;
-    z-index: 99;
-    background: black;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: opacity 6s;
-    pointer-events: none;
+opacity: 1;
+z-index: 99;
+background: black;
+width: 100vw;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+transition: opacity 6s;
+pointer-events: none;
 }
 */
 
@@ -413,8 +341,8 @@ form .form_category_title {
 
 main {
     width: 100%;
-    padding: 5% 15% 0% 15%;
-    min-height: 40rem;
+    padding: 5rem 15% 0% 15%;
+    min-height: 100vh;
 }
 
 footer {
@@ -439,7 +367,7 @@ footer>span {
 }
 
 footer img {
-    width: 26px;
+    width: 22px;
 }
 
 footer>div {
@@ -451,8 +379,8 @@ footer>div {
 }
 
 footer div div {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 1000px;
     background: rgb(49, 49, 49);
     display: flex;
@@ -463,4 +391,185 @@ footer div div {
 
 footer div div:hover {
     transform: scale(1.1);
+}
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    font-family: monospace;
+    font-size: 25pt;
+}
+
+#login div div:nth-child(3) {
+    display: flex;
+    align-items: flex-end;
+    width: 100% !important;
+    margin: 1.3rem 0 0 0;
+}
+
+#login div div:nth-child(3) button {
+    width: 30% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login div div:nth-child(3) button img {
+    width: 1.9rem;
+    transform: scaleX(-1);
+}
+
+#login #login-page {
+    width: 25rem;
+    height: 24rem;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    padding: 3.1rem 3.8rem 3.1rem 3.8rem;
+    align-items: center;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+#login #login-page>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#login #login-page div>div {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+#stroke {
+    stroke-dasharray: 1053;
+    stroke-dashoffset: 1053;
+    animation: sign 8s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sign {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* media queries to make site responsive */
+
+@media only screen and (max-width: 1400px) {
+    form .form_inputfield {
+        padding: 3% 3% 3% 15%;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    form .form_inputfield {
+        padding: 3% 3% 3% 6%;
+        grid-template-columns: 1.5fr 3fr;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    form .form_inputfield {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    form .form_inputfield {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        padding: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 10px;
+    }
+    form .form_category_title {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    main {
+        padding: 5rem 8% 0% 8%;
+    }
+}
+
+@media only screen and (max-width: 815px) {
+    #navigation .text {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #navigation .text {
+        display: none;
+    }
+    #navigation img {
+        width: 8rem;
+        height: 8rem;
+    }
+    #logo-title {
+        margin-top: 2.5rem;
+        margin-bottom: 2rem;
+        width: 10rem;
+    }
+    footer {
+        height: 8rem;
+    }
+}
+
+@media only screen and (min-width: 1921px) {
+    #navigation {
+        width: 83.8rem;
+        margin: auto;
+    }
+    main {
+        width: 83.8rem;
+        margin: auto;
+        padding: 5rem 0% 0% 0%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #navigation img {
+        width: 5rem;
+        height: 5rem;
+        margin-top: -1rem;
+    }
+    main {
+        padding: 3rem 8% 0% 8%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    #logo-title {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 690px) and (min-width: 410px) {
+    #title {
+        font-size: calc((87vw - 4.5rem) / 7);
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    #title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
 }
