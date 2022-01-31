@@ -96,6 +96,12 @@ a {
     background: #ff0000;
 }
 
+.nav-active:after {
+    left: 0;
+    width: 100%;
+    background: #fff;
+}
+
 #navigation {
     width: 100%;
     height: 3.125rem;
@@ -603,9 +609,9 @@ footer div div:hover {
     -o-transition: transform .1s ease-in-out;
 }
 
-#wiki #wiki-generell {
+#wiki #wiki-grundlagen {
     grid-column: 1/3;
-    background-image: url(../img/generell_t.png);
+    background-image: url(../img/grundlagen_t.png);
     background-position: 0 80%;
 }
 
@@ -641,9 +647,9 @@ footer div div:hover {
     background-position: 0 80%;
 }
 
-#wiki #wiki-transportmittel {
+#wiki #wiki-fuhrpark {
     grid-column: 1/3;
-    background-image: url(../img/transportmittel_t.png);
+    background-image: url(../img/fuhrpark_t.png);
     background-position: 0 80%;
 }
 
@@ -658,14 +664,14 @@ footer div div:hover {
     overflow: hidden;
     z-index: -1;
     /* loads the images */
-    content: url(../img/generell_t.png) url(../img/fuehrungskraefte_t.png) url(../img/logistiker_t.png) url(../img/streitkraefte_t.png) url(../img/panzertruppen_t.png) url(../img/sanitaeter_t.png) url(../img/aufklaerer_t.png) url(../img/transportmittel_t.png) url(../img/generell.png) url(../img/fuehrungskraefte.png) url(../img/logistiker.png) url(../img/streitkraefte.png) url(../img/panzertruppen.png) url(../img/sanitaeter.png) url(../img/aufklaerer.png) url(../img/transportmittel.png)
+    content: url(../img/grundlagen_t.png) url(../img/fuehrungskraefte_t.png) url(../img/logistiker_t.png) url(../img/streitkraefte_t.png) url(../img/panzertruppen_t.png) url(../img/sanitaeter_t.png) url(../img/aufklaerer_t.png) url(../img/fuhrpark_t.png) url(../img/grundlagen.png) url(../img/fuehrungskraefte.png) url(../img/logistiker.png) url(../img/streitkraefte.png) url(../img/panzertruppen.png) url(../img/sanitaeter.png) url(../img/aufklaerer.png) url(../img/fuhrpark.png)
 }
 
 
 /* on hover */
 
-#wiki #wiki-generell:hover {
-    background-image: url(../img/generell.png);
+#wiki #wiki-grundlagen:hover {
+    background-image: url(../img/grundlagen.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -727,8 +733,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-transportmittel:hover {
-    background-image: url(../img/transportmittel.png);
+#wiki #wiki-fuhrpark:hover {
+    background-image: url(../img/fuhrpark.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
