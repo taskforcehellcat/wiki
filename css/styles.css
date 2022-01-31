@@ -658,7 +658,7 @@ footer div div:hover {
     overflow: hidden;
     z-index: -1;
     /* loads the images */
-    content: url(../img/generell.png) url(../img/führungskraefte.png) url(../img/logistiker.png) url(../img/streitkraefte.png) url(../img/panzertruppen.png) url(../img/sanitaeter.png) url(../img/aufklaerer.png);
+    content: url(../img/generell_t.png) url(../img/führungskraefte_t.png) url(../img/logistiker_t.png) url(../img/streitkraefte_t.png) url(../img/panzertruppen_t.png) url(../img/sanitaeter_t.png) url(../img/aufklaerer_t.png) url(../img/transportmittel_t.png) url(../img/generell.png) url(../img/führungskraefte.png) url(../img/logistiker.png) url(../img/streitkraefte.png) url(../img/panzertruppen.png) url(../img/sanitaeter.png) url(../img/aufklaerer.png) url(../img/transportmittel.png)
 }
 
 
