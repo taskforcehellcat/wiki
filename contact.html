@@ -29,7 +29,7 @@
     <meta property="og:image" content="img/hellcat.png" />
     <meta name=theme-color content="#292929">
     <link type="text/css" href="css/own-carousel.min.css" rel="stylesheet">
-    <script src="js/own-carousel.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <style>
         #navigation>a:nth-child(5):after {
@@ -50,28 +50,37 @@
             <a href="contact.html" class="nav-gridcell highlight-anim highlight-anim-purple"><span class="material-icons">alternate_email</span><span class="text">kontakt</span></a>
         </div>
         <div id="logo-title" class="nointeract">Task Force Hellcat</div>
+
         <form id="contact-form">
-            <!-- --------------------------------- Email Titel ----------------------------------->
-            <div class="form_category_title">Write us an email!</div>
-            <!-- ------------------------------------- Name ---------------------------------------->
-            <div id="form_title" class="form_inputfield form_general">
+            <div class="form_category_title">Schreib uns eine E-Mail!</div>
+
+            <div class="form_inputfield form_general">
                 <div class="input_desc">
                     <p class="input_title">Name</p>
+                    <p class="input_subline">Vor- und Nachname</p>
                 </div>
                 <div class="input-container">
-                    <input name='name' class="smallbutton" placeholder="First name">
-                    <input name='name' class="smallbutton" placeholder="Last name">
+                    <input name='name' class="smallbutton" placeholder="Vorname">
+                    <input name='name' class="smallbutton" placeholder="Nachname">
                 </div>
             </div>
-            <!-- ---------------------------------- Betreff ------------------------------------->
-            <div id="form_own_kia" class="form_inputfield form_general">
+
+            <div class="form_inputfield form_general">
                 <div class="input_desc">
-                    <p class="input_title">Subject</p>
+                    <p class="input_title">Betreff</p>
+                    <p class="input_subline">Kurz fassen</p>
                 </div>
-                <input name='subject' placeholder="..." maxlength="3">
+                <input name='subject' placeholder="Blablabla..." maxlength="1000">
+            </div>
+
+            <div class="form_inputfield form_general">
+                <div class="input_desc">
+                    <p class="input_title">Nachricht</p>
+                    <p class="input_subline">5 bis 10.000 Zeichen</p>
+                </div>
+                <textarea name='message' placeholder="Blablabla..." minlength="5" maxlength="10000" class="bigbox"></textarea>
             </div>
         </form>
-
 
         <!--
 
@@ -91,21 +100,16 @@
     </main>
     <footer>
         <div>
-            <a href="//twitter.com" target="_blank">
+            <a title="Visit our ArmA 3 Units Profile!" href="https://units.arma3.com/" target="_blank">
                 <div>
-                    <img src="img/twtr.svg"></img>
+                    <img src="https://units.arma3.com/assets/img/units/header_icon.png"></img>
                 </div>
-
-                <a href="//instagram.com" target="_blank">
-                    <div>
-                        <img src="img/instagram.svg"></img>
-                    </div>
-                </a>
-                <a href="//discord.com" target="_blank">
-                    <div>
-                        <img src="img/discord.svg"></img>
-                    </div>
-                </a>
+            </a>
+            <a title="Join our Discord!" href="https://discord.gg/Ap3bEmBgXw" target="_blank">
+                <div>
+                    <img src="img/discord.svg"></img>
+                </div>
+            </a>
         </div>
         <span>&copy; Task Force Hellcat<br><span>All rights reserverd.</span></span>
     </footer>
