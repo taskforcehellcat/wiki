@@ -8,7 +8,7 @@
 
 body {
     width: 100%;
-    background-image: url(../img/bg.jpg);
+    background-image: url(./images/bg.jpg);
     background-repeat: repeat-y;
     background-size: 120vw;
     background-position: center top;
@@ -309,7 +309,7 @@ pointer-events: none;
     gap: 1vw;
 }
 
-#gallery .gallery-item {
+.gallery-item {
     font-weight: 600;
     font-size: 20pt;
     margin: auto;
@@ -323,16 +323,16 @@ pointer-events: none;
     align-items: center;
 }
 
-#gallery .gallery-item>img {
+.gallery-item>img {
     width: 15px;
 }
 
-#gallery .gallery-item:hover {
+.gallery-item:hover {
     background-color: rgba(0, 0, 0, .6);
     cursor: pointer;
 }
 
-#contact #contact-form .form_inputfield {
+#contact-form .form_inputfield {
     padding: 3% 20% 3% 20%;
 }
 
@@ -583,14 +583,14 @@ footer div div:hover {
     }
 }
 
-#wiki #wiki-content {
+#wiki-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 25px
 }
 
-#wiki #wiki-content>a {
+#wiki-content>a {
     background-color: rgba(0, 0, 0, .4);
     width: 100%;
     height: 10rem;
@@ -609,47 +609,47 @@ footer div div:hover {
     -o-transition: transform .1s ease-in-out;
 }
 
-#wiki #wiki-grundlagen {
+#wiki-grundlagen {
     grid-column: 1/3;
-    background-image: url(../img/grundlagen_t.png);
+    background-image: url(./images/grundlagen_t.png);
     background-position: 0 80%;
 }
 
-#wiki #wiki-fuehrungskraefte {
-    background-image: url(../img/fuehrungskraefte_t.png);
+#wiki-fuehrungskraefte {
+    background-image: url(./images/fuehrungskraefte_t.png);
     background-position: 40% 50%;
     background-size: 180% !important;
 }
 
-#wiki #wiki-logistiker {
-    background-image: url(../img/logistiker_t.png);
+#wiki-logistiker {
+    background-image: url(./images/logistiker_t.png);
     background-position: 0 50%;
 }
 
-#wiki #wiki-streitkraefte {
-    background-image: url(../img/streitkraefte_t.png);
+#wiki-streitkraefte {
+    background-image: url(./images/streitkraefte_t.png);
     background-position: 20% 50%;
     background-size: 200% !important;
 }
 
-#wiki #wiki-panzertruppen {
-    background-image: url(../img/panzertruppen_t.png);
+#wiki-panzertruppen {
+    background-image: url(./images/panzertruppen_t.png);
     background-position: 0 60%;
 }
 
-#wiki #wiki-sanitaeter {
-    background-image: url(../img/sanitaeter_t.png);
+#wiki-sanitaeter {
+    background-image: url(./images/sanitaeter_t.png);
     background-position: 0 63%;
 }
 
-#wiki #wiki-aufklaerer {
-    background-image: url(../img/aufklaerer_t.png);
+#wiki-aufklaerer {
+    background-image: url(./images/aufklaerer_t.png);
     background-position: 0 80%;
 }
 
-#wiki #wiki-fuhrpark {
+#wiki-fuhrpark {
     grid-column: 1/3;
-    background-image: url(../img/fuhrpark_t.png);
+    background-image: url(./images/fuhrpark_t.png);
     background-position: 0 80%;
 }
 
@@ -664,14 +664,14 @@ footer div div:hover {
     overflow: hidden;
     z-index: -1;
     /* loads the images */
-    content: url(../img/grundlagen_t.png) url(../img/fuehrungskraefte_t.png) url(../img/logistiker_t.png) url(../img/streitkraefte_t.png) url(../img/panzertruppen_t.png) url(../img/sanitaeter_t.png) url(../img/aufklaerer_t.png) url(../img/fuhrpark_t.png) url(../img/grundlagen.png) url(../img/fuehrungskraefte.png) url(../img/logistiker.png) url(../img/streitkraefte.png) url(../img/panzertruppen.png) url(../img/sanitaeter.png) url(../img/aufklaerer.png) url(../img/fuhrpark.png)
+    content: url(./images/grundlagen_t.png) url(./images/fuehrungskraefte_t.png) url(./images/logistiker_t.png) url(./images/streitkraefte_t.png) url(./images/panzertruppen_t.png) url(./images/sanitaeter_t.png) url(./images/aufklaerer_t.png) url(./images/fuhrpark_t.png) url(./images/grundlagen.png) url(./images/fuehrungskraefte.png) url(./images/logistiker.png) url(./images/streitkraefte.png) url(./images/panzertruppen.png) url(./images/sanitaeter.png) url(./images/aufklaerer.png) url(./images/fuhrpark.png)
 }
 
 
 /* on hover */
 
-#wiki #wiki-grundlagen:hover {
-    background-image: url(../img/grundlagen.png);
+#wiki-grundlagen:hover {
+    background-image: url(./images/grundlagen.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -679,8 +679,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-fuehrungskraefte:hover {
-    background-image: url(../img/fuehrungskraefte.png);
+#wiki-fuehrungskraefte:hover {
+    background-image: url(./images/fuehrungskraefte.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -688,8 +688,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-logistiker:hover {
-    background-image: url(../img/logistiker.png);
+#wiki-logistiker:hover {
+    background-image: url(./images/logistiker.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -697,8 +697,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-streitkraefte:hover {
-    background-image: url(../img/streitkraefte.png);
+#wiki-streitkraefte:hover {
+    background-image: url(./images/streitkraefte.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -706,8 +706,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-panzertruppen:hover {
-    background-image: url(../img/panzertruppen.png);
+#wiki-panzertruppen:hover {
+    background-image: url(./images/panzertruppen.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -715,8 +715,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-sanitaeter:hover {
-    background-image: url(../img/sanitaeter.png);
+#wiki-sanitaeter:hover {
+    background-image: url(./images/sanitaeter.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -724,8 +724,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-aufklaerer:hover {
-    background-image: url(../img/aufklaerer.png);
+#wiki-aufklaerer:hover {
+    background-image: url(./images/aufklaerer.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -733,8 +733,8 @@ footer div div:hover {
     -o-transform: scale(1.02);
 }
 
-#wiki #wiki-fuhrpark:hover {
-    background-image: url(../img/fuhrpark.png);
+#wiki-fuhrpark:hover {
+    background-image: url(./images/fuhrpark.png);
     transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -moz-transform: scale(1.02);
@@ -743,7 +743,7 @@ footer div div:hover {
 }
 
 @media only screen and (max-width: 750px) {
-    #wiki #wiki-content {
+    #wiki-content {
         display: flex;
         flex-direction: column;
     }
