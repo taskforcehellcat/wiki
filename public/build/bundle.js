@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -2752,9 +2752,9 @@ var app = (function () {
     			span1 = element("span");
     			span1.textContent = "home";
     			attr_dev(span0, "class", "material-icons");
-    			add_location(span0, file, 19, 4, 432);
+    			add_location(span0, file, 19, 4, 451);
     			attr_dev(span1, "class", "text");
-    			add_location(span1, file, 19, 44, 472);
+    			add_location(span1, file, 19, 44, 491);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span0, anchor);
@@ -2789,9 +2789,9 @@ var app = (function () {
     			span1 = element("span");
     			span1.textContent = "wiki";
     			attr_dev(span0, "class", "material-icons");
-    			add_location(span0, file, 22, 4, 595);
+    			add_location(span0, file, 22, 4, 617);
     			attr_dev(span1, "class", "text");
-    			add_location(span1, file, 22, 44, 635);
+    			add_location(span1, file, 22, 44, 657);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span0, anchor);
@@ -2826,7 +2826,7 @@ var app = (function () {
     			if (!src_url_equal(img.src, img_src_value = "./images/hellcat.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "id", "nav-logo");
     			attr_dev(img, "class", "nointeract");
-    			add_location(img, file, 25, 4, 698);
+    			add_location(img, file, 25, 4, 723);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, img, anchor);
@@ -2859,9 +2859,9 @@ var app = (function () {
     			span1 = element("span");
     			span1.textContent = "gallerie";
     			attr_dev(span0, "class", "material-icons");
-    			add_location(span0, file, 29, 4, 880);
+    			add_location(span0, file, 29, 4, 909);
     			attr_dev(span1, "class", "text");
-    			add_location(span1, file, 29, 51, 927);
+    			add_location(span1, file, 29, 51, 956);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span0, anchor);
@@ -2896,9 +2896,9 @@ var app = (function () {
     			span1 = element("span");
     			span1.textContent = "kontakt";
     			attr_dev(span0, "class", "material-icons");
-    			add_location(span0, file, 32, 4, 1058);
+    			add_location(span0, file, 32, 4, 1090);
     			attr_dev(span1, "class", "text");
-    			add_location(span1, file, 32, 55, 1109);
+    			add_location(span1, file, 32, 55, 1141);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span0, anchor);
@@ -3297,32 +3297,32 @@ var app = (function () {
     			span0 = element("span");
     			span0.textContent = "All rights reserverd.";
     			attr_dev(div0, "id", "navigation");
-    			add_location(div0, file, 13, 1, 260);
+    			add_location(div0, file, 13, 1, 273);
     			attr_dev(div1, "id", "logo-title");
     			attr_dev(div1, "class", "nointeract");
-    			add_location(div1, file, 37, 1, 1176);
-    			add_location(main, file, 12, 0, 252);
+    			add_location(div1, file, 37, 1, 1213);
+    			add_location(main, file, 12, 0, 264);
     			attr_dev(img0, "alt", "arma units logo");
     			if (!src_url_equal(img0.src, img0_src_value = "https://units.arma3.com/assets/img/units/header_icon.png")) attr_dev(img0, "src", img0_src_value);
-    			add_location(img0, file, 50, 4, 1583);
-    			add_location(div2, file, 49, 3, 1573);
+    			add_location(img0, file, 50, 4, 1633);
+    			add_location(div2, file, 49, 3, 1622);
     			attr_dev(a0, "title", "Visit our ArmA 3 Units Profile!");
     			attr_dev(a0, "href", "https://units.arma3.com/");
     			attr_dev(a0, "target", "_blank");
-    			add_location(a0, file, 48, 2, 1478);
+    			add_location(a0, file, 48, 2, 1526);
     			attr_dev(img1, "alt", "discord logo");
     			if (!src_url_equal(img1.src, img1_src_value = "./images/discord.svg")) attr_dev(img1, "src", img1_src_value);
-    			add_location(img1, file, 55, 4, 1789);
-    			add_location(div3, file, 54, 3, 1779);
+    			add_location(img1, file, 55, 4, 1844);
+    			add_location(div3, file, 54, 3, 1833);
     			attr_dev(a1, "title", "Join our Discord!");
     			attr_dev(a1, "href", "https://discord.gg/Ap3bEmBgXw");
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file, 53, 2, 1693);
-    			add_location(div4, file, 47, 1, 1470);
-    			add_location(br, file, 59, 32, 1898);
-    			add_location(span0, file, 59, 36, 1902);
-    			add_location(span1, file, 59, 1, 1867);
-    			add_location(footer, file, 46, 0, 1460);
+    			add_location(a1, file, 53, 2, 1746);
+    			add_location(div4, file, 47, 1, 1517);
+    			add_location(br, file, 59, 32, 1957);
+    			add_location(span0, file, 59, 36, 1961);
+    			add_location(span1, file, 59, 1, 1926);
+    			add_location(footer, file, 46, 0, 1506);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
