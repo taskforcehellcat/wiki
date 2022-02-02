@@ -4,6 +4,7 @@
 	import Wiki from "./Wiki.svelte";
 	import Gallery from "./Gallery.svelte";
 	import Contact from "./Contact.svelte";
+	import Mlg from "./Mlg.svelte";
 
 	export let url = "";
 
@@ -38,6 +39,7 @@
 	<div id="logo-title" class="nointeract">Task Force Hellcat</div>
 	
 	<Router url="{url}">
+		<Route path="mlg" component="{Mlg}" />
 		<Route path="contact" component="{Contact}" />
 		<Route path="gallery" component="{Gallery}" />
 		<Route path="wiki" component="{Wiki}" />
