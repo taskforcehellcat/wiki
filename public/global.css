@@ -612,45 +612,51 @@ footer div div:hover {
 #wiki-grundlagen {
     grid-column: 1/3;
     background-image: url(./images/grundlagen_t.png);
-    background-position: 0 80%;
+    background-position: center 80%;
+    background-size: cover;
 }
 
 #wiki-fuehrungskraefte {
     background-image: url(./images/fuehrungskraefte_t.png);
-    background-position: 40% 50%;
-    background-size: 180% !important;
+    background-position: center 50%;
+    background-size: cover;
 }
 
 #wiki-logistiker {
     background-image: url(./images/logistiker_t.png);
-    background-position: 0 50%;
+    background-position: center 50%;
+    background-size: cover;
 }
 
 #wiki-streitkraefte {
     background-image: url(./images/streitkraefte_t.png);
-    background-position: 20% 50%;
-    background-size: 200% !important;
+    background-position: center 50%;
+    background-size: cover;
 }
 
 #wiki-panzertruppen {
     background-image: url(./images/panzertruppen_t.png);
-    background-position: 0 60%;
+    background-position: center 60%;
+    background-size: cover;
 }
 
 #wiki-sanitaeter {
     background-image: url(./images/sanitaeter_t.png);
-    background-position: 0 63%;
+    background-position: center 63%;
+    background-size: cover;
 }
 
 #wiki-aufklaerer {
     background-image: url(./images/aufklaerer_t.png);
-    background-position: 0 80%;
+    background-position: center 80%;
+    background-size: cover;
 }
 
 #wiki-fuhrpark {
     grid-column: 1/3;
     background-image: url(./images/fuhrpark_t.png);
-    background-position: 0 80%;
+    background-position: center 80%;
+    background-size: cover;
 }
 
 
