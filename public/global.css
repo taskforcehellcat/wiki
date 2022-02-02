@@ -96,10 +96,10 @@ a {
     background: #ff0000;
 }
 
-.nav-active:after {
+*[aria-current="page"]:after {
     left: 0;
     width: 100%;
-    background: #fff;
+    background: #fff !important;
 }
 
 #navigation {
