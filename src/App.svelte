@@ -43,6 +43,7 @@
 		<Route path="contact" component="{Contact}" />
 		<Route path="gallery" component="{Gallery}" />
 		<Route path="wiki" component="{Wiki}" />
+		<Route path="home"><Home /></Route>
 		<Route path="/"><Home /></Route>
 	</Router>
 </main>
