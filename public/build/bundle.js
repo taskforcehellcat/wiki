@@ -2253,9 +2253,9 @@ var app = (function () {
     const file$4 = "src\\Wiki.svelte";
 
     function create_fragment$4(ctx) {
-    	let div0;
+    	let h1;
     	let t1;
-    	let div1;
+    	let div;
     	let a0;
     	let t3;
     	let a1;
@@ -2274,10 +2274,10 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			div0 = element("div");
-    			div0.textContent = "WIKI";
+    			h1 = element("h1");
+    			h1.textContent = "WIKI";
     			t1 = space();
-    			div1 = element("div");
+    			div = element("div");
     			a0 = element("a");
     			a0.textContent = "grundlagen";
     			t3 = space();
@@ -2301,65 +2301,64 @@ var app = (function () {
     			t15 = space();
     			a7 = element("a");
     			a7.textContent = "fuhrpark";
-    			attr_dev(div0, "id", "title");
-    			add_location(div0, file$4, 0, 0, 0);
+    			add_location(h1, file$4, 0, 0, 0);
     			attr_dev(a0, "href", "/");
     			attr_dev(a0, "id", "wiki-grundlagen");
-    			add_location(a0, file$4, 2, 4, 57);
+    			add_location(a0, file$4, 2, 4, 44);
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "id", "wiki-fuehrungskraefte");
-    			add_location(a1, file$4, 5, 4, 126);
+    			add_location(a1, file$4, 5, 4, 113);
     			attr_dev(a2, "href", "/");
     			attr_dev(a2, "id", "wiki-logistiker");
-    			add_location(a2, file$4, 8, 4, 205);
+    			add_location(a2, file$4, 8, 4, 192);
     			attr_dev(a3, "href", "/");
     			attr_dev(a3, "id", "wiki-streitkraefte");
-    			add_location(a3, file$4, 11, 4, 274);
+    			add_location(a3, file$4, 11, 4, 261);
     			attr_dev(a4, "href", "/");
     			attr_dev(a4, "id", "wiki-panzertruppen");
-    			add_location(a4, file$4, 14, 4, 348);
+    			add_location(a4, file$4, 14, 4, 335);
     			attr_dev(a5, "href", "/");
     			attr_dev(a5, "id", "wiki-sanitaeter");
-    			add_location(a5, file$4, 17, 4, 423);
+    			add_location(a5, file$4, 17, 4, 410);
     			attr_dev(a6, "href", "/");
     			attr_dev(a6, "id", "wiki-aufklaerer");
-    			add_location(a6, file$4, 20, 4, 491);
+    			add_location(a6, file$4, 20, 4, 478);
     			attr_dev(a7, "href", "/");
     			attr_dev(a7, "id", "wiki-fuhrpark");
-    			add_location(a7, file$4, 23, 4, 559);
-    			attr_dev(div1, "id", "wiki-content");
-    			add_location(div1, file$4, 1, 0, 28);
+    			add_location(a7, file$4, 23, 4, 546);
+    			attr_dev(div, "id", "wiki-content");
+    			add_location(div, file$4, 1, 0, 15);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div0, anchor);
+    			insert_dev(target, h1, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, div1, anchor);
-    			append_dev(div1, a0);
-    			append_dev(div1, t3);
-    			append_dev(div1, a1);
-    			append_dev(div1, t5);
-    			append_dev(div1, a2);
-    			append_dev(div1, t7);
-    			append_dev(div1, a3);
-    			append_dev(div1, t9);
-    			append_dev(div1, a4);
-    			append_dev(div1, t11);
-    			append_dev(div1, a5);
-    			append_dev(div1, t13);
-    			append_dev(div1, a6);
-    			append_dev(div1, t15);
-    			append_dev(div1, a7);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, a0);
+    			append_dev(div, t3);
+    			append_dev(div, a1);
+    			append_dev(div, t5);
+    			append_dev(div, a2);
+    			append_dev(div, t7);
+    			append_dev(div, a3);
+    			append_dev(div, t9);
+    			append_dev(div, a4);
+    			append_dev(div, t11);
+    			append_dev(div, a5);
+    			append_dev(div, t13);
+    			append_dev(div, a6);
+    			append_dev(div, t15);
+    			append_dev(div, a7);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(h1);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(div);
     		}
     	};
 
@@ -3535,7 +3534,7 @@ var app = (function () {
     const file = "src\\App.svelte";
 
     // (20:3) <Link to="/" class="nav-gridcell highlight-anim highlight-anim-blue">
-    function create_default_slot_7(ctx) {
+    function create_default_slot_8(ctx) {
     	let span0;
     	let span1;
 
@@ -3562,7 +3561,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7.name,
+    		id: create_default_slot_8.name,
     		type: "slot",
     		source: "(20:3) <Link to=\\\"/\\\" class=\\\"nav-gridcell highlight-anim highlight-anim-blue\\\">",
     		ctx
@@ -3572,7 +3571,7 @@ var app = (function () {
     }
 
     // (23:3) <Link to="wiki" class="nav-gridcell highlight-anim highlight-anim-green">
-    function create_default_slot_6(ctx) {
+    function create_default_slot_7(ctx) {
     	let span0;
     	let span1;
 
@@ -3599,7 +3598,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6.name,
+    		id: create_default_slot_7.name,
     		type: "slot",
     		source: "(23:3) <Link to=\\\"wiki\\\" class=\\\"nav-gridcell highlight-anim highlight-anim-green\\\">",
     		ctx
@@ -3609,7 +3608,7 @@ var app = (function () {
     }
 
     // (26:3) <Link to="/">
-    function create_default_slot_5(ctx) {
+    function create_default_slot_6(ctx) {
     	let img;
     	let img_src_value;
 
@@ -3632,7 +3631,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5.name,
+    		id: create_default_slot_6.name,
     		type: "slot",
     		source: "(26:3) <Link to=\\\"/\\\">",
     		ctx
@@ -3642,7 +3641,7 @@ var app = (function () {
     }
 
     // (30:3) <Link to="gallery" class="nav-gridcell highlight-anim highlight-anim-orange">
-    function create_default_slot_4(ctx) {
+    function create_default_slot_5(ctx) {
     	let span0;
     	let span1;
 
@@ -3669,7 +3668,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4.name,
+    		id: create_default_slot_5.name,
     		type: "slot",
     		source: "(30:3) <Link to=\\\"gallery\\\" class=\\\"nav-gridcell highlight-anim highlight-anim-orange\\\">",
     		ctx
@@ -3679,7 +3678,7 @@ var app = (function () {
     }
 
     // (33:3) <Link to="contact" class="nav-gridcell highlight-anim highlight-anim-purple">
-    function create_default_slot_3(ctx) {
+    function create_default_slot_4(ctx) {
     	let span0;
     	let span1;
 
@@ -3706,7 +3705,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3.name,
+    		id: create_default_slot_4.name,
     		type: "slot",
     		source: "(33:3) <Link to=\\\"contact\\\" class=\\\"nav-gridcell highlight-anim highlight-anim-purple\\\">",
     		ctx
@@ -3716,7 +3715,7 @@ var app = (function () {
     }
 
     // (16:2) <Router url="{url}">
-    function create_default_slot_2(ctx) {
+    function create_default_slot_3(ctx) {
     	let link0;
     	let t0;
     	let link1;
@@ -3732,7 +3731,7 @@ var app = (function () {
     			props: {
     				to: "/",
     				class: "nav-gridcell highlight-anim highlight-anim-blue",
-    				$$slots: { default: [create_default_slot_7] },
+    				$$slots: { default: [create_default_slot_8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -3742,7 +3741,7 @@ var app = (function () {
     			props: {
     				to: "wiki",
     				class: "nav-gridcell highlight-anim highlight-anim-green",
-    				$$slots: { default: [create_default_slot_6] },
+    				$$slots: { default: [create_default_slot_7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -3751,7 +3750,7 @@ var app = (function () {
     	link2 = new Link({
     			props: {
     				to: "/",
-    				$$slots: { default: [create_default_slot_5] },
+    				$$slots: { default: [create_default_slot_6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -3761,7 +3760,7 @@ var app = (function () {
     			props: {
     				to: "gallery",
     				class: "nav-gridcell highlight-anim highlight-anim-orange",
-    				$$slots: { default: [create_default_slot_4] },
+    				$$slots: { default: [create_default_slot_5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -3771,7 +3770,7 @@ var app = (function () {
     			props: {
     				to: "contact",
     				class: "nav-gridcell highlight-anim highlight-anim-purple",
-    				$$slots: { default: [create_default_slot_3] },
+    				$$slots: { default: [create_default_slot_4] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -3870,7 +3869,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2.name,
+    		id: create_default_slot_3.name,
     		type: "slot",
     		source: "(16:2) <Router url=\\\"{url}\\\">",
     		ctx
@@ -3879,7 +3878,46 @@ var app = (function () {
     	return block;
     }
 
-    // (46:2) <Route path="/">
+    // (46:2) <Route path="home">
+    function create_default_slot_2(ctx) {
+    	let home;
+    	let current;
+    	home = new Home({ $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			create_component(home.$$.fragment);
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(home, target, anchor);
+    			current = true;
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(home.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(home.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(home, detaching);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_2.name,
+    		type: "slot",
+    		source: "(46:2) <Route path=\\\"home\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (47:2) <Route path="/">
     function create_default_slot_1(ctx) {
     	let home;
     	let current;
@@ -3911,7 +3949,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(46:2) <Route path=\\\"/\\\">",
+    		source: "(47:2) <Route path=\\\"/\\\">",
     		ctx
     	});
 
@@ -3929,6 +3967,8 @@ var app = (function () {
     	let route3;
     	let t3;
     	let route4;
+    	let t4;
+    	let route5;
     	let current;
 
     	route0 = new Route({
@@ -3953,6 +3993,15 @@ var app = (function () {
 
     	route4 = new Route({
     			props: {
+    				path: "home",
+    				$$slots: { default: [create_default_slot_2] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	route5 = new Route({
+    			props: {
     				path: "/",
     				$$slots: { default: [create_default_slot_1] },
     				$$scope: { ctx }
@@ -3971,6 +4020,8 @@ var app = (function () {
     			create_component(route3.$$.fragment);
     			t3 = space();
     			create_component(route4.$$.fragment);
+    			t4 = space();
+    			create_component(route5.$$.fragment);
     		},
     		m: function mount(target, anchor) {
     			mount_component(route0, target, anchor);
@@ -3982,6 +4033,8 @@ var app = (function () {
     			mount_component(route3, target, anchor);
     			insert_dev(target, t3, anchor);
     			mount_component(route4, target, anchor);
+    			insert_dev(target, t4, anchor);
+    			mount_component(route5, target, anchor);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -3992,6 +4045,13 @@ var app = (function () {
     			}
 
     			route4.$set(route4_changes);
+    			const route5_changes = {};
+
+    			if (dirty & /*$$scope*/ 2) {
+    				route5_changes.$$scope = { dirty, ctx };
+    			}
+
+    			route5.$set(route5_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -4000,6 +4060,7 @@ var app = (function () {
     			transition_in(route2.$$.fragment, local);
     			transition_in(route3.$$.fragment, local);
     			transition_in(route4.$$.fragment, local);
+    			transition_in(route5.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -4008,6 +4069,7 @@ var app = (function () {
     			transition_out(route2.$$.fragment, local);
     			transition_out(route3.$$.fragment, local);
     			transition_out(route4.$$.fragment, local);
+    			transition_out(route5.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -4020,6 +4082,8 @@ var app = (function () {
     			destroy_component(route3, detaching);
     			if (detaching) detach_dev(t3);
     			destroy_component(route4, detaching);
+    			if (detaching) detach_dev(t4);
+    			destroy_component(route5, detaching);
     		}
     	};
 
@@ -4064,7 +4128,7 @@ var app = (function () {
     	router0 = new Router({
     			props: {
     				url: /*url*/ ctx[0],
-    				$$slots: { default: [create_default_slot_2] },
+    				$$slots: { default: [create_default_slot_3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -4113,25 +4177,25 @@ var app = (function () {
     			add_location(main, file, 13, 0, 298);
     			attr_dev(img0, "alt", "arma units logo");
     			if (!src_url_equal(img0.src, img0_src_value = "https://units.arma3.com/assets/img/units/header_icon.png")) attr_dev(img0, "src", img0_src_value);
-    			add_location(img0, file, 52, 4, 1709);
-    			add_location(div2, file, 51, 3, 1698);
+    			add_location(img0, file, 53, 4, 1748);
+    			add_location(div2, file, 52, 3, 1737);
     			attr_dev(a0, "title", "Visit our ArmA 3 Units Profile!");
     			attr_dev(a0, "href", "https://units.arma3.com/");
     			attr_dev(a0, "target", "_blank");
-    			add_location(a0, file, 50, 2, 1602);
+    			add_location(a0, file, 51, 2, 1641);
     			attr_dev(img1, "alt", "discord logo");
     			if (!src_url_equal(img1.src, img1_src_value = "./images/discord.svg")) attr_dev(img1, "src", img1_src_value);
-    			add_location(img1, file, 57, 4, 1920);
-    			add_location(div3, file, 56, 3, 1909);
+    			add_location(img1, file, 58, 4, 1959);
+    			add_location(div3, file, 57, 3, 1948);
     			attr_dev(a1, "title", "Join our Discord!");
     			attr_dev(a1, "href", "https://discord.gg/Ap3bEmBgXw");
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file, 55, 2, 1822);
-    			add_location(div4, file, 49, 1, 1593);
-    			add_location(br, file, 61, 32, 2033);
-    			add_location(span0, file, 61, 36, 2037);
-    			add_location(span1, file, 61, 1, 2002);
-    			add_location(footer, file, 48, 0, 1582);
+    			add_location(a1, file, 56, 2, 1861);
+    			add_location(div4, file, 50, 1, 1632);
+    			add_location(br, file, 62, 32, 2072);
+    			add_location(span0, file, 62, 36, 2076);
+    			add_location(span1, file, 62, 1, 2041);
+    			add_location(footer, file, 49, 0, 1621);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
