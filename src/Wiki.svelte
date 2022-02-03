@@ -1,4 +1,4 @@
-<div id="title">WIKI</div>
+<h1>WIKI</h1>
 <div id="wiki-content">
     <a href="/" id="wiki-grundlagen">
         grundlagen
