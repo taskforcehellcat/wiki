@@ -10,7 +10,6 @@
     "devDependencies": {
         "@rollup/plugin-commonjs": "^17.0.0",
         "@rollup/plugin-node-resolve": "^11.0.0",
-        "@sveltejs/adapter-static": "^1.0.0-next.26",
         "rollup": "^2.3.4",
         "rollup-plugin-css-only": "^3.1.0",
         "rollup-plugin-livereload": "^2.0.0",
@@ -19,9 +18,6 @@
         "svelte": "^3.0.0"
     },
     "dependencies": {
-        "gh-pages": "^3.2.3",
-        "sirv": "^2.0.2",
-        "sirv-cli": "^2.0.0",
-        "svelte-routing": "^1.6.0"
+        "sirv-cli": "^2.0.0"
     }
 }
