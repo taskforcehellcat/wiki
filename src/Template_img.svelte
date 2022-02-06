@@ -1,4 +1,4 @@
 <div>
-    <img alt="enjoyer" src="./img/enjoyer.png">
+    <img alt="enjoyer" src="./images/enjoyer.png">
     ein average Sanitäter enjoyer
 </div>
