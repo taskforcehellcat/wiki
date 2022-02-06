@@ -1,18 +1,19 @@
-<section>
+
+<section id="heading1">
     <h1>Sanitäter</h1>
-    <p>Sanitäter (von lat. sanitas „Gesundheit“) ist im Allgemeinen eine Bezeichnung für nichtärztliches Personal im Sanitäts-/Rettungsdienst oder des militärischen Sanitätswesens sowie im Speziellen für eine Person, die eine Sanitätsausbildung absolviert hat.</p>
-    <p>Similique ut sequi labore suscipit! Doloremque nihil sapiente, at excepturi obcaecati similique fuga ut soluta veniam officiis, iste rerum provident amet dignissimos magnam nisi debitis id qui nemo sit aspernatur vitae. Cum asperiores, ullam in facere, corrupti.</p>
+    <h2>Allgemeines</h2>
+    <p>Sanitäter (von lat. sanitas „Gesundheit“) ist im Allgemeinen eine Bezeichnung für nichtärztliches Personal im Sanitäts-/Rettungsdienst oder des militärischen Sanitätswesens sowie im Speziellen für eine Person, die eine Sanitätsausbildung absolviert hat. libero ipsum ipsam quos natus error corrupti officia, animi exercitationem provident, voluptas vitae autem quis cum impedit expedita atque amet dignissimos! Sequi, labore corrupti nulla exercitationem amet nostrum? Possimus Similique ut sequi labore suscipit!</p>
 </section>
 
-<section>
-    <h2>Allgemein</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos praesentium sit, ut debitis mollitia natus dolorum nulla aliquid quia, eligendi quibusdam eum quos asperiores possimus recusandae vero saepe odio vel quam quidem. Natus minus similique inventore, rem tempore in velit eveniet placeat. Aliquam optio nihil ducimus totam vitae obcaecati officiis ab quas ipsa doloremque! Quod molestias, optio maiores sit fugit explicabo asperiores! Beatae doloremque neque eum, veniam rem et.</p>
-    <p>similique ut sequi labore suscipit! Doloremque nihil sapiente, at excepturi obcaecati similique fuga ut soluta veniam officiis, iste rerum provident amet dignissimos magnam nisi debitis id qui nemo sit aspernatur vitae. Cum asperiores, ullam in facere, corrupti.</p>
-    <img alt="sanitäter bild" src="./images/sani.jpg">
+<section id="heading2">
+    <h2>Rollenprofil</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!</p>
 </section>
-
-<section>
-    <h2>Ziele</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos praesentium sit, ut debitis mollitia natus dolorum nulla aliquid quia, eligendi quibusdam eum quos asperiores possimus recusandae vero saepe odio vel quam quidem. Natus minus similique inventore, rem tempore in velit eveniet placeat. Aliquam optio nihil ducimus totam vitae obcaecati officiis ab quas ipsa doloremque! Quod molestias, optio maiores sit fugit explicabo asperiores! Beatae doloremque neque eum, veniam rem et.</p>
-    <p>similique ut sequi labore suscipit! Doloremque nihil sapiente, at excepturi obcaecati similique fuga ut soluta veniam officiis, iste rerum provident amet dignissimos magnam nisi debitis id qui nemo sit aspernatur vitae. Cum asperiores, ullam in facere, corrupti.</p>
+<section id="heading3">
+    <h2>Ausrüstung</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!</p>
+</section>
+<section id="heading4">
+    <h2>Aufgabenbereiche</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!</p>
 </section>
