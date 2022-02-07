@@ -35,8 +35,13 @@ nav {
     gap: 3rem;
     color: #94A2CF;
     position: sticky;
+    z-index: 99;
     top: 0;
     overflow-y: scroll;
+}
+
+nav::-webkit-scrollbar {
+    display: none;
 }
 
 #nav-list-bar {
@@ -156,7 +161,7 @@ input::placeholder {
     font-weight: 300;
 }
 
-textarea:focus,
+input:focus,
 input:focus {
     outline: none;
 }
