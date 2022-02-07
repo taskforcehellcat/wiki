@@ -7,6 +7,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-padding-top: 20rem;
 }
 
 body {
@@ -137,7 +138,7 @@ input {
     font-weight: 300;
 }
 
-#nav-list-title {
+.nav-list-title {
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
