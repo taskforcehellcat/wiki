@@ -3,32 +3,27 @@
 	import Template from "./Template.svelte";
 	import Template_nav from "./Template_nav.svelte";
 	import Template_img from "./Template_img.svelte";
+import { element } from 'svelte/internal';
 
 	onMount(() => {
+
 		const thumb = document.getElementById("nav-list-bar-thumb");
-
-
-		const array = ["one", "two", "three"];
-		const sectionAmount = document.querySelectorAll("section");
-		const a = document.createElement("a");
+		const sections = document.querySelectorAll("section");
 		const navList = document.getElementById('nav-list');
+		var sectionsArr = [];
+		var x = 1;
 
-		// sleep function
-		function sleep (time) {
-		return new Promise((resolve) => setTimeout(resolve, time));
-		}
+		/* Konvertiert "Sections" NodeList zu Array (falls man's mal brauch x) */
+		for(var i = sections.length; i--; sectionsArr.unshift(sections[i]));
 
-
-
-
-		for (let i = 0; i < sectionAmount.length; i++) {
-			navList.innerHTML += '<a href="#">link</a>'
-		}
-		
-		sleep(5000).then(() => {
-			thumb.style.height = 1 / sectionAmount.length * 100 + "%";
+		/* Fügt h2 zu allen elementen der NodeList */
+		sectionsArr.forEach(element=> {
+			element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
+			navList.innerHTML += '<a href="#' + element.id + '">' + element.id + '</a>';
 		});
 		
+		/* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
+		thumb.style.height = 1 / sections.length * 100 + "%";
 
 		
 	});
@@ -44,7 +39,7 @@
 		</div>
 		
 		
-		<div id="nav-list-title">navigation</div>
+		<div class="nav-list-title">navigation</div>
 		<div id="nav-list-wrapper">
 			<div id="nav-list-bar">
 				<div id="nav-list-bar-thumb">
@@ -53,6 +48,7 @@
 		<div id="nav-list">
 		</div>
 		</div>
+		<div class="nav-list-title">wiki</div>
 		<a id="return-button">
 			Return
 		</a>
