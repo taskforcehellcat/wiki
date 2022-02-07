@@ -909,32 +909,32 @@ var app = (function () {
     			create_component(template.$$.fragment);
     			t12 = space();
     			footer = element("footer");
-    			add_location(span0, file, 39, 26, 932);
+    			add_location(span0, file, 38, 26, 883);
     			attr_dev(div0, "id", "nav-logo");
-    			add_location(div0, file, 39, 2, 908);
+    			add_location(div0, file, 38, 2, 859);
     			attr_dev(span1, "class", "material-icons");
-    			add_location(span1, file, 41, 3, 985);
+    			add_location(span1, file, 40, 3, 936);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
-    			add_location(input, file, 42, 3, 1032);
+    			add_location(input, file, 41, 3, 983);
     			attr_dev(div1, "id", "nav-search");
-    			add_location(div1, file, 40, 2, 959);
+    			add_location(div1, file, 39, 2, 910);
     			attr_dev(div2, "id", "nav-list-title");
-    			add_location(div2, file, 47, 2, 1126);
+    			add_location(div2, file, 46, 2, 1077);
     			attr_dev(div3, "id", "nav-list-bar-thumb");
-    			add_location(div3, file, 50, 4, 1232);
+    			add_location(div3, file, 49, 4, 1183);
     			attr_dev(div4, "id", "nav-list-bar");
-    			add_location(div4, file, 49, 3, 1203);
+    			add_location(div4, file, 48, 3, 1154);
     			attr_dev(div5, "id", "nav-list");
-    			add_location(div5, file, 53, 2, 1288);
+    			add_location(div5, file, 52, 2, 1239);
     			attr_dev(div6, "id", "nav-list-wrapper");
-    			add_location(div6, file, 48, 2, 1171);
+    			add_location(div6, file, 47, 2, 1122);
     			attr_dev(a, "id", "return-button");
-    			add_location(a, file, 56, 2, 1331);
-    			add_location(nav, file, 38, 1, 899);
-    			add_location(main, file, 61, 1, 1386);
-    			add_location(footer, file, 71, 0, 1435);
+    			add_location(a, file, 55, 2, 1282);
+    			add_location(nav, file, 37, 1, 850);
+    			add_location(main, file, 60, 1, 1337);
+    			add_location(footer, file, 70, 0, 1386);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1031,8 +1031,7 @@ var app = (function () {
     		onMount,
     		Template,
     		Template_nav,
-    		Template_img,
-    		blank_object
+    		Template_img
     	});
 
     	return [];
