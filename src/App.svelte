@@ -24,7 +24,6 @@ import { element } from 'svelte/internal';
 		
 		/* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
 		thumb.style.height = 1 / sections.length * 100 + "%";
-
 		
 	});
 </script>
