@@ -369,230 +369,115 @@ var app = (function () {
     const file$3 = "src\\Template.svelte";
 
     function create_fragment$3(ctx) {
-    	let section0;
     	let h1;
     	let t1;
-    	let h20;
-    	let t3;
+    	let section0;
     	let p0;
-    	let t5;
+    	let t3;
     	let section1;
-    	let h21;
-    	let t7;
     	let p1;
-    	let t9;
+    	let t5;
     	let section2;
-    	let h22;
-    	let t11;
     	let p2;
-    	let t13;
+    	let t7;
     	let section3;
-    	let h23;
-    	let t15;
     	let p3;
-    	let t17;
+    	let t9;
     	let section4;
-    	let h24;
-    	let t19;
     	let p4;
-    	let t21;
+    	let t11;
     	let section5;
-    	let h25;
-    	let t23;
     	let p5;
-    	let t25;
-    	let section6;
-    	let h26;
-    	let t27;
-    	let p6;
-    	let t29;
-    	let section7;
-    	let h27;
-    	let t31;
-    	let p7;
-    	let t33;
-    	let section8;
-    	let h28;
-    	let t35;
-    	let p8;
 
     	const block = {
     		c: function create() {
-    			section0 = element("section");
     			h1 = element("h1");
     			h1.textContent = "Sanitäter";
     			t1 = space();
-    			h20 = element("h2");
-    			h20.textContent = "Allgemeines";
-    			t3 = space();
+    			section0 = element("section");
     			p0 = element("p");
     			p0.textContent = "Sanitäter (von lat. sanitas „Gesundheit“) ist im Allgemeinen eine Bezeichnung für nichtärztliches Personal im Sanitäts-/Rettungsdienst oder des militärischen Sanitätswesens sowie im Speziellen für eine Person, die eine Sanitätsausbildung absolviert hat. libero ipsum ipsam quos natus error corrupti officia, animi exercitationem provident, voluptas vitae autem quis cum impedit expedita atque amet dignissimos! Sequi, labore corrupti nulla exercitationem amet nostrum? Possimus Similique ut sequi labore suscipit!";
-    			t5 = space();
+    			t3 = space();
     			section1 = element("section");
-    			h21 = element("h2");
-    			h21.textContent = "Rollenprofil";
-    			t7 = space();
     			p1 = element("p");
     			p1.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			t9 = space();
+    			t5 = space();
     			section2 = element("section");
-    			h22 = element("h2");
-    			h22.textContent = "Ausrüstung";
-    			t11 = space();
     			p2 = element("p");
     			p2.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			t13 = space();
+    			t7 = space();
     			section3 = element("section");
-    			h23 = element("h2");
-    			h23.textContent = "Aufgabenbereiche";
-    			t15 = space();
     			p3 = element("p");
     			p3.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			t17 = space();
+    			t9 = space();
     			section4 = element("section");
-    			h24 = element("h2");
-    			h24.textContent = "Einsatzgebiete";
-    			t19 = space();
     			p4 = element("p");
     			p4.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			t21 = space();
+    			t11 = space();
     			section5 = element("section");
-    			h25 = element("h2");
-    			h25.textContent = "Kompetenzen";
-    			t23 = space();
     			p5 = element("p");
     			p5.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			t25 = space();
-    			section6 = element("section");
-    			h26 = element("h2");
-    			h26.textContent = "Ausbildungsgehalt";
-    			t27 = space();
-    			p6 = element("p");
-    			p6.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			t29 = space();
-    			section7 = element("section");
-    			h27 = element("h2");
-    			h27.textContent = "Kanonenfuttergrad";
-    			t31 = space();
-    			p7 = element("p");
-    			p7.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			t33 = space();
-    			section8 = element("section");
-    			h28 = element("h2");
-    			h28.textContent = "Kanonenfuttergrad";
-    			t35 = space();
-    			p8 = element("p");
-    			p8.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			add_location(h1, file$3, 1, 4, 29);
-    			add_location(h20, file$3, 2, 4, 53);
-    			add_location(p0, file$3, 3, 4, 79);
-    			attr_dev(section0, "id", "heading1");
-    			add_location(section0, file$3, 0, 0, 0);
-    			add_location(h21, file$3, 7, 4, 644);
-    			add_location(p1, file$3, 8, 4, 671);
-    			attr_dev(section1, "id", "heading2");
-    			add_location(section1, file$3, 6, 0, 615);
-    			add_location(h22, file$3, 11, 4, 1274);
-    			add_location(p2, file$3, 12, 4, 1299);
-    			attr_dev(section2, "id", "heading3");
-    			add_location(section2, file$3, 10, 0, 1245);
-    			add_location(h23, file$3, 15, 4, 1902);
-    			add_location(p3, file$3, 16, 4, 1933);
-    			attr_dev(section3, "id", "heading4");
-    			add_location(section3, file$3, 14, 0, 1873);
-    			add_location(h24, file$3, 19, 4, 2536);
-    			add_location(p4, file$3, 20, 4, 2565);
-    			attr_dev(section4, "id", "heading4");
-    			add_location(section4, file$3, 18, 0, 2507);
-    			add_location(h25, file$3, 23, 4, 3168);
-    			add_location(p5, file$3, 24, 4, 3194);
-    			attr_dev(section5, "id", "heading4");
-    			add_location(section5, file$3, 22, 0, 3139);
-    			add_location(h26, file$3, 27, 4, 3797);
-    			add_location(p6, file$3, 28, 4, 3829);
-    			attr_dev(section6, "id", "heading4");
-    			add_location(section6, file$3, 26, 0, 3768);
-    			add_location(h27, file$3, 31, 4, 4432);
-    			add_location(p7, file$3, 32, 4, 4464);
-    			attr_dev(section7, "id", "heading4");
-    			add_location(section7, file$3, 30, 0, 4403);
-    			add_location(h28, file$3, 37, 4, 5071);
-    			add_location(p8, file$3, 38, 4, 5103);
-    			attr_dev(section8, "id", "heading4");
-    			add_location(section8, file$3, 36, 0, 5042);
+    			add_location(h1, file$3, 0, 0, 0);
+    			add_location(p0, file$3, 3, 4, 54);
+    			attr_dev(section0, "id", "Allgemeines");
+    			add_location(section0, file$3, 2, 0, 22);
+    			add_location(p1, file$3, 7, 4, 623);
+    			attr_dev(section1, "id", "Rollenprofil");
+    			add_location(section1, file$3, 6, 0, 590);
+    			add_location(p2, file$3, 11, 4, 1230);
+    			attr_dev(section2, "id", "Ausrüstung");
+    			add_location(section2, file$3, 10, 0, 1199);
+    			add_location(p3, file$3, 15, 4, 1843);
+    			attr_dev(section3, "id", "Aufgabenbereiche");
+    			add_location(section3, file$3, 14, 0, 1806);
+    			add_location(p4, file$3, 19, 4, 2454);
+    			attr_dev(section4, "id", "Einsatzgebiete");
+    			add_location(section4, file$3, 18, 0, 2419);
+    			add_location(p5, file$3, 23, 4, 3062);
+    			attr_dev(section5, "id", "Kompetenzen");
+    			add_location(section5, file$3, 22, 0, 3030);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			insert_dev(target, h1, anchor);
+    			insert_dev(target, t1, anchor);
     			insert_dev(target, section0, anchor);
-    			append_dev(section0, h1);
-    			append_dev(section0, t1);
-    			append_dev(section0, h20);
-    			append_dev(section0, t3);
     			append_dev(section0, p0);
-    			insert_dev(target, t5, anchor);
+    			insert_dev(target, t3, anchor);
     			insert_dev(target, section1, anchor);
-    			append_dev(section1, h21);
-    			append_dev(section1, t7);
     			append_dev(section1, p1);
-    			insert_dev(target, t9, anchor);
+    			insert_dev(target, t5, anchor);
     			insert_dev(target, section2, anchor);
-    			append_dev(section2, h22);
-    			append_dev(section2, t11);
     			append_dev(section2, p2);
-    			insert_dev(target, t13, anchor);
+    			insert_dev(target, t7, anchor);
     			insert_dev(target, section3, anchor);
-    			append_dev(section3, h23);
-    			append_dev(section3, t15);
     			append_dev(section3, p3);
-    			insert_dev(target, t17, anchor);
+    			insert_dev(target, t9, anchor);
     			insert_dev(target, section4, anchor);
-    			append_dev(section4, h24);
-    			append_dev(section4, t19);
     			append_dev(section4, p4);
-    			insert_dev(target, t21, anchor);
+    			insert_dev(target, t11, anchor);
     			insert_dev(target, section5, anchor);
-    			append_dev(section5, h25);
-    			append_dev(section5, t23);
     			append_dev(section5, p5);
-    			insert_dev(target, t25, anchor);
-    			insert_dev(target, section6, anchor);
-    			append_dev(section6, h26);
-    			append_dev(section6, t27);
-    			append_dev(section6, p6);
-    			insert_dev(target, t29, anchor);
-    			insert_dev(target, section7, anchor);
-    			append_dev(section7, h27);
-    			append_dev(section7, t31);
-    			append_dev(section7, p7);
-    			insert_dev(target, t33, anchor);
-    			insert_dev(target, section8, anchor);
-    			append_dev(section8, h28);
-    			append_dev(section8, t35);
-    			append_dev(section8, p8);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h1);
+    			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(section0);
-    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(t3);
     			if (detaching) detach_dev(section1);
-    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(t5);
     			if (detaching) detach_dev(section2);
-    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(t7);
     			if (detaching) detach_dev(section3);
-    			if (detaching) detach_dev(t17);
+    			if (detaching) detach_dev(t9);
     			if (detaching) detach_dev(section4);
-    			if (detaching) detach_dev(t21);
+    			if (detaching) detach_dev(t11);
     			if (detaching) detach_dev(section5);
-    			if (detaching) detach_dev(t25);
-    			if (detaching) detach_dev(section6);
-    			if (detaching) detach_dev(t29);
-    			if (detaching) detach_dev(section7);
-    			if (detaching) detach_dev(t33);
-    			if (detaching) detach_dev(section8);
     		}
     	};
 
@@ -870,11 +755,13 @@ var app = (function () {
     	let t8;
     	let div5;
     	let t9;
-    	let a;
+    	let div7;
     	let t11;
+    	let a;
+    	let t13;
     	let main;
     	let template;
-    	let t12;
+    	let t14;
     	let footer;
     	let current;
     	template = new Template({ $$inline: true });
@@ -902,39 +789,44 @@ var app = (function () {
     			t8 = space();
     			div5 = element("div");
     			t9 = space();
+    			div7 = element("div");
+    			div7.textContent = "wiki";
+    			t11 = space();
     			a = element("a");
     			a.textContent = "Return";
-    			t11 = space();
+    			t13 = space();
     			main = element("main");
     			create_component(template.$$.fragment);
-    			t12 = space();
+    			t14 = space();
     			footer = element("footer");
-    			add_location(span0, file, 38, 26, 883);
+    			add_location(span0, file, 33, 26, 1072);
     			attr_dev(div0, "id", "nav-logo");
-    			add_location(div0, file, 38, 2, 859);
+    			add_location(div0, file, 33, 2, 1048);
     			attr_dev(span1, "class", "material-icons");
-    			add_location(span1, file, 40, 3, 936);
+    			add_location(span1, file, 35, 3, 1125);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
-    			add_location(input, file, 41, 3, 983);
+    			add_location(input, file, 36, 3, 1172);
     			attr_dev(div1, "id", "nav-search");
-    			add_location(div1, file, 39, 2, 910);
-    			attr_dev(div2, "id", "nav-list-title");
-    			add_location(div2, file, 46, 2, 1077);
+    			add_location(div1, file, 34, 2, 1099);
+    			attr_dev(div2, "class", "nav-list-title");
+    			add_location(div2, file, 41, 2, 1266);
     			attr_dev(div3, "id", "nav-list-bar-thumb");
-    			add_location(div3, file, 49, 4, 1183);
+    			add_location(div3, file, 44, 4, 1375);
     			attr_dev(div4, "id", "nav-list-bar");
-    			add_location(div4, file, 48, 3, 1154);
+    			add_location(div4, file, 43, 3, 1346);
     			attr_dev(div5, "id", "nav-list");
-    			add_location(div5, file, 52, 2, 1239);
+    			add_location(div5, file, 47, 2, 1431);
     			attr_dev(div6, "id", "nav-list-wrapper");
-    			add_location(div6, file, 47, 2, 1122);
+    			add_location(div6, file, 42, 2, 1314);
+    			attr_dev(div7, "class", "nav-list-title");
+    			add_location(div7, file, 50, 2, 1474);
     			attr_dev(a, "id", "return-button");
-    			add_location(a, file, 55, 2, 1282);
-    			add_location(nav, file, 37, 1, 850);
-    			add_location(main, file, 60, 1, 1337);
-    			add_location(footer, file, 70, 0, 1386);
+    			add_location(a, file, 51, 2, 1516);
+    			add_location(nav, file, 32, 1, 1039);
+    			add_location(main, file, 56, 1, 1571);
+    			add_location(footer, file, 66, 0, 1620);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -958,11 +850,13 @@ var app = (function () {
     			append_dev(div6, t8);
     			append_dev(div6, div5);
     			append_dev(nav, t9);
+    			append_dev(nav, div7);
+    			append_dev(nav, t11);
     			append_dev(nav, a);
-    			insert_dev(target, t11, anchor);
+    			insert_dev(target, t13, anchor);
     			insert_dev(target, main, anchor);
     			mount_component(template, main, null);
-    			insert_dev(target, t12, anchor);
+    			insert_dev(target, t14, anchor);
     			insert_dev(target, footer, anchor);
     			current = true;
     		},
@@ -978,10 +872,10 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(nav);
-    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(t13);
     			if (detaching) detach_dev(main);
     			destroy_component(template);
-    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(t14);
     			if (detaching) detach_dev(footer);
     		}
     	};
@@ -1003,22 +897,21 @@ var app = (function () {
 
     	onMount(() => {
     		const thumb = document.getElementById("nav-list-bar-thumb");
-    		const sectionAmount = document.querySelectorAll("section");
-    		document.createElement("a");
+    		const sections = document.querySelectorAll("section");
     		const navList = document.getElementById('nav-list');
+    		var sectionsArr = [];
 
-    		// sleep function
-    		function sleep(time) {
-    			return new Promise(resolve => setTimeout(resolve, time));
-    		}
+    		/* Konvertiert "Sections" NodeList zu Array (falls man's mal brauch x) */
+    		for (var i = sections.length; i--; sectionsArr.unshift(sections[i])) ;
 
-    		for (let i = 0; i < sectionAmount.length; i++) {
-    			navList.innerHTML += '<a href="#">link</a>';
-    		}
-
-    		sleep(5000).then(() => {
-    			thumb.style.height = 1 / sectionAmount.length * 100 + "%";
+    		/* Fügt h2 zu allen elementen der NodeList */
+    		sectionsArr.forEach(element => {
+    			element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
+    			navList.innerHTML += '<a href="#' + element.id + '">' + element.id + '</a>';
     		});
+
+    		/* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
+    		thumb.style.height = 1 / sections.length * 100 + "%";
     	});
 
     	const writable_props = [];
@@ -1031,7 +924,8 @@ var app = (function () {
     		onMount,
     		Template,
     		Template_nav,
-    		Template_img
+    		Template_img,
+    		element
     	});
 
     	return [];
