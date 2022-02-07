@@ -72,6 +72,14 @@ var app = (function () {
     function set_current_component(component) {
         current_component = component;
     }
+    function get_current_component() {
+        if (!current_component)
+            throw new Error('Function called outside component initialization');
+        return current_component;
+    }
+    function onMount(fn) {
+        get_current_component().$$.on_mount.push(fn);
+    }
 
     const dirty_components = [];
     const binding_callbacks = [];
@@ -382,6 +390,31 @@ var app = (function () {
     	let h23;
     	let t15;
     	let p3;
+    	let t17;
+    	let section4;
+    	let h24;
+    	let t19;
+    	let p4;
+    	let t21;
+    	let section5;
+    	let h25;
+    	let t23;
+    	let p5;
+    	let t25;
+    	let section6;
+    	let h26;
+    	let t27;
+    	let p6;
+    	let t29;
+    	let section7;
+    	let h27;
+    	let t31;
+    	let p7;
+    	let t33;
+    	let section8;
+    	let h28;
+    	let t35;
+    	let p8;
 
     	const block = {
     		c: function create() {
@@ -415,23 +448,78 @@ var app = (function () {
     			t15 = space();
     			p3 = element("p");
     			p3.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			add_location(h1, file$3, 2, 4, 31);
-    			add_location(h20, file$3, 3, 4, 55);
-    			add_location(p0, file$3, 4, 4, 81);
+    			t17 = space();
+    			section4 = element("section");
+    			h24 = element("h2");
+    			h24.textContent = "Einsatzgebiete";
+    			t19 = space();
+    			p4 = element("p");
+    			p4.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
+    			t21 = space();
+    			section5 = element("section");
+    			h25 = element("h2");
+    			h25.textContent = "Kompetenzen";
+    			t23 = space();
+    			p5 = element("p");
+    			p5.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
+    			t25 = space();
+    			section6 = element("section");
+    			h26 = element("h2");
+    			h26.textContent = "Ausbildungsgehalt";
+    			t27 = space();
+    			p6 = element("p");
+    			p6.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
+    			t29 = space();
+    			section7 = element("section");
+    			h27 = element("h2");
+    			h27.textContent = "Kanonenfuttergrad";
+    			t31 = space();
+    			p7 = element("p");
+    			p7.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
+    			t33 = space();
+    			section8 = element("section");
+    			h28 = element("h2");
+    			h28.textContent = "Kanonenfuttergrad";
+    			t35 = space();
+    			p8 = element("p");
+    			p8.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
+    			add_location(h1, file$3, 1, 4, 29);
+    			add_location(h20, file$3, 2, 4, 53);
+    			add_location(p0, file$3, 3, 4, 79);
     			attr_dev(section0, "id", "heading1");
-    			add_location(section0, file$3, 1, 0, 2);
-    			add_location(h21, file$3, 8, 4, 646);
-    			add_location(p1, file$3, 9, 4, 673);
+    			add_location(section0, file$3, 0, 0, 0);
+    			add_location(h21, file$3, 7, 4, 644);
+    			add_location(p1, file$3, 8, 4, 671);
     			attr_dev(section1, "id", "heading2");
-    			add_location(section1, file$3, 7, 0, 617);
-    			add_location(h22, file$3, 12, 4, 1276);
-    			add_location(p2, file$3, 13, 4, 1301);
+    			add_location(section1, file$3, 6, 0, 615);
+    			add_location(h22, file$3, 11, 4, 1274);
+    			add_location(p2, file$3, 12, 4, 1299);
     			attr_dev(section2, "id", "heading3");
-    			add_location(section2, file$3, 11, 0, 1247);
-    			add_location(h23, file$3, 16, 4, 1904);
-    			add_location(p3, file$3, 17, 4, 1935);
+    			add_location(section2, file$3, 10, 0, 1245);
+    			add_location(h23, file$3, 15, 4, 1902);
+    			add_location(p3, file$3, 16, 4, 1933);
     			attr_dev(section3, "id", "heading4");
-    			add_location(section3, file$3, 15, 0, 1875);
+    			add_location(section3, file$3, 14, 0, 1873);
+    			add_location(h24, file$3, 19, 4, 2536);
+    			add_location(p4, file$3, 20, 4, 2565);
+    			attr_dev(section4, "id", "heading4");
+    			add_location(section4, file$3, 18, 0, 2507);
+    			add_location(h25, file$3, 23, 4, 3168);
+    			add_location(p5, file$3, 24, 4, 3194);
+    			attr_dev(section5, "id", "heading4");
+    			add_location(section5, file$3, 22, 0, 3139);
+    			add_location(h26, file$3, 27, 4, 3797);
+    			add_location(p6, file$3, 28, 4, 3829);
+    			attr_dev(section6, "id", "heading4");
+    			add_location(section6, file$3, 26, 0, 3768);
+    			add_location(h27, file$3, 31, 4, 4432);
+    			add_location(p7, file$3, 32, 4, 4464);
+    			attr_dev(section7, "id", "heading4");
+    			add_location(section7, file$3, 30, 0, 4403);
+    			add_location(h28, file$3, 37, 4, 5071);
+    			add_location(p8, file$3, 38, 4, 5103);
+    			attr_dev(section8, "id", "heading4");
+    			add_location(section8, file$3, 36, 0, 5042);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -458,6 +546,31 @@ var app = (function () {
     			append_dev(section3, h23);
     			append_dev(section3, t15);
     			append_dev(section3, p3);
+    			insert_dev(target, t17, anchor);
+    			insert_dev(target, section4, anchor);
+    			append_dev(section4, h24);
+    			append_dev(section4, t19);
+    			append_dev(section4, p4);
+    			insert_dev(target, t21, anchor);
+    			insert_dev(target, section5, anchor);
+    			append_dev(section5, h25);
+    			append_dev(section5, t23);
+    			append_dev(section5, p5);
+    			insert_dev(target, t25, anchor);
+    			insert_dev(target, section6, anchor);
+    			append_dev(section6, h26);
+    			append_dev(section6, t27);
+    			append_dev(section6, p6);
+    			insert_dev(target, t29, anchor);
+    			insert_dev(target, section7, anchor);
+    			append_dev(section7, h27);
+    			append_dev(section7, t31);
+    			append_dev(section7, p7);
+    			insert_dev(target, t33, anchor);
+    			insert_dev(target, section8, anchor);
+    			append_dev(section8, h28);
+    			append_dev(section8, t35);
+    			append_dev(section8, p8);
     		},
     		p: noop,
     		i: noop,
@@ -470,6 +583,16 @@ var app = (function () {
     			if (detaching) detach_dev(section2);
     			if (detaching) detach_dev(t13);
     			if (detaching) detach_dev(section3);
+    			if (detaching) detach_dev(t17);
+    			if (detaching) detach_dev(section4);
+    			if (detaching) detach_dev(t21);
+    			if (detaching) detach_dev(section5);
+    			if (detaching) detach_dev(t25);
+    			if (detaching) detach_dev(section6);
+    			if (detaching) detach_dev(t29);
+    			if (detaching) detach_dev(section7);
+    			if (detaching) detach_dev(t33);
+    			if (detaching) detach_dev(section8);
     		}
     	};
 
@@ -746,27 +869,12 @@ var app = (function () {
     	let div3;
     	let t8;
     	let div5;
-    	let a0;
-    	let t10;
-    	let a1;
-    	let t12;
-    	let a2;
-    	let t14;
-    	let a3;
-    	let t16;
-    	let a4;
-    	let t18;
-    	let a5;
-    	let t20;
-    	let a6;
-    	let t22;
-    	let a7;
-    	let t24;
-    	let div7;
-    	let t26;
+    	let t9;
+    	let a;
+    	let t11;
     	let main;
     	let template;
-    	let t27;
+    	let t12;
     	let footer;
     	let current;
     	template = new Template({ $$inline: true });
@@ -793,79 +901,40 @@ var app = (function () {
     			div3 = element("div");
     			t8 = space();
     			div5 = element("div");
-    			a0 = element("a");
-    			a0.textContent = "Allgemeines";
-    			t10 = space();
-    			a1 = element("a");
-    			a1.textContent = "Rollenprofil";
-    			t12 = space();
-    			a2 = element("a");
-    			a2.textContent = "Ausrüstung";
-    			t14 = space();
-    			a3 = element("a");
-    			a3.textContent = "Aufgabenbereiche";
-    			t16 = space();
-    			a4 = element("a");
-    			a4.textContent = "Einsatzgebiete";
-    			t18 = space();
-    			a5 = element("a");
-    			a5.textContent = "Kompetenzen";
-    			t20 = space();
-    			a6 = element("a");
-    			a6.textContent = "Ausbildungsgehalt";
-    			t22 = space();
-    			a7 = element("a");
-    			a7.textContent = "Kanonenfuttergrad";
-    			t24 = space();
-    			div7 = element("div");
-    			div7.textContent = "Return";
-    			t26 = space();
+    			t9 = space();
+    			a = element("a");
+    			a.textContent = "Return";
+    			t11 = space();
     			main = element("main");
     			create_component(template.$$.fragment);
-    			t27 = space();
+    			t12 = space();
     			footer = element("footer");
-    			add_location(span0, file, 9, 26, 209);
+    			add_location(span0, file, 39, 26, 932);
     			attr_dev(div0, "id", "nav-logo");
-    			add_location(div0, file, 9, 2, 185);
+    			add_location(div0, file, 39, 2, 908);
     			attr_dev(span1, "class", "material-icons");
-    			add_location(span1, file, 11, 3, 262);
+    			add_location(span1, file, 41, 3, 985);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
-    			add_location(input, file, 12, 3, 309);
+    			add_location(input, file, 42, 3, 1032);
     			attr_dev(div1, "id", "nav-search");
-    			add_location(div1, file, 10, 2, 236);
+    			add_location(div1, file, 40, 2, 959);
     			attr_dev(div2, "id", "nav-list-title");
-    			add_location(div2, file, 17, 2, 403);
+    			add_location(div2, file, 47, 2, 1126);
     			attr_dev(div3, "id", "nav-list-bar-thumb");
-    			add_location(div3, file, 20, 4, 509);
+    			add_location(div3, file, 50, 4, 1232);
     			attr_dev(div4, "id", "nav-list-bar");
-    			add_location(div4, file, 19, 3, 480);
-    			attr_dev(a0, "href", "./#");
-    			add_location(a0, file, 24, 3, 589);
-    			attr_dev(a1, "href", "#heading2");
-    			add_location(a1, file, 25, 3, 623);
-    			attr_dev(a2, "href", "#heading3");
-    			add_location(a2, file, 26, 3, 664);
-    			attr_dev(a3, "href", "#heading4");
-    			add_location(a3, file, 27, 3, 703);
-    			attr_dev(a4, "href", "#heading5");
-    			add_location(a4, file, 28, 3, 748);
-    			attr_dev(a5, "href", "#heading6");
-    			add_location(a5, file, 29, 3, 791);
-    			attr_dev(a6, "href", "#heading7");
-    			add_location(a6, file, 30, 3, 831);
-    			attr_dev(a7, "href", "#heading8");
-    			add_location(a7, file, 31, 3, 877);
+    			add_location(div4, file, 49, 3, 1203);
     			attr_dev(div5, "id", "nav-list");
-    			add_location(div5, file, 23, 2, 565);
+    			add_location(div5, file, 53, 2, 1288);
     			attr_dev(div6, "id", "nav-list-wrapper");
-    			add_location(div6, file, 18, 2, 448);
-    			attr_dev(div7, "id", "return-button");
-    			add_location(div7, file, 34, 2, 942);
-    			add_location(nav, file, 8, 1, 176);
-    			add_location(main, file, 39, 1, 1001);
-    			add_location(footer, file, 49, 0, 1050);
+    			add_location(div6, file, 48, 2, 1171);
+    			attr_dev(a, "id", "return-button");
+    			add_location(a, file, 56, 2, 1331);
+    			add_location(nav, file, 38, 1, 899);
+    			add_location(main, file, 61, 1, 1386);
+    			add_location(footer, file, 71, 0, 1435);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -888,27 +957,12 @@ var app = (function () {
     			append_dev(div4, div3);
     			append_dev(div6, t8);
     			append_dev(div6, div5);
-    			append_dev(div5, a0);
-    			append_dev(div5, t10);
-    			append_dev(div5, a1);
-    			append_dev(div5, t12);
-    			append_dev(div5, a2);
-    			append_dev(div5, t14);
-    			append_dev(div5, a3);
-    			append_dev(div5, t16);
-    			append_dev(div5, a4);
-    			append_dev(div5, t18);
-    			append_dev(div5, a5);
-    			append_dev(div5, t20);
-    			append_dev(div5, a6);
-    			append_dev(div5, t22);
-    			append_dev(div5, a7);
-    			append_dev(nav, t24);
-    			append_dev(nav, div7);
-    			insert_dev(target, t26, anchor);
+    			append_dev(nav, t9);
+    			append_dev(nav, a);
+    			insert_dev(target, t11, anchor);
     			insert_dev(target, main, anchor);
     			mount_component(template, main, null);
-    			insert_dev(target, t27, anchor);
+    			insert_dev(target, t12, anchor);
     			insert_dev(target, footer, anchor);
     			current = true;
     		},
@@ -924,10 +978,10 @@ var app = (function () {
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(nav);
-    			if (detaching) detach_dev(t26);
+    			if (detaching) detach_dev(t11);
     			if (detaching) detach_dev(main);
     			destroy_component(template);
-    			if (detaching) detach_dev(t27);
+    			if (detaching) detach_dev(t12);
     			if (detaching) detach_dev(footer);
     		}
     	};
@@ -946,13 +1000,41 @@ var app = (function () {
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('App', slots, []);
+
+    	onMount(() => {
+    		const thumb = document.getElementById("nav-list-bar-thumb");
+    		const sectionAmount = document.querySelectorAll("section");
+    		document.createElement("a");
+    		const navList = document.getElementById('nav-list');
+
+    		// sleep function
+    		function sleep(time) {
+    			return new Promise(resolve => setTimeout(resolve, time));
+    		}
+
+    		for (let i = 0; i < sectionAmount.length; i++) {
+    			navList.innerHTML += '<a href="#">link</a>';
+    		}
+
+    		sleep(5000).then(() => {
+    			thumb.style.height = 1 / sectionAmount.length * 100 + "%";
+    		});
+    	});
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<App> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ Template, Template_nav, Template_img });
+    	$$self.$capture_state = () => ({
+    		onMount,
+    		Template,
+    		Template_nav,
+    		Template_img,
+    		blank_object
+    	});
+
     	return [];
     }
 
