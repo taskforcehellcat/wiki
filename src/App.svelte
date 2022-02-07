@@ -1,8 +1,37 @@
 <script>
+	import { onMount } from 'svelte';
 	import Template from "./Template.svelte";
 	import Template_nav from "./Template_nav.svelte";
 	import Template_img from "./Template_img.svelte";
 
+	onMount(() => {
+		const thumb = document.getElementById("nav-list-bar-thumb");
+
+
+		const array = ["one", "two", "three"];
+		const sectionAmount = document.querySelectorAll("section");
+		const a = document.createElement("a");
+		const navList = document.getElementById('nav-list');
+
+		// sleep function
+		function sleep (time) {
+		return new Promise((resolve) => setTimeout(resolve, time));
+		}
+
+
+
+
+		for (let i = 0; i < sectionAmount.length; i++) {
+			navList.innerHTML += '<a href="#">link</a>'
+		}
+		
+		sleep(5000).then(() => {
+			thumb.style.height = 1 / sectionAmount.length * 100 + "%";
+		});
+		
+
+		
+	});
 </script>
 
 
@@ -22,19 +51,11 @@
 				</div>
 			</div>
 		<div id="nav-list">
-			<a href="./#">Allgemeines</a>
-			<a href="#heading2">Rollenprofil</a>
-			<a href="#heading3">Ausrüstung</a>
-			<a href="#heading4">Aufgabenbereiche</a>
-			<a href="#heading5">Einsatzgebiete</a>
-			<a href="#heading6">Kompetenzen</a>
-			<a href="#heading7">Ausbildungsgehalt</a>
-			<a href="#heading8">Kanonenfuttergrad</a>
 		</div>
 		</div>
-		<div id="return-button">
+		<a id="return-button">
 			Return
-		</div>
+		</a>
 	</nav>
 
 	<main>
