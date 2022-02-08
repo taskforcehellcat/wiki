@@ -1,79 +1,3 @@
-<script>
-  import { onMount } from "svelte";
-  onMount(async () => {
-    const thumb = document.getElementById("nav-list-bar-thumb");
-    const sections = document.querySelectorAll("section");
-    const navList = document.getElementById("nav-list");
-    const bar = document.getElementById("nav-list-bar");
-    var sectionsArr = Array.from(sections);
-    var x = 1;
-
-    /* Konvertiert "Sections" NodeList zu Array (falls man's mal brauch x) */
-    // for(var i = sections.length; i--; sectionsArr.unshift(sections[i]));
-
-    /* Fügt h2 zu allen elementen der NodeList */
-    sectionsArr.forEach((element) => {
-      element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
-      navList.innerHTML +=
-        '<a href="#' + element.id + '">' + element.id + "</a>";
-    });
-
-    /* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
-    var thumbPercent = (1 / sections.length) * 100;
-    if (
-      parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <=
-      parseInt(window.getComputedStyle(bar).getPropertyValue("height"))
-    ) {
-      thumb.style.height =
-        parseInt(
-          parseInt(window.getComputedStyle(bar).getPropertyValue("height"))
-        ) *
-          (thumbPercent / 100) +
-        "px";
-    } else;
-
-    //	thumb.style.height = 1 / sections.length * 100 + "%";
-
-    window.addEventListener("scroll", (event) => {
-      bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
-    });
-
-    var sectionHeight = 0;
-    sections.forEach((element) => {
-      sectionHeight += parseInt(window.getComputedStyle(element).height);
-    });
-
-    console.log(sectionHeight);
-
-    document.getElementById("wiki-wrapper").minHeight = sectionHeight;
-  });
-</script>
-
-<div id="wiki-wrapper">
-  <nav>
-    <div id="nav-logo">TFHC <span>Wiki</span></div>
-    <div id="nav-search">
-      <span class="material-icons">search</span>
-      <input type="text" name="search" placeholder="Wiki durchsuchen..." />
-    </div>
-
-    <div class="nav-list-title">navigation</div>
-    <div id="nav-list-wrapper">
-      <div id="nav-list-bar">
-        <div id="nav-list-bar-thumb" />
-      </div>
-      <div id="nav-list" />
-    </div>
-    <div class="nav-list-title">wiki</div>
-    <a href="/" id="return-button"> Return </a>
-  </nav>
-
-  <main>
-    <slot name="content" />
-  </main>
-  <footer />
-</div>
-
 <style>
   #wiki-wrapper {
     min-height: 120vh;
@@ -221,3 +145,79 @@
     }
   }
 </style>
+
+<script>
+  import { onMount } from "svelte";
+  onMount(async () => {
+    const thumb = document.getElementById("nav-list-bar-thumb");
+    const sections = document.querySelectorAll("section");
+    const navList = document.getElementById("nav-list");
+    const bar = document.getElementById("nav-list-bar");
+    var sectionsArr = Array.from(sections);
+    var x = 1;
+
+    /* Konvertiert "Sections" NodeList zu Array (falls man's mal brauch x) */
+    // for(var i = sections.length; i--; sectionsArr.unshift(sections[i]));
+
+    /* Fügt h2 zu allen elementen der NodeList */
+    sectionsArr.forEach((element) => {
+      element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
+      navList.innerHTML +=
+        '<a href="#' + element.id + '">' + element.id + "</a>";
+    });
+
+    /* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
+    var thumbPercent = (1 / sections.length) * 100;
+    if (
+      parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <=
+      parseInt(window.getComputedStyle(bar).getPropertyValue("height"))
+    ) {
+      thumb.style.height =
+        parseInt(
+          parseInt(window.getComputedStyle(bar).getPropertyValue("height"))
+        ) *
+          (thumbPercent / 100) +
+        "px";
+    } else;
+
+    //	thumb.style.height = 1 / sections.length * 100 + "%";
+
+    window.addEventListener("scroll", (event) => {
+      bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
+    });
+
+    var sectionHeight = 0;
+    sections.forEach((element) => {
+      sectionHeight += parseInt(window.getComputedStyle(element).height);
+    });
+
+    console.log(sectionHeight);
+
+    document.getElementById("wiki-wrapper").minHeight = sectionHeight;
+  });
+</script>
+
+<div id="wiki-wrapper">
+  <nav>
+    <div id="nav-logo">TFHC <span>Wiki</span></div>
+    <div id="nav-search">
+      <span class="material-icons">search</span>
+      <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+    </div>
+
+    <div class="nav-list-title">navigation</div>
+    <div id="nav-list-wrapper">
+      <div id="nav-list-bar">
+        <div id="nav-list-bar-thumb" />
+      </div>
+      <div id="nav-list" />
+    </div>
+    <div class="nav-list-title">wiki</div>
+    <a href="/" id="return-button"> Return </a>
+  </nav>
+
+  <main>
+    <slot name="content" />
+  </main>
+  <footer />
+</div>

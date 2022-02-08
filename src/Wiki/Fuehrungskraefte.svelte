@@ -1,13 +1,13 @@
 <script>
-    import Wiki from "../Wiki.svelte";
+  import Wiki from "../Wiki.svelte";
 </script>
 
 <Wiki>
-    <svelte:fragment slot="content">
-        <h1>Führungskräfte</h1>
+  <svelte:fragment slot="content">
+    <h1>Führungskräfte</h1>
 
-        <section id="Allgemeines">
-            <p></p>
-        </section>
-    </svelte:fragment>
+    <section id="Allgemeines">
+      <p />
+    </section>
+  </svelte:fragment>
 </Wiki>
