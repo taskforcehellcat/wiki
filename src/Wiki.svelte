@@ -13,8 +13,6 @@
     gap: 20px;
 }
 
-
-
 #return-button {
     height: 2rem;
     width: 100%;
@@ -140,13 +138,8 @@ nav::-webkit-scrollbar {
 </style>
 
 <script>
-    import { Router, Link, Route } from "svelte-routing";
-	export let url = "";
     
 	import { onMount } from 'svelte';
-
-
-    
 	onMount(async () => {
 
 
@@ -154,11 +147,11 @@ nav::-webkit-scrollbar {
 		const sections = document.querySelectorAll("section");
 		const navList = document.getElementById('nav-list');
         const bar = document.getElementById('nav-list-bar');
-		var sectionsArr = [];
+        var sectionsArr = Array.from(sections);
 		var x = 1;
 
 		/* Konvertiert "Sections" NodeList zu Array (falls man's mal brauch x) */
-		for(var i = sections.length; i--; sectionsArr.unshift(sections[i]));
+		// for(var i = sections.length; i--; sectionsArr.unshift(sections[i]));
 
 		/* Fügt h2 zu allen elementen der NodeList */
 		sectionsArr.forEach(element=> {
