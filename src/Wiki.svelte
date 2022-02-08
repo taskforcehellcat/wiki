@@ -4,7 +4,7 @@
     #wiki-wrapper {
     min-height: 120vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 38rem 4fr;
     grid-template-rows: 10fr 1fr;
     }
     #nav-list-bar {
@@ -135,6 +135,19 @@ nav {
 nav::-webkit-scrollbar {
     display: none;
 }
+
+
+/* Temporary Media Query */
+@media only screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    #wiki-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
 </style>
 
 <script>
