@@ -630,48 +630,48 @@ var app = (function () {
     			if (content_slot) content_slot.c();
     			t14 = space();
     			footer = element("footer");
-    			attr_dev(span0, "class", "svelte-zqg5hc");
-    			add_location(span0, file$a, 201, 32, 4410);
+    			attr_dev(span0, "class", "svelte-ke9tv4");
+    			add_location(span0, file$a, 53, 28, 1847);
     			attr_dev(div0, "id", "nav-logo");
-    			attr_dev(div0, "class", "svelte-zqg5hc");
-    			add_location(div0, file$a, 201, 8, 4386);
-    			attr_dev(span1, "class", "material-icons svelte-zqg5hc");
-    			add_location(span1, file$a, 203, 12, 4478);
+    			attr_dev(div0, "class", "svelte-ke9tv4");
+    			add_location(div0, file$a, 53, 4, 1823);
+    			attr_dev(span1, "class", "material-icons svelte-ke9tv4");
+    			add_location(span1, file$a, 55, 6, 1905);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
-    			attr_dev(input, "class", "svelte-zqg5hc");
-    			add_location(input, file$a, 204, 12, 4534);
+    			attr_dev(input, "class", "svelte-ke9tv4");
+    			add_location(input, file$a, 56, 6, 1955);
     			attr_dev(div1, "id", "nav-search");
-    			attr_dev(div1, "class", "svelte-zqg5hc");
-    			add_location(div1, file$a, 202, 8, 4443);
-    			attr_dev(div2, "class", "nav-list-title svelte-zqg5hc");
-    			add_location(div2, file$a, 208, 8, 4651);
+    			attr_dev(div1, "class", "svelte-ke9tv4");
+    			add_location(div1, file$a, 54, 4, 1876);
+    			attr_dev(div2, "class", "nav-list-title svelte-ke9tv4");
+    			add_location(div2, file$a, 59, 4, 2044);
     			attr_dev(div3, "id", "nav-list-bar-thumb");
-    			attr_dev(div3, "class", "svelte-zqg5hc");
-    			add_location(div3, file$a, 211, 16, 4787);
+    			attr_dev(div3, "class", "svelte-ke9tv4");
+    			add_location(div3, file$a, 62, 8, 2162);
     			attr_dev(div4, "id", "nav-list-bar");
-    			attr_dev(div4, "class", "svelte-zqg5hc");
-    			add_location(div4, file$a, 210, 12, 4746);
+    			attr_dev(div4, "class", "svelte-ke9tv4");
+    			add_location(div4, file$a, 61, 6, 2129);
     			attr_dev(div5, "id", "nav-list");
-    			attr_dev(div5, "class", "svelte-zqg5hc");
-    			add_location(div5, file$a, 214, 8, 4870);
+    			attr_dev(div5, "class", "svelte-ke9tv4");
+    			add_location(div5, file$a, 64, 6, 2215);
     			attr_dev(div6, "id", "nav-list-wrapper");
-    			attr_dev(div6, "class", "svelte-zqg5hc");
-    			add_location(div6, file$a, 209, 8, 4705);
-    			attr_dev(div7, "class", "nav-list-title svelte-zqg5hc");
-    			add_location(div7, file$a, 217, 8, 4927);
+    			attr_dev(div6, "class", "svelte-ke9tv4");
+    			add_location(div6, file$a, 60, 4, 2094);
+    			attr_dev(div7, "class", "nav-list-title svelte-ke9tv4");
+    			add_location(div7, file$a, 66, 4, 2254);
     			attr_dev(a, "href", "/");
     			attr_dev(a, "id", "return-button");
-    			attr_dev(a, "class", "svelte-zqg5hc");
-    			add_location(a, file$a, 218, 8, 4975);
-    			attr_dev(nav, "class", "svelte-zqg5hc");
-    			add_location(nav, file$a, 200, 4, 4371);
-    			add_location(main, file$a, 223, 4, 5060);
-    			add_location(footer, file$a, 226, 4, 5123);
+    			attr_dev(a, "class", "svelte-ke9tv4");
+    			add_location(a, file$a, 67, 4, 2298);
+    			attr_dev(nav, "class", "svelte-ke9tv4");
+    			add_location(nav, file$a, 52, 2, 1812);
+    			add_location(main, file$a, 70, 2, 2357);
+    			add_location(footer, file$a, 73, 2, 2407);
     			attr_dev(div8, "id", "wiki-wrapper");
-    			attr_dev(div8, "class", "svelte-zqg5hc");
-    			add_location(div8, file$a, 198, 0, 4340);
+    			attr_dev(div8, "class", "svelte-ke9tv4");
+    			add_location(div8, file$a, 51, 0, 1785);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -759,8 +759,8 @@ var app = (function () {
     	onMount(async () => {
     		const thumb = document.getElementById("nav-list-bar-thumb");
     		const sections = document.querySelectorAll("section");
-    		const navList = document.getElementById('nav-list');
-    		const bar = document.getElementById('nav-list-bar');
+    		const navList = document.getElementById("nav-list");
+    		const bar = document.getElementById("nav-list-bar");
     		var sectionsArr = Array.from(sections);
 
     		/* Konvertiert "Sections" NodeList zu Array (falls man's mal brauch x) */
@@ -768,18 +768,18 @@ var app = (function () {
     		/* Fügt h2 zu allen elementen der NodeList */
     		sectionsArr.forEach(element => {
     			element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
-    			navList.innerHTML += '<a href="#' + element.id + '">' + element.id + '</a>';
+    			navList.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
     		});
 
     		/* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
     		var thumbPercent = 1 / sections.length * 100;
 
-    		if (parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <= parseInt(window.getComputedStyle(bar).getPropertyValue('height'))) {
-    			thumb.style.height = parseInt(parseInt(window.getComputedStyle(bar).getPropertyValue('height'))) * (thumbPercent / 100) + "px";
+    		if (parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <= parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) {
+    			thumb.style.height = parseInt(parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) * (thumbPercent / 100) + "px";
     		}
 
     		//	thumb.style.height = 1 / sections.length * 100 + "%";
-    		window.addEventListener('scroll', event => {
+    		window.addEventListener("scroll", event => {
     			bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
     		});
 
@@ -3517,7 +3517,7 @@ var app = (function () {
     /* src\Home.svelte generated by Svelte v3.46.4 */
     const file = "src\\Home.svelte";
 
-    // (47:12) <Link to="grundlagen">
+    // (53:6) <Link to="grundlagen">
     function create_default_slot_13(ctx) {
     	let t;
 
@@ -3537,14 +3537,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(47:12) <Link to=\\\"grundlagen\\\">",
+    		source: "(53:6) <Link to=\\\"grundlagen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (49:16) <Link to="/">
+    // (56:8) <Link to="/">
     function create_default_slot_12(ctx) {
     	let t;
 
@@ -3564,14 +3564,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(49:16) <Link to=\\\"/\\\">",
+    		source: "(56:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:16) <Link to="/">
+    // (57:8) <Link to="/">
     function create_default_slot_11(ctx) {
     	let t;
 
@@ -3591,14 +3591,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(50:16) <Link to=\\\"/\\\">",
+    		source: "(57:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (53:16) <Link to="/">
+    // (61:8) <Link to="/">
     function create_default_slot_10(ctx) {
     	let t;
 
@@ -3618,14 +3618,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(53:16) <Link to=\\\"/\\\">",
+    		source: "(61:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (54:16) <Link to="panzertruppen">
+    // (62:8) <Link to="panzertruppen">
     function create_default_slot_9$1(ctx) {
     	let t;
 
@@ -3645,14 +3645,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$1.name,
     		type: "slot",
-    		source: "(54:16) <Link to=\\\"panzertruppen\\\">",
+    		source: "(62:8) <Link to=\\\"panzertruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (57:16) <Link to="/">
+    // (66:8) <Link to="/">
     function create_default_slot_8$1(ctx) {
     	let t;
 
@@ -3672,14 +3672,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(57:16) <Link to=\\\"/\\\">",
+    		source: "(66:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (58:16) <Link to="/">
+    // (67:8) <Link to="/">
     function create_default_slot_7$1(ctx) {
     	let t;
 
@@ -3699,14 +3699,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$1.name,
     		type: "slot",
-    		source: "(58:16) <Link to=\\\"/\\\">",
+    		source: "(67:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (59:16) <Link to="/">
+    // (68:8) <Link to="/">
     function create_default_slot_6$1(ctx) {
     	let t;
 
@@ -3726,14 +3726,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(59:16) <Link to=\\\"/\\\">",
+    		source: "(68:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (62:12) <Link to="sanitaeter">
+    // (71:6) <Link to="sanitaeter">
     function create_default_slot_5$1(ctx) {
     	let t;
 
@@ -3753,14 +3753,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$1.name,
     		type: "slot",
-    		source: "(62:12) <Link to=\\\"sanitaeter\\\">",
+    		source: "(71:6) <Link to=\\\"sanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (63:12) <Link to="aufklaerer">
+    // (72:6) <Link to="aufklaerer">
     function create_default_slot_4$1(ctx) {
     	let t;
 
@@ -3780,14 +3780,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$1.name,
     		type: "slot",
-    		source: "(63:12) <Link to=\\\"aufklaerer\\\">",
+    		source: "(72:6) <Link to=\\\"aufklaerer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (65:16) <Link to="/">
+    // (75:8) <Link to="/">
     function create_default_slot_3$1(ctx) {
     	let t;
 
@@ -3807,14 +3807,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$1.name,
     		type: "slot",
-    		source: "(65:16) <Link to=\\\"/\\\">",
+    		source: "(75:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (66:16) <Link to="/">
+    // (76:8) <Link to="/">
     function create_default_slot_2$1(ctx) {
     	let t;
 
@@ -3834,14 +3834,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$1.name,
     		type: "slot",
-    		source: "(66:16) <Link to=\\\"/\\\">",
+    		source: "(76:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (67:16) <Link to="/">
+    // (77:8) <Link to="/">
     function create_default_slot_1$1(ctx) {
     	let t;
 
@@ -3861,14 +3861,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(67:16) <Link to=\\\"/\\\">",
+    		source: "(77:8) <Link to=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (46:8) <Router url="{url}">
+    // (52:4) <Router {url}>
     function create_default_slot$1(ctx) {
     	let link0;
     	let t0;
@@ -4069,22 +4069,22 @@ var app = (function () {
     			create_component(link11.$$.fragment);
     			t19 = space();
     			create_component(link12.$$.fragment);
-    			add_location(span0, file, 47, 43, 1728);
+    			add_location(span0, file, 54, 9, 1711);
     			attr_dev(a0, "href", "/");
     			attr_dev(a0, "class", "expandable");
-    			add_location(a0, file, 47, 12, 1697);
-    			add_location(span1, file, 51, 43, 1916);
+    			add_location(a0, file, 53, 6, 1670);
+    			add_location(span1, file, 59, 9, 1881);
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "class", "expandable");
-    			add_location(a1, file, 51, 12, 1885);
-    			add_location(span2, file, 55, 43, 2115);
+    			add_location(a1, file, 58, 6, 1840);
+    			add_location(span2, file, 64, 9, 2062);
     			attr_dev(a2, "href", "/");
     			attr_dev(a2, "class", "expandable");
-    			add_location(a2, file, 55, 12, 2084);
-    			add_location(span3, file, 63, 43, 2481);
+    			add_location(a2, file, 63, 6, 2021);
+    			add_location(span3, file, 73, 9, 2378);
     			attr_dev(a3, "href", "/");
     			attr_dev(a3, "class", "expandable");
-    			add_location(a3, file, 63, 12, 2450);
+    			add_location(a3, file, 72, 6, 2337);
     		},
     		m: function mount(target, anchor) {
     			mount_component(link0, target, anchor);
@@ -4283,7 +4283,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$1.name,
     		type: "slot",
-    		source: "(46:8) <Router url=\\\"{url}\\\">",
+    		source: "(52:4) <Router {url}>",
     		ctx
     	});
 
@@ -4332,22 +4332,22 @@ var app = (function () {
     			t5 = space();
     			div2 = element("div");
     			create_component(router.$$.fragment);
-    			add_location(br, file, 36, 47, 1264);
-    			add_location(span0, file, 36, 51, 1268);
+    			add_location(br, file, 42, 45, 1271);
+    			add_location(span0, file, 42, 51, 1277);
     			attr_dev(div0, "id", "home-nav-logo");
-    			add_location(div0, file, 36, 4, 1221);
+    			add_location(div0, file, 42, 2, 1228);
     			attr_dev(span1, "class", "material-icons");
-    			add_location(span1, file, 38, 8, 1333);
+    			add_location(span1, file, 44, 4, 1336);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
-    			add_location(input, file, 39, 8, 1385);
+    			add_location(input, file, 45, 4, 1384);
     			attr_dev(div1, "id", "home-nav-search");
-    			add_location(div1, file, 37, 4, 1297);
+    			add_location(div1, file, 43, 2, 1304);
     			attr_dev(div2, "id", "home-nav-list");
-    			add_location(div2, file, 44, 4, 1576);
+    			add_location(div2, file, 50, 2, 1571);
     			attr_dev(div3, "id", "home-overlay");
-    			add_location(div3, file, 35, 0, 1192);
+    			add_location(div3, file, 41, 0, 1201);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -4485,7 +4485,7 @@ var app = (function () {
 
     /* src\App.svelte generated by Svelte v3.46.4 */
 
-    // (21:1) <Route path="/">
+    // (21:2) <Route path="/">
     function create_default_slot_9(ctx) {
     	let home;
     	let current;
@@ -4517,14 +4517,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(21:1) <Route path=\\\"/\\\">",
+    		source: "(21:2) <Route path=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (22:1) <Route path="grundlagen">
+    // (22:2) <Route path="grundlagen">
     function create_default_slot_8(ctx) {
     	let grundlagen;
     	let current;
@@ -4556,14 +4556,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(22:1) <Route path=\\\"grundlagen\\\">",
+    		source: "(22:2) <Route path=\\\"grundlagen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (23:1) <Route path="fuehrungskraefte">
+    // (23:2) <Route path="fuehrungskraefte">
     function create_default_slot_7(ctx) {
     	let fuehrungskraefte;
     	let current;
@@ -4595,14 +4595,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(23:1) <Route path=\\\"fuehrungskraefte\\\">",
+    		source: "(23:2) <Route path=\\\"fuehrungskraefte\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (24:1) <Route path="streitkraefte">
+    // (24:2) <Route path="streitkraefte">
     function create_default_slot_6(ctx) {
     	let streitkraefte;
     	let current;
@@ -4634,14 +4634,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(24:1) <Route path=\\\"streitkraefte\\\">",
+    		source: "(24:2) <Route path=\\\"streitkraefte\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (25:1) <Route path="logistiker">
+    // (25:2) <Route path="logistiker">
     function create_default_slot_5(ctx) {
     	let logistiker;
     	let current;
@@ -4673,14 +4673,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(25:1) <Route path=\\\"logistiker\\\">",
+    		source: "(25:2) <Route path=\\\"logistiker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (26:1) <Route path="panzertruppen">
+    // (26:2) <Route path="panzertruppen">
     function create_default_slot_4(ctx) {
     	let panzertruppen;
     	let current;
@@ -4712,14 +4712,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(26:1) <Route path=\\\"panzertruppen\\\">",
+    		source: "(26:2) <Route path=\\\"panzertruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (27:1) <Route path="sanitaeter">
+    // (27:2) <Route path="sanitaeter">
     function create_default_slot_3(ctx) {
     	let sanitaeter;
     	let current;
@@ -4751,14 +4751,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(27:1) <Route path=\\\"sanitaeter\\\">",
+    		source: "(27:2) <Route path=\\\"sanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (28:1) <Route path="aufklaerer">
+    // (28:2) <Route path="aufklaerer">
     function create_default_slot_2(ctx) {
     	let aufklaerer;
     	let current;
@@ -4790,14 +4790,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(28:1) <Route path=\\\"aufklaerer\\\">",
+    		source: "(28:2) <Route path=\\\"aufklaerer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (29:1) <Route path="fuhrpark">
+    // (30:2) <Route path="fuhrpark">
     function create_default_slot_1(ctx) {
     	let fuhrpark;
     	let current;
@@ -4829,14 +4829,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(29:1) <Route path=\\\"fuhrpark\\\">",
+    		source: "(30:2) <Route path=\\\"fuhrpark\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (20:0) <Router url="{url}">
+    // (20:0) <Router {url}>
     function create_default_slot(ctx) {
     	let route0;
     	let t0;
@@ -5093,7 +5093,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(20:0) <Router url=\\\"{url}\\\">",
+    		source: "(20:0) <Router {url}>",
     		ctx
     	});
 
