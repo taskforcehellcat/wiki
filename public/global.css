@@ -66,15 +66,59 @@ main {
     color: #061748;
 }
 
-#home-nav-list a {
+#home-nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15pt;
+    letter-spacing: .12rem;
+    gap: 10px;
+    color: #94A2CF;
+}
+
+#home-nav-list>a:not(.expandable),
+.expandable a {
     width: 30rem;
-    height: 4rem;
+    height: fit-content;
     display: flex;
     align-items: center;
     transition: color .2s ease-out;
     justify-content: space-between;
 }
 
-#home-nav-list a:hover {
+#home-nav-list>a:not(.expandable):hover,
+.expandable a:hover,
+.expandable>span:hover {
     color: #fff;
+}
+
+.expandable>span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.expandable {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.expandable a {
+    display: none;
+    font-size: 13pt;
+    margin-left: 2rem;
+    margin-right: -2rem;
+}
+
+.expandable>a:nth-child(2) {
+    margin-top: .3rem;
+}
+
+.expandable>a:last-child {
+    margin-bottom: 1rem;
 }
