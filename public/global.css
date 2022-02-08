@@ -75,7 +75,7 @@ main {
     font-weight: 600;
     font-size: 15pt;
     letter-spacing: .12rem;
-    gap: 10px;
+    gap: 15px;
     color: #94A2CF;
 }
 
@@ -116,7 +116,7 @@ main {
 }
 
 .expandable>a:nth-child(2) {
-    margin-top: .3rem;
+    margin-top: .5rem;
 }
 
 .expandable>a:last-child {
