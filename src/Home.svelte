@@ -17,6 +17,7 @@
         font-weight: 300;
         color: #fff;
         font-family: 'purista-web', 'Segoe UI', sans-serif;
+        text-align: center;
     }
 
     #nav-logo>span {
@@ -39,7 +40,7 @@
 }
 
 #nav-search {
-    padding: 2%;
+    padding: 3.5rem;
 }
 
 #nav-search input {
@@ -66,6 +67,19 @@ input::placeholder {
 input:focus,
 input:focus {
     outline: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    #nav-search {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 610px) {
+    #nav-logo br{
+        display: none;
+    }
 }
 
 
@@ -104,7 +118,7 @@ input:focus {
 </script>
 
 <div id="home-overlay">
-    <div id="nav-logo">Task Force Hellcat <span>Wiki</span></div>
+    <div id="nav-logo">Task Force Hellcat <br><span>Wiki</span></div>
     <div id="nav-search">
         <span class="material-icons">search</span>
         <input type="text" name="search" placeholder="Wiki durchsuchen...">
@@ -116,28 +130,25 @@ input:focus {
         <Router url="{url}">
             <Link to="grundlagen">grundlagen</Link>
             <a href="/" class="expandable"><span>führungskräfte</span>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
+                <Link to="/">Truppführer</Link>
+                <Link to="/">Truppfunker</Link>
             </a>
             <a href="/" class="expandable"><span>streitkräfte</span>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
+                <Link to="/">Fußtruppen</Link>
+                <Link to="panzertruppen">Panzertruppen</Link>
             </a>
             <a href="/" class="expandable"><span>logistiker</span>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
+                <Link to="/">Kampfpioniere</Link>
+                <Link to="/">Hubschrauberpiloten</Link>
+                <Link to="/">Basis-logistiker</Link>
             </a>
             
-            <Link to="panzertruppen">panzertruppen</Link>
             <Link to="sanitaeter">sanitäter</Link>
             <Link to="aufklaerer">aufklärer</Link>
             <a href="/" class="expandable"><span>fuhrpark</span>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
-                <Link to="/">aufklärer</Link>
+                <Link to="/">Fahrzeuge</Link>
+                <Link to="/">Helikopter</Link>
+                <Link to="/">UAVs</Link>
             </a>
 
         </Router>
