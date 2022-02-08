@@ -1,88 +1,4 @@
 <style>
-    #home-overlay {
-        width: 100%;
-        height: 100vh;
-        background-color: #101B3B;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        gap: 3rem;
-    }
-
-    #nav-logo {
-        font-size: 35pt;
-        font-weight: 300;
-        color: #fff;
-        font-family: 'purista-web', 'Segoe UI', sans-serif;
-        text-align: center;
-    }
-
-    #nav-logo>span {
-        font-weight: 700;
-    }
-
-    #nav-search {
-    background-color: #273252;
-    width: 80rem;
-    height: 3rem;
-    border-radius: .7rem;
-    -webkit-border-radius: .7rem;
-    -moz-border-radius: .7rem;
-    -ms-border-radius: .7rem;
-    -o-border-radius: .7rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-}
-
-#nav-search {
-    padding: 3.5rem;
-}
-
-#nav-search input {
-    width: 100%;
-    height: 24px;
-    color: #fff;
-    font-size: 14pt;
-    font-weight: 300;
-}
-#nav-search .material-icons {
-    font-size: 20pt;
-    color: #94A2CF;
-}
-
-input {
-    background-color: none;
-    background: none;
-    border: none;
-}
-input::placeholder {
-    color: #94A2CF;
-    font-weight: 300;
-}
-input:focus,
-input:focus {
-    outline: none;
-}
-
-@media only screen and (max-width: 1100px) {
-    #nav-search {
-        width: 80%;
-    }
-}
-
-
-@media only screen and (min-width: 610px) {
-    #nav-logo br{
-        display: none;
-    }
-}
-
-
 
 </style>
 
@@ -118,8 +34,8 @@ input:focus {
 </script>
 
 <div id="home-overlay">
-    <div id="nav-logo">Task Force Hellcat <br><span>Wiki</span></div>
-    <div id="nav-search">
+    <div id="home-nav-logo">Task Force Hellcat <br><span>Wiki</span></div>
+    <div id="home-nav-search">
         <span class="material-icons">search</span>
         <input type="text" name="search" placeholder="Wiki durchsuchen...">
     </div>
@@ -128,26 +44,26 @@ input:focus {
 
     <div id="home-nav-list">
         <Router url="{url}">
-            <Link to="grundlagen">grundlagen</Link>
-            <a href="/" class="expandable"><span>führungskräfte</span>
-                <Link to="/">Truppführer</Link>
-                <Link to="/">Truppfunker</Link>
+            <Link to="grundlagen">GRUNDLAGEN</Link>
+            <a href="/" class="expandable"><span>FÜHRUNGSKRÄFTE</span>
+                <Link to="/">TRUPPFÜHRER</Link>
+                <Link to="/">TRUPPFUNKER</Link>
             </a>
-            <a href="/" class="expandable"><span>streitkräfte</span>
-                <Link to="/">Fußtruppen</Link>
-                <Link to="panzertruppen">Panzertruppen</Link>
+            <a href="/" class="expandable"><span>STREITKRÄFTE</span>
+                <Link to="/">FUẞTRUPPEN</Link>
+                <Link to="panzertruppen">PANZERTRUPPEN</Link>
             </a>
-            <a href="/" class="expandable"><span>logistiker</span>
-                <Link to="/">Kampfpioniere</Link>
-                <Link to="/">Hubschrauberpiloten</Link>
-                <Link to="/">Basis-logistiker</Link>
+            <a href="/" class="expandable"><span>LOGISTIKER</span>
+                <Link to="/">KAMPFPIONIERE</Link>
+                <Link to="/">HUBSCHRAUBERPILOTEN</Link>
+                <Link to="/">BASIS-LOGISTIKER</Link>
             </a>
             
-            <Link to="sanitaeter">sanitäter</Link>
-            <Link to="aufklaerer">aufklärer</Link>
-            <a href="/" class="expandable"><span>fuhrpark</span>
-                <Link to="/">Fahrzeuge</Link>
-                <Link to="/">Helikopter</Link>
+            <Link to="sanitaeter">SANITÄTER</Link>
+            <Link to="aufklaerer">AUFKLÄRER</Link>
+            <a href="/" class="expandable"><span>FUHRPARK</span>
+                <Link to="/">FAHRZEUGE</Link>
+                <Link to="/">HELIKOPTER</Link>
                 <Link to="/">UAVs</Link>
             </a>
 
