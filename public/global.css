@@ -13,7 +13,7 @@ html {
 body {
     width: 100%;
     /* font-family: 'Segoe UI', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', serif;
     font-size: 12pt;
 }
 
@@ -71,7 +71,6 @@ main {
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    text-transform: uppercase;
     font-weight: 600;
     font-size: 15pt;
     letter-spacing: .12rem;
@@ -140,5 +139,90 @@ main {
     main p {
         width: 100%;
         text-align: left;
+    }
+}
+
+#home-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: #101B3B;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 3rem;
+}
+
+#home-nav-logo {
+    font-size: 35pt;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'purista-web', 'Segoe UI', sans-serif;
+    text-align: center;
+}
+
+#home-nav-logo>span {
+    font-weight: 700;
+}
+
+#home-nav-search {
+    background-color: #273252;
+    width: 80rem;
+    height: 3rem;
+    border-radius: .7rem;
+    -webkit-border-radius: .7rem;
+    -moz-border-radius: .7rem;
+    -ms-border-radius: .7rem;
+    -o-border-radius: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#home-nav-search {
+    padding: 3.5rem;
+}
+
+#home-nav-search input {
+    width: 100%;
+    height: 24px;
+    color: #fff;
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+#home-nav-search .material-icons {
+    font-size: 20pt;
+    color: #94A2CF;
+}
+
+input {
+    background-color: none;
+    background: none;
+    border: none;
+}
+
+input::placeholder {
+    color: #94A2CF;
+    font-weight: 300;
+}
+
+input:focus,
+input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    #home-nav-search {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 610px) {
+    #home-nav-logo br {
+        display: none;
     }
 }
