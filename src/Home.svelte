@@ -1,4 +1,3 @@
-
 <style>
     #home-overlay {
         width: 100%;
@@ -69,19 +68,6 @@ input:focus {
     outline: none;
 }
 
-#home-nav-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15pt;
-    letter-spacing: .12rem;
-    gap: 2px;
-    color: #94A2CF;
-
-}
 
 
 </style>
@@ -89,7 +75,32 @@ input:focus {
 
 <script>
     import { Router, Link, Route } from "svelte-routing";
+    import { onMount } from 'svelte';
 	export let url = "";
+
+    
+    
+	onMount(async () => {
+        const expandable = document.getElementsByClassName("expandable");
+        var expandableArr = Array.from(expandable);
+
+        expandableArr.forEach(element => {
+            var open = false;
+            element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round">expand_more</span>');
+            element.onclick = function(event) {
+                event.preventDefault();
+                open = !open;
+                if (open == true) {
+                element.querySelector(".material-icons-round").style.transform = "rotate(90deg)";
+                element.querySelectorAll("a").forEach(element => {element.style.display = "flex"})
+                } else {
+                    element.querySelector(".material-icons-round").style.transform = "rotate(0deg)";
+                    element.querySelectorAll("a").forEach(element => {element.style.display = "none"})
+                }
+            };
+        });
+    })
+
 </script>
 
 <div id="home-overlay">
@@ -99,24 +110,37 @@ input:focus {
         <input type="text" name="search" placeholder="Wiki durchsuchen...">
     </div>
 
-
-
-
     <!-- wär cool wenn das expand ding automatisch geht mit einer "expandable" klasse oder so :) -->
 
     <div id="home-nav-list">
         <Router url="{url}">
-        <Link to="grundlagen">grundlagen</Link>
-        <a href="/">führungskräfte<span class="material-icons-round">expand_more</span></a>
-        <a href="/">streitkräfte<span class="material-icons-round">expand_more</span></a>
-        <a href="/">logistiker<span class="material-icons-round">expand_more</span></a>
-        <Link to="panzertruppen">panzertruppen</Link>
+            <Link to="grundlagen">grundlagen</Link>
+            <a href="/" class="expandable"><span>führungskräfte</span>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+            </a>
+            <a href="/" class="expandable"><span>streitkräfte</span>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+            </a>
+            <a href="/" class="expandable"><span>logistiker</span>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+            </a>
+            
+            <Link to="panzertruppen">panzertruppen</Link>
+            <Link to="sanitaeter">sanitäter</Link>
+            <Link to="aufklaerer">aufklärer</Link>
+            <a href="/" class="expandable"><span>fuhrpark</span>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+                <Link to="/">aufklärer</Link>
+            </a>
 
-        <Link to="sanitaeter">sanitäter</Link>
-
-        <Link to="aufklaerer">aufklärer</Link>
-        <a href="/">fuhrpark<span class="material-icons-round">expand_more</span></a>
-    </Router>
+        </Router>
     </div>
     
 </div>
