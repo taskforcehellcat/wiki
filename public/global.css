@@ -122,3 +122,23 @@ main {
 .expandable>a:last-child {
     margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 370px) {
+    #home-nav-list>a:not(.expandable),
+    .expandable a {
+        width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 1530px) {
+    main p {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    main p {
+        width: 100%;
+        text-align: left;
+    }
+}
