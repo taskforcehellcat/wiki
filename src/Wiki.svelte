@@ -162,29 +162,20 @@
     /* Fügt h2 zu allen elementen der NodeList */
     sectionsArr.forEach((element) => {
       element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
-      navList.innerHTML +=
-        '<a href="#' + element.id + '">' + element.id + "</a>";
+      navList.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
     });
 
     /* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
     var thumbPercent = (1 / sections.length) * 100;
-    if (
-      parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <=
-      parseInt(window.getComputedStyle(bar).getPropertyValue("height"))
-    ) {
-      thumb.style.height =
-        parseInt(
-          parseInt(window.getComputedStyle(bar).getPropertyValue("height"))
-        ) *
-          (thumbPercent / 100) +
-        "px";
+    if (parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <= parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) {
+      thumb.style.height = parseInt(parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) * (thumbPercent / 100) + "px";
     } else;
 
     //	thumb.style.height = 1 / sections.length * 100 + "%";
 
-    window.addEventListener("scroll", (event) => {
-      bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
-    });
+    //  window.addEventListener("scroll", (event) => {
+    //    bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
+    //  });
 
     var sectionHeight = 0;
     sections.forEach((element) => {
