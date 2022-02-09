@@ -59,6 +59,10 @@ main p {
     display: inline-block;
 }
 
+section>p:not(section>p:first-of-type) {
+    margin-top: 2rem;
+}
+
 main {
     width: 100%;
     padding: 10.4rem 8rem 10rem 8rem;
