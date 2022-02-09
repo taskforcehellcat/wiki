@@ -17,17 +17,6 @@
     justify-self: end;
   }
 
-  #nav-logo {
-    font-size: 28pt;
-    font-weight: 300;
-    color: #fff;
-    font-family: "purista-web", "Segoe UI", sans-serif;
-  }
-
-  #nav-logo > span {
-    font-weight: 700;
-  }
-
   input {
     background-color: none;
     background: none;
@@ -147,6 +136,7 @@
 </style>
 
 <script>
+  import { Router, Link, Route } from "svelte-routing";
   import { onMount } from "svelte";
   onMount(async () => {
     const thumb = document.getElementById("nav-list-bar-thumb");
@@ -190,7 +180,7 @@
 
 <div id="wiki-wrapper">
   <nav>
-    <div id="nav-logo">TFHC <span>Wiki</span></div>
+    <Link to="/" id="nav-logo">TFHC <span>Wiki</span></Link>
     <div id="nav-search">
       <span class="material-icons">search</span>
       <input type="text" name="search" placeholder="Wiki durchsuchen..." />
