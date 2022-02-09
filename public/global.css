@@ -11,6 +11,7 @@ html {
 
 body {
     width: 100%;
+    height: 100vh;
     /* font-family: 'Segoe UI', sans-serif; */
     font-family: 'Open Sans', serif;
     font-size: 12pt;
@@ -73,7 +74,6 @@ main {
 #home-nav-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: left;
     font-weight: 600;
     font-size: 15pt;
@@ -147,13 +147,13 @@ main {
 }
 
 #home-overlay {
+    padding-top: 10%;
     width: 100%;
     height: 100vh;
     background-color: #101B3B;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: #fff;
     gap: 3rem;
@@ -229,4 +229,31 @@ input:focus {
     #home-nav-logo br {
         display: none;
     }
+}
+
+#nav-logo {
+    font-size: 28pt;
+    font-weight: 300;
+    color: #fff;
+    font-family: "purista-web", "Segoe UI", sans-serif;
+    display: flex;
+    align-self: flex-start;
+    transition: transform .1s ease-in-out;
+    -webkit-transition: transform .1s ease-in-out;
+    -moz-transition: transform .1s ease-in-out;
+    -ms-transition: transform .1s ease-in-out;
+    -o-transition: transform .1s ease-in-out;
+    gap: 6px;
+}
+
+#nav-logo>span {
+    font-weight: 700;
+}
+
+#nav-logo:hover {
+    transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
 }
