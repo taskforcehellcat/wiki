@@ -631,47 +631,47 @@ var app = (function () {
     			t14 = space();
     			footer = element("footer");
     			attr_dev(span0, "class", "svelte-ke9tv4");
-    			add_location(span0, file$f, 201, 28, 4491);
+    			add_location(span0, file$f, 192, 28, 4422);
     			attr_dev(div0, "id", "nav-logo");
     			attr_dev(div0, "class", "svelte-ke9tv4");
-    			add_location(div0, file$f, 201, 4, 4467);
+    			add_location(div0, file$f, 192, 4, 4398);
     			attr_dev(span1, "class", "material-icons svelte-ke9tv4");
-    			add_location(span1, file$f, 203, 6, 4549);
+    			add_location(span1, file$f, 194, 6, 4480);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
     			attr_dev(input, "class", "svelte-ke9tv4");
-    			add_location(input, file$f, 204, 6, 4599);
+    			add_location(input, file$f, 195, 6, 4530);
     			attr_dev(div1, "id", "nav-search");
     			attr_dev(div1, "class", "svelte-ke9tv4");
-    			add_location(div1, file$f, 202, 4, 4520);
+    			add_location(div1, file$f, 193, 4, 4451);
     			attr_dev(div2, "class", "nav-list-title svelte-ke9tv4");
-    			add_location(div2, file$f, 207, 4, 4688);
+    			add_location(div2, file$f, 198, 4, 4619);
     			attr_dev(div3, "id", "nav-list-bar-thumb");
     			attr_dev(div3, "class", "svelte-ke9tv4");
-    			add_location(div3, file$f, 210, 8, 4806);
+    			add_location(div3, file$f, 201, 8, 4737);
     			attr_dev(div4, "id", "nav-list-bar");
     			attr_dev(div4, "class", "svelte-ke9tv4");
-    			add_location(div4, file$f, 209, 6, 4773);
+    			add_location(div4, file$f, 200, 6, 4704);
     			attr_dev(div5, "id", "nav-list");
     			attr_dev(div5, "class", "svelte-ke9tv4");
-    			add_location(div5, file$f, 212, 6, 4859);
+    			add_location(div5, file$f, 203, 6, 4790);
     			attr_dev(div6, "id", "nav-list-wrapper");
     			attr_dev(div6, "class", "svelte-ke9tv4");
-    			add_location(div6, file$f, 208, 4, 4738);
+    			add_location(div6, file$f, 199, 4, 4669);
     			attr_dev(div7, "class", "nav-list-title svelte-ke9tv4");
-    			add_location(div7, file$f, 214, 4, 4898);
+    			add_location(div7, file$f, 205, 4, 4829);
     			attr_dev(a, "href", "/");
     			attr_dev(a, "id", "return-button");
     			attr_dev(a, "class", "svelte-ke9tv4");
-    			add_location(a, file$f, 215, 4, 4942);
+    			add_location(a, file$f, 206, 4, 4873);
     			attr_dev(nav, "class", "svelte-ke9tv4");
-    			add_location(nav, file$f, 200, 2, 4456);
-    			add_location(main, file$f, 218, 2, 5001);
-    			add_location(footer, file$f, 221, 2, 5051);
+    			add_location(nav, file$f, 191, 2, 4387);
+    			add_location(main, file$f, 209, 2, 4932);
+    			add_location(footer, file$f, 212, 2, 4982);
     			attr_dev(div8, "id", "wiki-wrapper");
     			attr_dev(div8, "class", "svelte-ke9tv4");
-    			add_location(div8, file$f, 199, 0, 4429);
+    			add_location(div8, file$f, 190, 0, 4360);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -779,10 +779,9 @@ var app = (function () {
     		}
 
     		//	thumb.style.height = 1 / sections.length * 100 + "%";
-    		window.addEventListener("scroll", event => {
-    			bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
-    		});
-
+    		//  window.addEventListener("scroll", (event) => {
+    		//    bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
+    		//  });
     		var sectionHeight = 0;
 
     		sections.forEach(element => {
