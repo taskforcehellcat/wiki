@@ -7,7 +7,6 @@
 
 html {
     font-size: 62.5%;
-    scroll-padding-top: 20rem;
 }
 
 body {
@@ -64,6 +63,7 @@ main {
     width: 100%;
     padding: 10.4rem 8rem 10rem 8rem;
     color: #061748;
+    scroll-padding-top: 20rem;
 }
 
 #home-nav-list {
