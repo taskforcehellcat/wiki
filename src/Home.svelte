@@ -12,24 +12,17 @@
 
     expandableArr.forEach((element) => {
       var open = false;
-      element
-        .querySelector("span")
-        .insertAdjacentHTML(
-          "beforeend",
-          '<span class="material-icons-round">expand_more</span>'
-        );
+      element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round">expand_more</span>');
       element.onclick = function (event) {
         event.preventDefault();
         open = !open;
         if (open == true) {
-          element.querySelector(".material-icons-round").style.transform =
-            "rotate(90deg)";
+          element.querySelector(".material-icons-round").style.transform = "rotate(90deg)";
           element.querySelectorAll("a").forEach((element) => {
             element.style.display = "flex";
           });
         } else {
-          element.querySelector(".material-icons-round").style.transform =
-            "rotate(0deg)";
+          element.querySelector(".material-icons-round").style.transform = "rotate(0deg)";
           element.querySelectorAll("a").forEach((element) => {
             element.style.display = "none";
           });
@@ -40,7 +33,7 @@
 </script>
 
 <div id="home-overlay">
-  <div id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></div>
+  <Link to="/" id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></Link>
   <div id="home-nav-search">
     <span class="material-icons">search</span>
     <input type="text" name="search" placeholder="Wiki durchsuchen..." />
@@ -53,28 +46,28 @@
       <Link to="grundlagen">GRUNDLAGEN</Link>
       <a href="/" class="expandable"
         ><span>FÜHRUNGSKRÄFTE</span>
-        <Link to="/">TRUPPFÜHRER</Link>
-        <Link to="/">TRUPPFUNKER</Link>
+        <Link to="truppfuehrer">TRUPPFÜHRER</Link>
+        <Link to="truppfunker">TRUPPFUNKER</Link>
       </a>
       <a href="/" class="expandable"
         ><span>STREITKRÄFTE</span>
-        <Link to="/">FUẞTRUPPEN</Link>
+        <Link to="fusstruppen">FUẞTRUPPEN</Link>
         <Link to="panzertruppen">PANZERTRUPPEN</Link>
       </a>
       <a href="/" class="expandable"
         ><span>LOGISTIKER</span>
-        <Link to="/">KAMPFPIONIERE</Link>
-        <Link to="/">HUBSCHRAUBERPILOTEN</Link>
-        <Link to="/">BASIS-LOGISTIKER</Link>
+        <Link to="kampfpioniere">KAMPFPIONIERE</Link>
+        <Link to="hubschrauberpiloten">HUBSCHRAUBERPILOTEN</Link>
+        <Link to="basis-logistiker">BASIS-LOGISTIKER</Link>
       </a>
 
       <Link to="sanitaeter">SANITÄTER</Link>
       <Link to="aufklaerer">AUFKLÄRER</Link>
       <a href="/" class="expandable"
         ><span>FUHRPARK</span>
-        <Link to="/">FAHRZEUGE</Link>
-        <Link to="/">HELIKOPTER</Link>
-        <Link to="/">UAVs</Link>
+        <Link to="fahrzeuge">FAHRZEUGE</Link>
+        <Link to="helikopter">HELIKOPTER</Link>
+        <Link to="uavs">UAVs</Link>
       </a>
     </Router>
   </div>
