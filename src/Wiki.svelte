@@ -135,7 +135,7 @@
   }
 </style>
 
-<script>
+<script lang="ts">
   import { Router, Link, Route } from "svelte-routing";
   import { onMount } from "svelte";
   onMount(async () => {

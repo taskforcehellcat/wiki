@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Grundlagen from "./Wiki/Grundlagen.svelte";
   import Panzertruppen from "./Wiki/Panzertruppen.svelte";
   import Sanitaeter from "./Wiki/Sanitaeter.svelte";
