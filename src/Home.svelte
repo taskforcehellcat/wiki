@@ -33,7 +33,7 @@
 </script>
 
 <div id="home-overlay">
-  <Link to="/" id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></Link>
+  <div id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></div>
   <div id="home-nav-search">
     <span class="material-icons">search</span>
     <input type="text" name="search" placeholder="Wiki durchsuchen..." />
