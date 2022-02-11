@@ -1,74 +1,87 @@
 import os
 import json
+import re
+from bs4 import BeautifulSoup
+
+# DEPENDENCIES OF THIS SCRIPT ARE: lxml, bs4
 
 PATH = r"../src/Wiki/"
 
-# helper function that extracts all sections and contents
-# input: svelte file name
-# output: array: [#sections, output array]
-
-# output array format: index 0 - h0, index 1 - h1, index 2 - h1 contents, index 3 - h2, etc.
-
-def getContents(filename):
+def parse_page(filename):
+    '''
+    takes a svelte file name and returns the title of the page and a dict with
+    section names (keys) and their text contents (values), bundled as an array
     
-    dir = PATH + filename
+    input: svelte file name (with .svelte extension)
+    output: array
+        index 0: title of the page
+        index 1: dict with entries ' section name : section text '
 
-    file = open(dir)
-    raw_content = file.read()
+    remark: h2, h3 etc. headers are ignored. 
+    '''
 
-    # strip everything before and after wiki tag
-
-    # end of <Wiki> tag
-    start = raw_content.find("<h1>") # the tag itself is 6 chars
-    end = raw_content.find("</svelte:fragment>")
-    content = raw_content[start:end]
-
-    # remove all unnecessary tags
-    content = content.replace("</h1>", "")
-    content = content.replace("<h1>", "")
-    content = content.replace("</p>", "")
-    content = content.replace("<p>", "")
-    content = content.replace("<p />", "")
-    content = content.replace("</section>", "")
-    content = content.replace("\n", "")
-    content = content.replace('"', "")
-
-    sections_count = 0
-    for i in content:
-        if i == '>':
-            sections_count = sections_count + 1
-
-    content = content.replace(">","<section id=")
+    page_name = ''
+    page_sections = {}
     
-    sections = content.split("<section id=")
+    with open(PATH+filename, 'r') as svelte:
 
-    # strip whitespaces 
-    for element in sections:
-        sections[sections.index(element)] = element.strip()
+        # reading the .svelte and setting the Wiki tag as source
 
-    file.close()
+        index = svelte.read()
+        bs = BeautifulSoup(index, 'lxml')
+        root = bs.wiki.find('svelte:fragment')
 
-    return [sections_count, sections]
+        for section in root.find_all('section'):
+            section_text = ''
 
-print(getContents("Panzertruppen.svelte"))
+            for p in section.descendants: 
+                if p.name == 'p':
+                    section_text = section_text + p.text + ' '
 
-files = os.listdir(PATH) # array with svelte file names
+            # remove tags
 
-to_JSON = {}
-for file in files:
-    parse = getContents(file)
-    
-    pagename = parse[1][0]
-    current_sections = parse[0]
-    
-    to_page = {}
-    for i in range(0,current_sections):
-        this_entry = {parse[1][2*i+1]:parse[1][2*(i+1)]}
-        to_page.update(this_entry)
+            tags_to_remove = []#'a', 'link', 'Link', 'b', 'i', 'img', 'u', 'br', 'hr', '<strong>', 'em', 'abbr', 'acronym', 'address', 'bdo', 'blockquote', 'cite', 'q', 'code', 'ins', 'del', 'dfn', 'kbd', 'pre', 'samp', 'var', 'area', 'map', 'param', 'object', 'ul', 'ol', 'li', 'dl', 'dt', 'dd', 'noscript', 'audio', 'base']
 
-    to_JSON[pagename] = to_page
+            # apparently removal of tags is already handeled by bs4
+            
+            for tag in tags_to_remove:
+                re.sub(r'<'+tag+'[*]>', '', section_text)
 
-print(to_JSON)
+            page_sections.update({section.attrs['id']:section_text})
 
-with open('searchIndex.json', 'w', encoding='utf-8') as f:
-    json.dump(to_JSON, f, ensure_ascii=True, indent=4)
+    page_name = root.h1.text
+
+    return [page_name, page_sections]
+
+def save_to_JSON(dict_to_save):
+    '''
+    saves given dict as searchIndex.json
+
+    returns: 0 if successful
+    '''
+
+    with open('searchIndex.json', 'w', encoding='utf-8') as f:
+        json.dump(dict_to_save, f, ensure_ascii=True, indent=4)
+
+    return 0
+
+def main():
+    # empty dict to be converted to JSON
+    output = {}
+
+    # for all files, create a page entry in dict output 
+    for file in os.listdir(PATH):
+        if not os.path.basename(file).endswith('.svelte'): continue
+
+        pagearr = parse_page(file)
+
+        page_name = pagearr[0]
+        page_sections = pagearr[1]
+
+        output.update({page_name : page_sections})
+
+    save_to_JSON(output)
+
+    return 0
+
+if __name__=='__main__': main()
