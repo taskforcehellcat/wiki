@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 # DEPENDENCIES OF THIS SCRIPT ARE: lxml, bs4
 
-PATH = r"../src/Wiki/"
+PATH = r"../../../src/Wiki/"
 
 def parse_page(filename):
     '''
