@@ -194,7 +194,7 @@
       <div id="nav-list" />
     </div>
     <div class="nav-list-title">wiki</div>
-    <a href="/" id="return-button"> Return </a>
+    <Link to="/" id="return-button"> Return </Link>
   </nav>
 
   <main>
