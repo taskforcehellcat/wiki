@@ -8,7 +8,7 @@ let index = JSON.parse(json);
 
 // this variable determines how long the environment should be.
 // subject to change !
-let env_length = 50;
+let env_length = 60;
 
 function main(query) {
     /*
