@@ -4,7 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
-    <h1>Hubschrauberpiloten</h1>
+    <h1>Helikopterpilot</h1>
 
     <section id="Allgemeines">
       <p />
