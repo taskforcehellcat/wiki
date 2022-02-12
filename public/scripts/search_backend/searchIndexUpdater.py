@@ -1,5 +1,6 @@
-import os
-import json
+from os import listdir
+from os.path import basename
+from json import dump
 #import re # only required for tag removal
 from bs4 import BeautifulSoup
 
@@ -73,7 +74,7 @@ def save_to_JSON(dict_to_save):
     '''
 
     with open('searchIndex.json', 'w', encoding='utf-8') as f:
-        json.dump(dict_to_save, f, ensure_ascii=True, indent=4)
+        dump(dict_to_save, f, ensure_ascii=True, indent=4)
 
     return 0
 
@@ -82,8 +83,8 @@ def main():
     output = {}
 
     # for all files, create a page entry in dict output 
-    for file in os.listdir(PATH):
-        if not os.path.basename(file).endswith('.svelte'): continue
+    for file in listdir(PATH):
+        if not basename(file).endswith('.svelte'): continue
 
         pagearr = parse_page(file)
 
