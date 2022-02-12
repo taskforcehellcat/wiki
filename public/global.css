@@ -269,3 +269,9 @@ input:focus {
   -ms-transform: scale(1.08);
   -o-transform: scale(1.08);
 }
+
+#return-button {
+  height: 2rem;
+  width: 100%;
+  justify-self: end;
+}
