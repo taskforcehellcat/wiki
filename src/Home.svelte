@@ -8,21 +8,38 @@
 
   onMount(async () => {
     const expandable = document.getElementsByClassName("expandable");
+
+    /* creates array from "expandable" nodelist */
     var expandableArr = Array.from(expandable);
 
     expandableArr.forEach((element) => {
       var open = false;
+
+      /* adds  "arrow" to any span in "expandableArr" array */
       element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round">expand_more</span>');
+
+      /* onclick function */
       element.onclick = function (event) {
+        /* disables default html click behavior */
         event.preventDefault();
+
+        /* simple open/close toggle */
         open = !open;
+
+        /* if collapsable menu is open */
         if (open == true) {
+          /* rotate arrow 90deg */
           element.querySelector(".material-icons-round").style.transform = "rotate(90deg)";
+
+          /* add display:flex to every a (Link) tag */
           element.querySelectorAll("a").forEach((element) => {
             element.style.display = "flex";
           });
         } else {
+          /* rotate back to default orientation (0deg) */
           element.querySelector(".material-icons-round").style.transform = "rotate(0deg)";
+
+          /* add display:none to every a (Link) tag */
           element.querySelectorAll("a").forEach((element) => {
             element.style.display = "none";
           });
