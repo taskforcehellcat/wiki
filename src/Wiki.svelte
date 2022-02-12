@@ -11,12 +11,6 @@
     gap: 20px;
   }
 
-  #return-button {
-    height: 2rem;
-    width: 100%;
-    justify-self: end;
-  }
-
   input {
     background-color: none;
     background: none;
@@ -143,29 +137,30 @@
     const sections = document.querySelectorAll("section:not(section>section)");
     const navList = document.getElementById("nav-list");
     const bar = document.getElementById("nav-list-bar");
+    /* create array from "sections" nodelist */
     var sectionsArr = Array.from(sections);
     var x = 1;
 
-    /* Konvertiert "Sections" NodeList zu Array (falls man's mal brauch x) */
-    // for(var i = sections.length; i--; sectionsArr.unshift(sections[i]));
-
-    /* Fügt h2 zu allen elementen der NodeList */
+    /* for every element of the "sectionsArr" array */
     sectionsArr.forEach((element) => {
+      /* add h2 tag with element's id as content */
       element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
+      /* add anchor link to element to navigation list */
       navList.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
     });
 
-    /* setzt nav-list-bar-thumb auf genaue höhe von einem navi punkt */
+    /*
     var thumbPercent = (1 / sections.length) * 100;
     if (parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <= parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) {
       thumb.style.height = parseInt(parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) * (thumbPercent / 100) + "px";
     } else;
+    
 
-    //	thumb.style.height = 1 / sections.length * 100 + "%";
+    thumb.style.height = 1 / sections.length * 100 + "%";
 
-    //  window.addEventListener("scroll", (event) => {
-    //    bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
-    //  });
+    window.addEventListener("scroll", (event) => {
+    bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
+    });
 
     var sectionHeight = 0;
     sections.forEach((element) => {
@@ -173,6 +168,7 @@
     });
 
     console.log(sectionHeight);
+    */
   });
 </script>
 
