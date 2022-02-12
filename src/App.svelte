@@ -26,9 +26,6 @@
 <Router {url}>
   <Route path="/"><Home /></Route>
   <Route path="grundlagen"><Grundlagen /></Route>
-  <Route path="fuehrungskraefte"><Fuehrungskraefte /></Route>
-  <Route path="streitkraefte"><Streitkraefte /></Route>
-  <Route path="logistiker"><Logistiker /></Route>
   <Route path="panzertruppen"><Panzertruppen /></Route>
   <Route path="sanitaeter"><Sanitaeter /></Route>
   <Route path="aufklaerer"><Aufklaerer /></Route>
