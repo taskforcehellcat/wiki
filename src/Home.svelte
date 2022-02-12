@@ -15,9 +15,12 @@
     expandableArr.forEach((element) => {
       /* adds  "arrow" to any span in "expandableArr" array */
       element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round">expand_more</span>');
+      
+      let open = false; // used for toggeling
 
       /* add onclick function */
       element.onclick = (event) => {
+        open = !open;
 
         /* prevent default action on html elements */
         event.preventDefault();
@@ -32,15 +35,17 @@
           });
         });
 
-        /* expand the span clicked on */
+        /* expand the span clicked on given it has been closed, else just toggle */
 
-        /* rotate arrow 90deg */
-        element.querySelector(".material-icons-round").style.transform = "rotate(90deg)";
+        if (open) {
+          /* rotate arrow 90deg */
+          element.querySelector(".material-icons-round").style.transform = "rotate(90deg)";
 
-        /* add display:flex to every a (Link) tag */
-        element.querySelectorAll("a").forEach((element) => {
-          element.style.display = "flex";
-        });
+          /* add display:flex to every a (Link) tag */
+          element.querySelectorAll("a").forEach((element) => {
+            element.style.display = "flex";
+          });
+        }
       }
     });
   });
