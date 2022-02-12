@@ -35,7 +35,7 @@
     </section>
 
     <section id="Beendigung">
-      <p>Hat man alles gesagt, muss man auch das dem Gegenüber signalisieren. Dazu gibt es eine Reihe von Signalwörtern:</p>
+      <p>Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespräch ansonsten für unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalwörtern:</p>
       
       <section>
         <h3>Kommen</h3>
