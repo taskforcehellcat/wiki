@@ -4,7 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
-    <h1>Grundlagen des Funkens</h1>
+    <h1>Funk</h1>
 
     <section id="Einleitung">
       <p>Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollte allen Soldaten bekannt sein.</p>
