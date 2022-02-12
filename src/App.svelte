@@ -20,10 +20,6 @@
   export let url = "";
 </script>
 
-<!--
-<Wiki/>
--->
-
 <Router {url}>
   <Route path="/"><Home /></Route>
   <Route path="grundlagen"><Grundlagen /></Route>
