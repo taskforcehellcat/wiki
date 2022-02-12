@@ -23,14 +23,15 @@
 
     <section id="Funkspruch">
       <p>Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grundsätzen: er sollte knapp, aber eindeutig sein. Besonders Füllwörter und häufiges Versprechen können leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz überlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verständnis erleichtern sollen.</p>
+      <section>
+        <h3>Zahlen</h3>
+        <p>Zahlen werden im Funk grundsätzlich Ziffer für Ziffer diktiert, „1278“ also als „eins - zwo - sieben - acht“ gesprochen. „Zwo“ ist dabei dringend zu benutzen, da „zwei“ leicht mit „drei“ verwechselt wird. Ebenso verwendet man „fünnüf“ für „fünf“.</p>
 
-      <h2>Zahlen</h2>
-      <p>Zahlen werden im Funk grundsätzlich Ziffer für Ziffer diktiert, „1278“ also als „eins - zwo - sieben - acht“ gesprochen. „Zwo“ ist dabei dringend zu benutzen, da „zwei“ leicht mit „drei“ verwechselt wird. Ebenso verwendet man „fünnüf“ für „fünf“.</p>
-
-      <h2>Buchstabieren</h2>
-      <p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet.</p>
-      <!-- Hier NATO Alphabet einfühen. Wie macht man Tabellen am besten? -->
-      <p>Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.</p>
+        <h3>Buchstabieren</h3>
+        <p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet.</p>
+        <!-- Hier NATO Alphabet einfühen. Wie macht man Tabellen am besten? -->
+        <p>Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.</p>
+      </section>
     </section>
 
     <section id="Beendigung">
