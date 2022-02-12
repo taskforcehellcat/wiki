@@ -69,6 +69,11 @@ section > section {
   padding-left: 20px;
 }
 
+section a {
+  text-decoration: underline;
+  color: #183488;
+}
+
 main {
   width: 100%;
   padding: 10.4rem 8rem 10rem 8rem;
