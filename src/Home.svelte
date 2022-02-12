@@ -43,34 +43,56 @@
 
   <div id="home-nav-list">
     <Router {url}>
-      <a href="/" class="expandable"
-        ><span>GRUNDLAGEN</span>
-        <Link to="funken">FUNKEN</Link>
+      <a href="/" class="expandable">
+        <span>grundlagen</span>
+        <Link to="steuerung">steuerung</Link>
+        <Link to="funk">funk</Link>
+        <Link to="erstehilfe">erstehilfe</Link>
+        <Link to="buddyteam">buddyteam</Link>
+        <Link to="sonstiges">sonstiges</Link>
       </a>
-      <a href="/" class="expandable"
-        ><span>FÜHRUNGSKRÄFTE</span>
-        <Link to="truppfuehrer">TRUPPFÜHRER</Link>
-        <Link to="truppfunker">TRUPPFUNKER</Link>
+      <a href="/" class="expandable">
+        <span>führungskräfte</span>
+        <Link to="abteilungsleiter">abteilungsleiter</Link>
+        <Link to="einsatzleiter">einsatzleiter</Link>
+        <Link to="gruppentruppfuehrer">gruppen-/truppführer</Link>
       </a>
-      <a href="/" class="expandable"
-        ><span>STREITKRÄFTE</span>
-        <Link to="fusstruppen">FUẞTRUPPEN</Link>
-        <Link to="panzertruppen">PANZERTRUPPEN</Link>
+      <a href="/" class="expandable">
+        <span>streitkräfte</span>
+        <Link to="schuetze">schütze</Link>
+        <Link to="funker">funker</Link>
+        <Link to="mgschuetze">mgschütze</Link>
+        <Link to="atschuetze">atschütze</Link>
+        <Link to="praezisionsschuetze">präzisionsschütze</Link>
+        <Link to="breacher">breacher</Link>
+        <Link to="grenadier">grenadier</Link>
       </a>
-      <a href="/" class="expandable"
-        ><span>LOGISTIKER</span>
-        <Link to="kampfpioniere">KAMPFPIONIERE</Link>
-        <Link to="hubschrauberpiloten">HUBSCHRAUBERPILOTEN</Link>
-        <Link to="basis-logistiker">BASIS-LOGISTIKER</Link>
+      <a href="/" class="expandable">
+        <span>sanitätsdienst</span>
+        <Link to="sanitaeter">sanitäter</Link>
+        <Link to="medevacsanitaeter">medevacsanitäter</Link>
       </a>
-
-      <Link to="sanitaeter">SANITÄTER</Link>
-      <Link to="aufklaerer">AUFKLÄRER</Link>
-      <a href="/" class="expandable"
-        ><span>FUHRPARK</span>
-        <Link to="fahrzeuge">FAHRZEUGE</Link>
-        <Link to="helikopter">HELIKOPTER</Link>
-        <Link to="uavs">UAVs</Link>
+      <a href="/" class="expandable">
+        <span>panzertruppen</span>
+      </a>
+      <a href="/" class="expandable">
+        <span>logistik</span>
+        <Link to="kampfpionier">kampfpionier</Link>
+        <Link to="pionier">pionier</Link>
+        <Link to="helikopterpilot">helikopterpilot</Link>
+        <Link to="basislogistiker">basislogistiker</Link>
+      </a>
+      <a href="/" class="expandable">
+        <span>aufklärer</span>
+        <Link to="jtac">jtac</Link>
+        <Link to="scharfschuetze">scharfschütze</Link>
+        <Link to="spotter">spotter</Link>
+        <Link to="eod">eod</Link>
+      </a>
+      <a href="/" class="expandable">
+        <span>fuhrpark</span>
+        <Link to="bodenfahrzeuge">bodenfahrzeuge</Link>
+        <Link to="luftfahrzeuge">luftfahrzeuge</Link>
       </a>
     </Router>
   </div>
