@@ -10,7 +10,7 @@
       <p>Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollte allen Soldaten bekannt sein.</p>
     </section>
 
-    <section id="Bevor man die Taste drückt">
+    <section id="Vor dem Funk">
       <p>Noch bevor man beginnt, Funkkontakt aufzubauen, überlegt man sich genau, was man mitteilen möchte. Ein Sender blockiert für die Dauer seines Funkspruches den Funkkanal und damit möglicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverständlich gehalten werden. Guter Funk folgt also der Devise: <i>So viel wie nötig, so kurz wie möglich.</i></p>
     </section>
 
