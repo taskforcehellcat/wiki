@@ -3,6 +3,7 @@
   import Panzertruppen from "./Wiki/Panzertruppen.svelte";
   import Sanitaeter from "./Wiki/Sanitaeter.svelte";
   import Aufklaerer from "./Wiki/Aufklaerer.svelte";
+  import Funken from "./Wiki/Funken.svelte";
 
   import Basislogistiker from "./Wiki/Basislogistiker.svelte";
   import Fahrzeuge from "./Wiki/Fahrzeuge.svelte";
@@ -29,6 +30,7 @@
   <Route path="panzertruppen"><Panzertruppen /></Route>
   <Route path="sanitaeter"><Sanitaeter /></Route>
   <Route path="aufklaerer"><Aufklaerer /></Route>
+  <Route path="funken"><Funken /></Route>
 
   <Route path="basis-logistiker"><Basislogistiker /></Route>
   <Route path="fahrzeuge"><Fahrzeuge /></Route>
