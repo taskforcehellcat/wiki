@@ -2142,8 +2142,8 @@ var app = (function () {
     const get_content_slot_changes = dirty => ({});
     const get_content_slot_context = ctx => ({});
 
-    // (183:4) <Link to="/" id="nav-logo">
-    function create_default_slot$2(ctx) {
+    // (176:4) <Link to="/" id="nav-logo">
+    function create_default_slot_1$2(ctx) {
     	let t0;
     	let span;
 
@@ -2152,7 +2152,7 @@ var app = (function () {
     			t0 = text("TFHC ");
     			span = element("span");
     			span.textContent = "Wiki";
-    			add_location(span, file$e, 182, 36, 4293);
+    			add_location(span, file$e, 175, 36, 4285);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -2166,9 +2166,36 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$2.name,
+    		id: create_default_slot_1$2.name,
     		type: "slot",
-    		source: "(183:4) <Link to=\\\"/\\\" id=\\\"nav-logo\\\">",
+    		source: "(176:4) <Link to=\\\"/\\\" id=\\\"nav-logo\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (190:4) <Link to="/" id="return-button">
+    function create_default_slot$3(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Return");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$3.name,
+    		type: "slot",
+    		source: "(190:4) <Link to=\\\"/\\\" id=\\\"return-button\\\">",
     		ctx
     	});
 
@@ -2178,7 +2205,7 @@ var app = (function () {
     function create_fragment$f(ctx) {
     	let div7;
     	let nav;
-    	let link;
+    	let link0;
     	let t0;
     	let div0;
     	let span;
@@ -2195,18 +2222,28 @@ var app = (function () {
     	let t7;
     	let div6;
     	let t9;
-    	let a;
-    	let t11;
+    	let link1;
+    	let t10;
     	let main;
-    	let t12;
+    	let t11;
     	let footer;
     	let current;
 
-    	link = new Link({
+    	link0 = new Link({
     			props: {
     				to: "/",
     				id: "nav-logo",
-    				$$slots: { default: [create_default_slot$2] },
+    				$$slots: { default: [create_default_slot_1$2] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	link1 = new Link({
+    			props: {
+    				to: "/",
+    				id: "return-button",
+    				$$slots: { default: [create_default_slot$3] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -2219,7 +2256,7 @@ var app = (function () {
     		c: function create() {
     			div7 = element("div");
     			nav = element("nav");
-    			create_component(link.$$.fragment);
+    			create_component(link0.$$.fragment);
     			t0 = space();
     			div0 = element("div");
     			span = element("span");
@@ -2239,50 +2276,45 @@ var app = (function () {
     			div6 = element("div");
     			div6.textContent = "wiki";
     			t9 = space();
-    			a = element("a");
-    			a.textContent = "Return";
-    			t11 = space();
+    			create_component(link1.$$.fragment);
+    			t10 = space();
     			main = element("main");
     			if (content_slot) content_slot.c();
-    			t12 = space();
+    			t11 = space();
     			footer = element("footer");
     			attr_dev(span, "class", "material-icons svelte-rz3gbl");
-    			add_location(span, file$e, 184, 6, 4352);
+    			add_location(span, file$e, 177, 6, 4344);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
     			attr_dev(input, "class", "svelte-rz3gbl");
-    			add_location(input, file$e, 185, 6, 4402);
+    			add_location(input, file$e, 178, 6, 4394);
     			attr_dev(div0, "id", "nav-search");
     			attr_dev(div0, "class", "svelte-rz3gbl");
-    			add_location(div0, file$e, 183, 4, 4323);
+    			add_location(div0, file$e, 176, 4, 4315);
     			attr_dev(div1, "class", "nav-list-title svelte-rz3gbl");
-    			add_location(div1, file$e, 188, 4, 4491);
+    			add_location(div1, file$e, 181, 4, 4483);
     			attr_dev(div2, "id", "nav-list-bar-thumb");
     			attr_dev(div2, "class", "svelte-rz3gbl");
-    			add_location(div2, file$e, 191, 8, 4609);
+    			add_location(div2, file$e, 184, 8, 4601);
     			attr_dev(div3, "id", "nav-list-bar");
     			attr_dev(div3, "class", "svelte-rz3gbl");
-    			add_location(div3, file$e, 190, 6, 4576);
+    			add_location(div3, file$e, 183, 6, 4568);
     			attr_dev(div4, "id", "nav-list");
     			attr_dev(div4, "class", "svelte-rz3gbl");
-    			add_location(div4, file$e, 193, 6, 4662);
+    			add_location(div4, file$e, 186, 6, 4654);
     			attr_dev(div5, "id", "nav-list-wrapper");
     			attr_dev(div5, "class", "svelte-rz3gbl");
-    			add_location(div5, file$e, 189, 4, 4541);
+    			add_location(div5, file$e, 182, 4, 4533);
     			attr_dev(div6, "class", "nav-list-title svelte-rz3gbl");
-    			add_location(div6, file$e, 195, 4, 4701);
-    			attr_dev(a, "href", "/");
-    			attr_dev(a, "id", "return-button");
-    			attr_dev(a, "class", "svelte-rz3gbl");
-    			add_location(a, file$e, 196, 4, 4745);
+    			add_location(div6, file$e, 188, 4, 4693);
     			attr_dev(nav, "class", "svelte-rz3gbl");
-    			add_location(nav, file$e, 181, 2, 4250);
-    			add_location(main, file$e, 199, 2, 4804);
-    			add_location(footer, file$e, 202, 2, 4854);
+    			add_location(nav, file$e, 174, 2, 4242);
+    			add_location(main, file$e, 192, 2, 4800);
+    			add_location(footer, file$e, 195, 2, 4850);
     			attr_dev(div7, "id", "wiki-wrapper");
     			attr_dev(div7, "class", "svelte-rz3gbl");
-    			add_location(div7, file$e, 180, 0, 4223);
+    			add_location(div7, file$e, 173, 0, 4215);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2290,7 +2322,7 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, div7, anchor);
     			append_dev(div7, nav);
-    			mount_component(link, nav, null);
+    			mount_component(link0, nav, null);
     			append_dev(nav, t0);
     			append_dev(nav, div0);
     			append_dev(div0, span);
@@ -2307,26 +2339,33 @@ var app = (function () {
     			append_dev(nav, t7);
     			append_dev(nav, div6);
     			append_dev(nav, t9);
-    			append_dev(nav, a);
-    			append_dev(div7, t11);
+    			mount_component(link1, nav, null);
+    			append_dev(div7, t10);
     			append_dev(div7, main);
 
     			if (content_slot) {
     				content_slot.m(main, null);
     			}
 
-    			append_dev(div7, t12);
+    			append_dev(div7, t11);
     			append_dev(div7, footer);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			const link_changes = {};
+    			const link0_changes = {};
 
     			if (dirty & /*$$scope*/ 2) {
-    				link_changes.$$scope = { dirty, ctx };
+    				link0_changes.$$scope = { dirty, ctx };
     			}
 
-    			link.$set(link_changes);
+    			link0.$set(link0_changes);
+    			const link1_changes = {};
+
+    			if (dirty & /*$$scope*/ 2) {
+    				link1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			link1.$set(link1_changes);
 
     			if (content_slot) {
     				if (content_slot.p && (!current || dirty & /*$$scope*/ 2)) {
@@ -2345,18 +2384,21 @@ var app = (function () {
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(link.$$.fragment, local);
+    			transition_in(link0.$$.fragment, local);
+    			transition_in(link1.$$.fragment, local);
     			transition_in(content_slot, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(link.$$.fragment, local);
+    			transition_out(link0.$$.fragment, local);
+    			transition_out(link1.$$.fragment, local);
     			transition_out(content_slot, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div7);
-    			destroy_component(link);
+    			destroy_component(link0);
+    			destroy_component(link1);
     			if (content_slot) content_slot.d(detaching);
     		}
     	};
@@ -2422,7 +2464,7 @@ var app = (function () {
     		if ('$$scope' in $$props) $$invalidate(1, $$scope = $$props.$$scope);
     	};
 
-    	$$self.$capture_state = () => ({ Router, Link, Route, onMount });
+    	$$self.$capture_state = () => ({ Link, onMount });
     	return [slots, $$scope];
     }
 
@@ -2443,7 +2485,7 @@ var app = (function () {
     /* src\Wiki\Grundlagen.svelte generated by Svelte v3.46.4 */
     const file$d = "src\\Wiki\\Grundlagen.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$c(ctx) {
     	let h1;
     	let t1;
@@ -2493,25 +2535,25 @@ var app = (function () {
     			section5 = element("section");
     			p5 = element("p");
     			p5.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est!";
-    			add_location(h1, file$d, 6, 4, 109);
-    			add_location(p0, file$d, 9, 6, 170);
+    			add_location(h1, file$d, 5, 4, 115);
+    			add_location(p0, file$d, 8, 6, 176);
     			attr_dev(section0, "id", "Allgemeines");
-    			add_location(section0, file$d, 8, 4, 136);
-    			add_location(p1, file$d, 13, 6, 749);
+    			add_location(section0, file$d, 7, 4, 142);
+    			add_location(p1, file$d, 12, 6, 755);
     			attr_dev(section1, "id", "Rollenprofil");
-    			add_location(section1, file$d, 12, 4, 714);
-    			add_location(p2, file$d, 17, 6, 1366);
+    			add_location(section1, file$d, 11, 4, 720);
+    			add_location(p2, file$d, 16, 6, 1372);
     			attr_dev(section2, "id", "Ausrüstung");
-    			add_location(section2, file$d, 16, 4, 1333);
-    			add_location(p3, file$d, 21, 6, 1989);
+    			add_location(section2, file$d, 15, 4, 1339);
+    			add_location(p3, file$d, 20, 6, 1995);
     			attr_dev(section3, "id", "Aufgabenbereiche");
-    			add_location(section3, file$d, 20, 4, 1950);
-    			add_location(p4, file$d, 25, 6, 2610);
+    			add_location(section3, file$d, 19, 4, 1956);
+    			add_location(p4, file$d, 24, 6, 2616);
     			attr_dev(section4, "id", "Einsatzgebiete");
-    			add_location(section4, file$d, 24, 4, 2573);
-    			add_location(p5, file$d, 29, 6, 3228);
+    			add_location(section4, file$d, 23, 4, 2579);
+    			add_location(p5, file$d, 28, 6, 3234);
     			attr_dev(section5, "id", "Kompetenzen");
-    			add_location(section5, file$d, 28, 4, 3194);
+    			add_location(section5, file$d, 27, 4, 3200);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -2555,7 +2597,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$c.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -2649,7 +2691,7 @@ var app = (function () {
     /* src\Wiki\Panzertruppen.svelte generated by Svelte v3.46.4 */
     const file$c = "src\\Wiki\\Panzertruppen.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$b(ctx) {
     	let h1;
     	let t1;
@@ -2667,12 +2709,22 @@ var app = (function () {
     	let t9;
     	let section4;
     	let p4;
-    	let t11;
+    	let t10;
+    	let i0;
+    	let t12;
+    	let i1;
+    	let t14;
+    	let i2;
+    	let t16;
+    	let t17;
     	let p5;
-    	let t13;
+    	let t19;
     	let section5;
     	let p6;
-    	let t15;
+    	let t20;
+    	let i3;
+    	let t22;
+    	let t23;
     	let p7;
 
     	const block = {
@@ -2698,38 +2750,54 @@ var app = (function () {
     			t9 = space();
     			section4 = element("section");
     			p4 = element("p");
-    			p4.textContent = "Feindliche Kräfte werden innerhalb der Panzertruppen gemäß der REZ-Regel gemeldet. Eine Feindmeldung erfolgt durch die Richtungsangabe, Entfernungsangabe und der Zieldefinition des Feindes. Die Richtungsangabe erfolgt im Normalfall entsprechend einer Uhrzeit relativ zur Fahrzeugwanne oder in Gradzahlen. Die Entfernungsangabe wird in Hundert übergeben, also wird \"1200 Meter\" zu \"Zwölfhundert Meter\". Ausnahmen sind hierbei Tausenderzahlen wie 1000, 2000, usw. Die Zieldefinition erfolgt als Typdefinition des Feindes. Eine feindliche Infanteriegruppe wird als solche gemeldet und ein Fahrzeug wird entsprechend der vorgesehenen Akronyme durchgegeben.";
-    			t11 = space();
+    			t10 = text("Feindliche Kräfte werden innerhalb der Panzertruppen gemäß der REZ-Regel gemeldet. Eine Feindmeldung erfolgt durch die ");
+    			i0 = element("i");
+    			i0.textContent = "Richtungsangabe";
+    			t12 = text(", ");
+    			i1 = element("i");
+    			i1.textContent = "Entfernungsangabe";
+    			t14 = text(" und der ");
+    			i2 = element("i");
+    			i2.textContent = "Zieldefinition des Feindes";
+    			t16 = text(". Die Richtungsangabe erfolgt im Normalfall entsprechend einer Uhrzeit relativ zur Fahrzeugwanne oder in Gradzahlen. Die Entfernungsangabe wird in Hundert übergeben, also wird „1.200 Meter“ zu „zwölfhundert Meter“. Ausnahmen sind hierbei Tausenderzahlen wie 1.000, 2.000, usw. Die Zieldefinition erfolgt als Typdefinition des Feindes. Eine feindliche Infanteriegruppe wird als solche gemeldet und ein Fahrzeug wird entsprechend der vorgesehenen Akronyme durchgegeben.");
+    			t17 = space();
     			p5 = element("p");
     			p5.textContent = "Die im Normalfall aus vier Fahrzeugen derselben Fahrzeugklasse bestehenden Panzerzüge der Panzertruppen können in den unterschiedlichsten Formen vorkommen. Neben der Formierung von verminderten oder verstärkten Panzerzügen kann die Bildung eines Sonderzuges erfolgen. Ein Sonderzug ist ein Kampfverband, der aus unterschiedlichen Fahrzeugklassen zusammengesetzt ist. Die Zusammenschließung oder Neubildung von Panzerzügen kann während des Einsatzes durch die Führungskraft der Panzertruppen erfolgen.";
-    			t13 = space();
+    			t19 = space();
     			section5 = element("section");
     			p6 = element("p");
-    			p6.textContent = "Die Kommunikation der Panzertruppen hat einen immensen Einfluss auf ihre Effizienz und Wirkung. Der Funk muss nach dem Leitsatz \"So viel wie nötig, so wenig wie möglich\" erfolgen. Das konkrete Ziel eines Kampfverbandes ist die Bündelung der Feuerkraft und das gegenseitige Schützen.";
-    			t15 = space();
+    			t20 = text("Die Kommunikation der Panzertruppen hat einen immensen Einfluss auf ihre Effizienz und Wirkung. Der Funk muss nach dem Leitsatz ");
+    			i3 = element("i");
+    			i3.textContent = "„so viel wie nötig, so wenig wie möglich“";
+    			t22 = text(" erfolgen. Das konkrete Ziel eines Kampfverbandes ist die Bündelung der Feuerkraft und das gegenseitige Schützen.");
+    			t23 = space();
     			p7 = element("p");
     			p7.textContent = "Die Kommunikation der Panzertruppen erfolgt über drei Funkkanäle. Der Bordfunk ist ein interner Funkkanal innerhalb eines Fahrzeuges, in dem alle Besatzungsmitglieder miteinander kommunizieren können. Der taktische Funkkanal wird von jedem Besatzungsmitglied eines Zuges genutzt. Der taktische Funkkanal wird vom Zugführer genutzt um möglichst schnell Befehle an Fahrer oder Schützen aller Fahrzeuge seines Zuges zu erteilen. In ihm können Formationswechsel, Geschwindigkeitsjustierungen, Feindmeldungen, Primärziele und Feuerkoordinationen übergeben werden. Der Kommandantenfunkkanal wird von den Kommandanten eines Panzerzuges genutzt, um die Panzerbesatzungen zu entlasten und ein Funkchaos zu vermeiden. Über ihn werden Informationen vermittelt, die keinen unmittelbaren Einfluss auf den aktiven Kampf haben. Dazu zählen Informationen zur Missionsentwicklung, zum Munitionsstand, Schadensberichte an Fahrzeugen, Treibstoffvorräte, Abschüsse, Einzelbefehle, Statusmeldungen, Melden der Einsatzbereitschaft oder Vorschläge.";
-    			add_location(h1, file$c, 6, 4, 109);
-    			add_location(p0, file$c, 9, 6, 173);
+    			add_location(h1, file$c, 5, 4, 115);
+    			add_location(p0, file$c, 8, 6, 179);
     			attr_dev(section0, "id", "Allgemeines");
-    			add_location(section0, file$c, 8, 4, 139);
-    			add_location(p1, file$c, 13, 6, 961);
+    			add_location(section0, file$c, 7, 4, 145);
+    			add_location(p1, file$c, 12, 6, 967);
     			attr_dev(section1, "id", "Fahrzeugklassen");
-    			add_location(section1, file$c, 12, 4, 923);
-    			add_location(p2, file$c, 17, 6, 1573);
+    			add_location(section1, file$c, 11, 4, 929);
+    			add_location(p2, file$c, 16, 6, 1579);
     			attr_dev(section2, "id", "Besatzungsmitglieder");
-    			add_location(section2, file$c, 16, 4, 1530);
-    			add_location(p3, file$c, 21, 6, 2474);
+    			add_location(section2, file$c, 15, 4, 1536);
+    			add_location(p3, file$c, 20, 6, 2480);
     			attr_dev(section3, "id", "Führungskette");
-    			add_location(section3, file$c, 20, 4, 2438);
-    			add_location(p4, file$c, 25, 6, 3324);
-    			add_location(p5, file$c, 26, 6, 3991);
+    			add_location(section3, file$c, 19, 4, 2444);
+    			add_location(i0, file$c, 24, 128, 3452);
+    			add_location(i1, file$c, 24, 152, 3476);
+    			add_location(i2, file$c, 24, 185, 3509);
+    			add_location(p4, file$c, 24, 6, 3330);
+    			add_location(p5, file$c, 25, 6, 4021);
     			attr_dev(section4, "id", "Formalitäten");
-    			add_location(section4, file$c, 24, 4, 3289);
-    			add_location(p6, file$c, 30, 6, 4549);
-    			add_location(p7, file$c, 31, 6, 4846);
+    			add_location(section4, file$c, 23, 4, 3295);
+    			add_location(i3, file$c, 29, 137, 4710);
+    			add_location(p6, file$c, 29, 6, 4579);
+    			add_location(p7, file$c, 30, 6, 4883);
     			attr_dev(section5, "id", "Funk");
-    			add_location(section5, file$c, 29, 4, 4522);
+    			add_location(section5, file$c, 28, 4, 4552);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -2748,12 +2816,22 @@ var app = (function () {
     			insert_dev(target, t9, anchor);
     			insert_dev(target, section4, anchor);
     			append_dev(section4, p4);
-    			append_dev(section4, t11);
+    			append_dev(p4, t10);
+    			append_dev(p4, i0);
+    			append_dev(p4, t12);
+    			append_dev(p4, i1);
+    			append_dev(p4, t14);
+    			append_dev(p4, i2);
+    			append_dev(p4, t16);
+    			append_dev(section4, t17);
     			append_dev(section4, p5);
-    			insert_dev(target, t13, anchor);
+    			insert_dev(target, t19, anchor);
     			insert_dev(target, section5, anchor);
     			append_dev(section5, p6);
-    			append_dev(section5, t15);
+    			append_dev(p6, t20);
+    			append_dev(p6, i3);
+    			append_dev(p6, t22);
+    			append_dev(section5, t23);
     			append_dev(section5, p7);
     		},
     		d: function destroy(detaching) {
@@ -2768,7 +2846,7 @@ var app = (function () {
     			if (detaching) detach_dev(section3);
     			if (detaching) detach_dev(t9);
     			if (detaching) detach_dev(section4);
-    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(t19);
     			if (detaching) detach_dev(section5);
     		}
     	};
@@ -2777,7 +2855,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$b.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -2871,7 +2949,7 @@ var app = (function () {
     /* src\Wiki\Sanitaeter.svelte generated by Svelte v3.46.4 */
     const file$b = "src\\Wiki\\Sanitaeter.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$a(ctx) {
     	let h1;
     	let t1;
@@ -2885,10 +2963,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$b, 6, 4, 109);
-    			add_location(p, file$b, 9, 6, 169);
+    			add_location(h1, file$b, 5, 4, 115);
+    			add_location(p, file$b, 8, 6, 175);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$b, 8, 4, 135);
+    			add_location(section, file$b, 7, 4, 141);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -2907,7 +2985,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$a.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -3001,12 +3079,52 @@ var app = (function () {
     /* src\Wiki\Aufklaerer.svelte generated by Svelte v3.46.4 */
     const file$a = "src\\Wiki\\Aufklaerer.svelte";
 
+    // (10:702) <Link to="kampfpionier#allgemeines">
+    function create_default_slot$2(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Kampfpionier");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$2.name,
+    		type: "slot",
+    		source: "(10:702) <Link to=\\\"kampfpionier#allgemeines\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
     // (6:2) <svelte:fragment slot="content">
     function create_content_slot$9(ctx) {
     	let h1;
     	let t1;
     	let section;
     	let p;
+    	let t2;
+    	let link;
+    	let t3;
+    	let current;
+
+    	link = new Link({
+    			props: {
+    				to: "kampfpionier#allgemeines",
+    				$$slots: { default: [create_default_slot$2] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
 
     	const block = {
     		c: function create() {
@@ -3015,21 +3133,47 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$a, 6, 4, 109);
-    			add_location(p, file$a, 9, 6, 169);
+    			t2 = text("Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam earum modi culpa beatae! Autem ratione necessitatibus iusto quo perspiciatis consequuntur ab quos incidunt animi sit iure, voluptatum consectetur, debitis laudantium dolore quis, ipsam doloribus repudiandae unde odio blanditiis reprehenderit est. Ut ipsam nulla reprehenderit. Quidem facere quia repudiandae sed aut impedit iusto, saepe fugit nulla nostrum totam nesciunt cumque? Sapiente, placeat fugit fugiat pariatur nobis enim nisi impedit consequatur dolore iure distinctio. Minima veritatis maxime minus recusandae at perspiciatis ipsum culpa voluptates quisquam eligendi tenetur dolorem, eum placeat labore odio sint sequi ");
+    			create_component(link.$$.fragment);
+    			t3 = text(" veniam quam fugiat quaerat repellat assumenda vero temporibus! Quod, ipsum consequatur placeat minima mollitia dolore commodi facere corrupti unde voluptate? Illo magnam pariatur mollitia necessitatibus beatae ut, esse aut aperiam cumque quod fuga inventore asperiores sunt aspernatur odit sequi nulla, tempore earum totam tempora. Soluta sunt deleniti laborum eligendi, hic minima rerum nesciunt quos sed? Quod iure doloremque beatae commodi voluptatum sint, impedit sapiente nihil reiciendis accusamus. Tempora deleniti repellendus numquam. Consequuntur tempore itaque sint id provident, maxime sequi quam dolorum dolores laudantium, earum similique tempora adipisci! Nostrum, illum facere, vel dolores neque obcaecati molestias rem magni autem ut quos asperiores a? Id repellendus porro quis. Assumenda.");
+    			add_location(h1, file$a, 6, 4, 155);
+    			add_location(p, file$a, 9, 6, 215);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$a, 8, 4, 135);
+    			add_location(section, file$a, 8, 4, 181);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
     			insert_dev(target, t1, anchor);
     			insert_dev(target, section, anchor);
     			append_dev(section, p);
+    			append_dev(p, t2);
+    			mount_component(link, p, null);
+    			append_dev(p, t3);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			const link_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				link_changes.$$scope = { dirty, ctx };
+    			}
+
+    			link.$set(link_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(link.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(link.$$.fragment, local);
+    			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h1);
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(section);
+    			destroy_component(link);
     		}
     	};
 
@@ -3110,7 +3254,7 @@ var app = (function () {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<Aufklaerer> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ Wiki });
+    	$$self.$capture_state = () => ({ Wiki, Link });
     	return [];
     }
 
@@ -3131,7 +3275,7 @@ var app = (function () {
     /* src\Wiki\Basislogistiker.svelte generated by Svelte v3.46.4 */
     const file$9 = "src\\Wiki\\Basislogistiker.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$8(ctx) {
     	let h1;
     	let t1;
@@ -3145,10 +3289,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$9, 6, 4, 109);
-    			add_location(p, file$9, 9, 6, 176);
+    			add_location(h1, file$9, 5, 4, 115);
+    			add_location(p, file$9, 8, 6, 182);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$9, 8, 4, 142);
+    			add_location(section, file$9, 7, 4, 148);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3167,7 +3311,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$8.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -3261,7 +3405,7 @@ var app = (function () {
     /* src\Wiki\Fahrzeuge.svelte generated by Svelte v3.46.4 */
     const file$8 = "src\\Wiki\\Fahrzeuge.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$7(ctx) {
     	let h1;
     	let t1;
@@ -3275,10 +3419,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$8, 6, 4, 109);
-    			add_location(p, file$8, 9, 6, 169);
+    			add_location(h1, file$8, 5, 4, 115);
+    			add_location(p, file$8, 8, 6, 175);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$8, 8, 4, 135);
+    			add_location(section, file$8, 7, 4, 141);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3297,7 +3441,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$7.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -3391,7 +3535,7 @@ var app = (function () {
     /* src\Wiki\Fusstruppen.svelte generated by Svelte v3.46.4 */
     const file$7 = "src\\Wiki\\Fusstruppen.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$6(ctx) {
     	let h1;
     	let t1;
@@ -3405,10 +3549,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$7, 6, 4, 109);
-    			add_location(p, file$7, 9, 6, 170);
+    			add_location(h1, file$7, 5, 4, 115);
+    			add_location(p, file$7, 8, 6, 176);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$7, 8, 4, 136);
+    			add_location(section, file$7, 7, 4, 142);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3427,7 +3571,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$6.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -3521,7 +3665,7 @@ var app = (function () {
     /* src\Wiki\Helikopter.svelte generated by Svelte v3.46.4 */
     const file$6 = "src\\Wiki\\Helikopter.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$5(ctx) {
     	let h1;
     	let t1;
@@ -3535,10 +3679,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$6, 6, 4, 109);
-    			add_location(p, file$6, 9, 6, 170);
+    			add_location(h1, file$6, 5, 4, 115);
+    			add_location(p, file$6, 8, 6, 176);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$6, 8, 4, 136);
+    			add_location(section, file$6, 7, 4, 142);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3557,7 +3701,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$5.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -3651,7 +3795,7 @@ var app = (function () {
     /* src\Wiki\Hubschrauberpiloten.svelte generated by Svelte v3.46.4 */
     const file$5 = "src\\Wiki\\Hubschrauberpiloten.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$4(ctx) {
     	let h1;
     	let t1;
@@ -3665,10 +3809,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$5, 6, 4, 109);
-    			add_location(p, file$5, 9, 6, 179);
+    			add_location(h1, file$5, 5, 4, 115);
+    			add_location(p, file$5, 8, 6, 185);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$5, 8, 4, 145);
+    			add_location(section, file$5, 7, 4, 151);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3687,7 +3831,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$4.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -3781,7 +3925,7 @@ var app = (function () {
     /* src\Wiki\Kampfpioniere.svelte generated by Svelte v3.46.4 */
     const file$4 = "src\\Wiki\\Kampfpioniere.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$3(ctx) {
     	let h1;
     	let t1;
@@ -3795,10 +3939,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$4, 6, 4, 109);
-    			add_location(p, file$4, 9, 6, 173);
+    			add_location(h1, file$4, 5, 4, 115);
+    			add_location(p, file$4, 8, 6, 179);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$4, 8, 4, 139);
+    			add_location(section, file$4, 7, 4, 145);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3817,7 +3961,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$3.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -3911,7 +4055,7 @@ var app = (function () {
     /* src\Wiki\Truppfuehrer.svelte generated by Svelte v3.46.4 */
     const file$3 = "src\\Wiki\\Truppfuehrer.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$2(ctx) {
     	let h1;
     	let t1;
@@ -3925,10 +4069,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$3, 6, 4, 109);
-    			add_location(p, file$3, 9, 6, 171);
+    			add_location(h1, file$3, 5, 4, 115);
+    			add_location(p, file$3, 8, 6, 177);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$3, 8, 4, 137);
+    			add_location(section, file$3, 7, 4, 143);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3947,7 +4091,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$2.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -4041,7 +4185,7 @@ var app = (function () {
     /* src\Wiki\Truppfunker.svelte generated by Svelte v3.46.4 */
     const file$2 = "src\\Wiki\\Truppfunker.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot$1(ctx) {
     	let h1;
     	let t1;
@@ -4055,10 +4199,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$2, 6, 4, 109);
-    			add_location(p, file$2, 9, 6, 171);
+    			add_location(h1, file$2, 5, 4, 115);
+    			add_location(p, file$2, 8, 6, 177);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$2, 8, 4, 137);
+    			add_location(section, file$2, 7, 4, 143);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -4077,7 +4221,7 @@ var app = (function () {
     		block,
     		id: create_content_slot$1.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -4171,7 +4315,7 @@ var app = (function () {
     /* src\Wiki\Uavs.svelte generated by Svelte v3.46.4 */
     const file$1 = "src\\Wiki\\Uavs.svelte";
 
-    // (6:2) <svelte:fragment slot="content">
+    // (5:2) <svelte:fragment slot="content">
     function create_content_slot(ctx) {
     	let h1;
     	let t1;
@@ -4185,10 +4329,10 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
-    			add_location(h1, file$1, 6, 4, 109);
-    			add_location(p, file$1, 9, 6, 164);
+    			add_location(h1, file$1, 5, 4, 115);
+    			add_location(p, file$1, 8, 6, 170);
     			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$1, 8, 4, 130);
+    			add_location(section, file$1, 7, 4, 136);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -4207,7 +4351,7 @@ var app = (function () {
     		block,
     		id: create_content_slot.name,
     		type: "slot",
-    		source: "(6:2) <svelte:fragment slot=\\\"content\\\">",
+    		source: "(5:2) <svelte:fragment slot=\\\"content\\\">",
     		ctx
     	});
 
@@ -4301,7 +4445,7 @@ var app = (function () {
     /* src\Home.svelte generated by Svelte v3.46.4 */
     const file = "src\\Home.svelte";
 
-    // (46:6) <Link to="grundlagen">
+    // (44:6) <Link to="grundlagen">
     function create_default_slot_13$1(ctx) {
     	let t;
 
@@ -4321,14 +4465,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$1.name,
     		type: "slot",
-    		source: "(46:6) <Link to=\\\"grundlagen\\\">",
+    		source: "(44:6) <Link to=\\\"grundlagen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (49:8) <Link to="truppfuehrer">
+    // (47:8) <Link to="truppfuehrer">
     function create_default_slot_12$1(ctx) {
     	let t;
 
@@ -4348,14 +4492,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12$1.name,
     		type: "slot",
-    		source: "(49:8) <Link to=\\\"truppfuehrer\\\">",
+    		source: "(47:8) <Link to=\\\"truppfuehrer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (50:8) <Link to="truppfunker">
+    // (48:8) <Link to="truppfunker">
     function create_default_slot_11$1(ctx) {
     	let t;
 
@@ -4375,14 +4519,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$1.name,
     		type: "slot",
-    		source: "(50:8) <Link to=\\\"truppfunker\\\">",
+    		source: "(48:8) <Link to=\\\"truppfunker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (54:8) <Link to="fusstruppen">
+    // (52:8) <Link to="fusstruppen">
     function create_default_slot_10$1(ctx) {
     	let t;
 
@@ -4402,14 +4546,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10$1.name,
     		type: "slot",
-    		source: "(54:8) <Link to=\\\"fusstruppen\\\">",
+    		source: "(52:8) <Link to=\\\"fusstruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (55:8) <Link to="panzertruppen">
+    // (53:8) <Link to="panzertruppen">
     function create_default_slot_9$1(ctx) {
     	let t;
 
@@ -4429,14 +4573,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$1.name,
     		type: "slot",
-    		source: "(55:8) <Link to=\\\"panzertruppen\\\">",
+    		source: "(53:8) <Link to=\\\"panzertruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (59:8) <Link to="kampfpioniere">
+    // (57:8) <Link to="kampfpioniere">
     function create_default_slot_8$1(ctx) {
     	let t;
 
@@ -4456,14 +4600,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(59:8) <Link to=\\\"kampfpioniere\\\">",
+    		source: "(57:8) <Link to=\\\"kampfpioniere\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (60:8) <Link to="hubschrauberpiloten">
+    // (58:8) <Link to="hubschrauberpiloten">
     function create_default_slot_7$1(ctx) {
     	let t;
 
@@ -4483,14 +4627,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$1.name,
     		type: "slot",
-    		source: "(60:8) <Link to=\\\"hubschrauberpiloten\\\">",
+    		source: "(58:8) <Link to=\\\"hubschrauberpiloten\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (61:8) <Link to="basis-logistiker">
+    // (59:8) <Link to="basis-logistiker">
     function create_default_slot_6$1(ctx) {
     	let t;
 
@@ -4510,14 +4654,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(61:8) <Link to=\\\"basis-logistiker\\\">",
+    		source: "(59:8) <Link to=\\\"basis-logistiker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (64:6) <Link to="sanitaeter">
+    // (62:6) <Link to="sanitaeter">
     function create_default_slot_5$1(ctx) {
     	let t;
 
@@ -4537,14 +4681,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$1.name,
     		type: "slot",
-    		source: "(64:6) <Link to=\\\"sanitaeter\\\">",
+    		source: "(62:6) <Link to=\\\"sanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (65:6) <Link to="aufklaerer">
+    // (63:6) <Link to="aufklaerer">
     function create_default_slot_4$1(ctx) {
     	let t;
 
@@ -4564,14 +4708,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$1.name,
     		type: "slot",
-    		source: "(65:6) <Link to=\\\"aufklaerer\\\">",
+    		source: "(63:6) <Link to=\\\"aufklaerer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (68:8) <Link to="fahrzeuge">
+    // (66:8) <Link to="fahrzeuge">
     function create_default_slot_3$1(ctx) {
     	let t;
 
@@ -4591,14 +4735,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$1.name,
     		type: "slot",
-    		source: "(68:8) <Link to=\\\"fahrzeuge\\\">",
+    		source: "(66:8) <Link to=\\\"fahrzeuge\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (69:8) <Link to="helikopter">
+    // (67:8) <Link to="helikopter">
     function create_default_slot_2$1(ctx) {
     	let t;
 
@@ -4618,14 +4762,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$1.name,
     		type: "slot",
-    		source: "(69:8) <Link to=\\\"helikopter\\\">",
+    		source: "(67:8) <Link to=\\\"helikopter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (70:8) <Link to="uavs">
+    // (68:8) <Link to="uavs">
     function create_default_slot_1$1(ctx) {
     	let t;
 
@@ -4645,14 +4789,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(70:8) <Link to=\\\"uavs\\\">",
+    		source: "(68:8) <Link to=\\\"uavs\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (45:4) <Router {url}>
+    // (43:4) <Router {url}>
     function create_default_slot$1(ctx) {
     	let link0;
     	let t0;
@@ -4853,22 +4997,22 @@ var app = (function () {
     			create_component(link11.$$.fragment);
     			t19 = space();
     			create_component(link12.$$.fragment);
-    			add_location(span0, file, 47, 9, 1632);
+    			add_location(span0, file, 45, 9, 1712);
     			attr_dev(a0, "href", "/");
     			attr_dev(a0, "class", "expandable");
-    			add_location(a0, file, 46, 6, 1591);
-    			add_location(span1, file, 52, 9, 1823);
+    			add_location(a0, file, 44, 6, 1671);
+    			add_location(span1, file, 50, 9, 1903);
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "class", "expandable");
-    			add_location(a1, file, 51, 6, 1782);
-    			add_location(span2, file, 57, 9, 2014);
+    			add_location(a1, file, 49, 6, 1862);
+    			add_location(span2, file, 55, 9, 2094);
     			attr_dev(a2, "href", "/");
     			attr_dev(a2, "class", "expandable");
-    			add_location(a2, file, 56, 6, 1973);
-    			add_location(span3, file, 66, 9, 2375);
+    			add_location(a2, file, 54, 6, 2053);
+    			add_location(span3, file, 64, 9, 2455);
     			attr_dev(a3, "href", "/");
     			attr_dev(a3, "class", "expandable");
-    			add_location(a3, file, 65, 6, 2334);
+    			add_location(a3, file, 63, 6, 2414);
     		},
     		m: function mount(target, anchor) {
     			mount_component(link0, target, anchor);
@@ -5067,7 +5211,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$1.name,
     		type: "slot",
-    		source: "(45:4) <Router {url}>",
+    		source: "(43:4) <Router {url}>",
     		ctx
     	});
 
@@ -5116,22 +5260,22 @@ var app = (function () {
     			t5 = space();
     			div2 = element("div");
     			create_component(router.$$.fragment);
-    			add_location(br, file, 35, 45, 1192);
-    			add_location(span0, file, 35, 51, 1198);
+    			add_location(br, file, 33, 45, 1272);
+    			add_location(span0, file, 33, 51, 1278);
     			attr_dev(div0, "id", "home-nav-logo");
-    			add_location(div0, file, 35, 2, 1149);
+    			add_location(div0, file, 33, 2, 1229);
     			attr_dev(span1, "class", "material-icons");
-    			add_location(span1, file, 37, 4, 1257);
+    			add_location(span1, file, 35, 4, 1337);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
-    			add_location(input, file, 38, 4, 1305);
+    			add_location(input, file, 36, 4, 1385);
     			attr_dev(div1, "id", "home-nav-search");
-    			add_location(div1, file, 36, 2, 1225);
+    			add_location(div1, file, 34, 2, 1305);
     			attr_dev(div2, "id", "home-nav-list");
-    			add_location(div2, file, 43, 2, 1492);
+    			add_location(div2, file, 41, 2, 1572);
     			attr_dev(div3, "id", "home-overlay");
-    			add_location(div3, file, 34, 0, 1122);
+    			add_location(div3, file, 32, 0, 1202);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5232,7 +5376,7 @@ var app = (function () {
     		if ('url' in $$props) $$invalidate(0, url = $$props.url);
     	};
 
-    	$$self.$capture_state = () => ({ Router, Link, Route, onMount, url });
+    	$$self.$capture_state = () => ({ Router, Link, onMount, url });
 
     	$$self.$inject_state = $$props => {
     		if ('url' in $$props) $$invalidate(0, url = $$props.url);
@@ -5269,8 +5413,8 @@ var app = (function () {
 
     /* src\App.svelte generated by Svelte v3.46.4 */
 
-    // (27:2) <Route path="/">
-    function create_default_slot_18(ctx) {
+    // (24:2) <Route path="/">
+    function create_default_slot_15(ctx) {
     	let home;
     	let current;
     	home = new Home({ $$inline: true });
@@ -5299,17 +5443,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18.name,
+    		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(27:2) <Route path=\\\"/\\\">",
+    		source: "(24:2) <Route path=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (28:2) <Route path="grundlagen">
-    function create_default_slot_17(ctx) {
+    // (25:2) <Route path="grundlagen">
+    function create_default_slot_14(ctx) {
     	let grundlagen;
     	let current;
     	grundlagen = new Grundlagen({ $$inline: true });
@@ -5338,133 +5482,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17.name,
-    		type: "slot",
-    		source: "(28:2) <Route path=\\\"grundlagen\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (29:2) <Route path="fuehrungskraefte">
-    function create_default_slot_16(ctx) {
-    	let fuehrungskraefte;
-    	let current;
-    	fuehrungskraefte = new Fuehrungskraefte({ $$inline: true });
-
-    	const block = {
-    		c: function create() {
-    			create_component(fuehrungskraefte.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(fuehrungskraefte, target, anchor);
-    			current = true;
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(fuehrungskraefte.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(fuehrungskraefte.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(fuehrungskraefte, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_16.name,
-    		type: "slot",
-    		source: "(29:2) <Route path=\\\"fuehrungskraefte\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (30:2) <Route path="streitkraefte">
-    function create_default_slot_15(ctx) {
-    	let streitkraefte;
-    	let current;
-    	streitkraefte = new Streitkraefte({ $$inline: true });
-
-    	const block = {
-    		c: function create() {
-    			create_component(streitkraefte.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(streitkraefte, target, anchor);
-    			current = true;
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(streitkraefte.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(streitkraefte.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(streitkraefte, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_15.name,
-    		type: "slot",
-    		source: "(30:2) <Route path=\\\"streitkraefte\\\">",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (31:2) <Route path="logistiker">
-    function create_default_slot_14(ctx) {
-    	let logistiker;
-    	let current;
-    	logistiker = new Logistiker({ $$inline: true });
-
-    	const block = {
-    		c: function create() {
-    			create_component(logistiker.$$.fragment);
-    		},
-    		m: function mount(target, anchor) {
-    			mount_component(logistiker, target, anchor);
-    			current = true;
-    		},
-    		i: function intro(local) {
-    			if (current) return;
-    			transition_in(logistiker.$$.fragment, local);
-    			current = true;
-    		},
-    		o: function outro(local) {
-    			transition_out(logistiker.$$.fragment, local);
-    			current = false;
-    		},
-    		d: function destroy(detaching) {
-    			destroy_component(logistiker, detaching);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
     		id: create_default_slot_14.name,
     		type: "slot",
-    		source: "(31:2) <Route path=\\\"logistiker\\\">",
+    		source: "(25:2) <Route path=\\\"grundlagen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (32:2) <Route path="panzertruppen">
+    // (26:2) <Route path="panzertruppen">
     function create_default_slot_13(ctx) {
     	let panzertruppen;
     	let current;
@@ -5496,14 +5523,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(32:2) <Route path=\\\"panzertruppen\\\">",
+    		source: "(26:2) <Route path=\\\"panzertruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:2) <Route path="sanitaeter">
+    // (27:2) <Route path="sanitaeter">
     function create_default_slot_12(ctx) {
     	let sanitaeter;
     	let current;
@@ -5535,14 +5562,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(33:2) <Route path=\\\"sanitaeter\\\">",
+    		source: "(27:2) <Route path=\\\"sanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (34:2) <Route path="aufklaerer">
+    // (28:2) <Route path="aufklaerer">
     function create_default_slot_11(ctx) {
     	let aufklaerer;
     	let current;
@@ -5574,14 +5601,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(34:2) <Route path=\\\"aufklaerer\\\">",
+    		source: "(28:2) <Route path=\\\"aufklaerer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:2) <Route path="basis-logistiker">
+    // (30:2) <Route path="basis-logistiker">
     function create_default_slot_10(ctx) {
     	let basislogistiker;
     	let current;
@@ -5613,14 +5640,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(36:2) <Route path=\\\"basis-logistiker\\\">",
+    		source: "(30:2) <Route path=\\\"basis-logistiker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:2) <Route path="fahrzeuge">
+    // (31:2) <Route path="fahrzeuge">
     function create_default_slot_9(ctx) {
     	let fahrzeuge;
     	let current;
@@ -5652,14 +5679,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(37:2) <Route path=\\\"fahrzeuge\\\">",
+    		source: "(31:2) <Route path=\\\"fahrzeuge\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:2) <Route path="fusstruppen">
+    // (32:2) <Route path="fusstruppen">
     function create_default_slot_8(ctx) {
     	let fusstruppen;
     	let current;
@@ -5691,14 +5718,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(38:2) <Route path=\\\"fusstruppen\\\">",
+    		source: "(32:2) <Route path=\\\"fusstruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (39:2) <Route path="helikopter">
+    // (33:2) <Route path="helikopter">
     function create_default_slot_7(ctx) {
     	let helikopter;
     	let current;
@@ -5730,14 +5757,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(39:2) <Route path=\\\"helikopter\\\">",
+    		source: "(33:2) <Route path=\\\"helikopter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:2) <Route path="hubschrauberpiloten">
+    // (34:2) <Route path="hubschrauberpiloten">
     function create_default_slot_6(ctx) {
     	let hubschrauberpiloten;
     	let current;
@@ -5769,14 +5796,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(40:2) <Route path=\\\"hubschrauberpiloten\\\">",
+    		source: "(34:2) <Route path=\\\"hubschrauberpiloten\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:2) <Route path="kampfpioniere">
+    // (35:2) <Route path="kampfpioniere">
     function create_default_slot_5(ctx) {
     	let kampfpioniere;
     	let current;
@@ -5808,14 +5835,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(41:2) <Route path=\\\"kampfpioniere\\\">",
+    		source: "(35:2) <Route path=\\\"kampfpioniere\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (42:2) <Route path="truppfuehrer">
+    // (36:2) <Route path="truppfuehrer">
     function create_default_slot_4(ctx) {
     	let truppfuehrer;
     	let current;
@@ -5847,14 +5874,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(42:2) <Route path=\\\"truppfuehrer\\\">",
+    		source: "(36:2) <Route path=\\\"truppfuehrer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (43:2) <Route path="truppfunker">
+    // (37:2) <Route path="truppfunker">
     function create_default_slot_3(ctx) {
     	let truppfunker;
     	let current;
@@ -5886,14 +5913,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(43:2) <Route path=\\\"truppfunker\\\">",
+    		source: "(37:2) <Route path=\\\"truppfunker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (44:2) <Route path="uavs">
+    // (38:2) <Route path="uavs">
     function create_default_slot_2(ctx) {
     	let uavs;
     	let current;
@@ -5925,14 +5952,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(44:2) <Route path=\\\"uavs\\\">",
+    		source: "(38:2) <Route path=\\\"uavs\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (46:2) <Route path="fuhrpark">
+    // (40:2) <Route path="fuhrpark">
     function create_default_slot_1(ctx) {
     	let fuhrpark;
     	let current;
@@ -5964,14 +5991,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(46:2) <Route path=\\\"fuhrpark\\\">",
+    		source: "(40:2) <Route path=\\\"fuhrpark\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (26:0) <Router {url}>
+    // (23:0) <Router {url}>
     function create_default_slot(ctx) {
     	let route0;
     	let t0;
@@ -6002,18 +6029,12 @@ var app = (function () {
     	let route13;
     	let t13;
     	let route14;
-    	let t14;
-    	let route15;
-    	let t15;
-    	let route16;
-    	let t16;
-    	let route17;
     	let current;
 
     	route0 = new Route({
     			props: {
     				path: "/",
-    				$$slots: { default: [create_default_slot_18] },
+    				$$slots: { default: [create_default_slot_15] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -6022,40 +6043,13 @@ var app = (function () {
     	route1 = new Route({
     			props: {
     				path: "grundlagen",
-    				$$slots: { default: [create_default_slot_17] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	route2 = new Route({
-    			props: {
-    				path: "fuehrungskraefte",
-    				$$slots: { default: [create_default_slot_16] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	route3 = new Route({
-    			props: {
-    				path: "streitkraefte",
-    				$$slots: { default: [create_default_slot_15] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	route4 = new Route({
-    			props: {
-    				path: "logistiker",
     				$$slots: { default: [create_default_slot_14] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
-    	route5 = new Route({
+    	route2 = new Route({
     			props: {
     				path: "panzertruppen",
     				$$slots: { default: [create_default_slot_13] },
@@ -6064,7 +6058,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route6 = new Route({
+    	route3 = new Route({
     			props: {
     				path: "sanitaeter",
     				$$slots: { default: [create_default_slot_12] },
@@ -6073,7 +6067,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route7 = new Route({
+    	route4 = new Route({
     			props: {
     				path: "aufklaerer",
     				$$slots: { default: [create_default_slot_11] },
@@ -6082,7 +6076,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route8 = new Route({
+    	route5 = new Route({
     			props: {
     				path: "basis-logistiker",
     				$$slots: { default: [create_default_slot_10] },
@@ -6091,7 +6085,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route9 = new Route({
+    	route6 = new Route({
     			props: {
     				path: "fahrzeuge",
     				$$slots: { default: [create_default_slot_9] },
@@ -6100,7 +6094,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route10 = new Route({
+    	route7 = new Route({
     			props: {
     				path: "fusstruppen",
     				$$slots: { default: [create_default_slot_8] },
@@ -6109,7 +6103,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route11 = new Route({
+    	route8 = new Route({
     			props: {
     				path: "helikopter",
     				$$slots: { default: [create_default_slot_7] },
@@ -6118,7 +6112,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route12 = new Route({
+    	route9 = new Route({
     			props: {
     				path: "hubschrauberpiloten",
     				$$slots: { default: [create_default_slot_6] },
@@ -6127,7 +6121,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route13 = new Route({
+    	route10 = new Route({
     			props: {
     				path: "kampfpioniere",
     				$$slots: { default: [create_default_slot_5] },
@@ -6136,7 +6130,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route14 = new Route({
+    	route11 = new Route({
     			props: {
     				path: "truppfuehrer",
     				$$slots: { default: [create_default_slot_4] },
@@ -6145,7 +6139,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route15 = new Route({
+    	route12 = new Route({
     			props: {
     				path: "truppfunker",
     				$$slots: { default: [create_default_slot_3] },
@@ -6154,7 +6148,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route16 = new Route({
+    	route13 = new Route({
     			props: {
     				path: "uavs",
     				$$slots: { default: [create_default_slot_2] },
@@ -6163,7 +6157,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	route17 = new Route({
+    	route14 = new Route({
     			props: {
     				path: "fuhrpark",
     				$$slots: { default: [create_default_slot_1] },
@@ -6203,12 +6197,6 @@ var app = (function () {
     			create_component(route13.$$.fragment);
     			t13 = space();
     			create_component(route14.$$.fragment);
-    			t14 = space();
-    			create_component(route15.$$.fragment);
-    			t15 = space();
-    			create_component(route16.$$.fragment);
-    			t16 = space();
-    			create_component(route17.$$.fragment);
     		},
     		m: function mount(target, anchor) {
     			mount_component(route0, target, anchor);
@@ -6240,12 +6228,6 @@ var app = (function () {
     			mount_component(route13, target, anchor);
     			insert_dev(target, t13, anchor);
     			mount_component(route14, target, anchor);
-    			insert_dev(target, t14, anchor);
-    			mount_component(route15, target, anchor);
-    			insert_dev(target, t15, anchor);
-    			mount_component(route16, target, anchor);
-    			insert_dev(target, t16, anchor);
-    			mount_component(route17, target, anchor);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -6354,27 +6336,6 @@ var app = (function () {
     			}
 
     			route14.$set(route14_changes);
-    			const route15_changes = {};
-
-    			if (dirty & /*$$scope*/ 2) {
-    				route15_changes.$$scope = { dirty, ctx };
-    			}
-
-    			route15.$set(route15_changes);
-    			const route16_changes = {};
-
-    			if (dirty & /*$$scope*/ 2) {
-    				route16_changes.$$scope = { dirty, ctx };
-    			}
-
-    			route16.$set(route16_changes);
-    			const route17_changes = {};
-
-    			if (dirty & /*$$scope*/ 2) {
-    				route17_changes.$$scope = { dirty, ctx };
-    			}
-
-    			route17.$set(route17_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -6393,9 +6354,6 @@ var app = (function () {
     			transition_in(route12.$$.fragment, local);
     			transition_in(route13.$$.fragment, local);
     			transition_in(route14.$$.fragment, local);
-    			transition_in(route15.$$.fragment, local);
-    			transition_in(route16.$$.fragment, local);
-    			transition_in(route17.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -6414,9 +6372,6 @@ var app = (function () {
     			transition_out(route12.$$.fragment, local);
     			transition_out(route13.$$.fragment, local);
     			transition_out(route14.$$.fragment, local);
-    			transition_out(route15.$$.fragment, local);
-    			transition_out(route16.$$.fragment, local);
-    			transition_out(route17.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -6449,12 +6404,6 @@ var app = (function () {
     			destroy_component(route13, detaching);
     			if (detaching) detach_dev(t13);
     			destroy_component(route14, detaching);
-    			if (detaching) detach_dev(t14);
-    			destroy_component(route15, detaching);
-    			if (detaching) detach_dev(t15);
-    			destroy_component(route16, detaching);
-    			if (detaching) detach_dev(t16);
-    			destroy_component(route17, detaching);
     		}
     	};
 
@@ -6462,7 +6411,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(26:0) <Router {url}>",
+    		source: "(23:0) <Router {url}>",
     		ctx
     	});
 
@@ -6558,7 +6507,6 @@ var app = (function () {
     		Uavs,
     		Home,
     		Router,
-    		Link,
     		Route,
     		url
     	});
@@ -6597,10 +6545,10 @@ var app = (function () {
     }
 
     const app = new App({
-    	target: document.body,
-    	props: {
-    		name: 'world'
-    	}
+        target: document.body,
+        props: {
+            name: 'world'
+        }
     });
 
     return app;
