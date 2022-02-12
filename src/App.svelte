@@ -1,40 +1,73 @@
 <script lang="ts">
-  import Grundlagen from "./Wiki/Grundlagen.svelte";
-  import Panzertruppen from "./Wiki/Panzertruppen.svelte";
+  import Steuerung from "./Wiki/Steuerung.svelte";
+  import Funk from "./Wiki/Funk.svelte";
+  import Erstehilfe from "./Wiki/Erstehilfe.svelte";
+  import Buddyteam from "./Wiki/Buddyteam.svelte";
+  import Sonstiges from "./Wiki/Sonstiges.svelte";
+  import Abteilungsleiter from "./Wiki/Abteilungsleiter.svelte";
+  import Einsatzleiter from "./Wiki/Einsatzleiter.svelte";
+  import Gruppentruppfuehrer from "./Wiki/Gruppentruppfuehrer.svelte";
+  import Schuetze from "./Wiki/Schuetze.svelte";
+  import Funker from "./Wiki/Funker.svelte";
+  import Mgschuetze from "./Wiki/Mgschuetze.svelte";
+  import Atschuetze from "./Wiki/Atschuetze.svelte";
+  import Praezisionsschuetze from "./Wiki/Praezisionsschuetze.svelte";
+  import Breacher from "./Wiki/Breacher.svelte";
+  import Grenadier from "./Wiki/Grenadier.svelte";
   import Sanitaeter from "./Wiki/Sanitaeter.svelte";
-  import Aufklaerer from "./Wiki/Aufklaerer.svelte";
-  import Funken from "./Wiki/Funken.svelte";
-
+  import Medevacsanitaeter from "./Wiki/Medevacsanitaeter.svelte";
+  import Kampfpionier from "./Wiki/Kampfpionier.svelte";
+  import Pionier from "./Wiki/Pionier.svelte";
+  import Helikopterpilot from "./Wiki/Helikopterpiloten.svelte";
   import Basislogistiker from "./Wiki/Basislogistiker.svelte";
-  import Fahrzeuge from "./Wiki/Fahrzeuge.svelte";
-  import Fusstruppen from "./Wiki/Fusstruppen.svelte";
-  import Helikopter from "./Wiki/Helikopter.svelte";
-  import Hubschrauberpiloten from "./Wiki/Hubschrauberpiloten.svelte";
-  import Kampfpioniere from "./Wiki/Kampfpioniere.svelte";
-  import Truppfuehrer from "./Wiki/Truppfuehrer.svelte";
-  import Truppfunker from "./Wiki/Truppfunker.svelte";
-  import Uavs from "./Wiki/Uavs.svelte";
+  import Jtac from "./Wiki/Jtac.svelte";
+  import Scharfschuetze from "./Wiki/Scharfschuetze.svelte";
+  import Spotter from "./Wiki/Spotter.svelte";
+  import Eod from "./Wiki/Eod.svelte";
+  import Bodenfahrzeuge from "./Wiki/Bodenfahrzeuge.svelte";
+  import Luftfahrzeuge from "./Wiki/Luftfahrzeuge.svelte";
 
   import Home from "./Home.svelte";
-  import { Router, Link, Route } from "svelte-routing";
+  import { Router, Route } from "svelte-routing";
   export let url = "";
 </script>
 
 <Router {url}>
+  <!-- Wiki Home -->
   <Route path="/"><Home /></Route>
-  <Route path="grundlagen"><Grundlagen /></Route>
-  <Route path="panzertruppen"><Panzertruppen /></Route>
-  <Route path="sanitaeter"><Sanitaeter /></Route>
-  <Route path="aufklaerer"><Aufklaerer /></Route>
-  <Route path="funken"><Funken /></Route>
 
-  <Route path="basis-logistiker"><Basislogistiker /></Route>
-  <Route path="fahrzeuge"><Fahrzeuge /></Route>
-  <Route path="fusstruppen"><Fusstruppen /></Route>
-  <Route path="helikopter"><Helikopter /></Route>
-  <Route path="hubschrauberpiloten"><Hubschrauberpiloten /></Route>
-  <Route path="kampfpioniere"><Kampfpioniere /></Route>
-  <Route path="truppfuehrer"><Truppfuehrer /></Route>
-  <Route path="truppfunker"><Truppfunker /></Route>
-  <Route path="uavs"><Uavs /></Route>
+  <!-- Wiki Pages -->
+  <Route path="steuerung"><Steuerung /></Route>
+  <Route path="funk"><Funk /></Route>
+  <Route path="erstehilfe"><Erstehilfe /></Route>
+  <Route path="buddyteam"><Buddyteam /></Route>
+  <Route path="sonstiges"><Sonstiges /></Route>
+
+  <Route path="abteilungsleiter"><Abteilungsleiter /></Route>
+  <Route path="einsatzleiter"><Einsatzleiter /></Route>
+  <Route path="gruppentruppfuehrer"><Gruppentruppfuehrer /></Route>
+
+  <Route path="schuetze"><Schuetze /></Route>
+  <Route path="funker"><Funker /></Route>
+  <Route path="mgschuetze"><Mgschuetze /></Route>
+  <Route path="atschuetze"><Atschuetze /></Route>
+  <Route path="praezisionsschuetze"><Praezisionsschuetze /></Route>
+  <Route path="breacher"><Breacher /></Route>
+  <Route path="grenadier"><Grenadier /></Route>
+
+  <Route path="sanitaeter"><Sanitaeter /></Route>
+  <Route path="medevacsanitaeter"><Medevacsanitaeter /></Route>
+
+  <Route path="kampfpionier"><Kampfpionier /></Route>
+  <Route path="pionier"><Pionier /></Route>
+  <Route path="helikopterpilot"><Helikopterpilot /></Route>
+  <Route path="basislogistiker"><Basislogistiker /></Route>
+
+  <Route path="jtac"><Jtac /></Route>
+  <Route path="scharfschuetze"><Scharfschuetze /></Route>
+  <Route path="spotter"><Spotter /></Route>
+  <Route path="eod"><Eod /></Route>
+
+  <Route path="bodenfahrzeuge"><Bodenfahrzeuge /></Route>
+  <Route path="luftfahrzeuge"><Luftfahrzeuge /></Route>
 </Router>
