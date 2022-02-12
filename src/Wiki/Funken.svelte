@@ -52,7 +52,7 @@
     <section id="Außnahmen und Notfälle">
       <p>Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.</p>
 
-      <p>Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa das Funken im Konvoi und zwischen der Logistik, der Funk unter Truppführern oder Sanitätern oder der Funk zwischen Aufklärern. Dazu finden sich Einträge auf den jeweiligen Unterseiten.</p>
+      <p>Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppführern, Sanitätern oder Aufklärern. Dazu finden sich Einträge mit weiterführenden Informationen auf den jeweiligen Unterseiten.</p>
     </section>
   </svelte:fragment>
 </Wiki>
