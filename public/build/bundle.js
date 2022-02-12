@@ -2142,7 +2142,7 @@ var app = (function () {
     const get_content_slot_changes = dirty => ({});
     const get_content_slot_context = ctx => ({});
 
-    // (176:4) <Link to="/" id="nav-logo">
+    // (175:4) <Link to="/" id="nav-logo">
     function create_default_slot_1$2(ctx) {
     	let t0;
     	let span;
@@ -2152,7 +2152,7 @@ var app = (function () {
     			t0 = text("TFHC ");
     			span = element("span");
     			span.textContent = "Wiki";
-    			add_location(span, file$f, 175, 36, 4285);
+    			add_location(span, file$f, 174, 36, 4234);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t0, anchor);
@@ -2168,14 +2168,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$2.name,
     		type: "slot",
-    		source: "(176:4) <Link to=\\\"/\\\" id=\\\"nav-logo\\\">",
+    		source: "(175:4) <Link to=\\\"/\\\" id=\\\"nav-logo\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (190:4) <Link to="/" id="return-button">
+    // (189:4) <Link to="/" id="return-button">
     function create_default_slot$3(ctx) {
     	let t;
 
@@ -2195,7 +2195,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(190:4) <Link to=\\\"/\\\" id=\\\"return-button\\\">",
+    		source: "(189:4) <Link to=\\\"/\\\" id=\\\"return-button\\\">",
     		ctx
     	});
 
@@ -2283,38 +2283,38 @@ var app = (function () {
     			t11 = space();
     			footer = element("footer");
     			attr_dev(span, "class", "material-icons svelte-rz3gbl");
-    			add_location(span, file$f, 177, 6, 4344);
+    			add_location(span, file$f, 176, 6, 4293);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
     			attr_dev(input, "class", "svelte-rz3gbl");
-    			add_location(input, file$f, 178, 6, 4394);
+    			add_location(input, file$f, 177, 6, 4343);
     			attr_dev(div0, "id", "nav-search");
     			attr_dev(div0, "class", "svelte-rz3gbl");
-    			add_location(div0, file$f, 176, 4, 4315);
+    			add_location(div0, file$f, 175, 4, 4264);
     			attr_dev(div1, "class", "nav-list-title svelte-rz3gbl");
-    			add_location(div1, file$f, 181, 4, 4483);
+    			add_location(div1, file$f, 180, 4, 4432);
     			attr_dev(div2, "id", "nav-list-bar-thumb");
     			attr_dev(div2, "class", "svelte-rz3gbl");
-    			add_location(div2, file$f, 184, 8, 4601);
+    			add_location(div2, file$f, 183, 8, 4550);
     			attr_dev(div3, "id", "nav-list-bar");
     			attr_dev(div3, "class", "svelte-rz3gbl");
-    			add_location(div3, file$f, 183, 6, 4568);
+    			add_location(div3, file$f, 182, 6, 4517);
     			attr_dev(div4, "id", "nav-list");
     			attr_dev(div4, "class", "svelte-rz3gbl");
-    			add_location(div4, file$f, 186, 6, 4654);
+    			add_location(div4, file$f, 185, 6, 4603);
     			attr_dev(div5, "id", "nav-list-wrapper");
     			attr_dev(div5, "class", "svelte-rz3gbl");
-    			add_location(div5, file$f, 182, 4, 4533);
+    			add_location(div5, file$f, 181, 4, 4482);
     			attr_dev(div6, "class", "nav-list-title svelte-rz3gbl");
-    			add_location(div6, file$f, 188, 4, 4693);
+    			add_location(div6, file$f, 187, 4, 4642);
     			attr_dev(nav, "class", "svelte-rz3gbl");
-    			add_location(nav, file$f, 174, 2, 4242);
-    			add_location(main, file$f, 192, 2, 4800);
-    			add_location(footer, file$f, 195, 2, 4850);
+    			add_location(nav, file$f, 173, 2, 4191);
+    			add_location(main, file$f, 191, 2, 4747);
+    			add_location(footer, file$f, 194, 2, 4797);
     			attr_dev(div7, "id", "wiki-wrapper");
     			attr_dev(div7, "class", "svelte-rz3gbl");
-    			add_location(div7, file$f, 173, 0, 4215);
+    			add_location(div7, file$f, 172, 0, 4164);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -2420,7 +2420,7 @@ var app = (function () {
 
     	onMount(async () => {
     		const thumb = document.getElementById("nav-list-bar-thumb");
-    		const sections = document.querySelectorAll("section");
+    		const sections = document.querySelectorAll("section:not(section>section)");
     		const navList = document.getElementById("nav-list");
     		const bar = document.getElementById("nav-list-bar");
     		var sectionsArr = Array.from(sections);
@@ -2429,7 +2429,7 @@ var app = (function () {
     		// for(var i = sections.length; i--; sectionsArr.unshift(sections[i]));
     		/* Fügt h2 zu allen elementen der NodeList */
     		sectionsArr.forEach(element => {
-    			element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
+    			element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
     			navList.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
     		});
 
@@ -2451,7 +2451,6 @@ var app = (function () {
     		});
 
     		console.log(sectionHeight);
-    		document.getElementById("wiki-wrapper").minHeight = sectionHeight;
     	});
 
     	const writable_props = [];
@@ -3296,23 +3295,24 @@ var app = (function () {
     	let t12;
     	let p5;
     	let t14;
-    	let section3;
+    	let section4;
     	let p6;
     	let t16;
-    	let h20;
+    	let section3;
+    	let h30;
     	let t18;
     	let p7;
     	let t20;
-    	let h21;
+    	let h31;
     	let t22;
     	let p8;
     	let t24;
     	let p9;
     	let t26;
-    	let section4;
+    	let section5;
     	let p10;
     	let t28;
-    	let section5;
+    	let section6;
     	let p11;
     	let t30;
     	let p12;
@@ -3345,18 +3345,19 @@ var app = (function () {
     			p5 = element("p");
     			p5.textContent = "Dies stellt eine Richtlinie für die Erstverbindung dar. Im weiteren Gesprächsverlauf ist es eventuell nicht mehr nötig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann des dem Gegenüber jedoch das Verständnis erleichtern, wenn man seine Absicht ausspricht.";
     			t14 = space();
-    			section3 = element("section");
+    			section4 = element("section");
     			p6 = element("p");
     			p6.textContent = "Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grundsätzen: er sollte knapp, aber eindeutig sein. Besonders Füllwörter und häufiges Versprechen können leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz überlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verständnis erleichtern sollen.";
     			t16 = space();
-    			h20 = element("h2");
-    			h20.textContent = "Zahlen";
+    			section3 = element("section");
+    			h30 = element("h3");
+    			h30.textContent = "Zahlen";
     			t18 = space();
     			p7 = element("p");
     			p7.textContent = "Zahlen werden im Funk grundsätzlich Ziffer für Ziffer diktiert, „1278“ also als „eins - zwo - sieben - acht“ gesprochen. „Zwo“ ist dabei dringend zu benutzen, da „zwei“ leicht mit „drei“ verwechselt wird. Ebenso verwendet man „fünnüf“ für „fünf“.";
     			t20 = space();
-    			h21 = element("h2");
-    			h21.textContent = "Buchstabieren";
+    			h31 = element("h3");
+    			h31.textContent = "Buchstabieren";
     			t22 = space();
     			p8 = element("p");
     			p8.textContent = "Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet.";
@@ -3364,11 +3365,11 @@ var app = (function () {
     			p9 = element("p");
     			p9.textContent = "Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.";
     			t26 = space();
-    			section4 = element("section");
+    			section5 = element("section");
     			p10 = element("p");
     			p10.textContent = "Hat man alles gesagt, muss man auch das dem Gegenüber signalisieren. Dazu gibt es eine Reihe von Signalwörtern:";
     			t28 = space();
-    			section5 = element("section");
+    			section6 = element("section");
     			p11 = element("p");
     			p11.textContent = "Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.";
     			t30 = space();
@@ -3389,20 +3390,21 @@ var app = (function () {
     			attr_dev(section2, "id", "Verbindung");
     			add_location(section2, file$a, 15, 4, 928);
     			add_location(p6, file$a, 23, 6, 1828);
-    			add_location(h20, file$a, 25, 6, 2204);
-    			add_location(p7, file$a, 26, 6, 2227);
-    			add_location(h21, file$a, 28, 6, 2490);
-    			add_location(p8, file$a, 29, 6, 2520);
-    			add_location(p9, file$a, 31, 6, 2785);
-    			attr_dev(section3, "id", "Funkspruch");
-    			add_location(section3, file$a, 22, 4, 1795);
-    			add_location(p10, file$a, 35, 6, 2952);
-    			attr_dev(section4, "id", "Beendigung");
-    			add_location(section4, file$a, 34, 4, 2919);
-    			add_location(p11, file$a, 40, 6, 3230);
-    			add_location(p12, file$a, 42, 6, 3553);
-    			attr_dev(section5, "id", "Außnahmen und Notfälle");
-    			add_location(section5, file$a, 39, 4, 3185);
+    			add_location(h30, file$a, 25, 8, 2221);
+    			add_location(p7, file$a, 26, 8, 2246);
+    			add_location(h31, file$a, 28, 8, 2511);
+    			add_location(p8, file$a, 29, 8, 2543);
+    			add_location(p9, file$a, 31, 8, 2812);
+    			add_location(section3, file$a, 24, 6, 2202);
+    			attr_dev(section4, "id", "Funkspruch");
+    			add_location(section4, file$a, 22, 4, 1795);
+    			add_location(p10, file$a, 36, 6, 2997);
+    			attr_dev(section5, "id", "Beendigung");
+    			add_location(section5, file$a, 35, 4, 2964);
+    			add_location(p11, file$a, 41, 6, 3275);
+    			add_location(p12, file$a, 43, 6, 3598);
+    			attr_dev(section6, "id", "Außnahmen und Notfälle");
+    			add_location(section6, file$a, 40, 4, 3230);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -3424,26 +3426,27 @@ var app = (function () {
     			append_dev(section2, t12);
     			append_dev(section2, p5);
     			insert_dev(target, t14, anchor);
-    			insert_dev(target, section3, anchor);
-    			append_dev(section3, p6);
-    			append_dev(section3, t16);
-    			append_dev(section3, h20);
+    			insert_dev(target, section4, anchor);
+    			append_dev(section4, p6);
+    			append_dev(section4, t16);
+    			append_dev(section4, section3);
+    			append_dev(section3, h30);
     			append_dev(section3, t18);
     			append_dev(section3, p7);
     			append_dev(section3, t20);
-    			append_dev(section3, h21);
+    			append_dev(section3, h31);
     			append_dev(section3, t22);
     			append_dev(section3, p8);
     			append_dev(section3, t24);
     			append_dev(section3, p9);
     			insert_dev(target, t26, anchor);
-    			insert_dev(target, section4, anchor);
-    			append_dev(section4, p10);
-    			insert_dev(target, t28, anchor);
     			insert_dev(target, section5, anchor);
-    			append_dev(section5, p11);
-    			append_dev(section5, t30);
-    			append_dev(section5, p12);
+    			append_dev(section5, p10);
+    			insert_dev(target, t28, anchor);
+    			insert_dev(target, section6, anchor);
+    			append_dev(section6, p11);
+    			append_dev(section6, t30);
+    			append_dev(section6, p12);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h1);
@@ -3454,11 +3457,11 @@ var app = (function () {
     			if (detaching) detach_dev(t6);
     			if (detaching) detach_dev(section2);
     			if (detaching) detach_dev(t14);
-    			if (detaching) detach_dev(section3);
-    			if (detaching) detach_dev(t26);
     			if (detaching) detach_dev(section4);
-    			if (detaching) detach_dev(t28);
+    			if (detaching) detach_dev(t26);
     			if (detaching) detach_dev(section5);
+    			if (detaching) detach_dev(t28);
+    			if (detaching) detach_dev(section6);
     		}
     	};
 
@@ -4730,13 +4733,13 @@ var app = (function () {
     /* src\Home.svelte generated by Svelte v3.46.4 */
     const file = "src\\Home.svelte";
 
-    // (44:6) <Link to="grundlagen">
+    // (46:8) <Link to="funken">
     function create_default_slot_13$1(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("GRUNDLAGEN");
+    			t = text("FUNKEN");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -4750,14 +4753,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$1.name,
     		type: "slot",
-    		source: "(44:6) <Link to=\\\"grundlagen\\\">",
+    		source: "(46:8) <Link to=\\\"funken\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (47:8) <Link to="truppfuehrer">
+    // (50:8) <Link to="truppfuehrer">
     function create_default_slot_12$1(ctx) {
     	let t;
 
@@ -4777,14 +4780,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12$1.name,
     		type: "slot",
-    		source: "(47:8) <Link to=\\\"truppfuehrer\\\">",
+    		source: "(50:8) <Link to=\\\"truppfuehrer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (48:8) <Link to="truppfunker">
+    // (51:8) <Link to="truppfunker">
     function create_default_slot_11$1(ctx) {
     	let t;
 
@@ -4804,14 +4807,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$1.name,
     		type: "slot",
-    		source: "(48:8) <Link to=\\\"truppfunker\\\">",
+    		source: "(51:8) <Link to=\\\"truppfunker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (52:8) <Link to="fusstruppen">
+    // (55:8) <Link to="fusstruppen">
     function create_default_slot_10$1(ctx) {
     	let t;
 
@@ -4831,14 +4834,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10$1.name,
     		type: "slot",
-    		source: "(52:8) <Link to=\\\"fusstruppen\\\">",
+    		source: "(55:8) <Link to=\\\"fusstruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (53:8) <Link to="panzertruppen">
+    // (56:8) <Link to="panzertruppen">
     function create_default_slot_9$1(ctx) {
     	let t;
 
@@ -4858,14 +4861,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$1.name,
     		type: "slot",
-    		source: "(53:8) <Link to=\\\"panzertruppen\\\">",
+    		source: "(56:8) <Link to=\\\"panzertruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (57:8) <Link to="kampfpioniere">
+    // (60:8) <Link to="kampfpioniere">
     function create_default_slot_8$1(ctx) {
     	let t;
 
@@ -4885,14 +4888,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(57:8) <Link to=\\\"kampfpioniere\\\">",
+    		source: "(60:8) <Link to=\\\"kampfpioniere\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (58:8) <Link to="hubschrauberpiloten">
+    // (61:8) <Link to="hubschrauberpiloten">
     function create_default_slot_7$1(ctx) {
     	let t;
 
@@ -4912,14 +4915,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$1.name,
     		type: "slot",
-    		source: "(58:8) <Link to=\\\"hubschrauberpiloten\\\">",
+    		source: "(61:8) <Link to=\\\"hubschrauberpiloten\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (59:8) <Link to="basis-logistiker">
+    // (62:8) <Link to="basis-logistiker">
     function create_default_slot_6$1(ctx) {
     	let t;
 
@@ -4939,14 +4942,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(59:8) <Link to=\\\"basis-logistiker\\\">",
+    		source: "(62:8) <Link to=\\\"basis-logistiker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (62:6) <Link to="sanitaeter">
+    // (65:6) <Link to="sanitaeter">
     function create_default_slot_5$1(ctx) {
     	let t;
 
@@ -4966,14 +4969,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$1.name,
     		type: "slot",
-    		source: "(62:6) <Link to=\\\"sanitaeter\\\">",
+    		source: "(65:6) <Link to=\\\"sanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (63:6) <Link to="aufklaerer">
+    // (66:6) <Link to="aufklaerer">
     function create_default_slot_4$1(ctx) {
     	let t;
 
@@ -4993,14 +4996,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$1.name,
     		type: "slot",
-    		source: "(63:6) <Link to=\\\"aufklaerer\\\">",
+    		source: "(66:6) <Link to=\\\"aufklaerer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (66:8) <Link to="fahrzeuge">
+    // (69:8) <Link to="fahrzeuge">
     function create_default_slot_3$1(ctx) {
     	let t;
 
@@ -5020,14 +5023,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$1.name,
     		type: "slot",
-    		source: "(66:8) <Link to=\\\"fahrzeuge\\\">",
+    		source: "(69:8) <Link to=\\\"fahrzeuge\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (67:8) <Link to="helikopter">
+    // (70:8) <Link to="helikopter">
     function create_default_slot_2$1(ctx) {
     	let t;
 
@@ -5047,14 +5050,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$1.name,
     		type: "slot",
-    		source: "(67:8) <Link to=\\\"helikopter\\\">",
+    		source: "(70:8) <Link to=\\\"helikopter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (68:8) <Link to="uavs">
+    // (71:8) <Link to="uavs">
     function create_default_slot_1$1(ctx) {
     	let t;
 
@@ -5074,7 +5077,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(68:8) <Link to=\\\"uavs\\\">",
+    		source: "(71:8) <Link to=\\\"uavs\\\">",
     		ctx
     	});
 
@@ -5083,48 +5086,51 @@ var app = (function () {
 
     // (43:4) <Router {url}>
     function create_default_slot$1(ctx) {
-    	let link0;
-    	let t0;
     	let a0;
     	let span0;
+    	let t1;
+    	let link0;
     	let t2;
-    	let link1;
-    	let t3;
-    	let link2;
-    	let t4;
     	let a1;
     	let span1;
+    	let t4;
+    	let link1;
+    	let t5;
+    	let link2;
     	let t6;
-    	let link3;
-    	let t7;
-    	let link4;
-    	let t8;
     	let a2;
     	let span2;
+    	let t8;
+    	let link3;
+    	let t9;
+    	let link4;
     	let t10;
-    	let link5;
-    	let t11;
-    	let link6;
-    	let t12;
-    	let link7;
-    	let t13;
-    	let link8;
-    	let t14;
-    	let link9;
-    	let t15;
     	let a3;
     	let span3;
+    	let t12;
+    	let link5;
+    	let t13;
+    	let link6;
+    	let t14;
+    	let link7;
+    	let t15;
+    	let link8;
+    	let t16;
+    	let link9;
     	let t17;
-    	let link10;
-    	let t18;
-    	let link11;
+    	let a4;
+    	let span4;
     	let t19;
+    	let link10;
+    	let t20;
+    	let link11;
+    	let t21;
     	let link12;
     	let current;
 
     	link0 = new Link({
     			props: {
-    				to: "grundlagen",
+    				to: "funken",
     				$$slots: { default: [create_default_slot_13$1] },
     				$$scope: { ctx }
     			},
@@ -5241,102 +5247,113 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			create_component(link0.$$.fragment);
-    			t0 = space();
     			a0 = element("a");
     			span0 = element("span");
-    			span0.textContent = "FÜHRUNGSKRÄFTE";
+    			span0.textContent = "GRUNDLAGEN";
+    			t1 = space();
+    			create_component(link0.$$.fragment);
     			t2 = space();
-    			create_component(link1.$$.fragment);
-    			t3 = space();
-    			create_component(link2.$$.fragment);
-    			t4 = space();
     			a1 = element("a");
     			span1 = element("span");
-    			span1.textContent = "STREITKRÄFTE";
+    			span1.textContent = "FÜHRUNGSKRÄFTE";
+    			t4 = space();
+    			create_component(link1.$$.fragment);
+    			t5 = space();
+    			create_component(link2.$$.fragment);
     			t6 = space();
-    			create_component(link3.$$.fragment);
-    			t7 = space();
-    			create_component(link4.$$.fragment);
-    			t8 = space();
     			a2 = element("a");
     			span2 = element("span");
-    			span2.textContent = "LOGISTIKER";
+    			span2.textContent = "STREITKRÄFTE";
+    			t8 = space();
+    			create_component(link3.$$.fragment);
+    			t9 = space();
+    			create_component(link4.$$.fragment);
     			t10 = space();
-    			create_component(link5.$$.fragment);
-    			t11 = space();
-    			create_component(link6.$$.fragment);
-    			t12 = space();
-    			create_component(link7.$$.fragment);
-    			t13 = space();
-    			create_component(link8.$$.fragment);
-    			t14 = space();
-    			create_component(link9.$$.fragment);
-    			t15 = space();
     			a3 = element("a");
     			span3 = element("span");
-    			span3.textContent = "FUHRPARK";
+    			span3.textContent = "LOGISTIKER";
+    			t12 = space();
+    			create_component(link5.$$.fragment);
+    			t13 = space();
+    			create_component(link6.$$.fragment);
+    			t14 = space();
+    			create_component(link7.$$.fragment);
+    			t15 = space();
+    			create_component(link8.$$.fragment);
+    			t16 = space();
+    			create_component(link9.$$.fragment);
     			t17 = space();
-    			create_component(link10.$$.fragment);
-    			t18 = space();
-    			create_component(link11.$$.fragment);
+    			a4 = element("a");
+    			span4 = element("span");
+    			span4.textContent = "FUHRPARK";
     			t19 = space();
+    			create_component(link10.$$.fragment);
+    			t20 = space();
+    			create_component(link11.$$.fragment);
+    			t21 = space();
     			create_component(link12.$$.fragment);
-    			add_location(span0, file, 45, 9, 1712);
+    			add_location(span0, file, 44, 9, 1665);
     			attr_dev(a0, "href", "/");
     			attr_dev(a0, "class", "expandable");
-    			add_location(a0, file, 44, 6, 1671);
-    			add_location(span1, file, 50, 9, 1903);
+    			add_location(a0, file, 43, 6, 1624);
+    			add_location(span1, file, 48, 9, 1790);
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "class", "expandable");
-    			add_location(a1, file, 49, 6, 1862);
-    			add_location(span2, file, 55, 9, 2094);
+    			add_location(a1, file, 47, 6, 1749);
+    			add_location(span2, file, 53, 9, 1981);
     			attr_dev(a2, "href", "/");
     			attr_dev(a2, "class", "expandable");
-    			add_location(a2, file, 54, 6, 2053);
-    			add_location(span3, file, 64, 9, 2455);
+    			add_location(a2, file, 52, 6, 1940);
+    			add_location(span3, file, 58, 9, 2172);
     			attr_dev(a3, "href", "/");
     			attr_dev(a3, "class", "expandable");
-    			add_location(a3, file, 63, 6, 2414);
+    			add_location(a3, file, 57, 6, 2131);
+    			add_location(span4, file, 67, 9, 2533);
+    			attr_dev(a4, "href", "/");
+    			attr_dev(a4, "class", "expandable");
+    			add_location(a4, file, 66, 6, 2492);
     		},
     		m: function mount(target, anchor) {
-    			mount_component(link0, target, anchor);
-    			insert_dev(target, t0, anchor);
     			insert_dev(target, a0, anchor);
     			append_dev(a0, span0);
-    			append_dev(a0, t2);
-    			mount_component(link1, a0, null);
-    			append_dev(a0, t3);
-    			mount_component(link2, a0, null);
-    			insert_dev(target, t4, anchor);
+    			append_dev(a0, t1);
+    			mount_component(link0, a0, null);
+    			insert_dev(target, t2, anchor);
     			insert_dev(target, a1, anchor);
     			append_dev(a1, span1);
-    			append_dev(a1, t6);
-    			mount_component(link3, a1, null);
-    			append_dev(a1, t7);
-    			mount_component(link4, a1, null);
-    			insert_dev(target, t8, anchor);
+    			append_dev(a1, t4);
+    			mount_component(link1, a1, null);
+    			append_dev(a1, t5);
+    			mount_component(link2, a1, null);
+    			insert_dev(target, t6, anchor);
     			insert_dev(target, a2, anchor);
     			append_dev(a2, span2);
-    			append_dev(a2, t10);
-    			mount_component(link5, a2, null);
-    			append_dev(a2, t11);
-    			mount_component(link6, a2, null);
-    			append_dev(a2, t12);
-    			mount_component(link7, a2, null);
-    			insert_dev(target, t13, anchor);
-    			mount_component(link8, target, anchor);
-    			insert_dev(target, t14, anchor);
-    			mount_component(link9, target, anchor);
-    			insert_dev(target, t15, anchor);
+    			append_dev(a2, t8);
+    			mount_component(link3, a2, null);
+    			append_dev(a2, t9);
+    			mount_component(link4, a2, null);
+    			insert_dev(target, t10, anchor);
     			insert_dev(target, a3, anchor);
     			append_dev(a3, span3);
-    			append_dev(a3, t17);
-    			mount_component(link10, a3, null);
-    			append_dev(a3, t18);
-    			mount_component(link11, a3, null);
-    			append_dev(a3, t19);
-    			mount_component(link12, a3, null);
+    			append_dev(a3, t12);
+    			mount_component(link5, a3, null);
+    			append_dev(a3, t13);
+    			mount_component(link6, a3, null);
+    			append_dev(a3, t14);
+    			mount_component(link7, a3, null);
+    			insert_dev(target, t15, anchor);
+    			mount_component(link8, target, anchor);
+    			insert_dev(target, t16, anchor);
+    			mount_component(link9, target, anchor);
+    			insert_dev(target, t17, anchor);
+    			insert_dev(target, a4, anchor);
+    			append_dev(a4, span4);
+    			append_dev(a4, t19);
+    			mount_component(link10, a4, null);
+    			append_dev(a4, t20);
+    			mount_component(link11, a4, null);
+    			append_dev(a4, t21);
+    			mount_component(link12, a4, null);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
@@ -5466,26 +5483,27 @@ var app = (function () {
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			destroy_component(link0, detaching);
-    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(a0);
+    			destroy_component(link0);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(a1);
     			destroy_component(link1);
     			destroy_component(link2);
-    			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(a1);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(a2);
     			destroy_component(link3);
     			destroy_component(link4);
-    			if (detaching) detach_dev(t8);
-    			if (detaching) detach_dev(a2);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(a3);
     			destroy_component(link5);
     			destroy_component(link6);
     			destroy_component(link7);
-    			if (detaching) detach_dev(t13);
-    			destroy_component(link8, detaching);
-    			if (detaching) detach_dev(t14);
-    			destroy_component(link9, detaching);
     			if (detaching) detach_dev(t15);
-    			if (detaching) detach_dev(a3);
+    			destroy_component(link8, detaching);
+    			if (detaching) detach_dev(t16);
+    			destroy_component(link9, detaching);
+    			if (detaching) detach_dev(t17);
+    			if (detaching) detach_dev(a4);
     			destroy_component(link10);
     			destroy_component(link11);
     			destroy_component(link12);
@@ -5698,7 +5716,7 @@ var app = (function () {
 
     /* src\App.svelte generated by Svelte v3.46.4 */
 
-    // (25:2) <Route path="/">
+    // (21:2) <Route path="/">
     function create_default_slot_15(ctx) {
     	let home;
     	let current;
@@ -5730,14 +5748,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_15.name,
     		type: "slot",
-    		source: "(25:2) <Route path=\\\"/\\\">",
+    		source: "(21:2) <Route path=\\\"/\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (26:2) <Route path="grundlagen">
+    // (22:2) <Route path="grundlagen">
     function create_default_slot_14(ctx) {
     	let grundlagen;
     	let current;
@@ -5769,14 +5787,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_14.name,
     		type: "slot",
-    		source: "(26:2) <Route path=\\\"grundlagen\\\">",
+    		source: "(22:2) <Route path=\\\"grundlagen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (27:2) <Route path="panzertruppen">
+    // (23:2) <Route path="panzertruppen">
     function create_default_slot_13(ctx) {
     	let panzertruppen;
     	let current;
@@ -5808,14 +5826,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13.name,
     		type: "slot",
-    		source: "(27:2) <Route path=\\\"panzertruppen\\\">",
+    		source: "(23:2) <Route path=\\\"panzertruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (28:2) <Route path="sanitaeter">
+    // (24:2) <Route path="sanitaeter">
     function create_default_slot_12(ctx) {
     	let sanitaeter;
     	let current;
@@ -5847,14 +5865,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12.name,
     		type: "slot",
-    		source: "(28:2) <Route path=\\\"sanitaeter\\\">",
+    		source: "(24:2) <Route path=\\\"sanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (29:2) <Route path="aufklaerer">
+    // (25:2) <Route path="aufklaerer">
     function create_default_slot_11(ctx) {
     	let aufklaerer;
     	let current;
@@ -5886,14 +5904,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11.name,
     		type: "slot",
-    		source: "(29:2) <Route path=\\\"aufklaerer\\\">",
+    		source: "(25:2) <Route path=\\\"aufklaerer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (30:2) <Route path="funken">
+    // (26:2) <Route path="funken">
     function create_default_slot_10(ctx) {
     	let funken;
     	let current;
@@ -5925,14 +5943,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10.name,
     		type: "slot",
-    		source: "(30:2) <Route path=\\\"funken\\\">",
+    		source: "(26:2) <Route path=\\\"funken\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (32:2) <Route path="basis-logistiker">
+    // (28:2) <Route path="basis-logistiker">
     function create_default_slot_9(ctx) {
     	let basislogistiker;
     	let current;
@@ -5964,14 +5982,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9.name,
     		type: "slot",
-    		source: "(32:2) <Route path=\\\"basis-logistiker\\\">",
+    		source: "(28:2) <Route path=\\\"basis-logistiker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (33:2) <Route path="fahrzeuge">
+    // (29:2) <Route path="fahrzeuge">
     function create_default_slot_8(ctx) {
     	let fahrzeuge;
     	let current;
@@ -6003,14 +6021,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8.name,
     		type: "slot",
-    		source: "(33:2) <Route path=\\\"fahrzeuge\\\">",
+    		source: "(29:2) <Route path=\\\"fahrzeuge\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (34:2) <Route path="fusstruppen">
+    // (30:2) <Route path="fusstruppen">
     function create_default_slot_7(ctx) {
     	let fusstruppen;
     	let current;
@@ -6042,14 +6060,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7.name,
     		type: "slot",
-    		source: "(34:2) <Route path=\\\"fusstruppen\\\">",
+    		source: "(30:2) <Route path=\\\"fusstruppen\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (35:2) <Route path="helikopter">
+    // (31:2) <Route path="helikopter">
     function create_default_slot_6(ctx) {
     	let helikopter;
     	let current;
@@ -6081,14 +6099,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6.name,
     		type: "slot",
-    		source: "(35:2) <Route path=\\\"helikopter\\\">",
+    		source: "(31:2) <Route path=\\\"helikopter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (36:2) <Route path="hubschrauberpiloten">
+    // (32:2) <Route path="hubschrauberpiloten">
     function create_default_slot_5(ctx) {
     	let hubschrauberpiloten;
     	let current;
@@ -6120,14 +6138,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5.name,
     		type: "slot",
-    		source: "(36:2) <Route path=\\\"hubschrauberpiloten\\\">",
+    		source: "(32:2) <Route path=\\\"hubschrauberpiloten\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (37:2) <Route path="kampfpioniere">
+    // (33:2) <Route path="kampfpioniere">
     function create_default_slot_4(ctx) {
     	let kampfpioniere;
     	let current;
@@ -6159,14 +6177,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(37:2) <Route path=\\\"kampfpioniere\\\">",
+    		source: "(33:2) <Route path=\\\"kampfpioniere\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (38:2) <Route path="truppfuehrer">
+    // (34:2) <Route path="truppfuehrer">
     function create_default_slot_3(ctx) {
     	let truppfuehrer;
     	let current;
@@ -6198,14 +6216,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(38:2) <Route path=\\\"truppfuehrer\\\">",
+    		source: "(34:2) <Route path=\\\"truppfuehrer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (39:2) <Route path="truppfunker">
+    // (35:2) <Route path="truppfunker">
     function create_default_slot_2(ctx) {
     	let truppfunker;
     	let current;
@@ -6237,14 +6255,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(39:2) <Route path=\\\"truppfunker\\\">",
+    		source: "(35:2) <Route path=\\\"truppfunker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (40:2) <Route path="uavs">
+    // (36:2) <Route path="uavs">
     function create_default_slot_1(ctx) {
     	let uavs;
     	let current;
@@ -6276,14 +6294,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(40:2) <Route path=\\\"uavs\\\">",
+    		source: "(36:2) <Route path=\\\"uavs\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (24:0) <Router {url}>
+    // (20:0) <Router {url}>
     function create_default_slot(ctx) {
     	let route0;
     	let t0;
@@ -6696,7 +6714,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(24:0) <Router {url}>",
+    		source: "(20:0) <Router {url}>",
     		ctx
     	});
 
