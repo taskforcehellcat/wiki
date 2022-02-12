@@ -32,6 +32,11 @@ def parse_page(filename):
         root = bs.wiki.find('svelte:fragment')
 
         for section in root.find_all('section'):
+
+            # only index sections that have an id
+            if not 'id' in section.attrs:
+                continue
+
             section_text = ''
 
             for p in section.descendants: 

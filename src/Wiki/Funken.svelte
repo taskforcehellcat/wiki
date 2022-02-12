@@ -37,17 +37,16 @@
     <section id="Beendigung">
       <p>Hat man alles gesagt, muss man auch das dem Gegenüber signalisieren. Dazu gibt es eine Reihe von Signalwörtern:</p>
       
-      <h3>Kommen</h3>
-      <p>Mit „kommen“ am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegenüber erwartet. Man benutzt es auch nach dem Beantworten einer Frage.</p>
+      <section>
+        <h3>Kommen</h3>
+        <p>Mit „kommen“ am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegenüber erwartet. Man benutzt es auch nach dem Beantworten einer Frage.</p>
 
-      <h3>Ende</h3>
-      <p>Mit „ende“ beendet man den Austausch. „Ende“ wird von der Partei gebraucht, die den Austausch begonnen hat.</p>
-      
-      <h3>Trennung</h3>
-      <p>„Trennung“ ist effektiv ein „ende“. Es zeigt dem Funkkreis an, dass der Sprecher das Gespräch mit einer Partei für beendet erklärt, aber direkt zu einer Anderen Kontakt aufnehmen möchte. Es folgt auf „Trennung“ also direkt die Verbindung zum neuen Gesprächspartner.</p>
-      
-      
-      <!-- Hier Tabelle mit Kommen, Ende, Trennung, etc. und den Erklärungen einfügen -->
+        <h3>Ende</h3>
+        <p>Mit „ende“ beendet man den Austausch. „Ende“ wird von der Partei gebraucht, die den Austausch begonnen hat.</p>
+        
+        <h3>Trennung</h3>
+        <p>„Trennung“ ist effektiv ein „ende“. Es zeigt dem Funkkreis an, dass der Sprecher das Gespräch mit einer Partei für beendet erklärt, aber direkt zu einer Anderen Kontakt aufnehmen möchte. Es folgt auf „Trennung“ also direkt die Verbindung zum neuen Gesprächspartner.</p>
+      </section>
     </section>
 
     <section id="Außnahmen und Notfälle">
