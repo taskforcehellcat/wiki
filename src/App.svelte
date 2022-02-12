@@ -41,6 +41,4 @@
   <Route path="truppfuehrer"><Truppfuehrer /></Route>
   <Route path="truppfunker"><Truppfunker /></Route>
   <Route path="uavs"><Uavs /></Route>
-
-  <Route path="fuhrpark"><Fuhrpark /></Route>
 </Router>
