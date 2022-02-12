@@ -47,7 +47,7 @@
         <span>grundlagen</span>
         <Link to="steuerung">steuerung</Link>
         <Link to="funk">funk</Link>
-        <Link to="erstehilfe">erstehilfe</Link>
+        <Link to="erstehilfe">erste hilfe</Link>
         <Link to="buddyteam">buddyteam</Link>
         <Link to="sonstiges">sonstiges</Link>
       </a>
@@ -70,7 +70,7 @@
       <a href="/" class="expandable">
         <span>sanitätsdienst</span>
         <Link to="sanitaeter">sanitäter</Link>
-        <Link to="medevacsanitaeter">medevacsanitäter</Link>
+        <Link to="medevacsanitaeter">medevac-sanitäter</Link>
       </a>
       <a href="/" class="expandable">
         <span>panzertruppen</span>
