@@ -1,6 +1,7 @@
-import os
-import json
-import re
+from os import listdir
+from os.path import basename
+from json import dump
+#import re # only required for tag removal
 from bs4 import BeautifulSoup
 
 # DEPENDENCIES OF THIS SCRIPT ARE: lxml, bs4
@@ -20,7 +21,10 @@ def parse_page(filename):
     remark: h2, h3 etc. headers are ignored. 
     '''
 
+    # holds the name of the page to be parsed
     page_name = ''
+
+    # holds sections of the page (page title -> key) with the text they contain (value)
     page_sections = {}
     
     with open(PATH+filename, 'r') as svelte:
@@ -32,6 +36,12 @@ def parse_page(filename):
         root = bs.wiki.find('svelte:fragment')
 
         for section in root.find_all('section'):
+
+            # only index sections that have an id
+            if not 'id' in section.attrs:
+                continue
+            
+            # string to be appended to for every p tag
             section_text = ''
 
             for p in section.descendants: 
@@ -39,16 +49,19 @@ def parse_page(filename):
                     section_text = section_text + p.text + ' '
 
             # remove tags
+            # apparently removal of tags is already handeled by bs4
 
+            '''
             tags_to_remove = []#'a', 'link', 'Link', 'b', 'i', 'img', 'u', 'br', 'hr', '<strong>', 'em', 'abbr', 'acronym', 'address', 'bdo', 'blockquote', 'cite', 'q', 'code', 'ins', 'del', 'dfn', 'kbd', 'pre', 'samp', 'var', 'area', 'map', 'param', 'object', 'ul', 'ol', 'li', 'dl', 'dt', 'dd', 'noscript', 'audio', 'base']
 
-            # apparently removal of tags is already handeled by bs4
             
             for tag in tags_to_remove:
                 re.sub(r'<'+tag+'[*]>', '', section_text)
+            '''
 
             page_sections.update({section.attrs['id']:section_text})
 
+    # get the page title from the first h1 tag
     page_name = root.h1.text
 
     return [page_name, page_sections]
@@ -61,7 +74,7 @@ def save_to_JSON(dict_to_save):
     '''
 
     with open('searchIndex.json', 'w', encoding='utf-8') as f:
-        json.dump(dict_to_save, f, ensure_ascii=True, indent=4)
+        dump(dict_to_save, f, ensure_ascii=True, indent=4)
 
     return 0
 
@@ -70,8 +83,8 @@ def main():
     output = {}
 
     # for all files, create a page entry in dict output 
-    for file in os.listdir(PATH):
-        if not os.path.basename(file).endswith('.svelte'): continue
+    for file in listdir(PATH):
+        if not basename(file).endswith('.svelte'): continue
 
         pagearr = parse_page(file)
 

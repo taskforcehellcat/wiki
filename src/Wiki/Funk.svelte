@@ -35,14 +35,24 @@
     </section>
 
     <section id="Beendigung">
-      <p>Hat man alles gesagt, muss man auch das dem Gegenüber signalisieren. Dazu gibt es eine Reihe von Signalwörtern:</p>
-      <!-- Hier Tabelle mit Kommen, Ende, Trennung, etc. und den Erklärungen einfügen -->
+      <p>Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespräch ansonsten für unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalwörtern:</p>
+      
+      <section>
+        <h3>Kommen</h3>
+        <p>Mit „kommen“ am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegenüber erwartet. Man benutzt es auch nach dem Beantworten einer Frage.</p>
+
+        <h3>Ende</h3>
+        <p>Mit „ende“ beendet man den Austausch. „Ende“ wird von der Partei gebraucht, die den Austausch begonnen hat.</p>
+        
+        <h3>Trennung</h3>
+        <p>„Trennung“ ist effektiv ein „ende“. Es zeigt dem Funkkreis an, dass der Sprecher das Gespräch mit einer Partei für beendet erklärt, aber direkt zu einer Anderen Kontakt aufnehmen möchte. Es folgt auf „Trennung“ also direkt die Verbindung zum neuen Gesprächspartner.</p>
+      </section>
     </section>
 
     <section id="Außnahmen und Notfälle">
       <p>Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.</p>
 
-      <p>Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa das Funken im Konvoi und zwischen der Logistik, der Funk unter Truppführern oder Sanitätern oder der Funk zwischen Aufklärern. Dazu finden sich Einträge auf den jeweiligen Unterseiten.</p>
+      <p>Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppführern, Sanitätern oder Aufklärern. Dazu finden sich Einträge mit weiterführenden Informationen auf den jeweiligen Unterseiten.</p>
     </section>
   </svelte:fragment>
 </Wiki>
