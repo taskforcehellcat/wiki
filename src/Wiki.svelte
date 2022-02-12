@@ -140,7 +140,7 @@
   import { onMount } from "svelte";
   onMount(async () => {
     const thumb = document.getElementById("nav-list-bar-thumb");
-    const sections = document.querySelectorAll("section");
+    const sections = document.querySelectorAll("section:not(section>section)");
     const navList = document.getElementById("nav-list");
     const bar = document.getElementById("nav-list-bar");
     var sectionsArr = Array.from(sections);
@@ -151,7 +151,7 @@
 
     /* Fügt h2 zu allen elementen der NodeList */
     sectionsArr.forEach((element) => {
-      element.insertAdjacentHTML("afterBegin", "<h2>" + element.id + "</h2>");
+      element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
       navList.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
     });
 
@@ -173,8 +173,6 @@
     });
 
     console.log(sectionHeight);
-
-    document.getElementById("wiki-wrapper").minHeight = sectionHeight;
   });
 </script>
 
@@ -194,7 +192,7 @@
       <div id="nav-list" />
     </div>
     <div class="nav-list-title">wiki</div>
-    <Link to="/" id="return-button"> Return </Link>
+    <Link to="/" id="return-button">Return</Link>
   </nav>
 
   <main>
