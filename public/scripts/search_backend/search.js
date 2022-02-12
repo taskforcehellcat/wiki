@@ -77,4 +77,4 @@ function main(query) {
     return results;
 }
 
-console.log(main("sani")); // !! TESTING ONLY !!
+// console.log(main("sani")); // !! TESTING ONLY !!
