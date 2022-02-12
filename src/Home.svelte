@@ -43,7 +43,10 @@
 
   <div id="home-nav-list">
     <Router {url}>
-      <Link to="grundlagen">GRUNDLAGEN</Link>
+      <a href="/" class="expandable"
+        ><span>GRUNDLAGEN</span>
+        <Link to="funken">FUNKEN</Link>
+      </a>
       <a href="/" class="expandable"
         ><span>FÜHRUNGSKRÄFTE</span>
         <Link to="truppfuehrer">TRUPPFÜHRER</Link>
