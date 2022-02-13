@@ -16,6 +16,10 @@
   import Grenadier from "./Wiki/Grenadier.svelte";
   import Sanitaeter from "./Wiki/Sanitaeter.svelte";
   import Medevacsanitaeter from "./Wiki/Medevacsanitaeter.svelte";
+  import Fahrer from "./Wiki/Fahrer.svelte";
+  import Kommandant from "./Wiki/Kommandant.svelte";
+  import Ladeschuetze from "./Wiki/Ladeschuetze.svelte";
+  import Richtschuetze from "./Wiki/Richtschuetze.svelte";
   import Kampfpionier from "./Wiki/Kampfpionier.svelte";
   import Pionier from "./Wiki/Pionier.svelte";
   import Helikopterpilot from "./Wiki/Helikopterpiloten.svelte";
@@ -29,6 +33,7 @@
 
   import Home from "./Home.svelte";
   import { Router, Route } from "svelte-routing";
+
   export let url = "";
 </script>
 
@@ -57,6 +62,11 @@
 
   <Route path="sanitaeter"><Sanitaeter /></Route>
   <Route path="medevacsanitaeter"><Medevacsanitaeter /></Route>
+
+  <Route path="fahrer"><Fahrer /></Route>
+  <Route path="kommandant"><Kommandant /></Route>
+  <Route path="ladeschuetze"><Ladeschuetze /></Route>
+  <Route path="richtschuetze"><Richtschuetze /></Route>
 
   <Route path="kampfpionier"><Kampfpionier /></Route>
   <Route path="pionier"><Pionier /></Route>
