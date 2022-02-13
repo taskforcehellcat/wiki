@@ -148,27 +148,6 @@
       /* add anchor link to element to navigation list */
       navList.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
     });
-
-    /*
-    var thumbPercent = (1 / sections.length) * 100;
-    if (parseInt(bar.style.paddingTop) - parseInt(thumb.style.height) <= parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) {
-      thumb.style.height = parseInt(parseInt(window.getComputedStyle(bar).getPropertyValue("height"))) * (thumbPercent / 100) + "px";
-    } else;
-    
-
-    thumb.style.height = 1 / sections.length * 100 + "%";
-
-    window.addEventListener("scroll", (event) => {
-    bar.style.paddingTop = window.scrollY / (sections.length * 10) + "rem";
-    });
-
-    var sectionHeight = 0;
-    sections.forEach((element) => {
-      sectionHeight += parseInt(window.getComputedStyle(element).height);
-    });
-
-    console.log(sectionHeight);
-    */
   });
 </script>
 
