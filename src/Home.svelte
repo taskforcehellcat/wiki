@@ -20,8 +20,11 @@
     /* creates array from "expandable" nodelist */
     var expandableArr = Array.from(expandable);
 
+    // used to track whether an expandable should open or close on a click
+    let lastClicked = '';
+    let toOpen = false;
+
     expandableArr.forEach((element) => {
-      var open = false;
 
       /* adds  "arrow" to any span in "expandableArr" array */
       element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round noselect">expand_more</span>');
@@ -31,13 +34,18 @@
         /* disables default html click behavior */
         event.preventDefault();
 
-        /* simple open/close toggle */
-        open = !open;
-        /* if collapsable menu is open, add class "open"; else remove class "open" */
-        if (open == true) {
-          element.classList.add("open");
-        } else {
+        // logic to determine if span should be opened
+        toOpen = (event.target.firstChild.textContent == lastClicked) && !toOpen;
+        lastClicked = event.target.firstChild.textContent;
+
+        // collapse all
+        expandableArr.forEach(element => {
           element.classList.remove("open");
+        });
+        
+        // open span if it should be open
+        if (!toOpen) {
+          element.classList.add("open");
         }
       };
     });
