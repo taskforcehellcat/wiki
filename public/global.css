@@ -331,7 +331,3 @@ input:focus {
 #search-wrapper[data-empty="false"] #home-nav-list {
   display: none;
 }
-
-#home-nav-results {
-  display: none;
-}
