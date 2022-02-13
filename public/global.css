@@ -85,7 +85,6 @@ main {
   display: flex;
   flex-direction: column;
   text-align: left;
-  letter-spacing: 0.12rem;
   gap: 10px;
   color: #94a2cf;
 }
@@ -278,6 +277,10 @@ input:focus {
   justify-self: end;
 }
 
+#return-button:hover {
+  color: #fff;
+}
+
 #home-nav-results {
   height: fit-content;
   width: 80rem;
@@ -342,8 +345,18 @@ input:focus {
   text-transform: uppercase;
   font-weight: 600;
   gap: 15px;
+  letter-spacing: 0.12rem;
 }
 
 #home-nav .expandable a {
   font-size: 13pt;
+}
+
+#wiki-nav-list a,
+#return-button {
+  transition: color 0.2s ease-out;
+}
+
+#wiki-nav-list a:hover {
+  color: #fff;
 }
