@@ -33,24 +33,11 @@
 
         /* simple open/close toggle */
         open = !open;
-
-        /* if collapsable menu is open */
+        /* if collapsable menu is open, add class "open"; else remove class "open" */
         if (open == true) {
-          /* rotate arrow 90deg */
-          element.querySelector(".material-icons-round").style.transform = "rotate(90deg)";
-
-          /* add display:flex to every a (Link) tag */
-          element.querySelectorAll("a").forEach((element) => {
-            element.style.display = "flex";
-          });
+          element.classList.add("open");
         } else {
-          /* rotate back to default orientation (0deg) */
-          element.querySelector(".material-icons-round").style.transform = "rotate(0deg)";
-
-          /* add display:none to every a (Link) tag */
-          element.querySelectorAll("a").forEach((element) => {
-            element.style.display = "none";
-          });
+          element.classList.remove("open");
         }
       };
     });
