@@ -1,59 +1,88 @@
 {
-    "Fahrzeuge": {
+    "Helikopterpilot": {
         "Allgemeines": " "
     },
-    "Grundlagen des Funkens": {
-        "Einleitung": "Grundvoraussetzung f\u00fcr eine gelungene Missionsdurchf\u00fchrung ist eine gute Kommunikation zwischen allen Kr\u00e4ften. \u00dcber l\u00e4ngere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundz\u00fcge von gutem Funken sollte allen Soldaten bekannt sein. ",
-        "Bevor man die Taste dr\u00fcckt": "Noch bevor man beginnt, Funkkontakt aufzubauen, \u00fcberlegt man sich genau, was man mitteilen m\u00f6chte. Ein Sender blockiert f\u00fcr die Dauer seines Funkspruches den Funkkanal und damit m\u00f6glicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverst\u00e4ndlich gehalten werden. Guter Funk folgt also der Devise: So viel wie n\u00f6tig, so kurz wie m\u00f6glich. ",
-        "Verbindung": "Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema: Der Sender identifiziert sich und den Empf\u00e4nger des Funkspruches. Danach wird in einem Wort erkl\u00e4rt, welchen Zweck die Mitteilung verfolgt. Zum Beispiel: \u201eAufkl\u00e4rung f\u00fcr Truppf\u00fchrung - Information - Infanterie in Gruppenst\u00e4rke zu Fu\u00df gesichtet nord-west ihrer Aktuellen - Kommen.\u201c \u201eTruppf\u00fchrung f\u00fcr Aufkl\u00e4rung - Frage - Panzerabwehrsch\u00fctzen erkannt? Kommen.\u201c Dies stellt eine Richtlinie f\u00fcr die Erstverbindung dar. Im weiteren Gespr\u00e4chsverlauf ist es eventuell nicht mehr n\u00f6tig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann des dem Gegen\u00fcber jedoch das Verst\u00e4ndnis erleichtern, wenn man seine Absicht ausspricht. ",
-        "Funkspruch": "Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grunds\u00e4tzen: er sollte knapp, aber eindeutig sein. Besonders F\u00fcllw\u00f6rter und h\u00e4ufiges Versprechen k\u00f6nnen leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz \u00fcberlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verst\u00e4ndnis erleichtern sollen. Zahlen werden im Funk grunds\u00e4tzlich Ziffer f\u00fcr Ziffer diktiert, \u201e1278\u201c also als \u201eeins - zwo - sieben - acht\u201c gesprochen. \u201eZwo\u201c ist dabei dringend zu benutzen, da \u201ezwei\u201c leicht mit \u201edrei\u201c verwechselt wird. Ebenso verwendet man \u201ef\u00fcnn\u00fcf\u201c f\u00fcr \u201ef\u00fcnf\u201c. Buchstabieren wird oft n\u00f6tig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet. Da es auch au\u00dferhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen. ",
-        "Beendigung": "Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00e4ch ansonsten f\u00fcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00f6rtern: Mit \u201ekommen\u201c am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegen\u00fcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. Mit \u201eende\u201c beendet man den Austausch. \u201eEnde\u201c wird von der Partei gebraucht, die den Austausch begonnen hat. \u201eTrennung\u201c ist effektiv ein \u201eende\u201c. Es zeigt dem Funkkreis an, dass der Sprecher das Gespr\u00e4ch mit einer Partei f\u00fcr beendet erkl\u00e4rt, aber direkt zu einer Anderen Kontakt aufnehmen m\u00f6chte. Es folgt auf \u201eTrennung\u201c also direkt die Verbindung zum neuen Gespr\u00e4chspartner. ",
-        "Au\u00dfnahmen und Notf\u00e4lle": "Grunds\u00e4tzlich herrscht w\u00e4hrend eines laufenden Austausches Funkstille f\u00fcr alle anderen. Kommt es jedoch zu Notf\u00e4llen, kann es sein, dass ein Dritter sich mit Signalw\u00f6rtern wie \u201eeil\u201c, \u201esofort\u201c oder \u201eBlitz\u201c einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00e4ch ist zu unterbrechen. Diese Anleitung vermittelt blo\u00df die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppf\u00fchrern, Sanit\u00e4tern oder Aufkl\u00e4rern. Dazu finden sich Eintr\u00e4ge mit weiterf\u00fchrenden Informationen auf den jeweiligen Unterseiten. "
-    },
-    "UAVs": {
+    "JTAC (Joint Terminal Attack Controller)": {
         "Allgemeines": " "
     },
-    "Aufkl\u00e4rer": {
-        "Allgemeines": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam earum modi culpa beatae! Autem ratione necessitatibus iusto quo perspiciatis consequuntur ab quos incidunt animi sit iure, voluptatum consectetur, debitis laudantium dolore quis, ipsam doloribus repudiandae unde odio blanditiis reprehenderit est. Ut ipsam nulla reprehenderit. Quidem facere quia repudiandae sed aut impedit iusto, saepe fugit nulla nostrum totam nesciunt cumque? Sapiente, placeat fugit fugiat pariatur nobis enim nisi impedit consequatur dolore iure distinctio. Minima veritatis maxime minus recusandae at perspiciatis ipsum culpa voluptates quisquam eligendi tenetur dolorem, eum placeat labore odio sint sequi Kampfpionier veniam quam fugiat quaerat repellat assumenda vero temporibus! Quod, ipsum consequatur placeat minima mollitia dolore commodi facere corrupti unde voluptate? Illo magnam pariatur mollitia necessitatibus beatae ut, esse aut aperiam cumque quod fuga inventore asperiores sunt aspernatur odit sequi nulla, tempore earum totam tempora. Soluta sunt deleniti laborum eligendi, hic minima rerum nesciunt quos sed? Quod iure doloremque beatae commodi voluptatum sint, impedit sapiente nihil reiciendis accusamus. Tempora deleniti repellendus numquam. Consequuntur tempore itaque sint id provident, maxime sequi quam dolorum dolores laudantium, earum similique tempora adipisci! Nostrum, illum facere, vel dolores neque obcaecati molestias rem magni autem ut quos asperiores a? Id repellendus porro quis. Assumenda. "
-    },
-    "Hubschrauberpiloten": {
+    "Bodenfahrzeuge": {
         "Allgemeines": " "
     },
-    "Helikopter": {
+    "Sonstiges": {
         "Allgemeines": " "
     },
-    "Grundlagen": {
-        "Allgemeines": "Sanit\u00e4ter (von lat. sanitas \u201eGesundheit\u201c) ist im Allgemeinen eine Bezeichnung f\u00fcr nicht\u00e4rztliches Personal im Sanit\u00e4ts-/Rettungsdienst oder des milit\u00e4rischen Sanit\u00e4tswesens sowie im Speziellen f\u00fcr eine Person, die eine Sanit\u00e4tsausbildung absolviert hat. libero ipsum ipsam quos natus error corrupti officia, animi exercitationem provident, voluptas vitae autem quis cum impedit expedita atque amet dignissimos! Sequi, labore corrupti nulla exercitationem amet nostrum? Possimus Similique ut sequi labore suscipit! ",
-        "Rollenprofil": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est! ",
-        "Ausr\u00fcstung": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est! ",
-        "Aufgabenbereiche": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est! ",
-        "Einsatzgebiete": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est! ",
-        "Kompetenzen": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores necessitatibus repellendus sit perspiciatis! Pariatur impedit voluptate, nam inventore consequuntur corporis voluptates qui blanditiis repudiandae provident dolorum eveniet ipsam recusandae beatae sunt assumenda itaque, natus harum? Impedit quibusdam eaque, omnis consectetur enim rerum porro perferendis eius beatae eum tempore maxime est ea vero? Aperiam, amet nobis? Delectus voluptas alias, nostrum sint nulla exercitationem accusantium assumenda? Molestias quaerat eius fuga aut est! "
+    "Einsatzleiter": {
+        "Allgemeines": " "
     },
-    "Panzertruppen": {
-        "Allgemeines": "Die Abteilung der Panzertruppen ist eine Zusammensetzung aus Panzerbesatzungen bestehend aus Kommandanten, Richtsch\u00fctzen und Fahrern sowie vielf\u00e4ltigen Fahrzeugklassen und Waffensystemen. Ihre Anforderungsbereiche reichen vom modernen Panzerkampf \u00fcber den Orts- und H\u00e4userkampf mit den Streitkr\u00e4ften bis hin zur Feuerunterst\u00fctzung der Streitkr\u00e4fte durch Artilleriefeuer. Alle Spieler der Panzertruppen durchlaufen Ausbildungen, die jeweils auf bestimmte Fahrzeugklassen ausgerichtet sind. Nach Beendigung der Ausbildung k\u00f6nnen die Spieler an Events mit ihrer Fahrzeugklasse teilnehmen. Neben den Ausbildungen und den Events finden \u00dcbungen statt, die speziell f\u00fcr die Panzerbesatzungen der Panzertruppen vorgesehen sind. ",
-        "Fahrzeugklassen": "Die Panzertruppen verf\u00fcgen \u00fcber unterschiedlichste Fahrzeugklassen mit vielf\u00e4ltigen Spezialisierungen, wie den Kampfpanzer (KPz/MBT), den Sch\u00fctzenpanzer (SPz/IFV), den Flugabwehrpanzer (FlakPz/SPAAG), die Panzerartillerie (PzAr/SPG) und die Raketenartillerie (RkAr/MS). Jede Fahrzeugklasse ist f\u00fcr die unterschiedlichsten Anwendungsbereiche vorgesehen, wodurch sich das Spielerlebnis massiv unterscheidet. Je nach Auftrag eines Einsatzes k\u00f6nnen die Fahrzeugklassen auch gemeinsam agieren, um die h\u00f6chstm\u00f6gliche Kampfeffizienz zu erzielen. ",
-        "Besatzungsmitglieder": "Die Panzerbesatzungen der Panzertruppen setzen sich im Normalfall aus jeweils drei Spielern zusammen. Der Kommandant hat die Befehlsgewalt und tr\u00e4gt die Verantwortung f\u00fcr sein Fahrzeug und seine Besatzung. Die Erf\u00fcllung des Einsatzauftrages ist durch den Informationsfluss mit verb\u00fcndeten Kr\u00e4ften, der Befehlserteilung und der Einhaltung von Befehlen des Panzerzugf\u00fchrers durch ihn zu erreichen. Die Kraftfahrer der Panzertruppen nehmen unmittelbaren Einfluss auf die Bewegung ihres Fahrzeuges. Ihre Aufgabe ist das Man\u00f6vrieren des Fahrzeuges entsprechend der Anweisungen ihrer Kommandanten. Die Richtsch\u00fctzen der Panzertruppen bedienen die Waffenanlage ihrer Fahrzeuge entsprechend der Anweisungen ihres Kommandanten. Sie sind unmittelbar an der Aufkl\u00e4rung und Bek\u00e4mpfung von Feindkr\u00e4ften sowie der Deckung eigener Truppen beteiligt. ",
-        "F\u00fchrungskette": "Zur Wahrung von Struktur und Ordnung w\u00e4hrend eines Einsatzes gibt es bei den Panzertruppen eine klare Hierarchie. Alle Fahrer und Richtsch\u00fctzen der Panzertruppen sind das unterste Glied der F\u00fchrungskette. Ihr Vorgesetzter ist ihr Kommandant, der ihnen Befehle erteilt. Alle Kommandanten eines Panzerzuges unterstehen dem jeweiligen Panzerzugf\u00fchrer. Seine Verantwortung liegt in der Koordination und F\u00fchrung des ganzen Panzerzuges, w\u00e4hrend er eine Funkverbindung zu den F\u00fchrungselementen und anderen unterst\u00fctzenden Elementen h\u00e4lt. Die Kommunikation der F\u00fchrungskette ist intuitiv: Die Befehle werden von der F\u00fchrungsebene bis zum unterstem Glied der F\u00fchrungskette weitergegeben. Aus der entgegengesetzten Richtung stammen Meldungen, Fragen, Statusberichte, etc. der Panzerbesatzungen. ",
-        "Formalit\u00e4ten": "Feindliche Kr\u00e4fte werden innerhalb der Panzertruppen gem\u00e4\u00df der REZ-Regel gemeldet. Eine Feindmeldung erfolgt durch die Richtungsangabe, Entfernungsangabe und der Zieldefinition des Feindes. Die Richtungsangabe erfolgt im Normalfall entsprechend einer Uhrzeit relativ zur Fahrzeugwanne oder in Gradzahlen. Die Entfernungsangabe wird in Hundert \u00fcbergeben, also wird \u201e1.200 Meter\u201c zu \u201ezw\u00f6lfhundert Meter\u201c. Ausnahmen sind hierbei Tausenderzahlen wie 1.000, 2.000, usw. Die Zieldefinition erfolgt als Typdefinition des Feindes. Eine feindliche Infanteriegruppe wird als solche gemeldet und ein Fahrzeug wird entsprechend der vorgesehenen Akronyme durchgegeben. Die im Normalfall aus vier Fahrzeugen derselben Fahrzeugklasse bestehenden Panzerz\u00fcge der Panzertruppen k\u00f6nnen in den unterschiedlichsten Formen vorkommen. Neben der Formierung von verminderten oder verst\u00e4rkten Panzerz\u00fcgen kann die Bildung eines Sonderzuges erfolgen. Ein Sonderzug ist ein Kampfverband, der aus unterschiedlichen Fahrzeugklassen zusammengesetzt ist. Die Zusammenschlie\u00dfung oder Neubildung von Panzerz\u00fcgen kann w\u00e4hrend des Einsatzes durch die F\u00fchrungskraft der Panzertruppen erfolgen. ",
-        "Funk": "Die Kommunikation der Panzertruppen hat einen immensen Einfluss auf ihre Effizienz und Wirkung. Der Funk muss nach dem Leitsatz \u201eso viel wie n\u00f6tig, so wenig wie m\u00f6glich\u201c erfolgen. Das konkrete Ziel eines Kampfverbandes ist die B\u00fcndelung der Feuerkraft und das gegenseitige Sch\u00fctzen. Die Kommunikation der Panzertruppen erfolgt \u00fcber drei Funkkan\u00e4le. Der Bordfunk ist ein interner Funkkanal innerhalb eines Fahrzeuges, in dem alle Besatzungsmitglieder miteinander kommunizieren k\u00f6nnen. Der taktische Funkkanal wird von jedem Besatzungsmitglied eines Zuges genutzt. Der taktische Funkkanal wird vom Zugf\u00fchrer genutzt um m\u00f6glichst schnell Befehle an Fahrer oder Sch\u00fctzen aller Fahrzeuge seines Zuges zu erteilen. In ihm k\u00f6nnen Formationswechsel, Geschwindigkeitsjustierungen, Feindmeldungen, Prim\u00e4rziele und Feuerkoordinationen \u00fcbergeben werden. Der Kommandantenfunkkanal wird von den Kommandanten eines Panzerzuges genutzt, um die Panzerbesatzungen zu entlasten und ein Funkchaos zu vermeiden. \u00dcber ihn werden Informationen vermittelt, die keinen unmittelbaren Einfluss auf den aktiven Kampf haben. Dazu z\u00e4hlen Informationen zur Missionsentwicklung, zum Munitionsstand, Schadensberichte an Fahrzeugen, Treibstoffvorr\u00e4te, Absch\u00fcsse, Einzelbefehle, Statusmeldungen, Melden der Einsatzbereitschaft oder Vorschl\u00e4ge. "
+    "Luftfahrzeuge": {
+        "Allgemeines": " "
+    },
+    "EOD (Explosive Ordnance Disposal)": {
+        "Allgemeines": " "
+    },
+    "Pionier": {
+        "Allgemeines": " "
     },
     "Sanit\u00e4ter": {
         "Allgemeines": " "
     },
-    "Kampfpioniere": {
+    "Funker": {
+        "Allgemeines": " "
+    },
+    "Spotter": {
+        "Allgemeines": " "
+    },
+    "MG-Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Pr\u00e4zisionssch\u00fctze": {
         "Allgemeines": " "
     },
     "Basis-Logistiker": {
         "Allgemeines": " "
     },
-    "Fu\u00dftruppen": {
+    "Abteilungsleiter": {
         "Allgemeines": " "
     },
-    "Truppfunker": {
+    "Buddyteam": {
         "Allgemeines": " "
     },
-    "Truppf\u00fchrer": {
+    "Scharfsch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "AT-Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "MEDEVAC-Sanit\u00e4ter": {
+        "Allgemeines": " "
+    },
+    "Funk": {
+        "Einleitung": "Grundvoraussetzung f\u00fcr eine gelungene Missionsdurchf\u00fchrung ist eine gute Kommunikation zwischen allen Kr\u00e4ften. \u00dcber l\u00e4ngere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundz\u00fcge von gutem Funken sollte allen Soldaten bekannt sein. ",
+        "Vor dem Funken": "Noch bevor man beginnt, Funkkontakt aufzubauen, \u00fcberlegt man sich genau, was man mitteilen m\u00f6chte. Ein Sender blockiert f\u00fcr die Dauer seines Funkspruches den Funkkanal und damit m\u00f6glicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverst\u00e4ndlich gehalten werden. Guter Funk folgt also der Devise: So viel wie n\u00f6tig, so kurz wie m\u00f6glich. ",
+        "Verbindung": "Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema: Der Sender identifiziert sich und den Empf\u00e4nger des Funkspruches. Danach wird in einem Wort erkl\u00e4rt, welchen Zweck die Mitteilung verfolgt. Zum Beispiel: \u201eAufkl\u00e4rung f\u00fcr Truppf\u00fchrung - Information - Infanterie in Gruppenst\u00e4rke zu Fu\u00df gesichtet nord-west ihrer Aktuellen - Kommen.\u201c \u201eTruppf\u00fchrung f\u00fcr Aufkl\u00e4rung - Frage - Panzerabwehrsch\u00fctzen erkannt? Kommen.\u201c Dies stellt eine Richtlinie f\u00fcr die Erstverbindung dar. Im weiteren Gespr\u00e4chsverlauf ist es eventuell nicht mehr n\u00f6tig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann des dem Gegen\u00fcber jedoch das Verst\u00e4ndnis erleichtern, wenn man seine Absicht ausspricht. ",
+        "Funkspruch": "Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grunds\u00e4tzen: er sollte knapp, aber eindeutig sein. Besonders F\u00fcllw\u00f6rter und h\u00e4ufiges Versprechen k\u00f6nnen leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz \u00fcberlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verst\u00e4ndnis erleichtern sollen. Zahlen werden im Funk grunds\u00e4tzlich Ziffer f\u00fcr Ziffer diktiert, \u201e1278\u201c also als \u201eeins - zwo - sieben - acht\u201c gesprochen. \u201eZwo\u201c ist dabei dringend zu benutzen, da \u201ezwei\u201c leicht mit \u201edrei\u201c verwechselt wird. Ebenso verwendet man \u201ef\u00fcnn\u00fcf\u201c f\u00fcr \u201ef\u00fcnf\u201c. Buchstabieren wird oft n\u00f6tig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet. Da es auch au\u00dferhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen. ",
+        "Beendigung": "Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00e4ch ansonsten f\u00fcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00f6rtern: Mit \u201ekommen\u201c am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegen\u00fcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. Mit \u201eende\u201c beendet man den Austausch. \u201eEnde\u201c wird von der Partei gebraucht, die den Austausch begonnen hat. \u201eTrennung\u201c ist effektiv ein \u201eende\u201c. Es zeigt dem Funkkreis an, dass der Sprecher das Gespr\u00e4ch mit einer Partei f\u00fcr beendet erkl\u00e4rt, aber direkt zu einer Anderen Kontakt aufnehmen m\u00f6chte. Es folgt auf \u201eTrennung\u201c also direkt die Verbindung zum neuen Gespr\u00e4chspartner. ",
+        "Au\u00dfnahmen und Notf\u00e4lle": "Grunds\u00e4tzlich herrscht w\u00e4hrend eines laufenden Austausches Funkstille f\u00fcr alle anderen. Kommt es jedoch zu Notf\u00e4llen, kann es sein, dass ein Dritter sich mit Signalw\u00f6rtern wie \u201eeil\u201c, \u201esofort\u201c oder \u201eBlitz\u201c einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00e4ch ist zu unterbrechen. Diese Anleitung vermittelt blo\u00df die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppf\u00fchrern, Sanit\u00e4tern oder Aufkl\u00e4rern. Dazu finden sich Eintr\u00e4ge mit weiterf\u00fchrenden Informationen auf den jeweiligen Unterseiten. "
+    },
+    "Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Kampfpionier": {
+        "Allgemeines": " "
+    },
+    "Erste Hilfe": {
+        "Allgemeines": " "
+    },
+    "Breacher": {
+        "Allgemeines": " "
+    },
+    "Gruppen-/Truppf\u00fchrer": {
+        "Allgemeines": " "
+    },
+    "Steuerung": {
+        "Allgemeines": " "
+    },
+    "Grenadier": {
         "Allgemeines": " "
     }
 }

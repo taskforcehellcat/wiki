@@ -1,16 +1,23 @@
-var fs = require('fs');
-const { env } = require('process');
-const { text } = require('svelte/internal');
-
+/*
 // load the searchIndex.json as an js object
 json = fs.readFileSync('searchIndex.json', 'utf8');
 let index = JSON.parse(json);
+
+*/
+
+let index;
+
+fetch("./scripts/search_backend/searchIndex.json")
+.then(response => {
+   return response.json();
+})
+.then(jsondata => index = jsondata);
 
 // this variable determines how long the environment should be.
 // subject to change !
 let env_length = 60;
 
-function main(query) {
+export function searchFor(query) {
     /*
     search function for the search bar object. 
     searches all text content of wiki pages and returns the results,
@@ -30,7 +37,7 @@ function main(query) {
     }
 
     // array to be returned in the end
-    results = [];
+    let results = [];
 
     for (let page in index) {
         for (let sec in index[page]) {
@@ -42,7 +49,7 @@ function main(query) {
             // this is done for simpler update logic, see below.
             // last index holds the index of the last found substring matching
             // the query or -1 if the query wasn't found.
-            last_index = -1 * query.length; 
+            let last_index = -1 * query.length; 
 
             while (last_index !== -1) {
                 // .indexOf returns -1 if it didn't find any matches.
@@ -77,4 +84,3 @@ function main(query) {
     return results;
 }
 
-// console.log(main("sani")); // !! TESTING ONLY !!

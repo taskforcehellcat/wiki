@@ -4,20 +4,29 @@
 <script lang="ts">
   import { Router, Link, Route } from "svelte-routing";
   import { onMount } from "svelte";
-  import { element } from "svelte/internal";
+
+  import { searchFor } from "../public/scripts/search_backend/search.js";
+
   export let url = "";
 
+  let fetchedResults; // holds output of searchFor()
+  let query; // holds the query
+  let showSearchResults; // whether the search bar is currently in use
+
+  let searchResults = []; // used to generate sections in search results
+
   onMount(async () => {
+
     const expandable = document.getElementsByClassName("expandable");
     const resultBox = document.getElementById("home-nav-results");
     const searchBar = document.getElementById("home-nav-search");
     const navList = document.getElementById("home-nav-list");
     const searchInput = searchBar.querySelector("input");
-    const resultText = document.getElementById("searchtext");
-    const resultAmount = document.getElementById("resultamount");
-    const results = resultBox.querySelectorAll("li");
     const searchWrapper = document.getElementById("search-wrapper");
-    var resultsArr = Array.from(results);
+    //const resultText = document.getElementById("searchtext");
+    //const resultAmount = document.getElementById("resultamount");
+    //const results = resultBox.querySelectorAll("li");
+    //var resultsArr = Array.from(results);
 
     /* creates array from "expandable" nodelist */
     var expandableArr = Array.from(expandable);
@@ -51,18 +60,83 @@
       };
     });
 
-    function isEmpty() {
+    function showResultsBox() {
       if (searchInput.value.length == 0) {
         searchWrapper.dataset.empty = "true";
       } else {
         searchWrapper.dataset.empty = "false";
         resultAmount.innerHTML = "5"; //sollte obv. noch dynamisch gemacht werden
         resultText.innerHTML = searchInput.value;
+        //resultAmount.innerHTML = "5"; //sollte obv. noch dynamisch gemacht werden
+        //resultText.innerHTML = searchInput.value;
+        resultBox.style.display = "block";
+        searchBar.style.borderBottomLeftRadius = "0";
+        searchBar.style.borderBottomRightRadius = "0";
+        navList.style.display = "none";
       }
     }
-    isEmpty();
-    searchInput.addEventListener("input", isEmpty);
+
+    showResultsBox();
+    searchInput.addEventListener("input", showResultsBox);
   });
+
+  const handleQuery = (e) => {
+    query = e.target.value;
+    fetchedResults = searchFor(query); 
+
+    showSearchResults = query.length > 2; // if some character was typed at all
+
+    if (fetchedResults.length !== 0) {
+
+      if (query.length > 2) {
+        
+        // organize results
+        searchResults = [{title: fetchedResults[0][0], hits: 0}]; // initialisation
+
+
+        // add page hits
+        let pageIndex = 0;
+        fetchedResults.forEach(element => {
+          if (searchResults[pageIndex].title === element[0]) {
+            searchResults[pageIndex].hits += 1;
+          } else {
+            searchResults.push({title: element[0], hits: 1});
+            pageIndex += 1;
+          }
+        });
+
+        // add section hits
+        searchResults.forEach(result => {
+          
+          var secResultsArr = [] // to be appended later
+          
+          // get all hits on this page from fetched results
+          var hitsOnPage = fetchedResults.filter(r => {
+            return r[0] === result.title
+          });
+
+          hitsOnPage.forEach(hit => {
+            secResultsArr.push({
+              title: hit[1],
+              link: '/', // TODO
+              env: hit[2]
+            });
+          });
+
+          result.secResults = secResultsArr;
+        
+        });
+          
+      } else {
+        // if query is not longer than 2 chars, clear previous results.
+        searchResults = [];
+      }
+
+    } else {
+      searchResults = [];
+    }
+  }
+
 </script>
 
 <div id="home-overlay">
@@ -70,20 +144,27 @@
   <div id="search-wrapper" data-empty="true">
     <div id="home-nav-search">
       <span class="material-icons noselect">search</span>
-      <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+      <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery}/>
     </div>
     <div id="home-nav-results">
-      <p><span id="resultamount" /> Treffer auf "<span id="searchtext" />" gefunden:</p>
-      <!-- nur als platzhalter: -->
-      <ol>
-        <Router>
-          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
-          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
-          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
-          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
-          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
-        </Router>
-      </ol>
+      {#if showSearchResults}
+        {#if searchResults.length !== 0}
+          {#each searchResults as page} 
+            <p><span class="searchPageHits">{page.hits}</span> Treffer auf "<span class="searchPageTitle">{page.title}</span>" gefunden:</p>
+            <ol>
+              <Router>
+                {#each page.secResults as sechit}
+                <li><span class="searchenv">"{sechit.env}" <span class="noselect">&rarr; </span></span><Link to="{sechit.link}">"{sechit.title}"</Link></li>
+                {/each}
+              </Router>
+            </ol>
+          {/each}
+        {:else}
+          <p><sp id="searcherrortext">Es wurden keine Übereinstimmungen gefunden!</sp></p>
+        {/if}
+      {:else} 
+        <p><span id="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
+      {/if}
     </div>
   </div>
 
