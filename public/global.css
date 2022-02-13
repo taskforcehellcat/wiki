@@ -335,3 +335,7 @@ input:focus {
 #home-nav-results {
   display: none;
 }
+
+#article {
+  display: none;
+}
