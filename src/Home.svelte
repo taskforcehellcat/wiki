@@ -4,60 +4,24 @@
 <script lang="ts">
   import { Router, Link, Route } from "svelte-routing";
   import { onMount } from "svelte";
+  import Nav from "./Nav.svelte";
 
   import { searchFor } from "../public/scripts/search_backend/search.js";
-
-  export let url = "";
 
   let fetchedResults; // holds output of searchFor()
   let query; // holds the query
   let showSearchResults; // whether the search bar is currently in use
 
   let searchResults = []; // used to generate sections in search results
-
+  import { dropDown } from "../public/scripts/navigation/nav.js";
   onMount(async () => {
-    const expandable = document.getElementsByClassName("expandable");
     const resultBox = document.getElementById("home-nav-results");
     const searchBar = document.getElementById("home-nav-search");
-    const navList = document.getElementById("home-nav-list");
+    const navList = document.getElementById("nav-list");
     const searchInput = searchBar.querySelector("input");
     const searchWrapper = document.getElementById("search-wrapper");
-    //const resultText = document.getElementById("searchtext");
-    //const resultAmount = document.getElementById("resultamount");
-    //const results = resultBox.querySelectorAll("li");
-    //var resultsArr = Array.from(results);
 
-    /* creates array from "expandable" nodelist */
-    var expandableArr = Array.from(expandable);
-
-    // used to track whether an expandable should open or close on a click
-    let lastClicked = "";
-    let toOpen = false;
-
-    expandableArr.forEach((element) => {
-      /* adds  "arrow" to any span in "expandableArr" array */
-      element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round noselect">expand_more</span>');
-
-      /* onclick function */
-      element.onclick = function (event) {
-        /* disables default html click behavior */
-        event.preventDefault();
-
-        // logic to determine if span should be opened
-        toOpen = event.target.firstChild.textContent == lastClicked && !toOpen;
-        lastClicked = event.target.firstChild.textContent;
-
-        // collapse all
-        expandableArr.forEach((element) => {
-          element.classList.remove("open");
-        });
-
-        // open span if it should be open
-        if (!toOpen) {
-          element.classList.add("open");
-        }
-      };
-    });
+    dropDown();
 
     function showResultsBox() {
       // if search bar is empty,
@@ -158,66 +122,7 @@
       {/if}
     </div>
   </div>
+  <div id="home-nav"><Nav /></div>
 
   <!-- wär cool wenn das expand ding automatisch geht mit einer "expandable" klasse oder so :) -->
-
-  <div id="home-nav-list">
-    <Router {url}>
-      <a href="/" class="expandable">
-        <span>grundlagen</span>
-        <Link to="steuerung">steuerung</Link>
-        <Link to="funk">funk</Link>
-        <Link to="erstehilfe">erste hilfe</Link>
-        <Link to="buddyteam">buddyteam</Link>
-        <Link to="sonstiges">sonstiges</Link>
-      </a>
-      <a href="/" class="expandable">
-        <span>führungskräfte</span>
-        <Link to="abteilungsleiter">abteilungsleiter</Link>
-        <Link to="einsatzleiter">einsatzleiter</Link>
-        <Link to="gruppentruppfuehrer">gruppen-/truppführer</Link>
-      </a>
-      <a href="/" class="expandable">
-        <span>streitkräfte</span>
-        <Link to="schuetze">schütze</Link>
-        <Link to="funker">funker</Link>
-        <Link to="mgschuetze">mgschütze</Link>
-        <Link to="atschuetze">atschütze</Link>
-        <Link to="praezisionsschuetze">präzisionsschütze</Link>
-        <Link to="breacher">breacher</Link>
-        <Link to="grenadier">grenadier</Link>
-      </a>
-      <a href="/" class="expandable">
-        <span>sanitätsdienst</span>
-        <Link to="sanitaeter">sanitäter</Link>
-        <Link to="medevacsanitaeter">medevac-sanitäter</Link>
-      </a>
-      <a href="/" class="expandable">
-        <span>panzertruppen</span>
-        <Link to="fahrer">fahrer</Link>
-        <Link to="kommandant">kommandant</Link>
-        <Link to="richtschuetze">richtschütze</Link>
-        <Link to="ladeschuetze">ladeschütze</Link>
-      </a>
-      <a href="/" class="expandable">
-        <span>logistik</span>
-        <Link to="kampfpionier">kampfpionier</Link>
-        <Link to="pionier">pionier</Link>
-        <Link to="helikopterpilot">helikopterpilot</Link>
-        <Link to="basislogistiker">basislogistiker</Link>
-      </a>
-      <a href="/" class="expandable">
-        <span>aufklärer</span>
-        <Link to="jtac">jtac</Link>
-        <Link to="scharfschuetze">scharfschütze</Link>
-        <Link to="spotter">spotter</Link>
-        <Link to="eod">eod</Link>
-      </a>
-      <a href="/" class="expandable">
-        <span>fuhrpark</span>
-        <Link to="bodenfahrzeuge">bodenfahrzeuge</Link>
-        <Link to="luftfahrzeuge">luftfahrzeuge</Link>
-      </a>
-    </Router>
-  </div>
 </div>

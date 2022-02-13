@@ -90,7 +90,7 @@
     background-color: #94a2cf;
   }
 
-  #nav-list {
+  #wiki-nav-list {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -132,11 +132,14 @@
 <script lang="ts">
   import { Router, Link, Route } from "svelte-routing";
   import { onMount } from "svelte";
+  import { dropDown } from "../public/scripts/navigation/nav.js";
+  import Nav from "./Nav.svelte";
+
+  export let url = "";
   onMount(async () => {
-    const thumb = document.getElementById("nav-list-bar-thumb");
+    dropDown();
     const sections = document.querySelectorAll("section:not(section>section)");
-    const navList = document.getElementById("nav-list");
-    const bar = document.getElementById("nav-list-bar");
+    const navList = document.getElementById("wiki-nav-list");
     /* create array from "sections" nodelist */
     var sectionsArr = Array.from(sections);
     var x = 1;
@@ -164,10 +167,11 @@
       <div id="nav-list-bar">
         <div id="nav-list-bar-thumb" />
       </div>
-      <div id="nav-list" />
+      <div id="wiki-nav-list" />
     </div>
     <div class="nav-list-title">wiki</div>
-    <Link to="/" id="return-button">Return</Link>
+    <Nav />
+    <Link to="/" id="return-button">Zurück</Link>
   </nav>
 
   <main>
