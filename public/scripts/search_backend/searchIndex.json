@@ -1,100 +1,100 @@
 {
-    "Abteilungsleiter": {
+    "JTAC (Joint Terminal Attack Controller)": {
         "Allgemeines": " "
     },
-    "AT-Sch\u00c3\u00bctze": {
-        "Allgemeines": " "
-    },
-    "Basis-Logistiker": {
+    "Kommandant (Panzertruppe)": {
         "Allgemeines": " "
     },
     "Bodenfahrzeuge": {
         "Allgemeines": " "
     },
-    "Breacher": {
-        "Allgemeines": " "
-    },
-    "Buddyteam": {
+    "Sonstiges": {
         "Allgemeines": " "
     },
     "Einsatzleiter": {
         "Allgemeines": " "
     },
-    "EOD (Explosive Ordnance Disposal)": {
-        "Allgemeines": " "
-    },
-    "Erste Hilfe": {
-        "Allgemeines": " "
-    },
-    "Fahrer (Panzertruppe)": {
-        "Allgemeines": " "
-    },
-    "Funk": {
-        "Einleitung": "Grundvoraussetzung f\u00c3\u00bcr eine gelungene Missionsdurchf\u00c3\u00bchrung ist eine gute Kommunikation zwischen allen Kr\u00c3\u00a4ften. \u00c3\u0153ber l\u00c3\u00a4ngere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundz\u00c3\u00bcge von gutem Funken sollte allen Soldaten bekannt sein. ",
-        "Vor dem Funken": "Noch bevor man beginnt, Funkkontakt aufzubauen, \u00c3\u00bcberlegt man sich genau, was man mitteilen m\u00c3\u00b6chte. Ein Sender blockiert f\u00c3\u00bcr die Dauer seines Funkspruches den Funkkanal und damit m\u00c3\u00b6glicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverst\u00c3\u00a4ndlich gehalten werden. Guter Funk folgt also der Devise: So viel wie n\u00c3\u00b6tig, so kurz wie m\u00c3\u00b6glich. ",
-        "Verbindung": "Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema: Der Sender identifiziert sich und den Empf\u00c3\u00a4nger des Funkspruches. Danach wird in einem Wort erkl\u00c3\u00a4rt, welchen Zweck die Mitteilung verfolgt. Zum Beispiel: \u00e2\u20ac\u017eAufkl\u00c3\u00a4rung f\u00c3\u00bcr Truppf\u00c3\u00bchrung - Information - Infanterie in Gruppenst\u00c3\u00a4rke zu Fu\u00c3\u0178 gesichtet nord-west ihrer Aktuellen - Kommen.\u00e2\u20ac\u0153 \u00e2\u20ac\u017eTruppf\u00c3\u00bchrung f\u00c3\u00bcr Aufkl\u00c3\u00a4rung - Frage - Panzerabwehrsch\u00c3\u00bctzen erkannt? Kommen.\u00e2\u20ac\u0153 Dies stellt eine Richtlinie f\u00c3\u00bcr die Erstverbindung dar. Im weiteren Gespr\u00c3\u00a4chsverlauf ist es eventuell nicht mehr n\u00c3\u00b6tig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann des dem Gegen\u00c3\u00bcber jedoch das Verst\u00c3\u00a4ndnis erleichtern, wenn man seine Absicht ausspricht. ",
-        "Funkspruch": "Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grunds\u00c3\u00a4tzen: er sollte knapp, aber eindeutig sein. Besonders F\u00c3\u00bcllw\u00c3\u00b6rter und h\u00c3\u00a4ufiges Versprechen k\u00c3\u00b6nnen leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz \u00c3\u00bcberlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verst\u00c3\u00a4ndnis erleichtern sollen. Zahlen werden im Funk grunds\u00c3\u00a4tzlich Ziffer f\u00c3\u00bcr Ziffer diktiert, \u00e2\u20ac\u017e1278\u00e2\u20ac\u0153 also als \u00e2\u20ac\u017eeins - zwo - sieben - acht\u00e2\u20ac\u0153 gesprochen. \u00e2\u20ac\u017eZwo\u00e2\u20ac\u0153 ist dabei dringend zu benutzen, da \u00e2\u20ac\u017ezwei\u00e2\u20ac\u0153 leicht mit \u00e2\u20ac\u017edrei\u00e2\u20ac\u0153 verwechselt wird. Ebenso verwendet man \u00e2\u20ac\u017ef\u00c3\u00bcnn\u00c3\u00bcf\u00e2\u20ac\u0153 f\u00c3\u00bcr \u00e2\u20ac\u017ef\u00c3\u00bcnf\u00e2\u20ac\u0153. Buchstabieren wird oft n\u00c3\u00b6tig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet. Da es auch au\u00c3\u0178erhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen. ",
-        "Beendigung": "Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00c3\u00a4ch ansonsten f\u00c3\u00bcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00c3\u00b6rtern: Mit \u00e2\u20ac\u017ekommen\u00e2\u20ac\u0153 am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegen\u00c3\u00bcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. Mit \u00e2\u20ac\u017eende\u00e2\u20ac\u0153 beendet man den Austausch. \u00e2\u20ac\u017eEnde\u00e2\u20ac\u0153 wird von der Partei gebraucht, die den Austausch begonnen hat. \u00e2\u20ac\u017eTrennung\u00e2\u20ac\u0153 ist effektiv ein \u00e2\u20ac\u017eende\u00e2\u20ac\u0153. Es zeigt dem Funkkreis an, dass der Sprecher das Gespr\u00c3\u00a4ch mit einer Partei f\u00c3\u00bcr beendet erkl\u00c3\u00a4rt, aber direkt zu einer Anderen Kontakt aufnehmen m\u00c3\u00b6chte. Es folgt auf \u00e2\u20ac\u017eTrennung\u00e2\u20ac\u0153 also direkt die Verbindung zum neuen Gespr\u00c3\u00a4chspartner. ",
-        "Au\u00c3\u0178nahmen und Notf\u00c3\u00a4lle": "Grunds\u00c3\u00a4tzlich herrscht w\u00c3\u00a4hrend eines laufenden Austausches Funkstille f\u00c3\u00bcr alle anderen. Kommt es jedoch zu Notf\u00c3\u00a4llen, kann es sein, dass ein Dritter sich mit Signalw\u00c3\u00b6rtern wie \u00e2\u20ac\u017eeil\u00e2\u20ac\u0153, \u00e2\u20ac\u017esofort\u00e2\u20ac\u0153 oder \u00e2\u20ac\u017eBlitz\u00e2\u20ac\u0153 einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00c3\u00a4ch ist zu unterbrechen. Diese Anleitung vermittelt blo\u00c3\u0178 die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppf\u00c3\u00bchrern, Sanit\u00c3\u00a4tern oder Aufkl\u00c3\u00a4rern. Dazu finden sich Eintr\u00c3\u00a4ge mit weiterf\u00c3\u00bchrenden Informationen auf den jeweiligen Unterseiten. "
-    },
-    "Funker": {
-        "Allgemeines": " "
-    },
-    "Grenadier": {
-        "Allgemeines": " "
-    },
-    "Gruppen-/Truppf\u00c3\u00bchrer": {
-        "Allgemeines": " "
-    },
-    "Helikopterpilot": {
-        "Allgemeines": " "
-    },
-    "JTAC (Joint Terminal Attack Controller)": {
-        "Allgemeines": " "
-    },
-    "Kampfpionier": {
-        "Halal": "Kampfpionier immer halal "
-    },
-    "Kommandant (Panzertruppe)": {
-        "Allgemeines": " "
-    },
-    "Ladesch\u00c3\u00bctze (Panzertruppe)": {
-        "Allgemeines": " "
-    },
     "Luftfahrzeuge": {
         "Allgemeines": " "
     },
-    "MEDEVAC-Sanit\u00c3\u00a4ter": {
-        "Allgemeines": " "
-    },
-    "MG-Sch\u00c3\u00bctze": {
+    "EOD (Explosive Ordnance Disposal)": {
         "Allgemeines": " "
     },
     "Pionier": {
         "Allgemeines": " "
     },
-    "Pr\u00c3\u00a4zisionssch\u00c3\u00bctze": {
+    "Ladesch\u00fctze (Panzertruppe)": {
         "Allgemeines": " "
     },
-    "Richtsch\u00c3\u00bctze (Panzertruppe)": {
+    "Sanit\u00e4ter": {
         "Allgemeines": " "
     },
-    "Sanit\u00c3\u00a4ter": {
-        "Allgemeines": " "
-    },
-    "Scharfsch\u00c3\u00bctze": {
-        "Allgemeines": " "
-    },
-    "Sch\u00c3\u00bctze": {
-        "Allgemeines": " "
-    },
-    "Sonstiges": {
+    "Funker": {
         "Allgemeines": " "
     },
     "Spotter": {
         "Allgemeines": " "
     },
+    "MG-Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Pr\u00e4zisionssch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Helikopterpilot": {
+        "Allgemeines": " "
+    },
+    "Basis-Logistiker": {
+        "Allgemeines": " "
+    },
+    "Abteilungsleiter": {
+        "Allgemeines": " "
+    },
+    "Richtsch\u00fctze (Panzertruppe)": {
+        "Allgemeines": " "
+    },
+    "Buddyteam": {
+        "Allgemeines": " "
+    },
+    "Scharfsch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "AT-Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "MEDEVAC-Sanit\u00e4ter": {
+        "Allgemeines": " "
+    },
+    "Funk": {
+        "Einleitung": "Grundvoraussetzung f\u00fcr eine gelungene Missionsdurchf\u00fchrung ist eine gute Kommunikation zwischen allen Kr\u00e4ften. \u00dcber l\u00e4ngere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundz\u00fcge von gutem Funken sollte allen Soldaten bekannt sein. ",
+        "Vor dem Funken": "Noch bevor man beginnt, Funkkontakt aufzubauen, \u00fcberlegt man sich genau, was man mitteilen m\u00f6chte. Ein Sender blockiert f\u00fcr die Dauer seines Funkspruches den Funkkanal und damit m\u00f6glicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverst\u00e4ndlich gehalten werden. Guter Funk folgt also der Devise: So viel wie n\u00f6tig, so kurz wie m\u00f6glich. ",
+        "Verbindung": "Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema: Der Sender identifiziert sich und den Empf\u00e4nger des Funkspruches. Danach wird in einem Wort erkl\u00e4rt, welchen Zweck die Mitteilung verfolgt. Zum Beispiel: \u201eAufkl\u00e4rung f\u00fcr Truppf\u00fchrung - Information - Infanterie in Gruppenst\u00e4rke zu Fu\u00df gesichtet nord-west ihrer Aktuellen - Kommen.\u201c \u201eTruppf\u00fchrung f\u00fcr Aufkl\u00e4rung - Frage - Panzerabwehrsch\u00fctzen erkannt? Kommen.\u201c Dies stellt eine Richtlinie f\u00fcr die Erstverbindung dar. Im weiteren Gespr\u00e4chsverlauf ist es eventuell nicht mehr n\u00f6tig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann des dem Gegen\u00fcber jedoch das Verst\u00e4ndnis erleichtern, wenn man seine Absicht ausspricht. ",
+        "Funkspruch": "Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grunds\u00e4tzen: er sollte knapp, aber eindeutig sein. Besonders F\u00fcllw\u00f6rter und h\u00e4ufiges Versprechen k\u00f6nnen leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz \u00fcberlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verst\u00e4ndnis erleichtern sollen. Zahlen werden im Funk grunds\u00e4tzlich Ziffer f\u00fcr Ziffer diktiert, \u201e1278\u201c also als \u201eeins - zwo - sieben - acht\u201c gesprochen. \u201eZwo\u201c ist dabei dringend zu benutzen, da \u201ezwei\u201c leicht mit \u201edrei\u201c verwechselt wird. Ebenso verwendet man \u201ef\u00fcnn\u00fcf\u201c f\u00fcr \u201ef\u00fcnf\u201c. Buchstabieren wird oft n\u00f6tig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet. Da es auch au\u00dferhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen. ",
+        "Beendigung": "Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00e4ch ansonsten f\u00fcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00f6rtern: Mit \u201ekommen\u201c am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegen\u00fcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. Mit \u201eende\u201c beendet man den Austausch. \u201eEnde\u201c wird von der Partei gebraucht, die den Austausch begonnen hat. \u201eTrennung\u201c ist effektiv ein \u201eende\u201c. Es zeigt dem Funkkreis an, dass der Sprecher das Gespr\u00e4ch mit einer Partei f\u00fcr beendet erkl\u00e4rt, aber direkt zu einer Anderen Kontakt aufnehmen m\u00f6chte. Es folgt auf \u201eTrennung\u201c also direkt die Verbindung zum neuen Gespr\u00e4chspartner. ",
+        "Au\u00dfnahmen und Notf\u00e4lle": "Grunds\u00e4tzlich herrscht w\u00e4hrend eines laufenden Austausches Funkstille f\u00fcr alle anderen. Kommt es jedoch zu Notf\u00e4llen, kann es sein, dass ein Dritter sich mit Signalw\u00f6rtern wie \u201eeil\u201c, \u201esofort\u201c oder \u201eBlitz\u201c einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00e4ch ist zu unterbrechen. Diese Anleitung vermittelt blo\u00df die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppf\u00fchrern, Sanit\u00e4tern oder Aufkl\u00e4rern. Dazu finden sich Eintr\u00e4ge mit weiterf\u00fchrenden Informationen auf den jeweiligen Unterseiten. "
+    },
+    "Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Kampfpionier": {
+        "Halal": "Kampfpionier immer halal "
+    },
+    "Erste Hilfe": {
+        "Allgemeines": " "
+    },
+    "Breacher": {
+        "Allgemeines": " "
+    },
+    "Fahrer (Panzertruppe)": {
+        "Allgemeines": " "
+    },
+    "Gruppen-/Truppf\u00fchrer": {
+        "Allgemeines": " "
+    },
     "Steuerung": {
+        "Allgemeines": " "
+    },
+    "Grenadier": {
         "Allgemeines": " "
     }
 }
