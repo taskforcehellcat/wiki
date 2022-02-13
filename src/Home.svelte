@@ -8,6 +8,14 @@
 
   onMount(async () => {
     const expandable = document.getElementsByClassName("expandable");
+    const resultBox = document.getElementById("home-nav-results");
+    const searchBar = document.getElementById("home-nav-search");
+    const navList = document.getElementById("home-nav-list");
+    const searchInput = searchBar.querySelector("input");
+    const resultText = document.getElementById("searchtext");
+    const resultAmount = document.getElementById("resultamount");
+    const results = resultBox.querySelectorAll("li");
+    var resultsArr = Array.from(results);
 
     /* creates array from "expandable" nodelist */
     var expandableArr = Array.from(expandable);
@@ -16,7 +24,7 @@
       var open = false;
 
       /* adds  "arrow" to any span in "expandableArr" array */
-      element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round">expand_more</span>');
+      element.querySelector("span").insertAdjacentHTML("beforeend", '<span class="material-icons-round noselect">expand_more</span>');
 
       /* onclick function */
       element.onclick = function (event) {
@@ -46,14 +54,47 @@
         }
       };
     });
+
+    function isEmpty() {
+      if (searchInput.value.length == 0) {
+        navList.style.display = "flex";
+        searchBar.style.borderBottomLeftRadius = "0.7rem";
+        searchBar.style.borderBottomRightRadius = "0.7rem";
+        resultBox.style.display = "none";
+      } else {
+        resultAmount.innerHTML = "5"; //sollte obv. noch dynamisch gemacht werden
+        resultText.innerHTML = searchInput.value;
+        resultBox.style.display = "block";
+        searchBar.style.borderBottomLeftRadius = "0";
+        searchBar.style.borderBottomRightRadius = "0";
+        navList.style.display = "none";
+      }
+    }
+    isEmpty();
+    searchInput.addEventListener("input", isEmpty);
   });
 </script>
 
 <div id="home-overlay">
   <div id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></div>
-  <div id="home-nav-search">
-    <span class="material-icons">search</span>
-    <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+  <div id="search-wrapper">
+    <div id="home-nav-search">
+      <span class="material-icons noselect">search</span>
+      <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+    </div>
+    <div id="home-nav-results">
+      <p><span id="resultamount" /> Treffer auf "<span id="searchtext" />" gefunden:</p>
+      <!-- nur als platzhalter: -->
+      <ol>
+        <Router>
+          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
+          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
+          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
+          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
+          <li><span class="searchenv">"..Lorem ipsum dolor sit amet consectetur adipisicing elit ..." <span class="noselect">&rarr; </span></span><Link to="/">"Bla"</Link></li>
+        </Router>
+      </ol>
+    </div>
   </div>
 
   <!-- wär cool wenn das expand ding automatisch geht mit einer "expandable" klasse oder so :) -->
