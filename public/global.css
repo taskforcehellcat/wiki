@@ -306,3 +306,15 @@ input:focus {
 #home-nav-results > ol > li > a:hover {
   color: rgb(219, 219, 219);
 }
+
+.open .material-icons-round {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.open a {
+  display: flex;
+}
