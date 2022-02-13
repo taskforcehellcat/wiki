@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="praezisionsschuetze" />
     <h1>Präzisionsschütze</h1>
 
     <section id="Allgemeines">

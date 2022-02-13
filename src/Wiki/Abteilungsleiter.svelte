@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="abteilungsleiter" />
     <h1>Abteilungsleiter</h1>
 
     <section id="Allgemeines">

@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="kommandant" />
     <h1>Kommandant (Panzertruppe)</h1>
 
     <section id="Allgemeines">

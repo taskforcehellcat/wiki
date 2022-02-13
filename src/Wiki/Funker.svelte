@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="funker" />
     <h1>Funker</h1>
 
     <section id="Allgemeines">

@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="gruppentruppfuehrer" />
     <h1>Gruppen-/Truppführer</h1>
 
     <section id="Allgemeines">

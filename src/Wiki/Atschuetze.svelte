@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="atschuetze" />
     <h1>AT-Schütze</h1>
 
     <section id="Allgemeines">

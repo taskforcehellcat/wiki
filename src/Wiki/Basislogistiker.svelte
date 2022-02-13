@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="basislogistiker" />
     <h1>Basis-Logistiker</h1>
 
     <section id="Allgemeines">

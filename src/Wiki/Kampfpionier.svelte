@@ -4,6 +4,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
+    <article id="kampfpionier" />
     <h1>Kampfpionier</h1>
     <section id="Halal">
       <p>Kampfpionier immer halal</p>
