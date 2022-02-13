@@ -118,6 +118,12 @@ var app = (function () {
     function detach(node) {
         node.parentNode.removeChild(node);
     }
+    function destroy_each(iterations, detaching) {
+        for (let i = 0; i < iterations.length; i += 1) {
+            if (iterations[i])
+                iterations[i].d(detaching);
+        }
+    }
     function element(name) {
         return document.createElement(name);
     }
@@ -524,6 +530,22 @@ var app = (function () {
             dispatch_dev('SvelteDOMRemoveAttribute', { node, attribute });
         else
             dispatch_dev('SvelteDOMSetAttribute', { node, attribute, value });
+    }
+    function set_data_dev(text, data) {
+        data = '' + data;
+        if (text.wholeText === data)
+            return;
+        dispatch_dev('SvelteDOMSetData', { node: text, data });
+        text.data = data;
+    }
+    function validate_each_argument(arg) {
+        if (typeof arg !== 'string' && !(arg && typeof arg === 'object' && 'length' in arg)) {
+            let msg = '{#each} only iterates over array-like objects.';
+            if (typeof Symbol === 'function' && arg && Symbol.iterator in arg) {
+                msg += ' You can use a spread to convert this iterable into an array.';
+            }
+            throw new Error(msg);
+        }
     }
     function validate_slots(name, slot, keys) {
         for (const slot_key of Object.keys(slot)) {
@@ -1405,12 +1427,12 @@ var app = (function () {
     });
 
     // (40:0) {#if $activeRoute !== null && $activeRoute.route === route}
-    function create_if_block(ctx) {
+    function create_if_block$1(ctx) {
     	let current_block_type_index;
     	let if_block;
     	let if_block_anchor;
     	let current;
-    	const if_block_creators = [create_if_block_1, create_else_block];
+    	const if_block_creators = [create_if_block_1$1, create_else_block$1];
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
@@ -1475,7 +1497,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block.name,
+    		id: create_if_block$1.name,
     		type: "if",
     		source: "(40:0) {#if $activeRoute !== null && $activeRoute.route === route}",
     		ctx
@@ -1485,7 +1507,7 @@ var app = (function () {
     }
 
     // (43:2) {:else}
-    function create_else_block(ctx) {
+    function create_else_block$1(ctx) {
     	let current;
     	const default_slot_template = /*#slots*/ ctx[10].default;
     	const default_slot = create_slot(default_slot_template, ctx, /*$$scope*/ ctx[9], get_default_slot_context);
@@ -1533,7 +1555,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block.name,
+    		id: create_else_block$1.name,
     		type: "else",
     		source: "(43:2) {:else}",
     		ctx
@@ -1543,7 +1565,7 @@ var app = (function () {
     }
 
     // (41:2) {#if component !== null}
-    function create_if_block_1(ctx) {
+    function create_if_block_1$1(ctx) {
     	let switch_instance;
     	let switch_instance_anchor;
     	let current;
@@ -1636,7 +1658,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_1.name,
+    		id: create_if_block_1$1.name,
     		type: "if",
     		source: "(41:2) {#if component !== null}",
     		ctx
@@ -1648,7 +1670,7 @@ var app = (function () {
     function create_fragment$z(ctx) {
     	let if_block_anchor;
     	let current;
-    	let if_block = /*$activeRoute*/ ctx[1] !== null && /*$activeRoute*/ ctx[1].route === /*route*/ ctx[7] && create_if_block(ctx);
+    	let if_block = /*$activeRoute*/ ctx[1] !== null && /*$activeRoute*/ ctx[1].route === /*route*/ ctx[7] && create_if_block$1(ctx);
 
     	const block = {
     		c: function create() {
@@ -1672,7 +1694,7 @@ var app = (function () {
     						transition_in(if_block, 1);
     					}
     				} else {
-    					if_block = create_if_block(ctx);
+    					if_block = create_if_block$1(ctx);
     					if_block.c();
     					transition_in(if_block, 1);
     					if_block.m(if_block_anchor.parentNode, if_block_anchor);
@@ -5434,10 +5456,11 @@ var app = (function () {
     			t1 = space();
     			section = element("section");
     			p = element("p");
+    			p.textContent = "Kampfpionier immer halal";
     			add_location(h1, file$a, 5, 4, 115);
-    			add_location(p, file$a, 8, 6, 178);
-    			attr_dev(section, "id", "Allgemeines");
-    			add_location(section, file$a, 7, 4, 144);
+    			add_location(p, file$a, 7, 6, 170);
+    			attr_dev(section, "id", "Halal");
+    			add_location(section, file$a, 6, 4, 142);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -6717,130 +6740,382 @@ var app = (function () {
     	}
     }
 
+    /*
+    // load the searchIndex.json as an js object
+    json = fs.readFileSync('searchIndex.json', 'utf8');
+    let index = JSON.parse(json);
+
+    */
+
+    let index;
+
+    fetch("./scripts/search_backend/searchIndex.json")
+    .then(response => {
+       return response.json();
+    })
+    .then(jsondata => index = jsondata);
+
+    // this variable determines how long the environment should be.
+    // subject to change !
+    let env_length = 60;
+
+    function searchFor(query) {
+        /*
+        search function for the search bar object. 
+        searches all text content of wiki pages and returns the results,
+        see output format below
+
+        input: string - at least three letters
+
+        output: javascript array
+        output format: [ hit arrays ] (array of arrays)
+        hit array format: [hit page title, hit section, hit environment]
+        */
+
+        query = query.toLowerCase();
+
+        if (query.length < 3) {
+            throw new Error("(error: search denied) please provide a longer query.");
+        }
+
+        // array to be returned in the end
+        let results = [];
+
+        for (let page in index) {
+            for (let sec in index[page]) {
+
+                // get the text from every pages every section
+                let text = index[page][sec];
+                let lowertext = text.toLowerCase();
+                
+                // this is done for simpler update logic, see below.
+                // last index holds the index of the last found substring matching
+                // the query or -1 if the query wasn't found.
+                let last_index = -1 * query.length; 
+
+                while (last_index !== -1) {
+                    // .indexOf returns -1 if it didn't find any matches.
+                    // At this point the loop should terminate
+
+                    /* Begin searching for the next hit by beginning the search now
+                    at the index of the last hit plus the length of the query itself
+                    (to avoid multiple counts of the same appearance). last_index is
+                    initialised to -query.length to start initially at index 0. */
+                    last_index = lowertext.indexOf(query, last_index+query.length);
+                    
+                    if (last_index !== -1) {
+                        let env = '';
+
+                        // environment length arithmetic:
+                        // rounding down to prevent overflow in the ui
+                        var tail_length = Math.floor((env_length - query.length) / 2);
+                        
+                        // actual text will be three characters less because of '...'
+                        var text_include = tail_length - 3;
+
+                        if (!(text_include<0)) {
+                            env = '...' + text.substring(last_index-text_include, query.length+last_index+text_include+1) + '...';
+                        }
+
+                        results.push([page, sec, env]);
+                    }
+                }
+            }
+        }
+
+        return results;
+    }
+
     /* src\Home.svelte generated by Svelte v3.46.4 */
     const file = "src\\Home.svelte";
 
-    // (71:146) <Link to="/">
-    function create_default_slot_37(ctx) {
-    	let t;
+    function get_each_context(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[6] = list[i];
+    	return child_ctx;
+    }
+
+    function get_each_context_1(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[9] = list[i];
+    	return child_ctx;
+    }
+
+    // (137:6) {:else}
+    function create_else_block_1(ctx) {
+    	let p;
+    	let span;
 
     	const block = {
     		c: function create() {
-    			t = text("\"Bla\"");
+    			p = element("p");
+    			span = element("span");
+    			span.textContent = "Bitte mindestens drei Zeichen eingeben!";
+    			attr_dev(span, "id", "searcherrortext");
+    			add_location(span, file, 137, 11, 5770);
+    			add_location(p, file, 137, 8, 5767);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, span);
     		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(p);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_37.name,
-    		type: "slot",
-    		source: "(71:146) <Link to=\\\"/\\\">",
+    		id: create_else_block_1.name,
+    		type: "else",
+    		source: "(137:6) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (72:146) <Link to="/">
-    function create_default_slot_36(ctx) {
-    	let t;
+    // (122:6) {#if showSearchResults}
+    function create_if_block(ctx) {
+    	let current_block_type_index;
+    	let if_block;
+    	let if_block_anchor;
+    	let current;
+    	const if_block_creators = [create_if_block_1, create_else_block];
+    	const if_blocks = [];
+
+    	function select_block_type_1(ctx, dirty) {
+    		if (/*searchResults*/ ctx[2].length !== 0) return 0;
+    		return 1;
+    	}
+
+    	current_block_type_index = select_block_type_1(ctx);
+    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
 
     	const block = {
     		c: function create() {
-    			t = text("\"Bla\"");
+    			if_block.c();
+    			if_block_anchor = empty();
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
+    			if_blocks[current_block_type_index].m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			let previous_block_index = current_block_type_index;
+    			current_block_type_index = select_block_type_1(ctx);
+
+    			if (current_block_type_index === previous_block_index) {
+    				if_blocks[current_block_type_index].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
+    					if_blocks[previous_block_index] = null;
+    				});
+
+    				check_outros();
+    				if_block = if_blocks[current_block_type_index];
+
+    				if (!if_block) {
+    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    					if_block.c();
+    				} else {
+    					if_block.p(ctx, dirty);
+    				}
+
+    				transition_in(if_block, 1);
+    				if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(if_block);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(if_block);
+    			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			if_blocks[current_block_type_index].d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_36.name,
-    		type: "slot",
-    		source: "(72:146) <Link to=\\\"/\\\">",
+    		id: create_if_block.name,
+    		type: "if",
+    		source: "(122:6) {#if showSearchResults}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (73:146) <Link to="/">
-    function create_default_slot_35(ctx) {
-    	let t;
+    // (134:8) {:else}
+    function create_else_block(ctx) {
+    	let p;
+    	let sp;
 
     	const block = {
     		c: function create() {
-    			t = text("\"Bla\"");
+    			p = element("p");
+    			sp = element("sp");
+    			sp.textContent = "Es wurden keine Übereinstimmungen gefunden!";
+    			attr_dev(sp, "id", "searcherrortext");
+    			add_location(sp, file, 134, 13, 5650);
+    			add_location(p, file, 134, 10, 5647);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
+    			insert_dev(target, p, anchor);
+    			append_dev(p, sp);
     		},
+    		p: noop,
+    		i: noop,
+    		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(p);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_35.name,
-    		type: "slot",
-    		source: "(73:146) <Link to=\\\"/\\\">",
+    		id: create_else_block.name,
+    		type: "else",
+    		source: "(134:8) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (74:146) <Link to="/">
-    function create_default_slot_34(ctx) {
-    	let t;
+    // (123:8) {#if searchResults.length !== 0}
+    function create_if_block_1(ctx) {
+    	let each_1_anchor;
+    	let current;
+    	let each_value = /*searchResults*/ ctx[2];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block(get_each_context(ctx, each_value, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
 
     	const block = {
     		c: function create() {
-    			t = text("\"Bla\"");
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*searchResults*/ 4) {
+    				each_value = /*searchResults*/ ctx[2];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			for (let i = 0; i < each_value.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
+    			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_34.name,
-    		type: "slot",
-    		source: "(74:146) <Link to=\\\"/\\\">",
+    		id: create_if_block_1.name,
+    		type: "if",
+    		source: "(123:8) {#if searchResults.length !== 0}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (75:146) <Link to="/">
+    // (129:105) <Link to={sechit.link}>
     function create_default_slot_33(ctx) {
-    	let t;
+    	let t0;
+    	let t1_value = /*sechit*/ ctx[9].title + "";
+    	let t1;
+    	let t2;
 
     	const block = {
     		c: function create() {
-    			t = text("\"Bla\"");
+    			t0 = text("\"");
+    			t1 = text(t1_value);
+    			t2 = text("\"");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, t2, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*searchResults*/ 4 && t1_value !== (t1_value = /*sechit*/ ctx[9].title + "")) set_data_dev(t1, t1_value);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(t2);
     		}
     	};
 
@@ -6848,85 +7123,28 @@ var app = (function () {
     		block,
     		id: create_default_slot_33.name,
     		type: "slot",
-    		source: "(75:146) <Link to=\\\"/\\\">",
+    		source: "(129:105) <Link to={sechit.link}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (70:8) <Router>
-    function create_default_slot_32$1(ctx) {
-    	let li0;
+    // (128:16) {#each page.secResults as sechit}
+    function create_each_block_1(ctx) {
+    	let li;
     	let span1;
     	let t0;
-    	let span0;
-    	let link0;
+    	let t1_value = /*sechit*/ ctx[9].env + "";
+    	let t1;
     	let t2;
-    	let li1;
-    	let span3;
-    	let t3;
-    	let span2;
-    	let link1;
-    	let t5;
-    	let li2;
-    	let span5;
-    	let t6;
-    	let span4;
-    	let link2;
-    	let t8;
-    	let li3;
-    	let span7;
-    	let t9;
-    	let span6;
-    	let link3;
-    	let t11;
-    	let li4;
-    	let span9;
-    	let t12;
-    	let span8;
-    	let link4;
+    	let span0;
+    	let link;
     	let current;
 
-    	link0 = new Link({
+    	link = new Link({
     			props: {
-    				to: "/",
-    				$$slots: { default: [create_default_slot_37] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	link1 = new Link({
-    			props: {
-    				to: "/",
-    				$$slots: { default: [create_default_slot_36] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	link2 = new Link({
-    			props: {
-    				to: "/",
-    				$$slots: { default: [create_default_slot_35] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	link3 = new Link({
-    			props: {
-    				to: "/",
-    				$$slots: { default: [create_default_slot_34] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	link4 = new Link({
-    			props: {
-    				to: "/",
+    				to: /*sechit*/ ctx[9].link,
     				$$slots: { default: [create_default_slot_33] },
     				$$scope: { ctx }
     			},
@@ -6935,167 +7153,149 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			li0 = element("li");
+    			li = element("li");
     			span1 = element("span");
-    			t0 = text("\"..Lorem ipsum dolor sit amet consectetur adipisicing elit ...\" ");
+    			t0 = text("\"");
+    			t1 = text(t1_value);
+    			t2 = text("\" ");
     			span0 = element("span");
     			span0.textContent = "→ ";
-    			create_component(link0.$$.fragment);
-    			t2 = space();
-    			li1 = element("li");
-    			span3 = element("span");
-    			t3 = text("\"..Lorem ipsum dolor sit amet consectetur adipisicing elit ...\" ");
-    			span2 = element("span");
-    			span2.textContent = "→ ";
-    			create_component(link1.$$.fragment);
-    			t5 = space();
-    			li2 = element("li");
-    			span5 = element("span");
-    			t6 = text("\"..Lorem ipsum dolor sit amet consectetur adipisicing elit ...\" ");
-    			span4 = element("span");
-    			span4.textContent = "→ ";
-    			create_component(link2.$$.fragment);
-    			t8 = space();
-    			li3 = element("li");
-    			span7 = element("span");
-    			t9 = text("\"..Lorem ipsum dolor sit amet consectetur adipisicing elit ...\" ");
-    			span6 = element("span");
-    			span6.textContent = "→ ";
-    			create_component(link3.$$.fragment);
-    			t11 = space();
-    			li4 = element("li");
-    			span9 = element("span");
-    			t12 = text("\"..Lorem ipsum dolor sit amet consectetur adipisicing elit ...\" ");
-    			span8 = element("span");
-    			span8.textContent = "→ ";
-    			create_component(link4.$$.fragment);
+    			create_component(link.$$.fragment);
     			attr_dev(span0, "class", "noselect");
-    			add_location(span0, file, 70, 102, 3050);
+    			add_location(span0, file, 128, 61, 5435);
     			attr_dev(span1, "class", "searchenv");
-    			add_location(span1, file, 70, 14, 2962);
-    			add_location(li0, file, 70, 10, 2958);
-    			attr_dev(span2, "class", "noselect");
-    			add_location(span2, file, 71, 102, 3228);
-    			attr_dev(span3, "class", "searchenv");
-    			add_location(span3, file, 71, 14, 3140);
-    			add_location(li1, file, 71, 10, 3136);
-    			attr_dev(span4, "class", "noselect");
-    			add_location(span4, file, 72, 102, 3406);
-    			attr_dev(span5, "class", "searchenv");
-    			add_location(span5, file, 72, 14, 3318);
-    			add_location(li2, file, 72, 10, 3314);
-    			attr_dev(span6, "class", "noselect");
-    			add_location(span6, file, 73, 102, 3584);
-    			attr_dev(span7, "class", "searchenv");
-    			add_location(span7, file, 73, 14, 3496);
-    			add_location(li3, file, 73, 10, 3492);
-    			attr_dev(span8, "class", "noselect");
-    			add_location(span8, file, 74, 102, 3762);
-    			attr_dev(span9, "class", "searchenv");
-    			add_location(span9, file, 74, 14, 3674);
-    			add_location(li4, file, 74, 10, 3670);
+    			add_location(span1, file, 128, 22, 5396);
+    			add_location(li, file, 128, 18, 5392);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, li0, anchor);
-    			append_dev(li0, span1);
+    			insert_dev(target, li, anchor);
+    			append_dev(li, span1);
     			append_dev(span1, t0);
+    			append_dev(span1, t1);
+    			append_dev(span1, t2);
     			append_dev(span1, span0);
-    			mount_component(link0, li0, null);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, li1, anchor);
-    			append_dev(li1, span3);
-    			append_dev(span3, t3);
-    			append_dev(span3, span2);
-    			mount_component(link1, li1, null);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, li2, anchor);
-    			append_dev(li2, span5);
-    			append_dev(span5, t6);
-    			append_dev(span5, span4);
-    			mount_component(link2, li2, null);
-    			insert_dev(target, t8, anchor);
-    			insert_dev(target, li3, anchor);
-    			append_dev(li3, span7);
-    			append_dev(span7, t9);
-    			append_dev(span7, span6);
-    			mount_component(link3, li3, null);
-    			insert_dev(target, t11, anchor);
-    			insert_dev(target, li4, anchor);
-    			append_dev(li4, span9);
-    			append_dev(span9, t12);
-    			append_dev(span9, span8);
-    			mount_component(link4, li4, null);
+    			mount_component(link, li, null);
     			current = true;
     		},
     		p: function update(ctx, dirty) {
-    			const link0_changes = {};
+    			if ((!current || dirty & /*searchResults*/ 4) && t1_value !== (t1_value = /*sechit*/ ctx[9].env + "")) set_data_dev(t1, t1_value);
+    			const link_changes = {};
+    			if (dirty & /*searchResults*/ 4) link_changes.to = /*sechit*/ ctx[9].link;
 
-    			if (dirty & /*$$scope*/ 2) {
-    				link0_changes.$$scope = { dirty, ctx };
+    			if (dirty & /*$$scope, searchResults*/ 4100) {
+    				link_changes.$$scope = { dirty, ctx };
     			}
 
-    			link0.$set(link0_changes);
-    			const link1_changes = {};
-
-    			if (dirty & /*$$scope*/ 2) {
-    				link1_changes.$$scope = { dirty, ctx };
-    			}
-
-    			link1.$set(link1_changes);
-    			const link2_changes = {};
-
-    			if (dirty & /*$$scope*/ 2) {
-    				link2_changes.$$scope = { dirty, ctx };
-    			}
-
-    			link2.$set(link2_changes);
-    			const link3_changes = {};
-
-    			if (dirty & /*$$scope*/ 2) {
-    				link3_changes.$$scope = { dirty, ctx };
-    			}
-
-    			link3.$set(link3_changes);
-    			const link4_changes = {};
-
-    			if (dirty & /*$$scope*/ 2) {
-    				link4_changes.$$scope = { dirty, ctx };
-    			}
-
-    			link4.$set(link4_changes);
+    			link.$set(link_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(link0.$$.fragment, local);
-    			transition_in(link1.$$.fragment, local);
-    			transition_in(link2.$$.fragment, local);
-    			transition_in(link3.$$.fragment, local);
-    			transition_in(link4.$$.fragment, local);
+    			transition_in(link.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(link0.$$.fragment, local);
-    			transition_out(link1.$$.fragment, local);
-    			transition_out(link2.$$.fragment, local);
-    			transition_out(link3.$$.fragment, local);
-    			transition_out(link4.$$.fragment, local);
+    			transition_out(link.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(li0);
-    			destroy_component(link0);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(li1);
-    			destroy_component(link1);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(li2);
-    			destroy_component(link2);
-    			if (detaching) detach_dev(t8);
-    			if (detaching) detach_dev(li3);
-    			destroy_component(link3);
-    			if (detaching) detach_dev(t11);
-    			if (detaching) detach_dev(li4);
-    			destroy_component(link4);
+    			if (detaching) detach_dev(li);
+    			destroy_component(link);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block_1.name,
+    		type: "each",
+    		source: "(128:16) {#each page.secResults as sechit}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (127:14) <Router>
+    function create_default_slot_32$1(ctx) {
+    	let each_1_anchor;
+    	let current;
+    	let each_value_1 = /*page*/ ctx[6].secResults;
+    	validate_each_argument(each_value_1);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value_1.length; i += 1) {
+    		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
+    	}
+
+    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
+    		each_blocks[i] = null;
+    	});
+
+    	const block = {
+    		c: function create() {
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			each_1_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(target, anchor);
+    			}
+
+    			insert_dev(target, each_1_anchor, anchor);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*searchResults*/ 4) {
+    				each_value_1 = /*page*/ ctx[6].secResults;
+    				validate_each_argument(each_value_1);
+    				let i;
+
+    				for (i = 0; i < each_value_1.length; i += 1) {
+    					const child_ctx = get_each_context_1(ctx, each_value_1, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    						transition_in(each_blocks[i], 1);
+    					} else {
+    						each_blocks[i] = create_each_block_1(child_ctx);
+    						each_blocks[i].c();
+    						transition_in(each_blocks[i], 1);
+    						each_blocks[i].m(each_1_anchor.parentNode, each_1_anchor);
+    					}
+    				}
+
+    				group_outros();
+
+    				for (i = each_value_1.length; i < each_blocks.length; i += 1) {
+    					out(i);
+    				}
+
+    				check_outros();
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+
+    			for (let i = 0; i < each_value_1.length; i += 1) {
+    				transition_in(each_blocks[i]);
+    			}
+
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			each_blocks = each_blocks.filter(Boolean);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				transition_out(each_blocks[i]);
+    			}
+
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_each(each_blocks, detaching);
+    			if (detaching) detach_dev(each_1_anchor);
     		}
     	};
 
@@ -7103,14 +7303,112 @@ var app = (function () {
     		block,
     		id: create_default_slot_32$1.name,
     		type: "slot",
-    		source: "(70:8) <Router>",
+    		source: "(127:14) <Router>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (87:8) <Link to="steuerung">
+    // (124:10) {#each searchResults as page}
+    function create_each_block(ctx) {
+    	let p;
+    	let span0;
+    	let t0_value = /*page*/ ctx[6].hits + "";
+    	let t0;
+    	let t1;
+    	let span1;
+    	let t2_value = /*page*/ ctx[6].title + "";
+    	let t2;
+    	let t3;
+    	let t4;
+    	let ol;
+    	let router;
+    	let t5;
+    	let current;
+
+    	router = new Router({
+    			props: {
+    				$$slots: { default: [create_default_slot_32$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			p = element("p");
+    			span0 = element("span");
+    			t0 = text(t0_value);
+    			t1 = text(" Treffer auf \"");
+    			span1 = element("span");
+    			t2 = text(t2_value);
+    			t3 = text("\" gefunden:");
+    			t4 = space();
+    			ol = element("ol");
+    			create_component(router.$$.fragment);
+    			t5 = space();
+    			attr_dev(span0, "class", "searchPageHits");
+    			add_location(span0, file, 124, 15, 5154);
+    			attr_dev(span1, "class", "searchPageTitle");
+    			add_location(span1, file, 124, 76, 5215);
+    			add_location(p, file, 124, 12, 5151);
+    			add_location(ol, file, 125, 12, 5293);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, p, anchor);
+    			append_dev(p, span0);
+    			append_dev(span0, t0);
+    			append_dev(p, t1);
+    			append_dev(p, span1);
+    			append_dev(span1, t2);
+    			append_dev(p, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, ol, anchor);
+    			mount_component(router, ol, null);
+    			append_dev(ol, t5);
+    			current = true;
+    		},
+    		p: function update(ctx, dirty) {
+    			if ((!current || dirty & /*searchResults*/ 4) && t0_value !== (t0_value = /*page*/ ctx[6].hits + "")) set_data_dev(t0, t0_value);
+    			if ((!current || dirty & /*searchResults*/ 4) && t2_value !== (t2_value = /*page*/ ctx[6].title + "")) set_data_dev(t2, t2_value);
+    			const router_changes = {};
+
+    			if (dirty & /*$$scope, searchResults*/ 4100) {
+    				router_changes.$$scope = { dirty, ctx };
+    			}
+
+    			router.$set(router_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(router.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(router.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(p);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(ol);
+    			destroy_component(router);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block.name,
+    		type: "each",
+    		source: "(124:10) {#each searchResults as page}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (149:8) <Link to="steuerung">
     function create_default_slot_31$1(ctx) {
     	let t;
 
@@ -7130,14 +7428,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_31$1.name,
     		type: "slot",
-    		source: "(87:8) <Link to=\\\"steuerung\\\">",
+    		source: "(149:8) <Link to=\\\"steuerung\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (88:8) <Link to="funk">
+    // (150:8) <Link to="funk">
     function create_default_slot_30$1(ctx) {
     	let t;
 
@@ -7157,14 +7455,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_30$1.name,
     		type: "slot",
-    		source: "(88:8) <Link to=\\\"funk\\\">",
+    		source: "(150:8) <Link to=\\\"funk\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (89:8) <Link to="erstehilfe">
+    // (151:8) <Link to="erstehilfe">
     function create_default_slot_29$1(ctx) {
     	let t;
 
@@ -7184,14 +7482,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_29$1.name,
     		type: "slot",
-    		source: "(89:8) <Link to=\\\"erstehilfe\\\">",
+    		source: "(151:8) <Link to=\\\"erstehilfe\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (90:8) <Link to="buddyteam">
+    // (152:8) <Link to="buddyteam">
     function create_default_slot_28$1(ctx) {
     	let t;
 
@@ -7211,14 +7509,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_28$1.name,
     		type: "slot",
-    		source: "(90:8) <Link to=\\\"buddyteam\\\">",
+    		source: "(152:8) <Link to=\\\"buddyteam\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (91:8) <Link to="sonstiges">
+    // (153:8) <Link to="sonstiges">
     function create_default_slot_27$1(ctx) {
     	let t;
 
@@ -7238,14 +7536,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_27$1.name,
     		type: "slot",
-    		source: "(91:8) <Link to=\\\"sonstiges\\\">",
+    		source: "(153:8) <Link to=\\\"sonstiges\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (95:8) <Link to="abteilungsleiter">
+    // (157:8) <Link to="abteilungsleiter">
     function create_default_slot_26$1(ctx) {
     	let t;
 
@@ -7265,14 +7563,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_26$1.name,
     		type: "slot",
-    		source: "(95:8) <Link to=\\\"abteilungsleiter\\\">",
+    		source: "(157:8) <Link to=\\\"abteilungsleiter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (96:8) <Link to="einsatzleiter">
+    // (158:8) <Link to="einsatzleiter">
     function create_default_slot_25$1(ctx) {
     	let t;
 
@@ -7292,14 +7590,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_25$1.name,
     		type: "slot",
-    		source: "(96:8) <Link to=\\\"einsatzleiter\\\">",
+    		source: "(158:8) <Link to=\\\"einsatzleiter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (97:8) <Link to="gruppentruppfuehrer">
+    // (159:8) <Link to="gruppentruppfuehrer">
     function create_default_slot_24$1(ctx) {
     	let t;
 
@@ -7319,14 +7617,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_24$1.name,
     		type: "slot",
-    		source: "(97:8) <Link to=\\\"gruppentruppfuehrer\\\">",
+    		source: "(159:8) <Link to=\\\"gruppentruppfuehrer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (101:8) <Link to="schuetze">
+    // (163:8) <Link to="schuetze">
     function create_default_slot_23$1(ctx) {
     	let t;
 
@@ -7346,14 +7644,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_23$1.name,
     		type: "slot",
-    		source: "(101:8) <Link to=\\\"schuetze\\\">",
+    		source: "(163:8) <Link to=\\\"schuetze\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (102:8) <Link to="funker">
+    // (164:8) <Link to="funker">
     function create_default_slot_22$1(ctx) {
     	let t;
 
@@ -7373,14 +7671,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_22$1.name,
     		type: "slot",
-    		source: "(102:8) <Link to=\\\"funker\\\">",
+    		source: "(164:8) <Link to=\\\"funker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (103:8) <Link to="mgschuetze">
+    // (165:8) <Link to="mgschuetze">
     function create_default_slot_21$1(ctx) {
     	let t;
 
@@ -7400,14 +7698,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_21$1.name,
     		type: "slot",
-    		source: "(103:8) <Link to=\\\"mgschuetze\\\">",
+    		source: "(165:8) <Link to=\\\"mgschuetze\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (104:8) <Link to="atschuetze">
+    // (166:8) <Link to="atschuetze">
     function create_default_slot_20$1(ctx) {
     	let t;
 
@@ -7427,14 +7725,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_20$1.name,
     		type: "slot",
-    		source: "(104:8) <Link to=\\\"atschuetze\\\">",
+    		source: "(166:8) <Link to=\\\"atschuetze\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (105:8) <Link to="praezisionsschuetze">
+    // (167:8) <Link to="praezisionsschuetze">
     function create_default_slot_19$1(ctx) {
     	let t;
 
@@ -7454,14 +7752,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$1.name,
     		type: "slot",
-    		source: "(105:8) <Link to=\\\"praezisionsschuetze\\\">",
+    		source: "(167:8) <Link to=\\\"praezisionsschuetze\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (106:8) <Link to="breacher">
+    // (168:8) <Link to="breacher">
     function create_default_slot_18$1(ctx) {
     	let t;
 
@@ -7481,14 +7779,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_18$1.name,
     		type: "slot",
-    		source: "(106:8) <Link to=\\\"breacher\\\">",
+    		source: "(168:8) <Link to=\\\"breacher\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (107:8) <Link to="grenadier">
+    // (169:8) <Link to="grenadier">
     function create_default_slot_17$1(ctx) {
     	let t;
 
@@ -7508,14 +7806,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_17$1.name,
     		type: "slot",
-    		source: "(107:8) <Link to=\\\"grenadier\\\">",
+    		source: "(169:8) <Link to=\\\"grenadier\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (111:8) <Link to="sanitaeter">
+    // (173:8) <Link to="sanitaeter">
     function create_default_slot_16$1(ctx) {
     	let t;
 
@@ -7535,14 +7833,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$1.name,
     		type: "slot",
-    		source: "(111:8) <Link to=\\\"sanitaeter\\\">",
+    		source: "(173:8) <Link to=\\\"sanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (112:8) <Link to="medevacsanitaeter">
+    // (174:8) <Link to="medevacsanitaeter">
     function create_default_slot_15$1(ctx) {
     	let t;
 
@@ -7562,14 +7860,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_15$1.name,
     		type: "slot",
-    		source: "(112:8) <Link to=\\\"medevacsanitaeter\\\">",
+    		source: "(174:8) <Link to=\\\"medevacsanitaeter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:8) <Link to="fahrer">
+    // (178:8) <Link to="fahrer">
     function create_default_slot_14$1(ctx) {
     	let t;
 
@@ -7589,14 +7887,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_14$1.name,
     		type: "slot",
-    		source: "(116:8) <Link to=\\\"fahrer\\\">",
+    		source: "(178:8) <Link to=\\\"fahrer\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (117:8) <Link to="kommandant">
+    // (179:8) <Link to="kommandant">
     function create_default_slot_13$1(ctx) {
     	let t;
 
@@ -7616,14 +7914,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$1.name,
     		type: "slot",
-    		source: "(117:8) <Link to=\\\"kommandant\\\">",
+    		source: "(179:8) <Link to=\\\"kommandant\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (118:8) <Link to="richtschuetze">
+    // (180:8) <Link to="richtschuetze">
     function create_default_slot_12$1(ctx) {
     	let t;
 
@@ -7643,14 +7941,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12$1.name,
     		type: "slot",
-    		source: "(118:8) <Link to=\\\"richtschuetze\\\">",
+    		source: "(180:8) <Link to=\\\"richtschuetze\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (119:8) <Link to="ladeschuetze">
+    // (181:8) <Link to="ladeschuetze">
     function create_default_slot_11$1(ctx) {
     	let t;
 
@@ -7670,14 +7968,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$1.name,
     		type: "slot",
-    		source: "(119:8) <Link to=\\\"ladeschuetze\\\">",
+    		source: "(181:8) <Link to=\\\"ladeschuetze\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:8) <Link to="kampfpionier">
+    // (185:8) <Link to="kampfpionier">
     function create_default_slot_10$1(ctx) {
     	let t;
 
@@ -7697,14 +7995,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10$1.name,
     		type: "slot",
-    		source: "(123:8) <Link to=\\\"kampfpionier\\\">",
+    		source: "(185:8) <Link to=\\\"kampfpionier\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (124:8) <Link to="pionier">
+    // (186:8) <Link to="pionier">
     function create_default_slot_9$1(ctx) {
     	let t;
 
@@ -7724,14 +8022,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$1.name,
     		type: "slot",
-    		source: "(124:8) <Link to=\\\"pionier\\\">",
+    		source: "(186:8) <Link to=\\\"pionier\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:8) <Link to="helikopterpilot">
+    // (187:8) <Link to="helikopterpilot">
     function create_default_slot_8$1(ctx) {
     	let t;
 
@@ -7751,14 +8049,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(125:8) <Link to=\\\"helikopterpilot\\\">",
+    		source: "(187:8) <Link to=\\\"helikopterpilot\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (126:8) <Link to="basislogistiker">
+    // (188:8) <Link to="basislogistiker">
     function create_default_slot_7$1(ctx) {
     	let t;
 
@@ -7778,14 +8076,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$1.name,
     		type: "slot",
-    		source: "(126:8) <Link to=\\\"basislogistiker\\\">",
+    		source: "(188:8) <Link to=\\\"basislogistiker\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (130:8) <Link to="jtac">
+    // (192:8) <Link to="jtac">
     function create_default_slot_6$1(ctx) {
     	let t;
 
@@ -7805,14 +8103,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(130:8) <Link to=\\\"jtac\\\">",
+    		source: "(192:8) <Link to=\\\"jtac\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (131:8) <Link to="scharfschuetze">
+    // (193:8) <Link to="scharfschuetze">
     function create_default_slot_5$1(ctx) {
     	let t;
 
@@ -7832,14 +8130,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$1.name,
     		type: "slot",
-    		source: "(131:8) <Link to=\\\"scharfschuetze\\\">",
+    		source: "(193:8) <Link to=\\\"scharfschuetze\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (132:8) <Link to="spotter">
+    // (194:8) <Link to="spotter">
     function create_default_slot_4$1(ctx) {
     	let t;
 
@@ -7859,14 +8157,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$1.name,
     		type: "slot",
-    		source: "(132:8) <Link to=\\\"spotter\\\">",
+    		source: "(194:8) <Link to=\\\"spotter\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:8) <Link to="eod">
+    // (195:8) <Link to="eod">
     function create_default_slot_3$1(ctx) {
     	let t;
 
@@ -7886,14 +8184,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$1.name,
     		type: "slot",
-    		source: "(133:8) <Link to=\\\"eod\\\">",
+    		source: "(195:8) <Link to=\\\"eod\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (137:8) <Link to="bodenfahrzeuge">
+    // (199:8) <Link to="bodenfahrzeuge">
     function create_default_slot_2$1(ctx) {
     	let t;
 
@@ -7913,14 +8211,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$1.name,
     		type: "slot",
-    		source: "(137:8) <Link to=\\\"bodenfahrzeuge\\\">",
+    		source: "(199:8) <Link to=\\\"bodenfahrzeuge\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (138:8) <Link to="luftfahrzeuge">
+    // (200:8) <Link to="luftfahrzeuge">
     function create_default_slot_1$1(ctx) {
     	let t;
 
@@ -7940,14 +8238,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$1.name,
     		type: "slot",
-    		source: "(138:8) <Link to=\\\"luftfahrzeuge\\\">",
+    		source: "(200:8) <Link to=\\\"luftfahrzeuge\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (84:4) <Router {url}>
+    // (146:4) <Router {url}>
     function create_default_slot$1(ctx) {
     	let a0;
     	let span0;
@@ -8410,38 +8708,38 @@ var app = (function () {
     			create_component(link29.$$.fragment);
     			t45 = space();
     			create_component(link30.$$.fragment);
-    			add_location(span0, file, 85, 8, 4091);
+    			add_location(span0, file, 147, 8, 6083);
     			attr_dev(a0, "href", "/");
     			attr_dev(a0, "class", "expandable");
-    			add_location(a0, file, 84, 6, 4050);
-    			add_location(span1, file, 93, 8, 4403);
+    			add_location(a0, file, 146, 6, 6042);
+    			add_location(span1, file, 155, 8, 6395);
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "class", "expandable");
-    			add_location(a1, file, 92, 6, 4362);
-    			add_location(span2, file, 99, 8, 4675);
+    			add_location(a1, file, 154, 6, 6354);
+    			add_location(span2, file, 161, 8, 6667);
     			attr_dev(a2, "href", "/");
     			attr_dev(a2, "class", "expandable");
-    			add_location(a2, file, 98, 6, 4634);
-    			add_location(span3, file, 109, 8, 5099);
+    			add_location(a2, file, 160, 6, 6626);
+    			add_location(span3, file, 171, 8, 7091);
     			attr_dev(a3, "href", "/");
     			attr_dev(a3, "class", "expandable");
-    			add_location(a3, file, 108, 6, 5058);
-    			add_location(span4, file, 114, 8, 5298);
+    			add_location(a3, file, 170, 6, 7050);
+    			add_location(span4, file, 176, 8, 7290);
     			attr_dev(a4, "href", "/");
     			attr_dev(a4, "class", "expandable");
-    			add_location(a4, file, 113, 6, 5257);
-    			add_location(span5, file, 121, 8, 5581);
+    			add_location(a4, file, 175, 6, 7249);
+    			add_location(span5, file, 183, 8, 7573);
     			attr_dev(a5, "href", "/");
     			attr_dev(a5, "class", "expandable");
-    			add_location(a5, file, 120, 6, 5540);
-    			add_location(span6, file, 128, 8, 5877);
+    			add_location(a5, file, 182, 6, 7532);
+    			add_location(span6, file, 190, 8, 7869);
     			attr_dev(a6, "href", "/");
     			attr_dev(a6, "class", "expandable");
-    			add_location(a6, file, 127, 6, 5836);
-    			add_location(span7, file, 135, 8, 6131);
+    			add_location(a6, file, 189, 6, 7828);
+    			add_location(span7, file, 197, 8, 8123);
     			attr_dev(a7, "href", "/");
     			attr_dev(a7, "class", "expandable");
-    			add_location(a7, file, 134, 6, 6090);
+    			add_location(a7, file, 196, 6, 8082);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a0, anchor);
@@ -8534,217 +8832,217 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			const link0_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link0_changes.$$scope = { dirty, ctx };
     			}
 
     			link0.$set(link0_changes);
     			const link1_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link1_changes.$$scope = { dirty, ctx };
     			}
 
     			link1.$set(link1_changes);
     			const link2_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link2_changes.$$scope = { dirty, ctx };
     			}
 
     			link2.$set(link2_changes);
     			const link3_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link3_changes.$$scope = { dirty, ctx };
     			}
 
     			link3.$set(link3_changes);
     			const link4_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link4_changes.$$scope = { dirty, ctx };
     			}
 
     			link4.$set(link4_changes);
     			const link5_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link5_changes.$$scope = { dirty, ctx };
     			}
 
     			link5.$set(link5_changes);
     			const link6_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link6_changes.$$scope = { dirty, ctx };
     			}
 
     			link6.$set(link6_changes);
     			const link7_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link7_changes.$$scope = { dirty, ctx };
     			}
 
     			link7.$set(link7_changes);
     			const link8_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link8_changes.$$scope = { dirty, ctx };
     			}
 
     			link8.$set(link8_changes);
     			const link9_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link9_changes.$$scope = { dirty, ctx };
     			}
 
     			link9.$set(link9_changes);
     			const link10_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link10_changes.$$scope = { dirty, ctx };
     			}
 
     			link10.$set(link10_changes);
     			const link11_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link11_changes.$$scope = { dirty, ctx };
     			}
 
     			link11.$set(link11_changes);
     			const link12_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link12_changes.$$scope = { dirty, ctx };
     			}
 
     			link12.$set(link12_changes);
     			const link13_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link13_changes.$$scope = { dirty, ctx };
     			}
 
     			link13.$set(link13_changes);
     			const link14_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link14_changes.$$scope = { dirty, ctx };
     			}
 
     			link14.$set(link14_changes);
     			const link15_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link15_changes.$$scope = { dirty, ctx };
     			}
 
     			link15.$set(link15_changes);
     			const link16_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link16_changes.$$scope = { dirty, ctx };
     			}
 
     			link16.$set(link16_changes);
     			const link17_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link17_changes.$$scope = { dirty, ctx };
     			}
 
     			link17.$set(link17_changes);
     			const link18_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link18_changes.$$scope = { dirty, ctx };
     			}
 
     			link18.$set(link18_changes);
     			const link19_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link19_changes.$$scope = { dirty, ctx };
     			}
 
     			link19.$set(link19_changes);
     			const link20_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link20_changes.$$scope = { dirty, ctx };
     			}
 
     			link20.$set(link20_changes);
     			const link21_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link21_changes.$$scope = { dirty, ctx };
     			}
 
     			link21.$set(link21_changes);
     			const link22_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link22_changes.$$scope = { dirty, ctx };
     			}
 
     			link22.$set(link22_changes);
     			const link23_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link23_changes.$$scope = { dirty, ctx };
     			}
 
     			link23.$set(link23_changes);
     			const link24_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link24_changes.$$scope = { dirty, ctx };
     			}
 
     			link24.$set(link24_changes);
     			const link25_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link25_changes.$$scope = { dirty, ctx };
     			}
 
     			link25.$set(link25_changes);
     			const link26_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link26_changes.$$scope = { dirty, ctx };
     			}
 
     			link26.$set(link26_changes);
     			const link27_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link27_changes.$$scope = { dirty, ctx };
     			}
 
     			link27.$set(link27_changes);
     			const link28_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link28_changes.$$scope = { dirty, ctx };
     			}
 
     			link28.$set(link28_changes);
     			const link29_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link29_changes.$$scope = { dirty, ctx };
     			}
 
     			link29.$set(link29_changes);
     			const link30_changes = {};
 
-    			if (dirty & /*$$scope*/ 2) {
+    			if (dirty & /*$$scope*/ 4096) {
     				link30_changes.$$scope = { dirty, ctx };
     			}
 
@@ -8873,7 +9171,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$1.name,
     		type: "slot",
-    		source: "(84:4) <Router {url}>",
+    		source: "(146:4) <Router {url}>",
     		ctx
     	});
 
@@ -8894,28 +9192,26 @@ var app = (function () {
     	let input;
     	let t5;
     	let div2;
-    	let p;
-    	let span2;
+    	let current_block_type_index;
+    	let if_block;
     	let t6;
-    	let span3;
-    	let t7;
-    	let t8;
-    	let ol;
-    	let router0;
-    	let t9;
     	let div4;
-    	let router1;
+    	let router;
     	let current;
+    	let mounted;
+    	let dispose;
+    	const if_block_creators = [create_if_block, create_else_block_1];
+    	const if_blocks = [];
 
-    	router0 = new Router({
-    			props: {
-    				$$slots: { default: [create_default_slot_32$1] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
+    	function select_block_type(ctx, dirty) {
+    		if (/*showSearchResults*/ ctx[1]) return 0;
+    		return 1;
+    	}
 
-    	router1 = new Router({
+    	current_block_type_index = select_block_type(ctx);
+    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+
+    	router = new Router({
     			props: {
     				url: /*url*/ ctx[0],
     				$$slots: { default: [create_default_slot$1] },
@@ -8941,44 +9237,31 @@ var app = (function () {
     			input = element("input");
     			t5 = space();
     			div2 = element("div");
-    			p = element("p");
-    			span2 = element("span");
-    			t6 = text(" Treffer auf \"");
-    			span3 = element("span");
-    			t7 = text("\" gefunden:");
-    			t8 = space();
-    			ol = element("ol");
-    			create_component(router0.$$.fragment);
-    			t9 = space();
+    			if_block.c();
+    			t6 = space();
     			div4 = element("div");
-    			create_component(router1.$$.fragment);
-    			add_location(br, file, 59, 45, 2500);
-    			add_location(span0, file, 59, 51, 2506);
+    			create_component(router.$$.fragment);
+    			add_location(br, file, 114, 45, 4711);
+    			add_location(span0, file, 114, 51, 4717);
     			attr_dev(div0, "id", "home-nav-logo");
-    			add_location(div0, file, 59, 2, 2457);
+    			add_location(div0, file, 114, 2, 4668);
     			attr_dev(span1, "class", "material-icons noselect");
-    			add_location(span1, file, 62, 6, 2616);
+    			add_location(span1, file, 117, 6, 4827);
     			attr_dev(input, "type", "text");
     			attr_dev(input, "name", "search");
     			attr_dev(input, "placeholder", "Wiki durchsuchen...");
-    			add_location(input, file, 63, 6, 2675);
+    			add_location(input, file, 118, 6, 4886);
     			attr_dev(div1, "id", "home-nav-search");
-    			add_location(div1, file, 61, 4, 2582);
-    			attr_dev(span2, "id", "resultamount");
-    			add_location(span2, file, 66, 9, 2800);
-    			attr_dev(span3, "id", "searchtext");
-    			add_location(span3, file, 66, 49, 2840);
-    			add_location(p, file, 66, 6, 2797);
-    			add_location(ol, file, 68, 6, 2924);
+    			add_location(div1, file, 116, 4, 4793);
     			attr_dev(div2, "id", "home-nav-results");
-    			add_location(div2, file, 65, 4, 2762);
+    			add_location(div2, file, 120, 4, 4996);
     			attr_dev(div3, "id", "search-wrapper");
     			attr_dev(div3, "data-empty", "true");
-    			add_location(div3, file, 60, 2, 2533);
+    			add_location(div3, file, 115, 2, 4744);
     			attr_dev(div4, "id", "home-nav-list");
-    			add_location(div4, file, 82, 2, 3998);
+    			add_location(div4, file, 144, 2, 5990);
     			attr_dev(div5, "id", "home-overlay");
-    			add_location(div5, file, 58, 0, 2430);
+    			add_location(div5, file, 113, 0, 4641);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8997,51 +9280,70 @@ var app = (function () {
     			append_dev(div1, input);
     			append_dev(div3, t5);
     			append_dev(div3, div2);
-    			append_dev(div2, p);
-    			append_dev(p, span2);
-    			append_dev(p, t6);
-    			append_dev(p, span3);
-    			append_dev(p, t7);
-    			append_dev(div2, t8);
-    			append_dev(div2, ol);
-    			mount_component(router0, ol, null);
-    			append_dev(div5, t9);
+    			if_blocks[current_block_type_index].m(div2, null);
+    			append_dev(div5, t6);
     			append_dev(div5, div4);
-    			mount_component(router1, div4, null);
+    			mount_component(router, div4, null);
     			current = true;
+
+    			if (!mounted) {
+    				dispose = listen_dev(input, "input", /*handleQuery*/ ctx[3], false, false, false);
+    				mounted = true;
+    			}
     		},
     		p: function update(ctx, [dirty]) {
-    			const router0_changes = {};
+    			let previous_block_index = current_block_type_index;
+    			current_block_type_index = select_block_type(ctx);
 
-    			if (dirty & /*$$scope*/ 2) {
-    				router0_changes.$$scope = { dirty, ctx };
+    			if (current_block_type_index === previous_block_index) {
+    				if_blocks[current_block_type_index].p(ctx, dirty);
+    			} else {
+    				group_outros();
+
+    				transition_out(if_blocks[previous_block_index], 1, 1, () => {
+    					if_blocks[previous_block_index] = null;
+    				});
+
+    				check_outros();
+    				if_block = if_blocks[current_block_type_index];
+
+    				if (!if_block) {
+    					if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+    					if_block.c();
+    				} else {
+    					if_block.p(ctx, dirty);
+    				}
+
+    				transition_in(if_block, 1);
+    				if_block.m(div2, null);
     			}
 
-    			router0.$set(router0_changes);
-    			const router1_changes = {};
-    			if (dirty & /*url*/ 1) router1_changes.url = /*url*/ ctx[0];
+    			const router_changes = {};
+    			if (dirty & /*url*/ 1) router_changes.url = /*url*/ ctx[0];
 
-    			if (dirty & /*$$scope*/ 2) {
-    				router1_changes.$$scope = { dirty, ctx };
+    			if (dirty & /*$$scope*/ 4096) {
+    				router_changes.$$scope = { dirty, ctx };
     			}
 
-    			router1.$set(router1_changes);
+    			router.$set(router_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(router0.$$.fragment, local);
-    			transition_in(router1.$$.fragment, local);
+    			transition_in(if_block);
+    			transition_in(router.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(router0.$$.fragment, local);
-    			transition_out(router1.$$.fragment, local);
+    			transition_out(if_block);
+    			transition_out(router.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div5);
-    			destroy_component(router0);
-    			destroy_component(router1);
+    			if_blocks[current_block_type_index].d();
+    			destroy_component(router);
+    			mounted = false;
+    			dispose();
     		}
     	};
 
@@ -9060,19 +9362,23 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Home', slots, []);
     	let { url = "" } = $$props;
+    	let fetchedResults; // holds output of searchFor()
+    	let query; // holds the query
+    	let showSearchResults; // whether the search bar is currently in use
+    	let searchResults = []; // used to generate sections in search results
 
     	onMount(async () => {
     		const expandable = document.getElementsByClassName("expandable");
-    		const resultBox = document.getElementById("home-nav-results");
+    		document.getElementById("home-nav-results");
     		const searchBar = document.getElementById("home-nav-search");
-    		document.getElementById("home-nav-list");
+    		const navList = document.getElementById("home-nav-list");
     		const searchInput = searchBar.querySelector("input");
-    		const resultText = document.getElementById("searchtext");
-    		const resultAmount = document.getElementById("resultamount");
-    		const results = resultBox.querySelectorAll("li");
     		const searchWrapper = document.getElementById("search-wrapper");
-    		Array.from(results);
 
+    		//const resultText = document.getElementById("searchtext");
+    		//const resultAmount = document.getElementById("resultamount");
+    		//const results = resultBox.querySelectorAll("li");
+    		//var resultsArr = Array.from(results);
     		/* creates array from "expandable" nodelist */
     		var expandableArr = Array.from(expandable);
 
@@ -9107,19 +9413,72 @@ var app = (function () {
     			};
     		});
 
-    		function isEmpty() {
+    		function showResultsBox() {
+    			// if search bar is empty,
     			if (searchInput.value.length == 0) {
+    				// set searchwrapper dataset "empty" to "true"
     				searchWrapper.dataset.empty = "true";
+
+    				// show navigation links
+    				navList.style.display = "flex";
     			} else {
-    				searchWrapper.dataset.empty = "false";
-    				resultAmount.innerHTML = "5"; //sollte obv. noch dynamisch gemacht werden
-    				resultText.innerHTML = searchInput.value;
+    				// set searchwrapper dataset "empty" to "false"
+    				searchWrapper.dataset.empty = "false"; // if search bar is not empty,
+
+    				// set hide navigation links
+    				navList.style.display = "none";
     			}
     		}
 
-    		isEmpty();
-    		searchInput.addEventListener("input", isEmpty);
+    		showResultsBox();
+    		searchInput.addEventListener("input", showResultsBox);
     	});
+
+    	const handleQuery = e => {
+    		query = e.target.value;
+    		fetchedResults = searchFor(query);
+    		$$invalidate(1, showSearchResults = query.length > 2); // if some character was typed at all
+
+    		if (fetchedResults.length !== 0) {
+    			if (query.length > 2) {
+    				// organize results
+    				$$invalidate(2, searchResults = [{ title: fetchedResults[0][0], hits: 0 }]); // initialisation
+
+    				// add page hits
+    				let pageIndex = 0;
+
+    				fetchedResults.forEach(element => {
+    					if (searchResults[pageIndex].title === element[0]) {
+    						$$invalidate(2, searchResults[pageIndex].hits += 1, searchResults);
+    					} else {
+    						searchResults.push({ title: element[0], hits: 1 });
+    						pageIndex += 1;
+    					}
+    				});
+
+    				// add section hits
+    				searchResults.forEach(result => {
+    					var secResultsArr = []; // to be appended later
+
+    					// get all hits on this page from fetched results
+    					var hitsOnPage = fetchedResults.filter(r => {
+    						return r[0] === result.title;
+    					});
+
+    					hitsOnPage.forEach(hit => {
+    						secResultsArr.push({ title: hit[1], link: "/", env: hit[2] });
+    					});
+
+    					result.secResults = secResultsArr;
+    				});
+    			} else {
+    				// if query is not longer than 2 chars, clear previous results.
+    				$$invalidate(2, searchResults = []);
+    			}
+    		} else {
+    			$$invalidate(2, searchResults = []);
+    		}
+    	};
 
     	const writable_props = ['url'];
 
@@ -9131,17 +9490,32 @@ var app = (function () {
     		if ('url' in $$props) $$invalidate(0, url = $$props.url);
     	};
 
-    	$$self.$capture_state = () => ({ Router, Link, onMount, url });
+    	$$self.$capture_state = () => ({
+    		Router,
+    		Link,
+    		onMount,
+    		searchFor,
+    		url,
+    		fetchedResults,
+    		query,
+    		showSearchResults,
+    		searchResults,
+    		handleQuery
+    	});
 
     	$$self.$inject_state = $$props => {
     		if ('url' in $$props) $$invalidate(0, url = $$props.url);
+    		if ('fetchedResults' in $$props) fetchedResults = $$props.fetchedResults;
+    		if ('query' in $$props) query = $$props.query;
+    		if ('showSearchResults' in $$props) $$invalidate(1, showSearchResults = $$props.showSearchResults);
+    		if ('searchResults' in $$props) $$invalidate(2, searchResults = $$props.searchResults);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [url];
+    	return [url, showSearchResults, searchResults, handleQuery];
     }
 
     class Home extends SvelteComponentDev {
