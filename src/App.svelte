@@ -22,7 +22,7 @@
   import Richtschuetze from "./Wiki/Richtschuetze.svelte";
   import Kampfpionier from "./Wiki/Kampfpionier.svelte";
   import Pionier from "./Wiki/Pionier.svelte";
-  import Helikopterpilot from "./Wiki/Helikopterpiloten.svelte";
+  import Helikopterpilot from "./Wiki/Helikopterpilot.svelte";
   import Basislogistiker from "./Wiki/Basislogistiker.svelte";
   import Jtac from "./Wiki/Jtac.svelte";
   import Scharfschuetze from "./Wiki/Scharfschuetze.svelte";
