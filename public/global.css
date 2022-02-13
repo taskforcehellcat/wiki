@@ -196,10 +196,16 @@ main {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  padding: 3.5rem;
 }
 
-#home-nav-search {
-  padding: 3.5rem;
+#home-nav-results {
+  height: fit-content;
+  width: 80rem;
+  background-color: #273252;
+  padding: 1rem 3.5rem 3.5rem 3.5rem;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
 }
 
 #home-nav-search input {
@@ -233,7 +239,7 @@ input:focus {
 
 @media only screen and (max-width: 1100px) {
   #home-nav-search {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -243,6 +249,14 @@ input:focus {
   }
 }
 
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 #nav-logo {
   font-size: 28pt;
   font-weight: 300;
@@ -274,4 +288,21 @@ input:focus {
   height: 2rem;
   width: 100%;
   justify-self: end;
+}
+
+#home-nav-results p {
+  margin-bottom: 1rem;
+}
+
+#home-nav-results > ol {
+  font-weight: 300;
+  padding-left: 1.7rem;
+}
+
+#home-nav-results > ol > li > a {
+  text-decoration: underline;
+}
+
+#home-nav-results > ol > li > a:hover {
+  color: rgb(219, 219, 219);
 }
