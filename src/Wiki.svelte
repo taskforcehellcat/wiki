@@ -134,8 +134,6 @@
   import { onMount } from "svelte";
   import { dropDown } from "../public/scripts/navigation/nav.js";
   import Nav from "./Nav.svelte";
-
-  export let url = "";
   onMount(async () => {
     dropDown();
     const sections = document.querySelectorAll("section:not(section>section)");
