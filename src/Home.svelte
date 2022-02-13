@@ -16,7 +16,6 @@
   let searchResults = []; // used to generate sections in search results
 
   onMount(async () => {
-
     const expandable = document.getElementsByClassName("expandable");
     const resultBox = document.getElementById("home-nav-results");
     const searchBar = document.getElementById("home-nav-search");
@@ -61,17 +60,17 @@
     });
 
     function showResultsBox() {
+      // if search bar is empty,
       if (searchInput.value.length == 0) {
+        // set searchwrapper dataset "empty" to "true"
         searchWrapper.dataset.empty = "true";
+        // show navigation links
+        navList.style.display = "flex";
+        // if search bar is not empty,
       } else {
+        // set searchwrapper dataset "empty" to "false"
         searchWrapper.dataset.empty = "false";
-        resultAmount.innerHTML = "5"; //sollte obv. noch dynamisch gemacht werden
-        resultText.innerHTML = searchInput.value;
-        //resultAmount.innerHTML = "5"; //sollte obv. noch dynamisch gemacht werden
-        //resultText.innerHTML = searchInput.value;
-        resultBox.style.display = "block";
-        searchBar.style.borderBottomLeftRadius = "0";
-        searchBar.style.borderBottomRightRadius = "0";
+        // set hide navigation links
         navList.style.display = "none";
       }
     }
@@ -82,61 +81,53 @@
 
   const handleQuery = (e) => {
     query = e.target.value;
-    fetchedResults = searchFor(query); 
+    fetchedResults = searchFor(query);
 
     showSearchResults = query.length > 2; // if some character was typed at all
 
     if (fetchedResults.length !== 0) {
-
       if (query.length > 2) {
-        
         // organize results
-        searchResults = [{title: fetchedResults[0][0], hits: 0}]; // initialisation
-
+        searchResults = [{ title: fetchedResults[0][0], hits: 0 }]; // initialisation
 
         // add page hits
         let pageIndex = 0;
-        fetchedResults.forEach(element => {
+        fetchedResults.forEach((element) => {
           if (searchResults[pageIndex].title === element[0]) {
             searchResults[pageIndex].hits += 1;
           } else {
-            searchResults.push({title: element[0], hits: 1});
+            searchResults.push({ title: element[0], hits: 1 });
             pageIndex += 1;
           }
         });
 
         // add section hits
-        searchResults.forEach(result => {
-          
-          var secResultsArr = [] // to be appended later
-          
+        searchResults.forEach((result) => {
+          var secResultsArr = []; // to be appended later
+
           // get all hits on this page from fetched results
-          var hitsOnPage = fetchedResults.filter(r => {
-            return r[0] === result.title
+          var hitsOnPage = fetchedResults.filter((r) => {
+            return r[0] === result.title;
           });
 
-          hitsOnPage.forEach(hit => {
+          hitsOnPage.forEach((hit) => {
             secResultsArr.push({
               title: hit[1],
-              link: '/', // TODO
-              env: hit[2]
+              link: "/", // TODO
+              env: hit[2],
             });
           });
 
           result.secResults = secResultsArr;
-        
         });
-          
       } else {
         // if query is not longer than 2 chars, clear previous results.
         searchResults = [];
       }
-
     } else {
       searchResults = [];
     }
-  }
-
+  };
 </script>
 
 <div id="home-overlay">
@@ -144,17 +135,17 @@
   <div id="search-wrapper" data-empty="true">
     <div id="home-nav-search">
       <span class="material-icons noselect">search</span>
-      <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery}/>
+      <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
     </div>
     <div id="home-nav-results">
       {#if showSearchResults}
         {#if searchResults.length !== 0}
-          {#each searchResults as page} 
+          {#each searchResults as page}
             <p><span class="searchPageHits">{page.hits}</span> Treffer auf "<span class="searchPageTitle">{page.title}</span>" gefunden:</p>
             <ol>
               <Router>
                 {#each page.secResults as sechit}
-                <li><span class="searchenv">"{sechit.env}" <span class="noselect">&rarr; </span></span><Link to="{sechit.link}">"{sechit.title}"</Link></li>
+                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&rarr; </span></span><Link to={sechit.link}>"{sechit.title}"</Link></li>
                 {/each}
               </Router>
             </ol>
@@ -162,7 +153,7 @@
         {:else}
           <p><sp id="searcherrortext">Es wurden keine Übereinstimmungen gefunden!</sp></p>
         {/if}
-      {:else} 
+      {:else}
         <p><span id="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
       {/if}
     </div>
