@@ -34,7 +34,7 @@ export function searchFor(query) {
     if (query.length < 3) {return [];}
 
     query = query.toLowerCase();
-    
+
     // array to be returned in the end
     let results = [];
 
@@ -87,7 +87,6 @@ export function searchFor(query) {
         }
     }
 
-    console.debug(results);
     return results;
 }
 

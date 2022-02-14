@@ -30,8 +30,6 @@
     
     // show dropdown link menues if search bar empty
     document.getElementById('nav-list').style.display = searchInUse? 'none' : 'flex';
-    console.debug(document.getElementById('nav-list').style.display);
-
 
     if (query.length > 2) {
       fetchedResults = searchFor(query);
