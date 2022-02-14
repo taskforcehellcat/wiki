@@ -72,7 +72,7 @@
 
         // add section hits
         searchResults.forEach((result) => {   
-                 
+
           var secResultsArr = []; // to be appended later
 
           // get all hits on this page from fetched results
@@ -108,7 +108,7 @@
       {#if showResultsBox}
         {#if searchResults.length !== 0}
           {#each searchResults as page}
-            <p><span class="searchPageHits">{page.hits}</span> Treffer auf "<span class="searchPageTitle">{page.title}</span>" gefunden:</p>
+            <p><span class="searchPageHits">{page.hits}</span> Treffer auf "<Link class="searchPageTitle" to={page.secResults[0].link}>{page.title}</Link>" gefunden:</p>
             <ol>
               <Router>
                 {#each page.secResults as sechit}
@@ -118,10 +118,10 @@
             </ol>
           {/each}
         {:else}
-          <p><sp id="searcherrortext">Es wurden keine Übereinstimmungen gefunden!</sp></p>
+          <p><span class="searcherrortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
         {/if}
       {:else}
-        <p><span id="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
+        <p><span class="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
       {/if}
     </div>
   </div>

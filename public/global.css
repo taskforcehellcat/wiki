@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
 
@@ -305,6 +305,7 @@ input:focus {
 
 #home-nav-results p {
   margin-bottom: 1rem;
+  color: #94a2cf;
 }
 
 #home-nav-results > ol {
@@ -372,4 +373,16 @@ input:focus {
 
 #wiki-nav-list a:hover {
   color: #fff;
+}
+
+.searchPageHits {
+  color: #fff;
+}
+
+.searchPageTitle {
+  color: #fff;
+}
+
+.searcherrortext {
+  color: #c1a03e;
 }
