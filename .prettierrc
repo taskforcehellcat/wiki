@@ -1,6 +1,6 @@
 {
   "tabWidth": 2,
   "useTabs": false,
-  "svelteSortOrder": "options-scripts-styles-markup",
+  "svelteSortOrder": "options-styles-scripts-markup",
   "printWidth": 10000000
 }
