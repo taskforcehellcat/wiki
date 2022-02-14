@@ -27,7 +27,7 @@ def parse_page(filename):
     # holds sections of the page (page title -> key) with the text they contain (value)
     page_sections = {}
     
-    with open(PATH+filename, 'r') as svelte:
+    with open(PATH+filename, 'r', encoding="utf-8") as svelte:
 
         # reading the .svelte and setting the Wiki tag as source
 
