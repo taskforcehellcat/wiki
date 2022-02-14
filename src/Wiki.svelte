@@ -7,11 +7,11 @@
   var overlay;
 
   import { onMount } from "svelte";
-  import { dropDown } from "../public/scripts/navigation/nav.js";
+  import { includeDropDown } from "../public/scripts/navigation/nav.js";
   import Nav from "./Nav.svelte";
   onMount(async () => {
     showBurgerIcon();
-    dropDown();
+    includeDropDown();
     const sections = document.querySelectorAll("section:not(section>section)");
     const wikiNavlist = document.getElementById("wiki-nav-list");
     const navList = document.getElementById("nav-list");

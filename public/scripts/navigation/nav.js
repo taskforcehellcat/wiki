@@ -1,8 +1,7 @@
-import { onMount } from "svelte";
+//import { onMount } from "svelte";
 
-export function dropDown() {
+export function includeDropDown() {
   const expandable = document.getElementsByClassName("expandable");
-  const navList = document.getElementById("nav-list");
   var expandableArr = Array.from(expandable);
 
   let lastClicked = "";

@@ -13,10 +13,10 @@
   let showResults = false; // whether the search bar is currently in use
   let searchResults = []; // used to generate sections in search results
   
-  import { dropDown } from "../public/scripts/navigation/nav.js";
+  import { includeDropDown } from "../public/scripts/navigation/nav.js";
   
   onMount(async () => {
-    dropDown(); // expandables
+    includeDropDown(); // expandables
   });
 
   const handleQuery = (e) => {
