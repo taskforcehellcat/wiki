@@ -429,6 +429,10 @@ input:focus {
   padding-top: 20rem;
   color: #94a2cf;
   background-color: #101b3b;
+  position: absolute;
+  z-index: 98;
+  width: 100%;
+  top: 10rem;
 }
 
 @media only screen and (max-width: 800px) {

@@ -22,17 +22,11 @@
       if (isOpen == false) {
         menuOpen.style.display = "block";
         menuClose.style.display = "none";
-        main.style.display = "block";
         overlay.style.display = "none";
-        document.body.style.overflowY = "auto";
-        document.body.style.position = "unset";
       } else {
-        main.style.display = "none";
         overlay.style.display = "flex";
         menuOpen.style.display = "none";
         menuClose.style.display = "block";
-        document.body.style.overflowY = "scroll";
-        document.body.style.position = "fixed";
       }
     }
   }

@@ -1,42 +1,3 @@
-<script lang="ts">
-  import { Router, Link, Route } from "svelte-routing";
-  import Burger, { showBurgerIcon, showBurgerMenu } from "./Burger.svelte";
-  var menuOpen;
-  var menuClose;
-  var main;
-  var overlay;
-
-  import { onMount } from "svelte";
-  import { includeDropDown } from "../public/scripts/navigation/nav.js";
-  import Nav from "./Nav.svelte";
-  onMount(async () => {
-    showBurgerIcon();
-    includeDropDown();
-    const sections = document.querySelectorAll("section:not(section>section)");
-    const wikiNavlist = document.getElementById("wiki-nav-list");
-    const navList = document.getElementById("nav-list");
-    const links = navList.querySelectorAll("a");
-    const overlay = document.getElementById("overlay");
-    const articleID = document.querySelector("article").id;
-
-    var linksArr = Array.from(sections);
-    /* create array from "sections" nodelist */
-    var sectionsArr = Array.from(sections);
-    var x = 1;
-
-    /* for every element of the "sectionsArr" array */
-    sectionsArr.forEach((element) => {
-      /* add h2 tag with element's id as content */
-      element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
-      /* add anchor link to element to navigation list */
-      wikiNavlist.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
-
-      // findet funktion "showburgermenu" nicht VVV
-      overlay.innerHTML += '<a onclick="showBurgerIcon();" href="' + "#" + element.id + '">' + element.id + "</a>";
-    });
-  });
-</script>
-
 <style>
   #wiki-wrapper {
     min-height: 120vh;
@@ -180,6 +141,58 @@
   }
 </style>
 
+<script lang="ts">
+  import { Router, Link, Route } from "svelte-routing";
+
+  var menuOpen;
+  var menuClose;
+  var main;
+  var overlay;
+  let anchors = [];
+
+  import { onMount } from "svelte";
+  import { includeDropDown } from "../public/scripts/navigation/nav.js";
+  import { showBurgerIcon, showBurgerMenu } from "./Burger.svelte";
+  import Nav from "./Nav.svelte";
+  import { xlink_attr } from "svelte/internal";
+
+  onMount(async () => {
+    includeDropDown();
+    const sections = document.querySelectorAll("section:not(section>section)");
+
+    const navList = document.getElementById("nav-list");
+    const links = navList.querySelectorAll("a");
+    const overlay = document.getElementById("overlay");
+    const articleID = document.querySelector("article").id;
+
+    showBurgerIcon();
+    console.log(navList);
+    var linksArr = Array.from(sections);
+    /* create array from "sections" nodelist */
+    var sectionsArr = Array.from(sections);
+    var x = 1;
+
+    let tempAnchors = [];
+
+    console.log(anchors);
+
+    /* for every element of the "sectionsArr" array */
+    sectionsArr.forEach((element) => {
+      // add h2 tag with element's id as content
+      element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
+      /* add anchor link to element to navigation list */
+      //wikiNavlist.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
+      // findet funktion "showburgermenu" nicht VVV
+      //overlay.innerHTML += '<a onclick="" href="' + "#" + element.id + '">' + element.id + "</a>";
+      tempAnchors.push({
+        text: element.id,
+        link: "#" + element.id,
+      });
+    });
+    anchors = tempAnchors;
+  });
+</script>
+
 <svelte:window on:resize={showBurgerIcon} />
 
 <div id="wiki-wrapper">
@@ -201,14 +214,23 @@
       <div id="nav-list-bar">
         <div id="nav-list-bar-thumb" />
       </div>
-      <div id="wiki-nav-list" />
+
+      <div id="wiki-nav-list">
+        {#each anchors as anchor}
+          <a href={anchor.link}>{anchor.text}</a>
+        {/each}
+      </div>
     </div>
     <div class="nav-list-title">wiki</div>
     <Nav />
     <Link to="/" id="return-button">Zurück</Link>
   </nav>
 
-  <div id="overlay" />
+  <div id="overlay">
+    {#each anchors as anchor}
+      <a on:click={showBurgerMenu} href={anchor.link}>{anchor.text}</a>
+    {/each}
+  </div>
 
   <main id="main" bind:this={main}>
     <slot name="content" />
