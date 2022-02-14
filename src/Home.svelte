@@ -112,7 +112,7 @@
             <ol>
               <Router>
                 {#each page.secResults as sechit}
-                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&rarr; </span></span><Link to={'/'+sechit.link+'#'+sechit.title}>"{sechit.title}"</Link></li>
+                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<Link to={'/'+sechit.link+'#'+sechit.title}>{sechit.title}</Link>"</li>
                 {/each}
               </Router>
             </ol>
