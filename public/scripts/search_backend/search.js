@@ -30,12 +30,11 @@ export function searchFor(query) {
     hit array format: [hit page title, hit section, hit environment]
     */
 
+    // searching for less than three chars is prob too memory intensive
+    if (query.length < 3) {return [];}
+
     query = query.toLowerCase();
-
-    if (query.length < 3) {
-        //throw new Error("(error: search denied) please provide a longer query.");
-    }
-
+    
     // array to be returned in the end
     let results = [];
 
