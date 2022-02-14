@@ -67,6 +67,10 @@
 
         // add section hits
         searchResults.forEach((result) => {
+          console.debug(result)
+          
+          //let anchorLink = result[]
+
           var secResultsArr = []; // to be appended later
 
           // get all hits on this page from fetched results
@@ -77,7 +81,7 @@
           hitsOnPage.forEach((hit) => {
             secResultsArr.push({
               title: hit[1],
-              link: "/", // TODO
+              link: hit[3],
               env: hit[2],
             });
           });
@@ -109,7 +113,7 @@
             <ol>
               <Router>
                 {#each page.secResults as sechit}
-                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&rarr; </span></span><Link to={sechit.link}>"{sechit.title}"</Link></li>
+                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&rarr; </span></span><Link to={'/'+sechit.link+'#'+sechit.title}>"{sechit.title}"</Link></li>
                 {/each}
               </Router>
             </ol>

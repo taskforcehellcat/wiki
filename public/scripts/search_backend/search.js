@@ -33,14 +33,21 @@ export function searchFor(query) {
     query = query.toLowerCase();
 
     if (query.length < 3) {
-        throw new Error("(error: search denied) please provide a longer query.");
+        //throw new Error("(error: search denied) please provide a longer query.");
     }
 
     // array to be returned in the end
     let results = [];
 
     for (let page in index) {
+        let anchor;
+
         for (let sec in index[page]) {
+
+            if (sec === 'link') {
+                anchor = index[page][sec];
+                continue;
+            }
 
             // get the text from every pages every section
             let text = index[page][sec];
@@ -75,12 +82,13 @@ export function searchFor(query) {
                         env = '...' + text.substring(last_index-text_include, query.length+last_index+text_include+1) + '...';
                     }
 
-                    results.push([page, sec, env]);
+                    results.push([page, sec, env, anchor]);
                 }
             }
         }
     }
 
+    console.debug(results);
     return results;
 }
 

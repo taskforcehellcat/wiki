@@ -23,6 +23,7 @@ def parse_page(filename):
 
     # holds the name of the page to be parsed
     page_name = ''
+    page_link = ''
 
     # holds sections of the page (page title -> key) with the text they contain (value)
     page_sections = {}
@@ -34,6 +35,10 @@ def parse_page(filename):
         index = svelte.read()
         bs = BeautifulSoup(index, 'lxml')
         root = bs.wiki.find('svelte:fragment')
+
+        page_link = root.find('article').attrs['id']
+
+        page_sections.update({'link':page_link})
 
         for section in root.find_all('section'):
 
