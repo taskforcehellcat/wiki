@@ -7,9 +7,11 @@
       menuClose.style.display = "none";
       main.style.display = "block";
       overlay.style.display = "none";
+      document.getElementById("burger-menu").style.display = "none";
       isOpen = false;
     } else if (isOpen == false) {
       menuOpen.style.display = "block";
+      document.getElementById("burger-menu").style.display = "inline-block";
     }
   }
 
