@@ -1,3 +1,42 @@
+<script lang="ts">
+  import { Router, Link, Route } from "svelte-routing";
+  import Burger, { showBurgerIcon, showBurgerMenu } from "./Burger.svelte";
+  var menuOpen;
+  var menuClose;
+  var main;
+  var overlay;
+
+  import { onMount } from "svelte";
+  import { dropDown } from "../public/scripts/navigation/nav.js";
+  import Nav from "./Nav.svelte";
+  onMount(async () => {
+    showBurgerIcon();
+    dropDown();
+    const sections = document.querySelectorAll("section:not(section>section)");
+    const wikiNavlist = document.getElementById("wiki-nav-list");
+    const navList = document.getElementById("nav-list");
+    const links = navList.querySelectorAll("a");
+    const overlay = document.getElementById("overlay");
+    const articleID = document.querySelector("article").id;
+
+    var linksArr = Array.from(sections);
+    /* create array from "sections" nodelist */
+    var sectionsArr = Array.from(sections);
+    var x = 1;
+
+    /* for every element of the "sectionsArr" array */
+    sectionsArr.forEach((element) => {
+      /* add h2 tag with element's id as content */
+      element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
+      /* add anchor link to element to navigation list */
+      wikiNavlist.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
+
+      // findet funktion "showburgermenu" nicht VVV
+      overlay.innerHTML += '<a onclick="showBurgerIcon();" href="' + "#" + element.id + '">' + element.id + "</a>";
+    });
+  });
+</script>
+
 <style>
   #wiki-wrapper {
     min-height: 120vh;
@@ -117,44 +156,41 @@
     display: none;
   }
 
-  /* Temporary Media Query */
   @media only screen and (max-width: 800px) {
-    nav {
+    #wiki-wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 10rem 10fr 1fr;
+    }
+    .nav-list-title,
+    #nav-list-wrapper,
+    #nav-search {
       display: none;
     }
 
-    #wiki-wrapper {
-      grid-template-columns: 1fr;
+    nav {
+      height: 100%;
+      flex-direction: initial;
+      align-items: center;
+      padding: 0 4rem 0 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-between;
     }
   }
 </style>
 
-<script lang="ts">
-  import { Router, Link, Route } from "svelte-routing";
-  import { onMount } from "svelte";
-  import { dropDown } from "../public/scripts/navigation/nav.js";
-  import Nav from "./Nav.svelte";
-  onMount(async () => {
-    dropDown();
-    const sections = document.querySelectorAll("section:not(section>section)");
-    const navList = document.getElementById("wiki-nav-list");
-    /* create array from "sections" nodelist */
-    var sectionsArr = Array.from(sections);
-    var x = 1;
-
-    /* for every element of the "sectionsArr" array */
-    sectionsArr.forEach((element) => {
-      /* add h2 tag with element's id as content */
-      element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
-      /* add anchor link to element to navigation list */
-      navList.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
-    });
-  });
-</script>
+<svelte:window on:resize={showBurgerIcon} />
 
 <div id="wiki-wrapper">
   <nav>
     <Link to="/" id="nav-logo">TFHC <span>Wiki</span></Link>
+
+    <button id="burger-menu" on:click={showBurgerMenu}>
+      <svg id="menuOpen" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 400 398" fill="#fff" bind:this={menuOpen}><g transform="translate(-1321 -509)"><rect width="400" height="78" transform="translate(1321 509)" /><rect width="400" height="78" transform="translate(1321 668)" /><rect width="400" height="78" transform="translate(1321 829)" /></g></svg>
+
+      <svg id="menuClose" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 338 338" fill="#fff" bind:this={menuClose}><g transform="translate(-1355.001 -567.001)"><rect width="400" height="78" transform="translate(1410.156 567.001) rotate(45)" /><rect width="400" height="78" transform="translate(1355.001 849.844) rotate(-45)" /></g></svg>
+    </button>
     <div id="nav-search">
       <span class="material-icons">search</span>
       <input type="text" name="search" placeholder="Wiki durchsuchen..." />
@@ -172,7 +208,9 @@
     <Link to="/" id="return-button">Zurück</Link>
   </nav>
 
-  <main>
+  <div id="overlay" />
+
+  <main id="main" bind:this={main}>
     <slot name="content" />
   </main>
   <footer />
