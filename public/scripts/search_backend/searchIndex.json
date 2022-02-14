@@ -1,35 +1,94 @@
 {
-    "Abteilungsleiter": {
+    "JTAC (Joint Terminal Attack Controller)": {
+        "link": "jtac",
         "Allgemeines": " "
     },
-    "AT-Sch\u00fctze": {
-        "Allgemeines": " "
-    },
-    "Basis-Logistiker": {
+    "Kommandant (Panzertruppe)": {
+        "link": "kommandant",
         "Allgemeines": " "
     },
     "Bodenfahrzeuge": {
+        "link": "bodenfahrzeuge",
         "Allgemeines": " "
     },
-    "Breacher": {
-        "Allgemeines": " "
-    },
-    "Buddyteam": {
+    "Sonstiges": {
+        "link": "sonstiges",
         "Allgemeines": " "
     },
     "Einsatzleiter": {
+        "link": "einsatzleiter",
+        "Allgemeines": " "
+    },
+    "Luftfahrzeuge": {
+        "link": "luftfahrzeuge",
         "Allgemeines": " "
     },
     "EOD (Explosive Ordnance Disposal)": {
+        "link": "eod",
         "Allgemeines": " "
     },
-    "Erste Hilfe": {
+    "Pionier": {
+        "link": "pionier",
         "Allgemeines": " "
     },
-    "Fahrer (Panzertruppe)": {
+    "Ladesch\u00fctze (Panzertruppe)": {
+        "link": "ladeschuetze",
+        "Allgemeines": " "
+    },
+    "Sanit\u00e4ter": {
+        "link": "sanitaeter",
+        "Allgemeines": " "
+    },
+    "Funker": {
+        "link": "funker",
+        "Allgemeines": " "
+    },
+    "Spotter": {
+        "link": "spotter",
+        "Allgemeines": " "
+    },
+    "MG-Sch\u00fctze": {
+        "link": "mgschuetze",
+        "Allgemeines": " "
+    },
+    "Pr\u00e4zisionssch\u00fctze": {
+        "link": "praezisionsschuetze",
+        "Allgemeines": " "
+    },
+    "Helikopterpilot": {
+        "link": "helikopterpilot",
+        "Allgemeines": " "
+    },
+    "Basis-Logistiker": {
+        "link": "basislogistiker",
+        "Allgemeines": " "
+    },
+    "Abteilungsleiter": {
+        "link": "abteilungsleiter",
+        "Allgemeines": " "
+    },
+    "Richtsch\u00fctze (Panzertruppe)": {
+        "link": "richtschuetze",
+        "Allgemeines": " "
+    },
+    "Buddyteam": {
+        "link": "buddyteam",
+        "Allgemeines": " "
+    },
+    "Scharfsch\u00fctze": {
+        "link": "scharfschuetze",
+        "Allgemeines": " "
+    },
+    "AT-Sch\u00fctze": {
+        "link": "atschuetze",
+        "Allgemeines": " "
+    },
+    "MEDEVAC-Sanit\u00e4ter": {
+        "link": "medevacsanitaeter",
         "Allgemeines": " "
     },
     "Funk": {
+        "link": "funk",
         "Einleitung": "Grundvoraussetzung f\u00fcr eine gelungene Missionsdurchf\u00fchrung ist eine gute Kommunikation zwischen allen Kr\u00e4ften. \u00dcber l\u00e4ngere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundz\u00fcge von gutem Funken sollte allen Soldaten bekannt sein. ",
         "Vor dem Funken": "Noch bevor man beginnt, Funkkontakt aufzubauen, \u00fcberlegt man sich genau, was man mitteilen m\u00f6chte. Ein Sender blockiert f\u00fcr die Dauer seines Funkspruches den Funkkanal und damit m\u00f6glicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverst\u00e4ndlich gehalten werden. Guter Funk folgt also der Devise: So viel wie n\u00f6tig, so kurz wie m\u00f6glich. ",
         "Verbindung": "Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema: Der Sender identifiziert sich und den Empf\u00e4nger des Funkspruches. Danach wird in einem Wort erkl\u00e4rt, welchen Zweck die Mitteilung verfolgt. Zum Beispiel: \u201eAufkl\u00e4rung f\u00fcr Truppf\u00fchrung - Information - Infanterie in Gruppenst\u00e4rke zu Fu\u00df gesichtet nord-west ihrer Aktuellen - Kommen.\u201c \u201eTruppf\u00fchrung f\u00fcr Aufkl\u00e4rung - Frage - Panzerabwehrsch\u00fctzen erkannt? Kommen.\u201c Dies stellt eine Richtlinie f\u00fcr die Erstverbindung dar. Im weiteren Gespr\u00e4chsverlauf ist es eventuell nicht mehr n\u00f6tig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann des dem Gegen\u00fcber jedoch das Verst\u00e4ndnis erleichtern, wenn man seine Absicht ausspricht. ",
@@ -37,64 +96,36 @@
         "Beendigung": "Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00e4ch ansonsten f\u00fcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00f6rtern: Mit \u201ekommen\u201c am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegen\u00fcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. Mit \u201eende\u201c beendet man den Austausch. \u201eEnde\u201c wird von der Partei gebraucht, die den Austausch begonnen hat. \u201eTrennung\u201c ist effektiv ein \u201eende\u201c. Es zeigt dem Funkkreis an, dass der Sprecher das Gespr\u00e4ch mit einer Partei f\u00fcr beendet erkl\u00e4rt, aber direkt zu einer Anderen Kontakt aufnehmen m\u00f6chte. Es folgt auf \u201eTrennung\u201c also direkt die Verbindung zum neuen Gespr\u00e4chspartner. ",
         "Au\u00dfnahmen und Notf\u00e4lle": "Grunds\u00e4tzlich herrscht w\u00e4hrend eines laufenden Austausches Funkstille f\u00fcr alle anderen. Kommt es jedoch zu Notf\u00e4llen, kann es sein, dass ein Dritter sich mit Signalw\u00f6rtern wie \u201eeil\u201c, \u201esofort\u201c oder \u201eBlitz\u201c einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00e4ch ist zu unterbrechen. Diese Anleitung vermittelt blo\u00df die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppf\u00fchrern, Sanit\u00e4tern oder Aufkl\u00e4rern. Dazu finden sich Eintr\u00e4ge mit weiterf\u00fchrenden Informationen auf den jeweiligen Unterseiten. "
     },
-    "Funker": {
-        "Allgemeines": " "
-    },
-    "Grenadier": {
-        "Allgemeines": " "
-    },
-    "Gruppen-/Truppf\u00fchrer": {
-        "Allgemeines": " "
-    },
-    "Helikopterpilot": {
-        "Allgemeines": " "
-    },
-    "JTAC (Joint Terminal Attack Controller)": {
+    "Sch\u00fctze": {
+        "link": "schuetze",
         "Allgemeines": " "
     },
     "Kampfpionier": {
+        "link": "kampfpionier",
         "Halal": "Kampfpionier immer halal "
     },
-    "Kommandant (Panzertruppe)": {
+    "Erste Hilfe": {
+        "link": "erstehilfe",
         "Allgemeines": " "
     },
-    "Ladesch\u00fctze (Panzertruppe)": {
+    "Breacher": {
+        "link": "breacher",
         "Allgemeines": " "
     },
-    "Luftfahrzeuge": {
+    "Fahrer (Panzertruppe)": {
+        "link": "fahrer",
         "Allgemeines": " "
     },
-    "MEDEVAC-Sanit\u00e4ter": {
-        "Allgemeines": " "
-    },
-    "MG-Sch\u00fctze": {
-        "Allgemeines": " "
-    },
-    "Pionier": {
-        "Allgemeines": " "
-    },
-    "Pr\u00e4zisionssch\u00fctze": {
-        "Allgemeines": " "
-    },
-    "Richtsch\u00fctze (Panzertruppe)": {
-        "Allgemeines": " "
-    },
-    "Sanit\u00e4ter": {
-        "Allgemeines": " "
-    },
-    "Scharfsch\u00fctze": {
-        "Allgemeines": " "
-    },
-    "Sch\u00fctze": {
-        "Allgemeines": " "
-    },
-    "Sonstiges": {
-        "Allgemeines": " "
-    },
-    "Spotter": {
+    "Gruppen-/Truppf\u00fchrer": {
+        "link": "gruppentruppfuehrer",
         "Allgemeines": " "
     },
     "Steuerung": {
+        "link": "steuerung",
+        "Allgemeines": " "
+    },
+    "Grenadier": {
+        "link": "grenadier",
         "Allgemeines": " "
     }
 }
