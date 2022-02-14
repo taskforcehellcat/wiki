@@ -28,6 +28,9 @@
         <h3>Zahlen</h3>
         <p>Zahlen werden im Funk grundsätzlich Ziffer für Ziffer diktiert, „1278“ also als „eins - zwo - sieben - acht“ gesprochen. „Zwo“ ist dabei dringend zu benutzen, da „zwei“ leicht mit „drei“ verwechselt wird. Ebenso verwendet man „fünnüf“ für „fünf“.</p>
 
+        <h3>Windrichtungen</h3>
+        <p>Da die Windrichtungen Osten und Westen sehr ähnlich klingen, spricht man die erste Silbe im Gegensatz zur natürlichen Aussprache lang. Also zum Beispiel: „nord-<u>oh</u>st“ für nord-ost, „süd-<u>weh</u>st“ für süd-west, etc.</p>
+
         <h3>Buchstabieren</h3>
         <p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet.</p>
         <!-- Hier NATO Alphabet einfühen. Wie macht man Tabellen am besten? -->
