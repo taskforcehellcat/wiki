@@ -1,68 +1,32 @@
 {
-    "JTAC (Joint Terminal Attack Controller)": {
-        "Allgemeines": " "
-    },
-    "Kommandant (Panzertruppe)": {
-        "Allgemeines": " "
-    },
-    "Bodenfahrzeuge": {
-        "Allgemeines": " "
-    },
-    "Sonstiges": {
-        "Allgemeines": " "
-    },
-    "Einsatzleiter": {
-        "Allgemeines": " "
-    },
-    "Luftfahrzeuge": {
-        "Allgemeines": " "
-    },
-    "EOD (Explosive Ordnance Disposal)": {
-        "Allgemeines": " "
-    },
-    "Pionier": {
-        "Allgemeines": " "
-    },
-    "Ladesch\u00fctze (Panzertruppe)": {
-        "Allgemeines": " "
-    },
-    "Sanit\u00e4ter": {
-        "Allgemeines": " "
-    },
-    "Funker": {
-        "Allgemeines": " "
-    },
-    "Spotter": {
-        "Allgemeines": " "
-    },
-    "MG-Sch\u00fctze": {
-        "Allgemeines": " "
-    },
-    "Pr\u00e4zisionssch\u00fctze": {
-        "Allgemeines": " "
-    },
-    "Helikopterpilot": {
-        "Allgemeines": " "
-    },
-    "Basis-Logistiker": {
-        "Allgemeines": " "
-    },
     "Abteilungsleiter": {
-        "Allgemeines": " "
-    },
-    "Richtsch\u00fctze (Panzertruppe)": {
-        "Allgemeines": " "
-    },
-    "Buddyteam": {
-        "Allgemeines": " "
-    },
-    "Scharfsch\u00fctze": {
         "Allgemeines": " "
     },
     "AT-Sch\u00fctze": {
         "Allgemeines": " "
     },
-    "MEDEVAC-Sanit\u00e4ter": {
+    "Basis-Logistiker": {
+        "Allgemeines": " "
+    },
+    "Bodenfahrzeuge": {
+        "Allgemeines": " "
+    },
+    "Breacher": {
+        "Allgemeines": " "
+    },
+    "Buddyteam": {
+        "Allgemeines": " "
+    },
+    "Einsatzleiter": {
+        "Allgemeines": " "
+    },
+    "EOD (Explosive Ordnance Disposal)": {
+        "Allgemeines": " "
+    },
+    "Erste Hilfe": {
+        "Allgemeines": " "
+    },
+    "Fahrer (Panzertruppe)": {
         "Allgemeines": " "
     },
     "Funk": {
@@ -73,28 +37,64 @@
         "Beendigung": "Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00e4ch ansonsten f\u00fcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00f6rtern: Mit \u201ekommen\u201c am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegen\u00fcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. Mit \u201eende\u201c beendet man den Austausch. \u201eEnde\u201c wird von der Partei gebraucht, die den Austausch begonnen hat. \u201eTrennung\u201c ist effektiv ein \u201eende\u201c. Es zeigt dem Funkkreis an, dass der Sprecher das Gespr\u00e4ch mit einer Partei f\u00fcr beendet erkl\u00e4rt, aber direkt zu einer Anderen Kontakt aufnehmen m\u00f6chte. Es folgt auf \u201eTrennung\u201c also direkt die Verbindung zum neuen Gespr\u00e4chspartner. ",
         "Au\u00dfnahmen und Notf\u00e4lle": "Grunds\u00e4tzlich herrscht w\u00e4hrend eines laufenden Austausches Funkstille f\u00fcr alle anderen. Kommt es jedoch zu Notf\u00e4llen, kann es sein, dass ein Dritter sich mit Signalw\u00f6rtern wie \u201eeil\u201c, \u201esofort\u201c oder \u201eBlitz\u201c einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00e4ch ist zu unterbrechen. Diese Anleitung vermittelt blo\u00df die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppf\u00fchrern, Sanit\u00e4tern oder Aufkl\u00e4rern. Dazu finden sich Eintr\u00e4ge mit weiterf\u00fchrenden Informationen auf den jeweiligen Unterseiten. "
     },
-    "Sch\u00fctze": {
+    "Funker": {
         "Allgemeines": " "
     },
-    "Kampfpionier": {
-        "Halal": "Kampfpionier immer halal "
-    },
-    "Erste Hilfe": {
-        "Allgemeines": " "
-    },
-    "Breacher": {
-        "Allgemeines": " "
-    },
-    "Fahrer (Panzertruppe)": {
+    "Grenadier": {
         "Allgemeines": " "
     },
     "Gruppen-/Truppf\u00fchrer": {
         "Allgemeines": " "
     },
-    "Steuerung": {
+    "Helikopterpilot": {
         "Allgemeines": " "
     },
-    "Grenadier": {
+    "JTAC (Joint Terminal Attack Controller)": {
+        "Allgemeines": " "
+    },
+    "Kampfpionier": {
+        "Halal": "Kampfpionier immer halal "
+    },
+    "Kommandant (Panzertruppe)": {
+        "Allgemeines": " "
+    },
+    "Ladesch\u00fctze (Panzertruppe)": {
+        "Allgemeines": " "
+    },
+    "Luftfahrzeuge": {
+        "Allgemeines": " "
+    },
+    "MEDEVAC-Sanit\u00e4ter": {
+        "Allgemeines": " "
+    },
+    "MG-Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Pionier": {
+        "Allgemeines": " "
+    },
+    "Pr\u00e4zisionssch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Richtsch\u00fctze (Panzertruppe)": {
+        "Allgemeines": " "
+    },
+    "Sanit\u00e4ter": {
+        "Allgemeines": " "
+    },
+    "Scharfsch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Sch\u00fctze": {
+        "Allgemeines": " "
+    },
+    "Sonstiges": {
+        "Allgemeines": " "
+    },
+    "Spotter": {
+        "Allgemeines": " "
+    },
+    "Steuerung": {
         "Allgemeines": " "
     }
 }
