@@ -8,12 +8,13 @@
 
   import { searchFor } from "../public/scripts/search_backend/search.js";
 
-  let fetchedResults; // holds output of searchFor()
-  let query; // holds the query
-  let showSearchResults; // whether the search bar is currently in use
+  let fetchedResults = []; // holds output of searchFor()
+  let query = ''; // holds the query
+  let showResultsBox = false; // whether the search bar is currently in use
 
   let searchResults = []; // used to generate sections in search results
   import { dropDown } from "../public/scripts/navigation/nav.js";
+  
   onMount(async () => {
     const resultBox = document.getElementById("home-nav-results");
     const searchBar = document.getElementById("home-nav-search");
@@ -21,7 +22,7 @@
     const searchInput = searchBar.querySelector("input");
     const searchWrapper = document.getElementById("search-wrapper");
 
-    dropDown();
+    dropDown(); // expandables
 
     function showResultsBox() {
       // if search bar is empty,
@@ -45,9 +46,13 @@
 
   const handleQuery = (e) => {
     query = e.target.value;
-    fetchedResults = searchFor(query);
 
-    showSearchResults = query.length > 2; // if some character was typed at all
+    if (query.length > 2) {
+      fetchedResults = searchFor(query);
+      showResultsBox = true;
+    } else {
+      showResultsBox = false;
+    }
 
     if (fetchedResults.length !== 0) {
       if (query.length > 2) {
@@ -66,11 +71,8 @@
         });
 
         // add section hits
-        searchResults.forEach((result) => {
-          console.debug(result)
-          
-          //let anchorLink = result[]
-
+        searchResults.forEach((result) => {   
+                 
           var secResultsArr = []; // to be appended later
 
           // get all hits on this page from fetched results
@@ -88,9 +90,6 @@
 
           result.secResults = secResultsArr;
         });
-      } else {
-        // if query is not longer than 2 chars, clear previous results.
-        searchResults = [];
       }
     } else {
       searchResults = [];
@@ -106,7 +105,7 @@
       <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
     </div>
     <div id="home-nav-results">
-      {#if showSearchResults}
+      {#if showResultsBox}
         {#if searchResults.length !== 0}
           {#each searchResults as page}
             <p><span class="searchPageHits">{page.hits}</span> Treffer auf "<span class="searchPageTitle">{page.title}</span>" gefunden:</p>
