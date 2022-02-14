@@ -31,6 +31,7 @@ export function searchFor(query) {
     */
 
     // searching for less than three chars is prob too memory intensive
+    // searching for an empty string WILL crash the tab
     if (query.length < 3) {return [];}
 
     query = query.toLowerCase();
@@ -39,11 +40,13 @@ export function searchFor(query) {
     let results = [];
 
     for (let page in index) {
-        let anchor;
+        let anchor; // this will hold the anchor link for this page
 
         for (let sec in index[page]) {
 
             if (sec === 'link') {
+                // the "link" section isn't actually a section
+                // just get the anchor link from it's text contents and skip the rest
                 anchor = index[page][sec];
                 continue;
             }
