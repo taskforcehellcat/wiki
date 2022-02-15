@@ -53,6 +53,8 @@ h3 {
 
 section:not(section > section) {
   margin-bottom: 5rem;
+  padding-top: 10rem;
+  margin-top: -10rem;
 }
 
 section {
@@ -411,7 +413,7 @@ input:focus {
   cursor: pointer;
 }
 
-#burger-menu {
+#burgerMenu {
   background: none;
   outline: none;
   border: none;
@@ -429,10 +431,18 @@ input:focus {
   padding-top: 20rem;
   color: #94a2cf;
   background-color: #101b3b;
-  position: absolute;
+  position: fixed;
   z-index: 98;
   width: 100%;
   top: 10rem;
+}
+
+#overlay a {
+}
+
+#overlay a:hover {
+  color: #fff;
+  transition: color 0.2s ease-out;
 }
 
 @media only screen and (max-width: 800px) {
@@ -450,6 +460,10 @@ input:focus {
 
   main {
     padding: 8rem 4rem 10rem 4rem;
-    scroll-padding-top: 70rem;
+  }
+
+  section:not(section > section) {
+    padding-top: 20rem;
+    margin-top: -20rem;
   }
 }

@@ -110,7 +110,7 @@
     position: sticky;
     z-index: 99;
     top: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   nav::-webkit-scrollbar {
@@ -142,48 +142,35 @@
 </style>
 
 <script lang="ts">
-  import { Router, Link, Route } from "svelte-routing";
+  import { Link } from "svelte-routing";
+
+  let anchors = [];
 
   var menuOpen;
   var menuClose;
   var main;
-  var overlay;
-  let anchors = [];
+  var burgerMenu;
 
   import { onMount } from "svelte";
   import { includeDropDown } from "../public/scripts/navigation/nav.js";
   import { showBurgerIcon, showBurgerMenu } from "./Burger.svelte";
   import Nav from "./Nav.svelte";
-  import { xlink_attr } from "svelte/internal";
 
   onMount(async () => {
     includeDropDown();
     const sections = document.querySelectorAll("section:not(section>section)");
-
     const navList = document.getElementById("nav-list");
-    const links = navList.querySelectorAll("a");
-    const overlay = document.getElementById("overlay");
-    const articleID = document.querySelector("article").id;
 
     showBurgerIcon();
-    console.log(navList);
-    var linksArr = Array.from(sections);
-    /* create array from "sections" nodelist */
+    // create array from "sections" nodelist
     var sectionsArr = Array.from(sections);
-    var x = 1;
 
     let tempAnchors = [];
 
-    console.log(anchors);
-
-    /* for every element of the "sectionsArr" array */
+    // for every element of the "sectionsArr" array
     sectionsArr.forEach((element) => {
       // add h2 tag with element's id as content
       element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
-      /* add anchor link to element to navigation list */
-      //wikiNavlist.innerHTML += '<a href="#' + element.id + '">' + element.id + "</a>";
-      // findet funktion "showburgermenu" nicht VVV
-      //overlay.innerHTML += '<a onclick="" href="' + "#" + element.id + '">' + element.id + "</a>";
       tempAnchors.push({
         text: element.id,
         link: "#" + element.id,
@@ -199,7 +186,7 @@
   <nav>
     <Link to="/" id="nav-logo">TFHC <span>Wiki</span></Link>
 
-    <button id="burger-menu" on:click={showBurgerMenu}>
+    <button id="burgerMenu" bind:this={burgerMenu} on:click={showBurgerMenu}>
       <svg id="menuOpen" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 400 398" fill="#fff" bind:this={menuOpen}><g transform="translate(-1321 -509)"><rect width="400" height="78" transform="translate(1321 509)" /><rect width="400" height="78" transform="translate(1321 668)" /><rect width="400" height="78" transform="translate(1321 829)" /></g></svg>
 
       <svg id="menuClose" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 338 338" fill="#fff" bind:this={menuClose}><g transform="translate(-1355.001 -567.001)"><rect width="400" height="78" transform="translate(1410.156 567.001) rotate(45)" /><rect width="400" height="78" transform="translate(1355.001 849.844) rotate(-45)" /></g></svg>

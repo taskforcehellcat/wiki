@@ -2,22 +2,24 @@
   var isOpen = false;
 
   export function showBurgerIcon() {
+    console.log(menuOpen);
+    console.log(burgerMenu);
     if (!window.matchMedia("(max-width: 800px)").matches) {
       menuOpen.style.display = "none";
       menuClose.style.display = "none";
       main.style.display = "block";
       overlay.style.display = "none";
-      document.getElementById("burger-menu").style.display = "none";
+      burgerMenu.style.display = "none";
       isOpen = false;
     } else if (isOpen == false) {
       menuOpen.style.display = "block";
-      document.getElementById("burger-menu").style.display = "inline-block";
+      burgerMenu.style.display = "inline-block";
     }
   }
 
   export function showBurgerMenu() {
     isOpen = !isOpen;
-
+    console.log(menuOpen);
     if (window.matchMedia("(max-width: 800px)").matches) {
       if (isOpen == false) {
         menuOpen.style.display = "block";
