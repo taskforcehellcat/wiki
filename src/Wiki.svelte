@@ -159,7 +159,6 @@
   onMount(async () => {
     includeDropDown();
     const sections = document.querySelectorAll("section:not(section>section)");
-    const navList = document.getElementById("nav-list");
 
     showBurgerIcon();
     // create array from "sections" nodelist
