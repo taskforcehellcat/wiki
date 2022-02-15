@@ -81,6 +81,7 @@
 </script>
 
 <div id="home-overlay">
+  <a href="https://taskforcehellcat.tk/">Zurück zur Hauptseite</a>
   <div id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></div>
   <div id="search-wrapper" data-empty="true">
     <div id="home-nav-search">
