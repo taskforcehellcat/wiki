@@ -207,6 +207,10 @@ body {
   color: #94a2cf;
 }
 
+.material-icons {
+  vertical-align: text-bottom;
+}
+
 input {
   background-color: none;
   background: none;
@@ -451,6 +455,11 @@ input:focus {
     padding-top: 20rem;
     margin-top: -20rem;
   }
+}
+
+#home-link {
+  margin-bottom: -2.5rem;
+  color: #94a2cf;
 }
 
 @media only screen and (max-width: 480px) {
