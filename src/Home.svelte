@@ -9,12 +9,12 @@
   import { searchFor } from "../public/scripts/search_backend/search.js";
 
   let fetchedResults = []; // holds output of searchFor()
-  let query = ''; // holds the query
+  let query = ""; // holds the query
   let showResults = false; // whether the search bar is currently in use
   let searchResults = []; // used to generate sections in search results
-  
+
   import { includeDropDown } from "../public/scripts/navigation/nav.js";
-  
+
   onMount(async () => {
     includeDropDown(); // expandables
   });
@@ -22,14 +22,14 @@
   const handleQuery = (e) => {
     query = e.target.value;
 
-    let searchInUse = (query.length !== 0);
+    let searchInUse = query.length !== 0;
 
     // do the styling
     // hide results box if search bar empty
-    document.getElementById('search-wrapper').dataset.empty = !searchInUse;
-    
+    document.getElementById("search-wrapper").dataset.empty = !searchInUse;
+
     // show dropdown link menues if search bar empty
-    document.getElementById('nav-list').style.display = searchInUse? 'none' : 'flex';
+    document.getElementById("nav-list").style.display = searchInUse ? "none" : "flex";
 
     if (query.length > 2) {
       fetchedResults = searchFor(query);
@@ -55,8 +55,7 @@
         });
 
         // add section hits
-        searchResults.forEach((result) => {   
-
+        searchResults.forEach((result) => {
           var secResultsArr = []; // to be appended later
 
           // get all hits on this page from fetched results
@@ -96,7 +95,7 @@
             <ol>
               <Router>
                 {#each page.secResults as sechit}
-                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<Link to={'/'+sechit.link+'#'+sechit.title}>{sechit.title}</Link>"</li>
+                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<Link to={"/" + sechit.link + "#" + sechit.title}>{sechit.title}</Link>"</li>
                 {/each}
               </Router>
             </ol>
