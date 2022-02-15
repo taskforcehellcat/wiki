@@ -2,8 +2,8 @@
   var isOpen = false;
 
   export function showBurgerIcon() {
-    console.log(menuOpen);
-    console.log(burgerMenu);
+    console.debug(menuOpen);
+    console.debug(burgerMenu);
     if (!window.matchMedia("(max-width: 800px)").matches) {
       menuOpen.style.display = "none";
       menuClose.style.display = "none";
