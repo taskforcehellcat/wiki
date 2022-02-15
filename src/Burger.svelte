@@ -1,7 +1,7 @@
 <script context="module">
   var isOpen = false;
 
-  export function showBurgerIcon() {
+  export function toggleBurgerIcon() {
     console.debug(menuOpen);
     console.debug(burgerMenu);
     if (!window.matchMedia("(max-width: 800px)").matches) {
@@ -17,7 +17,7 @@
     }
   }
 
-  export function showBurgerMenu() {
+  export function toggleBurgerMenu() {
     isOpen = !isOpen;
     console.log(menuOpen);
     if (window.matchMedia("(max-width: 800px)").matches) {
@@ -31,5 +31,11 @@
         menuClose.style.display = "block";
       }
     }
+  }
+
+  export function hideBurgerMenu() {
+    menuOpen.style.display = "block";
+    menuClose.style.display = "none";
+    overlay.style.display = "none";
   }
 </script>
