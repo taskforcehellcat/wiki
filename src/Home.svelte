@@ -81,7 +81,10 @@
 </script>
 
 <div id="home-overlay">
-  <a href="https://taskforcehellcat.tk/">Zurück zur Hauptseite</a>
+  <a id="home-link" href="https://taskforcehellcat.tk/"
+    ><span class="material-icons"> chevron_left </span>
+    Zurück zur Hauptseite</a
+  >
   <div id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></div>
   <div id="search-wrapper" data-empty="true">
     <div id="home-nav-search">
@@ -110,6 +113,4 @@
     </div>
   </div>
   <div id="home-nav"><Nav /></div>
-
-  <!-- wär cool wenn das expand ding automatisch geht mit einer "expandable" klasse oder so :) -->
 </div>
