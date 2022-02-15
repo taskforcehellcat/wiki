@@ -263,6 +263,12 @@ input:focus {
   }
 }
 
+@media only screen and (max-width: 380px) {
+  #home-nav-logo:not(#home-nav-logo > span) {
+    font-size: 30pt;
+  }
+}
+
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
