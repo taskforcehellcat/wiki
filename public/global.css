@@ -457,7 +457,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 800px) {
-  #nav-list:not(#home-nav #nav-list),
+  #nav-list:not(#home-nav > #nav-list),
   #return-button {
     display: none;
   }
