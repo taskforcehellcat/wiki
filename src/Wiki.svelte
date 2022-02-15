@@ -150,17 +150,18 @@
   var menuClose;
   var main;
   var burgerMenu;
+  var hideBurgerMenu;
 
   import { onMount } from "svelte";
   import { includeDropDown } from "../public/scripts/navigation/nav.js";
-  import { showBurgerIcon, showBurgerMenu } from "./Burger.svelte";
+  import { toggleBurgerIcon, toggleBurgerMenu } from "./Burger.svelte";
   import Nav from "./Nav.svelte";
 
   onMount(async () => {
     includeDropDown();
     const sections = document.querySelectorAll("section:not(section>section)");
 
-    showBurgerIcon();
+    toggleBurgerIcon();
     // create array from "sections" nodelist
     var sectionsArr = Array.from(sections);
 
@@ -179,13 +180,13 @@
   });
 </script>
 
-<svelte:window on:resize={showBurgerIcon} />
+<svelte:window on:load={toggleBurgerIcon} on:resize={toggleBurgerIcon} />
 
 <div id="wiki-wrapper">
   <nav>
-    <Link to="/" id="nav-logo">TFHC <span>Wiki</span></Link>
+    <Link to="/" id="nav-logo" on:click={hideBurgerMenu}>TFHC <span>Wiki</span></Link>
 
-    <button id="burgerMenu" bind:this={burgerMenu} on:click={showBurgerMenu}>
+    <button id="burgerMenu" bind:this={burgerMenu} on:click={toggleBurgerMenu}>
       <svg id="menuOpen" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 400 398" fill="#fff" bind:this={menuOpen}><g transform="translate(-1321 -509)"><rect width="400" height="78" transform="translate(1321 509)" /><rect width="400" height="78" transform="translate(1321 668)" /><rect width="400" height="78" transform="translate(1321 829)" /></g></svg>
 
       <svg id="menuClose" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 338 338" fill="#fff" bind:this={menuClose}><g transform="translate(-1355.001 -567.001)"><rect width="400" height="78" transform="translate(1410.156 567.001) rotate(45)" /><rect width="400" height="78" transform="translate(1355.001 849.844) rotate(-45)" /></g></svg>
@@ -214,7 +215,7 @@
 
   <div id="overlay">
     {#each anchors as anchor}
-      <a on:click={showBurgerMenu} href={anchor.link}>{anchor.text}</a>
+      <a on:click={toggleBurgerMenu} href={anchor.link}>{anchor.text}</a>
     {/each}
   </div>
 
