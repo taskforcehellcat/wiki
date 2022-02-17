@@ -19,19 +19,19 @@ let env_length = 60;
 
 export function searchFor(query) {
     /*
-    search function for the search bar object. 
-    searches all text content of wiki pages and returns the results,
-    see output format below
-
-    input: string - at least three letters
-
-    output: javascript array
-    output format: [ hit arrays ] (array of arrays)
-    hit array format: [hit page title, hit section, hit environment]
-    */
+     * search function for the search bar object. 
+     * searches all text content of wiki pages and returns the results,
+     * see output format below
+     * 
+     * input: string - at least three letters
+     * 
+     * output: javascript array
+     * output format: [ hit arrays ] (array of arrays)
+     * hit array format: [hit page title, hit section, hit environment]
+     */
 
     // searching for less than three chars is prob too memory intensive
-    // searching for an empty string WILL crash the tab
+    // searching for an empty string WILL crash the tab !
     if (query.length < 3) {return [];}
 
     query = query.toLowerCase();
@@ -91,5 +91,62 @@ export function searchFor(query) {
     }
 
     return results;
+}
+
+export function updateSearchResults(query) {
+    /* 
+     * function that organises results from searchFor() into arrays that svelte
+     * can generate html from.
+     * 
+     * input: string - the query
+     * 
+     * returns: array
+     */
+
+    let fetchedResults = searchFor(query);
+
+    let searchResults = [];
+
+    if (fetchedResults.length !== 0) {
+        if (query.length > 2) {
+            // organize results
+            searchResults = [{ title: fetchedResults[0][0], hits: 0 }]; // initialisation
+
+            // add page hits
+            let pageIndex = 0;
+            fetchedResults.forEach((element) => {
+
+                if (searchResults[pageIndex].title === element[0]) {
+                    searchResults[pageIndex].hits += 1;
+                } else {
+                    searchResults.push({ title: element[0], hits: 1 });
+                    pageIndex += 1;
+                }
+            });
+
+            // add section hits
+            searchResults.forEach((result) => {
+                var secResultsArr = []; // to be appended later
+
+
+                // get all hits on this page from fetched results
+                var hitsOnPage = fetchedResults.filter((r) => {
+                    return r[0] === result.title;
+                });
+
+                hitsOnPage.forEach((hit) => {
+                    secResultsArr.push({
+                        title: hit[1],
+                        link: hit[3],
+                        env: hit[2],
+                    });
+                });
+
+                result.secResults = secResultsArr;
+            });
+        }
+    }
+    
+    return searchResults;
 }
 
