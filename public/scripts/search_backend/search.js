@@ -125,13 +125,15 @@ export function updateSearchResults(query) {
             });
 
             // add section hits
-            searchResults.forEach((result) => {
-                var secResultsArr = []; // to be appended later
+            searchResults.forEach((section) => {
+                
+                var secResultsArr = [];
+                // format: [page title, page link, env string]
 
 
-                // get all hits on this page from fetched results
+                // get all hits for this page from fetched results
                 var hitsOnPage = fetchedResults.filter((r) => {
-                    return r[0] === result.title;
+                    return r[0] === section.title;
                 });
 
                 hitsOnPage.forEach((hit) => {
@@ -142,9 +144,12 @@ export function updateSearchResults(query) {
                     });
                 });
 
-                result.secResults = secResultsArr;
+                section.secResults = secResultsArr;
             });
         }
+
+    } else {
+        searchResults = [];
     }
     
     return searchResults;

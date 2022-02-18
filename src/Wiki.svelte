@@ -146,15 +146,28 @@
 
   let anchors = [];
 
+  // --- burger menu ---
+
+  import { toggleBurgerIcon, toggleBurgerMenu } from "./Burger.svelte";
+
   var menuOpen;
   var menuClose;
   var main;
   var burgerMenu;
   var hideBurgerMenu;
 
+  // --- search bar functionality ---
+
+  import { searchFor, updateSearchResults } from "../public/scripts/search_backend/search.js";
+
+  let query = "";
+  let showResults = false;
+  let searchResults = [];
+
+  // ---
+
   import { onMount } from "svelte";
   import { includeDropDown } from "../public/scripts/navigation/nav.js";
-  import { toggleBurgerIcon, toggleBurgerMenu } from "./Burger.svelte";
   import Nav from "./Nav.svelte";
 
   onMount(async () => {
