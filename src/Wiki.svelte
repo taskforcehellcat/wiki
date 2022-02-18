@@ -199,7 +199,7 @@
 
     // do the styling
     // hide results box if search bar empty
-    document.getElementById("search-wrapper").dataset.empty = !searchInUse;
+    document.getElementById("search-wrapper").display = searchInUse? "block" : "none";
 
     // @Fenres Rest der Naviagtion verstecken, wenn gesucht wird?
     
@@ -211,7 +211,10 @@
       showResults = false;
     }
 
+    console.debug(showResults);
+
     searchResults = updateSearchResults(query);
+    console.debug(searchResults);
   };
 
 
@@ -238,8 +241,14 @@
 
       <div id="nav-search-results">
         {#if showResults}
-          <!-- Hier restliche Logik, erstmal nur Fehlertext zu Testzwecken -->
-          <p><span id="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
+          {#if searchResults.length !== 0}
+            <!-- Hier restliche Logik, erstmal nur Fehlertext zu Testzwecken -->
+            <p><span>Suchergebnisse</span></p>
+          {:else}
+            <p><span id="searcherrortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
+          {/if}
+        {:else}
+          <!-- p><span id="searcherrortext">Diggi drei Zeichen oder DDoS.</span></p -->
         {/if}
       </div>
     </div>
