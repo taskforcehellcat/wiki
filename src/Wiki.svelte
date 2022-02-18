@@ -238,6 +238,7 @@
 
       <div id="nav-search-results">
         {#if showResults}
+          <!-- Hier restliche Logik, erstmal nur Fehlertext zu Testzwecken -->
           <p><span id="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
         {/if}
       </div>
