@@ -46,6 +46,8 @@
     Zurück zur Hauptseite</a
   >
   <div id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></div>
+
+  <!-- search bar -->
   <div id="search-wrapper" data-empty="true">
     <div id="home-nav-search">
       <span class="material-icons noselect">search</span>

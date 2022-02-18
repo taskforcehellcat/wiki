@@ -15,16 +15,16 @@ fetch("./scripts/search_backend/searchIndex.json")
 
 // this variable determines how long the environment should be.
 // subject to change !
-let env_length = 60;
 
-export function searchFor(query) {
+export function searchFor(query, envLength = 60) {
     /*
      * search function for the search bar object. 
      * searches all text content of wiki pages and returns the results,
      * see output format below
      * 
      * input: string - at least three letters
-     * 
+     *        number - length of the env string to suit smaller display sizes
+     *
      * output: javascript array
      * output format: [ hit arrays ] (array of arrays)
      * hit array format: [hit page title, hit section, hit environment]
@@ -75,7 +75,7 @@ export function searchFor(query) {
 
                     // environment length arithmetic:
                     // rounding down to prevent overflow in the ui
-                    var tail_length = Math.floor((env_length - query.length) / 2);
+                    var tail_length = Math.floor((envLength - query.length) / 2);
                     
                     // actual text will be three characters less because of '...'
                     var text_include = tail_length - 3;

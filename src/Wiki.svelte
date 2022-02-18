@@ -204,11 +204,16 @@
 
       <svg id="menuClose" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 338 338" fill="#fff" bind:this={menuClose}><g transform="translate(-1355.001 -567.001)"><rect width="400" height="78" transform="translate(1410.156 567.001) rotate(45)" /><rect width="400" height="78" transform="translate(1355.001 849.844) rotate(-45)" /></g></svg>
     </button>
-    <div id="nav-search">
-      <span class="material-icons">search</span>
-      <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+
+    <!-- search bar -->
+    <div id="search-wrapper" dataset-empty="true">
+      <div id="nav-search">
+        <span class="material-icons">search</span>
+        <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+      </div>
     </div>
 
+    <!-- navigation items -->
     <div class="nav-list-title">navigation</div>
     <div id="nav-list-wrapper">
       <div id="nav-list-bar">
