@@ -191,6 +191,30 @@
     });
     anchors = tempAnchors;
   });
+
+  const handleQuery = (e) => {
+    query = e.target.value;
+
+    let searchInUse = query.length !== 0;
+
+    // do the styling
+    // hide results box if search bar empty
+    document.getElementById("search-wrapper").dataset.empty = !searchInUse;
+
+    // @Fenres Rest der Naviagtion verstecken, wenn gesucht wird?
+    
+    // document.getElementById("nav-list").style.display = searchInUse ? "none" : "flex";
+
+    if (query.length > 2) {
+      showResults = true;
+    } else {
+      showResults = false;
+    }
+
+    searchResults = updateSearchResults(query);
+  };
+
+
 </script>
 
 <svelte:window on:load={toggleBurgerIcon} on:resize={toggleBurgerIcon} />
@@ -209,7 +233,13 @@
     <div id="search-wrapper" dataset-empty="true">
       <div id="nav-search">
         <span class="material-icons">search</span>
-        <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+        <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery}/>
+      </div>
+
+      <div id="nav-search-results">
+        {#if showResults}
+          <p><span id="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
+        {/if}
       </div>
     </div>
 

@@ -341,6 +341,15 @@ input:focus {
   border-bottom-right-radius: 0;
 }
 
+#search-wrapper[data-empty="false"] #nav-search-results {
+  display: block;
+}
+
+#search-wrapper[data-empty="false"] #nav-search {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
 #search-wrapper[data-empty="false"] #nav-list {
   display: none;
 }
