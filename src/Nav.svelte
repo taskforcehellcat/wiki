@@ -3,7 +3,7 @@
   export let url = "";
 </script>
 
-<div id="nav-list">
+<div id="nav__list">
   <Router {url}>
     <a href="/" class="expandable">
       <span>Grundlagen</span>

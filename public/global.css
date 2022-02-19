@@ -93,14 +93,14 @@ main {
   scroll-padding-top: 500px;
 }
 
-#wiki-wrapper {
+#wiki {
   scroll-padding-top: 500px;
 }
 
 body {
   scroll-padding-top: 500px;
 }
-#nav-list {
+#nav__list {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -108,7 +108,7 @@ body {
   color: #94a2cf;
 }
 
-#nav-list > a:not(.expandable),
+#nav__list > a:not(.expandable),
 .expandable a {
   height: fit-content;
   display: flex;
@@ -117,7 +117,7 @@ body {
   justify-content: space-between;
 }
 
-#nav-list > a:not(.expandable):hover,
+#nav__list > a:not(.expandable):hover,
 .expandable a:hover,
 .expandable > span:hover {
   color: #fff;
@@ -152,7 +152,7 @@ body {
   margin-bottom: 1rem;
 }
 
-#home-overlay {
+#home {
   padding: 15rem 5rem 20%;
   width: 100%;
   min-height: 100vh;
@@ -165,7 +165,7 @@ body {
   gap: 3rem;
 }
 
-#home-nav-logo {
+#home__nav__logo {
   font-size: 35pt;
   font-weight: 300;
   color: #fff;
@@ -174,11 +174,11 @@ body {
   white-space: nowrap;
 }
 
-#home-nav-logo > span {
+#home__nav__logo > span {
   font-weight: 700;
 }
 
-#home-nav-search {
+#search__searchbar {
   background-color: #273252;
   width: 80rem;
   height: 3rem;
@@ -194,7 +194,7 @@ body {
   padding: 3.5rem;
 }
 
-#home-nav-search input {
+#search__searchbar input {
   width: 100%;
   height: 24px;
   color: #fff;
@@ -202,7 +202,7 @@ body {
   font-weight: 300;
 }
 
-#home-nav-search .material-icons {
+#search__searchbar .material-icons {
   font-size: 20pt;
   color: #94a2cf;
 }
@@ -229,14 +229,14 @@ input:focus {
 
 /*
 @media only screen and (min-width: 610px) {
-  #home-nav-logo br {
+  #home__nav__logo br {
     display: none;
   }
 }
 
 
 @media only screen and (max-width: 380px) {
-  #home-nav-logo:not(#home-nav-logo > span) {
+  #home__nav__logo:not(#home__nav__logo > span) {
     font-size: 30pt;
   }
 }
@@ -250,7 +250,7 @@ input:focus {
   -ms-user-select: none;
   user-select: none;
 }
-#nav-logo {
+#nav__logo {
   font-size: 28pt;
   font-weight: 300;
   color: #fff;
@@ -265,11 +265,11 @@ input:focus {
   gap: 6px;
 }
 
-#nav-logo > span {
+#nav__logo > span {
   font-weight: 700;
 }
 
-#nav-logo:hover {
+#nav__logo:hover {
   transform: scale(1.08);
   -webkit-transform: scale(1.08);
   -moz-transform: scale(1.08);
@@ -287,7 +287,7 @@ input:focus {
   color: #fff;
 }
 
-#home-nav-results {
+#search__results {
   height: fit-content;
   width: 80rem;
   background-color: #273252;
@@ -296,27 +296,27 @@ input:focus {
   border-bottom-right-radius: 0.7rem;
 }
 
-#home-nav-results p {
+#search__results p {
   margin-bottom: 1rem;
   margin-top: 1rem;
   color: #94a2cf;
 }
 
-#home-nav-results > ol {
+#search__results > ol {
   font-weight: 300;
   padding-left: 1.7rem;
 }
 
-#home-nav-results > ol > li {
+#search__results > ol > li {
   margin-top: 0.1rem;
   margin-bottom: 0.1rem;
 }
 
-#home-nav-results > ol > li > a {
+#search__results > ol > li > a {
   text-decoration: underline;
 }
 
-#home-nav-results > ol > li > a:hover {
+#search__results > ol > li > a:hover {
   color: rgb(219, 219, 219);
 }
 
@@ -332,29 +332,29 @@ input:focus {
   display: flex;
 }
 
-#search-wrapper[data-empty="false"] #home-nav-results {
+#search[data-empty="false"] #search__results {
   display: block;
 }
 
-#search-wrapper[data-empty="false"] #home-nav-search {
+#search[data-empty="false"] #search__searchbar {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-#search-wrapper[data-empty="false"] #nav-search-results {
+#search[data-empty="false"] #nav__search-results {
   display: block;
 }
 
-#search-wrapper[data-empty="false"] #nav-search {
+#search[data-empty="false"] #nav__search {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-#search-wrapper[data-empty="false"] #nav-list {
+#search[data-empty="false"] #nav__list {
   display: none;
 }
 
-#home-nav-results {
+#search__results {
   display: none;
 }
 
@@ -362,7 +362,7 @@ input:focus {
   display: none;
 }
 
-#home-nav #nav-list {
+#home__nav #nav__list {
   font-size: 15pt;
   text-transform: uppercase;
   font-weight: 600;
@@ -370,29 +370,29 @@ input:focus {
   letter-spacing: 0.12rem;
 }
 
-#home-nav .expandable a {
+#home__nav .expandable a {
   font-size: 13pt;
 }
 
-#wiki-nav-list a,
+#wiki-nav__list a,
 #return-button {
   transition: color 0.2s ease-out;
 }
 
-#wiki-nav-list a:hover {
+#wiki-nav__list a:hover {
   color: #fff;
 }
 
-.searchPageHits {
+.search__hits {
   color: #fff;
 }
 
-.searchPageTitle {
+.search_pagetitle {
   color: #fff;
   text-decoration: underline;
 }
 
-.searcherrortext {
+.search__errortext {
   color: #c1a03e;
 }
 
@@ -440,11 +440,12 @@ input:focus {
 }
 
 @media only screen and (max-width: 800px) {
-  #nav-list:not(#home-nav > #nav-list),
-  #return-button {
+  #nav__list:not(#home__nav > #nav__list),
+  #return-button,
+  #search {
     display: none;
   }
-  #nav-logo:hover {
+  #nav__logo:hover {
     transform: none;
     -webkit-transform: none;
     -moz-transform: none;
@@ -452,7 +453,7 @@ input:focus {
     -o-transform: none;
   }
 
-  #home-overlay {
+  #home {
     padding-top: 20%;
   }
 
@@ -466,13 +467,13 @@ input:focus {
   }
 }
 
-#home-link {
+#home__link {
   margin-bottom: -2.5rem;
   color: #94a2cf;
 }
 
 @media only screen and (max-width: 480px) {
-  #home-nav-logo {
+  #home__nav__logo {
     font-size: 10vw;
   }
 
@@ -483,7 +484,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 370px) {
-  #nav-list > a:not(.expandable),
+  #nav__list > a:not(.expandable),
   .expandable a {
     width: 25rem;
   }
@@ -506,12 +507,12 @@ input:focus {
 }
 
 @media only screen and (max-width: 1100px) {
-  #home-nav-search,
-  #home-nav-results {
+  #search__searchbar,
+  #search__results {
     width: 100% !important;
   }
 
-  #search-wrapper {
+  #search {
     width: 100%;
   }
 }

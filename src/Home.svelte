@@ -25,10 +25,10 @@
 
     // do the styling
     // hide results box if search bar empty
-    document.getElementById("search-wrapper").dataset.empty = !searchInUse;
+    document.getElementById("search").dataset.empty = !searchInUse;
 
     // show dropdown link menues if search bar empty
-    document.getElementById("nav-list").style.display = searchInUse ? "none" : "flex";
+    document.getElementById("nav__list").style.display = searchInUse ? "none" : "flex";
 
     if (query.length > 2) {
       showResults = true;
@@ -40,39 +40,39 @@
   };
 </script>
 
-<div id="home-overlay">
-  <a id="home-link" href="https://taskforcehellcat.tk/"
+<div id="home">
+  <a id="home__link" href="https://taskforcehellcat.tk/"
     ><span class="material-icons"> chevron_left </span>
     Zurück zur Hauptseite</a
   >
-  <div id="home-nav-logo">Task Force Hellcat <br /><span>Wiki</span></div>
+  <div id="home__nav__logo">Task Force Hellcat <br /><span>Wiki</span></div>
 
   <!-- search bar -->
-  <div id="search-wrapper" data-empty="true">
-    <div id="home-nav-search">
+  <div id="search" data-empty="true">
+    <div id="search__searchbar">
       <span class="material-icons noselect">search</span>
       <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
     </div>
-    <div id="home-nav-results">
+    <div id="search__results">
       {#if showResults}
         {#if searchResults.length !== 0}
           {#each searchResults as page}
-            <p><span class="searchPageHits">{page.hits}</span> Treffer auf "<Link class="searchPageTitle" to={page.secResults[0].link}>{page.title}</Link>" gefunden:</p>
+            <p><span class="search__hits">{page.hits}</span> Treffer auf "<Link class="search_pagetitle" to={page.secResults[0].link}>{page.title}</Link>" gefunden:</p>
             <ol>
               <Router>
                 {#each page.secResults as sechit}
-                  <li><span class="searchenv">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<Link to={"/" + sechit.link + "#" + sechit.title}>{sechit.title}</Link>"</li>
+                  <li><span class="search__env">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<Link to={"/" + sechit.link + "#" + sechit.title}>{sechit.title}</Link>"</li>
                 {/each}
               </Router>
             </ol>
           {/each}
         {:else}
-          <p><span class="searcherrortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
+          <p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
         {/if}
       {:else}
-        <p><span class="searcherrortext">Bitte mindestens drei Zeichen eingeben!</span></p>
+        <p><span class="search__errortext">Bitte mindestens drei Zeichen eingeben!</span></p>
       {/if}
     </div>
   </div>
-  <div id="home-nav"><Nav /></div>
+  <div id="home__nav"><Nav /></div>
 </div>
