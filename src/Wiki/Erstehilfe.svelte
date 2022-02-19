@@ -18,7 +18,7 @@
         <h3>Kat. Rot</h3>
         <p>Ein Ausfall der Kategorie Rot ist ein Verwundeter, der bewusstlos ist. Solche bedürfen dringender Aufmerksamkeit eines Sanitäters und müssen so schnell wie möglich geborgen und versorgt werden. Da ein Bewusstloser weder bei seiner eigenen Versorgung helfen, noch bei der Deckung mitwirken kann, und seine Versorgung obendrein sehr umständlich ist, sollte man sich gleich zu Beginn um Unterstützung bemühen. Es ist nicht unüblich, dass ein Bewusstloser von drei Soldaten versorgt und gedeckt werden muss, bis ein Sanitäter eintrifft.</p>
         <p>Nachdem geprüft wurde, ob der Bewusstlose noch einen Puls hat, ist die erste Priorität das Stoppen aller Blutungen. Gerade, wenn kein Sanitäter präsent ist, der Infusionen legen könnte, ist Blutverlust fatal. Auch, nachdem dies gelungen ist, muss der Verletzte regelmäßig überprüft werden, da sich Bandagen lösen können.</p>
-        <p>Liegt kein Puls vor, sollte man mit einer Herz-Lungen-Wiederbelebung (HLW) fortsetzen. Diese muss auch durchweg bis zum Eintreffen des Sanitäters durchführen. Eine oder zwei Gaben Epinephrin können ebenso angebracht sein.</p>
+        <p>Liegt kein Puls vor, sollte man mit einer Herz-Lungen-Wiederbelebung (HLW) fortsetzen. Diese muss auch durchweg bis zum Eintreffen des Sanitäters durchgeführt werden. Eine oder zwei Gaben Epinephrin können ebenso angebracht sein.</p>
         <p>Außerdem sollte der Kopf des Verletzten überstreckt werden, um die Sauerstoffversorgung zu gewährleisten.</p>
 
         <h3>Kat. Gelb</h3>
