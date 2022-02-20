@@ -36,9 +36,9 @@
     </a>
     <a href="/" class="expandable">
       <span>Panzertruppen</span>
-      <Link to="../fahrer">Fahrer</Link>
       <Link to="../kommandant">Kommandant</Link>
       <Link to="../richtschuetze">Richtschütze</Link>
+      <Link to="../fahrer">Fahrer</Link>
     </a>
     <a href="/" class="expandable">
       <span>Logistik</span>
