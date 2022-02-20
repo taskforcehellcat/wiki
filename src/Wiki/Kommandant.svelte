@@ -12,19 +12,16 @@
     </section>
 
     <section id="Aufgabenbereich">
-      <p>Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges durch eine Vielzahl an Kommandos.</p>
+      <p>Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung.</p>
 
       <section>
-        <h3>Herstellung der Gefechtsbereitschaft</h3>
-        <h3>Anweisungen an den Kraftfahrer</h3>
-        <h3>Wechsel der Hauptgeschützmunition</h3>
-        <h3>Erteilung des Feuers und des Feuerhaltes</h3>
-        <h3>Benutzung des Nebelwerfers</h3>
-        <h3>Feldaufklärung und Zielanweisungen für den Richtschützen</h3>
-        <h3>Festlegung von Feuerbereich und Hauptschussrichtung</h3>
-        <h3>Befehl des Schießhaltes</h3>
-        <h3>Informationswechsel mit dem Zugführer und anderen Kommandanten</h3>
-        <h3>Zielfestlegung für Richtschützen</h3>
+        <ol>
+          <li>Herstellung der Gefechtsbereitschaft</li>
+          <li>Anweisungen zur Bewegung des Fahrzeuges an den Fahrer</li>
+          <li>Anweisungen zur Bedienung der Waffensysteme an den Richtschützen</li>
+          <li>Funkverkehr innerhalb seines Zuges</li>
+          <li>Aktives Aufklären und Wahrung von Situationsbewusstsein</li>
+        </ol>
       </section>
     </section>
   </svelte:fragment>
