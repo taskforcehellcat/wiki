@@ -18,7 +18,6 @@
   import Medevacsanitaeter from "./Wiki/Medevacsanitaeter.svelte";
   import Fahrer from "./Wiki/Fahrer.svelte";
   import Kommandant from "./Wiki/Kommandant.svelte";
-  import Ladeschuetze from "./Wiki/Ladeschuetze.svelte";
   import Richtschuetze from "./Wiki/Richtschuetze.svelte";
   import Kampfpionier from "./Wiki/Kampfpionier.svelte";
   import Pionier from "./Wiki/Pionier.svelte";
@@ -65,7 +64,6 @@
 
   <Route path="fahrer"><Fahrer /></Route>
   <Route path="kommandant"><Kommandant /></Route>
-  <Route path="ladeschuetze"><Ladeschuetze /></Route>
   <Route path="richtschuetze"><Richtschuetze /></Route>
 
   <Route path="kampfpionier"><Kampfpionier /></Route>

@@ -39,7 +39,6 @@
       <Link to="../fahrer">Fahrer</Link>
       <Link to="../kommandant">Kommandant</Link>
       <Link to="../richtschuetze">Richtschütze</Link>
-      <Link to="../ladeschuetze">Ladeschütze</Link>
     </a>
     <a href="/" class="expandable">
       <span>Logistik</span>
