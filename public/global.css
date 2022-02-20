@@ -55,9 +55,6 @@ section:not(section > section) {
   margin-bottom: 5rem;
   padding-top: 10rem;
   margin-top: -10rem;
-}
-
-section {
   width: 70%;
 }
 
@@ -497,7 +494,7 @@ input:focus {
 }
 
 @media only screen and (max-width: 1200px) {
-  section {
+  section:not(section > section) {
     width: 100%;
   }
 
@@ -540,7 +537,7 @@ input:focus {
 
 ul,
 ol {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
