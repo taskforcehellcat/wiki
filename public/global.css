@@ -537,3 +537,16 @@ input:focus {
     width: 230px;
   }
 }
+
+ul,
+ol {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+ul {
+  list-style-type: "─  ";
+}
