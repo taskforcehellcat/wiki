@@ -76,12 +76,9 @@
     },
     "Kommandant (Panzertruppe)": {
         "link": "kommandant",
-        "Rollenprofil": "Der Kommandant hat die Befehlsgewalt und tr\u00e4gt die Verantwortung f\u00fcr sein Fahrzeug und die dazugeh\u00f6rige Besatzung. Seine Priorit\u00e4t ist der Erhalt der Gefechtsbereitschaft seines Fahrzeuges durch ad\u00e4quate F\u00fchrung. ",
-        "Aufgabenbereich": "Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung. "
-    },
-    "Ladesch\u00fctze (Panzertruppe)": {
-        "link": "ladeschuetze",
-        "Allgemeines": " "
+        "Rollenprofil": "Der Kommandant hat die Befehlsgewalt und tr\u00e4gt die Verantwortung f\u00fcr sein Fahrzeug und die dazugeh\u00f6rige Besatzung. Seine Priorit\u00e4t ist der Erhalt der Gefechtsbereitschaft seines Fahrzeuges durch ad\u00e4quate F\u00fchrung seiner Besatzung. In der Befehlskette untersteht er dem Zugf\u00fchrer, der Anweisungen an einzelne Kommandanten oder den ganzen Zug erteilen kann. ",
+        "Aufgaben": "Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung. Das Aufgabenprofil des Kommandanten kann zwischen Fahrzeugtypen variieren, l\u00e4sst sich aber in wenigen Punkten gro\u00df zusammenfassen. ",
+        "Weiteres": "Die Kommandanten der Panzertruppen m\u00fcssen verschiedene Fertigkeiten beherrschen, um ihr Fahrzeug m\u00f6glichst sicher und effizient ins Gefecht zu f\u00fchren. Dazu geh\u00f6ren die Beherrschung und Einhaltung der Funketikette, Kenntnisse \u00fcber das eigene Fahrzeug, die Beherrschung des NATO-Alphabets und Identifikation von Fahrzeugtypen, die F\u00e4higkeit im Team zu arbeiten und ein gutes Situationsbewusstsein. Es ist von Bedeutung stets die \u00dcbersicht zu behalten und Gefahrensituationen einsch\u00e4tzen zu k\u00f6nnen. "
     },
     "Luftfahrzeuge": {
         "link": "luftfahrzeuge",
