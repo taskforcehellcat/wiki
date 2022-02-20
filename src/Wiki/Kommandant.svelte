@@ -8,11 +8,11 @@
     <h1>Kommandant (Panzertruppe)</h1>
 
     <section id="Rollenprofil">
-      <p>Der Kommandant hat die Befehlsgewalt und trägt die Verantwortung für sein Fahrzeug und die dazugehörige Besatzung. Seine Priorität ist der Erhalt der Gefechtsbereitschaft seines Fahrzeuges durch adäquate Führung seiner Besatzung. In der Befehlskette untersteht er dem Zugführer, der Anweisungen an einzelne Kommandanten oder den Zug erteilen kann.</p>
+      <p>Der Kommandant hat die Befehlsgewalt und trägt die Verantwortung für sein Fahrzeug und die dazugehörige Besatzung. Seine Priorität ist der Erhalt der Gefechtsbereitschaft seines Fahrzeuges durch adäquate Führung seiner Besatzung. In der Befehlskette untersteht er dem Zugführer, der Anweisungen an einzelne Kommandanten oder den ganzen Zug erteilen kann.</p>
     </section>
 
     <section id="Aufgaben">
-      <p>Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung. Das Aufgabenprofil des Kommandanten kann zwischen Fahrzeugtypen variieren, lässt sich aber wie folgt zusammenfassen:</p>
+      <p>Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung. Das Aufgabenprofil des Kommandanten kann zwischen Fahrzeugtypen variieren, lässt sich aber in wenigen Punkten groß zusammenfassen.</p>
 
       <ol>
         <li>Herstellung der Gefechtsbereitschaft</li>
