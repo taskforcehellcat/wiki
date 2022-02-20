@@ -2,7 +2,7 @@
   import Steuerung from "./Wiki/Steuerung.svelte";
   import Funketikette from "./Wiki/Funketikette.svelte";
   import Erstehilfe from "./Wiki/Erstehilfe.svelte";
-  import Buddyteam from "./Wiki/Buddyteam.svelte";
+  import Milsim from "./Wiki/Milsim.svelte";
   import Sonstiges from "./Wiki/Sonstiges.svelte";
   import Abteilungsleiter from "./Wiki/Abteilungsleiter.svelte";
   import Einsatzleiter from "./Wiki/Einsatzleiter.svelte";
@@ -44,7 +44,7 @@
   <Route path="steuerung"><Steuerung /></Route>
   <Route path="funketikette"><Funketikette /></Route>
   <Route path="erstehilfe"><Erstehilfe /></Route>
-  <Route path="buddyteam"><Buddyteam /></Route>
+  <Route path="milsim"><Milsim /></Route>
   <Route path="sonstiges"><Sonstiges /></Route>
 
   <Route path="abteilungsleiter"><Abteilungsleiter /></Route>

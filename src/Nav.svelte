@@ -10,7 +10,7 @@
       <Link to="../steuerung">Steuerung</Link>
       <Link to="../funketikette">Funketikette</Link>
       <Link to="../erstehilfe">Erste Hilfe</Link>
-      <Link to="../buddyteam">Buddyteam</Link>
+      <Link to="../milsim">Milsim</Link>
       <Link to="../sonstiges">Sonstiges</Link>
     </a>
     <a href="/" class="expandable">

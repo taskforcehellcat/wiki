@@ -4,8 +4,8 @@
 
 <Wiki>
   <svelte:fragment slot="content">
-    <article id="buddyteam" />
-    <h1>Buddyteam</h1>
+    <article id="milsim" />
+    <h1>Milsim</h1>
 
     <section id="Allgemeines">
       <p />
