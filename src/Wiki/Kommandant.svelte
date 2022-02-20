@@ -14,15 +14,13 @@
     <section id="Aufgabenbereich">
       <p>Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung.</p>
 
-      <section>
-        <ol>
-          <li>Herstellung der Gefechtsbereitschaft</li>
-          <li>Anweisungen zur Bewegung des Fahrzeuges an den Fahrer</li>
-          <li>Anweisungen zur Bedienung der Waffensysteme an den Richtschützen</li>
-          <li>Funkverkehr innerhalb seines Zuges</li>
-          <li>Aktives Aufklären und Wahrung von Situationsbewusstsein</li>
-        </ol>
-      </section>
+      <ol>
+        <li>Herstellung der Gefechtsbereitschaft</li>
+        <li>Anweisungen zur Bewegung des Fahrzeuges an den Fahrer</li>
+        <li>Anweisungen zur Bedienung der Waffensysteme an den Richtschützen</li>
+        <li>Funkverkehr innerhalb seines Zuges</li>
+        <li>Aktives Aufklären und Wahrung von Situationsbewusstsein</li>
+      </ol>
     </section>
   </svelte:fragment>
 </Wiki>

@@ -541,7 +541,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 20px;
+  padding-left: 40px;
 }
 
 ul {
