@@ -1,6 +1,6 @@
 <script lang="ts">
   import Steuerung from "./Wiki/Steuerung.svelte";
-  import Funk from "./Wiki/Funk.svelte";
+  import Funketikette from "./Wiki/Funketikette.svelte";
   import Erstehilfe from "./Wiki/Erstehilfe.svelte";
   import Buddyteam from "./Wiki/Buddyteam.svelte";
   import Sonstiges from "./Wiki/Sonstiges.svelte";
@@ -43,7 +43,7 @@
 
   <!-- Wiki Pages -->
   <Route path="steuerung"><Steuerung /></Route>
-  <Route path="funk"><Funk /></Route>
+  <Route path="funketikette"><Funketikette /></Route>
   <Route path="erstehilfe"><Erstehilfe /></Route>
   <Route path="buddyteam"><Buddyteam /></Route>
   <Route path="sonstiges"><Sonstiges /></Route>

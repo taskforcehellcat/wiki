@@ -8,7 +8,7 @@
     <a href="/" class="expandable">
       <span>Grundlagen</span>
       <Link to="../steuerung">Steuerung</Link>
-      <Link to="../funk">Funk</Link>
+      <Link to="../funketikette">Funketikette</Link>
       <Link to="../erstehilfe">Erste Hilfe</Link>
       <Link to="../buddyteam">Buddyteam</Link>
       <Link to="../sonstiges">Sonstiges</Link>
