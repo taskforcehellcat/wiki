@@ -8,7 +8,7 @@
     <h1>Funketikette</h1>
 
     <section id="Einleitung">
-      <p>Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollte allen Soldaten bekannt sein.</p>
+      <p>Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollten allen Soldaten bekannt sein.</p>
       <p>Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppführern, Sanitätern oder Aufklärern. Dazu finden sich Einträge mit weiterführenden Informationen auf den jeweiligen Unterseiten.</p>
     </section>
 
@@ -20,7 +20,7 @@
       <p>Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema: Der Sender identifiziert sich und den Empfänger des Funkspruches. Danach wird in einem Wort erklärt, welchen Zweck die Mitteilung verfolgt. Zum Beispiel:</p>
       <p>„Aufklärung für Truppführung - Information - Infanterie in Gruppenstärke zu Fuß gesichtet nord-west ihrer Aktuellen - Kommen.“</p>
       <p>„Truppführung für Aufklärung - Frage - Panzerabwehrschützen erkannt? Kommen.“</p>
-      <p>Dies stellt eine Richtlinie für die Erstverbindung dar. Im weiteren Gesprächsverlauf ist es eventuell nicht mehr nötig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann des dem Gegenüber jedoch das Verständnis erleichtern, wenn man seine Absicht ausspricht.</p>
+      <p>Dies stellt eine Richtlinie für die Erstverbindung dar. Im weiteren Gesprächsverlauf ist es eventuell nicht mehr nötig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann es dem Gegenüber jedoch das Verständnis erleichtern, wenn man seine Absicht ausspricht.</p>
     </section>
 
     <section id="Funkspruch">
@@ -33,7 +33,7 @@
         <p>Da die Windrichtungen Osten und Westen sehr ähnlich klingen, spricht man die erste Silbe im Gegensatz zur natürlichen Aussprache lang. Also zum Beispiel: „nord-<u>oh</u>st“ für nord-ost, „süd-<u>weh</u>st“ für süd-west, etc.</p>
 
         <h3>Buchstabieren</h3>
-        <p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwendet daher zum Buchstabieren das NATO-Alphabet.</p>
+        <p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet.</p>
         <!-- Hier NATO Alphabet einfühen. Wie macht man Tabellen am besten? -->
         <p>Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.</p>
       </section>
