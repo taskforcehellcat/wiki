@@ -25,8 +25,16 @@
       </ol>
     </section>
 
-    <section id="Weiteres">
-      <p>Die Kommandanten der Panzertruppen müssen verschiedene Fertigkeiten beherrschen, um ihr Fahrzeug möglichst sicher und effizient ins Gefecht zu führen. Dazu gehören die Beherrschung und Einhaltung der Funketikette, Kenntnisse über das eigene Fahrzeug, die Beherrschung des NATO-Alphabets und Identifikation von Fahrzeugtypen, die Fähigkeit im Team zu arbeiten und ein gutes Situationsbewusstsein. Es ist von Bedeutung stets die Übersicht zu behalten und Gefahrensituationen einschätzen zu können.</p>
+    <section id="Fertigkeiten">
+      <p>Die Kommandanten der Panzertruppen müssen verschiedene Fertigkeiten beherrschen, um ihr Fahrzeug möglichst sicher und effizient ins Gefecht zu führen. Diese Fertigkeiten tragen immens dazu bei die Übersicht zu behalten und Gefahrensituation einschätzen zu können, wodurch ein reibungsloser Einsatz gewährleistet werden kann. Dazu gehören:<p/>
+      
+      <ol>
+        <li>Die Beherrschung und Einhaltung der Funketikette</li>
+        <li>Kenntnisse über das eigene Fahrzeug</li>
+        <li>Die Beherrschung des NATO-Alphabets</li>
+        <li>Präzise Aufklärungsarbeit durch Identifikation feindlicher Kräfte</li>
+        <li>Ein gutes Situationsbewusstsein</li>
+      </ol>
     </section>
   </svelte:fragment>
 </Wiki>
