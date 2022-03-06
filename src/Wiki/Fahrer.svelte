@@ -20,7 +20,7 @@
         <li>Anfahren einer vom Kommandanten bestimmten Stellung</li>
         <li>Wenn möglich Schussbeobachtung und Treffermeldung durchführen</li>
         <li>Gefechtsfeldbeobachtung durchführen und Feindkontakte melden</li>
-        <li>???Erkundigt sich bei Kommandanten nach dem Status des Gefahrenbereichs???</li>
+        <li>Erkundigt sich nach dem Fortschritt des Einsatzes</li>
       </ol>
     </section>
 
