@@ -8,7 +8,7 @@
     <h1>Richtschütze (Panzertruppen)</h1>
 
     <section id="Rollenprofil">
-      <p>Der Richtschütze bedient die Waffenanlage seines Fahrzeuges. Er untersteht dem auf seinem Fahrzeug aufgesessenem Kommandanten, der ihm im Verlauf eines Einsatzes eine Vielzahl an Anweisungen erteilen kann. Durch das Abfeuern der Waffensysteme nimmt er unmittelbar Einfluss auf das Gefechtsgeschehen.</p>
+      <p>Der Richtschütze bedient die Waffenanlage seines Fahrzeuges. Er untersteht dem auf seinem Fahrzeug aufgesessenem Kommandanten, der ihm im Verlauf eines Einsatzes eine Vielzahl an Anweisungen erteilen kann. Durch das Abfeuern der Waffensysteme nimmt er unmittelbar Einfluss auf das Gefechtsgeschehen. Aufgrund der Abwesenheit eines Ladeschützen bei der Mehrheit der gepanzerten Fahrzeugen nimmt lediglich der Richtschütze Einfluss auf die Munitionsart der Hauptbewaffnung.</p>
     </section>
 
     <section id="Aufgaben">
