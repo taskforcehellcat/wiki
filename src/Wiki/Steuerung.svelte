@@ -6,7 +6,10 @@
   <svelte:fragment slot="content">
     <article id="steuerung" />
     <h1>Allgemeines</h1>
+    
+    <section id="Über uns">
       <p>Die Task Force Hellcat spielt ausschließlich MilSim in der von Bohemia Interactive entwickelten Militärsimulation Arma 3. Um das Spielgeschehen möglichst taktisch und immersiv zu gestalten spielen wir primär selbstgeschriebene Missionen in (regelmäßigen) Events und führen diverse Ausbildungen durch, sodass jeder Mitspieler seine präferierte Rolle möglichst effektiv ausspielen kann.</p>
+    </section>
 
     <section id="Struktur">
       <p>In unserer Einheit gibt es eine klare Struktur in Abteilungen, die verschiedene Truppengattungen in sich vereinen. Die Abteilungsleiter kümmern sich in erster Linie um alles Organisatorische innerhalb ihrer Abteilung. Zusätzlich sind sie der Oberbefehlshaber aller Truppengattungen ihrer Abteilung, wodurch sie sich aktiv bei der Operationsplanung beteiligen.</p>
