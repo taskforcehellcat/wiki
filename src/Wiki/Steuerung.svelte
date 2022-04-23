@@ -1,13 +1,13 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
-import Abteilungsleiter from "./Abteilungsleiter.svelte";
+  import Abteilungsleiter from "./Abteilungsleiter.svelte";
 </script>
 
 <Wiki>
   <svelte:fragment slot="content">
     <article id="steuerung" />
     <h1>Allgemeines</h1>
-    
+
     <section id="Über uns">
       <p>Die Task Force Hellcat spielt ausschließlich MilSim in der von Bohemia Interactive entwickelten Militärsimulation Arma 3. Um das Spielgeschehen möglichst taktisch und immersiv zu gestalten spielen wir primär selbstgeschriebene Missionen in (regelmäßigen) Events und führen diverse Ausbildungen durch, sodass jeder Mitspieler seine präferierte Rolle möglichst effektiv ausspielen kann. Das verwendete Equipment stammt ausschließlich aus der westlichen Welt und wird gelegentlich nach dem Abschluss einer Kampagne gewechselt.</p>
     </section>
@@ -15,7 +15,7 @@ import Abteilungsleiter from "./Abteilungsleiter.svelte";
     <section id="Struktur">
       <p>In unserer Einheit gibt es eine klare Struktur in Abteilungen, die verschiedene Truppengattungen in sich vereinen. Die Abteilungsleiter kümmern sich in erster Linie um alles Organisatorische innerhalb ihrer Abteilung. Zusätzlich sind sie der Oberbefehlshaber aller Truppengattungen ihrer Abteilung, wodurch sie sich aktiv bei der Operationsplanung beteiligen.</p>
 
-      <img src="./images/struktur.jpg">
+      <img alt="Task Force Hellcat Struktur" src="./images/tfhc_struktur.svg" />
     </section>
 
     <section id="Voraussetzungen und Beitritt">
