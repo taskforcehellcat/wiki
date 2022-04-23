@@ -15,7 +15,7 @@ import Abteilungsleiter from "./Abteilungsleiter.svelte";
     <section id="Struktur">
       <p>In unserer Einheit gibt es eine klare Struktur in Abteilungen, die verschiedene Truppengattungen in sich vereinen. Die Abteilungsleiter kümmern sich in erster Linie um alles Organisatorische innerhalb ihrer Abteilung. Zusätzlich sind sie der Oberbefehlshaber aller Truppengattungen ihrer Abteilung, wodurch sie sich aktiv bei der Operationsplanung beteiligen.</p>
 
-      <img src="./img/struktur.jpg">
+      <img src="./images/struktur.jpg">
     </section>
 
     <section id="Voraussetzungen und Beitritt">
