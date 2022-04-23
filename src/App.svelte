@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Steuerung from "./Wiki/Steuerung.svelte";
+  import Allgemeines from "./Wiki/Allgemeines.svelte";
   import Funketikette from "./Wiki/Funketikette.svelte";
   import Erstehilfe from "./Wiki/Erstehilfe.svelte";
-  import Milsim from "./Wiki/Milsim.svelte";
+  import Abteilungen from "./Wiki/Abteilungen.svelte";
   import Sonstiges from "./Wiki/Sonstiges.svelte";
   import Abteilungsleiter from "./Wiki/Abteilungsleiter.svelte";
   import Einsatzleiter from "./Wiki/Einsatzleiter.svelte";
@@ -41,10 +41,10 @@
   <Route path="/"><Home /></Route>
 
   <!-- Wiki Pages -->
-  <Route path="steuerung"><Steuerung /></Route>
+  <Route path="allgemeines"><Allgemeines /></Route>
   <Route path="funketikette"><Funketikette /></Route>
   <Route path="erstehilfe"><Erstehilfe /></Route>
-  <Route path="milsim"><Milsim /></Route>
+  <Route path="abteilungen"><Abteilungen /></Route>
   <Route path="sonstiges"><Sonstiges /></Route>
 
   <Route path="abteilungsleiter"><Abteilungsleiter /></Route>

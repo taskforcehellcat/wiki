@@ -7,10 +7,10 @@
   <Router {url}>
     <a href="/" class="expandable">
       <span>Grundlagen</span>
-      <Link to="../steuerung">Steuerung</Link>
+      <Link to="../allgemeines">Allgemeines</Link>
       <Link to="../funketikette">Funketikette</Link>
       <Link to="../erstehilfe">Erste Hilfe</Link>
-      <Link to="../milsim">Milsim</Link>
+      <Link to="../abteilungen">Abteilungen</Link>
       <Link to="../sonstiges">Sonstiges</Link>
     </a>
     <a href="/" class="expandable">

@@ -5,7 +5,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
-    <article id="steuerung" />
+    <article id="allgemeines" />
     <h1>Allgemeines</h1>
 
     <section id="Über uns">
