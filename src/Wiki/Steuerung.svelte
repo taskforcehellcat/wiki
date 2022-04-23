@@ -16,11 +16,11 @@
     </section>
 
     <section id="Voraussetzungen und Beitritt">
-      <p>Voraussetzungen für den Beitritt sind das Spiel Arma 3, ein Mikrofon und TeamSpeak sowie Discord für Organisatorisches. Sind diese Voraussetzungen erfüllt treffen sich Bewerber mit unserem Personal in einem persönlichen Gespräch, um vorab die Interessen des Bewerbers zu besprechen und gegebenenfalls Fragen zu beantworten. Jede Person die willig ist im Rahmen unseres Regelwerkes MilSim zu spielen ist herzlich willkommen. Nach einem positiven Verlauf des persönlichen Gespräches durchläuft der Bewerber eine Grundausbildung mit einem ihm zugewiesenen Mentor, der ihm alle wichtigen Kenntnisse für unser MilSim vermittelt. Nach erfolgreichem Abschluss der Grundausbildung und der Vertiefung des Erlernten durch Übungen wird der Bewerber zu einem offiziellen Mitglied der Task Force Hellcat und kann an unseren Events teilnehmen.</p>
+      <p>Voraussetzungen für den Beitritt sind das Spiel Arma 3, ein Mikrofon und TeamSpeak sowie Discord für Organisatorisches. Sind diese Voraussetzungen erfüllt treffen sich Bewerber mit unserem Personal in einem persönlichen Gespräch, um vorab die Interessen des Bewerbers zu besprechen und gegebenenfalls Fragen zu beantworten. Jede Person die willig ist im Rahmen unseres Regelwerkes MilSim zu spielen, ist herzlich willkommen. Nach einem positiven Verlauf des persönlichen Gespräches durchläuft der Bewerber eine Grundausbildung mit einem ihm zugewiesenen Mentor, der ihm alle wichtigen Kenntnisse für unser MilSim vermittelt. Nach erfolgreichem Abschluss der Grundausbildung und der Vertiefung des Erlernten durch Übungen wird der Bewerber zu einem offiziellen Mitglied der Task Force Hellcat und kann an unseren Events mit grundlegenden Rollen der Infanterie teilnehmen.</p>
     </section>
 
     <section id="Organisation">
-      <p>Jeder neue Mitspieler beginnt mit einer der grundlegenden Rollen der Infanterie. Diese Rollen erfordern lediglich die Beherrschung der in der Grundausbildung erlernten Kenntnisse, wodurch sie sich wunderbar als Anfängerrollen eignen. Diese Rollen sind unter anderem der Schütze, der Grenadier, der MG-Schütze und der AT-Schütze. Beherrscht ein Mitspieler die Grundlagen unseres MilSim kann er sich in einer anderen frei wählbaren Truppengattung ausbilden lassen.</p>
+      <p>Die Organisation unserer Einheit findet ausschließlich auf unserem <a href="discord.gg/Ap3bEmBgXw">Discord</a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server.</p>
     </section>
   </svelte:fragment>
 </Wiki>
