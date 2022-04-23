@@ -9,7 +9,7 @@ import Abteilungsleiter from "./Abteilungsleiter.svelte";
     <h1>Allgemeines</h1>
     
     <section id="Über uns">
-      <p>Die Task Force Hellcat spielt ausschließlich MilSim in der von Bohemia Interactive entwickelten Militärsimulation Arma 3. Um das Spielgeschehen möglichst taktisch und immersiv zu gestalten spielen wir primär selbstgeschriebene Missionen in (regelmäßigen) Events und führen diverse Ausbildungen durch, sodass jeder Mitspieler seine präferierte Rolle möglichst effektiv ausspielen kann.</p>
+      <p>Die Task Force Hellcat spielt ausschließlich MilSim in der von Bohemia Interactive entwickelten Militärsimulation Arma 3. Um das Spielgeschehen möglichst taktisch und immersiv zu gestalten spielen wir primär selbstgeschriebene Missionen in (regelmäßigen) Events und führen diverse Ausbildungen durch, sodass jeder Mitspieler seine präferierte Rolle möglichst effektiv ausspielen kann. Das verwendete Equipment stammt ausschließlich aus der westlichen Welt und wird gelegentlich nach dem Abschluss einer Kampagne gewechselt.</p>
     </section>
 
     <section id="Struktur">
