@@ -12,9 +12,15 @@
     </section>
 
     <section id="Streitkräfte">
-      <p>Die Abteilung der Streitkräfte ist eine der drei Abteilungen der Task Force Hellcat, geleitet von Leon. Sie umfasst insgesamt vier Truppengattungen: Die Infanterie, die motorisierte Infanterie, den Sanitätsdienst und die Aufklärung.</p>
+      <p>Die Abteilung der Streitkräfte ist eine der drei Abteilungen der Task Force Hellcat, geleitet von Leon. Sie umfasst insgesamt vier Truppengattungen: Die (motorisierte) Infanterie, den Sanitätsdienst und die Aufklärung.</p>
 
-      <section id="(Motorisierte) Infanterie"></section>
+      <section>
+        <h3>(Motorisierte) Infanterie</h3>
+
+        <h3>Sanitätsdienst</h3>
+
+        <h3>Aufklärung</h3>
+      </section>
 
       <ol>
         <li>Die Infanterie besteht aus Soldaten, die sich zu Fuß bewegen. Die motorisierte Infanterie besteht aus Soldaten, die sich aufgesessen auf gepanzerten Fahrzeugen wie <a href="https://de.wikipedia.org/wiki/Mine_Resistant_Ambush_Protected_Vehicle" target="_blank">MRAPs</a> bewegen. Sie beide umfassen die gleichen Rollen: Den Schützen, den MG-Schützen, den Grenadier, den AT-Schützen und den Funker. Infanteristen sind der Grundpfeiler jedes Militärs, da sie vielseitig eingesetzt werden können. Ihre Stärke liegt im Orts- und Häuserkampf, da Fahrzeuge im urbanen Gelände eher ungeeignet sind. Diese Rollen benötigen keine fortgeschrittene Ausbildung, weshalb sie sich gut für Einsteiger eignen. Infanteriegruppen werden von einem Gruppenführer und einem Truppführer geführt.</li>
