@@ -16,17 +16,14 @@
 
       <section>
         <h3>(Motorisierte) Infanterie</h3>
+          <p>Die Infanterie besteht aus Soldaten, die sich zu Fuß bewegen. Die motorisierte Infanterie besteht aus Soldaten, die sich aufgesessen auf gepanzerten Fahrzeugen wie <a href="https://de.wikipedia.org/wiki/Mine_Resistant_Ambush_Protected_Vehicle" target="_blank">MRAPs</a> bewegen. Sie beide umfassen die gleichen Rollen: Den Schützen, den MG-Schützen, den Grenadier, den AT-Schützen und den Funker. Infanteristen sind der Grundpfeiler jedes Militärs, da sie vielseitig eingesetzt werden können. Ihre Stärke liegt im Orts- und Häuserkampf, da Fahrzeuge im urbanen Gelände eher ungeeignet sind. Diese Rollen benötigen keine fortgeschrittene Ausbildung, weshalb sie sich gut für Einsteiger eignen. Infanteriegruppen werden von einem Gruppenführer und einem Truppführer geführt.</p>
 
         <h3>Sanitätsdienst</h3>
+          <p>Der Sanitätsdienst besteht aus Sanitätern und Ärzten, geleitet von ptolemy. Sie sind meistens innerhalb einer Infanteriegruppe vertreten, aber auch bei Spezialanwendungen wie dem <a href="https://de.wikipedia.org/wiki/MedEvac" target="_blank">MEDEVAC</a> oder dem <a href="https://de.wikipedia.org/wiki/Beweglicher_Arzttrupp" target="_blank">beweglichen Arzttrupp</a>. Die Hauptaufgabe der Sanitäter und Ärzte ist die fortgeschrittene Versorgung von verwundeten Soldaten. Die Rollen des Sanitätsdienstes nehmen komplexe Aufgaben wahr und erhalten dafür eine umfangreiche Ausbildung.</p>
 
         <h3>Aufklärung</h3>
+          <p>Die Aufklärung umfasst die Rollen des Scharfschützen, des Spotters und des <a href="https://en.wikipedia.org/wiki/Joint_terminal_attack_controller" target="_blank">JTAC</a>. Alle Rollen der Aufklärung erfordern eine fortgeschrittene Ausbildung. Der Scharfschütze und der Spotter agieren primär im Buddyteam, um feindliche Truppenteile aufzuklären und gegebenenfalls mit präzisem Feuer auf große Distanzen zu bekämpfen. Der JTAC schließt sich im Normalfall einer Infanteriegruppe an, wo er Luftnahunterstützung auf Befehl seines Gruppenführers anfordert.</p>
       </section>
-
-      <ol>
-        <li>Die Infanterie besteht aus Soldaten, die sich zu Fuß bewegen. Die motorisierte Infanterie besteht aus Soldaten, die sich aufgesessen auf gepanzerten Fahrzeugen wie <a href="https://de.wikipedia.org/wiki/Mine_Resistant_Ambush_Protected_Vehicle" target="_blank">MRAPs</a> bewegen. Sie beide umfassen die gleichen Rollen: Den Schützen, den MG-Schützen, den Grenadier, den AT-Schützen und den Funker. Infanteristen sind der Grundpfeiler jedes Militärs, da sie vielseitig eingesetzt werden können. Ihre Stärke liegt im Orts- und Häuserkampf, da Fahrzeuge im urbanen Gelände eher ungeeignet sind. Diese Rollen benötigen keine fortgeschrittene Ausbildung, weshalb sie sich gut für Einsteiger eignen. Infanteriegruppen werden von einem Gruppenführer und einem Truppführer geführt.</li>
-        <li>Der Sanitätsdienst besteht aus Sanitätern und Ärzten, geleitet von ptolemy. Sie sind meistens innerhalb einer Infanteriegruppe vertreten, aber auch bei Spezialanwendungen wie dem <a href="https://de.wikipedia.org/wiki/MedEvac" target="_blank">MEDEVAC</a> oder dem <a href="https://de.wikipedia.org/wiki/Beweglicher_Arzttrupp" target="_blank">beweglichen Arzttrupp</a>. Die Hauptaufgabe der Sanitäter und Ärzte ist die fortgeschrittene Versorgung von verwundeten Soldaten. Die Rollen des Sanitätsdienstes nehmen komplexe Aufgaben wahr und erhalten dafür eine umfangreiche Ausbildung.</li>
-        <li>Die Aufklärung umfasst die Rollen des Scharfschützen, des Spotters und des <a href="https://en.wikipedia.org/wiki/Joint_terminal_attack_controller" target="_blank">JTAC</a>. Alle Rollen der Aufklärung erfordern eine fortgeschrittene Ausbildung. Der Scharfschütze und der Spotter agieren primär im Buddyteam, um feindliche Truppenteile aufzuklären und gegebenenfalls mit präzisem Feuer auf große Distanzen zu bekämpfen. Der JTAC schließt sich im Normalfall einer Infanteriegruppe an, wo er Luftnahunterstützung auf Befehl seines Gruppenführers anfordert.</li>
-      </ol>
     </section>
 
     <section id="Panzertruppen">
