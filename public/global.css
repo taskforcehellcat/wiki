@@ -159,7 +159,7 @@ body {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  gap: 3rem;
+  gap: 6rem;
 }
 
 #home__nav__logo {
@@ -173,6 +173,12 @@ body {
 
 #home__nav__logo > span {
   font-weight: 700;
+}
+
+#home__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #search__searchbar {
@@ -465,7 +471,6 @@ input:focus {
 }
 
 #home__link {
-  margin-bottom: -2.5rem;
   color: #94a2cf;
 }
 
@@ -546,4 +551,12 @@ ol {
 
 ul {
   list-style-type: "─  ";
+}
+
+svg .struktur_icon:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }

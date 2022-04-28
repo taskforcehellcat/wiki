@@ -41,11 +41,13 @@
 </script>
 
 <div id="home">
-  <a id="home__link" href="https://taskforcehellcat.tk/"
-    ><span class="material-icons"> chevron_left </span>
-    Zurück zur Hauptseite</a
-  >
-  <div id="home__nav__logo">Task Force Hellcat <br /><span>Wiki</span></div>
+  <div id="home__top">
+    <a id="home__link" href="https://taskforcehellcat.tk/"
+      ><span class="material-icons"> chevron_left </span>
+      Zurück zur Hauptseite</a
+    >
+    <div id="home__nav__logo">Task Force Hellcat <br /><span>Wiki</span></div>
+  </div>
 
   <!-- search bar -->
   <div id="search" data-empty="true">
