@@ -253,6 +253,10 @@ input:focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
 }
 #nav__logo {
   font-size: 28pt;
