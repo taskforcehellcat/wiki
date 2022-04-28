@@ -15,7 +15,7 @@
     <section id="Struktur">
       <p>In unserer Einheit gibt es eine klare Struktur in Abteilungen, die verschiedene Truppengattungen in sich vereinen. Die Abteilungsleiter kümmern sich in erster Linie um alles Organisatorische innerhalb ihrer Abteilung. Zusätzlich sind sie der Oberbefehlshaber aller Truppengattungen ihrer Abteilung, wodurch sie sich aktiv bei der Operationsplanung beteiligen.</p>
 
-      <object title="Task Force Hellcat Struktur" data="./images/tfhc_struktur.svg" />
+      <img alt="Task Force Hellcat Struktur" src="./images/tfhc_struktur.svg" class="noselect" />
     </section>
 
     <section id="Voraussetzungen und Beitritt">
