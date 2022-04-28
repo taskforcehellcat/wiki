@@ -40,19 +40,19 @@
 	<text transform="matrix(1.18 0 0 1 2505.3994 560.5)" class="st2 st3">Logistik</text>
 	<text transform="matrix(1.18 0 0 1 2505.3994 560.5)" class="st4 st2 st3">Logistik</text>
 </g>
-<a>
-	<g>
-		<g id="mechaninfanterie_x5F_icon">
-			<rect x="102.5" y="807.4" class="st0" width="131.6" height="78.5"/>
-			<path class="st1" d="M150.6,827h35.7c10.9,0,19.7,8.8,19.8,19.7l0,0c0,10.9-8.9,19.8-19.8,19.8h-35.7c-10.9,0-19.8-8.9-19.8-19.8
-				l0,0C130.9,835.8,139.7,827,150.6,827z"/>
-			<line class="st1" x1="102.5" y1="807.3" x2="234.2" y2="885.8"/>
-			<line class="st1" x1="102.5" y1="885.8" x2="234.1" y2="807.4"/>
-		</g>
-		<text transform="matrix(1.18 0 0 1 0 950)" class="st2 st3">Mechan. Infanterie</text>
-		<text transform="matrix(1.18 0 0 1 0 950)" class="st4 st2 st3">Mechan. Infanterie</text>
+
+<g>
+	<g id="mechaninfanterie_x5F_icon">
+		<rect x="102.5" y="807.4" class="st0" width="131.6" height="78.5"/>
+		<path class="st1" d="M150.6,827h35.7c10.9,0,19.7,8.8,19.8,19.7l0,0c0,10.9-8.9,19.8-19.8,19.8h-35.7c-10.9,0-19.8-8.9-19.8-19.8
+			l0,0C130.9,835.8,139.7,827,150.6,827z"/>
+		<line class="st1" x1="102.5" y1="807.3" x2="234.2" y2="885.8"/>
+		<line class="st1" x1="102.5" y1="885.8" x2="234.1" y2="807.4"/>
 	</g>
-</a>
+	<text transform="matrix(1.18 0 0 1 0 950)" class="st2 st3">Mechan. Infanterie</text>
+	<text transform="matrix(1.18 0 0 1 0 950)" class="st4 st2 st3">Mechan. Infanterie</text>
+</g>
+
 <g>
 	<g id="artillerie_x5F_icon">
 		<rect x="404.2" y="807.4" class="st0" width="131.6" height="78.5"/>
