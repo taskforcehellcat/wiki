@@ -58,7 +58,8 @@ section:not(section > section) {
   width: 70%;
 }
 
-section > img {
+section > img,
+section > object {
   width: 100%;
   margin-top: 2rem;
   object-fit: cover;
