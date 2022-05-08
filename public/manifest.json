@@ -1,0 +1,9 @@
+{
+  "name": "TFHC Wiki",
+  "short_name": "TFHC Wiki",
+  "icons": [],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#101b3b",
+  "theme_color": "#101b3b"
+}
