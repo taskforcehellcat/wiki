@@ -564,3 +564,39 @@ svg .struktur_icon:hover {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+
+[data-tooltip] {
+  position: relative;
+  cursor: pointer;
+}
+
+[data-tooltip]::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  bottom: -1.3px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 2px dotted black;
+}
+
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -1.8em;
+  font-size: 0.9em;
+  padding: 1px 5px;
+  display: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  transition: opacity 0.1s ease-out;
+  z-index: 99;
+  text-align: left;
+}
+
+[data-tooltip]:hover::before {
+  display: inline-block;
+}
