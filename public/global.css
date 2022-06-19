@@ -567,7 +567,6 @@ svg .struktur_icon:hover {
 
 [data-tooltip] {
   position: relative;
-  cursor: pointer;
 }
 
 [data-tooltip]::after {
@@ -585,16 +584,18 @@ svg .struktur_icon:hover {
 [data-tooltip]::before {
   content: attr(data-tooltip);
   position: absolute;
-  top: -1.8em;
+  top: 1.6em;
+  width: 200%;
   font-size: 0.9em;
-  padding: 1px 5px;
+  padding: 2px 5px;
+  left: 0;
+  text-align: center;
   display: none;
   color: white;
   background: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
   transition: opacity 0.1s ease-out;
   z-index: 99;
-  text-align: left;
 }
 
 [data-tooltip]:hover::before {
