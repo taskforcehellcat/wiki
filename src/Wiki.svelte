@@ -172,7 +172,7 @@
 
   onMount(async () => {
     includeDropDown();
-    const sections = document.querySelectorAll("section:not(section>section)");
+    const sections = document.querySelectorAll("section[id]");
 
     toggleBurgerIcon();
     // create array from "sections" nodelist
