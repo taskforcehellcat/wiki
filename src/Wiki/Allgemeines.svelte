@@ -32,7 +32,7 @@
           <li><a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und mindestens ein Headset, vorzugsweise ein <span use:tooltip data-tooltip="Für Ratschläge gerne Serverleitung fragen :)">vernünftiges Mikrofon</span></li>
         </ul>
 
-        <p>Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a> und das <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen.</p>
+        <p>Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a> und das <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen, allerdings nicht zwangsweise benötigt.</p>
 
         <h3>Beitritt</h3>
         <p>Vor dem Beitritt in unsere Community durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch sollen die Interessen und Vorstellungen des Bewerbers festgestellt werden. Dabei stellt unser Personal bis zum Ende des Gespräches fest, ob der Bewerber sich für unsere Community eignet.</p>
