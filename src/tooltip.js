@@ -10,16 +10,8 @@ export function tooltip(element) {
 
     div = document.createElement("div");
     div.textContent = tooltip;
+    div.className = "tooltip";
     div.style = `
-        color: #061748;
-        border: 1px solid #686868;
-        box-shadow: 1px 1px 1px #ddd;
-        background: white;
-        border-radius: 4px;
-        padding: 4px;
-        position: absolute;
-        max-width: 50rem;
-        text-align: justify;
         top: ${event.pageX + 5}px;
         left: ${event.pageY + 5}px;
       `;

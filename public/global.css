@@ -544,6 +544,10 @@ input:focus {
   main p {
     text-align: left;
   }
+
+  .tooltip {
+    text-align: left !important;
+  }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -640,3 +644,15 @@ svg .struktur_icon:hover {
 
 
 */
+
+.tooltip {
+  color: #061748;
+  border: 1px solid #686868;
+  box-shadow: 1px 1px 1px #ddd;
+  background: white;
+  border-radius: 4px;
+  padding: 4px;
+  position: absolute;
+  max-width: 50rem;
+  text-align: justify;
+}
