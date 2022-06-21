@@ -53,8 +53,11 @@ h3 {
 
 section:not(section > section) {
   margin-bottom: 3rem;
+  /*
+  adds scroll-padding but breaks tooltips
   padding-top: 10rem;
   margin-top: -10rem;
+  */
   width: 70%;
 }
 
