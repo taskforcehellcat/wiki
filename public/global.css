@@ -75,7 +75,9 @@ main p {
   display: inline-block;
 }
 
-section > p:last-of-type {
+section > p:last-of-type,
+section > ul:last-of-type,
+section > ol:last-of-type {
   margin-bottom: 20px;
 }
 
