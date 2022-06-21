@@ -141,7 +141,8 @@
   }
 </style>
 
-<script lang="ts">
+<!-- <script lang="ts"></script> -->
+<script>
   import { Link } from "svelte-routing";
 
   let anchors = [];
