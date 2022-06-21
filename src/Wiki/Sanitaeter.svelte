@@ -1,6 +1,7 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
   import { Router, Link, Route } from "svelte-routing";
+  import { tooltip } from "../tooltip";
 </script>
 
 <Wiki>
@@ -16,7 +17,7 @@
 
         <section>
           <h3>Basismedikamente</h3>
-          <p>Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.</p> 
+          <p>Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.</p>
           <section>
             <h3>Morphin-Autoinjektor</h3>
             <p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
@@ -33,11 +34,11 @@
           <h3>Infarkttherapie</h3>
           <section>
             <h3>Amiodaron</h3>
-            <p><span data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidokain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine <span data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardie</span>. Empfohlen ist eine Gabe pro Patient.</p>
+            <p><span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidokain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine <span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardie</span>. Empfohlen ist eine Gabe pro Patient.</p>
             <h3>Lidokain</h3>
-            <p><span data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.</p>
+            <p><span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.</p>
             <h3>Atropin</h3>
-            <p>zur Behandlung von <span data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardien</span>. Hebt die Herzrate wesentlich.</p>
+            <p>zur Behandlung von <span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardien</span>. Hebt die Herzrate wesentlich.</p>
           </section>
         </section>
 
@@ -46,9 +47,9 @@
           <p>Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.</p>
           <section>
             <h3>Ammonium Carbonat</h3>
-            <p><span data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe <a href="/sanitaeter#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.</p>
+            <p><span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe <a href="/sanitaeter#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.</p>
             <h3>Naloxon</h3>
-            <p>Morphin-<span data-tooltip="dt. Gegenspieler. Antagonisten wirken einem bestimmten Medikament entgegen.">Antagonist</span>, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.</p>
+            <p>Morphin-<span use:tooltip data-tooltip="dt. Gegenspieler. Antagonisten wirken einem bestimmten Medikament entgegen.">Antagonist</span>, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.</p>
             <h3>Tranexamsäure (TXA)</h3>
             <p>treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten.</p>
             <h3>Norepinephrin-?Autoinjektor?</h3>
@@ -73,7 +74,7 @@
           <h3>16g IV</h3>
           <p>eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ">in diesem Video</a> anschaulich gezeigt wird.</p>
           <h3>FAST IO</h3>
-          <p><i>First Access for Shock and Trauma IO,</i> ein <span data-tooltip="Bei der intraossären Punktion wird eine Stahlkanüle in den Knochen eingestochen, worüber die Substanzen aufgrund der guten Durchblutung der Knochenmarkhöhle verabreicht werden können.">intraossärer</span> (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.</p>
+          <p><i>First Access for Shock and Trauma IO,</i> ein <span use:tooltip data-tooltip="Bei der intraossären Punktion wird eine Stahlkanüle in den Knochen eingestochen, worüber die Substanzen aufgrund der guten Durchblutung der Knochenmarkhöhle verabreicht werden können.">intraossärer</span> (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.</p>
         </section>
       </section>
 
@@ -83,13 +84,12 @@
           <h3>Stethoskop</h3>
           <p>erlaubt die Diagnose von Thoraxverletzungen.</p>
           <h3>Accuvac</h3>
-          <p>erlaubt die <span data-tooltip="endo: innerhalb; trachea: Luftröhre">endotracheale</span> Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (<i>head turning</i>).</p>
+          <p>erlaubt die <span use:tooltip data-tooltip="endo: innerhalb; trachea: Luftröhre">endotracheale</span> Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (<i>head turning</i>).</p>
           <h3>AED / AED-X</h3>
-          <p><i>Automatisierter externer Defibrillator</i>. Zur Behandlung von <span data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="">Behandlung von Herzstillständen (DEAD LINK)</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von <a href="/sanitaeter#Vitalparameter">Vitalparametern</a>.</p>
+          <p><i>Automatisierter externer Defibrillator</i>. Zur Behandlung von <span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="">Behandlung von Herzstillständen (DEAD LINK)</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von <a href="/sanitaeter#Vitalparameter">Vitalparametern</a>.</p>
           <h3>Pulsoximeter</h3>
-          <p>erlaubt die Messung von Puls und des Sauerstoffgehalts des <span data-tooltip="peripher: außen, am Rande. Gemeint sind die Arme und Beine. Pulsoximeter messen an der Fingerkuppe.">peripheren</span> Blutes (engl. <i>saturation peripher O&#8322</i>, SpO&#8322). Siehe auch Abschnitt <a href="/sanitaeter#Vitalparameter">Vitalparameter</a>.</p>
+          <p>erlaubt die Messung von Puls und des Sauerstoffgehalts des <span use:tooltip data-tooltip="peripher: außen, am Rande. Gemeint sind die Arme und Beine. Pulsoximeter messen an der Fingerkuppe.">peripheren</span> Blutes (engl. <i>saturation peripher O&#8322</i>, SpO&#8322). Siehe auch Abschnitt <a href="/sanitaeter#Vitalparameter">Vitalparameter</a>.</p>
         </section>
-
       </section>
     </section>
 
@@ -111,7 +111,6 @@
             <td><b>Sauerstoffsättigung:</b></td>
             <td>100 %</td>
           </tr>
-
         </table>
 
         <!--
@@ -146,7 +145,7 @@
             <td>3 Liter</td>
           </tr>
         </table>
-        
+
         <!--  
         <p><b>Kritische Sauerstoffsättigung:</b> 65 %, weniger führt zum Tod</p>
         <p><b>Minimale stabile Sauerstoffsättigung:</b> 85 %</p>
@@ -154,7 +153,6 @@
         <p><b>Minimales stabiles Blutvolumen:</b> 5,1 Liter (<i>„lost some blood“</i>)</p>
         <p><b>Kritisches Blutvolumen:</b> 3 Liter</p>
         -->
-
       </section>
 
       <section>
@@ -183,12 +181,8 @@
           </tr>
         </table>
       </section>
-
     </section>
 
-    <section id="Behandlungsroutinen">
-
-
-    </section>
+    <section id="Behandlungsroutinen" />
   </svelte:fragment>
 </Wiki>

@@ -595,10 +595,6 @@ svg .struktur_icon:hover {
   -o-transform: scale(1.1);
 }
 
-[data-tooltip] {
-  position: relative;
-}
-
 [data-tooltip]::after {
   position: absolute;
   content: "";
@@ -610,6 +606,12 @@ svg .struktur_icon:hover {
   width: 100%;
   border-bottom: 2px dotted #101b3b;
 }
+
+[data-tooltip] {
+  position: relative;
+}
+
+/*
 
 [data-tooltip]::before {
   content: attr(data-tooltip);
@@ -631,3 +633,6 @@ svg .struktur_icon:hover {
 [data-tooltip]:hover::before {
   display: inline-block;
 }
+
+
+*/
