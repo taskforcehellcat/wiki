@@ -615,14 +615,12 @@ svg .struktur_icon:hover {
   right: 0;
   width: 100%;
   border-bottom: 2px dotted #101b3b;
+  pointer-events: none;
 }
 
 [data-tooltip],
 [data-tooltip-img] {
   position: relative;
-}
-
-[data-tooltip-img] {
 }
 
 /*
