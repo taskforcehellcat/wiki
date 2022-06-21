@@ -1,6 +1,7 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
   import Abteilungsleiter from "./Abteilungsleiter.svelte";
+  import { tooltip } from "../tooltip";
 </script>
 
 <Wiki>
