@@ -4,8 +4,8 @@
 
 <Wiki>
   <svelte:fragment slot="content">
-    <article id="einsatzleiter" />
-    <h1>Einsatzleiter</h1>
+    <article id="grundausbildung" />
+    <h1>Grundausbildung</h1>
 
     <section id="Rollenprofil">
       <p />

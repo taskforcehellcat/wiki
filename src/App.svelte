@@ -4,9 +4,7 @@
   import Erstehilfe from "./Wiki/Erstehilfe.svelte";
   import Abteilungen from "./Wiki/Abteilungen.svelte";
   import Sonstiges from "./Wiki/Sonstiges.svelte";
-  import Abteilungsleiter from "./Wiki/Abteilungsleiter.svelte";
-  import Einsatzleiter from "./Wiki/Einsatzleiter.svelte";
-  import Gruppentruppfuehrer from "./Wiki/Gruppentruppfuehrer.svelte";
+  import Grundausbildung from "./Wiki/Grundausbildung.svelte";
   import Schuetze from "./Wiki/Schuetze.svelte";
   import Funker from "./Wiki/Funker.svelte";
   import Mgschuetze from "./Wiki/Mgschuetze.svelte";
@@ -47,9 +45,7 @@
   <Route path="abteilungen"><Abteilungen /></Route>
   <Route path="sonstiges"><Sonstiges /></Route>
 
-  <Route path="abteilungsleiter"><Abteilungsleiter /></Route>
-  <Route path="einsatzleiter"><Einsatzleiter /></Route>
-  <Route path="gruppentruppfuehrer"><Gruppentruppfuehrer /></Route>
+  <Route path="grundausbildung"><Grundausbildung /></Route>
 
   <Route path="schuetze"><Schuetze /></Route>
   <Route path="funker"><Funker /></Route>

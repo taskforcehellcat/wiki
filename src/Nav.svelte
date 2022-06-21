@@ -14,10 +14,8 @@
       <Link to="../sonstiges">Sonstiges</Link>
     </a>
     <a href="/" class="expandable">
-      <span>Führungskräfte</span>
-      <Link to="../abteilungsleiter">Abteilungsleiter</Link>
-      <Link to="../einsatzleiter">Einsatzleiter</Link>
-      <Link to="../gruppentruppfuehrer">Gruppen-/Truppführer</Link>
+      <span>Ausbildung</span>
+      <Link to="../grundausbildung">Grundausbildung</Link>
     </a>
     <a href="/" class="expandable">
       <span>Streitkräfte</span>
