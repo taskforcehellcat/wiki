@@ -1,5 +1,6 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
+  import { tooltip } from "../tooltip";
 </script>
 
 <Wiki>
@@ -8,51 +9,51 @@
     <h1>Abteilungen</h1>
 
     <section id="Allgemeines">
-      <p>Die Task Force Hellcat ist in drei Abteilungen untergliedert, die jeweils durch einen Abteilungsleiter organisiert und verwaltet werden. Alle Abteilungen umfassen mehrere Truppengattungen, die in diesem Artikel erläutert werden.</p>
+      <p>Die Task Force Hellcat ist in drei Abteilungen untergliedert, die jeweils durch einen Abteilungsleiter organisiert und verwaltet werden. Alle Abteilungen umfassen mehrere Truppengattungen, die auf dieser Seite erläutert werden.</p>
     </section>
 
     <section id="Streitkräfte">
-      <p>Die Abteilung der Streitkräfte ist eine der drei Abteilungen der Task Force Hellcat, geleitet von Leon. Sie umfasst insgesamt vier Truppengattungen: Die (motorisierte) Infanterie, den Sanitätsdienst und die Aufklärung.</p>
+      <p>Die Abteilung der Streitkräfte wird von Leon organisiert und verwaltet. Sie umfasst insgesamt vier Truppengattungen: Die (motorisierte) Infanterie, den Sanitätsdienst und die Aufklärung.</p>
 
       <section>
         <h3>(Motorisierte) Infanterie</h3>
-          <p>Die Infanterie besteht aus Soldaten, die sich zu Fuß bewegen. Die motorisierte Infanterie besteht aus Soldaten, die sich aufgesessen auf gepanzerten Fahrzeugen wie <a href="https://de.wikipedia.org/wiki/Mine_Resistant_Ambush_Protected_Vehicle" target="_blank">MRAPs</a> bewegen. Sie beide umfassen die gleichen Rollen: Den Schützen, den MG-Schützen, den Grenadier, den AT-Schützen und den Funker. Infanteristen sind der Grundpfeiler jedes Militärs, da sie vielseitig eingesetzt werden können. Ihre Stärke liegt im Orts- und Häuserkampf, da Fahrzeuge im urbanen Gelände eher ungeeignet sind. Diese Rollen benötigen keine fortgeschrittene Ausbildung, weshalb sie sich gut für Einsteiger eignen. Infanteriegruppen werden von einem Gruppenführer und einem Truppführer geführt.</p>
+          <p>Die Infanterie setzt sich aus Schützen, MG-Schützen, AT-Schützen, Präzisionsschützen, Funkern und Grenadieren zusammen. Ihre Bewegung und der Feuerkampf erfolgen ausschließlich zu Fuß. Alternativ können sich die Soldaten auf Fahrzeugen aufgesessen bewegen, auch motorisierte Infanterie genannt. Die Infanterie kann vielseitig eingesetzt werden. Sie erweist sich besonders im <span use:tooltip data-tooltip="städtisch">urbanen Gebiet</span> und <span use:tooltip data-tooltip="Wälder oder Steinformationen">unwegsamen Gelände</span> als effektiv, da Fahrzeuge dort nur eingeschränkt beweglich sind.</p>
 
         <h3>Sanitätsdienst</h3>
-          <p>Der Sanitätsdienst besteht aus Sanitätern und Ärzten, geleitet von ptolemy. Sie sind meistens innerhalb einer Infanteriegruppe vertreten, aber auch bei Spezialanwendungen wie dem <a href="https://de.wikipedia.org/wiki/MedEvac" target="_blank">MEDEVAC</a> oder dem <a href="https://de.wikipedia.org/wiki/Beweglicher_Arzttrupp" target="_blank">beweglichen Arzttrupp</a>. Die Hauptaufgabe der Sanitäter und Ärzte ist die fortgeschrittene Versorgung von verwundeten Soldaten. Die Rollen des Sanitätsdienstes nehmen komplexe Aufgaben wahr und erhalten dafür eine umfangreiche Ausbildung.</p>
+          <p>Der Sanitätsdienst setzt sich aus Sanitätern und Ärzten zusammen. Er wird von ptolemy organisiert und verwaltet. Sanitäter sind in Trupps und Gruppen der Infanterie vertreten und übernehmen die fortgeschrittene Versorgung von verwundeten Soldaten im Feld. Ärzte sind vorwiegend bei Spezialanwendungen wie dem <span use:tooltip data-tooltip="dt. Medizinische Evakuierung, oft per Helikopter">MEDEVAC</span> oder dem <span use:tooltip data-tooltip="Beweglicher Arzttrupp">BAT</span> anzutreffen.</p>
 
         <h3>Aufklärung</h3>
-          <p>Die Aufklärung umfasst die Rollen des Scharfschützen, des Spotters und des <a href="https://en.wikipedia.org/wiki/Joint_terminal_attack_controller" target="_blank">JTAC</a>. Alle Rollen der Aufklärung erfordern eine fortgeschrittene Ausbildung. Der Scharfschütze und der Spotter agieren primär im Buddyteam, um feindliche Truppenteile aufzuklären und gegebenenfalls mit präzisem Feuer auf große Distanzen zu bekämpfen. Der JTAC schließt sich im Normalfall einer Infanteriegruppe an, wo er Luftnahunterstützung auf Befehl seines Gruppenführers anfordert.</p>
+          <p>Die Aufklärung setzt sich aus Scharfschützen, <span use:tooltip data-tooltip="dt. Beobachter">Spottern</span> und <span use:tooltip data-tooltip="Joint Terminal Attack Controller">JTACs</span> zusammen. Scharfschützen und Spotter sind meist im Trupp oder Buddy-Team zur Aufklärung oder Bekämpfung feindlicher Kräfte auf große Distanzen anzufinden. JTACs sind entweder im Aufklärungstrupp oder in Infanteriegruppen vertreten. Ihre Hauptaufgabe ist die Koordinierung vom <span use:tooltip data-tooltip="Close Air Support, dt. Luftnahunterstützung">CAS</span> auf feindliche Ziele.</p>
       </section>
     </section>
 
     <section id="Panzertruppen">
-      <p>Die Abteilung der Panzertruppen ist eine der drei Abteilungen der Task Force Hellcat, geleitet von Kevin. Sie umfasst insgesamt drei Truppengattungen: Die mechanisierte Infanterie, die Kampfpanzer und die Artillerie. Sie umfasst lediglich drei Rollen: Den Kommandanten, den Richtschützen und den Fahrer. Sie alle erhalten spezielle Ausbildungen, meistens mit dem Fokus auf eine bestimmte Truppengattung. Alle Truppengattungen der Panzertruppen unterscheiden sich stark voneinander, können aber im Verbund gemeinsam agieren.</p>
+      <p>Die Abteilung der Streitkräfte wird von Kevin organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen: Die mechanisierte Infanterie, die Kampfpanzer und die Artillerie. Alle Truppengattungen der Panzertruppen umfassen drei Rollen: Den Kommandanten, den Richtschützen und den Fahrer.</p>
 
       <section>
         <h3>Mechanisierte Infanterie</h3>
-          <p>Die mechanisierte Infanterie setzt sich aus Panzerbesatzungen und Panzergrenadieren zusammen. Die Fahrzeuge der mechanisierten Infanterie sind meistens stärker gepanzert und bewaffnet als die der motorisierten Infanterie, wie zum Beispiel der <a href="https://de.wikipedia.org/wiki/Stryker_Armored_Vehicle" target="_blank">Stryker</a> oder der <a href="https://de.wikipedia.org/wiki/Puma_(Sch%C3%BCtzenpanzer)" target="_blank">Puma</a>. Die mechanisierte Infanterie vereinigt die Vorteile der Infanterie und der Panzer in einer Truppengattung. Auf der einen Seite die Agilität und Vielfalt der Infanterie, auf der anderen die Mobilität und Feuerkraft des Schützenpanzers.</p>
+          <p>Die mechanisierte Infanterie setzt sich aus Panzerbesatzungen und Panzergrenadieren zusammen, wobei die Panzergrenadiere die gleichen Rollen vertreten wie die Infanterie. Sie vereinigt die <span use:tooltip data-tooltip="Agilität und Effizienz im urbanen Gebiet">Vorteile der Infanterie</span> mit den <span use:tooltip data-tooltip="Mobilität, Schutz und Feuerkraft">Vorteilen der Schützenpanzer</span> in einer Truppengattung.</p>
 
         <h3>Kampfpanzer</h3>
-          <p>Die Truppengattung der Kampfpanzer umfasst alle drei Rollen der Panzertruppen und bedient ausschließlich schwer gepanzerte Fahrzeuge wie den <a href="https://de.wikipedia.org/wiki/M1_Abrams" target="_blank">M1 Abrams</a> oder den <a href="https://de.wikipedia.org/wiki/Leopard_2" target="_blank">Leopard 2</a>. Die Stärke der Kampfpanzer liegt im Angriff und der Verteidigung, besonders gegen feindliche Panzerverbände und befestigte Stellungen.</p>
+          <p>Die Soldaten der Kampfpanzer bedienen ausschließlich Fahrzeuge mit guter Panzerung und überwältigender Feuerkraft. Kampfpanzer sind besonders gut gegen feindliche Panzerverbände und befestigte Stellungen geeignet, erweisen sich jedoch als äußerst ineffektiv im urbanen Gelände. Oft agieren Kampfpanzer gemeinsam mit der mechanisierten Infanterie, um die Schwachstellen der Kampfpanzer zu kompensieren.</p>
 
         <h3>Panzerartillerie</h3>
-          <p>Die Artillerie umfasst alle drei Rollen der Panzertruppen und setzt Panzerhaubitzen wie die <a href="https://de.wikipedia.org/wiki/M109_(Panzerhaubitze)" target="_blank">M109</a> oder die <a href="https://de.wikipedia.org/wiki/Panzerhaubitze_2000" target="_blank">Panzerhaubitze 2000</a> ein. Die Artillerie der Panzertruppen wirkt auf große Distanz mit Steilfeuer auf feindliche Truppenteile oder Stellungen. Die fachgerechte Bedienung dieser Waffensysteme erfordert eine fortgeschrittene Ausbildung.</p>
+          <p>Die Artillerie setzt Panzerhaubitzen mit schweren Geschützen ein. Sie wirken auf große Distanz mittels gelenktem oder ungelenktem Steilfeuer auf feindliche Kräfte oder Stellungen. Um eine präzise Wirkung zu erzielen erfordert es eine gute Kommunikation zu eigenen Kräften im Operationsraum, die der Artillerie den Feuerbefehl erteilen.</p>
       </section>
     </section>
 
     <section id="Logistik">
-      <p>Die Abteilung der Logistik ist eine der drei Abteilungen der Task Force Hellcat, geleitet von ?. Sie umfasst insgesamt drei Truppengattungen: Die Instandsetzung, die Versorgung und die Luftlogistik.</p>
+      <p>Die Abteilung der Logistik wird von ? organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen: Die Instandsetzung, die Versorgung und die Luftlogistik.</p>
 
       <section>
-        <h3>Instandsetzung</h3>
-          <p>Die Truppengattung der Instandsetzung setzt sich aus Reparaturspezialisten zusammen, die die Gefechtsbereitschaft beschädigter Fahrzeuge wiederherstellen können. Dazu zählen der Rad- und Kettenwechsel sowie die Reparatur von Geschützen, Türmen, Motoren, und so weiter. Die Bergung eigener Fahrzeuge ist eine weitere Aufgabe der Instandsetzung. Die Rolle des Reparaturspezialisten erfordert eine eigene Ausbildung.</p>
+        <h3>Pioniertruppe</h3>
+          <p>Die Pioniertruppe setzt sich aus Pionieren und Kampfpionieren zusammen. Die Hauptaufgabe der Pioniere ist die Wartung, Bergung und Instandsetzung eigener Fahrzeuge. Zusätzlich kann es auch zu Spezialanwendungen kommen, wie zum Beispiel der Einsatz eines Brückenlegepanzers durch die Pioniertruppe.</p>
 
         <h3>Versorgung</h3>
-          <p>Die Truppengattung der Versorgung besteht aus Logistikern, die vergleichbar ausgerüstet sind wie die Schützen der Infanterie. Ihre Hauptaufgabe ist die Versorgung anderer Truppenteile mit Munition, Treibstoff und Verbrauchsmaterialien mit Bodenfahrzeugen. Voraussetzung für einen erfolgreichen Einsatz ist die fachgerechte Kommunikation mit dem Führungspersonal anderer Truppenteile, sowie der sichere Transport der logistischen Güter zu den eigenen Kräften und zurück.</p>
+          <p>Die Truppengattung der Versorgung befasst sich mit der Versorgung anderer Truppenteile mit Bodenfahrzeugen. Häufig transportiert werden Güter wie Munition, Treibstoff und Verbrauchsmaterialien. Gegebenenfalls kann die Versorgung auch eigene Kräfte ins Feld verlegen.</p>
 
-        <h3>Luftlogistik</h3>
-          <p>Die Luftlogistik hat das gleiche Aufgabenprofil wie die Versorgung. Sie besteht aus Logistikern und Helikopterbesatzungen. Der Unterschied zur Versorgung ist der Transport der logistischen Güter über die Luft. Die Rolle des Helikopterpiloten erfordert eine besondere Ausbildung.</p>
+        <h3>Luftversorgung</h3>
+          <p>Die Luftlogistik befasst sich im Kern mit der Versorgung anderer Truppenteile mit Luftfahrzeugen. Transportierte Güter sind hierbei Munition, Treibtstoff und Verbrauchsmaterialien. Die Luftversorgung kann sich ebenfalls mit der Verlegung eigener Kräfte ins Feld befassen.</p>
       </section>
     </section>
   </svelte:fragment>
