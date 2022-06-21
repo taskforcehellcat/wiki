@@ -231,25 +231,28 @@
     </button>
 
     <!-- search bar -->
+    <!--
     <div id="search" dataset-empty="true">
       <div id="nav__search">
         <span class="material-icons">search</span>
         <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
       </div>
+    
 
       <div id="nav__search-results">
         {#if showResults}
           {#if searchResults.length !== 0}
-            <!-- Hier restliche Logik, erstmal nur Fehlertext zu Testzwecken -->
+            <!- - Hier restliche Logik, erstmal nur Fehlertext zu Testzwecken - ->
             <p><span>Suchergebnisse</span></p>
           {:else}
             <p><span id="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
           {/if}
         {:else}
-          <!-- p><span id="search__errortext">Diggi drei Zeichen oder DDoS.</span></p -->
+          <!- - <p><span id="search__errortext">Diggi drei Zeichen oder DDoS.</span></p> - ->
         {/if}
       </div>
     </div>
+  -->
 
     <!-- navigation items -->
     <div class="nav__list-title">navigation</div>
