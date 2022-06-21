@@ -603,7 +603,8 @@ svg .struktur_icon:hover {
   -o-transform: scale(1.1);
 }
 
-[data-tooltip]::after {
+[data-tooltip]::after,
+[data-tooltip-img]::after {
   position: absolute;
   content: "";
   height: 2px;
@@ -615,8 +616,12 @@ svg .struktur_icon:hover {
   border-bottom: 2px dotted #101b3b;
 }
 
-[data-tooltip] {
+[data-tooltip],
+[data-tooltip-img] {
   position: relative;
+}
+
+[data-tooltip-img] {
 }
 
 /*
@@ -647,12 +652,12 @@ svg .struktur_icon:hover {
 
 .tooltip {
   color: #061748;
-  border: 1px solid #686868;
+  border: 1px solid #c4c4c4;
   box-shadow: 1px 1px 1px #ddd;
   background: white;
-  border-radius: 4px;
   padding: 4px;
   position: absolute;
   max-width: 50rem;
   text-align: justify;
+  display: flex;
 }
