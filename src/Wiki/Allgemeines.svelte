@@ -29,7 +29,7 @@
           <li>Ein geeigneter Computer mit genügend Festplattenspeicher</li>
           <li>Das Spiel <a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank">ArmA 3</a></li>
           <li>Ein Discord-Account mit verifizierter E-Mail</li>
-          <li><a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und ein Headset, vorzugsweise Mikrofon</li>
+          <li><a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und mindestens ein Headset, vorzugsweise ein <span use:tooltip data-tooltip="Für Ratschläge gerne Serverleitung fragen :)">vernünftiges Mikrofon</span></li>
         </ul>
 
         <p>Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a> und das <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen.</p>
