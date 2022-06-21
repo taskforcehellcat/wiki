@@ -8,7 +8,7 @@
     <article id="kampfpionier" />
     <h1>Kampfpionier</h1>
     <section id="Rollenprofil">
-      <p>Der Kampfpionier trägt die Verantwortung, den Schutz der eigenen Truppen zu verbessern und dadurch deren Überlebensfähigkeit zu erhöhen.</p>
+      <p>Die Rolle des Kampfpioniers setzt sich zusammen aus der Rolle des Pioniers & des Schützen. Der Kampfpionier trägt die Verantwortung, den Schutz der eigenen Truppen zu verbessern und dadurch deren Überlebensfähigkeit zu erhöhen, ist anders als der Pionier aber aktiv am Kampfgefecht beteiligt.</p>
     </section>
     <section id="Aufgaben">
       <p>Die Aufgaben eines Kampfpioniers variieren je nach Mission & Situation. Die Hauptaufgaben lassen sich aber in wenigen Punkten grob zusammenfassen.</p>
@@ -17,13 +17,23 @@
         <li>Die Instandsetzung von Infrastruktur, als auch das verstärken und befestigen militärisch genutzter Einrichtungen durch bauliche Maßnahmen</li>
         <li>Das befördern von außerstand-gesetzten Fahrzeugen</li>
         <li>Das Aufklären und entschärfen von sowohl <span use:tooltip data-tooltip="Anti-personnel (Antipersonen)">AP</span>- & <span use:tooltip data-tooltip="Anti-tank (Panzerabwehr)">AT</span>-Minen</li>
-        <li>Das bedienen von <span use:tooltip data-tooltip="Unmanned ground vehicle">UGV</span> & <span use:tooltip data-tooltip="Unmanned aerial vehicle">UAV</span> Dronen</li>
+        <li>Das bedienen von <span use:tooltip data-tooltip="Unmanned ground vehicle (unbemanntes Bodenfahrzeug)">UGV</span> & <span use:tooltip data-tooltip="Unmanned aerial vehicle (unbemanntes Fluggerät)">UAV</span> Dronen</li>
+      </ul>
+    </section>
+    <section id="Ausrüstung">
+      <p>In Ergänzung zu der Grundausrüstung des Schützen, zählen folgende Gegenstände zur Ausrüstung des Kampfpioniers:</p>
+      <ul>
+        <li><span use:tooltip data-tooltip="Minensuchgerät">Mine Detector</span></li>
+        <li><span use:tooltip data-tooltip="Werkzeugkasten">Toolkit</span></li>
+        <li><span use:tooltip data-tooltip="Terminal zum Steuern von oben erläuterten UAVs & UGVs">UAV-Terminal</span></li>
+        <li><span use:tooltip data-tooltip="Klappspaten, zum aufschaufeln von Deckung im Feld">Entrenching Tool</span></li>
+        <li>Je nach Situation ein Minenräumungsfahrzeug, oder diverse Dronen</li>
       </ul>
     </section>
     <section id="Fertigkeiten">
       <ul>
         <li>Erweiterte Kenntnisse über eigene Fahrzeuge</li>
-        <li>Bedienung von Ausrüstung wie Toolkits, Minen-detektoren, Dronen & Minenräumungs-werkzeugen</li>
+        <li>Bedienung der oben genannten Ausrüstung</li>
       </ul>
     </section>
     <section id="Weiteres">
