@@ -7,7 +7,16 @@
     <article id="eod" />
     <h1>EOD (Explosive Ordnance Disposal)</h1>
 
-    <section id="Allgemeines">
+    <section id="Rollenprofil">
+      <p />
+    </section>
+    <section id="Aufgaben">
+      <p />
+    </section>
+    <section id="Ausrüstung">
+      <p />
+    </section>
+    <section id="Fertigkeiten">
       <p />
     </section>
   </svelte:fragment>
