@@ -38,6 +38,15 @@
     <meta name="theme-color" content="#292929" />
 
     <script defer src="/build/bundle.js"></script>
+    <script>
+      /* scroll back to top */
+      history.pushState = new Proxy(history.pushState, {
+        apply(target, thisArg, argumentsList) {
+          Reflect.apply(target, thisArg, argumentsList);
+          scrollTo(0, 0);
+        },
+      });
+    </script>
   </head>
 
   <body></body>
