@@ -28,4 +28,5 @@
       <p>Eine Konvention für Kraftfahrer der Panzertruppen ist die Wiederholung von Fahrbefehlen des Kommandanten, um ein gewisses Feedback zurückzugeben, dass der Befehl korrekt aufgenommen werden konnte. Im Gefecht kann darauf gegebenenfalls verzichtet werden.</p>
     </section>
   </svelte:fragment>
+  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
 </Wiki>

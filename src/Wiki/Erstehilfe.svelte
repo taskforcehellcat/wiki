@@ -28,12 +28,11 @@
         <h3>Kat. Grün</h3>
         <p>Kategorie Grün bedeutet Gefechtsbereitschaft. Dies wird meistens von einem Sanitäter bei abgeschlossener Nachsorge an die Truppführung gemeldet. Kategorie Grün beinhaltet genähte Verbände (kein Risiko der Öffnung) und höchstens milde Schmerzen.</p>
       </section>
-
     </section>
 
     <section id="Eintreffen des Sanitäters">
       <p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
     </section>
-
   </svelte:fragment>
+  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
 </Wiki>

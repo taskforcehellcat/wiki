@@ -185,4 +185,5 @@
 
     <section id="Behandlungsroutinen" />
   </svelte:fragment>
+  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
 </Wiki>

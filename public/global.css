@@ -662,3 +662,20 @@ svg .struktur_icon:hover {
   text-align: justify;
   display: flex;
 }
+
+footer {
+  background-color: #11182e;
+  height: 100%;
+  width: 100%;
+  grid-column: 2;
+  grid-row: 2;
+  padding-inline: 8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a2cf;
+}
+
+footer span {
+  color: white;
+}

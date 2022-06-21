@@ -3,7 +3,7 @@
     min-height: 120vh;
     display: grid;
     grid-template-columns: 38rem 4fr;
-    grid-template-rows: 10fr 1fr;
+    grid-template-rows: 18fr 1fr;
   }
   #nav__list-bar {
     display: flex;
@@ -144,6 +144,7 @@
 <!-- <script lang="ts"></script> -->
 <script>
   import { Link } from "svelte-routing";
+  var editdate;
 
   let anchors = [];
 
@@ -282,5 +283,5 @@
   <main id="main" bind:this={main}>
     <slot name="content" />
   </main>
-  <footer />
+  <footer>zuletzt bearbeitet am: <slot name="editdate" /></footer>
 </div>

@@ -28,7 +28,7 @@
 
     <section id="Fertigkeiten">
       <p>Die Kommandanten der Panzertruppen müssen eine handvoll Fertigkeiten beherrschen, um ihr Fahrzeug möglichst sicher und effizient ins Gefecht zu führen. Diese Fertigkeiten tragen dazu bei die Übersicht zu behalten und Gefahrensituation einschätzen zu können, wodurch ein reibungsloser Einsatz gewährleistet werden kann.</p>
-      
+
       <ol>
         <li>Die Beherrschung und Einhaltung der Funketikette</li>
         <li>Erweiterte Kenntnisse über eigene und feindliche Fahrzeuge</li>
@@ -37,4 +37,5 @@
       </ol>
     </section>
   </svelte:fragment>
+  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
 </Wiki>

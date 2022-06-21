@@ -48,4 +48,5 @@ import Abteilungen from "./Abteilungen.svelte";
       <img alt="Task Force Hellcat Struktur" src="./images/tfhc_struktur.svg" class="noselect" />
     </section>
   </svelte:fragment>
+  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
 </Wiki>
