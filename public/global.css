@@ -83,6 +83,10 @@ section {
   position: relative;
 }
 
+td {
+  padding-right: 2rem;
+}
+
 /*
 section:first-child:before {
   top: calc(10rem + 5rem);
