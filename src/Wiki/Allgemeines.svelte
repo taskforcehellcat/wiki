@@ -25,11 +25,11 @@
       <section>
         <h3>Voraussetzungen</h3>
         <ul>
-          <li>Ein Mindestalter von 16 Jahren</li>
-          <li>Ein <span use:tooltip data-tooltip="für individuelle Ratschläge steht die Serverleitung bereit">geeigneter Computer</span> mit <span use:tooltip data-tooltip="Basegame mit DLC ~45 GB + unser Modpack ~50 GB">genügend Festplattenspeicher</span></li>
-          <li>Das Spiel <a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank">ArmA 3</a></li>
-          <li>Ein Discord-Account mit verifizierter E-Mail</li>
-          <li><a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und mindestens ein Headset, vorzugsweise ein <span use:tooltip data-tooltip="Für Ratschläge gerne Serverleitung fragen :)">vernünftiges Mikrofon</span></li>
+          <li>ein Mindestalter von 16 Jahren</li>
+          <li>ein <span use:tooltip data-tooltip="für Ratschläge gerne Serverleitung fragen :)">geeigneter Computer</span> mit <span use:tooltip data-tooltip="Basegame mit DLC ~45 GB + unser Modpack ~50 GB">genügend Festplattenspeicher</span></li>
+          <li>das Spiel <a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank">ArmA 3</a></li>
+          <li>ein Discord-Account mit verifizierter E-Mail</li>
+          <li><a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und mindestens ein Headset, vorzugsweise ein <span use:tooltip data-tooltip="für Ratschläge gerne Serverleitung fragen :)">vernünftiges Mikrofon</span></li>
         </ul>
 
         <p>Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a> und das <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen, allerdings nicht zwangsweise benötigt.</p>
