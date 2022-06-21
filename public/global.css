@@ -87,6 +87,10 @@ td {
   padding-right: 2rem;
 }
 
+th {
+  text-align: left;
+}
+
 /*
 section:first-child:before {
   top: calc(10rem + 5rem);
