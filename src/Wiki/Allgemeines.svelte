@@ -2,6 +2,8 @@
   import Wiki from "../Wiki.svelte";
   import Abteilungsleiter from "./Abteilungsleiter.svelte";
   import { tooltip } from "../tooltip";
+  import { Router, Link } from "svelte-routing";
+import Abteilungen from "./Abteilungen.svelte";
 </script>
 
 <Wiki>
@@ -24,22 +26,24 @@
         <h3>Voraussetzungen</h3>
         <ul>
           <li>Ein Mindestalter von 16 Jahren</li>
-          <li>ArmA 3 samt Apex DLC</li>
           <li>Ein geeigneter Computer mit genügend Festplattenspeicher</li>
+          <li>Das Spiel <a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank">ArmA 3</a></li>
           <li>Ein Discord-Account mit verifizierter E-Mail</li>
-          <li>TeamSpeak 3 und ein Headset beziehungsweise Mikrofon</li>
+          <li><a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und ein Headset, vorzugsweise Mikrofon</li>
         </ul>
+
+        <p>Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a> und das <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen.</p>
 
         <h3>Beitritt</h3>
           <p>Vor dem Beitritt in unsere Community durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch sollen die Interessen und Vorstellungen des Bewerbers festgestellt werden. Dabei stellt unser Personal bis zum Ende des Gespräches fest, ob der Bewerber sich für unsere Community eignet.</p>
 
         <h3>Aufstieg</h3>
-          <p>Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die Möglichkeit unsere Community kennenzulernen und festzustellen, ob wir die richtige Community für ihn sind. Der Rekrut kann zum Kadett aufsteigen, indem er die Grundausbildung durchläuft, die ihm die Teilnahme an Kampagnen und Übungen sowie die Fortbildung zu <span use:tooltip data-tooltip="Grenadier, AT-Schütze, MG-Schütze, Präzisionsschütze, Funker">grundlegenden Rollen der Infanterie</span> ermöglicht. Ein Kadett kann zum Mitglied werden, indem er gutes Verhalten und Erfahrenheit aufweist. Mitglieder haben die Möglichkeit <span use:tooltip data-tooltip="Sanitäter, Scharfschütze, Helikopterpilot, JTAC, Richtschütze, ...">fortgeschrittene Aus- und Fortbildungen</span> aller Abteilungen zu durchlaufen.</p>
+          <p>Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die Möglichkeit unsere Community kennenzulernen und festzustellen, ob wir die richtige Community für ihn sind. Der Rekrut kann zum Kadett aufsteigen, indem er die Grundausbildung durchläuft, die ihm die Teilnahme an Kampagnen und Übungen sowie die Fortbildung zu <span use:tooltip data-tooltip="Grenadier, AT-Schütze, MG-Schütze, Präzisionsschütze, Funker">grundlegenden Rollen der Infanterie</span> ermöglicht. Ein Kadett kann zum Mitglied werden, indem er gutes Verhalten und Erfahrenheit aufweist. Mitglieder haben die Möglichkeit <span use:tooltip data-tooltip="Sanitäter, Scharfschütze, Helikopterpilot, JTAC, Richtschütze, usw.">fortgeschrittene Aus- und Fortbildungen</span> aller Abteilungen zu durchlaufen.</p>
       </section>
     </section>
 
     <section id="Struktur">
-      <p>In unserer Einheit gibt es eine klare Struktur in Abteilungen, die verschiedene Truppengattungen in sich vereinen. Jede Abteilung wird von einem eigenen Abteilungsleiter organisiert und verwaltet.</p>
+      <p>Die Task Force Hellcat ist in drei Abteilungen untergliedert, die verschiedene Truppengattungen umfassen. Jede Abteilung wird von einem eigenen Abteilungsleiter verwaltet und organisiert. Weitere Informationen und Erklärungen zu den Truppengattungen können <Router><Link to="../abteilungen">hier</Link></Router> eingesehen werden.</p>
 
       <img alt="Task Force Hellcat Struktur" src="./images/tfhc_struktur.svg" class="noselect" />
     </section>
