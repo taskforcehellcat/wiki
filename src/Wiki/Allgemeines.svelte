@@ -3,7 +3,7 @@
   import Abteilungsleiter from "./Abteilungsleiter.svelte";
   import { tooltip } from "../tooltip";
   import { Router, Link } from "svelte-routing";
-import Abteilungen from "./Abteilungen.svelte";
+  import Abteilungen from "./Abteilungen.svelte";
 </script>
 
 <Wiki>
@@ -14,10 +14,10 @@ import Abteilungen from "./Abteilungen.svelte";
     <section id="Über uns">
       <section>
         <h3>Beschreibung</h3>
-          <p>Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation <a href="https://de.wikipedia.org/wiki/Arma_3" target="_blank">ArmA 3</a> spielt. Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt. Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden. Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit der Kampagnen zu sorgen.</p>
+        <p>Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation <a href="https://de.wikipedia.org/wiki/Arma_3" target="_blank">ArmA 3</a> spielt. Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt. Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden. Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit der Kampagnen zu sorgen.</p>
 
         <h3>Organisation</h3>
-          <p>Die Organisation unserer Einheit findet ausschließlich auf unserem <a href="https://discord.gg/Ap3bEmBgXw" target="_blank">Discord</a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.</p>
+        <p>Die Organisation unserer Einheit findet ausschließlich auf unserem <a href="https://discord.gg/Ap3bEmBgXw" target="_blank">Discord</a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.</p>
       </section>
     </section>
 
@@ -35,10 +35,10 @@ import Abteilungen from "./Abteilungen.svelte";
         <p>Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a> und das <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen.</p>
 
         <h3>Beitritt</h3>
-          <p>Vor dem Beitritt in unsere Community durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch sollen die Interessen und Vorstellungen des Bewerbers festgestellt werden. Dabei stellt unser Personal bis zum Ende des Gespräches fest, ob der Bewerber sich für unsere Community eignet.</p>
+        <p>Vor dem Beitritt in unsere Community durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch sollen die Interessen und Vorstellungen des Bewerbers festgestellt werden. Dabei stellt unser Personal bis zum Ende des Gespräches fest, ob der Bewerber sich für unsere Community eignet.</p>
 
         <h3>Aufstieg</h3>
-          <p>Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die Möglichkeit unsere Community kennenzulernen und festzustellen, ob wir die richtige Community für ihn sind. Der Rekrut kann zum Kadett aufsteigen, indem er die Grundausbildung durchläuft, die ihm die Teilnahme an Kampagnen und Übungen sowie die Fortbildung zu <span use:tooltip data-tooltip="Grenadier, AT-Schütze, MG-Schütze, Präzisionsschütze, Funker">grundlegenden Rollen der Infanterie</span> ermöglicht. Ein Kadett kann zum Mitglied werden, indem er gutes Verhalten und Erfahrenheit aufweist. Mitglieder haben die Möglichkeit <span use:tooltip data-tooltip="Sanitäter, Scharfschütze, Helikopterpilot, JTAC, Richtschütze, usw.">fortgeschrittene Aus- und Fortbildungen</span> aller Abteilungen zu durchlaufen.</p>
+        <p>Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die Möglichkeit unsere Community kennenzulernen und festzustellen, ob wir die richtige Community für ihn sind. Der Rekrut kann zum Kadett aufsteigen, indem er die Grundausbildung durchläuft, die ihm die Teilnahme an Kampagnen und Übungen sowie die Fortbildung zu <span use:tooltip data-tooltip="Grenadier, AT-Schütze, MG-Schütze, Präzisionsschütze, Funker">grundlegenden Rollen der Infanterie</span> ermöglicht. Ein Kadett kann zum Mitglied werden, indem er gutes Verhalten und Erfahrenheit aufweist. Mitglieder haben die Möglichkeit <span use:tooltip data-tooltip="Sanitäter, Scharfschütze, Helikopterpilot, JTAC, Richtschütze, usw.">fortgeschrittene Aus- und Fortbildungen</span> aller Abteilungen zu durchlaufen.</p>
       </section>
     </section>
 
