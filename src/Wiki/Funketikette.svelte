@@ -58,5 +58,5 @@
       <p>Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.</p>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
+  <svelte:fragment slot="editdate">16.04.2022</svelte:fragment>
 </Wiki>

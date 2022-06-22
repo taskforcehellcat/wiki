@@ -34,5 +34,5 @@
       <p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
+  <svelte:fragment slot="editdate">16.04.2022</svelte:fragment>
 </Wiki>
