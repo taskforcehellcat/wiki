@@ -485,8 +485,9 @@ input:focus {
 @media only screen and (max-width: 800px) {
   #nav__list:not(#home__nav > #nav__list),
   #return-button,
-  #search {
-    display: none;
+  #search,
+  footer {
+    display: none !important;
   }
   #nav__logo:hover {
     transform: none;
