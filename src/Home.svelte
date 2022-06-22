@@ -1,4 +1,64 @@
 <style>
+  #home {
+    padding: 15rem 5rem 20%;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: #101b3b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    gap: 6rem;
+  }
+
+  #home__nav__logo {
+    font-size: 35pt;
+    font-weight: 300;
+    color: #fff;
+    font-family: "purista-web", "Segoe UI", sans-serif;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  #home__nav__logo > span {
+    font-weight: 700;
+  }
+
+  #home__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #search__searchbar {
+    background-color: #273252;
+    width: 80rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 3.5rem;
+  }
+
+  #search__searchbar input {
+    width: 100%;
+    height: 24px;
+    color: #fff;
+    font-size: 14pt;
+    font-weight: 300;
+  }
+
+  #search__searchbar .material-icons {
+    font-size: 20pt;
+    color: #94a2cf;
+  }
 </style>
 
 <script lang="ts">
