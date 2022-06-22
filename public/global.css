@@ -625,3 +625,13 @@ footer {
 footer span {
   color: white;
 }
+
+kbd {
+  padding: 0.2rem 0.4rem;
+  color: #fff;
+  background-color: #212529;
+  border-radius: 0.4rem;
+  font-family: monospace;
+  width: fit-content;
+  padding: 0.5rem;
+}
