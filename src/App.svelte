@@ -18,9 +18,7 @@
   import Kommandant from "./Wiki/Kommandant.svelte";
   import Richtschuetze from "./Wiki/Richtschuetze.svelte";
   import Kampfpionier from "./Wiki/Kampfpionier.svelte";
-  import Pionier from "./Wiki/Pionier.svelte";
   import Helikopterpilot from "./Wiki/Helikopterpilot.svelte";
-  import Basislogistiker from "./Wiki/Basislogistiker.svelte";
   import Jtac from "./Wiki/Jtac.svelte";
   import Scharfschuetze from "./Wiki/Scharfschuetze.svelte";
   import Spotter from "./Wiki/Spotter.svelte";
@@ -63,9 +61,7 @@
   <Route path="richtschuetze"><Richtschuetze /></Route>
 
   <Route path="kampfpionier"><Kampfpionier /></Route>
-  <Route path="pionier"><Pionier /></Route>
   <Route path="helikopterpilot"><Helikopterpilot /></Route>
-  <Route path="basislogistiker"><Basislogistiker /></Route>
 
   <Route path="jtac"><Jtac /></Route>
   <Route path="scharfschuetze"><Scharfschuetze /></Route>

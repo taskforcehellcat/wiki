@@ -41,9 +41,7 @@
     <a href="/" class="expandable">
       <span>Logistik</span>
       <Link to="../kampfpionier">Kampfpionier</Link>
-      <Link to="../pionier">Pionier</Link>
       <Link to="../helikopterpilot">Helikopterpilot</Link>
-      <Link to="../basislogistiker">Basislogistiker</Link>
     </a>
     <a href="/" class="expandable">
       <span>Aufklärer</span>
