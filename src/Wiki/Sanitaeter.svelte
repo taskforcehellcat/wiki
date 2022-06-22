@@ -72,7 +72,7 @@
           <h3>Chest Seal (dt. Thoraxverschlusspflaster)</h3>
           <p>ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe auch <a href="">Behandlung von Hämothoraxen (DEAD LINK)</a> und <a href="">Behandlung von Spannungsthoraxen (DEAD LINK)</a>.</p>
           <h3>16g IV</h3>
-          <p>eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ">in diesem Video</a> anschaulich gezeigt wird.</p>
+          <p>eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ" target="_blank">in diesem Video</a> anschaulich gezeigt wird.</p>
           <h3>FAST IO</h3>
           <p><i>First Access for Shock and Trauma IO,</i> ein <span use:tooltip data-tooltip="Bei der intraossären Punktion wird eine Stahlkanüle in den Knochen eingestochen, worüber die Substanzen aufgrund der guten Durchblutung der Knochenmarkhöhle verabreicht werden können.">intraossärer</span> (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.</p>
         </section>
@@ -185,5 +185,5 @@
 
     <section id="Behandlungsroutinen" />
   </svelte:fragment>
-  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
+  <svelte:fragment slot="editdate">22.06.2022</svelte:fragment>
 </Wiki>
