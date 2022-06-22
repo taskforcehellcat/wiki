@@ -13,7 +13,7 @@ export function tooltip(element) {
     if (tooltip) {
       element.removeAttribute("data-tooltip");
       div = document.createElement("div");
-      div.textContent = tooltip;
+      div.innerHTML = tooltip;
       div.className = "tooltip";
       div.style = `
         top: ${event.pageX + 5}px;
