@@ -118,10 +118,6 @@
   }
 
   @media only screen and (max-width: 800px) {
-    #wiki {
-      grid-template-columns: 1fr;
-      grid-template-rows: 8rem 10fr 1fr;
-    }
     .nav__list-title,
     #nav__list-wrapper,
     #nav__search {
