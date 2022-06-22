@@ -502,7 +502,7 @@ input:focus {
   }
 
   main {
-    padding: 8rem 4rem 10rem 4rem;
+    padding: 6rem 4rem 10rem 4rem;
   }
 
   section:not(section > section) {
