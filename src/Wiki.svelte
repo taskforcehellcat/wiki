@@ -143,6 +143,7 @@
 
 <!-- <script lang="ts"></script> -->
 <script>
+  import Wip from "./Wip.svelte";
   import { Link } from "svelte-routing";
   var editdate;
 
@@ -281,6 +282,7 @@
   </div>
 
   <main id="main" bind:this={main}>
+    <Wip />
     <slot name="content" />
   </main>
   <footer>zuletzt bearbeitet am: <slot name="editdate" /></footer>
