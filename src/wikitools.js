@@ -95,5 +95,4 @@ export function exampleBox(element) {
     }
   }
   topDiv.addEventListener("click", toggleExampleBox);
-  topDiv.addEventListener("touchstart", toggleExampleBox);
 }
