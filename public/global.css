@@ -64,9 +64,12 @@ section:not(section > section) {
 
 section > img,
 section > object {
-  width: 100%;
-  margin-top: 3rem;
+  max-width: 100%;
   object-fit: cover;
+}
+
+section > img {
+  max-height: 40rem;
 }
 
 main p {
@@ -77,7 +80,8 @@ main p {
 
 section > p:last-of-type,
 section > ul:last-of-type,
-section > ol:last-of-type {
+section > ol:last-of-type,
+section > img {
   margin-bottom: 2rem;
 }
 
