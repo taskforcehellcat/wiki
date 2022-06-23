@@ -557,7 +557,7 @@ svg .struktur_icon:hover {
   position: absolute;
   content: "";
   height: 2px;
-  bottom: -1.3px;
+  bottom: -0.13rem;
   margin: 0 auto;
   left: 0;
   right: 0;
