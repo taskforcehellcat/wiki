@@ -15,27 +15,34 @@ export function tooltip(element) {
       div = document.createElement("div");
       div.innerHTML = tooltip;
       div.className = "tooltip";
-      div.style = `
-        top: ${event.pageX + 5}px;
-        left: ${event.pageY + 5}px;
-      `;
       document.body.appendChild(div);
     } else if (tooltipimg) {
       div = document.createElement("div");
       div.textContent = tooltip;
       div.innerHTML = "<img style='max-width: 45rem;' src='" + tooltipimg + "'>";
       div.className = "tooltip";
-      div.style = `
-        top: ${event.pageX + 5}px;
-        left: ${event.pageY + 5}px;
-      `;
+      div.style.overflowX = "hidden";
       document.body.appendChild(div);
     }
   }
 
   function mouseMove(event) {
-    div.style.left = `${event.pageX + 5}px`;
-    div.style.top = `${event.pageY + 5}px`;
+    if (tooltipimg) {
+      if (!window.matchMedia("(max-width: 800px)").matches) {
+        div.style.left = `${event.pageX + 5}px`;
+        div.style.top = `${event.pageY + 5}px`;
+      } else {
+        div.style = `
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        `;
+        div.style.top = `${event.pageY + 5}px`;
+      }
+    } else if (tooltip) {
+      div.style.left = `${event.pageX + 5}px`;
+      div.style.top = `${event.pageY + 5}px`;
+    }
   }
 
   function mouseLeave() {
