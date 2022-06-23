@@ -130,7 +130,7 @@
     // create array from nodelists
     var H2sectionsArr = Array.from(H2sections);
     var H3sectionsArr = Array.from(H3sections);
-    var H4sectionsArr = Array.from(H4sections);
+    // var H4sectionsArr = Array.from(H4sections); BROKEN
 
     let tempAnchors = [];
 
@@ -148,9 +148,11 @@
       // add h3 tag with element's id as content
       element.insertAdjacentHTML("afterbegin", "<h3>" + element.id + "</h3>");
     });
+    /*
     H4sectionsArr.forEach((element) => {
       element.insertAdjacentHTML("afterbegin", "<h4>" + element.id + "</h4>");
     });
+    */
     anchors = tempAnchors;
   });
 
