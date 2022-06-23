@@ -637,6 +637,9 @@ kbd {
   border-radius: 0.4rem;
   font-family: monospace;
   width: fit-content;
+  min-width: 2.5rem !important;
+  display: inline-block;
+  text-align: center;
   padding: 0.5rem;
 }
 
