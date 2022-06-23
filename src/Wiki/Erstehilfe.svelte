@@ -1,5 +1,6 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
+import { tooltip, exampleBox } from "../wikitools";
 </script>
 
 <Wiki>
@@ -7,31 +8,101 @@
     <article id="erstehilfe" />
     <h1>Erste Hilfe</h1>
 
-    <section id="Bergung">
-      <p>Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen. Sie wird also auch nicht von einer Person alleine, sondern im Verband durchgeführt.</p>
+    <p>Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.</p>
+
+    <section id="Versorgungsmaterial">
+      <p>Um eine Grundversorgung gewährleisten zu können, sollte das folgende Material immer mitgeführt werden:</p>
+      
+      <ul>
+        <li>Bandagen: Mullverband (<i>packing bandage</i>) min. 15 Stück, elastische Bandagen: min. 10 Stück</li>
+        <li>Medikamente: Morphin: 1 Autoinjektor, Epinephrin: 2 Autoinjektoren, Schmerztabletten: 2 Schachteln (20 Tabletten)</li>
+        <li>Tourniquets: 4 Stück</li>
+        <li>Splints: 2 Stück</li>
+        <li>Flüssigkeiten: 500 bis 1000 ml Kochsalzlösung (<i>saline solution</i>)</li>
+        <li>Pulsoximeter: 1 Stück</li>
+      </ul>
+      
+      <p>Die Standardloadouts zum Beispiel sind ausreichend ausgestattet.</p>
+
     </section>
 
-    <section id="Erstversorgung">
-      <p>Damit Verwundete zielgerecht und effektiv versorgt werden können, verwenden wir zur groben Einteilung ein einfaches, dreistufiges System.</p>
+    <section id="Melden">
+      <p>Der Patientenstatus wird mit einer der folgenden Kategorien angegeben:</p>
+      <ul>
+        <li><b>Kat. Grün:</b> der Patient ist vollkommen einsatzbereit</li>
+        <li><b>Kat. Gelb:</b> der Patient ist verwundet, aber bei Bewusstsein</li>
+        <li><b>Kat. Rot:</b> der Patient ist schwer verwundet oder bewusstlos</li>
+        <li><b>Kat. Schwarz:</b> der Patient ist nicht am Leben</li>
+      </ul>
 
-      <section>
-        <h3>Kat. Rot</h3>
-        <p>Ein Ausfall der Kategorie Rot ist ein Verwundeter, der bewusstlos ist. Solche bedürfen dringender Aufmerksamkeit eines Sanitäters und müssen so schnell wie möglich geborgen und versorgt werden. Da ein Bewusstloser weder bei seiner eigenen Versorgung helfen, noch bei der Deckung mitwirken kann, und seine Versorgung obendrein sehr umständlich ist, sollte man sich gleich zu Beginn um Unterstützung bemühen. Es ist nicht unüblich, dass ein Bewusstloser von drei Soldaten versorgt und gedeckt werden muss, bis ein Sanitäter eintrifft.</p>
-        <p>Nachdem geprüft wurde, ob der Bewusstlose noch einen Puls hat, ist die erste Priorität das Stoppen aller Blutungen. Gerade, wenn kein Sanitäter präsent ist, der Infusionen legen könnte, ist Blutverlust fatal. Auch, nachdem dies gelungen ist, muss der Verletzte regelmäßig überprüft werden, da sich Bandagen lösen können.</p>
-        <p>Liegt kein Puls vor, sollte man mit einer Herz-Lungen-Wiederbelebung (HLW) fortsetzen. Diese muss auch durchweg bis zum Eintreffen des Sanitäters durchgeführt werden. Eine oder zwei Gaben Epinephrin können ebenso angebracht sein.</p>
-        <p>Außerdem sollte der Kopf des Verletzten überstreckt werden, um die Sauerstoffversorgung zu gewährleisten.</p>
+    <div use:exampleBox><p>Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:</p><p><i>„Linke Flanke ein Ausfall, Kat. Rot - kommen.“</i></p></div>
 
-        <h3>Kat. Gelb</h3>
-        <p>Ein Ausfall der Kategorie Gelb ist ein Verwundeter, der noch bei Bewusstsein ist. Hier gilt es, das Bewusstsein zu erhalten und nach Möglichkeit Gefechtsbereitschaft wiederherzustellen. Ein Kat. Gelb bedarf dennoch der Nachsorge eines Sanitäters, zum Beispiel um genäht zu werden oder für die adäquate Verordnung von Schmerzmitteln.</p>
-        <p>Auch hier gilt es also, Blutungen zu stoppen. Wenn es sich nur um leichte bis mittlere Verletzungen handelt, sollte der Verwundete sich selbst versorgen, während er von einem Kameraden gedeckt wird. Droht allerdings hoher Blutverlust, sollte ein Kamerad bei der Selbstversorgung unterstützen. Ein Deckungselement ist dabei aber trotzdem erstrebenswert.</p>
+    </section>
 
-        <h3>Kat. Grün</h3>
-        <p>Kategorie Grün bedeutet Gefechtsbereitschaft. Dies wird meistens von einem Sanitäter bei abgeschlossener Nachsorge an die Truppführung gemeldet. Kategorie Grün beinhaltet genähte Verbände (kein Risiko der Öffnung) und höchstens milde Schmerzen.</p>
+    <section id="Hilfeleistung">
+      <p>Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/ace_medical_menu.png">Medical Menu</span> ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.</p>
+      
+      <section id="Lesen des Medical Menus">
+        <!-- img alt="ACE Medical Menu" src="./images/wiki/ace_medical_menu.png" class="noselect" /-->
+
+        <ul>
+          <li>Spalte <b>Status</b>: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.</li>
+          <li>Spalte <b>Overview</b>: Hier sieht man die Verwundungen.</li>
+          <li>Spalte <b>Examine and Treatment</b>: Hier sieht man die Behandlungsoptionen und kann sie ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein.</li>
+        </ul>
+
       </section>
-    </section>
 
-    <section id="Eintreffen des Sanitäters">
-      <p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
+      <section id="Behandeln ansprechbarer Patienten">
+        <ol>
+          <h3>im Gefecht</h3>
+          <li>Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)</li>
+          <li>Kopf und Torso verbinden, stärkere Verwundungen priorisieren</li>
+          <li>bei Schmerzen Schmerztabletten verwenden</li>
+          <li>Splint anlegen <i>wenn nötig</i>. Splints, die von Nichtsanitätern angelegt worden sind, lösen sich mit einer gewissen Wahrscheinlichkeit wieder.</li>
+
+          <h3>nach dem Gefecht</h3>
+          <li>verletzte Gliedmaßen bandagieren</li>
+          <li>Tourniquets abnehmen</li>
+          <li>Sanitäter zum Nähen lassen aufsuchen (möglichst zeitnah)</li>
+        </ol>
+
+      </section>
+
+      <section id="Behandeln bewusstloser Patienten">
+        <section>
+          <h3>Bergung</h3>
+          <p>Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen. Sie wird also auch nicht von einer Person alleine, sondern im Verband durchgeführt.</p>
+        </section>
+
+        <section>
+          <h3>Handlungsablauf</h3>
+          <ol>
+            <li>Im Medical Menu überprüfen, ob der Patient gezogen/getragen werden kann. Wenn nicht (Reiter <i>Drag/Carry</i> ist ausgegraut), ist der Patient tot. Ansonsten:</li>
+            <li>Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)</li>
+            <li>Kopf und Torso verbinden, stärkere Verwundungen priorisieren</li>
+            <li>Atemwege überprüfen:</li>
+            <ol>
+              <li>verstopft/verschlossen (<i>occluded/obstructed</i>): Kopf ausrichten (<i>head turning</i>) bis befreit</li>
+              <li>Kopf überstrecken (<i>hyperextend head</i>), damit die Zunge nicht die Atemwege verschließen kann</li>
+            </ol>
+            <li>Puls prüfen:</li>
+            <ol>
+              <li>kein Puls: Herz-Lungen-Wiederbelebung (<i>CPR</i>) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.</li>
+              <li>Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster Schritt.</li>
+            </ol>
+            <li>in stabile Seitenlage bringen (<i>use recovery position</i>)</li>
+            <li>verbleibende Verletzungen bandagieren und Tourniquets entfernen</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Eintreffen des Sanitäters</h3>
+          <p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
+        </section>
+
+      </section>
+
     </section>
   </svelte:fragment>
   <svelte:fragment slot="editdate">16.04.2022</svelte:fragment>
