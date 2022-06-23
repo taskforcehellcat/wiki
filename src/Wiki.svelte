@@ -122,22 +122,29 @@
 
   onMount(async () => {
     includeDropDown();
-    const sections = document.querySelectorAll("section[id]");
+    const H2sections = document.querySelectorAll("section[id]:not(section > section)");
+    const H3sections = document.querySelectorAll("section > section[id]");
 
     toggleBurgerIcon();
-    // create array from "sections" nodelist
-    var sectionsArr = Array.from(sections);
+    // create array from nodelists
+    var H2sectionsArr = Array.from(H2sections);
+    var H3sectionsArr = Array.from(H3sections);
 
     let tempAnchors = [];
 
-    // for every element of the "sectionsArr" array
-    sectionsArr.forEach((element) => {
+    // for every element of the "H2sectionsArr" array
+    H2sectionsArr.forEach((element) => {
       // add h2 tag with element's id as content
       element.insertAdjacentHTML("afterbegin", "<h2>" + element.id + "</h2>");
       tempAnchors.push({
         text: element.id,
         link: "#" + element.id,
       });
+    });
+    // for every element of the "H3sectionsArr" array
+    H3sectionsArr.forEach((element) => {
+      // add h3 tag with element's id as content
+      element.insertAdjacentHTML("afterbegin", "<h3>" + element.id + "</h3>");
     });
     anchors = tempAnchors;
   });
