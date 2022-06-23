@@ -16,6 +16,7 @@
     <a href="/" class="expandable">
       <span>Ausbildung</span>
       <Link to="../grundausbildung">Grundausbildung</Link>
+      <Link to="../steuerung">Steuerung</Link>
     </a>
     <a href="/" class="expandable">
       <span>Streitkräfte</span>

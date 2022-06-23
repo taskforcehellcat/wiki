@@ -25,6 +25,7 @@
   import Eod from "./Wiki/Eod.svelte";
   import Bodenfahrzeuge from "./Wiki/Bodenfahrzeuge.svelte";
   import Luftfahrzeuge from "./Wiki/Luftfahrzeuge.svelte";
+  import Steuerung from "./Wiki/Steuerung.svelte";
 
   import Home from "./Home.svelte";
   import { Router, Route } from "svelte-routing";
@@ -44,6 +45,7 @@
   <Route path="sonstiges"><Sonstiges /></Route>
 
   <Route path="grundausbildung"><Grundausbildung /></Route>
+  <Route path="steuerung"><Steuerung /></Route>
 
   <Route path="schuetze"><Schuetze /></Route>
   <Route path="funker"><Funker /></Route>
