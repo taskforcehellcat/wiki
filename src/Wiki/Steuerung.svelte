@@ -77,6 +77,26 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
   import { exampleBox, tooltip } from "../wikitools";
+  let currentLayout = "win";
+  function kbdToggle() {
+    let kbd = document.querySelectorAll("kbd");
+
+    if (currentLayout === "win") {
+      kbd.forEach((element) => {
+        element.innerHTML = element.innerHTML.replace("WIN", "CMD");
+        element.innerHTML = element.innerHTML.replace("ALT", "OPTN");
+        element.innerHTML = element.innerHTML.replace("STRG", "CTRL");
+      });
+      currentLayout = "mac";
+    } else {
+      kbd.forEach((element) => {
+        element.innerHTML = element.innerHTML.replace("CMD", "WIN");
+        element.innerHTML = element.innerHTML.replace("OPTN", "ALT");
+        element.innerHTML = element.innerHTML.replace("CTRL", "STRG");
+      });
+      currentLayout = "win";
+    }
+  }
 </script>
 
 <Wiki>
@@ -87,6 +107,10 @@
       <p>Hier findet ihr die Standard Steuerung für ArmA 3. Je nach Benutzereinstellungen kann sie allerdings variieren.<br />Spieler mit Mac-Tastaturen können unten das Layout wechseln.</p>
     </section>
 
+    <div class="switch-button" on:click={kbdToggle}>
+      <input class="switch-button-checkbox" type="checkbox" />
+      <label class="switch-button-label" for=""><span class="switch-button-label-span">Windows</span></label>
+    </div>
 
     <!-- Bitte WINDOWS Tasten als Default verwenden. Auch auf deutsche Schreibweise achen: STRG statt CTRL! -->
     <section id="Allgemein">
