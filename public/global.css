@@ -78,12 +78,13 @@ main p {
   margin-bottom: 1.5rem;
 }
 
-section {
+section:not(section > section) {
   margin-bottom: 6rem;
 }
 
 section > section {
   padding-left: 1.7rem;
+  margin-bottom: 4rem;
 }
 
 section {
@@ -541,7 +542,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 40px;
+  padding-left: 20px;
   margin-bottom: 2rem;
 }
 
