@@ -1,6 +1,6 @@
 /node_modules/
 /public/build/
-/.vscode/
+/.vscode/settings.json
 *.code-workspace
 
 .DS_Store
