@@ -1,6 +1,6 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
-import { tooltip, exampleBox } from "../wikitools";
+  import { tooltip, exampleBox } from "../wikitools";
 </script>
 
 <Wiki>
@@ -12,7 +12,7 @@ import { tooltip, exampleBox } from "../wikitools";
 
     <section id="Versorgungsmaterial">
       <p>Um eine Grundversorgung gewährleisten zu können, sollte das folgende Material immer mitgeführt werden:</p>
-      
+
       <ul>
         <li>Bandagen: Mullverband (<i>packing bandage</i>) min. 15 Stück, elastische Bandagen: min. 10 Stück</li>
         <li>Medikamente: Morphin: 1 Autoinjektor, Epinephrin: 2 Autoinjektoren, Schmerztabletten: 2 Schachteln (20 Tabletten)</li>
@@ -21,9 +21,8 @@ import { tooltip, exampleBox } from "../wikitools";
         <li>Flüssigkeiten: 500 bis 1000 ml Kochsalzlösung (<i>saline solution</i>)</li>
         <li>Pulsoximeter: 1 Stück</li>
       </ul>
-      
-      <p>Die Standardloadouts zum Beispiel sind ausreichend ausgestattet.</p>
 
+      <p>Die Standardloadouts zum Beispiel sind ausreichend ausgestattet.</p>
     </section>
 
     <section id="Melden">
@@ -35,13 +34,15 @@ import { tooltip, exampleBox } from "../wikitools";
         <li><b>Kat. Schwarz:</b> der Patient ist nicht am Leben</li>
       </ul>
 
-    <div use:exampleBox><p>Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:</p><p><i>„Linke Flanke ein Ausfall, Kat. Rot - kommen.“</i></p></div>
-
+      <div use:exampleBox>
+        <p>Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:</p>
+        <p><i>„Linke Flanke ein Ausfall, Kat. Rot - kommen.“</i></p>
+      </div>
     </section>
 
     <section id="Hilfeleistung">
       <p>Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/ace_medical_menu.png">Medical Menu</span> ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.</p>
-      
+
       <section id="Lesen des Medical Menus">
         <!-- img alt="ACE Medical Menu" src="./images/wiki/ace_medical_menu.png" class="noselect" /-->
 
@@ -50,7 +51,6 @@ import { tooltip, exampleBox } from "../wikitools";
           <li>Spalte <b>Overview</b>: Hier sieht man die Verwundungen.</li>
           <li>Spalte <b>Examine and Treatment</b>: Hier sieht man die Behandlungsoptionen und kann sie ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein.</li>
         </ul>
-
       </section>
 
       <section id="Behandeln ansprechbarer Patienten">
@@ -66,7 +66,6 @@ import { tooltip, exampleBox } from "../wikitools";
           <li>Tourniquets abnehmen</li>
           <li>Sanitäter zum Nähen lassen aufsuchen (möglichst zeitnah)</li>
         </ol>
-
       </section>
 
       <section id="Behandeln bewusstloser Patienten">
@@ -100,10 +99,8 @@ import { tooltip, exampleBox } from "../wikitools";
           <h3>Eintreffen des Sanitäters</h3>
           <p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
         </section>
-
       </section>
-
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">16.04.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">23.06.2022</svelte:fragment>
 </Wiki>
