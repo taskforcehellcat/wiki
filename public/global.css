@@ -78,7 +78,7 @@ main p {
 section > p:last-of-type,
 section > ul:last-of-type,
 section > ol:last-of-type {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 section > section {
