@@ -132,6 +132,14 @@
           <td><kbd>ESC</kbd></td>
         </tr>
         <tr>
+          <td>Umschauen (halten)</td>
+          <td><kbd>LALT</kbd></td>
+        </tr>
+        <tr>
+          <td>Umschauen (feststellen)</td>
+          <td>2x <kbd>LALT</kbd></td>
+        </tr>
+        <tr>
           <td>Inventar</td>
           <td><kbd>I</kbd></td>
         </tr>
@@ -148,11 +156,11 @@
           <td><kbd>O</kbd></td>
         </tr>
         <tr>
-          <td>Right Panel Next</td>
+          <td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Right Panel Next</span></td>
           <td><kbd>+</kbd></td>
         </tr>
         <tr>
-          <td>Left Panel Next</td>
+          <td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Left Panel Next</span></td>
           <td><kbd>Ü</kbd></td>
         </tr>
         <tr>
