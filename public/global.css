@@ -53,7 +53,6 @@ h3 {
 }
 
 section:not(section > section) {
-  margin-bottom: 3rem;
   /*
   adds scroll-padding but breaks tooltips
   padding-top: 10rem;
@@ -76,13 +75,11 @@ main p {
   text-align: justify;
   width: 100%;
   display: inline-block;
+  margin-bottom: 1.5rem;
 }
 
-section > p:last-of-type,
-section > ul:last-of-type,
-section > ol:last-of-type,
-section > img {
-  margin-bottom: 2rem;
+section {
+  margin-bottom: 6rem;
 }
 
 section > section {
@@ -545,6 +542,7 @@ ol {
   flex-direction: column;
   gap: 10px;
   padding-left: 40px;
+  margin-bottom: 2rem;
 }
 
 ul {
@@ -658,7 +656,7 @@ kbd:not(kbd:first-of-type) {
   width: 100%;
   background-color: #e7e9eb;
   --border-color: #646464;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .exampleBox > div:first-of-type {
