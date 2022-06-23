@@ -72,6 +72,14 @@
   section#Erklärung {
     margin-bottom: 0;
   }
+
+  @media only screen and (max-width: 700px) {
+    td,
+    th {
+      padding-bottom: 1rem;
+      min-width: 20rem;
+    }
+  }
 </style>
 
 <script lang="ts">
