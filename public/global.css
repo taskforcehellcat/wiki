@@ -456,10 +456,13 @@ input:focus {
     padding: 6rem 4rem 10rem 4rem;
   }
 
+  /*
+  adds scroll-padding but breaks tooltips
   section:not(section > section) {
     padding-top: 20rem;
     margin-top: -20rem;
   }
+  */
 }
 
 #home__link {
