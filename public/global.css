@@ -635,3 +635,44 @@ kbd {
   width: fit-content;
   padding: 0.5rem;
 }
+
+.exampleBox {
+  width: 100%;
+  background-color: #e7e9eb;
+  --border-color: #646464;
+  margin-bottom: 2rem;
+}
+
+.exampleBox > div:first-of-type {
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  height: 4rem;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s ease-out;
+}
+
+.exampleBox > div:first-of-type:hover {
+  cursor: pointer;
+}
+
+.exampleBox > div:first-of-type .material-icons {
+  font-size: 20pt;
+  margin-right: -4px;
+}
+
+.exampleBox > div:last-of-type {
+  border-bottom: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  height: fit-content;
+  padding: 2rem;
+}
