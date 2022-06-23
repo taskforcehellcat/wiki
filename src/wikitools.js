@@ -79,7 +79,7 @@ export function exampleBox(element) {
   topDiv.style.borderBottomRightRadius = "0.5rem";
 
   let exampleBoxOpen = false;
-  topDiv.addEventListener("click", function () {
+  function toggleExampleBox() {
     if (exampleBoxOpen) {
       bottomDiv.style.display = "none";
       topDiv.style.borderBottomLeftRadius = "0.5rem";
@@ -93,5 +93,7 @@ export function exampleBox(element) {
       topDiv.innerHTML = `<span class="noselect">Beispiel:</span><span class="material-icons noselect">remove</span>`;
       exampleBoxOpen = true;
     }
-  });
+  }
+  topDiv.addEventListener("click", toggleExampleBox);
+  topDiv.addEventListener("touchstart", toggleExampleBox);
 }
