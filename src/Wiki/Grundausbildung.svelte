@@ -9,7 +9,7 @@
     <h1>Befehlsausgabe</h1>
 
     <section id="Einleitung">
-      <p>Die Befehlsausgabe erfolgt nach der Gliederung <span use:tooltip data-tooltip="kurz: LADEF">Lage, Auftrag, Durchführung, Einsatzunterstützung und Führungsunterstützung</span>. Diese Gliederung wird auf dieser Seite erläutert, um von jedem Spieler gedeutet und interpretiert werden zu können. Oft erfolgt die Befehlsausgabe auch in der Form <span use:tooltip data-tooltip="kurz: LAD">Lage, Auftrag und Durchführung</span>, da die entfallenen Punkte nur für Führungspersonal von Bedeutung sind.</p>
+      <p>Die Befehlsausgabe erfolgt nach der Gliederung Lage, Auftrag, Durchführung, Einsatzunterstützung und Führungsunterstützung (kurz LADEF). Diese Gliederung wird auf dieser Seite erläutert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage, Auftrag und Durchführung (kurz LAD), da die Punkte Einsatz- und Führungsunterstützung eher für Führungspersonal bedeutsam sind.</p>
     </section>
 
     <section id="Befehlsschema">
@@ -17,7 +17,7 @@
         <section>
           <h3>1.1) Feindliche Lage</h3>
           <p>In diesem Punkt wird über die Lage feindlicher Kräfte im Operationsraum informiert. Dabei werden die Position, die Art und die Absicht des Feindes genauer beschrieben.</p>
-          <div use:exampleBox><p>„<i>In der Stadt Kavala im Nordwesten von Altis ist ein feindlicher Infanteriezug in Stellung. Vermutete Absicht des Zuges ist die Verteidigung mit einem Halbzug im Nordosten und einem Halbzug im Südwesten der Stadt, um eine zentrale Hafenanlage der Insel zu verteidigen.</i>“</p></div>
+          <div use:exampleBox><p>„<i>In der Stadt Kavala im Nordwesten von Altis ist ein feindlicher Infanteriezug in Stellung. Davon befindet sich ein Halbzug im Nordosten und ein Halbzug um Südwesten der Stadt. Vermutete Absicht des Zuges ist die Verteidigung einer zentralen Hafenanlage der Insel.</i>“</p></div>
 
           <h3>1.2) Eigene Lage</h3>
           <p>In diesem Punkt wird über die Lage eigener Kräfte informiert. Dabei wird auf die Position und Art der eigenen Kräfte eingegangen. Des Weiteren kann hier die Absicht des Führungspersonals mitgeteilt werden.</p>
@@ -57,14 +57,14 @@
 
       <section id="5. Führungsunterstützung">
         <section>
-          <h3>Funkverbindungsplan</h3>
+          <h3>5.1) Funkverbindungsplan</h3>
           <p>In diesem Punkt wird über die Zuweisung der Funkgeräte, der Funkfrequenzen und der Aufteilung der Funkrufzeichen informiert.</p>
           <div use:exampleBox>
             <p>„<i>Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60.000 MHz. Im Zugkreis wird das Funkgerät AN/PRC-152 verwendet. Dabei ist für den mechanisierten Infanteriezug Kanal 01 und für den Infanteriehalbzug Kanal 02 reserviert. Auf Gruppenebene wird mit der SEM 52 SL gefunkt. Für die vier Gruppen des mechanisierten Infanteriezuges sind Kanäle 01 bis 04 reserviert. Der Infanteriehalbzug verteilt sich auf den Kanälen 05 und 06.</i>“</p>
             <p>„<i>Der mechanisierte Infanteriezug ist in ALPHA und der Infanteriehalbzug in BRAVO eingeteilt.</i>“</p>
           </div>
 
-          <h3>Führungsreihenfolge</h3>
+          <h3>5.2) Führungsreihenfolge</h3>
           <p>In diesem Punkt wird über die Einteilung der Führungsübernahme bei einem Ausfall der Führungsperson informiert.</p>
 
           <div use:exampleBox><p>„<i>Die Kompanieführung beginnt beim Zugführer von ALPHA. Fällt dieser aus, übernimmt der Gruppenführer von ALPHA-2. Im Falle seines Ausfalls übernimmt der Zugführer von BRAVO die Kompanie.</i>“</p></div>
