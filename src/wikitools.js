@@ -19,8 +19,9 @@ export function tooltip(element) {
     } else if (tooltipimg) {
       div = document.createElement("div");
       div.textContent = tooltip;
-      div.innerHTML = "<img style='max-width: 45rem;' src='" + tooltipimg + "'>";
+      div.innerHTML = "<img style='max-width: 100%;' src='" + tooltipimg + "'>";
       div.className = "tooltip";
+      div.style.width = "80vw";
       div.style.overflowX = "hidden";
       document.body.appendChild(div);
     }
@@ -32,11 +33,9 @@ export function tooltip(element) {
         div.style.left = `${event.pageX + 5}px`;
         div.style.top = `${event.pageY + 5}px`;
       } else {
-        div.style = `
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        `;
+        div.style.position = "absolute";
+        div.style.left = "50%";
+        div.style.transform = "translateX(-50%)";
         div.style.top = `${event.pageY + 5}px`;
       }
     } else if (tooltip) {
@@ -55,6 +54,8 @@ export function tooltip(element) {
       element.setAttribute("data-tooltip-img", tooltipimg);
     }
   }
+
+  window.onresize = mouseLeave;
 
   element.addEventListener("mouseover", mouseOver);
   element.addEventListener("mouseleave", mouseLeave);
