@@ -566,6 +566,10 @@ svg .struktur_icon:hover {
   pointer-events: none;
 }
 
+kbd[data-tooltip]::after {
+  bottom: -0.5rem;
+}
+
 [data-tooltip],
 [data-tooltip-img] {
   position: relative;
@@ -634,6 +638,10 @@ kbd {
   font-family: monospace;
   width: fit-content;
   padding: 0.5rem;
+}
+
+kbd:not(kbd:first-of-type) {
+  margin-left: 0.1rem;
 }
 
 .exampleBox {
