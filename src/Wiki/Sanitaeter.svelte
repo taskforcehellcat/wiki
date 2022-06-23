@@ -12,9 +12,7 @@
     <p><b>Seite im Aufbau.</b></p>
 
     <section id="Grundausrüstung">
-      <section>
-        <h2>Medikamente</h2>
-
+      <section id="Medikamente">
         <section>
           <h3>Basismedikamente</h3>
           <p>Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.</p>
