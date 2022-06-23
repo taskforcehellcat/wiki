@@ -22,8 +22,7 @@
     </section>
 
     <section id="Mitmachen">
-      <section>
-        <h3>Voraussetzungen</h3>
+      <section id="Voraussetzungen">
         <ul>
           <li>ein Mindestalter von 16 Jahren</li>
           <li>ein <span use:tooltip data-tooltip="für Ratschläge gerne Serverleitung fragen :)">geeigneter Computer</span> mit <span use:tooltip data-tooltip="Basegame mit DLC ~45 GB + unser Modpack ~50 GB">genügend Festplattenspeicher</span></li>
@@ -31,14 +30,15 @@
           <li>ein Discord-Account mit verifizierter E-Mail</li>
           <li><a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und mindestens ein Headset, vorzugsweise ein <span use:tooltip data-tooltip="für Ratschläge gerne Serverleitung fragen :)">vernünftiges Mikrofon</span></li>
         </ul>
-
         <p>Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a> und das <a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen, allerdings nicht zwangsweise benötigt.</p>
+      </section>
 
-        <h3>Beitritt</h3>
+      <section id="Beitritt">
         <p>Vor dem Beitritt in unsere Community durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch möchten wir die Vorlieben des Bewerbers erfahren und erklären unsererseits, wie wir uns das gemeinsame Spielen vorstellen.</p>
         <p>Wenn wir im Laufe des Gesprächs feststellen, dass wir zueinander passen, freuen wir uns, ein neues Mitglied in unsere Einheit aufzunehmen.</p>
+      </section>
 
-        <h3>Aufstieg</h3>
+      <section id="Aufstieg">
         <p>Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die Möglichkeit unsere Community kennenzulernen und festzustellen, ob wir die richtige Community für ihn sind. Der Rekrut kann zum Kadett aufsteigen, indem er die Grundausbildung durchläuft, die ihm die Teilnahme an Kampagnen und Übungen sowie die Fortbildung zu <span use:tooltip data-tooltip="Grenadier, AT-Schütze, MG-Schütze, Präzisionsschütze, Funker">grundlegenden Rollen der Infanterie</span> ermöglicht. Ein Kadett kann zum Mitglied werden, indem er gutes Verhalten und Erfahrenheit aufweist. Mitglieder haben die Möglichkeit <span use:tooltip data-tooltip="Sanitäter, Scharfschütze, Helikopterpilot, JTAC, Richtschütze, usw.">fortgeschrittene Aus- und Fortbildungen</span> aller Abteilungen zu durchlaufen.</p>
       </section>
     </section>
