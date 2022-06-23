@@ -2,8 +2,6 @@
   var isOpen = false;
 
   export function toggleBurgerIcon() {
-    console.debug(menuOpen);
-    console.debug(burgerMenu);
     if (!window.matchMedia("(max-width: 800px)").matches) {
       menuOpen.style.display = "none";
       menuClose.style.display = "none";
@@ -19,7 +17,6 @@
 
   export function toggleBurgerMenu() {
     isOpen = !isOpen;
-    console.log(menuOpen);
     if (window.matchMedia("(max-width: 800px)").matches) {
       if (isOpen == false) {
         menuOpen.style.display = "block";
