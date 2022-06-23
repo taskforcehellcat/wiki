@@ -44,7 +44,7 @@
       <p>Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/ace_medical_menu.png">Medical Menu</span> ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.</p>
 
       <section id="Lesen des Medical Menus">
-        <!-- img alt="ACE Medical Menu" src="./images/wiki/ace_medical_menu.png" class="noselect" /-->
+        <img alt="ACE Medical Menu" src="./images/wiki/ace_medical_menu.png" class="noselect" />
 
         <ul>
           <li>Spalte <b>Status</b>: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.</li>
@@ -69,13 +69,11 @@
       </section>
 
       <section id="Behandeln bewusstloser Patienten">
-        <section>
-          <h3>Bergung</h3>
+        <section id="Bergung">
           <p>Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen. Sie wird also auch nicht von einer Person alleine, sondern im Verband durchgeführt.</p>
         </section>
 
-        <section>
-          <h3>Handlungsablauf</h3>
+        <section id="Handlungsablauf">
           <ol>
             <li>Im Medical Menu überprüfen, ob der Patient gezogen/getragen werden kann. Wenn nicht (Reiter <i>Drag/Carry</i> ist ausgegraut), ist der Patient tot. Ansonsten:</li>
             <li>Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)</li>
@@ -95,8 +93,7 @@
           </ol>
         </section>
 
-        <section>
-          <h3>Eintreffen des Sanitäters</h3>
+        <section id="Eintreffen des Sanitäters">
           <p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
         </section>
       </section>
