@@ -1,6 +1,6 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
-  import { tooltip } from "../tooltip";
+  import { tooltip } from "../wikitools";
 </script>
 
 <Wiki>

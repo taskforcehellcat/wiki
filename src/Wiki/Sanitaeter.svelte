@@ -1,7 +1,7 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
   import { Router, Link, Route } from "svelte-routing";
-  import { tooltip } from "../tooltip";
+  import { tooltip } from "../wikitools";
 </script>
 
 <Wiki>
