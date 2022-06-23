@@ -30,17 +30,13 @@
       </section>
 
       <section id="2. Auftrag">
-        <section>
-          <p>In diesem Punkt erfolgt eine knappe Darlegung des <span use:tooltip data-tooltip="z.B. eines Zuges oder einer Gruppe">eigenen</span> Auftrags. Das geschieht in Form einer stichpunktartigen Aufzählung, was erledigt werden muss. Hauptsächlich wird dieser Punkt auf Zugebene besprochen.</p>
-          <div use:exampleBox><p>„<i>Der Infanteriehalbzug nimmt das Zentrum der Stadt Kavala.</i>“</p></div>
-        </section>
+        <p>In diesem Punkt erfolgt eine knappe Darlegung des <span use:tooltip data-tooltip="z.B. eines Zuges oder einer Gruppe">eigenen</span> Auftrags. Das geschieht in Form einer stichpunktartigen Aufzählung, was erledigt werden muss. Hauptsächlich wird dieser Punkt auf Zugebene besprochen.</p>
+        <div use:exampleBox><p>„<i>Der Infanteriehalbzug nimmt das Zentrum der Stadt Kavala.</i>“</p></div>
       </section>
 
       <section id="3. Durchführung">
-        <section>
-          <p>In diesem Punkt werden die Einzelaufträge der <span use:tooltip data-tooltip="z.B. die Gruppen eines Zuges">unterstellten Truppenteile</span> erläutert. Dabei geht der Zug- bzw. Gruppenführer genauer auf die Vorgehensweise bei der Erfüllung des Auftrages ein. Zusätzlich können hier <span use:tooltip data-tooltip="z.B. Funkkreiseröffnung">wichtige Zeiten</span> oder <span use:tooltip data-tooltip="z.B. Einsatz von gelenkten Raketen nur auf Befehl">Verhaltensweisen</span> mitgeteilt werden.</p>
-          <div use:exampleBox><p>„<i>Die beiden Halbzüge des mechanisierten Infanteriezuges bewegen sich nebeneinander auf Kavala zu. Ab Ablauflinie Adler trennen sich die beiden Halbzüge und bewegen sich jeweils auf den ihnen zugewiesenen südwestlichen beziehungsweise nordöstlichen Teil Kavalas zu und nehmen diesen.</i>“</p></div>
-        </section>
+        <p>In diesem Punkt werden die Einzelaufträge der <span use:tooltip data-tooltip="z.B. die Gruppen eines Zuges">unterstellten Truppenteile</span> erläutert. Dabei geht der Zug- bzw. Gruppenführer genauer auf die Vorgehensweise bei der Erfüllung des Auftrages ein. Zusätzlich können hier <span use:tooltip data-tooltip="z.B. Funkkreiseröffnung">wichtige Zeiten</span> oder <span use:tooltip data-tooltip="z.B. Einsatz von gelenkten Raketen nur auf Befehl">Verhaltensweisen</span> mitgeteilt werden.</p>
+        <div use:exampleBox><p>„<i>Die beiden Halbzüge des mechanisierten Infanteriezuges bewegen sich nebeneinander auf Kavala zu. Ab Ablauflinie Adler trennen sich die beiden Halbzüge und bewegen sich jeweils auf den ihnen zugewiesenen südwestlichen beziehungsweise nordöstlichen Teil Kavalas zu und nehmen diesen.</i>“</p></div>
       </section>
 
       <section id="4. Einsatzunterstützung">
