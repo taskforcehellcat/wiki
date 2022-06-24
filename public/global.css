@@ -546,6 +546,11 @@ ol {
   margin-bottom: 2rem;
 }
 
+ul > ul,
+ol > ol {
+  margin-bottom: 0;
+}
+
 ul {
   list-style-type: "─  ";
 }
