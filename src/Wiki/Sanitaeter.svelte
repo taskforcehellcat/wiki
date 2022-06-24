@@ -50,14 +50,14 @@
             <p>Morphin-<span use:tooltip data-tooltip="dt. Gegenspieler. Antagonisten wirken einem bestimmten Medikament entgegen.">Antagonist</span>, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.</p>
             <h3>Tranexamsäure (TXA)</h3>
             <p>treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten.</p>
-            <h3>Norepinephrin-?Autoinjektor?</h3>
-            <p>hebt den Blutdruck (Vasopressor).</p>
-            <h3>Niroglycerin</h3>
-            <p>senkt den Blutdruck (Vasodepressor).</p>
+            <h3>Norepinephrin</h3>
+            <p>hebt den Blutdruck (Vasopressor). Wird über einen Zugang verabreicht.</p>
+            <h3>Nitroglycerin</h3>
+            <p>senkt den Blutdruck (Vasodepressor). Wird über einen Zugang verabreicht.</p>
             <h3>Phenylephrin</h3>
-            <p>hebt den Blutdruck bei gleichzeitiger Sekung des Pulses.</p>
+            <p>hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht.</p>
             <h3>Ondansetron</h3>
-            <p>verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können.</p>
+            <p>verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.</p>
           </section>
         </section>
       </section>
@@ -98,7 +98,7 @@
     <section id="Vitalparameter">
       <section>
         <h3>Idealwerte</h3>
-        Ein vollständig gesunder Patient sollte die folgenden Werte aufweisen:
+        <p>Ein vollständig gesunder Patient sollte die folgenden Werte aufweisen:</p> 
 
         <table>
           <tr>
@@ -124,7 +124,7 @@
 
       <section>
         <h3>Extremwerte</h3>
-        Unterschreitung „minimaler stabiler“ Werte führt zu Bewusstlosigkeit, Unterschreitung „kritischer“ Werte zum Tod.
+        <p>Unterschreitung „minimaler stabiler“ Werte führt zu Bewusstlosigkeit, Unterschreitung „kritischer“ Werte zum Tod.</p> 
         <table>
           <tr>
             <td><b>Kritische Sauerstoffsättigung:</b></td>
@@ -159,6 +159,7 @@
 
       <section>
         <h3>Einschätzen des Blutvolumens</h3>
+        <p />
 
         <table>
           <tr>
