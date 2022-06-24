@@ -41,11 +41,11 @@
     </section>
 
     <section id="Hilfeleistung">
-      <p>Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/ace_medical_menu.png">Medical Menu</span> ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.</p>
+      <p>Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/sani/ace_medical_menu.png">Medical Menu</span> ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.</p>
 
       <section id="Lesen des Medical Menus">
-        <img alt="ACE Medical Menu" src="./images/wiki/ace_medical_menu.png" class="noselect" />
-
+        <!-- img alt="ACE Medical Menu" src="./images/sani/wiki/ace_medical_menu.png" class="noselect" /-->
+        <p />
         <ul>
           <li>Spalte <b>Status</b>: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.</li>
           <li>Spalte <b>Overview</b>: Hier sieht man die Verwundungen.</li>
@@ -74,17 +74,18 @@
         </section>
 
         <section id="Handlungsablauf">
+          <p />
           <ol>
             <li>Im Medical Menu überprüfen, ob der Patient gezogen/getragen werden kann. Wenn nicht (Reiter <i>Drag/Carry</i> ist ausgegraut), ist der Patient tot. Ansonsten:</li>
             <li>Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)</li>
             <li>Kopf und Torso verbinden, stärkere Verwundungen priorisieren</li>
             <li>Atemwege überprüfen:</li>
-            <ol>
+            <ol style="list-style-type: lower-alpha;">
               <li>verstopft/verschlossen (<i>occluded/obstructed</i>): Kopf ausrichten (<i>head turning</i>) bis befreit</li>
               <li>Kopf überstrecken (<i>hyperextend head</i>), damit die Zunge nicht die Atemwege verschließen kann</li>
             </ol>
             <li>Puls prüfen:</li>
-            <ol>
+            <ol style="list-style-type: lower-alpha;">
               <li>kein Puls: Herz-Lungen-Wiederbelebung (<i>CPR</i>) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.</li>
               <li>Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster Schritt.</li>
             </ol>

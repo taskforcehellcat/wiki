@@ -9,7 +9,7 @@
     <article id="sanitaeter" />
     <h1>Sanitäter</h1>
 
-    <p><b>Seite im Aufbau.</b></p>
+    <p><i>„Air goes in and out, blood goes round and round. Any deviation from that is a problem.“</i></p>
 
     <section id="Grundausrüstung">
       <section id="Medikamente">
@@ -45,7 +45,7 @@
           <p>Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.</p>
           <section>
             <h3>Ammonium Carbonat</h3>
-            <p><span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe <a href="/sanitaeter#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.</p>
+            <p><span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe <a href="#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.</p>
             <h3>Naloxon</h3>
             <p>Morphin-<span use:tooltip data-tooltip="dt. Gegenspieler. Antagonisten wirken einem bestimmten Medikament entgegen.">Antagonist</span>, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.</p>
             <h3>Tranexamsäure (TXA)</h3>
@@ -56,6 +56,8 @@
             <p>senkt den Blutdruck (Vasodepressor).</p>
             <h3>Phenylephrin</h3>
             <p>hebt den Blutdruck bei gleichzeitiger Sekung des Pulses.</p>
+            <h3>Ondansetron</h3>
+            <p>verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können.</p>
           </section>
         </section>
       </section>
@@ -79,9 +81,11 @@
       <section>
         <h3>Werkzeug</h3>
         <section>
+          <h3>Nähset</h3>
+          <p>erlaubt das Nähen von Wunden. Genähte Verbände lösen sich nicht mehr.</p>
           <h3>Stethoskop</h3>
           <p>erlaubt die Diagnose von Thoraxverletzungen.</p>
-          <h3>Accuvac</h3>
+          <h3><span use:tooltip data-tooltip-img="./images/wiki/accuvac.png">Accuvac</span> Accuvac</h3>
           <p>erlaubt die <span use:tooltip data-tooltip="endo: innerhalb; trachea: Luftröhre">endotracheale</span> Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (<i>head turning</i>).</p>
           <h3>AED / AED-X</h3>
           <p><i>Automatisierter externer Defibrillator</i>. Zur Behandlung von <span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="">Behandlung von Herzstillständen (DEAD LINK)</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von <a href="/sanitaeter#Vitalparameter">Vitalparametern</a>.</p>
