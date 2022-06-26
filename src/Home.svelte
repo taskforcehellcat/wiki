@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     color: #fff;
-    gap: 6rem;
+    gap: 4rem;
   }
 
   #home__nav__logo {
