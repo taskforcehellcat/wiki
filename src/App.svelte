@@ -4,7 +4,7 @@
   import Erstehilfe from "./Wiki/Erstehilfe.svelte";
   import Abteilungen from "./Wiki/Abteilungen.svelte";
   import Sonstiges from "./Wiki/Sonstiges.svelte";
-  import Grundausbildung from "./Wiki/Grundausbildung.svelte";
+  import Befehlsausgabe from "./Wiki/Befehlsausgabe.svelte";
   import Schuetze from "./Wiki/Schuetze.svelte";
   import Funker from "./Wiki/Funker.svelte";
   import Mgschuetze from "./Wiki/Mgschuetze.svelte";
@@ -44,7 +44,7 @@
   <Route path="abteilungen"><Abteilungen /></Route>
   <Route path="sonstiges"><Sonstiges /></Route>
 
-  <Route path="grundausbildung"><Grundausbildung /></Route>
+  <Route path="befehlsausgabe"><Befehlsausgabe /></Route>
   <Route path="steuerung"><Steuerung /></Route>
 
   <Route path="schuetze"><Schuetze /></Route>

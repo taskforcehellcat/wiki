@@ -1,6 +1,6 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
-  import Grundausbildung from "./Grundausbildung.svelte";
+  import Befehlsausgabe from "./Befehlsausgabe.svelte";
   import { tooltip } from "../wikitools";
   import { Router, Link } from "svelte-routing";
   import Abteilungen from "./Abteilungen.svelte";

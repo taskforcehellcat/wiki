@@ -5,7 +5,7 @@
 
 <Wiki>
   <svelte:fragment slot="content">
-    <article id="grundausbildung" />
+    <article id="Befehlsausgabe" />
     <h1>Befehlsausgabe</h1>
 
     <section id="Einleitung">
