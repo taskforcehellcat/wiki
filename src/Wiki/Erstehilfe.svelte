@@ -31,7 +31,7 @@
         <li><b>Kat. Grün:</b> der Patient ist vollkommen einsatzbereit</li>
         <li><b>Kat. Gelb:</b> der Patient ist verwundet, aber bei Bewusstsein</li>
         <li><b>Kat. Rot:</b> der Patient ist schwer verwundet oder bewusstlos</li>
-        <li><b>Kat. Schwarz:</b> der Patient ist nicht am Leben</li>
+        <li><b>Kat. Schwarz:</b> der Patient ist nicht verstorben</li>
       </ul>
 
       <div use:exampleBox>
@@ -92,6 +92,9 @@
             <li>in stabile Seitenlage bringen (<i>use recovery position</i>)</li>
             <li>verbleibende Verletzungen bandagieren und Tourniquets entfernen</li>
           </ol>
+
+          <p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
+          <img src=".\images\wiki\sani\wallpapers\erste_hilfe_basic.png" alt="Erste Hilfe, grundlegendes Flowchart">
         </section>
 
         <section id="Eintreffen des Sanitäters">
