@@ -3,7 +3,7 @@
     min-height: 120vh;
     display: grid;
     grid-template-columns: 38rem 4fr;
-    grid-template-rows: 18fr 1fr;
+    grid-template-rows: 18fr 12rem;
   }
   #nav__list-bar {
     display: flex;
