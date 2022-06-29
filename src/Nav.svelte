@@ -17,6 +17,7 @@
       <span>Ausbildung</span>
       <Link to="../befehlsausgabe">Befehlsausgabe</Link>
       <Link to="../steuerung">Steuerung</Link>
+      <Link to="../truppenteile">Truppenteile</Link>
     </a>
     <a href="/" class="expandable">
       <span>Streitkräfte</span>

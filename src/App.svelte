@@ -26,6 +26,7 @@
   import Bodenfahrzeuge from "./Wiki/Bodenfahrzeuge.svelte";
   import Luftfahrzeuge from "./Wiki/Luftfahrzeuge.svelte";
   import Steuerung from "./Wiki/Steuerung.svelte";
+  import Truppenteile from "./Wiki/Truppenteile.svelte";
 
   import Home from "./Home.svelte";
   import { Router, Route } from "svelte-routing";
@@ -46,6 +47,7 @@
 
   <Route path="befehlsausgabe"><Befehlsausgabe /></Route>
   <Route path="steuerung"><Steuerung /></Route>
+  <Route path="truppenteile"><Truppenteile /></Route>
 
   <Route path="schuetze"><Schuetze /></Route>
   <Route path="funker"><Funker /></Route>
