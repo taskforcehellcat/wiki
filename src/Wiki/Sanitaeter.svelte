@@ -17,13 +17,13 @@
           <h3>Basismedikamente</h3>
           <p>Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.</p>
           <section>
-            <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\morphine.png">Morphin-Autoinjektor</span></h3>
+            <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/morphine.png">Morphin-Autoinjektor</span></h3>
             <p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
             <h3><span use:tooltip data-tooltip-img="">Painkillers</span> (dt. Schmerztabletten)</h3>
             <p>lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="#Transfusionen im Feld">Transfusion von Blut</a>). Werden im Arsenal bei den Magazinen geführt.</p>
-            <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\epinephrine.png">Epinephrin-Autoinjektor</span> (Adrenalin)</h3>
+            <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/epinephrine.png">Epinephrin-Autoinjektor</span> (Adrenalin)</h3>
             <p>hebt die Herzrate, kann auch Behandlung von Morphin-Überdosen unterstützen.</p>
-            <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\adenosine.png">Adenosin-Autoinjektor</span></h3>
+            <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/adenosine.png">Adenosin-Autoinjektor</span></h3>
             <p>senkt die Herzrate, kann zur Behandlung von Epinephrin-Überdosen verwendet werden.</p>
           </section>
         </section>
@@ -31,11 +31,11 @@
         <section>
           <h3>Infarkttherapie</h3>
           <section>
-            <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\amiodarone.png">Amiodaron</span></h3>
+            <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/amiodarone.png">Amiodaron</span></h3>
             <p><span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidokain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine <span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardie</span>. Empfohlen ist eine Gabe pro Patient.</p>
-            <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\lidocaine.png">Lidokain</span></h3>
+            <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/lidocaine.png">Lidokain</span></h3>
             <p><span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.</p>
-            <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\atropine.png">Atropin</span></h3>
+            <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/atropine.png">Atropin</span></h3>
             <p>zur Behandlung von <span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardien</span>. Hebt die Herzrate wesentlich.</p>
           </section>
         </section>
@@ -65,28 +65,26 @@
       <section id="Verbrauchsmaterialien">
         <p>Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.</p>
         <section>
-          <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\surgical_airway_kit.png">AAT-Kit</span></h3>
+          <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/surgical_airway_kit.png">AAT-Kit</span></h3>
           <p>gebraucht zur Behandlung von Hämothoraxen (siehe <a href="#Hämothorax">Behandlung von Hämothoraxen</a>) und Spannungspneumothoraxen (siehe <a href="#Spannungspneumothorax">Behandlung von Spannungsthoraxen</a>).</p>
           <h3><span use:tooltip data-tooltip-img="">Field Blood Transfusion Kit</span> (dt. Feldtransfusionsset)</h3>
           <p>erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Dabei muss auf die Kompatibilität der Blutgruppen geachtet werden, siehe dazu <a href="#Blutgruppenverträglichkeit">eine Tabelle von Blutgruppenverträglichkeiten</a>.</p>
-          <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\chest_seal.png">Chest Seal</span> (dt. Thoraxverschlusspflaster)</h3>
+          <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/chest_seal.png">Chest Seal</span> (dt. Thoraxverschlusspflaster)</h3>
           <p>ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe auch <a href="#Hämothorax">Behandlung von Hämothoraxen</a> und <a href="#Spannungspneumothorax">Behandlung von Spannungsthoraxen</a>.</p>
-          <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\16g.png">16g IV</span></h3>
+          <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/16g.png">16g IV</span></h3>
           <p>eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ" target="_blank">in diesem Video</a> anschaulich gezeigt wird.</p>
-          <h3><span use:tooltip data-tooltip-img=".\images\wiki\sani\fast_io.png">FAST IO</span></h3>
+          <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/fast_io.png">FAST IO</span></h3>
           <p><i>First Access for Shock and Trauma IO,</i> ein <span use:tooltip data-tooltip="Bei der intraossären Punktion wird eine Stahlkanüle in den Knochen eingestochen, worüber die Substanzen aufgrund der guten Durchblutung der Knochenmarkhöhle verabreicht werden können.">intraossärer</span> (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.</p>
         </section>
 
         <section id="Bandagen">
           <p>Nebenstehende Tabelle zeigt die idealen Bandagen zur Behandlung verschiedener Wundentypen.</p>
 
-          <img src=".\images\wiki\sani\wallpapers\bandagen.png" alt="Übersicht mit Wunden- und Bandagentypen">
-
+          <img src="./images/wiki/sani/wallpapers/bandagen.png" alt="Übersicht mit Wunden- und Bandagentypen" />
         </section>
       </section>
 
       <section id="Gebrauchsgegenstände">
-
         <p>Die folgenden Gegenstände sind zur Mehrfachverwendung geeignet.</p>
 
         <section>
@@ -225,13 +223,12 @@
       <p>Idealerweise sollten Verletzung in Reihenfolge ihres Schweregrades behandelt werden:</p>
       <ol>
         <li><b>Avulsionen</b>: (engl. <i>avulsion</i>) ein Gewebeausriss, etwa der Verlust eines Fingers.</li>
-        <li>...  </li>
-      </ol></section>
+        <li>...</li>
+      </ol>
+    </section>
 
     <section id="Behandlungsroutinen">
-
       <section id="Empfohlene Routinechecks">
-
         <p>In ruhigen Momenten bietet es sich an, die Truppe dazu aufzufordern, individuell folgendes zu prüfen:</p>
         <ul>
           <li><b>Sanitätsmaterial:</b> Sind noch genügend Bandagen vorhanden? Führt jeder ausreichend Tourniquets mit? Wie groß sind die Flüssigkeitsreserven der Truppe?</li>
@@ -243,34 +240,26 @@
       <section id="Stabilisierung">
         <p>Einen Überblick über die wichtigsten Stabiliierungsschritte liefert auch das nachfolgende Flowchart.</p>
 
-        <img src=".\images\wiki\sani\wallpapers\stabilisierung.png" alt="Flowchart Stabilisierung">
-
+        <img src="./images/wiki/sani/wallpapers/stabilisierung.png" alt="Flowchart Stabilisierung" />
       </section>
 
       <section id="Herzinfarkt">
+        <p>Einen groben Überblick über die wichtigesten Behandlungsschritte eines Herzinfarktes gibt das nachfolgende Flowchart.</p>
 
-        <p>Einen groben Überblick über die wichtigesten Behandlungsschritte eines Herzinfarktes gibt das nachfolgende Flowchart.</p> 
-
-        <img src=".\images\wiki\sani\wallpapers\infarkt.png" alt="Flowchart Herzstillstand">
+        <img src="./images/wiki/sani/wallpapers/infarkt.png" alt="Flowchart Herzstillstand" />
       </section>
-      <section id="Hämothorax"></section>
+      <section id="Hämothorax" />
 
-      <section id="Spannungspneumothorax"></section>
+      <section id="Spannungspneumothorax" />
 
       <section id="Transfusionen im Feld">
         <p>Transfusionen von Blut sind im Feld möglich, wenn ein <a href="#Verbrauchsmaterialien">Feldtransfusionsset</a> mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten.</p>
 
-        <section id="Blutgruppenverträglichkeit">
+        <section id="Blutgruppenverträglichkeit" />
 
-        </section>
-
-        <section id="Bei falscher Blutgruppengabe">
-
-        </section>
+        <section id="Bei falscher Blutgruppengabe" />
       </section>
     </section>
-
-    
   </svelte:fragment>
   <svelte:fragment slot="editdate">29.06.2022</svelte:fragment>
 </Wiki>
