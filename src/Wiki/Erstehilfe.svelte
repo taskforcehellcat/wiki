@@ -70,7 +70,7 @@
 
       <section id="Behandeln bewusstloser Patienten">
         <section id="Bergung">
-          <p>Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen. Sie wird also auch nicht von einer Person alleine, sondern im Verband durchgeführt.</p>
+          <p>Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. <em>Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen</em>. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Sie wird also auch nicht von einer Person alleine, sondern im Verband durchgeführt.</p>
         </section>
 
         <section id="Handlungsablauf">
@@ -94,7 +94,7 @@
           </ol>
 
           <p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
-          <img src=".\images\wiki\sani\wallpapers\erste_hilfe_basic.png" alt="Erste Hilfe, grundlegendes Flowchart">
+          <img src=".\images\wiki\sani\wallpapers\erste_hilfe_basic.png" alt="Erste Hilfe, grundlegendes Flowchart" />
         </section>
 
         <section id="Eintreffen des Sanitäters">
