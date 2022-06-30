@@ -94,7 +94,7 @@
           </ol>
 
           <p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
-          <img src=".\images\wiki\sani\wallpapers\erste_hilfe_basic.png" alt="Erste Hilfe, grundlegendes Flowchart" />
+          <img src="./images/wiki/sani/wallpapers/erste_hilfe_basic.png" alt="Erste Hilfe, grundlegendes Flowchart" />
         </section>
 
         <section id="Eintreffen des Sanitäters">
