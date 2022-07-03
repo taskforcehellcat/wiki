@@ -366,5 +366,5 @@
       </table>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">23.06.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">03.07.2022</svelte:fragment>
 </Wiki>
