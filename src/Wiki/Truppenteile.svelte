@@ -9,11 +9,11 @@
     <h1>Truppenteile</h1>
 
     <section id="Einleitung">
-      <p>Innerhalb unserer Einheit gibt es klare Festlegungen von <span use:tooltip data-tooltip="Die Anzahl von Soldaten">Truppenteilen</span>. Diese sind hilfreich, um zum Beispiel schnell und effizient über eigene oder feindliche Kräfte zu informieren. Sie werden auf dieser Seite näher erläutert.</p>
+      <p>Innerhalb unserer Einheit gibt es klare Festlegungen von <span use:tooltip data-tooltip="die Anzahl von Soldaten">Truppenteilen</span>. Diese sind hilfreich, um zum Beispiel schnell und effizient über eigene oder feindliche Kräfte zu informieren. Sie werden auf dieser Seite näher erläutert.</p>
     </section>
 
     <section id="Buddyteam">
-      <p>Das Buddyteam ist die kleinste taktische Einheit. Es setzt sich aus <b>zwei Soldaten</b> zusammen, die sich gegenseitig unterstützen und Aufträge absolvieren. Soldaten im Feld werden immer <i>mindestens</i> in der Form des Buddyteams agieren. Das bringt mehrere Vorteile mit sich: Falls einer der beiden Soldaten ausfällt, kann der andere den Ausfall melden und mit der Erstversorgung beginnen. Zusätzlich können sich die beiden Soldaten abwechselnd im Feld decken, falls Freiflächen überquert werden müssen.</p>
+      <p>Das Buddyteam ist die kleinste taktische Einheit. Es setzt sich aus <b>zwei Soldaten</b> zusammen, die sich gegenseitig unterstützen und Aufträge erfüllen. Soldaten im Feld werden immer <i>mindestens</i> in der Form des Buddyteams agieren. Das bringt mehrere Vorteile mit sich: Falls einer der beiden Soldaten ausfällt, kann der andere den Ausfall melden und mit der Erstversorgung beginnen. Zusätzlich können sich die beiden Soldaten abwechselnd im Feld decken, falls Freiflächen überquert werden müssen.</p>
     </section>
 
     <section id="Trupp">
