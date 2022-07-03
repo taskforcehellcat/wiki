@@ -156,6 +156,10 @@
           <td><kbd>O</kbd></td>
         </tr>
         <tr>
+          <td>Fernglas</td>
+          <td><kbd>B</kbd></td>
+        </tr>
+        <tr>
           <td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Right Panel Next</span></td>
           <td><kbd>+</kbd></td>
         </tr>
@@ -174,6 +178,22 @@
         <tr>
           <td>Eigeninteraktion (Ace)</td>
           <td><kbd>LSTRG</kbd> + <kbd>LWIN</kbd></td>
+        </tr>
+        <tr>
+          <td>Prim. Funkgerät</td>
+          <td><kbd>CAPS</kbd></td>
+        </tr>
+        <tr>
+          <td>Sekund. Funkgerät</td>
+          <td><kbd>CTRL</kbd> + <kbd>CAPS</kbd></td>
+        </tr>
+        <tr>
+          <td>Redereichweite</td>
+          <td><kbd>TAB</kbd></td>
+        </tr>
+        <tr>
+          <td>Medizinische Übersicht</td>
+          <td><kbd>H</kbd></td>
         </tr>
         <tr>
           <td>Nachtsichtgerät</td>
@@ -196,6 +216,14 @@
           <td><kbd>Q</kbd><kbd>E</kbd></td>
         </tr>
         <tr>
+          <td>Hocken</td>
+          <td><kbd>X</kbd></td>
+        </tr>
+        <tr>
+          <td>Hinlegen</td>
+          <td><kbd>Y</kbd></td>
+        </tr>
+        <tr>
           <td>Sprinten</td>
           <td><kbd>LSHIFT</kbd></td>
         </tr>
@@ -208,12 +236,12 @@
           <td><kbd use:tooltip data-tooltip="Muss festgelegt werden!">User Action Key 1</kbd></td>
         </tr>
         <tr>
-          <td>Fernglas</td>
-          <td><kbd>LALT</kbd></td>
+          <td>Salutieren</td>
+          <td><kbd>#</kbd></td>
         </tr>
         <tr>
-          <td>Fernglas</td>
-          <td><kbd>LALT</kbd></td>
+          <td>Hinsetzen</td>
+          <td><kbd>ä</kbd></td>
         </tr>
       </table>
     </section>
@@ -222,6 +250,58 @@
         <tr>
           <th>Aktion</th>
           <th>Tastenbelegung</th>
+        </tr>
+        <tr>
+          <td>Schießen</td>
+          <td><kbd>LMB</kbd></td>
+        </tr>
+        <tr>
+          <td>Visier nutzen</td>
+          <td><kbd>RMB</kbd></td>
+        </tr>
+        <tr>
+          <td>Visierung wechseln</td>
+          <td><kbd>STRG</kbd> + <kbd>RMB</kbd></td>
+        </tr>
+        <tr>
+          <td>Nachladen</td>
+          <td><kbd>R</kbd></td>
+        </tr>
+        <tr>
+          <td>Feuermodus wechseln</td>
+          <td><kbd>F</kbd></td>
+        </tr>
+        <tr>
+          <td>Waffe sichern</td>
+          <td><kbd>CTRL</kbd> + <kbd>^</kbd></td>
+        </tr>
+        <tr>
+          <td>Magazin prüfen</td>
+          <td><kbd>CTRL</kbd> + <kbd>R</kbd></td>
+        </tr>
+        <tr>
+          <td>Waffe senken</td>
+          <td>2x <kbd>CTRL</kbd></td>
+        </tr>
+        <tr>
+          <td>Primärwaffe wechseln</td>
+          <td><kbd>1</kbd></td>
+        </tr>
+        <tr>
+          <td>Sekundärwaffe wechseln</td>
+          <td><kbd>2</kbd></td>
+        </tr>
+        <tr>
+          <td>Raketenwerfer wechseln</td>
+          <td><kbd>3</kbd></td>
+        </tr>
+        <tr>
+          <td>Waffe auflegen</td>
+          <td><kbd>C</kbd></td>
+        </tr>
+        <tr>
+          <td>Waffe holstern</td>
+          <td><kbd>0</kbd></td>
         </tr>
         <tr>
           <td>Lampe/Laser</td>
@@ -244,12 +324,24 @@
           <td><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></td>
         </tr>
         <tr>
+          <td>Motor an</td>
+          <td><kbd>2</kbd></td>
+        </tr>
+        <tr>
+          <td>Motor aus</td>
+          <td><kbd>1</kbd></td>
+        </tr>
+        <tr>
           <td>Schneller fahren</td>
           <td><kbd>LSHIFT</kbd></td>
         </tr>
         <tr>
           <td>Langsamer fahren</td>
           <td><kbd>LSTRG</kbd></td>
+        </tr>
+        <tr>
+          <td>Handbremse</td>
+          <td><kbd>X</kbd></td>
         </tr>
         <tr>
           <td>Scheinwerfer</td>
@@ -262,6 +354,14 @@
         <tr>
           <td>Aussteigen (Motor an lassen)</td>
           <td>2x <kbd>V</kbd></td>
+        </tr>
+        <tr>
+          <td>Sitz höher</td>
+          <td><kbd>CTRL</kbd> + <kbd>PgUp</kbd></td>
+        </tr>
+        <tr>
+          <td>Sitz tiefer</td>
+          <td><kbd>CTRL</kbd> + <kbd>PgDn</kbd></td>
         </tr>
       </table>
     </section>
