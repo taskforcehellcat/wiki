@@ -12,7 +12,7 @@
     width: 25rem;
     text-align: center;
     font-size: 14pt;
-    color: #061748;
+    color: var(--brandPrimaryTXT);
     position: relative;
     padding-right: 12.5rem;
     position: relative;

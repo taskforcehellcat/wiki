@@ -12,7 +12,7 @@
   }
 
   .nav__list-title {
-    color: #fff;
+    color: var(--brandNeutral);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -28,18 +28,14 @@
 
   #nav__list-bar {
     width: 3px;
-    background-color: #2d3653;
+    background-color: var(--brandSecondaryBG);
+    /* background-color: red; */
     height: 100%;
     border-radius: 0.2rem;
     -webkit-border-radius: 0.2rem;
     -moz-border-radius: 0.2rem;
     -ms-border-radius: 0.2rem;
     -o-border-radius: 0.2rem;
-  }
-
-  #nav__list-bar-thumb {
-    width: 100%;
-    background-color: #94a2cf;
   }
 
   #wiki-nav__list {
@@ -52,13 +48,12 @@
 
   nav {
     height: 100vh;
-    background-color: #101b3b;
+    background-color: var(--brandPrimaryBG);
     display: flex;
-    color: #fff;
+    color: var(--brandSecondaryTXT);
     flex-direction: column;
     padding: 10%;
     gap: 3rem;
-    color: #94a2cf;
     position: sticky;
     z-index: 99;
     top: 0;
@@ -222,7 +217,7 @@
     <div class="nav__list-title">navigation</div>
     <div id="nav__list-wrapper">
       <div id="nav__list-bar">
-        <div id="nav__list-bar-thumb" />
+        <!-- <div id="nav__list-bar-thumb" /> -->
       </div>
 
       <div id="wiki-nav__list">

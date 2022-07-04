@@ -4,18 +4,18 @@
     width: 100%;
     min-height: 100vh;
     height: fit-content;
-    background-color: #101b3b;
+    background-color: var(--brandPrimaryBG);
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #fff;
+    color: var(--brandSecondaryTXT);
     gap: 4rem;
   }
 
   #home__nav__logo {
     font-size: 35pt;
     font-weight: 300;
-    color: #fff;
+    color: var(--brandNeutral);
     font-family: "purista-web", "Segoe UI", sans-serif;
     text-align: center;
     white-space: nowrap;
@@ -32,7 +32,7 @@
   }
 
   #search__searchbar {
-    background-color: #273252;
+    background-color: var(--brandSecondaryBG);
     width: 80rem;
     height: 3rem;
     border-radius: 0.7rem;
@@ -50,14 +50,14 @@
   #search__searchbar input {
     width: 100%;
     height: 24px;
-    color: #fff;
+    color: var(--brandSecondaryTXT);
     font-size: 14pt;
     font-weight: 300;
   }
 
   #search__searchbar .material-icons {
     font-size: 20pt;
-    color: #94a2cf;
+    color: var(--brandSecondaryTXT);
   }
 </style>
 
@@ -99,6 +99,8 @@
     searchResults = updateSearchResults(query);
   };
 </script>
+
+<div id="darkmode toggle" />
 
 <div id="home">
   <div id="home__top">
