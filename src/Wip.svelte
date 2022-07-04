@@ -2,8 +2,6 @@
   #wip-banner {
     width: 100%;
     height: 5rem;
-    background-color: yellow;
-    margin-bottom: 3rem;
     position: relative;
     padding: 0.75rem 1.25rem;
     margin-bottom: 2.5rem;
