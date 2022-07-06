@@ -62,6 +62,7 @@
 </style>
 
 <script lang="ts">
+  import Theme from "./Theme.svelte";
   import { Router, Link, Route } from "svelte-routing";
   import { onMount } from "svelte";
   import Nav from "./Nav.svelte";
@@ -100,7 +101,7 @@
   };
 </script>
 
-<div id="darkmode toggle" />
+<Theme />
 
 <div id="home">
   <div id="home__top">
@@ -138,5 +139,7 @@
       {/if}
     </div>
   </div>
-  <div id="home__nav"><Nav /></div>
+  <div id="home__nav">
+    <Nav />
+  </div>
 </div>
