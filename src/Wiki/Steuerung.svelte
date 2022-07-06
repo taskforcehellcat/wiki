@@ -93,14 +93,14 @@
       kbd.forEach((element) => {
         element.innerHTML = element.innerHTML.replace("WIN", "CMD");
         element.innerHTML = element.innerHTML.replace("ALT", "OPTN");
-        element.innerHTML = element.innerHTML.replace("STRG", "CTRL");
+        element.innerHTML = element.innerHTML.replace("LCTRL", "CTRL");
       });
       currentLayout = "mac";
     } else {
       kbd.forEach((element) => {
         element.innerHTML = element.innerHTML.replace("CMD", "WIN");
         element.innerHTML = element.innerHTML.replace("OPTN", "ALT");
-        element.innerHTML = element.innerHTML.replace("CTRL", "STRG");
+        element.innerHTML = element.innerHTML.replace("CTRL", "LCTRL");
       });
       currentLayout = "win";
     }
@@ -120,7 +120,7 @@
       <label class="switch-button-label" for=""><span class="switch-button-label-span">Windows</span></label>
     </div>
 
-    <!-- Bitte WINDOWS Tasten als Default verwenden. Auch auf deutsche Schreibweise achen: STRG statt CTRL! -->
+    <!-- Bitte WINDOWS Tasten als Default verwenden. Auch auf deutsche Schreibweise achen: LCTRL statt CTRL! -->
     <section id="Allgemein">
       <table>
         <tr>
@@ -177,7 +177,7 @@
         </tr>
         <tr>
           <td>Eigeninteraktion (Ace)</td>
-          <td><kbd>LSTRG</kbd> + <kbd>LWIN</kbd></td>
+          <td><kbd>LLCTRL</kbd> + <kbd>LWIN</kbd></td>
         </tr>
         <tr>
           <td>Prim. Funkgerät</td>
@@ -189,7 +189,7 @@
         </tr>
         <tr>
           <td>Redereichweite</td>
-          <td><kbd>TAB</kbd></td>
+          <td><kbd>TAB</kbd> + <kbd>SCROLL</kbd></td>
         </tr>
         <tr>
           <td>Medizinische Übersicht</td>
@@ -261,7 +261,7 @@
         </tr>
         <tr>
           <td>Visierung wechseln</td>
-          <td><kbd>STRG</kbd> + <kbd>RMB</kbd></td>
+          <td><kbd>LCTRL</kbd> + <kbd>RMB</kbd></td>
         </tr>
         <tr>
           <td>Nachladen</td>
@@ -282,6 +282,14 @@
         <tr>
           <td>Waffe senken</td>
           <td>2x <kbd>CTRL</kbd></td>
+        </tr>
+        <tr>
+          <td>High Ready</td>
+          <td><kbd>T</kbd></td>
+        </tr>
+        <tr>
+          <td>Low Ready</td>
+          <td><kbd>LSHIFT</kbd> + <kbd>T</kbd></td>
         </tr>
         <tr>
           <td>Primärwaffe wechseln</td>
@@ -309,7 +317,7 @@
         </tr>
         <tr>
           <td>Lampe/Laser wechseln</td>
-          <td><kbd>LSTRG</kbd> + <kbd>L</kbd></td>
+          <td><kbd>LCTRL</kbd> + <kbd>L</kbd></td>
         </tr>
       </table>
     </section>
@@ -337,7 +345,7 @@
         </tr>
         <tr>
           <td>Langsamer fahren</td>
-          <td><kbd>LSTRG</kbd></td>
+          <td><kbd>LCTRL</kbd></td>
         </tr>
         <tr>
           <td>Handbremse</td>
@@ -366,5 +374,5 @@
       </table>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">03.07.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">07.07.2022</svelte:fragment>
 </Wiki>
