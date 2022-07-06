@@ -28,10 +28,10 @@
     <section id="Melden">
       <p>Der Patientenstatus wird mit einer der folgenden Kategorien angegeben:</p>
       <ul>
-        <li><b>Kat. Grün:</b> der Patient ist vollkommen einsatzbereit</li>
-        <li><b>Kat. Gelb:</b> der Patient ist verwundet, aber bei Bewusstsein</li>
-        <li><b>Kat. Rot:</b> der Patient ist schwer verwundet oder bewusstlos</li>
-        <li><b>Kat. Schwarz:</b> der Patient ist nicht verstorben</li>
+        <li><b>Kat. Grün:</b> der Patient ist vollkommen einsatzbereit.</li>
+        <li><b>Kat. Gelb:</b> der Patient ist verwundet, aber bei Bewusstsein.</li>
+        <li><b>Kat. Rot:</b> der Patient ist schwer verwundet oder bewusstlos.</li>
+        <li><b>Kat. Schwarz:</b> der Patient ist verstorben.</li>
       </ul>
 
       <div use:exampleBox>

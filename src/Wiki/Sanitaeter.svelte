@@ -214,17 +214,24 @@
           <li>Kat. Rot <b>Bravo</b>: Der Patient schwebt in akuter Lebensgefahr. Dieser Zustand ist charakterisiert durch Vitalparameter im problematischen Bereich, etwa ein fehlender Puls.</li>
         </ol>
         <li><b>Kat. Blau</b>: Eine Sonderkategorie, mit der bezeichnet wird, dass der Patient wahrscheinlich verloren ist.</li>
-        <div use:exampleBox><p>F"allt ein Truppenteil an einer Stelle im Feld aus, an der es nur unter nicht tragbaren Risiko geborgen werden kann, oder sind die Verletzungen so schwerwiegend, dass die Behandlung aus Sicht der Triage verantwortungslos wäre, fällt dies in die Kategorie Blau.</p></div>
+        <div use:exampleBox><p>Fällt ein Truppenteil an einer Stelle im Feld aus, an der es nur unter nicht tragbaren Risiko geborgen werden kann, oder sind die Verletzungen so schwerwiegend, dass die Behandlung aus Sicht der Triage verantwortungslos wäre, fällt dies in die Kategorie Blau.</p></div>
         <li><b>Kat. Schwarz</b>: <span use:tooltip data-tooltip="der eingetretene Tod">Exitus letalis</span>.</li>
       </ol>
     </section>
 
-    <section id="Verwundungen">
+    <section id="Verwundungen und Bandagen">
       <p>Idealerweise sollten Verletzung in Reihenfolge ihres Schweregrades behandelt werden:</p>
       <ol>
-        <li><b>Avulsionen</b>: (engl. <i>avulsion</i>) ein Gewebeausriss, etwa der Verlust eines Fingers.</li>
-        <li>...</li>
+        <li><b>Avulsionen</b>: (engl. <i>avulsion</i>) ein Gewebeausriss, etwa der Verlust eines Fingers. <br><b>Starker Blutverlust, schwere Schmerzen</b>.</li>
+        <li><b>Splitterwirkung</b>: (engl. <i>velocity wound</i>) Verletzung durch Objekte mit hoher Geschwindigkeit, etwa Schrapnelln, Projektile, Splitter u.Ä. <br><b>Moderater Blutverlust, schwere Schmerzen</b>.</li>
+        <li><b>Platzwunde</b>: (engl. <i>laceration</i>) Aufreißen der Haut durch Gewalteinwirkung eines stumpfen oder kantigen Gegenstandes. <br><b>Moderater Blutverlust, leichte Schmerzen</b>.</li>
+        <li><b>Schnittwunde</b>: (engl. <i>cut wound</i>) Aufreißen der Haut durch Gewalteinwirkung eines scharfen Gegenstandes. <br><b>Moderater Blutverlust, leichte Schmerzen</b>.</li>
+        <li><b>Punktion</b>: (engl. <i>puncture</i>) Stichverletzung. <br><b>Leichter Blutverlust, leichte Schmerzen</b>.</li>
+        <li><b>Quetschwunde</b>: (engl. <i>crush wound</i>) Verletzung durch übermäßige Kompression des Gewebes. <br><b>Sehr leichter Blutverlust, leichte Schmerzen</b>.</li>
+        <li><b>Schürfwunde</b>: (engl. <i>abrasion</i>) Abrieb der oberen Hautschicht. <br><b>Sehr leichter Blutverlust, leichte Schmerzen</b>.</li>
+        <li><b>Prellung</b>: (engl. <i>contussion</i>) Verletzungen durch Gewalteinwirkung von außen ohne äußerliche Schädigung. <br><b>Kein Blutverlust, kaum Schmerzen</b>.</li>
       </ol>
+      <p>Die Wahl der idealen Bandage ist etwas kompliziert, unter <a href="#Bandagen">Bandagen</a> findet sich eine vereinfachte Tabelle mit Empfehlungen. Im Allgemeinen gilt, dass eine Elastische Bandage am schnellsten, aber unsichersten verschließt. Wenn die Wunde also zeitnah genäht werden kann, sind elastische Bandagen eine gute Wahl. Muss hingegen die Wunde möglichst lange von selbst verschlossen bleiben, empfiehlt sich QuikClot und ein Mullverband.</p>
     </section>
 
     <section id="Behandlungsroutinen">
@@ -255,11 +262,29 @@
       <section id="Transfusionen im Feld">
         <p>Transfusionen von Blut sind im Feld möglich, wenn ein <a href="#Verbrauchsmaterialien">Feldtransfusionsset</a> mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten.</p>
 
-        <section id="Blutgruppenverträglichkeit" />
 
-        <section id="Bei falscher Blutgruppengabe" />
+        <section id="Blutgruppenverträglichkeit">
+          <p>Man kann sich merken, dass dabei die Spenderblutgruppe gewissermaßen in der des Empfängers „enthalten“ sein muss (dabei steckt „-“ gewissermaßen in  „+“). Möchte man herausfinden, ob ein Patient eine bestimmte Blutgruppe empfangen kann, testet man also, ob das Spenderblut in seine Blutgruppe „hineinpasst“.</p>
+        
+          <div use:exampleBox>
+            <p>A- steckt zum Beispiel in diesem Sinne in AB+, A+ oder auch AB-, diese Blutgruppen können also A- empfangen. Es ist allerdings nicht enthalten in 0+, 0-, B+, etc. Diese Gruppen können also kein A- empfangen.</p>
+            <p>AB+ kann beispielsweise jede Blutgruppe empfangen, 0- hingegen nur 0-.</p>
+          </div>
+
+          <p>Eine vollständige Übersicht liefert auch die nachfolgende Tabelle. Am besten sucht man sich selbst einige Paare aus und testet anhand der Tabelle das eben beschriebene Muster.</p>
+
+          <img src="./images/Wiki/Sani/blutgruppen.png" alt="Tabelle Blutgruppenverträglichkeiten" />
+
+          <p>Eine ähnliche Tabelle kann auch ingame als Item mitgeführt und benutzt werden. </p>
+          
+        </section>
+
+        <section id="Bei falscher Blutgruppengabe">
+          <p>Dass die falsche Blutgruppe verabreicht worden ist, erkennt man in der Regel an einer rapide fallenden Herzrate. Das Klumpen der Blutkörperchen kann vermindert werden, indem Schmerztabletten in großer Anzahl verabreicht werden. Die Infusion muss natürlich sofort abgebrochen werden.</p>
+        </section>
+
       </section>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">29.06.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">06.07.2022</svelte:fragment>
 </Wiki>
