@@ -593,7 +593,7 @@ svg .struktur_icon:hover {
   left: 0;
   right: 0;
   width: 100%;
-  border-bottom: 2px dotted #101b3b;
+  border-bottom: 2px dotted var(--brandPrimaryTXT);
   pointer-events: none;
 }
 
@@ -636,7 +636,7 @@ kbd[data-tooltip]::after {
   color: var(--brandPrimaryTXT);
   border: 1px solid #c4c4c4;
   box-shadow: 1px 1px 1px #ddd;
-  background: white;
+  background: var(--brandPrimaryBG);
   padding: 4px;
   position: absolute;
   max-width: 50rem;
