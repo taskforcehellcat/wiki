@@ -14,6 +14,7 @@
     border-top-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
+    background-color: var(--brandSecondaryBG);
   }
 
   #theme__picker {
@@ -21,7 +22,7 @@
     height: fit-content;
     border-bottom-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
-    background-color: gray;
+    background-color: rgb(172, 172, 172);
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
