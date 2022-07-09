@@ -39,6 +39,7 @@
     height: 4.5rem;
     background: #101b3b;
     border-radius: 50%;
+    cursor: pointer;
   }
 
   #theme__picker label[for="theme_light"] {
@@ -51,27 +52,23 @@
 </style>
 
 <script lang="ts">
-
-
   let themeButton;
   let themePicker;
   let themesOpen = false;
-  
+
   let theme = localStorage.getItem("USERTHEME");
   let useSysTheme = false;
 
   if (theme === null) {
     themePickerUsed("auto");
   }
-  
-  window.matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", (e) => {
-      if (useSysTheme) {
-        theme = e.matches ? "dark" : "light";
-        setColorScheme(theme);
-      }
-      
-    });
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+    if (useSysTheme) {
+      theme = e.matches ? "dark" : "light";
+      setColorScheme(theme);
+    }
+  });
 
   function toggleThemeMenu() {
     if (themesOpen) {
@@ -91,7 +88,6 @@
     let rootStyle = document.documentElement.style;
 
     if (setheme === "light") {
-
       rootStyle.setProperty("--brandPrimaryBG", "#101b3b");
       rootStyle.setProperty("--brandSecondaryBG", "#273252");
       rootStyle.setProperty("--brandTertiaryBG", "#11182e");
@@ -104,10 +100,8 @@
       rootStyle.setProperty("--exampleBoxBG", "#e7e9eb");
       rootStyle.setProperty("--exampleBoxBorder", "#646464");
       rootStyle.setProperty("--hyperLink", "#436adf");
-      rootStyle.setProperty("--errorTXT", "#c1a03e");      
-
+      rootStyle.setProperty("--errorTXT", "#c1a03e");
     } else if (setheme === "dark") {
-
       rootStyle.setProperty("--brandPrimaryBG", "#0a0a0a");
       rootStyle.setProperty("--brandSecondaryBG", "#1b1b1b");
       rootStyle.setProperty("--brandTertiaryBG", "#050505");
@@ -121,23 +115,20 @@
       rootStyle.setProperty("--exampleBoxBorder", "#646464");
       rootStyle.setProperty("--hyperLink", "red");
       rootStyle.setProperty("--errorTXT", "#9d884a");
-
-    } 
+    }
   }
 
   function themePickerUsed(whichOne: string) {
-
     if (whichOne === "auto") {
       useSysTheme = true;
       localStorage.removeItem("USERTHEME");
-      theme = (window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+      theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
       setColorScheme(theme);
     } else {
       useSysTheme = false;
       localStorage.setItem("USERTHEME", whichOne);
       setColorScheme(whichOne);
     }
-
   }
 
   setColorScheme(theme);
