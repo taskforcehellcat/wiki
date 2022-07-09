@@ -161,7 +161,7 @@
         </tr>
         <tr>
           <td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Right Panel Next</span></td>
-          <td><kbd>+</kbd></td>
+          <td><kbd> + </kbd></td>
         </tr>
         <tr>
           <td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Left Panel Next</span></td>
@@ -348,6 +348,14 @@
           <td><kbd>LCTRL</kbd></td>
         </tr>
         <tr>
+          <td>Speed Limiter ein/aus</td>
+          <td><kbd>DEL</kbd></td>
+        </tr>
+        <tr>
+          <td>Höchstgeschwindigkeit einstellen</td>
+          <td><kbd>LCTRL</kbd> + <kbd>SCROLL</kbd></td>
+        </tr>
+        <tr>
           <td>Handbremse</td>
           <td><kbd>X</kbd></td>
         </tr>
@@ -374,5 +382,5 @@
       </table>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">07.07.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">09.07.2022</svelte:fragment>
 </Wiki>
