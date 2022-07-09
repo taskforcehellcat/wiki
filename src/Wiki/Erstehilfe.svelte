@@ -38,6 +38,8 @@
         <p>Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:</p>
         <p><i>„Linke Flanke ein Ausfall, Kat. Rot - kommen.“</i></p>
       </div>
+
+      <p>Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das <a href="../sanitaeter#Meldesystem" target="_blank">hier</a> nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.</p>
     </section>
 
     <section id="Hilfeleistung">
@@ -103,5 +105,5 @@
       </section>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">23.06.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">09.07.2022</svelte:fragment>
 </Wiki>

@@ -3,4 +3,6 @@
 /.vscode/settings.json
 *.code-workspace
 
+*.bat
+
 .DS_Store

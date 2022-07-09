@@ -11,6 +11,41 @@
 
     <p><i>„Air goes in and out, blood goes round and round. Any deviation from that is a problem.“</i></p>
 
+
+    <section id="Zum Aufbau dieser Seite">
+      <p>Die Arbeit des Sanitätsdienstes umfasst viele Aufgaben und erfordert ein recht breites Wissen. Vom Inhalt dieser Seite sollte man sich daher nicht erschlagen lassen.</p>
+      <p>Die ersten beiden Abschnitte widmen sich der Stabilisierung von Kreislauf und Atmung. Ist die nämlich gelungen, steht es um einen Patienten meist schon gar nicht schlecht. Diese Abschnitte sind dabei in keiner speziellen Reihenfolge. Primäre Aufgabe der Blutzirkulation ist für unsere Zwecke der Transport von Sauerstoff im Körper. Ob Blutzirkulation ohne Atmung oder Atmung ohne Blutzirkulation, eines alleine genügt nicht. Bei der Behandlung muss man also beständig alle Vitalfunktionen im Blick behalten und sich der Situation des Patenten anpassen.</p>
+      <p>Eine der ersten Dinge, die man als Sanitäter daher tun sollte, ist es, ein Pulsoximeter anzubringen. Dieses ermöglicht es einem, Puls und Sauerstoffsättigung des Blutes zu beobachten und schnell zu registrieren, welcher Bereich gerade die größere Aufmerksamkeit bedarf.</p>
+      <p><a href="#Grundausrüstung">Weiter unten</a> sind alle Ausrüstungsgegenstände einzeln aufgelistet und erklärt.</p>
+      <p>Eine kompakte Zusammenfassung aller wichtigen Behandlungsschritte findet sich auch <a href="../">hier (DEAD LINK)</a>.</p>
+    </section>
+
+    <section id="Absichern der Atmung">
+      <p>Die Atmung prüft man grunsätzlich am Kopf (genaueres zum Gebrauch des Medical Menus auch <a href="../erstehilfe#Lesen des Medical Menu" target="_blank">hier</a>). Eine der ersten Maßnahmen ist es, den Patienten in die stabile Seitenlage zu bringen (<i>establish recovery position</i>). Die Atemwege können teilweise oder vollständig verschlossen sein (<i>obstructed/occluded</i>). Ob dies der Fall ist, findet man mit der Option <i>check airways</i> heraus. Ist dies der Fall, verwendet man idealerweise den Accuvac, um die Atemwege frei zu machen und anschließend einen Larynx- oder Guedel-Tubus (<i>King LT / Guedel tube</i>). Sind diese nicht verfügbar, kann man die Atemwege mit geringerer Erfolgsaussicht auch händisch freimachen (<i>head turning</i>) und anschließend den Kopf überstrecken (<i>hyperextend head</i>). Ohne einen Tubus, der die Luftröhre offenhält, kann der Kopf allerdings verrutschen und diese Maßnahme muss eventuell häufiger durchgeführt werden.</p>
+      <p>Wenn keine weiteren Komplikationen auftreten, sollten diese Schritte ausreichen, um die Atemwege zu stabilisieren.</p>
+
+      <section id="Pneumothorax und Hämothorax">
+        <p>Zu einem Pneumothorax (dt. „Luftbrust“) kommt es, wenn Luft durch eine Verletzung aus der Lunge entweicht und in den Zwischenraum von Lunge und Brustkorb gelangt. Diese Luft drückt dann von außen auf den Lungenflügel und hindert ihn daran, sich auszudehnen. Die Atmung ist dann sehr erschwert. Kann diese Luft gar nicht mehr entweichen, kommt es zu einem Spannungspneumothorax. Die Lunge kann sich dann gar nicht merh</p>
+        <p>Bei einem Hämothorax kommt es zu Blutansammlungen im Brustkorb.</p>
+
+        <section id="Diagnose">
+          <p>Ein Stethoskop erlaubt es, den Brustkorb abzuhorchen (<i>auscultate lung sounds</i>). Anhand der Atemnebengeräusche (Rasseln oder Gurgeln) kann man abschätzen, ob ein Pneumo- oder Hämothorax vorliegt.</p>
+        </section>
+        
+        <section id="Behandlung">
+          <p>Zur Behandlung von Pneumo- und Hämothoraxen benötigt man Thoraxverschlusspflaster (<i>chest seals</i>) sowie eventuell AAT-Kits für Drainagen und Dekompressionen.</p>
+          <p>Bei einem Pneumothorax kann direkt ein Thoraxverschlusspflaster auf die Wunde geklebt werden. Dieses hat ein Ein-Weg-Ventil, welches es Luft und Flüssigkeitsansammlungen gestattet, gegen den Lungendruck aus dem Brustkorb zu entweichen, den Brustkorb aber nach außen versiegelt. Liegt ein Spannungspneumothorax vor, muss <i>davor</i> eventuell eine Thoraxdekompression (<i>needle decompression</i>) durchgeführt werden.</p>
+          <p>Bei einem Hämothorax muss zuvor eine Thoraxdrainage durchgeführt werden, um größere Mengen Flüssigkeit aus dem Lungenraum abzuführen. Dazu führt man eine Pleurapunktion (<i>drain fluid</i>) durch, bei der mit einer Nadel in die <span use:tooltip data-tooltip="der Raum zwischen Lungenflügel und Rippenfell">Pleurahöhle</span> gestochen wird.</p>
+          <p>Die Anwendung des AAT-Kits kann fehlschlagen, man sollte daher nach jeder Behandlung noch einmal die Atemgeräusche abhorchen.</p>
+        </section>
+      </section>
+    </section>
+
+    <section id="Absichern des Kreislaufs">
+      <p>Der erste Schritt der Kreislaufsicherung ist das Stoppen aller Blutungen. Grundsätzlich sind an alle verletzten Extremitäten Tourniquets anzulegen und anschließend Kopf und Torso zu verbinden und zu nähen. Danach sollte der Blutverlust ausgeglichen werden. An Gliedmaßen, an denen ein Tourniquet angelegt ist, kann weder ein Zugang gelegt werden noch Puls oder Blutsauerstoff gemessen werden. Man sollte also ein Körperteil komplett versorgen um über dieses schnell Flüssigkeit und Medikamente anlegen zu können. Ist der Blutverlust bereits enorm hoch und die Zeit dafür fehlt, kann man mit einer FAST IO auch einen Zugang am Torso etablieren. Dann ist es wahrscheinlich angebracht, die Vitalwerte direkt mit dem Defibrillator AED-X aufzunehmen, der ebenfalls am Torso angelegt wird. In jedem Falle ist es sinnvoll, sich zu merken, wo man den Zugang gelegt hat, um später unnötiges Suchen zu vermeiden.</p>
+      <p>Ist der Patient weitgehend stabil, kann man die restlichen Körperteile versorgen und die Tourniquets entfernen.</p>
+    </section>
+
     <section id="Grundausrüstung">
       <section id="Medikamente">
         <section>
@@ -66,11 +101,11 @@
         <p>Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.</p>
         <section>
           <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/surgical_airway_kit.png">AAT-Kit</span></h3>
-          <p>gebraucht zur Behandlung von Hämothoraxen (siehe <a href="#Hämothorax">Behandlung von Hämothoraxen</a>) und Spannungspneumothoraxen (siehe <a href="#Spannungspneumothorax">Behandlung von Spannungsthoraxen</a>).</p>
+          <p>gebraucht zur Behandlung von Hämothoraxen (siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen).</p>
           <h3><span use:tooltip data-tooltip-img="">Field Blood Transfusion Kit</span> (dt. Feldtransfusionsset)</h3>
           <p>erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Dabei muss auf die Kompatibilität der Blutgruppen geachtet werden, siehe dazu <a href="#Blutgruppenverträglichkeit">eine Tabelle von Blutgruppenverträglichkeiten</a>.</p>
           <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/chest_seal.png">Chest Seal</span> (dt. Thoraxverschlusspflaster)</h3>
-          <p>ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe auch <a href="#Hämothorax">Behandlung von Hämothoraxen</a> und <a href="#Spannungspneumothorax">Behandlung von Spannungsthoraxen</a>.</p>
+          <p>ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen.</p>
           <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/16g.png">16g IV</span></h3>
           <p>eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ" target="_blank">in diesem Video</a> anschaulich gezeigt wird.</p>
           <h3><span use:tooltip data-tooltip-img="./images/wiki/sani/fast_io.png">FAST IO</span></h3>
@@ -140,7 +175,7 @@
           </tr>
           <tr>
             <td><b>Minimale stabile Sauerstoffsättigung:</b></td>
-            <td>85 %</td>
+            <td>90 %</td>
           </tr>
           <tr>
             <td><b>Minimale stabile Herzrate:</b></td>
@@ -245,7 +280,7 @@
       </section>
 
       <section id="Stabilisierung">
-        <p>Einen Überblick über die wichtigsten Stabiliierungsschritte liefert auch das nachfolgende Flowchart.</p>
+        <p>Einen Überblick über die wichtigsten Stabilisierungsschritte liefert auch das nachfolgende Flowchart.</p>
 
         <img src="./images/wiki/sani/wallpapers/stabilisierung.png" alt="Flowchart Stabilisierung" />
       </section>
@@ -255,16 +290,9 @@
 
         <img src="./images/wiki/sani/wallpapers/infarkt.png" alt="Flowchart Herzstillstand" />
       </section>
-      <section id="Hämothorax">
-        <p>folgt</p>
-      </section>
-
-      <section id="Spannungspneumothorax">
-        <p>folgt</p>
-      </section>
 
       <section id="Transfusionen im Feld">
-        <p>Transfusionen von Blut sind im Feld möglich, wenn ein <a href="#Verbrauchsmaterialien">Feldtransfusionsset</a> mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten.</p>
+        <p>Standardmäßig führen Sanitäter Blut der Blutgruppe 0- oder Plasma/Kochsalzlösung mit, welches also immer verträglich ist. Genügen diese Reserven nicht, kann im Feld Blut abgenommen werden, wenn ein <a href="#Verbrauchsmaterialien">Feldtransfusionsset</a> mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten. Die Blutgruppe eines Kameraden steht auf seiner Marke (Kopf, <i>check dogtag</i>).</p>
 
 
         <section id="Blutgruppenverträglichkeit">
@@ -295,6 +323,7 @@
         <li>Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, <kbd>0</kbd> und <kbd>H</kbd> auf Maustasten zu legen, oder ähnliches.</li>
         <li><kbd>G</kbd> liegt auf der Tastatur neben <kbd>H</kbd>. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen zum Beispiel <kbd>SHIFT</kbd>+<kbd>G</kbd> zu verwenden.</li>
         <li>Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.</li>
+        <li>Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.</li>
       </ul>
     </section>
   </svelte:fragment>
