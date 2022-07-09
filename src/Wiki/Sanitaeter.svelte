@@ -255,9 +255,13 @@
 
         <img src="./images/wiki/sani/wallpapers/infarkt.png" alt="Flowchart Herzstillstand" />
       </section>
-      <section id="Hämothorax" />
+      <section id="Hämothorax">
+        <p>folgt</p>
+      </section>
 
-      <section id="Spannungspneumothorax" />
+      <section id="Spannungspneumothorax">
+        <p>folgt</p>
+      </section>
 
       <section id="Transfusionen im Feld">
         <p>Transfusionen von Blut sind im Feld möglich, wenn ein <a href="#Verbrauchsmaterialien">Feldtransfusionsset</a> mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten.</p>
@@ -285,6 +289,14 @@
 
       </section>
     </section>
+
+    <section id="Nützliche Hinweise">
+      <ul>
+        <li>Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, <kbd>0</kbd> und <kbd>H</kbd> auf Maustasten zu legen, oder ähnliches.</li>
+        <li><kbd>G</kbd> liegt auf der Tastatur neben <kbd>H</kbd>. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen zum Beispiel <kbd>SHIFT</kbd>+<kbd>G</kbd> zu verwenden.</li>
+        <li>Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.</li>
+      </ul>
+    </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">06.07.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">09.07.2022</svelte:fragment>
 </Wiki>
