@@ -30,9 +30,9 @@
     padding-block: 2rem;
   }
 
-  /*#theme__picker input {
+  #theme__picker input {
     display: none;
-  }*/
+  }
 
   #theme__picker label {
     width: 4.5rem;
@@ -127,18 +127,15 @@
 
   function themePickerUsed(whichOne: string) {
 
-    console.debug(`Theme picker ${whichOne}`)
     if (whichOne === "auto") {
       useSysTheme = true;
       localStorage.removeItem("USERTHEME");
       theme = (window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
       setColorScheme(theme);
-      console.debug("AUTO MODE!");
     } else {
       useSysTheme = false;
       localStorage.setItem("USERTHEME", whichOne);
       setColorScheme(whichOne);
-      console.debug("MANUAL MODE!");
     }
 
   }
