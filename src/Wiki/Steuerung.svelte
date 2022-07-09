@@ -85,6 +85,8 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
   import { exampleBox, tooltip } from "../wikitools";
+  import { Link } from "svelte-routing";
+
   let currentLayout = "win";
   function kbdToggle() {
     let kbd = document.querySelectorAll("kbd");
@@ -112,7 +114,7 @@
     <article id="steuerung" />
     <h1>Steuerung</h1>
     <section id="Erklärung">
-      <p>Hier findet ihr die Standard Steuerung für ArmA 3. Je nach Benutzereinstellungen kann sie allerdings variieren.<br />Spieler mit Mac-Tastaturen können unten das Layout wechseln.</p>
+      <p>Hier findet ihr die Standard Steuerung für ArmA 3. Je nach Benutzereinstellungen kann sie allerdings variieren.<br />Spieler mit Mac-Tastaturen können unten das Layout wechseln. Am Ende dieser Übersicht findet sich eine Liste mit weiterführenden Artikeln.</p>
     </section>
 
     <div class="switch-button" on:click={kbdToggle}>
@@ -380,6 +382,12 @@
           <td><kbd>CTRL</kbd> + <kbd>PgDn</kbd></td>
         </tr>
       </table>
+    </section>
+
+    <section id="Weiterführende Informationen">
+      <ul>
+        <li><a href="funketikette#Steuerung">Bedienung und Einstellen von Funkgeräten</a></li>
+      </ul>
     </section>
   </svelte:fragment>
   <svelte:fragment slot="editdate">09.07.2022</svelte:fragment>

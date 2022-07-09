@@ -1,5 +1,6 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
+  import { tooltip } from "../wikitools";
 </script>
 
 <Wiki>
@@ -10,6 +11,35 @@
     <section id="Einleitung">
       <p>Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollten allen Soldaten bekannt sein.</p>
       <p>Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppführern, Sanitätern oder Aufklärern. Dazu finden sich Einträge mit weiterführenden Informationen auf den jeweiligen Unterseiten.</p>
+    </section>
+
+    <section id="Steuerung">
+        <p>Über die ACE Self-Interaction (<kbd>LCTRL</kbd>+<kbd>WIN</kbd>/<kbd>LCTRL</kbd>+<kbd>LCMD</kbd>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe <a href="#Funkgerät einstellen">Funkgerät einstellen</a>). Die Unterpunkte werden im Folgenden erklärt.</p>
+
+        <img src="./images/wiki/funk/funk_aceself.png" alt="Radioauswahl in der ACE Self Interaction">
+
+      <section id="Funkgerät einstellen">
+
+        <section id="SEM 52 SL">
+          <p>Infanterie ist zumeist mit dem Funkgerät <span use:tooltip data-tooltip="Akronym für: Sender/Empfänger, mobil (Synthesizer mit LCD)"><i>SEM 52 SL</i></span> ausgerüstet, deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehknöpfen und einer Anzeige. Letztere zeigt die aktuell genutze Frequenz in kHz (Kilohertz), standardmäßig sind 46 MHz eingestellt. Die Drehknöpfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt.</p>
+          <p>Der linke Drehknopf dient neben dem Einschalten dem Auswählen von Voreinstellungen. Die zwölf standardmäßigen Voreinstellungen bezeichnen wir auch als Kanäle. Die Einstellungen P und H dienen der Programmierung des Funkgeräts, was im Allgemeinen aber nicht notwendig werden sollte.</p>
+          <p>Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man ohne dafür ohne das Funkgerät öffnen zu müssen die Taste <kbd>CAPS LOCK</kbd>).</p>
+          
+          <img src="./images/wiki/funk/sem52sl.png" alt="Oberfläche der SEM 52 SL">
+
+          <p>Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkgeräten finden sich auch in englischer Sprache im <a href="https://acre2.idi-systems.com/wiki/radios/overview" target="_blank">ACRE Wiki</a>.</p>
+        </section>
+
+        <section id="AN/PRC 343">
+          <p><a href="https://acre2.idi-systems.com/wiki/radios/an-prc-343" target="_blank">ACRE Wiki Eintrag zum AN/PRC 343</a> in englischer Sprache.</p>
+        </section>
+      </section>
+
+      <section id="Weitere Einstellungen">
+        <p>Je nach Präferenz kann man ein Funkgerät auf das rechte, linke oder beide Ohren legen. Besonders, wenn man mehrere Funkgeräte gleichzeitig benutzt kann dies sinnvoll sein, um unterscheiden zu können, von welchem Funkgerät gerade Funk eingeht.</p>
+        <p>Die Option „share“ ermöglicht es, mit einer anderen Person das Funkgerät zu teilen, solange sie in der Nähe ist, ohne dafür das Funkgerät aus dem Inventar geben zu müssen.</p>
+        <p>Führt man mehrere Funkgeräte, gibt es zudem die Option „PPT“. Mit dem Funkgerät PPT1 funkt man mit <kbd>CAPS LOCK</kbd>, über PPT2 mit <kbd>SHIFT</kbd>+<kbd>CAPS LOCK</kbd> und über PPT3 mit <kbd>ALT</kbd>+<kbd>CAPS LOCK</kbd>.</p>
+      </section>
     </section>
 
     <section id="Vor dem Funken">
@@ -58,5 +88,5 @@
       <p>Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.</p>
     </section>
   </svelte:fragment>
-  <svelte:fragment slot="editdate">16.04.2022</svelte:fragment>
+  <svelte:fragment slot="editdate">09.07.2022</svelte:fragment>
 </Wiki>
