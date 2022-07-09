@@ -122,7 +122,7 @@
       <label class="switch-button-label" for=""><span class="switch-button-label-span">Windows</span></label>
     </div>
 
-    <!-- Bitte WINDOWS Tasten als Default verwenden. Auch auf deutsche Schreibweise achen: LCTRL statt CTRL! -->
+    <!-- Bitte WINDOWS Tasten als Default verwenden. -->
     <section id="Allgemein">
       <table>
         <tr>
@@ -179,7 +179,7 @@
         </tr>
         <tr>
           <td>Eigeninteraktion (Ace)</td>
-          <td><kbd>LLCTRL</kbd> + <kbd>LWIN</kbd></td>
+          <td><kbd>LCTRL</kbd> + <kbd>LWIN</kbd></td>
         </tr>
         <tr>
           <td>Prim. Funkgerät</td>
