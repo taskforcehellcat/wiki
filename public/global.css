@@ -6,6 +6,7 @@
   font-variant-ligatures: none;
 }
 
+/*
 :root {
   --brandPrimaryBG: #101b3b;
   --brandSecondaryBG: #273252;
@@ -39,6 +40,7 @@
     --errorTXT: #9d884a;
   }
 }
+*/
 
 html {
   font-size: 62.5%;
