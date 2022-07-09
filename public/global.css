@@ -213,6 +213,7 @@ body {
 
 .material-icons {
   vertical-align: text-bottom;
+  color: inherit;
 }
 
 input {
