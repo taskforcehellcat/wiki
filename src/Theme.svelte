@@ -138,11 +138,11 @@
 <div id="theme">
   <button id="theme__button" on:click={toggleThemeMenu} bind:this={themeButton}><span class="material-icons">format_paint</span></button>
   <div id="theme__picker" bind:this={themePicker}>
-    <input type="radio" id="theme_light" name="theme" value={"light"} bind:group={theme} on:click={() => themePickerUsed("light")} />
+    <input type="radio" id="theme_light" name="theme" value={"light"} bind:group={theme} on:click={() => themePickerUsed("light")} on:click={toggleThemeMenu} />
     <label for="theme_light" />
-    <input type="radio" id="theme_dark" name="theme" value={"dark"} bind:group={theme} on:click={() => themePickerUsed("dark")} />
+    <input type="radio" id="theme_dark" name="theme" value={"dark"} bind:group={theme} on:click={() => themePickerUsed("dark")} on:click={toggleThemeMenu} />
     <label for="theme_dark" />
-    <input type="radio" id="theme_auto" name="theme" value={"auto"} bind:group={theme} on:click={() => themePickerUsed("auto")} />
+    <input type="radio" id="theme_auto" name="theme" value={"auto"} bind:group={theme} on:click={() => themePickerUsed("auto")} on:click={toggleThemeMenu} />
     <label for="theme_auto" />
   </div>
 </div>
