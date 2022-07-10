@@ -41,6 +41,10 @@
     background: #101b3b;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
   }
 
   #theme__picker label[for="theme_light"] {
@@ -143,6 +147,6 @@
     <input type="radio" id="theme_dark" name="theme" value={"dark"} bind:group={theme} on:click={() => themePickerUsed("dark")} on:click={toggleThemeMenu} />
     <label for="theme_dark" />
     <input type="radio" id="theme_auto" name="theme" value={"auto"} bind:group={theme} on:click={() => themePickerUsed("auto")} on:click={toggleThemeMenu} />
-    <label for="theme_auto" />
+    <label for="theme_auto">AUTO</label>
   </div>
 </div>
