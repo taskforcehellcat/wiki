@@ -104,9 +104,9 @@
     // function that generates a correct anchor link for subsections
     let pos = title.indexOf(" » ");
     if (pos === -1) {
-      return("../" + link + "#" + title);
+      return("../" + link.toLowerCase() + "#" + title);
     } else {
-      return("../" + link + "#" + title.substring(pos+3));
+      return("../" + link.toLowerCase() + "#" + title.substring(pos+3));
     }
   }
 </script>
@@ -132,7 +132,7 @@
       {#if showResults}
         {#if searchResults.length !== 0}
           {#each searchResults as page}
-            <p><span class="search__hits">{page.hits}</span> Treffer auf "<Link class="search_pagetitle" to={page.secResults[0].link}>{page.title}</Link>" gefunden:</p>
+            <p><span class="search__hits">{page.hits}</span> Treffer auf "<Link class="search_pagetitle" to={page.secResults[0].link.toLowerCase()}>{page.title}</Link>" gefunden:</p>
             <ol>
               <Router>
                 {#each page.secResults as sechit}
