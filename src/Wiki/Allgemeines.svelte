@@ -1,9 +1,7 @@
 <script lang="ts">
   import Wiki from "../Wiki.svelte";
-  import Befehlsausgabe from "./Befehlsausgabe.svelte";
   import { tooltip } from "../wikitools";
   import { Router, Link } from "svelte-routing";
-  import Abteilungen from "./Abteilungen.svelte";
 </script>
 
 <Wiki>
@@ -12,11 +10,11 @@
     <h1>Allgemeines</h1>
 
     <section id="Über uns">
-      <section>
-        <h3>Beschreibung</h3>
+      <section id="Beschreibung">
         <p>Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation <a href="https://de.wikipedia.org/wiki/Arma_3" target="_blank">ArmA 3</a> spielt. Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt. Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden. Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit der Kampagnen zu sorgen.</p>
+      </section>
 
-        <h3>Organisation</h3>
+      <section id="Organisation">
         <p>Die Organisation unserer Einheit findet ausschließlich auf unserem <a href="https://discord.gg/Ap3bEmBgXw" target="_blank">Discord</a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.</p>
       </section>
     </section>
