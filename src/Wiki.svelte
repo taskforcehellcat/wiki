@@ -91,6 +91,9 @@
 
   let anchors = [];
 
+  // --- themes ---
+  import Theme from "./Theme.svelte";
+
   // --- burger menu ---
 
   import { toggleBurgerIcon, toggleBurgerMenu } from "./Burger.svelte";
@@ -239,6 +242,7 @@
 
   <main id="main" bind:this={main}>
     <Wip />
+    <Theme />
     <slot name="content" />
   </main>
   <footer>zuletzt bearbeitet am: <slot name="editdate" /></footer>
