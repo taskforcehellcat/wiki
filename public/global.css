@@ -94,10 +94,15 @@ section:not(section > section) {
   width: 70%;
 }
 
+a > img,
 section > img,
 section > object {
   max-width: 100%;
   object-fit: cover;
+}
+
+a.no-underline {
+  border-bottom: none;
 }
 
 section > img {

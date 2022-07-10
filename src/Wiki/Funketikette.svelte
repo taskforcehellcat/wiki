@@ -66,7 +66,9 @@
         
       <section id="Buchstabieren">
          <p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet.</p>
-        <!-- Hier NATO Alphabet einfühen. Wie macht man Tabellen am besten? -->
+
+         <a href="./images/wiki/funk/alphabet.png" class="no-underline"><img src="./images/wiki/funk/alphabet.png" alt="NATO-Buchstabiertafel"></a>
+
         <p>Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.</p>
       </section>
        
