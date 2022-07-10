@@ -1,4 +1,4 @@
-from os import listdir
+from os import listdir, system
 from os.path import basename
 from json import dump
 #import re # only required for tag removal
@@ -115,6 +115,10 @@ def main():
         output.update({page_name : page_sections})
 
     save_to_JSON(output)
+
+    system("cls")
+    print("searchIndex.json sucessfully updated.")
+    system("pause")
 
     return 0
 
