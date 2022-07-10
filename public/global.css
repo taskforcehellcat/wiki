@@ -636,7 +636,7 @@ kbd[data-tooltip]::after {
   color: var(--brandPrimaryTXT);
   border: 1px solid #c4c4c4;
   box-shadow: 1px 1px 1px #ddd;
-  background: var(--brandPrimaryBG);
+  background: var(--exampleBoxBG);
   padding: 4px;
   position: absolute;
   max-width: 50rem;
