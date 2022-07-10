@@ -99,6 +99,16 @@
 
     searchResults = updateSearchResults(query);
   };
+
+  function generateSectionLink(link:string, title:string) {
+    // function that generates a correct anchor link for subsections
+    let pos = title.indexOf(" » ");
+    if (pos === -1) {
+      return("../" + link + "#" + title);
+    } else {
+      return("../" + link + "#" + title.substring(pos+3));
+    }
+  }
 </script>
 
 <Theme />
@@ -126,7 +136,7 @@
             <ol>
               <Router>
                 {#each page.secResults as sechit}
-                  <li><span class="search__env">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<Link to={"/" + sechit.link + "#" + sechit.title}>{sechit.title}</Link>"</li>
+                  <li><span class="search__env">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<a href={generateSectionLink(sechit.link, sechit.title)}>{sechit.title}</a>"</li>
                 {/each}
               </Router>
             </ol>

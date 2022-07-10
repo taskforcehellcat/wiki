@@ -40,31 +40,47 @@ def parse_page(filename):
 
         page_sections.update({'link':page_link})
 
-        for section in root.find_all('section'):
-
+        for section in root.find_all('section', recursive=False):
             # only index sections that have an id
             if not 'id' in section.attrs:
                 continue
             
-            # string to be appended to for every p tag
+            section_name = section.attrs["id"]
+
             section_text = ''
 
-            for p in section.descendants: 
-                if p.name == 'p':
+            for subsection in section.find_all('section', recursive=False):
+
+                # only index sections that have an id
+                if not 'id' in subsection.attrs:
+                    continue
+                
+                # string to be appended to for every p tag
+                subsection_text = ''
+
+                for p in subsection.descendants: 
+                    if p.name in ['p', 'a', 'section', 'li', 'ul', 'ol', 'kbd']:
+                        if p.text in subsection_text: continue
+                        subsection_text = subsection_text + p.text + ' '
+
+                # remove tags
+                # apparently removal of tags is already handeled by bs4
+
+                '''
+                tags_to_remove = []#'a', 'link', 'Link', 'b', 'i', 'img', 'u', 'br', 'hr', '<strong>', 'em', 'abbr', 'acronym', 'address', 'bdo', 'blockquote', 'cite', 'q', 'code', 'ins', 'del', 'dfn', 'kbd', 'pre', 'samp', 'var', 'area', 'map', 'param', 'object', 'ul', 'ol', 'li', 'dl', 'dt', 'dd', 'noscript', 'audio', 'base']
+
+                
+                for tag in tags_to_remove:
+                    re.sub(r'<'+tag+'[*]>', '', section_text)
+                '''
+
+                page_sections.update({section_name+" » "+subsection.attrs['id']:subsection_text})
+
+            for p in section.children: 
+                if p.name in ['p', 'a', 'li', 'ul', 'ol']:
                     section_text = section_text + p.text + ' '
-
-            # remove tags
-            # apparently removal of tags is already handeled by bs4
-
-            '''
-            tags_to_remove = []#'a', 'link', 'Link', 'b', 'i', 'img', 'u', 'br', 'hr', '<strong>', 'em', 'abbr', 'acronym', 'address', 'bdo', 'blockquote', 'cite', 'q', 'code', 'ins', 'del', 'dfn', 'kbd', 'pre', 'samp', 'var', 'area', 'map', 'param', 'object', 'ul', 'ol', 'li', 'dl', 'dt', 'dd', 'noscript', 'audio', 'base']
-
             
-            for tag in tags_to_remove:
-                re.sub(r'<'+tag+'[*]>', '', section_text)
-            '''
-
-            page_sections.update({section.attrs['id']:section_text})
+            page_sections.update({section_name:section_text})
 
     # get the page title from the first h1 tag
     page_name = root.h1.text
