@@ -392,11 +392,11 @@ input:focus {
 }
 
 .search__hits {
-  color: var(--brandSecondaryTXT);
+  color: var(--brandNeutral);
 }
 
 .search_pagetitle {
-  color: var(--brandSecondaryTXT);
+  color: var(--brandNeutral);
   text-decoration: underline;
 }
 
