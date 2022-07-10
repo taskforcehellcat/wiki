@@ -115,7 +115,7 @@
         <section id="Bandagen">
           <p>Nebenstehende Tabelle zeigt die idealen Bandagen zur Behandlung verschiedener Wundentypen.</p>
 
-          <img src="./images/wiki/sani/wallpapers/bandagen.png" alt="Übersicht mit Wunden- und Bandagentypen" />
+          <a href="./images/wiki/sani/wallpapers/bandagen.png" class="no-underline" target="_blank"><img src="./images/wiki/sani/wallpapers/bandagen.png" alt="Übersicht mit Wunden- und Bandagentypen" /></a>
         </section>
       </section>
 
@@ -282,13 +282,13 @@
       <section id="Stabilisierung">
         <p>Einen Überblick über die wichtigsten Stabilisierungsschritte liefert auch das nachfolgende Flowchart.</p>
 
-        <img src="./images/wiki/sani/wallpapers/stabilisierung.png" alt="Flowchart Stabilisierung" />
+        <a href="./images/wiki/sani/wallpapers/stabilisierung.png" target="_blank" class="no-underline"><img src="./images/wiki/sani/wallpapers/stabilisierung.png" alt="Flowchart Stabilisierung" /></a>
       </section>
 
       <section id="Herzinfarkt">
         <p>Einen groben Überblick über die wichtigesten Behandlungsschritte eines Herzinfarktes gibt das nachfolgende Flowchart.</p>
 
-        <img src="./images/wiki/sani/wallpapers/infarkt.png" alt="Flowchart Herzstillstand" />
+        <a href="./images/wiki/sani/wallpapers/infarkt.png" target="_blank" class="no-underline"><img src="./images/wiki/sani/wallpapers/infarkt.png" alt="Flowchart Herzstillstand" /></a>
       </section>
 
       <section id="Transfusionen im Feld">
@@ -305,7 +305,7 @@
 
           <p>Eine vollständige Übersicht liefert auch die nachfolgende Tabelle. Am besten sucht man sich selbst einige Paare aus und testet anhand der Tabelle das eben beschriebene Muster.</p>
 
-          <img src="./images/Wiki/Sani/blutgruppen.png" alt="Tabelle Blutgruppenverträglichkeiten" />
+          <a href="./images/Wiki/Sani/blutgruppen.png" target="_blank" class="no-underline"><img src="./images/Wiki/Sani/blutgruppen.png" alt="Tabelle Blutgruppenverträglichkeiten" /></a>
 
           <p>Eine ähnliche Tabelle kann auch ingame als Item mitgeführt und benutzt werden. </p>
           

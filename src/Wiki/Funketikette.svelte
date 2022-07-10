@@ -16,7 +16,7 @@
     <section id="Steuerung">
         <p>Über die ACE Self-Interaction (<kbd>LCTRL</kbd>+<kbd>WIN</kbd>/<kbd>LCTRL</kbd>+<kbd>LCMD</kbd>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe <a href="#Funkgerät einstellen">Funkgerät einstellen</a>). Die Unterpunkte werden im Folgenden erklärt.</p>
 
-        <img src="./images/wiki/funk/funk_aceself.png" alt="Radioauswahl in der ACE Self Interaction">
+        <a href="./images/wiki/funk/funk_aceself.png" target="_blank" class="no-underline"><img src="./images/wiki/funk/funk_aceself.png" alt="Radioauswahl in der ACE Self Interaction"></a>
 
       <section id="Funkgerät einstellen">
 
@@ -25,7 +25,7 @@
           <p>Der linke Drehknopf dient neben dem Einschalten dem Auswählen von Voreinstellungen. Die zwölf standardmäßigen Voreinstellungen bezeichnen wir auch als Kanäle. Die Einstellungen P und H dienen der Programmierung des Funkgeräts, was im Allgemeinen aber nicht notwendig werden sollte.</p>
           <p>Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man ohne dafür ohne das Funkgerät öffnen zu müssen die Taste <kbd>CAPS LOCK</kbd>).</p>
           
-          <img src="./images/wiki/funk/sem52sl.png" alt="Oberfläche der SEM 52 SL">
+          <a href="./images/wiki/funk/sem52sl.png" target="_blank" class="no-underline"><img src="./images/wiki/funk/sem52sl.png" alt="Oberfläche der SEM 52 SL"></a>
 
           <p>Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkgeräten finden sich auch in englischer Sprache im <a href="https://acre2.idi-systems.com/wiki/radios/overview" target="_blank">ACRE Wiki</a>.</p>
         </section>
@@ -67,7 +67,7 @@
       <section id="Buchstabieren">
          <p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet.</p>
 
-         <a href="./images/wiki/funk/alphabet.png" class="no-underline"><img src="./images/wiki/funk/alphabet.png" alt="NATO-Buchstabiertafel"></a>
+         <a href="./images/wiki/funk/alphabet.png" class="no-underline" target="_blank"><img src="./images/wiki/funk/alphabet.png" alt="NATO-Buchstabiertafel"></a>
 
         <p>Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.</p>
       </section>

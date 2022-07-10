@@ -46,7 +46,7 @@
       <p>Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/sani/ace_medical_menu.png">Medical Menu</span> ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.</p>
 
       <section id="Lesen des Medical Menus">
-        <a href="./images/sani/wiki/ace_medical_menu.png" class="no-underline"><img alt="ACE Medical Menu" src="./images/sani/wiki/ace_medical_menu.png" class="noselect" /></a>
+        <a href="./images/sani/wiki/ace_medical_menu.png" class="no-underline" target="_blank"><img alt="ACE Medical Menu" src="./images/sani/wiki/ace_medical_menu.png" class="noselect" /></a>
         <p />
         <ul>
           <li>Spalte <b>Status</b>: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.</li>
