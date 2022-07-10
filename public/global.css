@@ -106,6 +106,7 @@ section > object {
 
 section > img {
   max-height: 40rem;
+  margin-bottom: 0.15rem;
 }
 
 main p {
