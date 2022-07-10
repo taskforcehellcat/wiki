@@ -6,8 +6,7 @@
   font-variant-ligatures: none;
 }
 
-/*
-:root {
+body[data-theme="light"] {
   --brandPrimaryBG: #101b3b;
   --brandSecondaryBG: #273252;
   --brandTertiaryBG: #11182e;
@@ -23,24 +22,21 @@
   --errorTXT: #c1a03e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --brandPrimaryBG: #0a0a0a;
-    --brandSecondaryBG: #1b1b1b;
-    --brandTertiaryBG: #050505;
-    --brandPrimaryTXT: #fff;
-    --brandSecondaryTXT: #767676;
-    --brandNeutral: #fff;
-    --navHover: #fff;
-    --wikiBG: url("./images/background.jpg");
-    --kbdBG: #212529;
-    --exampleBoxBG: #0f0f0f;
-    --exampleBoxBorder: #646464;
-    --hyperLink: red;
-    --errorTXT: #9d884a;
-  }
+body[data-theme="dark"] {
+  --brandPrimaryBG: #0a0a0a;
+  --brandSecondaryBG: #1b1b1b;
+  --brandTertiaryBG: #050505;
+  --brandPrimaryTXT: #fff;
+  --brandSecondaryTXT: #767676;
+  --brandNeutral: #fff;
+  --navHover: #fff;
+  --wikiBG: url("./images/background.jpg");
+  --kbdBG: #212529;
+  --exampleBoxBG: #0f0f0f;
+  --exampleBoxBorder: #646464;
+  --hyperLink: red;
+  --errorTXT: #9d884a;
 }
-*/
 
 html {
   font-size: 62.5%;

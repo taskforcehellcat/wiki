@@ -90,36 +90,10 @@
   }
 
   function setColorScheme(setheme) {
-    let rootStyle = document.documentElement.style;
-
     if (setheme === "light") {
-      rootStyle.setProperty("--brandPrimaryBG", "#101b3b");
-      rootStyle.setProperty("--brandSecondaryBG", "#273252");
-      rootStyle.setProperty("--brandTertiaryBG", "#11182e");
-      rootStyle.setProperty("--brandPrimaryTXT", "#101b3b");
-      rootStyle.setProperty("--brandSecondaryTXT", "#94a2cf");
-      rootStyle.setProperty("--brandNeutral", "#fff");
-      rootStyle.setProperty("--navHover", "#fff");
-      rootStyle.setProperty("--wikiBG", "#fff");
-      rootStyle.setProperty("--kbdBG", "#212529");
-      rootStyle.setProperty("--exampleBoxBG", "#e7e9eb");
-      rootStyle.setProperty("--exampleBoxBorder", "#646464");
-      rootStyle.setProperty("--hyperLink", "#436adf");
-      rootStyle.setProperty("--errorTXT", "#c1a03e");
+      document.body.dataset.theme = "light";
     } else if (setheme === "dark") {
-      rootStyle.setProperty("--brandPrimaryBG", "#0a0a0a");
-      rootStyle.setProperty("--brandSecondaryBG", "#1b1b1b");
-      rootStyle.setProperty("--brandTertiaryBG", "#050505");
-      rootStyle.setProperty("--brandPrimaryTXT", "#fff");
-      rootStyle.setProperty("--brandSecondaryTXT", "#767676");
-      rootStyle.setProperty("--brandNeutral", "#fff");
-      rootStyle.setProperty("--navHover", "#fff");
-      rootStyle.setProperty("--wikiBG", "url('./images/background.jpg')");
-      rootStyle.setProperty("--kbdBG", "#212529");
-      rootStyle.setProperty("--exampleBoxBG", "#0f0f0f");
-      rootStyle.setProperty("--exampleBoxBorder", "#646464");
-      rootStyle.setProperty("--hyperLink", "red");
-      rootStyle.setProperty("--errorTXT", "#9d884a");
+      document.body.dataset.theme = "dark";
     }
   }
 
