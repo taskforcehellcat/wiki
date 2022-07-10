@@ -42,24 +42,26 @@ def parse_page(filename):
 
         for section in root.find_all('section', recursive=False):
             # only index sections that have an id
+            section_text = ''
             if not 'id' in section.attrs:
-                continue
+                for p in section.descendants:
+                    if p.name in ['p', 'a', 'section', 'li', 'ul', 'ol', 'kbd']:
+                        section_text = section_text+p.text+" " # THIS IS PROBABLY BAD
             
             section_name = section.attrs["id"]
 
-            section_text = ''
 
             for subsection in section.find_all('section', recursive=False):
 
                 # only index sections that have an id
                 if not 'id' in subsection.attrs:
-                    continue
+                    continue # THIS IS PROBABLY BAD...
                 
                 # string to be appended to for every p tag
                 subsection_text = ''
 
                 for p in subsection.descendants: 
-                    if p.name in ['p', 'a', 'section', 'li', 'ul', 'ol', 'kbd']:
+                    if p.name in ['p', 'a', 'section', 'li', 'ul', 'ol', 'kbd', 'h3']:
                         if p.text in subsection_text: continue
                         subsection_text = subsection_text + p.text + ' '
 
