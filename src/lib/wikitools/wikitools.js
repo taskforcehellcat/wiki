@@ -2,6 +2,7 @@ export function tooltip(element) {
   let div;
   let tooltip;
   let tooltipimg;
+  const main = document.querySelector("#main");
 
   function mouseOver(event) {
     // NOTE: remove the `tooltip` attribute, to prevent showing the default browser tooltip
@@ -15,7 +16,7 @@ export function tooltip(element) {
       div = document.createElement("div");
       div.innerHTML = tooltip;
       div.className = "tooltip";
-      document.body.appendChild(div);
+      main.appendChild(div);
     } else if (tooltipimg) {
       div = document.createElement("div");
       div.textContent = tooltip;
@@ -23,7 +24,7 @@ export function tooltip(element) {
       div.className = "tooltip";
       div.style.width = "80vw";
       div.style.overflowX = "hidden";
-      document.body.appendChild(div);
+      main.appendChild(div);
     }
   }
 
@@ -45,9 +46,9 @@ export function tooltip(element) {
   }
 
   function mouseLeave() {
-    document.body.removeChild(div);
-    // NOTE: restore the `tooltip` attribute
+    main.removeChild(div);
 
+// NOTE: restore the `tooltip` attribute
     if (tooltip) {
       element.setAttribute("data-tooltip", tooltip);
     } else if (tooltipimg) {
