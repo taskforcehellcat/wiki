@@ -34,17 +34,13 @@
 		<h1>Steuerung</h1>
 		<section id="Erklärung">
 			<p>
-				Hier findet ihr die Standard Steuerung für ArmA 3. Je nach Benutzereinstellungen kann sie
-				allerdings variieren.<br />Spieler mit Mac-Tastaturen können unten das Layout wechseln. Am
-				Ende dieser Übersicht findet sich eine Liste mit weiterführenden Artikeln.
+				Hier findet ihr die Standard Steuerung für ArmA 3. Je nach Benutzereinstellungen kann sie allerdings variieren.<br />Spieler mit Mac-Tastaturen können unten das Layout wechseln. Am Ende dieser Übersicht findet sich eine Liste mit weiterführenden Artikeln.
 			</p>
 		</section>
 
 		<div class="switch-button" on:click={kbdToggle}>
 			<input class="switch-button-checkbox" type="checkbox" />
-			<label class="switch-button-label" for=""
-				><span class="switch-button-label-span">Windows</span></label
-			>
+			<label class="switch-button-label" for=""><span class="switch-button-label-span">Windows</span></label>
 		</div>
 
 		<!-- Bitte WINDOWS Tasten als Default verwenden. -->
@@ -87,23 +83,11 @@
 					<td><kbd>B</kbd></td>
 				</tr>
 				<tr>
-					<td
-						><span
-							use:tooltip
-							data-tooltip="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor"
-							>Right Panel Next</span
-						></td
-					>
+					<td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Right Panel Next</span></td>
 					<td><kbd> + </kbd></td>
 				</tr>
 				<tr>
-					<td
-						><span
-							use:tooltip
-							data-tooltip="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor"
-							>Left Panel Next</span
-						></td
-					>
+					<td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Left Panel Next</span></td>
 					<td><kbd>Ü</kbd></td>
 				</tr>
 				<tr>

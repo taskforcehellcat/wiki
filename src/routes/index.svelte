@@ -63,17 +63,12 @@
 				{#if searchResults.length !== 0}
 					{#each searchResults as page}
 						<p>
-							<span class="search__hits">{page.hits}</span> Treffer auf "<a
-								class="search_pagetitle"
-								href={page.secResults[0].link.toLowerCase()}>{page.title}</a
-							>" gefunden:
+							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.secResults[0].link.toLowerCase()}>{page.title}</a>" gefunden:
 						</p>
 						<ol>
 							{#each page.secResults as sechit}
 								<li>
-									<span class="search__env"
-										>"{sechit.env}" <span class="noselect">&#x21aa; </span></span
-									>"<a href={generateSectionLink(sechit.link, sechit.title)}>{sechit.title}</a>"
+									<span class="search__env">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<a href={generateSectionLink(sechit.link, sechit.title)}>{sechit.title}</a>"
 								</li>
 							{/each}
 						</ol>

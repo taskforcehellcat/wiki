@@ -14,13 +14,7 @@
 
 		<section id="Rollenprofil">
 			<p>
-				Der Schütze ist die grundlegendste Rolle der Task Force Hellcat. Jedes neue Mitglied beginnt
-				gleich nach der Grundausbildung mit der Rolle des Schützen, da ihre Hauptaufgabe die
-				fachgerechte Anwendung der Grundkenntnisse ist. Als Rekrut kann man zusätzlich zur Rolle des
-				Schützen eine Ausbildung auf eine Spezialisierung wie beispielsweise <span
-					use:tooltip
-					data-tooltip="AT = Anti Tank (Panzerabwehr)">AT</span
-				>-Schütze oder Präzisionsschütze absolvieren.
+				Der Schütze ist die grundlegendste Rolle der Task Force Hellcat. Jedes neue Mitglied beginnt gleich nach der Grundausbildung mit der Rolle des Schützen, da ihre Hauptaufgabe die fachgerechte Anwendung der Grundkenntnisse ist. Als Rekrut kann man zusätzlich zur Rolle des Schützen eine Ausbildung auf eine Spezialisierung wie beispielsweise <span use:tooltip data-tooltip="AT = Anti Tank (Panzerabwehr)">AT</span>-Schütze oder Präzisionsschütze absolvieren.
 			</p>
 		</section>
 		<section id="Aufgaben">

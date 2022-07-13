@@ -12,26 +12,16 @@
 		<article id="erstehilfe" />
 		<h1>Erste Hilfe</h1>
 
-		<p>
-			Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso
-			wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.
-		</p>
+		<p>Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.</p>
 
 		<section id="Versorgungsmaterial">
-			<p>
-				Um eine Grundversorgung gewährleisten zu können, sollte das folgende Material immer
-				mitgeführt werden:
-			</p>
+			<p>Um eine Grundversorgung gewährleisten zu können, sollte das folgende Material immer mitgeführt werden:</p>
 
 			<ul>
 				<li>
-					Bandagen: Mullverband (<i>packing bandage</i>) min. 15 Stück, elastische Bandagen: min. 10
-					Stück
+					Bandagen: Mullverband (<i>packing bandage</i>) min. 15 Stück, elastische Bandagen: min. 10 Stück
 				</li>
-				<li>
-					Medikamente: Morphin: 1 Autoinjektor, Epinephrin: 2 Autoinjektoren, Schmerztabletten: 2
-					Schachteln (20 Tabletten)
-				</li>
+				<li>Medikamente: Morphin: 1 Autoinjektor, Epinephrin: 2 Autoinjektoren, Schmerztabletten: 2 Schachteln (20 Tabletten)</li>
 				<li>Tourniquets: 4 Stück</li>
 				<li>Splints: 2 Stück</li>
 				<li>Flüssigkeiten: 500 bis 1000 ml Kochsalzlösung (<i>saline solution</i>)</li>
@@ -51,54 +41,31 @@
 			</ul>
 
 			<div use:exampleBox>
-				<p>
-					Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt
-					an den Truppführer:
-				</p>
+				<p>Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:</p>
 				<p><i>„Linke Flanke ein Ausfall, Kat. Rot - kommen.“</i></p>
 			</div>
 
 			<p>
-				Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“.
-				„Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das <a
-					href="../sanitaeter#Meldesystem"
-					target="_blank">hier</a
-				> nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
+				Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das <a href="../sanitaeter#Meldesystem" target="_blank">hier</a> nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
 			</p>
 		</section>
 
 		<section id="Hilfeleistung">
 			<p>
-				Der Standardkeybind zum Öffnen des <span
-					use:tooltip
-					data-tooltip-img="./images/wiki/sani/ace_medical_menu.png">Medical Menu</span
-				>
-				ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte
-				der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu
-				geöffnet.
+				Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/sani/ace_medical_menu.png">Medical Menu</span>
+				ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
 			</p>
 
 			<section id="Lesen des Medical Menus">
-				<a href="./images/sani/wiki/ace_medical_menu.png" class="no-underline" target="_blank"
-					><img
-						alt="ACE Medical Menu"
-						src="./images/sani/wiki/ace_medical_menu.png"
-						class="noselect"
-					/></a
-				>
+				<a href="./images/sani/wiki/ace_medical_menu.png" class="no-underline" target="_blank"><img alt="ACE Medical Menu" src="./images/sani/wiki/ace_medical_menu.png" class="noselect" /></a>
 				<p />
 				<ul>
 					<li>
-						Spalte <b>Status</b>: Je dunkler der Rotton eines Körperteils, desto größeren
-						Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es
-						besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter
-						aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.
+						Spalte <b>Status</b>: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.
 					</li>
 					<li>Spalte <b>Overview</b>: Hier sieht man die Verwundungen.</li>
 					<li>
-						Spalte <b>Examine and Treatment</b>: Hier sieht man die Behandlungsoptionen und kann sie
-						ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen
-						kategorisiert sind. Das kann anfangs verwirrend sein.
+						Spalte <b>Examine and Treatment</b>: Hier sieht man die Behandlungsoptionen und kann sie ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein.
 					</li>
 				</ul>
 			</section>
@@ -106,14 +73,11 @@
 			<section id="Behandeln ansprechbarer Patienten">
 				<ol>
 					<h3>im Gefecht</h3>
-					<li>
-						Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)
-					</li>
+					<li>Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)</li>
 					<li>Kopf und Torso verbinden, stärkere Verwundungen priorisieren</li>
 					<li>bei Schmerzen Schmerztabletten verwenden</li>
 					<li>
-						Splint anlegen <i>wenn nötig</i>. Splints, die von Nichtsanitätern angelegt worden sind,
-						lösen sich mit einer gewissen Wahrscheinlichkeit wieder.
+						Splint anlegen <i>wenn nötig</i>. Splints, die von Nichtsanitätern angelegt worden sind, lösen sich mit einer gewissen Wahrscheinlichkeit wieder.
 					</li>
 
 					<h3>nach dem Gefecht</h3>
@@ -126,11 +90,7 @@
 			<section id="Behandeln bewusstloser Patienten">
 				<section id="Bergung">
 					<p>
-						Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. <em
-							>Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen</em
-						>. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei
-						möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Sie wird also
-						auch nicht von einer Person alleine, sondern im Verband durchgeführt.
+						Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. <em>Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen</em>. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Sie wird also auch nicht von einer Person alleine, sondern im Verband durchgeführt.
 					</p>
 				</section>
 
@@ -138,56 +98,36 @@
 					<p />
 					<ol>
 						<li>
-							Im Medical Menu überprüfen, ob der Patient gezogen/getragen werden kann. Wenn nicht
-							(Reiter <i>Drag/Carry</i> ist ausgegraut), ist der Patient tot. Ansonsten:
+							Im Medical Menu überprüfen, ob der Patient gezogen/getragen werden kann. Wenn nicht (Reiter <i>Drag/Carry</i> ist ausgegraut), ist der Patient tot. Ansonsten:
 						</li>
-						<li>
-							Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)
-						</li>
+						<li>Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)</li>
 						<li>Kopf und Torso verbinden, stärkere Verwundungen priorisieren</li>
 						<li>Atemwege überprüfen:</li>
 						<ol style="list-style-type: lower-alpha;">
 							<li>
-								verstopft/verschlossen (<i>occluded/obstructed</i>): Kopf ausrichten (<i
-									>head turning</i
-								>) bis befreit
+								verstopft/verschlossen (<i>occluded/obstructed</i>): Kopf ausrichten (<i>head turning</i>) bis befreit
 							</li>
 							<li>
-								Kopf überstrecken (<i>hyperextend head</i>), damit die Zunge nicht die Atemwege
-								verschließen kann
+								Kopf überstrecken (<i>hyperextend head</i>), damit die Zunge nicht die Atemwege verschließen kann
 							</li>
 						</ol>
 						<li>Puls prüfen:</li>
 						<ol style="list-style-type: lower-alpha;">
 							<li>
-								kein Puls: Herz-Lungen-Wiederbelebung (<i>CPR</i>) dauerhaft durchführen, Epinephrin
-								verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.
+								kein Puls: Herz-Lungen-Wiederbelebung (<i>CPR</i>) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.
 							</li>
-							<li>
-								Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster
-								Schritt.
-							</li>
+							<li>Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster Schritt.</li>
 						</ol>
 						<li>in stabile Seitenlage bringen (<i>use recovery position</i>)</li>
 						<li>verbleibende Verletzungen bandagieren und Tourniquets entfernen</li>
 					</ol>
 
 					<p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
-					<img
-						src="./images/wiki/sani/wallpapers/erste_hilfe_basic.png"
-						alt="Erste Hilfe, grundlegendes Flowchart"
-					/>
+					<img src="./images/wiki/sani/wallpapers/erste_hilfe_basic.png" alt="Erste Hilfe, grundlegendes Flowchart" />
 				</section>
 
 				<section id="Eintreffen des Sanitäters">
-					<p>
-						Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens
-						um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man
-						bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung
-						schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Widerbelebung
-						bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man
-						verfügbar bleiben.
-					</p>
+					<p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
 				</section>
 			</section>
 		</section>
