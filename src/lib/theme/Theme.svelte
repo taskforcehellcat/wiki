@@ -106,6 +106,14 @@
 
       &[for='theme_auto'] {
         background-color: var(--brandPrimaryBG);
+
+        &:after {
+          content: "AUTO";
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: var(--brandSecondaryTXT);
+        }
+      }
     }
   }
 </style>
