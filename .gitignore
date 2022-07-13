@@ -2,6 +2,7 @@
 /public/build/
 /.vscode/settings.json
 *.code-workspace
+/.svelte-kit/
 
 *.bat
 
