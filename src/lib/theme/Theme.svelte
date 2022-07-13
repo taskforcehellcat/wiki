@@ -50,13 +50,12 @@
     height: 6rem;
     border: none;
     cursor: pointer;
-    border-top-left-radius: var(--theme-border-radius);
-    border-top-right-radius: var(--theme-border-radius);
+    border-radius: var(--theme-border-radius);
     background-color: var(--brandSecondaryBG);
 
     &[data-visible=true] {
-      border-bottom-right-radius: var(--theme-border-radius);
-      border-bottom-left-radius: var(--theme-border-radius);
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
 
