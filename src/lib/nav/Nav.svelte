@@ -14,8 +14,8 @@
 
 <div id="nav__list">
     {#each NAV_MENU as nav}
-        <div class="expandable" class:open={activeNav === nav.id} on:click={() => toggleOpen(nav.id)}>
-            <span>
+        <div class="expandable" class:open={activeNav === nav.id}>
+            <span on:click={() => toggleOpen(nav.id)}>
                 {nav.id}
                 <i class="material-icons-round noselect">expand_more</i>
             </span>
