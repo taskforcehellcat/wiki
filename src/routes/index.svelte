@@ -28,11 +28,7 @@
 		// show dropdown link menues if search bar empty
 		document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
 
-		if (query.length > 2) {
-			showResults = true;
-		} else {
-			showResults = false;
-		}
+		showResults = query.length > 2;
 
 		searchResults = updateSearchResults(query);
 	};
