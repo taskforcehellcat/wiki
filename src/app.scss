@@ -211,23 +211,26 @@ main {
 
     &:before {
       content: "—";
-      height: 2.4rem;
-      left: -2rem;
+      font-size: 13.4pt;
+      height: 100%;
+      left: -2.5rem;
       width: 0.15rem;
       background-color: var(--brandSecondaryTXT);
       position: relative;
+      z-index: 6;
+      top: -5%;
     }
 
     &:last-child:before {
       content: "—";
-      height: 11pt;
-      top: -0.5rem;
+      height: 50%;
     }
     
     display: none;
     font-size: inherit;
-    margin-left: 3rem;
-    margin-right: -3rem;
+    margin-left: 4rem;
+    margin-right: -4rem;
+    align-items: flex-start;
   }
 
   > span {
@@ -247,6 +250,9 @@ main {
   align-items: flex-start;
 
   > a {
+
+    height: 3rem;
+
     &:nth-child(2) {
       margin-top: 0.5rem;
     }
