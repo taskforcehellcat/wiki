@@ -20,6 +20,7 @@
   --exampleBoxBorder: #646464;
   --hyperLink: #436adf;
   --errorTXT: #c1a03e;
+  --themePickerBorderColor: #666666;
 }
 
 @mixin theme-dark {
@@ -36,6 +37,7 @@
   --exampleBoxBorder: #646464;
   --hyperLink: red;
   --errorTXT: #9d884a;
+  --themePickerBorderColor: #111111;
 }
 
 #main {
