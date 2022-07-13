@@ -30,7 +30,7 @@
   --brandSecondaryTXT: #767676;
   --brandNeutral: #fff;
   --navHover: #fff;
-  --wikiBG: url("./images/background.jpg");
+  --wikiBG: url("/images/dark-bg.jpg");
   --kbdBG: #212529;
   --exampleBoxBG: #0f0f0f;
   --exampleBoxBorder: #646464;
@@ -61,7 +61,7 @@ html {
   font-size: 62.5%;
 }
 
-#main {
+body {
   width: 100%;
   height: 100vh;
   font-family: "Open Sans", sans-serif;
