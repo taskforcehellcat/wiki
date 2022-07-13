@@ -75,7 +75,7 @@
 
 		// do the styling
 		// hide results box if search bar empty
-		document.getElementById('search').display = searchInUse ? 'block' : 'none';
+		document.getElementById('search').style.display = searchInUse ? 'block' : 'none';
 
 		// @Fenres Rest der Naviagtion verstecken, wenn gesucht wird?
 
