@@ -34,20 +34,17 @@
 
 	onMount(async () => {
 		includeDropDown();
+		// create nodelists of sections
 		const H2sections = document.querySelectorAll('section[id]:not(section > section)');
-		const H3sections = document.querySelectorAll('section > section[id]');
-		const H4sections = document.querySelectorAll('section > section > section[id]');
 
 		toggleBurgerIcon();
-		// create array from nodelists
-		var H2sectionsArr = Array.from(H2sections);
-		var H3sectionsArr = Array.from(H3sections);
-		// var H4sectionsArr = Array.from(H4sections); BROKEN
+		// create arrays from nodelists
+		var h2SectionsArr = Array.from(H2sections);
 
 		let tempAnchors = [];
 
-		// for every element of the "H2sectionsArr" array
-		H2sectionsArr.forEach((element) => {
+		// for every element of the "h2SectionsArr" array
+		h2SectionsArr.forEach((element) => {
 			// add h2 tag with element's id as content
 			element.insertAdjacentHTML('afterbegin', '<h2>' + element.id + '</h2>');
 			tempAnchors.push({
@@ -55,16 +52,7 @@
 				link: '#' + element.id
 			});
 		});
-		// for every element of the "H3sectionsArr" array
-		H3sectionsArr.forEach((element) => {
-			// add h3 tag with element's id as content
-			element.insertAdjacentHTML('afterbegin', '<h3>' + element.id + '</h3>');
-		});
-		/*
-      H4sectionsArr.forEach((element) => {
-        element.insertAdjacentHTML("afterbegin", "<h4>" + element.id + "</h4>");
-      });
-      */
+
 		anchors = tempAnchors;
 	});
 
