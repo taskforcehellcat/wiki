@@ -1,7 +1,6 @@
 <!-- Homepage -->
 <script lang="ts">
 	import Theme from '$lib/theme/Theme.svelte';
-	import { onMount } from 'svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 
 	import { searchFor, updateSearchResults } from '$lib/search/search.js';
@@ -9,12 +8,6 @@
 	let query = ''; // holds the query
 	let showResults = false; // whether the search bar is currently in use
 	let searchResults = []; // used to generate sections in search results
-
-	import { includeDropDown } from '$lib/nav/nav.js';
-
-	onMount(async () => {
-		includeDropDown(); // expandables
-	});
 
 	const handleQuery = (e) => {
 		query = e.target.value;

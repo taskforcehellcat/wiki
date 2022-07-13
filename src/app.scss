@@ -455,10 +455,6 @@ input {
   color: var(--errorTXT);
 }
 
-#menuOpen, #menuClose {
-  display: none;
-}
-
 #menuOpen:hover, #menuClose:hover {
   cursor: pointer;
 }
