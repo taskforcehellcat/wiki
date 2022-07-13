@@ -85,6 +85,3 @@ export function linkify(value) {
     }
     return value
 }
-
-
-

@@ -131,8 +131,8 @@
           <span class="material-icons">search</span>
           <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
         </div>
-      
-  
+
+
         <div id="nav__search-results">
           {#if showResults}
             {#if searchResults.length !== 0}
