@@ -1,6 +1,11 @@
 <script lang="ts">
-	import Nav from '$lib/nav/Nav.svelte';
-	import '../app.scss';
+    import '../app.scss';
+    import {themeId} from "../lib/theme/stores.js";
+
 </script>
 
-<slot />
+{#if $themeId}
+    <div id="main" data-theme={$themeId}>
+        <slot/>
+    </div>
+{/if}
