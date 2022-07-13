@@ -46,7 +46,6 @@
 
 <svelte:head>
 	<title>Home | TFHC Wiki</title>
-	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
 <Theme />

@@ -3,6 +3,10 @@
 	import { tooltip, exampleBox } from '$lib/wikitools/wikitools';
 </script>
 
+<svelte:head>
+	<title>Home | TFHC Wiki</title>
+</svelte:head>
+
 <Wiki>
 	<svelte:fragment slot="content">
 		<article id="erstehilfe" />
