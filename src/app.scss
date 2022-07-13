@@ -187,6 +187,7 @@ main {
     align-items: center;
     transition: color 0.2s ease-out;
     justify-content: space-between;
+    
   }
 }
 
@@ -208,10 +209,25 @@ main {
       color: var(--navHover);
     }
 
+    &:before {
+      content: "—";
+      height: 2.4rem;
+      left: -2rem;
+      width: 0.15rem;
+      background-color: var(--brandSecondaryTXT);
+      position: relative;
+    }
+
+    &:last-child:before {
+      content: "—";
+      height: 11pt;
+      top: -0.5rem;
+    }
+    
     display: none;
     font-size: inherit;
-    margin-left: 2rem;
-    margin-right: -2rem;
+    margin-left: 3rem;
+    margin-right: -3rem;
   }
 
   > span {
