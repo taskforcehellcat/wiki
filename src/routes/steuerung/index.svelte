@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Wiki from '../Wiki.svelte';
 	import { exampleBox, tooltip } from '$lib/wikitools/wikitools';
-	import { Link } from 'svelte-routing';
 
 	let currentLayout = 'win';
 	function kbdToggle() {
