@@ -1,1 +1,1 @@
-# Task Force Hellcat Wiki written in SvelteKit
+# Task Force Hellcat Wiki migration from Svelte to SvelteKit
