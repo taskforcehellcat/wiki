@@ -1,7 +1,7 @@
 # Task Force Hellcat Wiki migration from Svelte to SvelteKit
 
 ## Menu entries / Routing
-To add a new menu entry, look at the pattern in menu.js.
+To add a new menu entry, look at the pattern in $lib/menu.js.
 
 A menu entry looks like this:
 ```
