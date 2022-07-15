@@ -1,6 +1,53 @@
 <script lang="ts">
 	import Wiki from '../wiki.svelte';
 	import { tooltip, exampleBox } from '$lib/wikitools/wikitools';
+
+
+	/* images */
+	import sixteen_g from '$lib/images/sanitaeter/16g.png'
+	import twenty_g from '$lib/images/sanitaeter/20g.png'
+	import accuvac from '$lib/images/sanitaeter/accuvac.png'
+	import ace_medical_menu from '$lib/images/sanitaeter/ace_medical_menu.png'
+	import adenosine from '$lib/images/sanitaeter/adenosine.png'
+	import aed_x from '$lib/images/sanitaeter/aed_x.png'
+	import amiodarone from '$lib/images/sanitaeter/amiodarone.png'
+	import atropine from '$lib/images/sanitaeter/atropine.png'
+	import bandagen from '$lib/images/sanitaeter/bandagen.png'
+	import blood_iv from '$lib/images/sanitaeter/blood_iv.png'
+	import blutgruppen from '$lib/images/sanitaeter/blutgruppen.png'
+	import bodybag from '$lib/images/sanitaeter/bodybag.png'
+	import carbonate from '$lib/images/sanitaeter/carbonate.png'
+	import chest_seal from '$lib/images/sanitaeter/chest_seal.png'
+	import defib from '$lib/images/sanitaeter/defib.png'
+	import elastic_bandage from '$lib/images/sanitaeter/elastic_bandage.png'
+	import epinephrine from '$lib/images/sanitaeter/epinephrine.png'
+	import erste_hilfe_basic from '$lib/images/sanitaeter/erste_hilfe_basic.png'
+	import fast_io from '$lib/images/sanitaeter/fast_io.png'
+	import field_dressing from '$lib/images/sanitaeter/field_dressing.png'
+	import guedel from '$lib/images/sanitaeter/guedel.png'
+	import infarkt from '$lib/images/sanitaeter/infarkt.png'
+	import larynx_normal from '$lib/images/sanitaeter/larynx_normal.png'
+	import lidocaine from '$lib/images/sanitaeter/lidocaine.png'
+	import morphine from '$lib/images/sanitaeter/morphine.png'
+	import naloxone from '$lib/images/sanitaeter/naloxone.png'
+	import nitro from '$lib/images/sanitaeter/nitro.png'
+	import norep from '$lib/images/sanitaeter/norep.png'
+	import ondansetron from '$lib/images/sanitaeter/ondansetron.png'
+	import packing_bandage from '$lib/images/sanitaeter/packing_bandage.png'
+	import personal_aid_kit from '$lib/images/sanitaeter/personal_aid_kit.png'
+	import phenylephrin from '$lib/images/sanitaeter/phenylephrin.png'
+	import plasma_iv from '$lib/images/sanitaeter/plasma_iv.png'
+	import pulseoximeter from '$lib/images/sanitaeter/pulseoximeter.png'
+	import quickclot from '$lib/images/sanitaeter/quickclot.png'
+	import saline_iv from '$lib/images/sanitaeter/saline_iv.png'
+	import splint from '$lib/images/sanitaeter/splint.png'
+	import stabilisierung from '$lib/images/sanitaeter/stabilisierung.png'
+	import stethoscope from '$lib/images/sanitaeter/stethoscope.png'
+	import surgical_airway_kit from '$lib/images/sanitaeter/surgical_airway_kit.png'
+	import surgical_kit from '$lib/images/sanitaeter/surgical_kit.png'
+	import tourniquet from '$lib/images/sanitaeter/tourniquet.png'
+	import txa from '$lib/images/sanitaeter/txa.png'
+	import wolf from '$lib/images/sanitaeter/wolf.png'
 </script>
 
 <svelte:head>
@@ -72,7 +119,7 @@
 					<p>Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.</p>
 					<section>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/morphine.png">Morphin-Autoinjektor</span>
+							<span use:tooltip data-tooltip-img="{morphine}">Morphin-Autoinjektor</span>
 						</h3>
 						<p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
 						<h3><span use:tooltip data-tooltip-img="">Painkillers</span> (dt. Schmerztabletten)</h3>
@@ -80,11 +127,11 @@
 							lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="#Transfusionen im Feld">Transfusion von Blut</a>). Werden im Arsenal bei den Magazinen geführt.
 						</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/epinephrine.png">Epinephrin-Autoinjektor</span> (Adrenalin)
+							<span use:tooltip data-tooltip-img="{epinephrine}">Epinephrin-Autoinjektor</span> (Adrenalin)
 						</h3>
 						<p>hebt die Herzrate, kann auch Behandlung von Morphin-Überdosen unterstützen.</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/adenosine.png">Adenosin-Autoinjektor</span>
+							<span use:tooltip data-tooltip-img="{adenosine}">Adenosin-Autoinjektor</span>
 						</h3>
 						<p>senkt die Herzrate, kann zur Behandlung von Epinephrin-Überdosen verwendet werden.</p>
 					</section>
@@ -94,20 +141,20 @@
 					<h3>Infarkttherapie</h3>
 					<section>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/amiodarone.png">Amiodaron</span>
+							<span use:tooltip data-tooltip-img="{amiodarone}">Amiodaron</span>
 						</h3>
 						<p>
 							<span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidokain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine
 							<span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardie</span>. Empfohlen ist eine Gabe pro Patient.
 						</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/lidocaine.png">Lidokain</span>
+							<span use:tooltip data-tooltip-img="{lidocaine}">Lidokain</span>
 						</h3>
 						<p>
 							<span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.
 						</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/atropine.png">Atropin</span>
+							<span use:tooltip data-tooltip-img="{atropine}">Atropin</span>
 						</h3>
 						<p>
 							zur Behandlung von <span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardien</span>. Hebt die Herzrate wesentlich.
@@ -120,36 +167,36 @@
 					<p>Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.</p>
 					<section>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/carbonate.png">Ammonium Carbonat</span>
+							<span use:tooltip data-tooltip-img="{carbonate}">Ammonium Carbonat</span>
 						</h3>
 						<p>
 							<span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe
 							<a href="#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
 						</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/naloxone.png">Naloxon</span>
+							<span use:tooltip data-tooltip-img="{naloxone}">Naloxon</span>
 						</h3>
 						<p>
 							Morphin-<span use:tooltip data-tooltip="dt. Gegenspieler. Antagonisten wirken einem bestimmten Medikament entgegen.">Antagonist</span>, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.
 						</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/txa.png">Tranexamsäure (TXA)</span>
+							<span use:tooltip data-tooltip-img="{txa}">Tranexamsäure (TXA)</span>
 						</h3>
 						<p>treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten.</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/norep.png">Norepinephrin</span>
+							<span use:tooltip data-tooltip-img="{norep}">Norepinephrin</span>
 						</h3>
 						<p>hebt den Blutdruck (Vasopressor). Wird über einen Zugang verabreicht.</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/nitro.png">Nitroglycerin</span>
+							<span use:tooltip data-tooltip-img="{nitro}">Nitroglycerin</span>
 						</h3>
 						<p>senkt den Blutdruck (Vasodepressor). Wird über einen Zugang verabreicht.</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/phenylephrin.png">Phenylephrin</span>
+							<span use:tooltip data-tooltip-img="{phenylephrin}">Phenylephrin</span>
 						</h3>
 						<p>hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht.</p>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/ondansetron.png">Ondansetron</span>
+							<span use:tooltip data-tooltip-img="{ondansetron}">Ondansetron</span>
 						</h3>
 						<p>verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.</p>
 					</section>
@@ -160,7 +207,7 @@
 				<p>Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.</p>
 				<section>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/surgical_airway_kit.png">AAT-Kit</span>
+						<span use:tooltip data-tooltip-img="{surgical_airway_kit}">AAT-Kit</span>
 					</h3>
 					<p>
 						gebraucht zur Behandlung von Hämothoraxen (siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen).
@@ -172,18 +219,18 @@
 						erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Dabei muss auf die Kompatibilität der Blutgruppen geachtet werden, siehe dazu <a href="#Blutgruppenverträglichkeit">eine Tabelle von Blutgruppenverträglichkeiten</a>.
 					</p>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/chest_seal.png">Chest Seal</span>
+						<span use:tooltip data-tooltip-img="{chest_seal}">Chest Seal</span>
 						(dt. Thoraxverschlusspflaster)
 					</h3>
 					<p>
 						ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen.
 					</p>
-					<h3><span use:tooltip data-tooltip-img="./images/wiki/sani/16g.png">16g IV</span></h3>
+					<h3><span use:tooltip data-tooltip-img="{sixteen_g}">16g IV</span></h3>
 					<p>
 						eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ" target="_blank">in diesem Video</a> anschaulich gezeigt wird.
 					</p>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/fast_io.png">FAST IO</span>
+						<span use:tooltip data-tooltip-img="{fast_io}">FAST IO</span>
 					</h3>
 					<p>
 						<i>First Access for Shock and Trauma IO,</i> ein
@@ -194,7 +241,7 @@
 				<section id="Bandagen">
 					<p>Nebenstehende Tabelle zeigt die idealen Bandagen zur Behandlung verschiedener Wundentypen.</p>
 
-					<a href="./images/wiki/sani/wallpapers/bandagen.png" class="no-underline" target="_blank"><img src="./images/wiki/sani/wallpapers/bandagen.png" alt="Übersicht mit Wunden- und Bandagentypen" /></a>
+					<a href="{bandagen}" class="no-underline" target="_blank"><img src="{bandagen}" alt="Übersicht mit Wunden- und Bandagentypen" /></a>
 				</section>
 			</section>
 
@@ -203,7 +250,7 @@
 
 				<section>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/tourniquet.png">Tourniquet</span>
+						<span use:tooltip data-tooltip-img="{tourniquet}">Tourniquet</span>
 					</h3>
 					<p>
 						Schnürt die Blutzufuhr eines Körperteils ab, um Blutverlust zu verhindern. <b>Achtung:</b> An Gliedmaßen mit Tourniquet kann kein Puls oder Blutdruck gemessen werden sowie keine Flüssigkeit angelegt werden. Außerdem heißt so ein absoluter Banger von Breaking Benjamin.
@@ -211,36 +258,36 @@
 					<p>Tourniquets sind essentiell zur Selbst- und Kameradenhilfe. Als Sanitäter sollte man seine Kameraden gelegentlich auffordern, zu prüfen, ob sie Tourniquets in ausreichender Anzahl mitführen und gegebenenfalls ausgleichen.</p>
 					<h3>
 						<h3>
-							<span use:tooltip data-tooltip-img="./images/wiki/sani/surgical_kit.png">Nähset</span>
+							<span use:tooltip data-tooltip-img="{surgical_kit}">Nähset</span>
 						</h3>
 					</h3>
 					<p>erlaubt das Nähen von Wunden. Genähte Verbände lösen sich nicht mehr.</p>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/stethoscope.png">Stethoskop</span>
+						<span use:tooltip data-tooltip-img="{stethoscope}">Stethoskop</span>
 					</h3>
 					<p>erlaubt die Diagnose von Thoraxverletzungen.</p>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/accuvac.png">Accuvac</span>
+						<span use:tooltip data-tooltip-img="{accuvac}">Accuvac</span>
 					</h3>
 					<p>
 						erlaubt die <span use:tooltip data-tooltip="endo: innerhalb; trachea: Luftröhre">endotracheale</span>
 						Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (<i>head turning</i>).
 					</p>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/aed_x.png">AED / AED-X</span>
+						<span use:tooltip data-tooltip-img="{aed_x}">AED / AED-X</span>
 					</h3>
 					<p>
 						<i>Automatisierter externer Defibrillator</i>. Zur Behandlung von
 						<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="#Herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
-						<a href="/sanitaeter#Vitalparameter">Vitalparametern</a>.
+						<a href="sanitaeter#Vitalparameter">Vitalparametern</a>.
 					</p>
 					<h3>
-						<span use:tooltip data-tooltip-img="./images/wiki/sani/pulseoximeter.png">Pulsoximeter</span>
+						<span use:tooltip data-tooltip-img="{pulseoximeter}">Pulsoximeter</span>
 					</h3>
 					<p>
 						erlaubt die Messung von Puls und des Sauerstoffgehalts des <span use:tooltip data-tooltip="peripher: außen, am Rande. Gemeint sind die Arme und Beine. Pulsoximeter messen an der Fingerkuppe.">peripheren</span>
 						Blutes (engl. <i>saturation peripher O&#8322</i>, SpO&#8322). Siehe auch Abschnitt
-						<a href="/sanitaeter#Vitalparameter">Vitalparameter</a>.
+						<a href="sanitaeter#Vitalparameter">Vitalparameter</a>.
 					</p>
 				</section>
 			</section>
@@ -439,13 +486,13 @@
 			<section id="Stabilisierung">
 				<p>Einen Überblick über die wichtigsten Stabilisierungsschritte liefert auch das nachfolgende Flowchart.</p>
 
-				<a href="./images/wiki/sani/wallpapers/stabilisierung.png" target="_blank" class="no-underline"><img src="./images/wiki/sani/wallpapers/stabilisierung.png" alt="Flowchart Stabilisierung" /></a>
+				<a href="{stabilisierung}" target="_blank" class="no-underline"><img src="{stabilisierung}" alt="Flowchart Stabilisierung" /></a>
 			</section>
 
 			<section id="Herzinfarkt">
 				<p>Einen groben Überblick über die wichtigesten Behandlungsschritte eines Herzinfarktes gibt das nachfolgende Flowchart.</p>
 
-				<a href="./images/wiki/sani/wallpapers/infarkt.png" target="_blank" class="no-underline"><img src="./images/wiki/sani/wallpapers/infarkt.png" alt="Flowchart Herzstillstand" /></a>
+				<a href="{infarkt}" target="_blank" class="no-underline"><img src="{infarkt}" alt="Flowchart Herzstillstand" /></a>
 			</section>
 
 			<section id="Transfusionen im Feld">
@@ -465,7 +512,7 @@
 
 					<p>Eine vollständige Übersicht liefert auch die nachfolgende Tabelle. Am besten sucht man sich selbst einige Paare aus und testet anhand der Tabelle das eben beschriebene Muster.</p>
 
-					<a href="./images/Wiki/Sani/blutgruppen.png" target="_blank" class="no-underline"><img src="./images/Wiki/Sani/blutgruppen.png" alt="Tabelle Blutgruppenverträglichkeiten" /></a>
+					<a href="{blutgruppen}" target="_blank" class="no-underline"><img src="{blutgruppen}" alt="Tabelle Blutgruppenverträglichkeiten" /></a>
 
 					<p>Eine ähnliche Tabelle kann auch ingame als Item mitgeführt und benutzt werden.</p>
 				</section>

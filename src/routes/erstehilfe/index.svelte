@@ -1,6 +1,10 @@
 <script lang="ts">
 	import Wiki from '../wiki.svelte';
 	import { tooltip, exampleBox } from '$lib/wikitools/wikitools';
+
+	/* images */
+	import erste_hilfe_basic from '$lib/images/erstehilfe/erste_hilfe_basic.png'
+	import ace_medical_menu from '$lib/images/erstehilfe/ace_medical_menu.png'
 </script>
 
 <svelte:head>
@@ -52,12 +56,12 @@
 
 		<section id="Hilfeleistung">
 			<p>
-				Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="./images/wiki/sani/ace_medical_menu.png">Medical Menu</span>
+				Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="{ace_medical_menu}">Medical Menu</span>
 				ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
 			</p>
 
 			<section id="Lesen des Medical Menus">
-				<a href="./images/sani/wiki/ace_medical_menu.png" class="no-underline" target="_blank"><img alt="ACE Medical Menu" src="./images/sani/wiki/ace_medical_menu.png" class="noselect" /></a>
+				<a href="{ace_medical_menu}" class="no-underline" target="_blank"><img alt="ACE Medical Menu" src="{ace_medical_menu}" class="noselect" /></a>
 				<p />
 				<ul>
 					<li>
@@ -123,7 +127,8 @@
 					</ol>
 
 					<p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
-					<img src="./images/wiki/sani/wallpapers/erste_hilfe_basic.png" alt="Erste Hilfe, grundlegendes Flowchart" />
+					
+					<a href="{erste_hilfe_basic}" class="no-underline" target="_blank"><img src="{erste_hilfe_basic}" alt="Erste Hilfe, grundlegendes Flowchart" /></a>
 				</section>
 
 				<section id="Eintreffen des Sanitäters">

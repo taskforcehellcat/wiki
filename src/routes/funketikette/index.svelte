@@ -1,6 +1,11 @@
 <script lang="ts">
 	import Wiki from '../wiki.svelte';
 	import { tooltip } from '$lib/wikitools/wikitools';
+
+	/* images */
+	import alphabet from '$lib/images/funketikette/alphabet.png'
+	import funk_aceself from '$lib/images/funketikette/funk_aceself.png'
+	import semSL from '$lib/images/funketikette/sem52sl.png'
 </script>
 
 <svelte:head>
@@ -23,7 +28,7 @@
 				<a href="#Funkgerät einstellen">Funkgerät einstellen</a>). Die Unterpunkte werden im Folgenden erklärt.
 			</p>
 
-			<a href="./images/wiki/funk/funk_aceself.png" target="_blank" class="no-underline"><img src="./images/wiki/funk/funk_aceself.png" alt="Radioauswahl in der ACE Self Interaction" /></a>
+			<a href="{funk_aceself}" target="_blank" class="no-underline"><img src="{funk_aceself}" alt="Radioauswahl in der ACE Self Interaction" /></a>
 
 			<section id="Funkgerät einstellen">
 				<section id="SEM 52 SL">
@@ -35,7 +40,7 @@
 						Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man ohne dafür ohne das Funkgerät öffnen zu müssen die Taste <kbd>CAPS LOCK</kbd>).
 					</p>
 
-					<a href="./images/wiki/funk/sem52sl.png" target="_blank" class="no-underline"><img src="./images/wiki/funk/sem52sl.png" alt="Oberfläche der SEM 52 SL" /></a>
+					<a href="{semSL}" target="_blank" class="no-underline"><img src="{semSL}" alt="Oberfläche der SEM 52 SL" /></a>
 
 					<p>
 						Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkgeräten finden sich auch in englischer Sprache im <a href="https://acre2.idi-systems.com/wiki/radios/overview" target="_blank">ACRE Wiki</a>.
@@ -87,7 +92,7 @@
 			<section id="Buchstabieren">
 				<p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet.</p>
 
-				<a href="./images/wiki/funk/alphabet.png" class="no-underline" target="_blank"><img src="./images/wiki/funk/alphabet.png" alt="NATO-Buchstabiertafel" /></a>
+				<a href="{alphabet}" class="no-underline" target="_blank"><img src="{alphabet}" alt="NATO-Buchstabiertafel" /></a>
 
 				<p>Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.</p>
 			</section>
