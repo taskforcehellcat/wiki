@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { browser } from '$app/env';
-	import { themeId } from './stores';
+	import { themeId } from '$lib/theme/stores';
 
 	let themesOpen = false;
 	let themeChoices = ['dark', 'light', 'auto'];
