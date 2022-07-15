@@ -1,6 +1,9 @@
 <script lang="ts">
 	import Wiki from '../wiki.svelte';
 	import { tooltip } from '$lib/wikitools/wikitools';
+
+	/* images */
+	import tfhc_struktur from '$lib/images/allgemeines/tfhc_struktur.svg';
 </script>
 
 <svelte:head>
@@ -71,7 +74,7 @@
 				<a href="../abteilungen">hier</a> eingesehen werden.
 			</p>
 
-			<img alt="Task Force Hellcat Struktur" src="./images/tfhc_struktur.svg" class="noselect" />
+			<img alt="Task Force Hellcat Struktur" src="{tfhc_struktur}" class="noselect" />
 		</section>
 	</svelte:fragment>
 	<svelte:fragment slot="editdate">22.06.2022</svelte:fragment>
