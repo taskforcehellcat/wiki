@@ -1,5 +1,5 @@
 <script>
-	import { linkify, NAV_MENU } from '$lib/menu.js';
+	import { linkify, NAV_MENU } from '$lib/menu';
 
 	let activeNav;
 
