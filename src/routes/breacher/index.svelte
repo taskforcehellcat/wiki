@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Wiki from '../Wiki.svelte';
+	import Wiki from '../wiki.svelte';
 </script>
 
 <svelte:head>
