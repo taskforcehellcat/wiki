@@ -3,6 +3,8 @@
 /.vscode/settings.json
 *.code-workspace
 /.svelte-kit/
+/build/
+/node_modules/
 
 *.bat
 
