@@ -6,6 +6,9 @@ from bs4 import BeautifulSoup
 
 # DEPENDENCIES OF THIS SCRIPT ARE: lxml, bs4
 
+# Emmi fix search,
+# neuer path sollte jetzt "../../routes/" sein,
+# allerdings hat jetzt jede seite ihren eigenen folder, also good luck
 PATH = r"../../../src/Wiki/"
 
 def parse_page(filename):
