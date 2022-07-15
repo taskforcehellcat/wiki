@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.scss';
-	import { themeId } from '../lib/theme/stores.js';
+	import { themeId } from '$lib/theme/stores';
 </script>
 
 {#if $themeId}

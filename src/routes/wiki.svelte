@@ -7,9 +7,9 @@
 	// --- burger menu ---
 	import OpenMenuSVG from '$lib/burgermenu/openMenu.svelte';
 	import CloseMenuSVG from '$lib/burgermenu/closeMenu.svelte';
-	import { updateSearchResults } from '$lib/search/search.js';
+	import { updateSearchResults } from '$lib/search/search';
 	import { onMount } from 'svelte';
-	import Nav from '$lib/nav/nav.svelte';
+	import Nav from '$lib/nav/Nav.svelte';
 
 	let editdate;
 	let isOpen = false;

@@ -3,7 +3,7 @@
 	import Theme from '$lib/theme/Theme.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 
-	import { searchFor, updateSearchResults } from '$lib/search/search.js';
+	import { searchFor, updateSearchResults } from '$lib/search/search';
 
 	let query = ''; // holds the query
 	let showResults = false; // whether the search bar is currently in use
