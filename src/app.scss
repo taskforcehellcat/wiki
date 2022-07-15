@@ -115,6 +115,12 @@ section {
 		width: 70%;
 	}
 
+	img {
+		max-height: 40rem;
+		margin-bottom: 0.15rem;
+		max-width: 100%;
+	}
+
 	> {
 		img,
 		object {
@@ -122,10 +128,7 @@ section {
 			object-fit: cover;
 		}
 
-		img {
-			max-height: 40rem;
-			margin-bottom: 0.15rem;
-		}
+
 	}
 }
 
