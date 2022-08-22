@@ -1,4 +1,4 @@
-# Task Force Hellcat Wiki migration from Svelte to SvelteKit
+# Task Force Hellcat Wiki written in SvelteKit
 
 ## Menu entries / Routing
 To add a new menu entry, look at the pattern in $lib/menu.js.
