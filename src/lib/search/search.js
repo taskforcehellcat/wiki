@@ -14,7 +14,7 @@ index = searchIndex;
 // this variable determines how long the environment should be.
 // subject to change !
 
-export function searchFor(query, envLength = 60) {
+export function searchFor(query, envLength  = 60) {
 	/*
 	 * search function for the search bar object.
 	 * searches all text content of wiki pages and returns the results,
@@ -43,9 +43,9 @@ export function searchFor(query, envLength = 60) {
 		let anchor; // this will hold the anchor link for this page
 
 		for (let sec in index[page]) {
-			if (sec === 'link') {
-				// the "link" section isn't actually a section
-				// just get the anchor link from it's text contents and skip the rest
+			if (sec === 'route') {
+				// the "route" section isn't actually a section
+				// just get the anchor link from its text contents and skip the rest
 				anchor = index[page][sec];
 				continue;
 			}

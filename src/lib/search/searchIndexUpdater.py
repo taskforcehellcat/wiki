@@ -1,130 +1,114 @@
-from os import listdir, system
-from os.path import basename
+# basic filesystem access
+from os import walk, path
+
+# for creating the index.json
 from json import dump
-#import re # only required for tag removal
+
+# for parsing the source files
+# note: this requires lxml to be installed
 from bs4 import BeautifulSoup
 
-# DEPENDENCIES OF THIS SCRIPT ARE: lxml, bs4
+# directory that contains the directories with page content
+ROOT_PAGES = r"../../../src/routes/"
 
-# Emmi fix search,
-# neuer path sollte jetzt "../../routes/" sein,
-# allerdings hat jetzt jede seite ihren eigenen folder, also good luck
-PATH = r"../../../src/Wiki/"
+# symbol that's used to indicate that a section contains a subsection,
+# see also: http://xahlee.info/comp/unicode_arrows.html
+ARROW_SYMBOL = u'»'
 
-def parse_page(filename):
-    '''
-    takes a svelte file name and returns the title of the page and a dict with
-    section names (keys) and their text contents (values), bundled as an array
-    
-    input: svelte file name (with .svelte extension)
-    output: array
-        index 0: title of the page
-        index 1: dict with entries ' section name : section text '
-
-    remark: h2, h3 etc. headers are ignored. 
-    '''
-
-    # holds the name of the page to be parsed
-    page_name = ''
-    page_link = ''
-
-    # holds sections of the page (page title -> key) with the text they contain (value)
-    page_sections = {}
-    
-    with open(PATH+filename, 'r', encoding="utf-8") as svelte:
-
-        # reading the .svelte and setting the Wiki tag as source
-
-        index = svelte.read()
-        bs = BeautifulSoup(index, 'lxml')
-        root = bs.wiki.find('svelte:fragment')
-
-        page_link = root.find('article').attrs['id']
-
-        page_sections.update({'link':page_link})
-
-        for section in root.find_all('section', recursive=False):
-            # only index sections that have an id
-            section_text = ''
-            if not 'id' in section.attrs:
-                for p in section.descendants:
-                    if p.name in ['p', 'a', 'section', 'li', 'ul', 'ol', 'kbd']:
-                        section_text = section_text+p.text+" " # THIS IS PROBABLY BAD
-            
-            section_name = section.attrs["id"]
+# tags with text to be indexed (used by sections and subsections)
+TEXT_ELEMENTS = ['p', 'li', 'h2', 'h3']
 
 
-            for subsection in section.find_all('section', recursive=False):
+def remove_escape_chars(str):
 
-                # only index sections that have an id
-                if not 'id' in subsection.attrs:
-                    continue # THIS IS PROBABLY BAD...
-                
-                # string to be appended to for every p tag
-                subsection_text = ''
+    return ''.join([e for e in str if e.isalnum() or e in [' ', '.', '-', '(', ')']]).strip()
 
-                for p in subsection.descendants: 
-                    if p.name in ['p', 'a', 'section', 'li', 'ul', 'ol', 'kbd', 'h3']:
-                        if p.text in subsection_text: continue
-                        subsection_text = subsection_text + p.text + ' '
-
-                # remove tags
-                # apparently removal of tags is already handeled by bs4
-
-                '''
-                tags_to_remove = []#'a', 'link', 'Link', 'b', 'i', 'img', 'u', 'br', 'hr', '<strong>', 'em', 'abbr', 'acronym', 'address', 'bdo', 'blockquote', 'cite', 'q', 'code', 'ins', 'del', 'dfn', 'kbd', 'pre', 'samp', 'var', 'area', 'map', 'param', 'object', 'ul', 'ol', 'li', 'dl', 'dt', 'dd', 'noscript', 'audio', 'base']
-
-                
-                for tag in tags_to_remove:
-                    re.sub(r'<'+tag+'[*]>', '', section_text)
-                '''
-
-                page_sections.update({section_name+" » "+subsection.attrs['id']:subsection_text})
-
-            for p in section.children: 
-                if p.name in ['p', 'a', 'li', 'ul', 'ol']:
-                    section_text = section_text + p.text + ' '
-            
-            page_sections.update({section_name:section_text})
-
-    # get the page title from the first h1 tag
-    page_name = root.h1.text
-
-    return [page_name, page_sections]
-
-def save_to_JSON(dict_to_save):
-    '''
-    saves given dict as searchIndex.json
-
-    returns: 0 if successful
-    '''
-
-    with open('searchIndex.json', 'w', encoding='utf-8') as f:
-        dump(dict_to_save, f, ensure_ascii=True, indent=4)
-
-    return 0
 
 def main():
-    # empty dict to be converted to JSON
-    output = {}
+    # collect all pages to be read from into the iterator 'pages'
+    page_names = next(walk(ROOT_PAGES))[1]
+    page_dirs = [(ROOT_PAGES+page_name) for page_name in page_names]
 
-    # for all files, create a page entry in dict output 
-    for file in listdir(PATH):
-        if not basename(file).endswith('.svelte'): continue
+    pages = zip(page_names, page_dirs)
+    del page_names, page_dirs
 
-        pagearr = parse_page(file)
+    # main dict that gets written to disc eventually
+    index_dict = {}
 
-        page_name = pagearr[0]
-        page_sections = pagearr[1]
+    # for every page, open its index.svelte
+    for page_name, page_dir in pages:
+        with open(path.join(page_dir, 'index.svelte'), 'r', encoding='utf-8') as file:
+            index = file.read()
+            parser = BeautifulSoup(index, 'lxml')
 
-        output.update({page_name : page_sections})
+            # the actual content is inside a <svelte:fragment slot='content'> tag
+            page_root = None
+            fragments = parser.find_all('svelte:fragment')
+            for fragment in fragments:
+                try:
+                    if fragment['slot'] == 'content':
+                        page_root = fragment
+                except KeyError:
+                    continue
 
-    save_to_JSON(output)
+            del fragments
 
-    system("cls")
-    print("searchIndex.json sucessfully updated.")
-    system("pause")
+            # make sure page_root is well-defined
+            assert page_root is not None
 
-    return 0
+            page_sections = page_root.find_all('section', recursive=False)
 
-if __name__=='__main__': main()
+            page_title = page_root.find('h1').text
+
+            page_dict = {}
+            # this will contain:
+            #   route: its name for anchor links
+            #   sections and subsections with their text contents
+
+            page_dict.update({'route': page_name})
+
+            # for every section/subsection etc. get its text
+
+            for section in page_sections:
+                try:
+                    section_name = section['id']
+                except KeyError:
+                    # sections without ids shouldn't be indexed
+                    continue
+
+                section_text = ''
+                for child in section.children:
+                    if child.name in TEXT_ELEMENTS:
+                        section_text += remove_escape_chars(child.text) + ' '
+
+                page_dict.update({section_name: section_text})
+
+                # index subsections
+
+                subsections = section.find_all('section', recursive=False)
+                for subsection in subsections:
+                    try:
+                        subsection_name = section_name + ' ' + ARROW_SYMBOL + ' ' + subsection['id']
+                    except KeyError:
+                        # subsections without ids shouldn't be indexed
+                        continue
+
+                    # get subsection texts
+
+                    subsection_text = ''
+                    for child in subsection.descendants:
+                        if child.name in TEXT_ELEMENTS:
+                            subsection_text += remove_escape_chars(child.text) + ' '
+
+                    page_dict.update({subsection_name: subsection_text})
+
+        index_dict.update({page_title: page_dict})
+
+    # bundle everything into one json object
+
+    with open('searchIndex.json', 'w', encoding='utf-8') as f:
+        dump(index_dict, f, ensure_ascii=True, indent=4)
+
+
+if __name__ == "__main__":
+    main()
