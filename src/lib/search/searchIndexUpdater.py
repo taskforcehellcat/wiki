@@ -9,18 +9,17 @@ from json import dump
 from bs4 import BeautifulSoup
 
 # directory that contains the directories with page content
-ROOT_PAGES = r"../../../src/routes/"
+ROOT_PAGES = r'../../../src/routes/'
 
 # symbol that's used to indicate that a section contains a subsection,
 # see also: http://xahlee.info/comp/unicode_arrows.html
-ARROW_SYMBOL = u'»'
+ARROW_SYMBOL = '»'  # DO NOT CHANGE! Other code depends on this specific character.
 
 # tags with text to be indexed (used by sections and subsections)
 TEXT_ELEMENTS = ['p', 'li', 'h2', 'h3']
 
 
 def remove_escape_chars(str):
-
     return ''.join([e for e in str if e.isalnum() or e in [' ', '.', '-', '(', ')']]).strip()
 
 
