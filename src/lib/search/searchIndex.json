@@ -1,35 +1,41 @@
 {
-    "MG-Sch\u00fctze": {
-        "route": "mgschuetze",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
+    "Funketikette": {
+        "route": "funketikette",
+        "Einleitung": "Grundvoraussetzung f\u00fcr eine gelungene Missionsdurchf\u00fchrung ist eine gute Kommunikation zwischen allen Kr\u00e4ften. \u00dcber l\u00e4ngere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundz\u00fcge von gutem Funken sollten allen Soldaten bekannt sein. Diese Anleitung vermittelt blo\u00df die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant wie etwa beim Funken im Konvoi und zwischen der Logistik im Funk unter Truppf\u00fchrern Sanit\u00e4tern oder Aufkl\u00e4rern. Dazu finden sich Eintr\u00e4ge mit weiterf\u00fchrenden Informationen auf den jeweiligen Unterseiten. ",
+        "Steuerung": "\u00dcber die ACE Self-Interaction (LCTRLWINLCTRLLCMD) k\u00f6nnen unter dem Punkt Radio die Funkger\u00e4te eingestellt werden siehe dazu auch untenstehendes Bild. W\u00e4hlt man das Funkger\u00e4t aus so \u00f6ffnet es sich (sieheFunkger\u00e4t einstellen). Die Unterpunkte werden im Folgenden erkl\u00e4rt. ",
+        "Steuerung \u00bb Funkger\u00e4t einstellen": "Infanterie ist zumeist mit dem Funkger\u00e4t SEM 52 SL ausger\u00fcstet deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehkn\u00f6pfen und einer Anzeige. Letztere zeigt die aktuell genutze Frequenz in kHz (Kilohertz) standardm\u00e4\u00dfig sind 46 MHz eingestellt. Die Drehkn\u00f6pfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt. Der linke Drehknopf dient neben dem Einschalten dem Ausw\u00e4hlen von Voreinstellungen. Die zw\u00f6lf standardm\u00e4\u00dfigen Voreinstellungen bezeichnen wir auch als Kan\u00e4le. Die Einstellungen P und H dienen der Programmierung des Funkger\u00e4ts was im Allgemeinen aber nicht notwendig werden sollte. Der rechte Drehknopf ist die Lautst\u00e4rkeeinstellung mit zw\u00f6lf Stufen. Zwischen beiden Drehkn\u00f6pfen befindet sich ein Knopf zum Senden (praktisch verwendet man ohne daf\u00fcr ohne das Funkger\u00e4t \u00f6ffnen zu m\u00fcssen die Taste CAPS LOCK). Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkger\u00e4ten finden sich auch in englischer Sprache im ACRE Wiki. ACRE Wiki Eintrag zum ANPRC 343 in englischer Sprache. ",
+        "Steuerung \u00bb Weitere Einstellungen": "Je nach Pr\u00e4ferenz kann man ein Funkger\u00e4t auf das rechte linke oder beide Ohren legen. Besonders wenn man mehrere Funkger\u00e4te gleichzeitig benutzt kann dies sinnvoll sein um unterscheiden zu k\u00f6nnen von welchem Funkger\u00e4t gerade Funk eingeht. Die Option share erm\u00f6glicht es mit einer anderen Person das Funkger\u00e4t zu teilen solange sie in der N\u00e4he ist ohne daf\u00fcr das Funkger\u00e4t aus dem Inventar geben zu m\u00fcssen. F\u00fchrt man mehrere Funkger\u00e4te gibt es zudem die Option PPT. Mit dem Funkger\u00e4t PPT1 funkt man mit CAPS LOCK \u00fcber PPT2 mit SHIFTCAPS LOCK und \u00fcber PPT3 mit ALTCAPS LOCK. ",
+        "Vor dem Funken": "Noch bevor man beginnt Funkkontakt aufzubauen \u00fcberlegt man sich genau was man mitteilen m\u00f6chte. Ein Sender blockiert f\u00fcr die Dauer seines Funkspruches den Funkkanal und damit m\u00f6glicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert knapp aber unmissverst\u00e4ndlich gehalten werden. Guter Funk folgt also der Devise So viel wie n\u00f6tig so kurz wie m\u00f6glich. ",
+        "Verbindung": "Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema Der Sender identifiziert sich und den Empf\u00e4nger des Funkspruches. Danach wird in einem Wort erkl\u00e4rt welchen Zweck die Mitteilung verfolgt. Zum Beispiel Aufkl\u00e4rung f\u00fcr Truppf\u00fchrung - Information - Infanterie in Gruppenst\u00e4rke zu Fu\u00df gesichtet nord-west ihrer Aktuellen - Kommen. Truppf\u00fchrung f\u00fcr Aufkl\u00e4rung - Frage - Panzerabwehrsch\u00fctzen erkannt Kommen. Dies stellt eine Richtlinie f\u00fcr die Erstverbindung dar. Im weiteren Gespr\u00e4chsverlauf ist es eventuell nicht mehr n\u00f6tig so explizit zu sein da dann bereits klar ist worum es geht. Gerade zu Beginn des Funkkontakts kann es dem Gegen\u00fcber jedoch das Verst\u00e4ndnis erleichtern wenn man seine Absicht ausspricht. ",
+        "Funkspruch": "Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grunds\u00e4tzen er sollte knapp aber eindeutig sein. Besonders F\u00fcllw\u00f6rter und h\u00e4ufiges Versprechen k\u00f6nnen leicht vermieden werden indem man sich den Inhalt seines Funkes vor dem Funken kurz \u00fcberlegt. Abgesehen davon gibt es noch ein paar Konventionen die das Verst\u00e4ndnis erleichtern sollen. ",
+        "Funkspruch \u00bb Zahlen": "Zahlen werden im Funk grunds\u00e4tzlich Ziffer f\u00fcr Ziffer diktiert 1278 also als eins - zwo - sieben - acht gesprochen. Zwo ist dabei dringend zu benutzen da zwei leicht mit drei verwechselt wird. Ebenso verwendet man f\u00fcnn\u00fcf f\u00fcr f\u00fcnf. ",
+        "Funkspruch \u00bb Windrichtungen": "Da die Windrichtungen Osten und Westen sehr \u00e4hnlich klingen spricht man die erste Silbe im Gegensatz zur nat\u00fcrlichen Aussprache lang. Also zum Beispiel nord-ohst f\u00fcr nord-ost s\u00fcd-wehst f\u00fcr s\u00fcd-west etc. ",
+        "Funkspruch \u00bb Buchstabieren": "Buchstabieren wird oft n\u00f6tig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet. Da es auch au\u00dferhalb des Funkes viel benutzt wird sollte man sich das NATO-Alphabet dringend aneignen. ",
+        "Beendigung": "Hat man alles gesagt muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00e4ch ansonsten f\u00fcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00f6rtern ",
+        "Beendigung \u00bb Kommen": "Mit kommen am Ende eines Funkspruches zeigt man an dass man eine Antwort vom Gegen\u00fcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. ",
+        "Beendigung \u00bb Ende": "Mit ende beendet man den Austausch. Ende wird von der Partei gebraucht die den Austausch begonnen hat. ",
+        "Beendigung \u00bb Trennung": "Trennung ist effektiv ein ende. Es zeigt dem Funkkreis an dass der Sprecher das Gespr\u00e4ch mit einer Partei f\u00fcr beendet erkl\u00e4rt aber direkt zu einer Anderen Kontakt aufnehmen m\u00f6chte. Es folgt auf Trennung also direkt die Verbindung zum neuen Gespr\u00e4chspartner. ",
+        "Ausnahmen und Notf\u00e4lle": "Grunds\u00e4tzlich herrscht w\u00e4hrend eines laufenden Austausches Funkstille f\u00fcr alle anderen. Kommt es jedoch zu Notf\u00e4llen kann es sein dass ein Dritter sich mit Signalw\u00f6rtern wie eil sofort oder Blitz einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00e4ch ist zu unterbrechen. "
+    },
+    "Befehlsausgabe": {
+        "route": "befehlsausgabe",
+        "Einleitung": "Die Befehlsausgabe erfolgt nach der Gliederung Lage Auftrag Durchf\u00fchrung Einsatzunterst\u00fctzung und F\u00fchrungsunterst\u00fctzung (kurz LADEF). Diese Gliederung wird auf dieser Seite erl\u00e4utert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage Auftrag und Durchf\u00fchrung (kurz LAD) da die Punkte Einsatz- und F\u00fchrungsunterst\u00fctzung eher f\u00fcr F\u00fchrungspersonal bedeutsam sind. ",
+        "Befehlsschema": "",
+        "Befehlsschema \u00bb 1. Lage": "1.1) Feindliche Lage In diesem Punkt wird \u00fcber die Lage feindlicher Kr\u00e4fte im Operationsraum informiert. Dabei werden die Position die Art und die Absicht des Feindes genauer beschrieben. In der Stadt Kavala im Nordwesten von Altis ist ein feindlicher Infanteriezug in Stellung. Davon befindet sich ein Halbzug im Nordosten und ein Halbzug um S\u00fcdwesten der Stadt. Vermutete Absicht des Zuges ist die Verteidigung einer zentralen Hafenanlage der Insel. 1.2) Eigene Lage In diesem Punkt wird \u00fcber die Lage eigener Kr\u00e4fte informiert. Dabei wird auf die Position und Art der eigenen Kr\u00e4fte eingegangen. Des Weiteren kann hier die Absicht des F\u00fchrungspersonals mitgeteilt werden. Ein mechanisierter Infanteriezug und ein Infanteriehalbzug der Task Force Hellcat befinden sich aktuell im Verf\u00fcgungsraum 5000\u00f6stlich von Kavala. Absicht des Zugf\u00fchrers ist der Angriff in drei Phasen. InPhase 1nimmt der erste mechanisierte Halbzug den S\u00fcdwesten Kavalas der zweite mechanisierte Halbzug den Nordosten Kavalas. In Phase 2 verteidigt der erste mechanisierte Halbzug den S\u00fcdwesten Kavalas der zweite mechanisierte Halbzug verteidigt den Nordosten Kavalas. In Phase 3 nimmt der Infanteriehalbzug das Zentrum Kavalas. Absicht des Angriffs ist der Zugang zu einer zentralen Hafenanlage der Insel Altis. 1.3) Zivile Lage In diesem Punkt wird \u00fcber die Lage von Zivilisten im Operationsraum informiert. Dabei wird auf das Verhalten der Zivilisten gegen\u00fcber dem Feind und eigenen Kr\u00e4ften eingegangen. Die Zivilbev\u00f6lkerung im Raum Kavala geht dem Allt\u00e4glichen nach. Zivilisten meiden den Kontakt zu feindlichen Kr\u00e4ften und treten den eigenen Kr\u00e4ften neutral gegen\u00fcber. ",
+        "Befehlsschema \u00bb 2. Auftrag": "In diesem Punkt erfolgt eine knappe Darlegung des eigenen Auftrags. Das geschieht in Form einer stichpunktartigen Aufz\u00e4hlung was erledigt werden muss. Haupts\u00e4chlich wird dieser Punkt auf Zugebene besprochen. Der Infanteriehalbzug nimmt das Zentrum der Stadt Kavala. ",
+        "Befehlsschema \u00bb 3. Durchf\u00fchrung": "In diesem Punkt werden die Einzelauftr\u00e4ge der unterstellten Truppenteileerl\u00e4utert. Dabei geht der Zug- bzw. Gruppenf\u00fchrer genauer auf die Vorgehensweise bei der Erf\u00fcllung des Auftrages ein. Zus\u00e4tzlich k\u00f6nnen hierwichtige ZeitenoderVerhaltensweisen mitgeteilt werden. Die beiden Halbz\u00fcge des mechanisierten Infanteriezuges bewegen sich nebeneinander auf Kavala zu. Ab Ablauflinie Adler trennen sich die beiden Halbz\u00fcge und bewegen sich jeweils auf den ihnen zugewiesenen s\u00fcdwestlichen beziehungsweise nord\u00f6stlichen Teil Kavalas zu und nehmen diesen. ",
+        "Befehlsschema \u00bb 4. Einsatzunterst\u00fctzung": "4.1) Logistische Unterst\u00fctzung In diesem Punkt wird \u00fcber Ma\u00dfnahmen und Einrichtungen der Versorgung informiert. Verbrauchsmaterial und Ersatzketten befinden sich auf den Sch\u00fctzenpanzern der mechanisierten Infanterie. Zur Versorgung des Infanteriehalbzuges steht ein Unimog mit Verbrauchsmaterial bereit. 4.2) Sanit\u00e4tsdienstliche Unterst\u00fctzung In diesem Punkt wird \u00fcber M\u00f6glichkeiten der Versorgung verwundeter Kr\u00e4fte informiert. Vorrangig erfolgt die Versorgung verwundeter Soldaten im Feld durch Selbst- und Kameradenhilfe. Jeder Panzergrenadiertrupp und beide Gruppen des Infanteriehalbzuges verf\u00fcgen jeweils \u00fcber einen Sanit\u00e4ter. F\u00fcr medizinische Notf\u00e4lle steht ein beweglicher Arzttrupp aufgesessen auf einem Unimog bereit. ",
+        "Befehlsschema \u00bb 5. F\u00fchrungsunterst\u00fctzung": "5.1) Funkverbindungsplan In diesem Punkt wird \u00fcber die Zuweisung der Funkger\u00e4te der Funkfrequenzen und der Aufteilung der Funkrufzeichen informiert. Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60.000 MHz. Im Zugkreis wird das Funkger\u00e4t ANPRC-152 verwendet. Dabei ist f\u00fcr den mechanisierten Infanteriezug Kanal 01 und f\u00fcr den Infanteriehalbzug Kanal 02 reserviert. Auf Gruppenebene wird mit der SEM 52 SL gefunkt. F\u00fcr die vier Gruppen des mechanisierten Infanteriezuges sind Kan\u00e4le 01 bis 04 reserviert. Der Infanteriehalbzug verteilt sich auf den Kan\u00e4len 05 und 06. Der mechanisierte Infanteriezug ist in ALPHA und der Infanteriehalbzug in BRAVO eingeteilt. 5.2) F\u00fchrungsreihenfolge In diesem Punkt wird \u00fcber die Einteilung der F\u00fchrungs\u00fcbernahme bei einem Ausfall der F\u00fchrungsperson informiert. Die Kompanief\u00fchrung beginnt beim Zugf\u00fchrer von ALPHA. F\u00e4llt dieser aus \u00fcbernimmt der Gruppenf\u00fchrer von ALPHA-2. Im Falle seines Ausfalls \u00fcbernimmt der Zugf\u00fchrer von BRAVO die Kompanie. "
+    },
+    "Sch\u00fctze": {
+        "route": "schuetze",
+        "Rollenprofil": "Der Sch\u00fctze ist die grundlegendste Rolle der Task Force Hellcat. Jedes neue Mitglied beginnt gleich nach der Grundausbildung mit der Rolle des Sch\u00fctzen da ihre Hauptaufgabe die fachgerechte Anwendung der Grundkenntnisse ist. Als Rekrut kann man zus\u00e4tzlich zur Rolle des Sch\u00fctzen eine Ausbildung auf eine Spezialisierung wie beispielsweise AT-Sch\u00fctze oder Pr\u00e4zisionssch\u00fctze absolvieren. ",
+        "Aufgaben": "Die Rolle des Sch\u00fctzen ist das bek\u00e4mpfen und niederhalten von feindlichen Kr\u00e4ften ",
         "Ausr\u00fcstung": " ",
         "Fertigkeiten": " "
     },
-    "Steuerung": {
-        "route": "steuerung",
-        "Erkl\u00e4rung": "Hier findet ihr die Standard Steuerung f\u00fcr ArmA 3. Je nach Benutzereinstellungen kann sie allerdings variieren.Spieler mit Mac-Tastaturen k\u00f6nnen unten das Layout wechseln. Am Ende dieser \u00dcbersicht findet sich eine Liste mit weiterf\u00fchrenden Artikeln. ",
-        "Allgemein": "",
-        "Zu Fu\u00df": "",
-        "Waffen": "",
-        "Fahrzeuge": "",
-        "Weiterf\u00fchrende Informationen": ""
-    },
-    "MEDEVAC-Sanit\u00e4ter": {
-        "route": "medevacsanitaeter",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Fahrer (Panzertruppen)": {
-        "route": "fahrer",
-        "Rollenprofil": "Der Kraftfahrer nimmt unmittelbar Einfluss auf die Bewegung des Fahrzeuges entsprechend der Anweisungen des Kommandanten. Die eigenst\u00e4ndige Man\u00f6vrierung seines Fahrzeuges entlang Stra\u00dfen oder durch das Gel\u00e4nde bei oft schlechten Sichtm\u00f6glichkeiten stellt seine gr\u00f6\u00dfte H\u00fcrde dar. ",
-        "Aufgaben": "Die Kraftfahrer der Panzertruppen unterstehen der kontinuierlichen Aufgabe die Befehle ihrer Kommandanten m\u00f6glichst schnell in die Tat umzusetzen um die Sicherheit ihres Fahrzeuges samt Besatzung zu gew\u00e4hrleisten. Das Aufgabenprofil der Kraftfahrer ist f\u00fcr alle Fahrzeugklassen der Panzertruppen gleich. ",
-        "Weiteres": "Eine Konvention f\u00fcr Kraftfahrer der Panzertruppen ist die Wiederholung von Fahrbefehlen des Kommandanten um ein gewisses Feedback zur\u00fcckzugeben dass der Befehl korrekt aufgenommen werden konnte. Im Gefecht kann darauf gegebenenfalls verzichtet werden. "
-    },
-    "Scharfsch\u00fctze": {
-        "route": "scharfschuetze",
+    "JTAC (Joint Terminal Attack Controller)": {
+        "route": "jtac",
         "Rollenprofil": " ",
         "Aufgaben": " ",
         "Ausr\u00fcstung": " ",
@@ -42,21 +48,96 @@
         "Ausr\u00fcstung": " ",
         "Fertigkeiten": " "
     },
-    "Abteilungen": {
-        "route": "abteilungen",
-        "Allgemeines": "Die Task Force Hellcat ist in drei Abteilungen untergliedert die jeweils durch einen Abteilungsleiter organisiert und verwaltet werden. Alle Abteilungen umfassen mehrere Truppengattungen die auf dieser Seite erl\u00e4utert werden. ",
-        "Streitkr\u00e4fte": "Die Abteilung der Streitkr\u00e4fte wird von Leon organisiert und verwaltet. Sie umfasst insgesamt vier Truppengattungen Die (motorisierte) Infanterie den Sanit\u00e4tsdienst und die Aufkl\u00e4rung. ",
-        "Streitkr\u00e4fte \u00bb (Motorisierte) Infanterie": "Die Infanterie setzt sich aus Sch\u00fctzen MG-Sch\u00fctzen AT-Sch\u00fctzen Pr\u00e4zisionssch\u00fctzen Funkern und Grenadieren zusammen. Ihre Bewegung und der Feuerkampf erfolgen ausschlie\u00dflich zu Fu\u00df. Alternativ k\u00f6nnen sich die Soldaten auf Fahrzeugen aufgesessen bewegen auch motorisierte Infanterie genannt. Die Infanterie kann vielseitig eingesetzt werden. Sie erweist sich besonders im urbanen Gebietundunwegsamen Gel\u00e4nde als effektiv da Fahrzeuge dort nur eingeschr\u00e4nkt beweglich sind. ",
-        "Streitkr\u00e4fte \u00bb Sanit\u00e4tsdienst": "Der Sanit\u00e4tsdienst setzt sich aus Sanit\u00e4tern und \u00c4rzten zusammen. Er wird von ptolemy organisiert und verwaltet. Sanit\u00e4ter sind in Trupps und Gruppen der Infanterie vertreten und \u00fcbernehmen die fortgeschrittene Versorgung von verwundeten Soldaten im Feld. \u00c4rzte sind vorwiegend bei Spezialanwendungen wie dem MEDEVACoder dem BAT anzutreffen. ",
-        "Streitkr\u00e4fte \u00bb Aufkl\u00e4rung": "Die Aufkl\u00e4rung setzt sich aus Scharfsch\u00fctzen Spotternund JTACszusammen. Scharfsch\u00fctzen und Spotter sind meist im Trupp oder Buddy-Team zur Aufkl\u00e4rung oder Bek\u00e4mpfung feindlicher Kr\u00e4fte auf gro\u00dfe Distanzen anzufinden. JTACs sind entweder im Aufkl\u00e4rungstrupp oder in Infanteriegruppen vertreten. Ihre Hauptaufgabe ist die Koordinierung vomCAS auf feindliche Ziele. ",
-        "Panzertruppen": "Die Abteilung der Streitkr\u00e4fte wird von Kevin organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen Die mechanisierte Infanterie die Kampfpanzer und die Artillerie. Alle Truppengattungen der Panzertruppen umfassen drei Rollen Den Kommandanten den Richtsch\u00fctzen und den Fahrer. ",
-        "Panzertruppen \u00bb Mechanisierte Infanterie": "Die mechanisierte Infanterie setzt sich aus Panzerbesatzungen und Panzergrenadieren zusammen wobei die Panzergrenadiere die gleichen Rollen vertreten wie die Infanterie. Sie vereinigt die Vorteile der Infanteriemit denVorteilen der Sch\u00fctzenpanzer in einer Truppengattung. ",
-        "Panzertruppen \u00bb Kampfpanzer": "Die Soldaten der Kampfpanzer bedienen ausschlie\u00dflich Fahrzeuge mit guter Panzerung und \u00fcberw\u00e4ltigender Feuerkraft. Kampfpanzer sind besonders gut gegen feindliche Panzerverb\u00e4nde und befestigte Stellungen geeignet erweisen sich jedoch als \u00e4u\u00dferst ineffektiv im urbanen Gel\u00e4nde. Oft agieren Kampfpanzer gemeinsam mit der mechanisierten Infanterie um die Schwachstellen der Kampfpanzer zu kompensieren. ",
-        "Panzertruppen \u00bb Panzerartillerie": "Die Artillerie setzt Panzerhaubitzen mit schweren Gesch\u00fctzen ein. Sie wirken auf gro\u00dfe Distanz mittels gelenktem oder ungelenktem Steilfeuer auf feindliche Kr\u00e4fte oder Stellungen. Um eine pr\u00e4zise Wirkung zu erzielen erfordert es eine gute Kommunikation zu eigenen Kr\u00e4ften im Operationsraum die der Artillerie den Feuerbefehl erteilen. ",
-        "Logistik": "Die Abteilung der Logistik wird von  organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen Die Instandsetzung die Versorgung und die Luftlogistik. ",
-        "Logistik \u00bb Pioniertruppe": "Die Pioniertruppe setzt sich aus Pionieren und Kampfpionieren zusammen. Die Hauptaufgabe der Pioniere ist die Wartung Bergung und Instandsetzung eigener Fahrzeuge. Zus\u00e4tzlich kann es auch zu Spezialanwendungen kommen wie zum Beispiel der Einsatz eines Br\u00fcckenlegepanzers durch die Pioniertruppe. ",
-        "Logistik \u00bb Versorgung": "Die Truppengattung der Versorgung befasst sich mit der Versorgung anderer Truppenteile mit Bodenfahrzeugen. H\u00e4ufig transportiert werden G\u00fcter wie Munition Treibstoff und Verbrauchsmaterialien. Gegebenenfalls kann die Versorgung auch eigene Kr\u00e4fte ins Feld verlegen. ",
-        "Logistik \u00bb Luftversorgung": "Die Luftlogistik befasst sich im Kern mit der Versorgung anderer Truppenteile mit Luftfahrzeugen. Transportierte G\u00fcter sind hierbei Munition Treibtstoff und Verbrauchsmaterialien. Die Luftversorgung kann sich ebenfalls mit der Verlegung eigener Kr\u00e4fte ins Feld befassen. "
+    "MG-Sch\u00fctze": {
+        "route": "mgschuetze",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Richtsch\u00fctze (Panzertruppen)": {
+        "route": "richtschuetze",
+        "Rollenprofil": "Der Richtsch\u00fctze bedient die Waffenanlage seines Fahrzeuges. Er untersteht dem auf seinem Fahrzeug aufgesessenem Kommandanten der ihm im Verlauf eines Einsatzes eine Vielzahl an Anweisungen erteilen kann. Durch das Abfeuern der Waffensysteme nimmt er unmittelbar Einfluss auf das Gefechtsgeschehen. Aufgrund der Abwesenheit eines Ladesch\u00fctzen bei der Mehrheit der gepanzerten Fahrzeugen nimmt lediglich der Richtsch\u00fctze Einfluss auf die Munitionsart der Hauptbewaffnung. ",
+        "Aufgaben": "Das Aufgabenprofil eines Richtsch\u00fctzen kann je nach Fahrzeugklasse und Bewaffnung stark variieren l\u00e4sst sich aber in ein paar Punkten zusammenfassen. "
+    },
+    "Steuerung": {
+        "route": "steuerung",
+        "Erkl\u00e4rung": "Hier findet ihr die Standard Steuerung f\u00fcr ArmA 3. Je nach Benutzereinstellungen kann sie allerdings variieren.Spieler mit Mac-Tastaturen k\u00f6nnen unten das Layout wechseln. Am Ende dieser \u00dcbersicht findet sich eine Liste mit weiterf\u00fchrenden Artikeln. ",
+        "Allgemein": "",
+        "Zu Fu\u00df": "",
+        "Waffen": "",
+        "Fahrzeuge": "",
+        "Weiterf\u00fchrende Informationen": ""
+    },
+    "Bodenfahrzeuge": {
+        "route": "bodenfahrzeuge",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Pr\u00e4zisionssch\u00fctze": {
+        "route": "praezisionsschuetze",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Grenadier": {
+        "route": "grenadier",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Scharfsch\u00fctze": {
+        "route": "scharfschuetze",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "AT-Sch\u00fctze": {
+        "route": "atschuetze",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Breacher": {
+        "route": "breacher",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Helikopterpilot": {
+        "route": "helikopterpilot",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "MEDEVAC-Sanit\u00e4ter": {
+        "route": "medevacsanitaeter",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Spotter": {
+        "route": "spotter",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
+    },
+    "Sonstiges": {
+        "route": "sonstiges",
+        "Rollenprofil": " ",
+        "Aufgaben": " ",
+        "Ausr\u00fcstung": " ",
+        "Fertigkeiten": " "
     },
     "Sanit\u00e4ter": {
         "route": "sanitaeter",
@@ -81,33 +162,10 @@
         "Behandlungsroutinen \u00bb Transfusionen im Feld": "Standardm\u00e4\u00dfig f\u00fchren Sanit\u00e4ter Blut der Blutgruppe 0- oder PlasmaKochsalzl\u00f6sung mit welches also immer vertr\u00e4glich ist. Gen\u00fcgen diese Reserven nicht kann im Feld Blut abgenommen werden wenn ein Feldtransfusionssetmitgef\u00fchrt wird. Dabei ist allerdings die Kompatibilit\u00e4t von Spender- und Empf\u00e4ngerblut dringend zu beachten. Die Blutgruppe eines Kameraden steht auf seiner Marke (Kopfcheck dogtag). Man kann sich merken dass dabei die Spenderblutgruppe gewisserma\u00dfen in der des Empf\u00e4ngers enthalten sein muss (dabei steckt - gewisserma\u00dfen in ). M\u00f6chte man herausfinden ob ein Patient eine bestimmte Blutgruppe empfangen kann testet man also ob das Spenderblut in seine Blutgruppe hineinpasst. A- steckt zum Beispiel in diesem Sinne in AB A oder auch AB- diese Blutgruppen k\u00f6nnen also A- empfangen. Es ist allerdings nicht enthalten in 0 0- B etc. Diese Gruppen k\u00f6nnen also kein A- empfangen. AB kann beispielsweise jede Blutgruppe empfangen 0- hingegen nur 0-. Eine vollst\u00e4ndige \u00dcbersicht liefert auch die nachfolgende Tabelle. Am besten sucht man sich selbst einige Paare aus und testet anhand der Tabelle das eben beschriebene Muster. Eine \u00e4hnliche Tabelle kann auch ingame als Item mitgef\u00fchrt und benutzt werden. Dass die falsche Blutgruppe verabreicht worden ist erkennt man in der Regel an einer rapide fallenden Herzrate. Das Klumpen der Blutk\u00f6rperchen kann vermindert werden indem Schmerztabletten in gro\u00dfer Anzahl verabreicht werden. Die Infusion muss nat\u00fcrlich sofort abgebrochen werden. ",
         "N\u00fctzliche Hinweise": ""
     },
-    "JTAC (Joint Terminal Attack Controller)": {
-        "route": "jtac",
+    "Luftfahrzeuge": {
+        "route": "luftfahrzeuge",
         "Rollenprofil": " ",
         "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Spotter": {
-        "route": "spotter",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Erste Hilfe": {
-        "route": "erstehilfe",
-        "Versorgungsmaterial": "Um eine Grundversorgung gew\u00e4hrleisten zu k\u00f6nnen sollte das folgende Material immer mitgef\u00fchrt werden Die Standardloadouts zum Beispiel sind ausreichend ausgestattet. ",
-        "Melden": "Der Patientenstatus wird mit einer der folgenden Kategorien angegeben Sanit\u00e4ter verwenden oft eine genauere Einteilung mit den Subkategorien Alpha und Bravo. Bravo beschreibt dabei einen ernsteren Zustand im Detail kann das hier nachgelesen werden. Nichtsanit\u00e4ter m\u00fcssen diese Einteilung aber nicht zwingend beherrschen. ",
-        "Hilfeleistung": "Der Standardkeybind zum \u00d6ffnen des Medical Menuist H. Dabei muss man den Patienten ansehen. Achtung Im Medical Menu sollte der Name des Patienten zu sehen sein Andernfalls hat man versehentlich das eigene Medical Menu ge\u00f6ffnet. ",
-        "Hilfeleistung \u00bb Lesen des Medical Menus": " Spalte Status Je dunkler der Rotton eines K\u00f6rperteils desto gr\u00f6\u00dferen Blutverlust verursacht es. Blaue K\u00f6rperteile sind versorgt aber noch nicht gen\u00e4ht. Es besteht die Gefahr dass sich diese Bandagen wieder \u00f6ffnen. Zum N\u00e4hen muss ein Sanit\u00e4ter aufgesucht werden. Ein unverletztes oder endversorgtes K\u00f6rperteil erscheint wei\u00df. Spalte Overview Hier sieht man die Verwundungen. Spalte Examine and Treatment Hier sieht man die Behandlungsoptionen und kann sie ausf\u00fchren. Diese Spalte hat weitere Reiter unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein. ",
-        "Hilfeleistung \u00bb Behandeln ansprechbarer Patienten": "im Gefecht Tourniquet an blutende Gliedma\u00dfen anlegen (am Torso und Kopf ist das nicht m\u00f6glich) Kopf und Torso verbinden st\u00e4rkere Verwundungen priorisieren bei Schmerzen Schmerztabletten verwenden Splint anlegen wenn n\u00f6tig. Splints die von Nichtsanit\u00e4tern angelegt worden sind l\u00f6sen sich mit einer gewissen Wahrscheinlichkeit wieder. nach dem Gefecht verletzte Gliedma\u00dfen bandagieren Tourniquets abnehmen Sanit\u00e4ter zum N\u00e4hen lassen aufsuchen (m\u00f6glichst zeitnah) ",
-        "Hilfeleistung \u00bb Behandeln bewusstloser Patienten": "Grunds\u00e4tzlich gilt bei der Ersten Hilfe Eigenschutz geht vor. Die Bergung muss mit gro\u00dfer Vorsicht und sehr guter Deckung erfolgen. Ein Risiko einzugehen um einen Kameraden zu bergen oder zu versorgen und dabei m\u00f6glicherweise selbst verwundet zu werden bringt die Mission nicht voran. Sie wird also auch nicht von einer Person alleine sondern im Verband durchgef\u00fchrt.  Im Medical Menu \u00fcberpr\u00fcfen ob der Patient gezogengetragen werden kann. Wenn nicht (Reiter DragCarry ist ausgegraut) ist der Patient tot. Ansonsten Tourniquet an blutende Gliedma\u00dfen anlegen (am Torso und Kopf ist das nicht m\u00f6glich) Kopf und Torso verbinden st\u00e4rkere Verwundungen priorisieren Atemwege \u00fcberpr\u00fcfen verstopftverschlossen (occludedobstructed) Kopf ausrichten (head turning) bis befreit Kopf \u00fcberstrecken (hyperextend head) damit die Zunge nicht die Atemwege verschlie\u00dfen kann Puls pr\u00fcfen kein Puls Herz-Lungen-Wiederbelebung (CPR) dauerhaft durchf\u00fchren Epinephrin verabreichen Sanit\u00e4ter alamieren. Auch die Atemwege weiterhin pr\u00fcfen. Puls vorhanden nach kurzer Zeit wieder pr\u00fcfen da er verschwinden k\u00f6nnte. N\u00e4chster Schritt. in stabile Seitenlage bringen (use recovery position) verbleibende Verletzungen bandagieren und Tourniquets entfernen Eine Kurz\u00fcbersicht liefert auch das nachfolgende Flowchart. Auch der Sanit\u00e4ter ben\u00f6tigt bei der weiteren Versorgung noch Unterst\u00fctzung mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanit\u00e4ter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe zum Beispiel f\u00fcr die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch f\u00fcr die m\u00f6gliche Verlegung eines Verwundeten sollte man verf\u00fcgbar bleiben. "
-    },
-    "Sch\u00fctze": {
-        "route": "schuetze",
-        "Rollenprofil": "Der Sch\u00fctze ist die grundlegendste Rolle der Task Force Hellcat. Jedes neue Mitglied beginnt gleich nach der Grundausbildung mit der Rolle des Sch\u00fctzen da ihre Hauptaufgabe die fachgerechte Anwendung der Grundkenntnisse ist. Als Rekrut kann man zus\u00e4tzlich zur Rolle des Sch\u00fctzen eine Ausbildung auf eine Spezialisierung wie beispielsweise AT-Sch\u00fctze oder Pr\u00e4zisionssch\u00fctze absolvieren. ",
-        "Aufgaben": "Die Rolle des Sch\u00fctzen ist das bek\u00e4mpfen und niederhalten von feindlichen Kr\u00e4ften ",
         "Ausr\u00fcstung": " ",
         "Fertigkeiten": " "
     },
@@ -118,116 +176,21 @@
         "Ausr\u00fcstung": " ",
         "Fertigkeiten": " "
     },
-    "Grenadier": {
-        "route": "grenadier",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Helikopterpilot": {
-        "route": "helikopterpilot",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Kommandant (Panzertruppen)": {
-        "route": "kommandant",
-        "Rollenprofil": "Der Kommandant hat die Befehlsgewalt und tr\u00e4gt die Verantwortung f\u00fcr sein Fahrzeug und die dazugeh\u00f6rige Besatzung. Seine Priorit\u00e4t ist der Erhalt der Gefechtsbereitschaft seines Fahrzeuges durch ad\u00e4quate F\u00fchrung seiner Besatzung. In der Befehlskette untersteht er dem Zugf\u00fchrer der Anweisungen an einzelne Kommandanten oder den ganzen Zug erteilen kann. ",
-        "Aufgaben": "Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung. Das Aufgabenprofil des Kommandanten kann zwischen Fahrzeugtypen variieren l\u00e4sst sich aber in wenigen Punkten grob zusammenfassen. ",
-        "Fertigkeiten": "Die Kommandanten der Panzertruppen m\u00fcssen eine handvoll Fertigkeiten beherrschen um ihr Fahrzeug m\u00f6glichst sicher und effizient ins Gefecht zu f\u00fchren. Diese Fertigkeiten tragen dazu bei die \u00dcbersicht zu behalten und Gefahrensituation einsch\u00e4tzen zu k\u00f6nnen wodurch ein reibungsloser Einsatz gew\u00e4hrleistet werden kann. "
-    },
-    "Befehlsausgabe": {
-        "route": "befehlsausgabe",
-        "Einleitung": "Die Befehlsausgabe erfolgt nach der Gliederung Lage Auftrag Durchf\u00fchrung Einsatzunterst\u00fctzung und F\u00fchrungsunterst\u00fctzung (kurz LADEF). Diese Gliederung wird auf dieser Seite erl\u00e4utert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage Auftrag und Durchf\u00fchrung (kurz LAD) da die Punkte Einsatz- und F\u00fchrungsunterst\u00fctzung eher f\u00fcr F\u00fchrungspersonal bedeutsam sind. ",
-        "Befehlsschema": "",
-        "Befehlsschema \u00bb 1. Lage": "1.1) Feindliche Lage In diesem Punkt wird \u00fcber die Lage feindlicher Kr\u00e4fte im Operationsraum informiert. Dabei werden die Position die Art und die Absicht des Feindes genauer beschrieben. In der Stadt Kavala im Nordwesten von Altis ist ein feindlicher Infanteriezug in Stellung. Davon befindet sich ein Halbzug im Nordosten und ein Halbzug um S\u00fcdwesten der Stadt. Vermutete Absicht des Zuges ist die Verteidigung einer zentralen Hafenanlage der Insel. 1.2) Eigene Lage In diesem Punkt wird \u00fcber die Lage eigener Kr\u00e4fte informiert. Dabei wird auf die Position und Art der eigenen Kr\u00e4fte eingegangen. Des Weiteren kann hier die Absicht des F\u00fchrungspersonals mitgeteilt werden. Ein mechanisierter Infanteriezug und ein Infanteriehalbzug der Task Force Hellcat befinden sich aktuell im Verf\u00fcgungsraum 5000\u00f6stlich von Kavala. Absicht des Zugf\u00fchrers ist der Angriff in drei Phasen. InPhase 1nimmt der erste mechanisierte Halbzug den S\u00fcdwesten Kavalas der zweite mechanisierte Halbzug den Nordosten Kavalas. In Phase 2 verteidigt der erste mechanisierte Halbzug den S\u00fcdwesten Kavalas der zweite mechanisierte Halbzug verteidigt den Nordosten Kavalas. In Phase 3 nimmt der Infanteriehalbzug das Zentrum Kavalas. Absicht des Angriffs ist der Zugang zu einer zentralen Hafenanlage der Insel Altis. 1.3) Zivile Lage In diesem Punkt wird \u00fcber die Lage von Zivilisten im Operationsraum informiert. Dabei wird auf das Verhalten der Zivilisten gegen\u00fcber dem Feind und eigenen Kr\u00e4ften eingegangen. Die Zivilbev\u00f6lkerung im Raum Kavala geht dem Allt\u00e4glichen nach. Zivilisten meiden den Kontakt zu feindlichen Kr\u00e4ften und treten den eigenen Kr\u00e4ften neutral gegen\u00fcber. ",
-        "Befehlsschema \u00bb 2. Auftrag": "In diesem Punkt erfolgt eine knappe Darlegung des eigenen Auftrags. Das geschieht in Form einer stichpunktartigen Aufz\u00e4hlung was erledigt werden muss. Haupts\u00e4chlich wird dieser Punkt auf Zugebene besprochen. Der Infanteriehalbzug nimmt das Zentrum der Stadt Kavala. ",
-        "Befehlsschema \u00bb 3. Durchf\u00fchrung": "In diesem Punkt werden die Einzelauftr\u00e4ge der unterstellten Truppenteileerl\u00e4utert. Dabei geht der Zug- bzw. Gruppenf\u00fchrer genauer auf die Vorgehensweise bei der Erf\u00fcllung des Auftrages ein. Zus\u00e4tzlich k\u00f6nnen hierwichtige ZeitenoderVerhaltensweisen mitgeteilt werden. Die beiden Halbz\u00fcge des mechanisierten Infanteriezuges bewegen sich nebeneinander auf Kavala zu. Ab Ablauflinie Adler trennen sich die beiden Halbz\u00fcge und bewegen sich jeweils auf den ihnen zugewiesenen s\u00fcdwestlichen beziehungsweise nord\u00f6stlichen Teil Kavalas zu und nehmen diesen. ",
-        "Befehlsschema \u00bb 4. Einsatzunterst\u00fctzung": "4.1) Logistische Unterst\u00fctzung In diesem Punkt wird \u00fcber Ma\u00dfnahmen und Einrichtungen der Versorgung informiert. Verbrauchsmaterial und Ersatzketten befinden sich auf den Sch\u00fctzenpanzern der mechanisierten Infanterie. Zur Versorgung des Infanteriehalbzuges steht ein Unimog mit Verbrauchsmaterial bereit. 4.2) Sanit\u00e4tsdienstliche Unterst\u00fctzung In diesem Punkt wird \u00fcber M\u00f6glichkeiten der Versorgung verwundeter Kr\u00e4fte informiert. Vorrangig erfolgt die Versorgung verwundeter Soldaten im Feld durch Selbst- und Kameradenhilfe. Jeder Panzergrenadiertrupp und beide Gruppen des Infanteriehalbzuges verf\u00fcgen jeweils \u00fcber einen Sanit\u00e4ter. F\u00fcr medizinische Notf\u00e4lle steht ein beweglicher Arzttrupp aufgesessen auf einem Unimog bereit. ",
-        "Befehlsschema \u00bb 5. F\u00fchrungsunterst\u00fctzung": "5.1) Funkverbindungsplan In diesem Punkt wird \u00fcber die Zuweisung der Funkger\u00e4te der Funkfrequenzen und der Aufteilung der Funkrufzeichen informiert. Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60.000 MHz. Im Zugkreis wird das Funkger\u00e4t ANPRC-152 verwendet. Dabei ist f\u00fcr den mechanisierten Infanteriezug Kanal 01 und f\u00fcr den Infanteriehalbzug Kanal 02 reserviert. Auf Gruppenebene wird mit der SEM 52 SL gefunkt. F\u00fcr die vier Gruppen des mechanisierten Infanteriezuges sind Kan\u00e4le 01 bis 04 reserviert. Der Infanteriehalbzug verteilt sich auf den Kan\u00e4len 05 und 06. Der mechanisierte Infanteriezug ist in ALPHA und der Infanteriehalbzug in BRAVO eingeteilt. 5.2) F\u00fchrungsreihenfolge In diesem Punkt wird \u00fcber die Einteilung der F\u00fchrungs\u00fcbernahme bei einem Ausfall der F\u00fchrungsperson informiert. Die Kompanief\u00fchrung beginnt beim Zugf\u00fchrer von ALPHA. F\u00e4llt dieser aus \u00fcbernimmt der Gruppenf\u00fchrer von ALPHA-2. Im Falle seines Ausfalls \u00fcbernimmt der Zugf\u00fchrer von BRAVO die Kompanie. "
-    },
-    "Richtsch\u00fctze (Panzertruppen)": {
-        "route": "richtschuetze",
-        "Rollenprofil": "Der Richtsch\u00fctze bedient die Waffenanlage seines Fahrzeuges. Er untersteht dem auf seinem Fahrzeug aufgesessenem Kommandanten der ihm im Verlauf eines Einsatzes eine Vielzahl an Anweisungen erteilen kann. Durch das Abfeuern der Waffensysteme nimmt er unmittelbar Einfluss auf das Gefechtsgeschehen. Aufgrund der Abwesenheit eines Ladesch\u00fctzen bei der Mehrheit der gepanzerten Fahrzeugen nimmt lediglich der Richtsch\u00fctze Einfluss auf die Munitionsart der Hauptbewaffnung. ",
-        "Aufgaben": "Das Aufgabenprofil eines Richtsch\u00fctzen kann je nach Fahrzeugklasse und Bewaffnung stark variieren l\u00e4sst sich aber in ein paar Punkten zusammenfassen. "
-    },
-    "Bodenfahrzeuge": {
-        "route": "bodenfahrzeuge",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Pr\u00e4zisionssch\u00fctze": {
-        "route": "praezisionsschuetze",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Kampfpionier": {
-        "route": "kampfpionier",
-        "Rollenprofil": "Die Rolle des Kampfpioniers setzt sich zusammen aus der Rolle des Pioniers  des Sch\u00fctzen. Der Kampfpionier tr\u00e4gt die Verantwortung den Schutz der eigenen Truppen zu verbessern und dadurch deren \u00dcberlebensf\u00e4higkeit zu erh\u00f6hen ist anders als der Pionier aber aktiv am Kampfgefecht beteiligt. ",
-        "Aufgaben": "Die Aufgaben eines Kampfpioniers variieren je nach Mission  Situation. Die Hauptaufgaben lassen sich aber in wenigen Punkten grob zusammenfassen. ",
-        "Ausr\u00fcstung": "In Erg\u00e4nzung zu der Grundausr\u00fcstung des Sch\u00fctzen z\u00e4hlen folgende Gegenst\u00e4nde zur Ausr\u00fcstung des Kampfpioniers ",
-        "Fertigkeiten": "",
-        "Weiteres": "Kampfpionier immer halal "
-    },
-    "Truppenteile": {
-        "route": "truppenteile",
-        "Einleitung": "Innerhalb unserer Einheit gibt es klare Festlegungen von Truppenteilen. Diese sind hilfreich um zum Beispiel schnell und effizient \u00fcber eigene oder feindliche Kr\u00e4fte zu informieren. Sie werden auf dieser Seite n\u00e4her erl\u00e4utert. ",
-        "Buddyteam": "Das Buddyteam ist die kleinste taktische Einheit. Es setzt sich aus zwei Soldatenzusammen die sich gegenseitig unterst\u00fctzen und Auftr\u00e4ge erf\u00fcllen. Soldaten im Feld werden immer mindestens in der Form des Buddyteams agieren. Das bringt mehrere Vorteile mit sich Falls einer der beiden Soldaten ausf\u00e4llt kann der andere den Ausfall melden und mit der Erstversorgung beginnen. Zus\u00e4tzlich k\u00f6nnen sich die beiden Soldaten abwechselnd im Feld decken falls Freifl\u00e4chen \u00fcberquert werden m\u00fcssen. ",
-        "Trupp": "Der Trupp ist eine taktische Einheit die sich aus drei bis sieben Soldatenzusammensetzt. Grunds\u00e4tzlich enth\u00e4lt er einen Truppf\u00fchrer und ihm unterstellte Soldaten.Eine besondere Form des Trupps ist der Panzergrenadiertrupp der gemeinsam mit einem Sch\u00fctzenpanzer agiert. ",
-        "Gruppe": "Die Gruppe ist eine taktische Einheit die sich aus acht bis zw\u00f6lf Soldatenzusammensetzt. Grunds\u00e4tzlich besteht eine Gruppe aus einem Gruppenf\u00fchrer einem stellvertretenden Gruppenf\u00fchrer und weiteren Soldaten. Oft teilen sich Gruppen in zweiHalbgruppen um die Bewegung im Feld besser zu koordinieren und sich gegenseitig zu decken. Die beiden Halbgruppen werden vom Gruppenf\u00fchrer und dem stellvertretenden Gruppenf\u00fchrer gef\u00fchrt. ",
-        "Zug": "Der Zug ist eine taktische Einheit die sich aus drei Gruppen und einem Zugtruppzusammensetzt. Der Zugtrupp wird vom Zugf\u00fchrer gef\u00fchrt der gleichzeitig die restlichen Gruppen des Zuges befehligt. Die drei Gruppen des Zuges werden jeweils von einem Gruppenf\u00fchrer gef\u00fchrt die dem Zugf\u00fchrer unterstellt sind.Bei den Panzertruppen wird unter einem Zug eine Zusammensetzung aus vier gepanzerten Fahrzeugen verstanden zum Beispiel vier Kampfpanzer oder vier Sch\u00fctzenpanzer. Der Zugf\u00fchrer befindet sich dabei selbst aufgesessen auf einem der vier Fahrzeuge. "
-    },
-    "Luftfahrzeuge": {
-        "route": "luftfahrzeuge",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "AT-Sch\u00fctze": {
-        "route": "atschuetze",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Sonstiges": {
-        "route": "sonstiges",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
-    },
-    "Funketikette": {
-        "route": "funketikette",
-        "Einleitung": "Grundvoraussetzung f\u00fcr eine gelungene Missionsdurchf\u00fchrung ist eine gute Kommunikation zwischen allen Kr\u00e4ften. \u00dcber l\u00e4ngere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundz\u00fcge von gutem Funken sollten allen Soldaten bekannt sein. Diese Anleitung vermittelt blo\u00df die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant wie etwa beim Funken im Konvoi und zwischen der Logistik im Funk unter Truppf\u00fchrern Sanit\u00e4tern oder Aufkl\u00e4rern. Dazu finden sich Eintr\u00e4ge mit weiterf\u00fchrenden Informationen auf den jeweiligen Unterseiten. ",
-        "Steuerung": "\u00dcber die ACE Self-Interaction (LCTRLWINLCTRLLCMD) k\u00f6nnen unter dem Punkt Radio die Funkger\u00e4te eingestellt werden siehe dazu auch untenstehendes Bild. W\u00e4hlt man das Funkger\u00e4t aus so \u00f6ffnet es sich (sieheFunkger\u00e4t einstellen). Die Unterpunkte werden im Folgenden erkl\u00e4rt. ",
-        "Steuerung \u00bb Funkger\u00e4t einstellen": "Infanterie ist zumeist mit dem Funkger\u00e4t SEM 52 SL ausger\u00fcstet deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehkn\u00f6pfen und einer Anzeige. Letztere zeigt die aktuell genutze Frequenz in kHz (Kilohertz) standardm\u00e4\u00dfig sind 46 MHz eingestellt. Die Drehkn\u00f6pfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt. Der linke Drehknopf dient neben dem Einschalten dem Ausw\u00e4hlen von Voreinstellungen. Die zw\u00f6lf standardm\u00e4\u00dfigen Voreinstellungen bezeichnen wir auch als Kan\u00e4le. Die Einstellungen P und H dienen der Programmierung des Funkger\u00e4ts was im Allgemeinen aber nicht notwendig werden sollte. Der rechte Drehknopf ist die Lautst\u00e4rkeeinstellung mit zw\u00f6lf Stufen. Zwischen beiden Drehkn\u00f6pfen befindet sich ein Knopf zum Senden (praktisch verwendet man ohne daf\u00fcr ohne das Funkger\u00e4t \u00f6ffnen zu m\u00fcssen die Taste CAPS LOCK). Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkger\u00e4ten finden sich auch in englischer Sprache im ACRE Wiki. ACRE Wiki Eintrag zum ANPRC 343 in englischer Sprache. ",
-        "Steuerung \u00bb Weitere Einstellungen": "Je nach Pr\u00e4ferenz kann man ein Funkger\u00e4t auf das rechte linke oder beide Ohren legen. Besonders wenn man mehrere Funkger\u00e4te gleichzeitig benutzt kann dies sinnvoll sein um unterscheiden zu k\u00f6nnen von welchem Funkger\u00e4t gerade Funk eingeht. Die Option share erm\u00f6glicht es mit einer anderen Person das Funkger\u00e4t zu teilen solange sie in der N\u00e4he ist ohne daf\u00fcr das Funkger\u00e4t aus dem Inventar geben zu m\u00fcssen. F\u00fchrt man mehrere Funkger\u00e4te gibt es zudem die Option PPT. Mit dem Funkger\u00e4t PPT1 funkt man mit CAPS LOCK \u00fcber PPT2 mit SHIFTCAPS LOCK und \u00fcber PPT3 mit ALTCAPS LOCK. ",
-        "Vor dem Funken": "Noch bevor man beginnt Funkkontakt aufzubauen \u00fcberlegt man sich genau was man mitteilen m\u00f6chte. Ein Sender blockiert f\u00fcr die Dauer seines Funkspruches den Funkkanal und damit m\u00f6glicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert knapp aber unmissverst\u00e4ndlich gehalten werden. Guter Funk folgt also der Devise So viel wie n\u00f6tig so kurz wie m\u00f6glich. ",
-        "Verbindung": "Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema Der Sender identifiziert sich und den Empf\u00e4nger des Funkspruches. Danach wird in einem Wort erkl\u00e4rt welchen Zweck die Mitteilung verfolgt. Zum Beispiel Aufkl\u00e4rung f\u00fcr Truppf\u00fchrung - Information - Infanterie in Gruppenst\u00e4rke zu Fu\u00df gesichtet nord-west ihrer Aktuellen - Kommen. Truppf\u00fchrung f\u00fcr Aufkl\u00e4rung - Frage - Panzerabwehrsch\u00fctzen erkannt Kommen. Dies stellt eine Richtlinie f\u00fcr die Erstverbindung dar. Im weiteren Gespr\u00e4chsverlauf ist es eventuell nicht mehr n\u00f6tig so explizit zu sein da dann bereits klar ist worum es geht. Gerade zu Beginn des Funkkontakts kann es dem Gegen\u00fcber jedoch das Verst\u00e4ndnis erleichtern wenn man seine Absicht ausspricht. ",
-        "Funkspruch": "Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grunds\u00e4tzen er sollte knapp aber eindeutig sein. Besonders F\u00fcllw\u00f6rter und h\u00e4ufiges Versprechen k\u00f6nnen leicht vermieden werden indem man sich den Inhalt seines Funkes vor dem Funken kurz \u00fcberlegt. Abgesehen davon gibt es noch ein paar Konventionen die das Verst\u00e4ndnis erleichtern sollen. ",
-        "Funkspruch \u00bb Zahlen": "Zahlen werden im Funk grunds\u00e4tzlich Ziffer f\u00fcr Ziffer diktiert 1278 also als eins - zwo - sieben - acht gesprochen. Zwo ist dabei dringend zu benutzen da zwei leicht mit drei verwechselt wird. Ebenso verwendet man f\u00fcnn\u00fcf f\u00fcr f\u00fcnf. ",
-        "Funkspruch \u00bb Windrichtungen": "Da die Windrichtungen Osten und Westen sehr \u00e4hnlich klingen spricht man die erste Silbe im Gegensatz zur nat\u00fcrlichen Aussprache lang. Also zum Beispiel nord-ohst f\u00fcr nord-ost s\u00fcd-wehst f\u00fcr s\u00fcd-west etc. ",
-        "Funkspruch \u00bb Buchstabieren": "Buchstabieren wird oft n\u00f6tig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet. Da es auch au\u00dferhalb des Funkes viel benutzt wird sollte man sich das NATO-Alphabet dringend aneignen. ",
-        "Beendigung": "Hat man alles gesagt muss man auch das dem Funkkreis signalisieren. Andere halten das Gespr\u00e4ch ansonsten f\u00fcr unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalw\u00f6rtern ",
-        "Beendigung \u00bb Kommen": "Mit kommen am Ende eines Funkspruches zeigt man an dass man eine Antwort vom Gegen\u00fcber erwartet. Man benutzt es auch nach dem Beantworten einer Frage. ",
-        "Beendigung \u00bb Ende": "Mit ende beendet man den Austausch. Ende wird von der Partei gebraucht die den Austausch begonnen hat. ",
-        "Beendigung \u00bb Trennung": "Trennung ist effektiv ein ende. Es zeigt dem Funkkreis an dass der Sprecher das Gespr\u00e4ch mit einer Partei f\u00fcr beendet erkl\u00e4rt aber direkt zu einer Anderen Kontakt aufnehmen m\u00f6chte. Es folgt auf Trennung also direkt die Verbindung zum neuen Gespr\u00e4chspartner. ",
-        "Ausnahmen und Notf\u00e4lle": "Grunds\u00e4tzlich herrscht w\u00e4hrend eines laufenden Austausches Funkstille f\u00fcr alle anderen. Kommt es jedoch zu Notf\u00e4llen kann es sein dass ein Dritter sich mit Signalw\u00f6rtern wie eil sofort oder Blitz einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespr\u00e4ch ist zu unterbrechen. "
-    },
-    "Breacher": {
-        "route": "breacher",
-        "Rollenprofil": " ",
-        "Aufgaben": " ",
-        "Ausr\u00fcstung": " ",
-        "Fertigkeiten": " "
+    "Abteilungen": {
+        "route": "abteilungen",
+        "Allgemeines": "Die Task Force Hellcat ist in drei Abteilungen untergliedert die jeweils durch einen Abteilungsleiter organisiert und verwaltet werden. Alle Abteilungen umfassen mehrere Truppengattungen die auf dieser Seite erl\u00e4utert werden. ",
+        "Streitkr\u00e4fte": "Die Abteilung der Streitkr\u00e4fte wird von Leon organisiert und verwaltet. Sie umfasst insgesamt vier Truppengattungen Die (motorisierte) Infanterie den Sanit\u00e4tsdienst und die Aufkl\u00e4rung. ",
+        "Streitkr\u00e4fte \u00bb (Motorisierte) Infanterie": "Die Infanterie setzt sich aus Sch\u00fctzen MG-Sch\u00fctzen AT-Sch\u00fctzen Pr\u00e4zisionssch\u00fctzen Funkern und Grenadieren zusammen. Ihre Bewegung und der Feuerkampf erfolgen ausschlie\u00dflich zu Fu\u00df. Alternativ k\u00f6nnen sich die Soldaten auf Fahrzeugen aufgesessen bewegen auch motorisierte Infanterie genannt. Die Infanterie kann vielseitig eingesetzt werden. Sie erweist sich besonders im urbanen Gebietundunwegsamen Gel\u00e4nde als effektiv da Fahrzeuge dort nur eingeschr\u00e4nkt beweglich sind. ",
+        "Streitkr\u00e4fte \u00bb Sanit\u00e4tsdienst": "Der Sanit\u00e4tsdienst setzt sich aus Sanit\u00e4tern und \u00c4rzten zusammen. Er wird von ptolemy organisiert und verwaltet. Sanit\u00e4ter sind in Trupps und Gruppen der Infanterie vertreten und \u00fcbernehmen die fortgeschrittene Versorgung von verwundeten Soldaten im Feld. \u00c4rzte sind vorwiegend bei Spezialanwendungen wie dem MEDEVACoder dem BAT anzutreffen. ",
+        "Streitkr\u00e4fte \u00bb Aufkl\u00e4rung": "Die Aufkl\u00e4rung setzt sich aus Scharfsch\u00fctzen Spotternund JTACszusammen. Scharfsch\u00fctzen und Spotter sind meist im Trupp oder Buddy-Team zur Aufkl\u00e4rung oder Bek\u00e4mpfung feindlicher Kr\u00e4fte auf gro\u00dfe Distanzen anzufinden. JTACs sind entweder im Aufkl\u00e4rungstrupp oder in Infanteriegruppen vertreten. Ihre Hauptaufgabe ist die Koordinierung vomCAS auf feindliche Ziele. ",
+        "Panzertruppen": "Die Abteilung der Streitkr\u00e4fte wird von Kevin organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen Die mechanisierte Infanterie die Kampfpanzer und die Artillerie. Alle Truppengattungen der Panzertruppen umfassen drei Rollen Den Kommandanten den Richtsch\u00fctzen und den Fahrer. ",
+        "Panzertruppen \u00bb Mechanisierte Infanterie": "Die mechanisierte Infanterie setzt sich aus Panzerbesatzungen und Panzergrenadieren zusammen wobei die Panzergrenadiere die gleichen Rollen vertreten wie die Infanterie. Sie vereinigt die Vorteile der Infanteriemit denVorteilen der Sch\u00fctzenpanzer in einer Truppengattung. ",
+        "Panzertruppen \u00bb Kampfpanzer": "Die Soldaten der Kampfpanzer bedienen ausschlie\u00dflich Fahrzeuge mit guter Panzerung und \u00fcberw\u00e4ltigender Feuerkraft. Kampfpanzer sind besonders gut gegen feindliche Panzerverb\u00e4nde und befestigte Stellungen geeignet erweisen sich jedoch als \u00e4u\u00dferst ineffektiv im urbanen Gel\u00e4nde. Oft agieren Kampfpanzer gemeinsam mit der mechanisierten Infanterie um die Schwachstellen der Kampfpanzer zu kompensieren. ",
+        "Panzertruppen \u00bb Panzerartillerie": "Die Artillerie setzt Panzerhaubitzen mit schweren Gesch\u00fctzen ein. Sie wirken auf gro\u00dfe Distanz mittels gelenktem oder ungelenktem Steilfeuer auf feindliche Kr\u00e4fte oder Stellungen. Um eine pr\u00e4zise Wirkung zu erzielen erfordert es eine gute Kommunikation zu eigenen Kr\u00e4ften im Operationsraum die der Artillerie den Feuerbefehl erteilen. ",
+        "Logistik": "Die Abteilung der Logistik wird von  organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen Die Instandsetzung die Versorgung und die Luftlogistik. ",
+        "Logistik \u00bb Pioniertruppe": "Die Pioniertruppe setzt sich aus Pionieren und Kampfpionieren zusammen. Die Hauptaufgabe der Pioniere ist die Wartung Bergung und Instandsetzung eigener Fahrzeuge. Zus\u00e4tzlich kann es auch zu Spezialanwendungen kommen wie zum Beispiel der Einsatz eines Br\u00fcckenlegepanzers durch die Pioniertruppe. ",
+        "Logistik \u00bb Versorgung": "Die Truppengattung der Versorgung befasst sich mit der Versorgung anderer Truppenteile mit Bodenfahrzeugen. H\u00e4ufig transportiert werden G\u00fcter wie Munition Treibstoff und Verbrauchsmaterialien. Gegebenenfalls kann die Versorgung auch eigene Kr\u00e4fte ins Feld verlegen. ",
+        "Logistik \u00bb Luftversorgung": "Die Luftlogistik befasst sich im Kern mit der Versorgung anderer Truppenteile mit Luftfahrzeugen. Transportierte G\u00fcter sind hierbei Munition Treibtstoff und Verbrauchsmaterialien. Die Luftversorgung kann sich ebenfalls mit der Verlegung eigener Kr\u00e4fte ins Feld befassen. "
     },
     "Allgemeines": {
         "route": "allgemeines",
@@ -239,5 +202,42 @@
         "Mitmachen \u00bb Beitritt": "Vor dem Beitritt in unsere Community durchl\u00e4uft der Bewerber ein pers\u00f6nliches Gespr\u00e4ch mit unserem Personal. In diesem Gespr\u00e4ch m\u00f6chten wir die Vorlieben des Bewerbers erfahren und erkl\u00e4ren unsererseits wie wir uns das gemeinsame Spielen vorstellen. Wenn wir im Laufe des Gespr\u00e4chs feststellen dass wir zueinander passen freuen wir uns ein neues Mitglied in unsere Einheit aufzunehmen. ",
         "Mitmachen \u00bb Aufstieg": "Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die M\u00f6glichkeit unsere Community kennenzulernen und festzustellen ob wir die richtige Community f\u00fcr ihn sind. Der Rekrut kann zum Kadett aufsteigen indem er die Grundausbildung durchl\u00e4uft die ihm die Teilnahme an Kampagnen und \u00dcbungen sowie die Fortbildung zu grundlegenden Rollen der Infanterieerm\u00f6glicht. Ein Kadett kann zum Mitglied werden indem er gutes Verhalten und Erfahrenheit aufweist. Mitglieder haben die M\u00f6glichkeitfortgeschrittene Aus- und Fortbildungen aller Abteilungen zu durchlaufen. ",
         "Struktur": "Die Task Force Hellcat ist in drei Abteilungen untergliedert die verschiedene Truppengattungen umfassen. Jede Abteilung wird von einem eigenen Abteilungsleiter verwaltet und organisiert. Weitere Informationen und Erkl\u00e4rungen zu den Truppengattungen k\u00f6nnenhier eingesehen werden. "
+    },
+    "Truppenteile": {
+        "route": "truppenteile",
+        "Einleitung": "Innerhalb unserer Einheit gibt es klare Festlegungen von Truppenteilen. Diese sind hilfreich um zum Beispiel schnell und effizient \u00fcber eigene oder feindliche Kr\u00e4fte zu informieren. Sie werden auf dieser Seite n\u00e4her erl\u00e4utert. ",
+        "Buddyteam": "Das Buddyteam ist die kleinste taktische Einheit. Es setzt sich aus zwei Soldatenzusammen die sich gegenseitig unterst\u00fctzen und Auftr\u00e4ge erf\u00fcllen. Soldaten im Feld werden immer mindestens in der Form des Buddyteams agieren. Das bringt mehrere Vorteile mit sich Falls einer der beiden Soldaten ausf\u00e4llt kann der andere den Ausfall melden und mit der Erstversorgung beginnen. Zus\u00e4tzlich k\u00f6nnen sich die beiden Soldaten abwechselnd im Feld decken falls Freifl\u00e4chen \u00fcberquert werden m\u00fcssen. ",
+        "Trupp": "Der Trupp ist eine taktische Einheit die sich aus drei bis sieben Soldatenzusammensetzt. Grunds\u00e4tzlich enth\u00e4lt er einen Truppf\u00fchrer und ihm unterstellte Soldaten.Eine besondere Form des Trupps ist der Panzergrenadiertrupp der gemeinsam mit einem Sch\u00fctzenpanzer agiert. ",
+        "Gruppe": "Die Gruppe ist eine taktische Einheit die sich aus acht bis zw\u00f6lf Soldatenzusammensetzt. Grunds\u00e4tzlich besteht eine Gruppe aus einem Gruppenf\u00fchrer einem stellvertretenden Gruppenf\u00fchrer und weiteren Soldaten. Oft teilen sich Gruppen in zweiHalbgruppen um die Bewegung im Feld besser zu koordinieren und sich gegenseitig zu decken. Die beiden Halbgruppen werden vom Gruppenf\u00fchrer und dem stellvertretenden Gruppenf\u00fchrer gef\u00fchrt. ",
+        "Zug": "Der Zug ist eine taktische Einheit die sich aus drei Gruppen und einem Zugtruppzusammensetzt. Der Zugtrupp wird vom Zugf\u00fchrer gef\u00fchrt der gleichzeitig die restlichen Gruppen des Zuges befehligt. Die drei Gruppen des Zuges werden jeweils von einem Gruppenf\u00fchrer gef\u00fchrt die dem Zugf\u00fchrer unterstellt sind.Bei den Panzertruppen wird unter einem Zug eine Zusammensetzung aus vier gepanzerten Fahrzeugen verstanden zum Beispiel vier Kampfpanzer oder vier Sch\u00fctzenpanzer. Der Zugf\u00fchrer befindet sich dabei selbst aufgesessen auf einem der vier Fahrzeuge. "
+    },
+    "Kommandant (Panzertruppen)": {
+        "route": "kommandant",
+        "Rollenprofil": "Der Kommandant hat die Befehlsgewalt und tr\u00e4gt die Verantwortung f\u00fcr sein Fahrzeug und die dazugeh\u00f6rige Besatzung. Seine Priorit\u00e4t ist der Erhalt der Gefechtsbereitschaft seines Fahrzeuges durch ad\u00e4quate F\u00fchrung seiner Besatzung. In der Befehlskette untersteht er dem Zugf\u00fchrer der Anweisungen an einzelne Kommandanten oder den ganzen Zug erteilen kann. ",
+        "Aufgaben": "Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung. Das Aufgabenprofil des Kommandanten kann zwischen Fahrzeugtypen variieren l\u00e4sst sich aber in wenigen Punkten grob zusammenfassen. ",
+        "Fertigkeiten": "Die Kommandanten der Panzertruppen m\u00fcssen eine handvoll Fertigkeiten beherrschen um ihr Fahrzeug m\u00f6glichst sicher und effizient ins Gefecht zu f\u00fchren. Diese Fertigkeiten tragen dazu bei die \u00dcbersicht zu behalten und Gefahrensituation einsch\u00e4tzen zu k\u00f6nnen wodurch ein reibungsloser Einsatz gew\u00e4hrleistet werden kann. "
+    },
+    "Kampfpionier": {
+        "route": "kampfpionier",
+        "Rollenprofil": "Die Rolle des Kampfpioniers setzt sich zusammen aus der Rolle des Pioniers  des Sch\u00fctzen. Der Kampfpionier tr\u00e4gt die Verantwortung den Schutz der eigenen Truppen zu verbessern und dadurch deren \u00dcberlebensf\u00e4higkeit zu erh\u00f6hen ist anders als der Pionier aber aktiv am Kampfgefecht beteiligt. ",
+        "Aufgaben": "Die Aufgaben eines Kampfpioniers variieren je nach Mission  Situation. Die Hauptaufgaben lassen sich aber in wenigen Punkten grob zusammenfassen. ",
+        "Ausr\u00fcstung": "In Erg\u00e4nzung zu der Grundausr\u00fcstung des Sch\u00fctzen z\u00e4hlen folgende Gegenst\u00e4nde zur Ausr\u00fcstung des Kampfpioniers ",
+        "Fertigkeiten": "",
+        "Weiteres": "Kampfpionier immer halal "
+    },
+    "Fahrer (Panzertruppen)": {
+        "route": "fahrer",
+        "Rollenprofil": "Der Kraftfahrer nimmt unmittelbar Einfluss auf die Bewegung des Fahrzeuges entsprechend der Anweisungen des Kommandanten. Die eigenst\u00e4ndige Man\u00f6vrierung seines Fahrzeuges entlang Stra\u00dfen oder durch das Gel\u00e4nde bei oft schlechten Sichtm\u00f6glichkeiten stellt seine gr\u00f6\u00dfte H\u00fcrde dar. ",
+        "Aufgaben": "Die Kraftfahrer der Panzertruppen unterstehen der kontinuierlichen Aufgabe die Befehle ihrer Kommandanten m\u00f6glichst schnell in die Tat umzusetzen um die Sicherheit ihres Fahrzeuges samt Besatzung zu gew\u00e4hrleisten. Das Aufgabenprofil der Kraftfahrer ist f\u00fcr alle Fahrzeugklassen der Panzertruppen gleich. ",
+        "Weiteres": "Eine Konvention f\u00fcr Kraftfahrer der Panzertruppen ist die Wiederholung von Fahrbefehlen des Kommandanten um ein gewisses Feedback zur\u00fcckzugeben dass der Befehl korrekt aufgenommen werden konnte. Im Gefecht kann darauf gegebenenfalls verzichtet werden. "
+    },
+    "Erste Hilfe": {
+        "route": "erstehilfe",
+        "Versorgungsmaterial": "Um eine Grundversorgung gew\u00e4hrleisten zu k\u00f6nnen sollte das folgende Material immer mitgef\u00fchrt werden Die Standardloadouts zum Beispiel sind ausreichend ausgestattet. ",
+        "Melden": "Der Patientenstatus wird mit einer der folgenden Kategorien angegeben Sanit\u00e4ter verwenden oft eine genauere Einteilung mit den Subkategorien Alpha und Bravo. Bravo beschreibt dabei einen ernsteren Zustand im Detail kann das hier nachgelesen werden. Nichtsanit\u00e4ter m\u00fcssen diese Einteilung aber nicht zwingend beherrschen. ",
+        "Hilfeleistung": "Der Standardkeybind zum \u00d6ffnen des Medical Menuist H. Dabei muss man den Patienten ansehen. Achtung Im Medical Menu sollte der Name des Patienten zu sehen sein Andernfalls hat man versehentlich das eigene Medical Menu ge\u00f6ffnet. ",
+        "Hilfeleistung \u00bb Lesen des Medical Menus": " Spalte Status Je dunkler der Rotton eines K\u00f6rperteils desto gr\u00f6\u00dferen Blutverlust verursacht es. Blaue K\u00f6rperteile sind versorgt aber noch nicht gen\u00e4ht. Es besteht die Gefahr dass sich diese Bandagen wieder \u00f6ffnen. Zum N\u00e4hen muss ein Sanit\u00e4ter aufgesucht werden. Ein unverletztes oder endversorgtes K\u00f6rperteil erscheint wei\u00df. Spalte Overview Hier sieht man die Verwundungen. Spalte Examine and Treatment Hier sieht man die Behandlungsoptionen und kann sie ausf\u00fchren. Diese Spalte hat weitere Reiter unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein. ",
+        "Hilfeleistung \u00bb Behandeln ansprechbarer Patienten": "im Gefecht Tourniquet an blutende Gliedma\u00dfen anlegen (am Torso und Kopf ist das nicht m\u00f6glich) Kopf und Torso verbinden st\u00e4rkere Verwundungen priorisieren bei Schmerzen Schmerztabletten verwenden Splint anlegen wenn n\u00f6tig. Splints die von Nichtsanit\u00e4tern angelegt worden sind l\u00f6sen sich mit einer gewissen Wahrscheinlichkeit wieder. nach dem Gefecht verletzte Gliedma\u00dfen bandagieren Tourniquets abnehmen Sanit\u00e4ter zum N\u00e4hen lassen aufsuchen (m\u00f6glichst zeitnah) ",
+        "Hilfeleistung \u00bb Behandeln bewusstloser Patienten": "Grunds\u00e4tzlich gilt bei der Ersten Hilfe Eigenschutz geht vor. Die Bergung muss mit gro\u00dfer Vorsicht und sehr guter Deckung erfolgen. Ein Risiko einzugehen um einen Kameraden zu bergen oder zu versorgen und dabei m\u00f6glicherweise selbst verwundet zu werden bringt die Mission nicht voran. Sie wird also auch nicht von einer Person alleine sondern im Verband durchgef\u00fchrt.  Im Medical Menu \u00fcberpr\u00fcfen ob der Patient gezogengetragen werden kann. Wenn nicht (Reiter DragCarry ist ausgegraut) ist der Patient tot. Ansonsten Tourniquet an blutende Gliedma\u00dfen anlegen (am Torso und Kopf ist das nicht m\u00f6glich) Kopf und Torso verbinden st\u00e4rkere Verwundungen priorisieren Atemwege \u00fcberpr\u00fcfen verstopftverschlossen (occludedobstructed) Kopf ausrichten (head turning) bis befreit Kopf \u00fcberstrecken (hyperextend head) damit die Zunge nicht die Atemwege verschlie\u00dfen kann Puls pr\u00fcfen kein Puls Herz-Lungen-Wiederbelebung (CPR) dauerhaft durchf\u00fchren Epinephrin verabreichen Sanit\u00e4ter alamieren. Auch die Atemwege weiterhin pr\u00fcfen. Puls vorhanden nach kurzer Zeit wieder pr\u00fcfen da er verschwinden k\u00f6nnte. N\u00e4chster Schritt. in stabile Seitenlage bringen (use recovery position) verbleibende Verletzungen bandagieren und Tourniquets entfernen Eine Kurz\u00fcbersicht liefert auch das nachfolgende Flowchart. Auch der Sanit\u00e4ter ben\u00f6tigt bei der weiteren Versorgung noch Unterst\u00fctzung mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanit\u00e4ter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe zum Beispiel f\u00fcr die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch f\u00fcr die m\u00f6gliche Verlegung eines Verwundeten sollte man verf\u00fcgbar bleiben. "
     }
 }

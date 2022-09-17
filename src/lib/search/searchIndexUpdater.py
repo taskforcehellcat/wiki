@@ -1,5 +1,5 @@
 # basic filesystem access
-from os import walk, path
+from os import listdir, path
 
 # for creating the index.json
 from json import dump
@@ -25,7 +25,8 @@ def remove_escape_chars(str):
 
 def main():
     # collect all pages to be read from into the iterator 'pages'
-    page_names = next(walk(ROOT_PAGES))[1]
+    # page_names = next(walk(ROOT_PAGES))[1] # works in Python 3.10, does not in 3.8
+    page_names = [ item for item in listdir(ROOT_PAGES) if path.isdir(path.join(ROOT_PAGES, item)) ]
     page_dirs = [(ROOT_PAGES+page_name) for page_name in page_names]
 
     pages = zip(page_names, page_dirs)
