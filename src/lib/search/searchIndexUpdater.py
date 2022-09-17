@@ -1,5 +1,5 @@
 # basic filesystem access
-from os import listdir, path
+from os import listdir, path, getcwd
 
 # for creating the index.json
 from json import dump
@@ -13,6 +13,10 @@ deploying = True
 ROOT_PAGES = r'../../../src/routes/'
 if deploying:
     ROOT_PAGES = r'/opt/build/repo/src/lib/routes/'
+
+print("Moin Meister, ich bin grad in", getcwd())
+print("\n")
+print("ayo Francis, schöner Aal!\n\n")
 
 # symbol that's used to indicate that a section contains a subsection,
 # see also: http://xahlee.info/comp/unicode_arrows.html
