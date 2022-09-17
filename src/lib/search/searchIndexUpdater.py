@@ -10,13 +10,9 @@ from bs4 import BeautifulSoup
 
 # directory that contains the directories with page content
 deploying = True
-ROOT_PAGES = r'../../../src/routes/'
+ROOT_PAGES = r'../../../src/routes'
 if deploying:
-    ROOT_PAGES = r'/opt/build/repo/src/lib/routes/'
-
-print("Moin Meister, ich bin grad in", getcwd())
-print("\n")
-print("ayo Francis, schöner Aal!\n\n")
+    ROOT_PAGES = r'/opt/build/repo/src/lib/routes'
 
 # symbol that's used to indicate that a section contains a subsection,
 # see also: http://xahlee.info/comp/unicode_arrows.html
