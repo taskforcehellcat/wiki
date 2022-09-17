@@ -9,7 +9,10 @@ from json import dump
 from bs4 import BeautifulSoup
 
 # directory that contains the directories with page content
+deploying = True
 ROOT_PAGES = r'../../../src/routes/'
+if deploying:
+    ROOT_PAGES = r'opt/build/repo/src/lib/routes/'
 
 # symbol that's used to indicate that a section contains a subsection,
 # see also: http://xahlee.info/comp/unicode_arrows.html
