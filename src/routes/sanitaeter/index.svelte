@@ -63,8 +63,8 @@
 
 		<section id="Zum Aufbau dieser Seite">
 			<p>Die Arbeit des Sanitätsdienstes umfasst viele Aufgaben und erfordert ein recht breites Wissen. Vom Inhalt dieser Seite sollte man sich daher nicht erschlagen lassen.</p>
-			<p>Die ersten beiden Abschnitte widmen sich der Stabilisierung von Kreislauf und Atmung. Ist die nämlich gelungen, steht es um einen Patienten meist schon gar nicht schlecht. Diese Abschnitte sind dabei in keiner speziellen Reihenfolge. Primäre Aufgabe der Blutzirkulation ist für unsere Zwecke der Transport von Sauerstoff im Körper. Ob Blutzirkulation ohne Atmung oder Atmung ohne Blutzirkulation, eines alleine genügt nicht. Bei der Behandlung muss man also beständig alle Vitalfunktionen im Blick behalten und sich der Situation des Patenten anpassen.</p>
-			<p>Eine der ersten Dinge, die man als Sanitäter daher tun sollte, ist es, ein Pulsoximeter anzubringen. Dieses ermöglicht es einem, Puls und Sauerstoffsättigung des Blutes zu beobachten und schnell zu registrieren, welcher Bereich gerade die größere Aufmerksamkeit bedarf.</p>
+			<p>Die ersten beiden Abschnitte widmen sich der Stabilisierung von Kreislauf und Atmung. Ist diese nämlich gelungen, steht es um einen Patienten meist schon gar nicht schlecht. Die Abschnitte sind dabei in keiner speziellen Reihenfolge. Ob Blutzirkulation ohne Atmung oder Atmung ohne Zirkulation, eines alleine genügt nicht. Bei der Behandlung muss man also beständig alle Vitalfunktionen im Blick behalten und sich der Situation des Patenten anpassen.</p>
+			<p>Als erste Maßnahme sollte man daher ein Pulsoximeter anlegen. Dieses ermöglicht es einem, Puls und Sauerstoffsättigung des Blutes zu beobachten und schnell zu registrieren, welcher Bereich gerade die größere Aufmerksamkeit bedarf.</p>
 			<p>
 				<a href="#Grundausrüstung">Weiter unten</a> sind alle Ausrüstungsgegenstände einzeln aufgelistet und erklärt.
 			</p>
