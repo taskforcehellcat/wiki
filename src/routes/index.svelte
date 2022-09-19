@@ -45,7 +45,7 @@
 
 <div id="home">
 	<div id="home__top">
-		<a id="home__link" href="https://taskforcehellcat.tk/"
+		<a id="home__link" href="https://taskforcehellcat.de/"
 			><span class="material-icons"> chevron_left </span>
 			Zurück zur Hauptseite</a
 		>
