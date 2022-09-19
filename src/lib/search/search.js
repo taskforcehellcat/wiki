@@ -1,151 +1,226 @@
-/*
-// load the searchIndex.json as an js object
-json = fs.readFileSync('searchIndex.json', 'utf8');
-let index = JSON.parse(json);
-
-*/
-
-let index;
-
 import searchIndex from '$lib/search/searchIndex.json';
+//import searchIndex from "./searchIndex.json" assert { type: "json" };
 
-index = searchIndex;
+export function textSearch(query) {
+    /**
+     * returns an array of objects, one per hit, that contains all necessary data
+     * to generate the html for the search bar.
+     * said objects contain the page name, section name, anchor link and surrounding
+     * text of the object.
+     * 
+     * param query: string to look for
+     * 
+     * returns: array of objects {page_name, section, anchor, surrounding_text}
+     */
 
-// this variable determines how long the environment should be.
-// subject to change !
+    // how many characters of surrounding text are to be extracted
+    // ! actual returned text might not be exactly this many characters due to rounding !
+    const surrounding_text_chars = 60;
 
-export function searchFor(query, envLength  = 60) {
-	/*
-	 * search function for the search bar object.
-	 * searches all text content of wiki pages and returns the results,
-	 * see output format below
-	 *
-	 * input: string - at least three letters
-	 *        number - length of the env string to suit smaller display sizes
-	 *
-	 * output: javascript array
-	 * output format: [ hit arrays ] (array of arrays)
-	 * hit array format: [hit page title, hit section, hit environment]
-	 */
+    // to be returned:
+    let results = [];
 
-	// searching for less than three chars is prob too memory intensive
-	// searching for an empty string WILL crash the tab !
+    // if query.length == 1 this script will always return [] due to search logic
 	if (query.length < 3) {
 		return [];
 	}
 
 	query = query.toLowerCase();
 
-	// array to be returned in the end
-	let results = [];
+    // go through all subsections and check wheather they contain the query
+    // in their text contents. All appearances are stored in hits:
+    let hits = [];
 
-	for (let page in index) {
-		let anchor; // this will hold the anchor link for this page
+    for (let page in searchIndex) {
+        let anchor = searchIndex[page]["route"];
 
-		for (let sec in index[page]) {
-			if (sec === 'route') {
-				// the "route" section isn't actually a section
-				// just get the anchor link from its text contents and skip the rest
-				anchor = index[page][sec];
-				continue;
-			}
+        for (let section in searchIndex[page]) {
+             
+            if (section === 'route') {
+                // this section only contains the link of the page and doesn't 
+                // contain actual text from the page
+                continue;
+            }
 
-			// get the text from every pages every section
-			let text = index[page][sec];
-			let lowertext = text.toLowerCase();
+            let textContents = searchIndex[page][section];
 
-			// this is done for simpler update logic, see below.
-			// last index holds the index of the last found substring matching
-			// the query or -1 if the query wasn't found.
-			let last_index = -1 * query.length;
+            // the following is a bit convoluted but allowes for a simpler
+            // search logic later on, see below
 
-			while (last_index !== -1) {
-				// .indexOf returns -1 if it didn't find any matches.
-				// At this point the loop should terminate
+            let cursor = - query.length;
 
-				/* Begin searching for the next hit by beginning the search now
-                at the index of the last hit plus the length of the query itself
-                (to avoid multiple counts of the same appearance). last_index is
-                initialised to -query.length to start initially at index 0. */
-				last_index = lowertext.indexOf(query, last_index + query.length);
+            if (query.length == 1) {
+                console.debug(
+                    `This script cannot handle query lengths of one character.
+                    query was: {query}`
+                    );
 
-				if (last_index !== -1) {
-					let env = '';
+                return [];
+            }
 
-					// environment length arithmetic:
-					// rounding down to prevent overflow in the ui
-					var tail_length = Math.floor((envLength - query.length) / 2);
+            while (cursor !== -1) {
 
-					// actual text will be three characters less because of '...'
-					var text_include = tail_length - 3;
+                cursor = textContents.toLowerCase().indexOf(query, cursor + query.length);
+                
+                /**
+                 * due to how cursor is initialised, this will start at index 0.
+                 * if no hits are found (anymore), cursor gets set to -1 and the
+                 * while loop terminates.
+                 * 
+                 * the cursor is always advanced by the query length to find the
+                 * next appearance of the query in the following iteration of the
+                 * loop.
+                 */
 
-					if (!(text_include < 0)) {
-						env = '...' + text.substring(last_index - text_include, query.length + last_index + text_include + 1) + '...';
-					}
+                if (cursor == -1) { continue; }
 
-					results.push([page, sec, env, anchor]);
-				}
-			}
-		}
-	}
+                let surrounding_left = '';
+                let match = textContents.substring(cursor, cursor+query.length);
+                let surrounding_right = '';
 
-	return results;
+                let whisker_len = Math.floor((surrounding_text_chars-query.length) / 2) - 3;
+                // subtract 3 because '...' gets always included
+
+                if (whisker_len > 0) {
+                    
+                    surrounding_left = textContents.substring(cursor-whisker_len, cursor);
+                    surrounding_right = textContents.substring(cursor+query.length, cursor+query.length+whisker_len);
+
+                    // add "..." if something was omitted
+                    if (cursor-whisker_len > 0) {
+                        surrounding_left = "..." + surrounding_left
+                    }
+                    if (cursor+query.length+whisker_len < textContents.length) {
+                        surrounding_right = surrounding_right + "..."
+                    }
+                }
+
+                hits.push([page, section, anchor,
+                    { left: surrounding_left, match: match, right: surrounding_right }
+                ]);
+   
+            }
+        }
+    }
+
+    if (hits.length == 0) { return []; }
+
+    // now that all hits are collected, assemble arrays that svelte can easily
+    // work with.
+
+    // initialise results
+    results = [
+        {
+            title: hits[0][0], // name on the page
+            hits : 0,          // how many times the query appeared
+                               // initially 0, later set to at least 1
+            route: searchIndex[hits[0][0]]['route'],
+            bysection: null    // later holds all hits 
+                               // on subsections of this page
+
+        }
+    ];
+
+    // add remaining results
+    let page_index = 0;
+    hits.forEach(hit => {
+        if (results[page_index].title === hit[0]) {
+            results[page_index].hits += 1;
+
+        } else {
+
+            results.push(
+                {
+                    title: hit[0],
+                    hits : 1,
+                    route: searchIndex[hit[0]]["route"],
+                    bysection: null 
+                }
+            );
+            page_index += 1;
+        }
+    });
+    // this code works because hits was just pushed to page after page
+    // and thus hits is ordered
+
+    results.forEach(result => {
+        
+        // get all hits regarding this page
+        let on_page = hits.filter(r => {
+            return r[0] === result.title;
+        });
+
+        // from this svelte later constructs the hits list for this page
+        let sections = [];
+
+        on_page.forEach(hit => {
+            // if this is a subsection, this will hold its anchor part
+            let subsec = '#'+hit[1]; 
+            if (hit[1].indexOf(" \u00bb ") != -1) {
+                subsec = '#'+subsec.substring(subsec.indexOf(" \u00bb ") + 3)
+            }
+            sections.push(
+                {
+                    title: hit[1],                                     // section title
+                    anchor: searchIndex[hit[0]]["route"] + subsec, 
+                    surrounding: hit[3]
+                }
+            );
+        });
+
+        result.bysection = sections;
+    });
+
+    return results;
 }
 
-export function updateSearchResults(query) {
-	/*
-	 * function that organises results from searchFor() into arrays that svelte
-	 * can generate html from.
-	 *
-	 * input: string - the query
-	 *
-	 * returns: array
-	 */
 
-	let fetchedResults = searchFor(query);
+export function directSearch(query) {
 
-	let searchResults = [];
+    if (query.length < 3) {
+        return [];
+    }
 
-	if (fetchedResults.length !== 0) {
-		if (query.length > 2) {
-			// organize results
-			searchResults = [{ title: fetchedResults[0][0], hits: 0 }]; // initialisation
+    let results = [];
+    let page_names = Object.keys(searchIndex);
 
-			// add page hits
-			let pageIndex = 0;
-			fetchedResults.forEach((element) => {
-				if (searchResults[pageIndex].title === element[0]) {
-					searchResults[pageIndex].hits += 1;
-				} else {
-					searchResults.push({ title: element[0], hits: 1 });
-					pageIndex += 1;
-				}
-			});
+    page_names.forEach(pagename => {
+        let page_sections = Object.keys(searchIndex[pagename]);
 
-			// add section hits
-			searchResults.forEach((section) => {
-				var secResultsArr = [];
-				// format: [page title, page link, env string]
+        if (pagename.toLowerCase().indexOf(query.toLowerCase()) != -1) {
+            results.push(
+                {
+                    name: pagename,
+                    route: searchIndex[pagename]["route"]
+                }
+            );
+        }
 
-				// get all hits for this page from fetched results
-				var hitsOnPage = fetchedResults.filter((r) => {
-					return r[0] === section.title;
-				});
+        page_sections.forEach(section => {
+            if (section.toLowerCase().indexOf(query.toLowerCase()) == -1 || section === 'route') {
+                return;
+            }
+            let route = searchIndex[pagename]['route']+'#'+section;
 
-				hitsOnPage.forEach((hit) => {
-					secResultsArr.push({
-						title: hit[1],
-						link: hit[3],
-						env: hit[2]
-					});
-				});
+            // if its a subsection, this route is not correct
+            let seperator_index = section.indexOf(" \u00bb ");
+            if (seperator_index != -1) {
+                route = searchIndex[pagename]['route']+'#'+section.substring(section.indexOf(" \u00bb ")+3);
 
-				section.secResults = secResultsArr;
-			});
-		}
-	} else {
-		searchResults = [];
-	}
+                // also, if its a subsection its only an actual hit if the match occurs in the subsection part
+                // of the section name.
+                if (section.substring(seperator_index + 3).toLowerCase().indexOf(query.toLowerCase()) == -1) {
+                    return;
+                }
+            }
 
-	return searchResults;
+            results.push({
+                name: pagename+" \u00bb "+section,
+                route: route
+            });
+        });
+    });
+
+    return results;
+
 }

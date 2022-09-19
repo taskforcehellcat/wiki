@@ -7,7 +7,6 @@
 	// --- burger menu ---
 	import OpenMenuSVG from '$lib/burgermenu/openMenu.svelte';
 	import CloseMenuSVG from '$lib/burgermenu/closeMenu.svelte';
-	import { updateSearchResults } from '$lib/search/search';
 	import { onMount } from 'svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 
@@ -64,30 +63,6 @@
 		anchors = tempAnchors;
 	});
 
-	const handleQuery = (e) => {
-		query = e.target.value;
-
-		let searchInUse = query.length !== 0;
-
-		// do the styling
-		// hide results box if search bar empty
-		document.getElementById('search').style.display = searchInUse ? 'block' : 'none';
-
-		// @Fenres Rest der Naviagtion verstecken, wenn gesucht wird?
-
-		// document.getElementById("nav__list").style.display = searchInUse ? "none" : "flex";
-
-		if (query.length > 2) {
-			showResults = true;
-		} else {
-			showResults = false;
-		}
-
-		console.debug(showResults);
-
-		searchResults = updateSearchResults(query);
-		console.debug(searchResults);
-	};
 </script>
 
 <div id="wiki">
