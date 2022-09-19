@@ -69,7 +69,7 @@
 						<ol>
 							{#each page.bysection as sec_hit}
 								<li>
-									<span class="search__env">"{sec_hit.surrounding}" <span class="noselect">&#x21aa; </span></span>"<a href={sec_hit.anchor}>{sec_hit.title}</a>"
+									<span class="search__env">"{sec_hit.surrounding.left}<mark>{sec_hit.surrounding.match}</mark>{sec_hit.surrounding.right}" <span class="noselect">&#x21aa; </span></span>"<a href={sec_hit.anchor}>{sec_hit.title}</a>"
 								</li>
 							{/each}
 						</ol>

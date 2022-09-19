@@ -74,19 +74,30 @@ export function textSearch(query) {
 
                 if (cursor == -1) { continue; }
 
-                let surrounding_text = '';
+                let surrounding_left = '';
+                let match = textContents.substring(cursor, cursor+query.length);
+                let surrounding_right = '';
 
                 let whisker_len = Math.floor((surrounding_text_chars-query.length) / 2) - 3;
                 // subtract 3 because '...' gets always included
 
                 if (whisker_len > 0) {
-                    surrounding_text = '...' 
-                        + textContents.substring(cursor-whisker_len, cursor+query.length+whisker_len+1)
-                        + '...';
+                    
+                    surrounding_left = textContents.substring(cursor-whisker_len, cursor);
+                    surrounding_right = textContents.substring(cursor+query.length, cursor+query.length+whisker_len);
 
+                    // add "..." if something was omitted
+                    if (cursor-whisker_len > 0) {
+                        surrounding_left = "..." + surrounding_left
+                    }
+                    if (cursor+query.length+whisker_len < textContents.length) {
+                        surrounding_right = surrounding_right + "..."
+                    }
                 }
 
-                hits.push([page, section, anchor, surrounding_text]);
+                hits.push([page, section, anchor,
+                    { left: surrounding_left, match: match, right: surrounding_right }
+                ]);
    
             }
         }
