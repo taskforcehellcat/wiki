@@ -61,9 +61,7 @@
 					{/each}
 				{/if}
 				{#if textResults.length !== 0}
-
 					<p>Texttreffer:</p>
-					
 					{#each textResults as page}
 						<p>
 							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.route}>{page.title}</a>" gefunden:
@@ -76,7 +74,8 @@
 							{/each}
 						</ol>
 					{/each}
-				{:else}
+				{/if}
+				{#if directResults.length == 0 && textResults.length == 0}
 					<p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
 				{/if}
 			{:else}
