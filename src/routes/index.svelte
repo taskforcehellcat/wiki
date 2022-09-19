@@ -16,7 +16,7 @@
 
 		// do the styling
 		// hide results box if search bar empty
-		document.getElementById('search').dataset.empty = !searchInUse;
+		document.getElementById('search').dataset.empty = (!searchInUse).toString();
 
 		// show dropdown link menues if search bar empty
 		document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
