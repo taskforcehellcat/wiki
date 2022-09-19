@@ -16,7 +16,7 @@
 
 		// do the styling
 		// hide results box if search bar empty
-		document.getElementById('search').dataset.empty = !searchInUse;
+		document.getElementById('search').dataset.empty = (!searchInUse).toString();
 
 		// show dropdown link menues if search bar empty
 		document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
@@ -45,7 +45,7 @@
 
 <div id="home">
 	<div id="home__top">
-		<a id="home__link" href="https://taskforcehellcat.tk/"
+		<a id="home__link" href="https://taskforcehellcat.de/"
 			><span class="material-icons"> chevron_left </span>
 			Zurück zur Hauptseite</a
 		>

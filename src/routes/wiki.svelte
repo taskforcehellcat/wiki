@@ -29,7 +29,7 @@
 
 	function collectSections() {
 		H2sections = document.querySelectorAll('section[id]:not(section > section)');
-		H3sections = document.querySelectorAll('section > section[id]');
+		H3sections = document.querySelectorAll('section > section[id]:not(section > section > section)');
 		H4sections = document.querySelectorAll('section > section > section[id]');
 	}
 
