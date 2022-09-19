@@ -1,9 +1,3 @@
 [build]
   command = "python3 src/lib/search/searchIndexUpdater.py && npm run build"
   publish = "build"
-
-[[redirects]]
-  from = "https://taskforcehellcat.de/"
-  to = "https://wiki.taskforcehellcat.de/"
-  status = 301
-  force = true
