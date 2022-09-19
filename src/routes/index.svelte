@@ -3,11 +3,12 @@
 	import Theme from '$lib/theme/Theme.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 
-	import { searchFor, updateSearchResults } from '$lib/search/search';
+	import { textSearch, directSearch } from '$lib/search/search';
 
 	let query = ''; // holds the query
 	let showResults = false; // whether the search bar is currently in use
-	let searchResults = []; // used to generate sections in search results
+	let textResults = []; // used to generate sections in search results
+	let directResults = [];
 
 	const handleQuery = (e) => {
 		query = e.target.value;
@@ -23,18 +24,10 @@
 
 		showResults = query.length > 2;
 
-		searchResults = updateSearchResults(query);
+		textResults = textSearch(query);
+		directResults = directSearch(query);
 	};
 
-	function generateSectionLink(link: string, title: string) {
-		// function that generates a correct anchor link for subsections
-		let pos = title.indexOf(' » ');
-		if (pos === -1) {
-			return '../' + link.toLowerCase() + '#' + title;
-		} else {
-			return '../' + link.toLowerCase() + '#' + title.substring(pos + 3);
-		}
-	}
 </script>
 
 <svelte:head>
@@ -60,20 +53,29 @@
 		</div>
 		<div id="search__results">
 			{#if showResults}
-				{#if searchResults.length !== 0}
-					{#each searchResults as page}
+				{#if directResults.length !== 0}
+					{#each directResults as entry}
 						<p>
-							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.secResults[0].link.toLowerCase()}>{page.title}</a>" gefunden:
+							<span><a class="search_pagetitle" href={entry.route}>{entry.name}</a></span>
+						</p>
+					{/each}
+				{/if}
+				{#if textResults.length !== 0}
+					<p>Texttreffer:</p>
+					{#each textResults as page}
+						<p>
+							<span class="search__hits">{page.hits}</span> Treffer auf <a class="search_pagetitle" href={page.route}>{page.title}</a> gefunden:
 						</p>
 						<ol>
-							{#each page.secResults as sechit}
+							{#each page.bysection as sec_hit}
 								<li>
-									<span class="search__env">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<a href={generateSectionLink(sechit.link, sechit.title)}>{sechit.title}</a>"
+									<span class="search__env"><i>{sec_hit.surrounding.left}<mark>{sec_hit.surrounding.match}</mark>{sec_hit.surrounding.right}</i></span> <span class="noselect"> &#x21aa; </span> <a href={sec_hit.anchor}>{sec_hit.title}</a>
 								</li>
 							{/each}
 						</ol>
 					{/each}
-				{:else}
+				{/if}
+				{#if directResults.length == 0 && textResults.length == 0}
 					<p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
 				{/if}
 			{:else}
