@@ -103,7 +103,9 @@ export function textSearch(query) {
             title: hits[0][0], // name on the page
             hits : 0,          // how many times the query appeared
                                // initially 0, later set to at least 1
-            route: searchIndex[hits[0][0]]['route']
+            route: searchIndex[hits[0][0]]['route'],
+            bysection: null    // later holds all hits 
+                               // on subsections of this page
 
         }
     ];
@@ -120,7 +122,8 @@ export function textSearch(query) {
                 {
                     title: hit[0],
                     hits : 1,
-                    route: searchIndex[hit[0]]["route"] // TODO this doesnt work?
+                    route: searchIndex[hit[0]]["route"],
+                    bysection: null 
                 }
             );
             page_index += 1;
