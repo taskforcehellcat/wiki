@@ -3,7 +3,7 @@
 	import Theme from '$lib/theme/Theme.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 
-	import { searchFor, updateSearchResults } from '$lib/search/search';
+	import { textSearch } from '$lib/search/search';
 
 	let query = ''; // holds the query
 	let showResults = false; // whether the search bar is currently in use
@@ -16,14 +16,14 @@
 
 		// do the styling
 		// hide results box if search bar empty
-		document.getElementById('search').dataset.empty = !searchInUse;
+		document.getElementById('search').dataset.empty = (!searchInUse).toString();
 
 		// show dropdown link menues if search bar empty
 		document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
 
 		showResults = query.length > 2;
 
-		searchResults = updateSearchResults(query);
+		searchResults = textSearch(query);
 	};
 
 	function generateSectionLink(link: string, title: string) {
@@ -63,12 +63,12 @@
 				{#if searchResults.length !== 0}
 					{#each searchResults as page}
 						<p>
-							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.secResults[0].link.toLowerCase()}>{page.title}</a>" gefunden:
+							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.bysection[0].link}>{page.title}</a>" gefunden:
 						</p>
 						<ol>
-							{#each page.secResults as sechit}
+							{#each page.bysection as sec_hit}
 								<li>
-									<span class="search__env">"{sechit.env}" <span class="noselect">&#x21aa; </span></span>"<a href={generateSectionLink(sechit.link, sechit.title)}>{sechit.title}</a>"
+									<span class="search__env">"{sec_hit.surrounding}" <span class="noselect">&#x21aa; </span></span>"<a href={generateSectionLink(sec_hit.link, sec_hit.title)}>{sec_hit.title}</a>"
 								</li>
 							{/each}
 						</ol>
