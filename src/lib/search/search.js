@@ -101,8 +101,9 @@ export function textSearch(query) {
     results = [
         {
             title: hits[0][0], // name on the page
-            hits : 0           // how many times the query appeared
+            hits : 0,          // how many times the query appeared
                                // initially 0, later set to at least 1
+            route: searchIndex[hits[0][0]]['route']
 
         }
     ];
