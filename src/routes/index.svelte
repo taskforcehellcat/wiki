@@ -3,11 +3,12 @@
 	import Theme from '$lib/theme/Theme.svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 
-	import { textSearch } from '$lib/search/search';
+	import { textSearch, directSearch } from '$lib/search/search';
 
 	let query = ''; // holds the query
 	let showResults = false; // whether the search bar is currently in use
-	let searchResults = []; // used to generate sections in search results
+	let textResults = []; // used to generate sections in search results
+	let directResults = [];
 
 	const handleQuery = (e) => {
 		query = e.target.value;
@@ -23,7 +24,8 @@
 
 		showResults = query.length > 2;
 
-		searchResults = textSearch(query);
+		textResults = textSearch(query);
+		directResults = directSearch(query);
 	};
 
 </script>
@@ -51,8 +53,18 @@
 		</div>
 		<div id="search__results">
 			{#if showResults}
-				{#if searchResults.length !== 0}
-					{#each searchResults as page}
+				{#if directResults.length !== 0}
+					{#each directResults as entry}
+						<p>
+							<span><a class="search_pagetitle" href={entry.route}>{entry.name}</a></span>
+						</p>
+					{/each}
+				{/if}
+				{#if textResults.length !== 0}
+
+					<p>Texttreffer:</p>
+					
+					{#each textResults as page}
 						<p>
 							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.route}>{page.title}</a>" gefunden:
 						</p>

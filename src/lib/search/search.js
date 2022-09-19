@@ -158,3 +158,47 @@ export function textSearch(query) {
 
     return results;
 }
+
+
+export function directSearch(query) {
+
+    if (query.length < 3) {
+        return [];
+    }
+
+    let results = [];
+    let page_names = Object.keys(searchIndex);
+
+    page_names.forEach(pagename => {
+        let page_sections = Object.keys(searchIndex[pagename]);
+
+        if (pagename.toLowerCase().indexOf(query.toLowerCase()) != -1) {
+            results.push(
+                {
+                    name: pagename,
+                    route: searchIndex[pagename]["route"]
+                }
+            );
+        }
+
+        page_sections.forEach(section => {
+            if (section.toLowerCase().indexOf(query.toLowerCase()) == -1) {
+                return;
+            }
+            let route = searchIndex[pagename]['route']+'#'+section;
+
+            // if its a subsection, this route is not correct
+            if (section.indexOf(" \u00bb ") != -1) {
+                route = searchIndex[pagename]['route']+'#'+section.substring(section.indexOf(" \u00bb ")+3);
+            }
+
+            results.push({
+                name: pagename+" \u00bb "+section,
+                route: route
+            });
+        });
+    });
+
+    return results;
+
+}
