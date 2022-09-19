@@ -162,7 +162,7 @@ export function textSearch(query) {
             sections.push(
                 {
                     title: hit[1],                                     // section title
-                    anchor: searchIndex[hit[0]]["route"] + subsec, 
+                    anchor: "https://wiki.taskforcehellcat.de/" + searchIndex[hit[0]]["route"] + subsec, 
                     surrounding: hit[3]
                 }
             );
@@ -191,7 +191,7 @@ export function directSearch(query) {
             results.push(
                 {
                     name: pagename,
-                    route: searchIndex[pagename]["route"]
+                    route: "https://wiki.taskforcehellcat.de/" + searchIndex[pagename]["route"]
                 }
             );
         }
@@ -213,6 +213,8 @@ export function directSearch(query) {
                     return;
                 }
             }
+
+            route = "https://wiki.taskforcehellcat.de/" + route;
 
             results.push({
                 name: pagename+" \u00bb "+section,

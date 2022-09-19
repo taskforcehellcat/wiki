@@ -113,47 +113,47 @@
 		<section id="Grundausrüstung">
 			<section id="Medikamente">
 				<section>
-					<h3>Basismedikamente</h3>
+					<h4>Basismedikamente</h4>
 					<p>Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.</p>
 					<section>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{morphine}">Morphin-Autoinjektor</span>
-						</h3>
+						</h4>
 						<p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
-						<h3><span use:tooltip data-tooltip-img="">Painkillers</span> (dt. Schmerztabletten)</h3>
+						<h4><span use:tooltip data-tooltip-img="">Painkillers</span> (dt. Schmerztabletten)</h4>
 						<p>
 							lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="#Transfusionen im Feld">Transfusion von Blut</a>). Werden im Arsenal bei den Magazinen geführt.
 						</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{epinephrine}">Epinephrin-Autoinjektor</span> (Adrenalin)
-						</h3>
+						</h4>
 						<p>hebt die Herzrate, kann auch Behandlung von Morphin-Überdosen unterstützen.</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{adenosine}">Adenosin-Autoinjektor</span>
-						</h3>
+						</h4>
 						<p>senkt die Herzrate, kann zur Behandlung von Epinephrin-Überdosen verwendet werden.</p>
 					</section>
 				</section>
 
 				<section>
-					<h3>Infarkttherapie</h3>
+					<h4>Infarkttherapie</h4>
 					<section>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{amiodarone}">Amiodaron</span>
-						</h3>
+						</h4>
 						<p>
 							<span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidocain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine
 							<span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardie</span>. Empfohlen ist eine Gabe pro Patient.
 						</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{lidocaine}">Lidocain</span>
-						</h3>
+						</h4>
 						<p>
 							<span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.
 						</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{atropine}">Atropin</span>
-						</h3>
+						</h4>
 						<p>
 							zur Behandlung von <span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardien</span>. Hebt die Herzrate wesentlich.
 						</p>
@@ -161,41 +161,41 @@
 				</section>
 
 				<section>
-					<h3>Spezialisierte Medikationen</h3>
+					<h4>Spezialisierte Medikationen</h4>
 					<p>Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.</p>
 					<section>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{carbonate}">Ammonium Carbonat</span>
-						</h3>
+						</h4>
 						<p>
 							<span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe
 							<a href="#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
 						</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{naloxone}">Naloxon</span>
-						</h3>
+						</h4>
 						<p>
 							Morphin-<span use:tooltip data-tooltip="dt. Gegenspieler. Antagonisten wirken einem bestimmten Medikament entgegen.">Antagonist</span>, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.
 						</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{txa}">Tranexamsäure (TXA)</span>
-						</h3>
+						</h4>
 						<p>treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten.</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{norep}">Norepinephrin</span>
-						</h3>
+						</h4>
 						<p>hebt den Blutdruck (Vasopressor). Wird über einen Zugang verabreicht.</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{nitro}">Nitroglycerin</span>
-						</h3>
+						</h4>
 						<p>senkt den Blutdruck (Vasodepressor). Wird über einen Zugang verabreicht.</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{phenylephrin}">Phenylephrin</span>
-						</h3>
+						</h4>
 						<p>hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht.</p>
-						<h3>
+						<h4>
 							<span use:tooltip data-tooltip-img="{ondansetron}">Ondansetron</span>
-						</h3>
+						</h4>
 						<p>verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.</p>
 					</section>
 				</section>
@@ -204,32 +204,32 @@
 			<section id="Verbrauchsmaterialien">
 				<p>Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.</p>
 				<section>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{surgical_airway_kit}">AAT-Kit</span>
-					</h3>
+					</h4>
 					<p>
 						gebraucht zur Behandlung von Hämothoraxen (siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen).
 					</p>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="">Field Blood Transfusion Kit</span> (dt. Feldtransfusionsset)
-					</h3>
+					</h4>
 					<p>
 						erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Dabei muss auf die Kompatibilität der Blutgruppen geachtet werden, siehe dazu <a href="#Blutgruppenverträglichkeit">eine Tabelle von Blutgruppenverträglichkeiten</a>.
 					</p>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{chest_seal}">Chest Seal</span>
 						(dt. Thoraxverschlusspflaster)
-					</h3>
+					</h4>
 					<p>
 						ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen.
 					</p>
-					<h3><span use:tooltip data-tooltip-img="{sixteen_g}">16g IV</span></h3>
+					<h4><span use:tooltip data-tooltip-img="{sixteen_g}">16g IV</span></h4>
 					<p>
 						eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ" target="_blank">in diesem Video</a> anschaulich gezeigt wird.
 					</p>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{fast_io}">FAST IO</span>
-					</h3>
+					</h4>
 					<p>
 						<i>First Access for Shock and Trauma IO,</i> ein
 						<span use:tooltip data-tooltip="Bei der intraossären Punktion wird eine Stahlkanüle in den Knochen eingestochen, worüber die Substanzen aufgrund der guten Durchblutung der Knochenmarkhöhle verabreicht werden können.">intraossärer</span> (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.
@@ -247,41 +247,41 @@
 				<p>Die folgenden Gegenstände sind zur Mehrfachverwendung geeignet.</p>
 
 				<section>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{tourniquet}">Tourniquet</span>
-					</h3>
+					</h4>
 					<p>
 						Schnürt die Blutzufuhr eines Körperteils ab, um Blutverlust zu verhindern. <b>Achtung:</b> An Gliedmaßen mit Tourniquet kann kein Puls oder Blutdruck gemessen werden sowie keine Flüssigkeit angelegt werden. Außerdem heißt so ein absoluter Banger von Breaking Benjamin.
 					</p>
 					<p>Tourniquets sind essentiell zur Selbst- und Kameradenhilfe. Als Sanitäter sollte man seine Kameraden gelegentlich auffordern, zu prüfen, ob sie Tourniquets in ausreichender Anzahl mitführen und gegebenenfalls ausgleichen.</p>
-					<h3>
-						<h3>
+					<h4>
+						<h4>
 							<span use:tooltip data-tooltip-img="{surgical_kit}">Nähset</span>
-						</h3>
-					</h3>
+						</h4>
+					</h4>
 					<p>erlaubt das Nähen von Wunden. Genähte Verbände lösen sich nicht mehr.</p>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{stethoscope}">Stethoskop</span>
-					</h3>
+					</h4>
 					<p>erlaubt die Diagnose von Thoraxverletzungen.</p>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{accuvac}">Accuvac</span>
-					</h3>
+					</h4>
 					<p>
 						erlaubt die <span use:tooltip data-tooltip="endo: innerhalb; trachea: Luftröhre">endotracheale</span>
 						Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (<i>head turning</i>).
 					</p>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{aed_x}">AED / AED-X</span>
-					</h3>
+					</h4>
 					<p>
 						<i>Automatisierter externer Defibrillator</i>. Zur Behandlung von
 						<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="#Herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
 						<a href="sanitaeter#Vitalparameter">Vitalparametern</a>.
 					</p>
-					<h3>
+					<h4>
 						<span use:tooltip data-tooltip-img="{pulseoximeter}">Pulsoximeter</span>
-					</h3>
+					</h4>
 					<p>
 						erlaubt die Messung von Puls und des Sauerstoffgehalts des <span use:tooltip data-tooltip="peripher: außen, am Rande. Gemeint sind die Arme und Beine. Pulsoximeter messen an der Fingerkuppe.">peripheren</span>
 						Blutes (engl. <i>saturation peripher O&#8322</i>, SpO&#8322). Siehe auch Abschnitt
