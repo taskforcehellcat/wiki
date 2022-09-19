@@ -64,12 +64,12 @@
 					<p>Texttreffer:</p>
 					{#each textResults as page}
 						<p>
-							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.route}>{page.title}</a>" gefunden:
+							<span class="search__hits">{page.hits}</span> Treffer auf <a class="search_pagetitle" href={page.route}>{page.title}</a> gefunden:
 						</p>
 						<ol>
 							{#each page.bysection as sec_hit}
 								<li>
-									<span class="search__env">"{sec_hit.surrounding.left}<mark>{sec_hit.surrounding.match}</mark>{sec_hit.surrounding.right}" <span class="noselect">&#x21aa; </span></span>"<a href={sec_hit.anchor}>{sec_hit.title}</a>"
+									<span class="search__env"><i>{sec_hit.surrounding.left}<mark>{sec_hit.surrounding.match}</mark>{sec_hit.surrounding.right}</i></span> <span class="noselect"> &#x21aa; </span> <a href={sec_hit.anchor}>{sec_hit.title}</a>
 								</li>
 							{/each}
 						</ol>
