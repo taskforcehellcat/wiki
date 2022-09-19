@@ -15,7 +15,9 @@
 	--brandNeutral: #fff;
 	--navHover: #fff;
 	--wikiBG: #fff;
-	--kbdBG: #212529;
+	--kbdBG: #ebebeb;
+	--kbdTXT: #494949;
+	--kbdBRD: #a5a5a5;
 	--exampleBoxBG: #e7e9eb;
 	--exampleBoxBorder: #646464;
 	--hyperLink: #436adf;
@@ -32,7 +34,9 @@
 	--brandNeutral: #fff;
 	--navHover: #fff;
 	--wikiBG: url('/images/dark-bg.jpg');
-	--kbdBG: #212529;
+	--kbdBG: #1e1e1e;
+	--kbdTXT: #e6e6e6;
+	--kbdBRD: #303030;
 	--exampleBoxBG: #0f0f0f;
 	--exampleBoxBorder: #646464;
 	--hyperLink: red;
@@ -128,8 +132,6 @@ section {
 			max-width: 100%;
 			object-fit: cover;
 		}
-
-
 	}
 }
 
@@ -724,16 +726,16 @@ footer {
 }
 
 kbd {
-	padding: 0.2rem 0.4rem;
-	color: var(--brandNeutral);
+	color: var(--kbdTXT);
 	background-color: var(--kbdBG);
-	border-radius: 0.4rem;
+	border-radius: 0.2rem;
 	font-family: monospace;
 	width: fit-content;
 	min-width: 2.5rem !important;
-	display: inline-block;
 	text-align: center;
-	padding: 0.5rem;
+	border: 1px solid var(--kbdBRD);
+	padding-inline: 0.3rem;
+	font-size: inherit;
 
 	&:not(kbd:first-of-type) {
 		margin-left: 0.1rem;
@@ -788,7 +790,6 @@ ol > ol > .exampleBox,
 ul > ul > .exampleBox {
   margin-bottom: 0;
 }*/
-
 
 .no-underline {
 	border-bottom: none;
