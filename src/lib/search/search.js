@@ -119,7 +119,7 @@ export function textSearch(query) {
                 {
                     title: hit[0],
                     hits : 1,
-                    route: "sanitaeter"
+                    route: searchIndex[hit[0]]["route"] // TODO this doesnt work?
                 }
             );
             page_index += 1;
@@ -139,10 +139,15 @@ export function textSearch(query) {
         let sections = [];
 
         on_page.forEach(hit => {
+            // if this is a subsection, this will hold its anchor part
+            let subsec = '#'+hit[1]; 
+            if (hit[1].indexOf(" \u00bb ") != -1) {
+                subsec = '#'+subsec.substring(subsec.indexOf(" \u00bb ") + 3)
+            }
             sections.push(
                 {
-                    title: hit[1],  // section title
-                    link: hit[2],   // route TODO!
+                    title: hit[1],                                     // section title
+                    anchor: searchIndex[hit[0]]["route"] + subsec, 
                     surrounding: hit[3]
                 }
             );

@@ -26,15 +26,6 @@
 		searchResults = textSearch(query);
 	};
 
-	function generateSectionLink(link: string, title: string) {
-		// function that generates a correct anchor link for subsections
-		let pos = title.indexOf(' » ');
-		if (pos === -1) {
-			return '../' + link.toLowerCase() + '#' + title;
-		} else {
-			return '../' + link.toLowerCase() + '#' + title.substring(pos + 3);
-		}
-	}
 </script>
 
 <svelte:head>
@@ -63,12 +54,12 @@
 				{#if searchResults.length !== 0}
 					{#each searchResults as page}
 						<p>
-							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.bysection[0].link}>{page.title}</a>" gefunden:
+							<span class="search__hits">{page.hits}</span> Treffer auf "<a class="search_pagetitle" href={page.route}>{page.title}</a>" gefunden:
 						</p>
 						<ol>
 							{#each page.bysection as sec_hit}
 								<li>
-									<span class="search__env">"{sec_hit.surrounding}" <span class="noselect">&#x21aa; </span></span>"<a href={generateSectionLink(sec_hit.link, sec_hit.title)}>{sec_hit.title}</a>"
+									<span class="search__env">"{sec_hit.surrounding}" <span class="noselect">&#x21aa; </span></span>"<a href={sec_hit.anchor}>{sec_hit.title}</a>"
 								</li>
 							{/each}
 						</ol>
