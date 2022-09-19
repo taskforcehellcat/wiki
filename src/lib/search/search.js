@@ -182,14 +182,21 @@ export function directSearch(query) {
         }
 
         page_sections.forEach(section => {
-            if (section.toLowerCase().indexOf(query.toLowerCase()) == -1) {
+            if (section.toLowerCase().indexOf(query.toLowerCase()) == -1 || section === 'route') {
                 return;
             }
             let route = searchIndex[pagename]['route']+'#'+section;
 
             // if its a subsection, this route is not correct
-            if (section.indexOf(" \u00bb ") != -1) {
+            let seperator_index = section.indexOf(" \u00bb ");
+            if (seperator_index != -1) {
                 route = searchIndex[pagename]['route']+'#'+section.substring(section.indexOf(" \u00bb ")+3);
+
+                // also, if its a subsection its only an actual hit if the match occurs in the subsection part
+                // of the section name.
+                if (section.substring(seperator_index + 3).toLowerCase().indexOf(query.toLowerCase()) == -1) {
+                    return;
+                }
             }
 
             results.push({
