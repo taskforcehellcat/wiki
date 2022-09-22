@@ -24,7 +24,7 @@
 
 		<section id="Steuerung">
 			<p>
-				Über die ACE Self-Interaction (<kbd>LCTRL</kbd>+<kbd>WIN</kbd>/<kbd>LCTRL</kbd>+<kbd>LCMD</kbd>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe <a href="#Funkgerät einstellen">Funkgerät einstellen</a>). Die Unterpunkte werden im Folgenden erklärt.
+				Über die ACE Self-Interaction (<kbd>LCTRL</kbd>+<kbd>WIN</kbd>/<kbd>LCTRL</kbd>+<kbd>LCMD</kbd>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe <a href="#funkgeraet_einstellen">Funkgerät einstellen</a>). Die Unterpunkte werden im Folgenden erklärt.
 			</p>
 
 			<a href="{funk_aceself}" target="_blank" class="no-underline"><img src="{funk_aceself}" alt="Radioauswahl in der ACE Self Interaction" /></a>

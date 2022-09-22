@@ -66,7 +66,7 @@
 			<p>Die ersten beiden Abschnitte widmen sich der Stabilisierung von Kreislauf und Atmung. Ist diese nämlich gelungen, steht es um einen Patienten meist schon gar nicht schlecht. Die Abschnitte sind dabei in keiner speziellen Reihenfolge. Ob Blutzirkulation ohne Atmung oder Atmung ohne Zirkulation, eines alleine genügt nicht. Bei der Behandlung muss man also beständig alle Vitalfunktionen im Blick behalten und sich der Situation des Patenten anpassen.</p>
 			<p>Als erste Maßnahme sollte man daher ein Pulsoximeter anlegen. Dieses ermöglicht es einem, Puls und Sauerstoffsättigung des Blutes zu beobachten und schnell zu registrieren, welcher Bereich gerade die größere Aufmerksamkeit bedarf.</p>
 			<p>
-				<a href="#Grundausrüstung">Weiter unten</a> sind alle Ausrüstungsgegenstände einzeln aufgelistet und erklärt.
+				<a href="#grundausruestung">Weiter unten</a> sind alle Ausrüstungsgegenstände einzeln aufgelistet und erklärt.
 			</p>
 			<p>
 				Eine kompakte Zusammenfassung aller wichtigen Behandlungsschritte findet sich auch <a href="../">hier (DEAD LINK)</a>.
@@ -75,7 +75,7 @@
 
 		<section id="Absichern der Atmung">
 			<p>
-				Die Atmung prüft man grundsätzlich am Kopf (genaueres zum Gebrauch des Medical Menus auch <a href="../erstehilfe#Lesen des Medical Menu" target="_blank">hier</a>). Eine der ersten Maßnahmen ist es, den Patienten in die stabile Seitenlage zu bringen (<i>establish recovery position</i>). Die Atemwege können teilweise oder vollständig verschlossen sein (<i>obstructed/occluded</i>). Ob dies der Fall ist, findet man mit der Option <i>check airways</i> heraus. Ist dies der Fall, verwendet man idealerweise den Accuvac, um die Atemwege frei zu machen und anschließend einen Larynx- oder Guedel-Tubus (<i>King LT / Guedel tube</i>). Sind diese nicht verfügbar, kann man die Atemwege mit geringerer Erfolgsaussicht auch händisch freimachen (<i>head turning</i>) und anschließend den Kopf überstrecken (<i>hyperextend head</i>). Ohne einen Tubus, der die Luftröhre offenhält, kann der Kopf allerdings verrutschen und diese Maßnahme muss eventuell häufiger durchgeführt werden.
+				Die Atmung prüft man grundsätzlich am Kopf (genaueres zum Gebrauch des Medical Menus auch <a href="../erstehilfe#lesen_des_medical_menus" target="_blank">hier</a>). Eine der ersten Maßnahmen ist es, den Patienten in die stabile Seitenlage zu bringen (<i>establish recovery position</i>). Die Atemwege können teilweise oder vollständig verschlossen sein (<i>obstructed/occluded</i>). Ob dies der Fall ist, findet man mit der Option <i>check airways</i> heraus. Ist dies der Fall, verwendet man idealerweise den Accuvac, um die Atemwege frei zu machen und anschließend einen Larynx- oder Guedel-Tubus (<i>King LT / Guedel tube</i>). Sind diese nicht verfügbar, kann man die Atemwege mit geringerer Erfolgsaussicht auch händisch freimachen (<i>head turning</i>) und anschließend den Kopf überstrecken (<i>hyperextend head</i>). Ohne einen Tubus, der die Luftröhre offenhält, kann der Kopf allerdings verrutschen und diese Maßnahme muss eventuell häufiger durchgeführt werden.
 			</p>
 			<p>Wenn keine weiteren Komplikationen auftreten, sollten diese Schritte ausreichen, um die Atemwege zu stabilisieren.</p>
 
@@ -122,7 +122,7 @@
 						<p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
 						<h4><span use:tooltip data-tooltip-img="">Painkillers</span> (dt. Schmerztabletten)</h4>
 						<p>
-							lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="#Transfusionen im Feld">Transfusion von Blut</a>). Werden im Arsenal bei den Magazinen geführt.
+							lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="#transfusionen_im_feld">Transfusion von Blut</a>). Werden im Arsenal bei den Magazinen geführt.
 						</p>
 						<h4>
 							<span use:tooltip data-tooltip-img="{epinephrine}">Epinephrin-Autoinjektor</span> (Adrenalin)
@@ -169,7 +169,7 @@
 						</h4>
 						<p>
 							<span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe
-							<a href="#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
+							<a href="#vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
 						</p>
 						<h4>
 							<span use:tooltip data-tooltip-img="{naloxone}">Naloxon</span>
@@ -208,20 +208,20 @@
 						<span use:tooltip data-tooltip-img="{surgical_airway_kit}">AAT-Kit</span>
 					</h4>
 					<p>
-						gebraucht zur Behandlung von Hämothoraxen (siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen).
+						gebraucht zur Behandlung von Hämothoraxen (siehe <a href="#pneumothorax_und_haemothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen).
 					</p>
 					<h4>
 						<span use:tooltip data-tooltip-img="">Field Blood Transfusion Kit</span> (dt. Feldtransfusionsset)
 					</h4>
 					<p>
-						erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Dabei muss auf die Kompatibilität der Blutgruppen geachtet werden, siehe dazu <a href="#Blutgruppenverträglichkeit">eine Tabelle von Blutgruppenverträglichkeiten</a>.
+						erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Dabei muss auf die Kompatibilität der Blutgruppen geachtet werden, siehe dazu <a href="#blutgruppenvertraeglichkeit">eine Tabelle von Blutgruppenverträglichkeiten</a>.
 					</p>
 					<h4>
 						<span use:tooltip data-tooltip-img="{chest_seal}">Chest Seal</span>
 						(dt. Thoraxverschlusspflaster)
 					</h4>
 					<p>
-						ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe <a href="#Pneumothorax und Hämothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen.
+						ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe <a href="#pneumothorax_und_haemothorax">Behandlung</a> von Hämothoraxen und Spannungspneumothoraxen.
 					</p>
 					<h4><span use:tooltip data-tooltip-img="{sixteen_g}">16g IV</span></h4>
 					<p>
@@ -276,7 +276,7 @@
 					</h4>
 					<p>
 						<i>Automatisierter externer Defibrillator</i>. Zur Behandlung von
-						<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="#Herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
+						<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="#herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
 						<a href="sanitaeter#Vitalparameter">Vitalparametern</a>.
 					</p>
 					<h4>
@@ -461,7 +461,7 @@
 				</li>
 			</ol>
 			<p>
-				Die Wahl der idealen Bandage ist etwas kompliziert, unter <a href="#Bandagen">Bandagen</a> findet sich eine vereinfachte Tabelle mit Empfehlungen. Im Allgemeinen gilt, dass eine Elastische Bandage am schnellsten, aber unsichersten verschließt. Wenn die Wunde also zeitnah genäht werden kann, sind elastische Bandagen eine gute Wahl. Muss hingegen die Wunde möglichst lange von selbst verschlossen bleiben, empfiehlt sich QuikClot und ein Mullverband.
+				Die Wahl der idealen Bandage ist etwas kompliziert, unter <a href="#bandagen">Bandagen</a> findet sich eine vereinfachte Tabelle mit Empfehlungen. Im Allgemeinen gilt, dass eine Elastische Bandage am schnellsten, aber unsichersten verschließt. Wenn die Wunde also zeitnah genäht werden kann, sind elastische Bandagen eine gute Wahl. Muss hingegen die Wunde möglichst lange von selbst verschlossen bleiben, empfiehlt sich QuikClot und ein Mullverband.
 			</p>
 		</section>
 
@@ -495,7 +495,7 @@
 
 			<section id="Transfusionen im Feld">
 				<p>
-					Standardmäßig führen Sanitäter Blut der Blutgruppe 0- oder Plasma/Kochsalzlösung mit, welches also immer verträglich ist. Genügen diese Reserven nicht, kann im Feld Blut abgenommen werden, wenn ein <a href="#Verbrauchsmaterialien">Feldtransfusionsset</a>
+					Standardmäßig führen Sanitäter Blut der Blutgruppe 0- oder Plasma/Kochsalzlösung mit, welches also immer verträglich ist. Genügen diese Reserven nicht, kann im Feld Blut abgenommen werden, wenn ein <a href="#verbrauchsmaterialien">Feldtransfusionsset</a>
 					mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten. Die Blutgruppe eines Kameraden steht auf seiner Marke (Kopf,
 					<i>check dogtag</i>).
 				</p>
