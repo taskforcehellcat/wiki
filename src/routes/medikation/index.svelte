@@ -57,6 +57,10 @@
 		<article id="sanitaeter" />
 		<h1>Medikationen</h1>
 
+		<section>
+			<p>Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite <a href="">Behandlungen (dead link)</a>.</p>
+		</section>
+
 		<section id="Basismedikamente">
 			<p>Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.</p>
 			<section>
@@ -112,7 +116,7 @@
 				</h4>
 				<p>
 					<span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe
-					<a href="#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
+					<a href="">Kriterien an Stabilität (dead link)</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{naloxone}">Naloxon</span>
