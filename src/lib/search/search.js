@@ -1,5 +1,6 @@
 import searchIndex from '$lib/search/searchIndex.json';
 //import searchIndex from "./searchIndex.json" assert { type: "json" };
+import { linkify } from '$lib/helpers';
 
 export function textSearch(query) {
     /**
@@ -162,7 +163,7 @@ export function textSearch(query) {
             sections.push(
                 {
                     title: hit[1],                                     // section title
-                    anchor: searchIndex[hit[0]]["route"] + '#' + encodeURIComponent(subsec),
+                    anchor: linkify(searchIndex[hit[0]]["route"] + '#' + subsec),
                     surrounding: hit[3]
                 }
             );
@@ -206,7 +207,7 @@ export function directSearch(query) {
             let seperator_index = section.indexOf(" \u00bb ");
             if (seperator_index != -1) {
                 route = searchIndex[pagename]['route']+'#'
-                    +encodeURIComponent(section.substring(section.indexOf(" \u00bb ")+3));
+                    +linkify(section.substring(section.indexOf(" \u00bb ")+3));
 
                 // also, if its a subsection its only an actual hit if the match occurs in the subsection part
                 // of the section name.
