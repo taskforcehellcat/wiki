@@ -155,14 +155,14 @@ export function textSearch(query) {
 
         on_page.forEach(hit => {
             // if this is a subsection, this will hold its anchor part
-            let subsec = '#'+hit[1]; 
+            let subsec = hit[1]; 
             if (hit[1].indexOf(" \u00bb ") != -1) {
-                subsec = '#'+subsec.substring(subsec.indexOf(" \u00bb ") + 3)
+                subsec = subsec.substring(subsec.indexOf(" \u00bb ") + 3)
             }
             sections.push(
                 {
                     title: hit[1],                                     // section title
-                    anchor: "https://wiki.taskforcehellcat.de/" + searchIndex[hit[0]]["route"] + subsec, 
+                    anchor: searchIndex[hit[0]]["route"] + '#' + encodeURIComponent(subsec),
                     surrounding: hit[3]
                 }
             );
@@ -191,7 +191,7 @@ export function directSearch(query) {
             results.push(
                 {
                     name: pagename,
-                    route: "https://wiki.taskforcehellcat.de/" + searchIndex[pagename]["route"]
+                    route: searchIndex[pagename]["route"]
                 }
             );
         }
@@ -205,7 +205,8 @@ export function directSearch(query) {
             // if its a subsection, this route is not correct
             let seperator_index = section.indexOf(" \u00bb ");
             if (seperator_index != -1) {
-                route = searchIndex[pagename]['route']+'#'+section.substring(section.indexOf(" \u00bb ")+3);
+                route = searchIndex[pagename]['route']+'#'
+                    +encodeURIComponent(section.substring(section.indexOf(" \u00bb ")+3));
 
                 // also, if its a subsection its only an actual hit if the match occurs in the subsection part
                 // of the section name.
@@ -213,8 +214,6 @@ export function directSearch(query) {
                     return;
                 }
             }
-
-            route = "https://wiki.taskforcehellcat.de/" + route;
 
             results.push({
                 name: pagename+" \u00bb "+section,
