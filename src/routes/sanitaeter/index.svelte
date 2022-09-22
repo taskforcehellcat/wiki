@@ -1,51 +1,6 @@
 <script lang="ts">
 	import Wiki from '../wiki.svelte';
 	import { tooltip, exampleBox } from '$lib/wikitools/wikitools';
-
-
-	/* images */
-	import sixteen_g from '$lib/images/sanitaeter/16g.png'
-	import twenty_g from '$lib/images/sanitaeter/20g.png'
-	import accuvac from '$lib/images/sanitaeter/accuvac.png'
-	import adenosine from '$lib/images/sanitaeter/adenosine.png'
-	import aed_x from '$lib/images/sanitaeter/aed_x.png'
-	import amiodarone from '$lib/images/sanitaeter/amiodarone.png'
-	import atropine from '$lib/images/sanitaeter/atropine.png'
-	import bandagen from '$lib/images/sanitaeter/bandagen.png'
-	import blood_iv from '$lib/images/sanitaeter/blood_iv.png'
-	import blutgruppen from '$lib/images/sanitaeter/blutgruppen.png'
-	import bodybag from '$lib/images/sanitaeter/bodybag.png'
-	import carbonate from '$lib/images/sanitaeter/carbonate.png'
-	import chest_seal from '$lib/images/sanitaeter/chest_seal.png'
-	import defib from '$lib/images/sanitaeter/defib.png'
-	import elastic_bandage from '$lib/images/sanitaeter/elastic_bandage.png'
-	import epinephrine from '$lib/images/sanitaeter/epinephrine.png'
-	import fast_io from '$lib/images/sanitaeter/fast_io.png'
-	import field_dressing from '$lib/images/sanitaeter/field_dressing.png'
-	import guedel from '$lib/images/sanitaeter/guedel.png'
-	import infarkt from '$lib/images/sanitaeter/infarkt.png'
-	import larynx_normal from '$lib/images/sanitaeter/larynx_normal.png'
-	import lidocaine from '$lib/images/sanitaeter/lidocaine.png'
-	import morphine from '$lib/images/sanitaeter/morphine.png'
-	import naloxone from '$lib/images/sanitaeter/naloxone.png'
-	import nitro from '$lib/images/sanitaeter/nitro.png'
-	import norep from '$lib/images/sanitaeter/norep.png'
-	import ondansetron from '$lib/images/sanitaeter/ondansetron.png'
-	import packing_bandage from '$lib/images/sanitaeter/packing_bandage.png'
-	import personal_aid_kit from '$lib/images/sanitaeter/personal_aid_kit.png'
-	import phenylephrin from '$lib/images/sanitaeter/phenylephrin.png'
-	import plasma_iv from '$lib/images/sanitaeter/plasma_iv.png'
-	import pulseoximeter from '$lib/images/sanitaeter/pulseoximeter.png'
-	import quickclot from '$lib/images/sanitaeter/quickclot.png'
-	import saline_iv from '$lib/images/sanitaeter/saline_iv.png'
-	import splint from '$lib/images/sanitaeter/splint.png'
-	import stabilisierung from '$lib/images/sanitaeter/stabilisierung.png'
-	import stethoscope from '$lib/images/sanitaeter/stethoscope.png'
-	import surgical_airway_kit from '$lib/images/sanitaeter/surgical_airway_kit.png'
-	import surgical_kit from '$lib/images/sanitaeter/surgical_kit.png'
-	import tourniquet from '$lib/images/sanitaeter/tourniquet.png'
-	import txa from '$lib/images/sanitaeter/txa.png'
-	import wolf from '$lib/images/sanitaeter/wolf.png'
 </script>
 
 <svelte:head>
@@ -94,11 +49,15 @@
 						<li>ggf. eine Sekundärwaffe</li>
 					</ul>
 				</li>
+				<li>
+					Fuhrpark
+
+				</li>
 			</ul>
 		</section>
 
 		<section id="Fähigkeiten">
-			Sanitäter beherrschen neben den Grundlagen der <a href="../erstehilfe">Ersten Hilfe</a> und <a href="../funketikette">Funketikette</a> bzw. <a href="">Funketikette für MEDEVAC (wip)</a> auch die <a href="../behandlungen">fortgeschrittenen Behandlungen</a>, welche andere Soldaten nicht leisten können. 
+			Sanitäter beherrschen neben den Grundlagen der <a href="../erstehilfe">Ersten Hilfe</a> und <a href="../funketikette">Funketikette</a> bzw. <a href="">Funketikette für MEDEVAC (wip)</a> auch die <a href="../behandlungen">fortgeschrittenen Behandlungen</a>, welche andere Soldaten nicht leisten können. Außerdem können sie Ausfälle adäquat melden und beherrschen die Besonderheiten des <a href="../sanitaeterfunk">Sanitäterfunks</a>.
 		</section>
 
 		<section id="Nützliche Hinweise">
@@ -115,6 +74,8 @@
 				</li>
 				<li>Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.</li>
 				<li>Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.</li>
+
+				<li>die <a href="../behandlung#Empfohlene Routinechecks">empfohlenen Routinechecks</a></li>
 			</ul>
 		</section>
 	</svelte:fragment>

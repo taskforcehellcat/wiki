@@ -4,48 +4,19 @@
 
 
 	/* images */
-	//import sixteen_g from '$lib/images/sanitaeter/16g.png'
-	//import twenty_g from '$lib/images/sanitaeter/20g.png'
-	//import accuvac from '$lib/images/sanitaeter/accuvac.png'
 	import adenosine from '$lib/images/sanitaeter/adenosine.png'
-	//import aed_x from '$lib/images/sanitaeter/aed_x.png'
 	import amiodarone from '$lib/images/sanitaeter/amiodarone.png'
 	import atropine from '$lib/images/sanitaeter/atropine.png'
-	//import bandagen from '$lib/images/sanitaeter/bandagen.png'
-	//import blood_iv from '$lib/images/sanitaeter/blood_iv.png'
-	//import blutgruppen from '$lib/images/sanitaeter/blutgruppen.png'
-	//import bodybag from '$lib/images/sanitaeter/bodybag.png'
 	import carbonate from '$lib/images/sanitaeter/carbonate.png'
-	//import chest_seal from '$lib/images/sanitaeter/chest_seal.png'
-	//import defib from '$lib/images/sanitaeter/defib.png'
-	//import elastic_bandage from '$lib/images/sanitaeter/elastic_bandage.png'
 	import epinephrine from '$lib/images/sanitaeter/epinephrine.png'
-	//import fast_io from '$lib/images/sanitaeter/fast_io.png'
-	//import field_dressing from '$lib/images/sanitaeter/field_dressing.png'
-	//import guedel from '$lib/images/sanitaeter/guedel.png'
-	//import infarkt from '$lib/images/sanitaeter/infarkt.png'
-	//import larynx_normal from '$lib/images/sanitaeter/larynx_normal.png'
 	import lidocaine from '$lib/images/sanitaeter/lidocaine.png'
 	import morphine from '$lib/images/sanitaeter/morphine.png'
 	import naloxone from '$lib/images/sanitaeter/naloxone.png'
 	import nitro from '$lib/images/sanitaeter/nitro.png'
 	import norep from '$lib/images/sanitaeter/norep.png'
 	import ondansetron from '$lib/images/sanitaeter/ondansetron.png'
-	//import packing_bandage from '$lib/images/sanitaeter/packing_bandage.png'
-	//import personal_aid_kit from '$lib/images/sanitaeter/personal_aid_kit.png'
 	import phenylephrin from '$lib/images/sanitaeter/phenylephrin.png'
-	//import plasma_iv from '$lib/images/sanitaeter/plasma_iv.png'
-	//import pulseoximeter from '$lib/images/sanitaeter/pulseoximeter.png'
-	//import quickclot from '$lib/images/sanitaeter/quickclot.png'
-	//import saline_iv from '$lib/images/sanitaeter/saline_iv.png'
-	//import splint from '$lib/images/sanitaeter/splint.png'
-	//import stabilisierung from '$lib/images/sanitaeter/stabilisierung.png'
-	//import stethoscope from '$lib/images/sanitaeter/stethoscope.png'
-	//import surgical_airway_kit from '$lib/images/sanitaeter/surgical_airway_kit.png'
-	//import surgical_kit from '$lib/images/sanitaeter/surgical_kit.png'
-	//import tourniquet from '$lib/images/sanitaeter/tourniquet.png'
 	import txa from '$lib/images/sanitaeter/txa.png'
-	//import wolf from '$lib/images/sanitaeter/wolf.png'
 </script>
 
 <svelte:head>
@@ -54,11 +25,11 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="sanitaeter" />
+		<article id="medikation" />
 		<h1>Medikationen</h1>
 
 		<section>
-			<p>Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite <a href="">Behandlungen (dead link)</a>.</p>
+			<p>Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite <a href="../behandlungen">Behandlungen</a>.</p>
 		</section>
 
 		<section id="Basismedikamente">
@@ -70,7 +41,7 @@
 				<p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
 				<h4><span use:tooltip data-tooltip-img="">Painkillers</span> (dt. Schmerztabletten)</h4>
 				<p>
-					lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="">Transfusion von Blut (dead link)</a>). Werden im Arsenal bei den Magazinen geführt.
+					lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="../behandlungen#Transfusionen im Feld">Transfusion von Blut</a>). Werden im Arsenal bei den Magazinen geführt.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{epinephrine}">Epinephrin-Autoinjektor</span> (Adrenalin)
@@ -84,7 +55,7 @@
 		</section>
 
 		<section id="Infarkttherapie">
-			<p>Medikamente zur Behandlung von Herzstillständen, siehe auch <a href="">(dead link)</a>.</p>
+			<p>Medikamente zur Behandlung von Herzstillständen, siehe auch <a href="../behandlungen#Herzinfarkt">hier</a>.</p>
 			<section>
 				<h4>
 					<span use:tooltip data-tooltip-img="{amiodarone}">Amiodaron</span>
@@ -116,7 +87,7 @@
 				</h4>
 				<p>
 					<span use:tooltip data-tooltip="Inhalate werden durch Einatmen eingenommen (inhaliert)">Inhalat</span>, kann stabile Patienten (siehe
-					<a href="">Kriterien an Stabilität (dead link)</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
+					<a href="../behandlungen#Vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{naloxone}">Naloxon</span>

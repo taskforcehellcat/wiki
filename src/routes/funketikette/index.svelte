@@ -116,6 +116,13 @@
 		<section id="Ausnahmen und Notfälle">
 			<p>Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.</p>
 		</section>
+
+		<section id="Weiterführende Informationen">
+			<ul>
+				<li><a href="../sanitaeterfunk">Sanitäterfunk</a></li>
+				<li><a href="">Funk der Panzertruppen (wip)</a></li>
+			</ul>
+		</section>
 	</svelte:fragment>
 	<svelte:fragment slot="editdate">09.07.2022</svelte:fragment>
 </Wiki>
