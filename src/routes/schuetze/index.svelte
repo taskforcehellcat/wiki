@@ -18,28 +18,28 @@
 			</p>
 		</section>
 		<section id="Aufgaben">
-			<p>Schützen nehmen unmittelbaren Einfluss auf die Gefechtseffektivität ihres Trupps beziehungsweise ihrer Gruppe. Das Aufgabenprofil der Schützen gestaltet sich dabei Vielfältig. Zu den Hauptaufgaben eines Schützen zählen die folgenden Punkte.</p>
+			<p>Schützen nehmen unmittelbaren Einfluss auf die Gefechtseffektivität ihres Trupps beziehungsweise ihrer Gruppe. Das Aufgabenprofil der Schützen gestaltet sich dabei vielfältig. Zu den Hauptaufgaben eines Schützen zählen die folgenden Punkte.</p>
 
 			<ol>
 				<li>Ausführen der Befehle des Trupp- oder Gruppenführers</li>
 				<li>Führen des Feuergefechts mit direktem oder indirektem Feuer mit Handfeuerwaffen</li>
-				<li>Leisten der Ersten Hilfe an Kameraden oder sich selbst</li>
-				<li>Fachgerechter Informationsaustausch über das Funkgerät auf Trupp- oder Gruppenebene</li>
-				<li>Bedienung von Orientierungsmitteln wie Karte und Kompass</li>
+				<li>Leisten Erster Hilfe an Kameraden und sich selbst</li>
+				<li>fachgerechter Informationsaustausch über das Funkgerät auf Trupp- oder Gruppenebene</li>
+				<li>Verwendung von Orientierungsmitteln wie Karte und Kompass</li>
 				<li>Fahren von Fahrzeugen und Bedienung derer Waffenanlagen</li>
 				<li>Bewegen in taktischen Formationen im Feld</li>
 			</ol>
 		</section>
 		<section id="Ausrüstung">
-			<p>Die Ausrüstung des Schützen stellt die Grundausrüstung vieler anderer Rollen dar. Zusätzlich kann der Schütze besondere Ausrüstungsgegenstände anderer Rollen tragen, wie zum Beispiel Ersatzläufe eines MG-Schützen oder zusätzliche Munition. Zur Ausrüstung eines jeden Schützen zählen folgende Gegenstände:</p>
+			<p>Die Ausrüstung des Schützen stellt die Grundausrüstung vieler anderer Rollen dar. Zusätzlich kann der Schütze besondere Ausrüstungsgegenstände anderer Rollen tragen, wie zum Beispiel Ersatzläufe eines MG-Schützen, zusätzliche Munition oder Infusionen. Zur Ausrüstung eines jeden Schützen zählen folgende Gegenstände:</p>
 
 			<ol>
-				<li>Eine Primärwaffe für das Gefecht auf mittlere Distanz</li>
-				<li>Eine Sekundärwaffe für das Gefecht auf kurze Distanz</li>
-				<li>Ein Funkgerät für den Informationsaustausch auf Trupp- oder Gruppenebene</li>
-				<li>Ein Spaten für das Errichten von Schützengräben im Feld</li>
-				<li>Eine Karte und einen Kompass zur Orientierung im Feld</li>
-				<li>Ein Fernglas zur Feldaufklärung</li>
+				<li>eine Primärwaffe für das Gefecht auf mittlere Distanz</li>
+				<li>eine Sekundärwaffe für das Gefecht auf kurze Distanz</li>
+				<li>ein Funkgerät für den Informationsaustausch auf Trupp- oder Gruppenebene</li>
+				<li>ein Spaten für das Errichten von Schützengräben im Feld</li>
+				<li>eine Karte und einen Kompass zur Orientierung im Feld</li>
+				<li>ein Fernglas zur Feldaufklärung</li>
 			</ol>
 		</section>
 		<section id="Fertigkeiten">
@@ -53,5 +53,5 @@
 			</ol>
 		</section>
 	</svelte:fragment>
-	<svelte:fragment slot="editdate">21.09.2022</svelte:fragment>
+	<svelte:fragment slot="editdate">22.09.2022</svelte:fragment>
 </Wiki>
