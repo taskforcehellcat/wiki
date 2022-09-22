@@ -10,6 +10,9 @@
 	import { onMount } from 'svelte';
 	import Nav from '$lib/nav/Nav.svelte';
 
+	// --- id conversions ---
+	import { linkify } from '$lib/helpers';
+
 	let editdate;
 	let isOpen = false;
 	let anchors = [];
@@ -50,8 +53,10 @@
 				link: '#' + element.id
 			});
 		});
+
 		// for every element of the "H3sectionsArr" array
 		H3sectionsArr.forEach((element) => {
+
 			// add h3 tag with element's id as content
 			element.insertAdjacentHTML('afterbegin', '<h3>' + element.id + '</h3>');
 		});
@@ -61,8 +66,19 @@
 		});
 
 		anchors = tempAnchors;
-	});
 
+		[...H2sections, ...H3sections, ...H4sections].forEach((element) => {
+			// replace whitespaces with underscores to get valid html ids
+			element.id = linkify(element.id);
+		});
+		
+		if (location.hash) {
+			document.querySelector(location.hash).scrollIntoView();
+		}
+	});
+	
+	
+	
 </script>
 
 <div id="wiki">
