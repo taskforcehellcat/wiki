@@ -71,7 +71,7 @@
 			// replace whitespaces with underscores to get valid html ids
 			element.id = linkify(element.id);
 		});
-		
+
 		if (location.hash) {
 			document.querySelector(location.hash).scrollIntoView();
 		}
@@ -126,7 +126,7 @@
 
 			<div id="wiki-nav__list">
 				{#each anchors as anchor}
-					<a href={anchor.link}>{anchor.text}</a>
+					<a href={linkify(anchor.link)}>{anchor.text}</a>
 				{/each}
 			</div>
 		</div>
