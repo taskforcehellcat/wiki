@@ -1,5 +1,6 @@
 <script>
-	import { linkify, NAV_MENU } from '$lib/menu';
+	import { NAV_MENU } from '$lib/menu';
+	import { linkify } from '$lib/helpers';
 
 	let activeNav;
 

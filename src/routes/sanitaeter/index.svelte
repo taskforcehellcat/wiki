@@ -49,10 +49,6 @@
 						<li>ggf. eine Sekundärwaffe</li>
 					</ul>
 				</li>
-				<li>
-					Fuhrpark
-
-				</li>
 			</ul>
 		</section>
 
