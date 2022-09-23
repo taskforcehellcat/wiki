@@ -64,6 +64,64 @@
 				</li>
 			</ol>
 		</section>
+
+		<section id="Medevac-Funk">
+			<p>Um einen Medevac anzufordern, verwenden wir das folgende, vom NATO-Neunzeiler abgeleitete Schema:</p>
+			<ul>
+				<li>Zeile 1: Landezone (Koordinaten oder markante Beschreibung)</li>
+				<li>Zeile 2: Rufzeichen und Funkfrequenz</li>
+				<li>
+					Zeile 3: Zahl der Patienten nach obigen Meldesystem
+					<ul>
+						<li>Kat. Rot: kritisch</li>
+						<li>Kat. Gelb: Priorität</li>
+						<li>Kat. Grün: Routine</li>
+					</ul>
+				</li>
+				<li>An dieser Stelle wird unterbrochen und die bisherigen Informationen bestätigt.</li>
+				<li>
+					Zeile 4: Sicherheit der Landezone
+					<ul>
+						<li>N <i>(no presence)</i>: keine feindlichen Teile in der Umgebung</li>
+						<li>P <i>(possible presence)</i>: möglicherweise feindliche Teile in der Umgebung, Vorsicht beim Annähern</li>
+						<li>E <i>(enemy presence)</i>: feindliche Teile in der Umgebung, Vorsicht beim Annähern</li>
+						<li>X: feinliche Präsenz in der Umgebung, bewaffnete Eskortierung vonnöten</li>
+					</ul>
+				</li>
+				<li>
+					Zeile 5: Markierung der Landezone
+					<ul>
+						<li>A: pyrotechnisches Signal</li>
+						<li>B: Rauchsignal (Farbe benennen)</li>
+						<li>C: keine</li>
+						<li>D: andere (benennen)</li>
+					</ul>
+				</li>
+				<li>
+					Zeile 6: Zugehörigkeit der Patienten
+					<ul>
+						<li>A: eigene Teile</li>
+						<li>B: Zivilisten</li>
+						<li>C: feindliche Teile</li>
+					</ul>
+				</li>
+			</ul>
+
+			<div use:exampleBox>
+				<p>„Alpha-Lead, hier Alpha-2, Anfrage: MEDEVAC sechszeilig.“</p>
+				<p>„Alpha-2, hier Alpha-Lead, bereit für Sechszeiler, kommen.“</p>
+				<p>„Zeile eins: Koordinaten sechsstellig: eins zwo vier Trennung zwo fünnüf acht, markant Stadtzentrum zentraler Platz.</p>
+				<p>Zeile zwo: Abholung für Alpha-3, Verständigung mit SEM fünnüf zwo SL, vier sieben Megahertz.</p>
+				<p>Zeile drei: zwo Kat. rot, drei Kat. gelb und Kat. grün; Kat. Schwarz vorhanden. So mit?“</p>
+				<p>„Bestätige: Medevac bei eins zwo vier Trennung zwo fünnüf acht, Stadtmitte, für Alpha-3 mit zwo Kat. rot, drei Kat. gelb und Kat. grün. Verständigung mit SEM, vier sieben Megahertz.“</p>
+				<p>„Zeile vier: X-Ray, PzA erkannt.</p>
+				<p>Zeile fünnüf: Bravo, türkis.</p>
+				<p>Zeile sechs: fünnüf Alpha, zwo Bravo, ein Charlie. So mit?“</p>
+				<p>„Bestätige: Landezone heiß, mindestens PzA, markiert mit Rauch türkis, bereit für fünnüf eigene, zwo zivil, ein POW. Kommen.“</p>
+				<p>„So korrekt. Kommen.“</p>
+				<p>„ETA sechs Mike dreißig, Alpha-Lead Ende.“</p>
+			</div>
+		</section>
 	</svelte:fragment>
 	<svelte:fragment slot="editdate">22.09.2022</svelte:fragment>
 </Wiki>
