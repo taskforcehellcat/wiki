@@ -9,7 +9,7 @@ from json import dump
 from bs4 import BeautifulSoup
 
 # directory that contains the directories with page content
-deploying = True
+deploying = False
 ROOT_PAGES = r'../../../src/routes/'
 if deploying:
     ROOT_PAGES = r'/opt/build/repo/src/routes/'
