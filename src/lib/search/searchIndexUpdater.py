@@ -9,14 +9,14 @@ from json import dump
 from bs4 import BeautifulSoup
 
 # directory that contains the directories with page content
-ROOT_PAGES = r'../../../src/routes/'
+ROOT_PAGES = 'C:\\Users\\Leon\\Desktop\\tfhc-wiki\\src\\routes\\'
 
 # symbol that's used to indicate that a section contains a subsection,
 # see also: http://xahlee.info/comp/unicode_arrows.html
 ARROW_SYMBOL = '»'  # DO NOT CHANGE! Other code depends on this specific character.
 
 # tags with text to be indexed (used by sections and subsections)
-TEXT_ELEMENTS = ['p', 'li', 'h2', 'h3']
+TEXT_ELEMENTS = ['p', 'ol', 'ul', 'li', 'h2', 'h3', 'h4', 'section']
 
 
 def remove_escape_chars(str):
@@ -75,11 +75,12 @@ def main():
                 except KeyError:
                     # sections without ids shouldn't be indexed
                     continue
-
+                
                 section_text = ''
                 for child in section.children:
                     if child.name in TEXT_ELEMENTS:
-                        section_text += remove_escape_chars(child.text) + ' '
+                        print(child.text)
+                        section_text = section_text + (child.text) + ' '
 
                 page_dict.update({section_name: section_text})
 
