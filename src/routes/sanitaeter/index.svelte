@@ -198,7 +198,7 @@
 				<li>Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.</li>
 				<li>Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.</li>
 
-				<li>die <a href="../behandlung#Empfohlene Routinechecks">empfohlenen Routinechecks</a></li>
+				<li>die <a href="../behandlungen#empfohlene_routinechecks">empfohlenen Routinechecks</a></li>
 			</ul>
 		</section>
 	</svelte:fragment>
