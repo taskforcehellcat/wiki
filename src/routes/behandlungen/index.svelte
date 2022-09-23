@@ -115,31 +115,6 @@
 			<p>Eine Komplikation, die bei der Versorgung des Kreislaufes auftreten kann, ist der <a href="#herzinfarkt">Herzstillstand</a>.</p>
 		</section>
 
-		<section id="Pneumothorax und Hämothorax">
-			<p>Zu einem Pneumothorax (dt. „Luftbrust“) kommt es, wenn Luft durch eine Verletzung aus der Lunge entweicht und in den Zwischenraum von Lunge und Brustkorb gelangt. Diese Luft drückt dann von außen auf den Lungenflügel und hindert ihn daran, sich auszudehnen. Die Atmung ist dann sehr erschwert. Kann diese Luft gar nicht mehr entweichen, kommt es zu einem Spannungspneumothorax. Die Lunge kann sich dann gar nicht merh</p>
-			<p>Bei einem Hämothorax kommt es zu Blutansammlungen im Brustkorb.</p>
-
-			<section id="Diagnose">
-				<p>
-					Ein Stethoskop erlaubt es, den Brustkorb abzuhorchen (<i>auscultate lung sounds</i>). Anhand der Atemnebengeräusche (Rasseln oder Gurgeln) kann man abschätzen, ob ein Pneumo- oder Hämothorax vorliegt.
-				</p>
-			</section>
-
-			<section id="Behandlung">
-				<p>
-					Zur Behandlung von Pneumo- und Hämothoraxen benötigt man Thoraxverschlusspflaster (<i>chest seals</i>) sowie eventuell AAT-Kits für Drainagen und Dekompressionen.
-				</p>
-				<p>
-					Bei einem Pneumothorax kann direkt ein Thoraxverschlusspflaster auf die Wunde geklebt werden. Dieses hat ein Ein-Weg-Ventil, welches es Luft und Flüssigkeitsansammlungen gestattet, gegen den Lungendruck aus dem Brustkorb zu entweichen, den Brustkorb aber nach außen versiegelt. Liegt ein Spannungspneumothorax vor, muss <i>davor</i> eventuell eine Thoraxdekompression (<i>needle decompression</i>) durchgeführt werden.
-				</p>
-				<p>
-					Bei einem Hämothorax muss zuvor eine Thoraxdrainage durchgeführt werden, um größere Mengen Flüssigkeit aus dem Lungenraum abzuführen. Dazu führt man eine Pleurapunktion (<i>drain fluid</i>) durch, bei der mit einer Nadel in die
-					<span use:tooltip data-tooltip="der Raum zwischen Lungenflügel und Rippenfell">Pleurahöhle</span> gestochen wird.
-				</p>
-				<p>Die Anwendung des AAT-Kits kann fehlschlagen, man sollte daher nach jeder Behandlung noch einmal die Atemgeräusche abhorchen.</p>
-			</section>
-		</section>
-
 		<section id="Verwundungen">
 			<p>Idealerweise sollten Verletzung in Reihenfolge ihres Schweregrades behandelt werden:</p>
 			<ol>
@@ -177,6 +152,31 @@
 			<p>Nebenstehende Tabelle zeigt die idealen Bandagen zur Behandlung verschiedener Wundentypen.</p>
 
 			<a href="{bandagen}" class="no-underline" target="_blank"><img src="{bandagen}" alt="Übersicht mit Wunden- und Bandagentypen" /></a>
+		</section>
+
+		<section id="Pneumothorax und Hämothorax">
+			<p>Zu einem Pneumothorax (dt. „Luftbrust“) kommt es, wenn Luft durch eine Verletzung aus der Lunge entweicht und in den Zwischenraum von Lunge und Brustkorb gelangt. Diese Luft drückt dann von außen auf den Lungenflügel und hindert ihn daran, sich auszudehnen. Die Atmung ist dann sehr erschwert. Kann diese Luft gar nicht mehr entweichen, kommt es zu einem Spannungspneumothorax. Die Lunge kann sich dann gar nicht merh</p>
+			<p>Bei einem Hämothorax kommt es zu Blutansammlungen im Brustkorb.</p>
+
+			<section id="Diagnose">
+				<p>
+					Ein Stethoskop erlaubt es, den Brustkorb abzuhorchen (<i>auscultate lung sounds</i>). Anhand der Atemnebengeräusche (Rasseln oder Gurgeln) kann man abschätzen, ob ein Pneumo- oder Hämothorax vorliegt.
+				</p>
+			</section>
+
+			<section id="Behandlung">
+				<p>
+					Zur Behandlung von Pneumo- und Hämothoraxen benötigt man Thoraxverschlusspflaster (<i>chest seals</i>) sowie eventuell AAT-Kits für Drainagen und Dekompressionen.
+				</p>
+				<p>
+					Bei einem Pneumothorax kann direkt ein Thoraxverschlusspflaster auf die Wunde geklebt werden. Dieses hat ein Ein-Weg-Ventil, welches es Luft und Flüssigkeitsansammlungen gestattet, gegen den Lungendruck aus dem Brustkorb zu entweichen, den Brustkorb aber nach außen versiegelt. Liegt ein Spannungspneumothorax vor, muss <i>davor</i> eventuell eine Thoraxdekompression (<i>needle decompression</i>) durchgeführt werden.
+				</p>
+				<p>
+					Bei einem Hämothorax muss zuvor eine Thoraxdrainage durchgeführt werden, um größere Mengen Flüssigkeit aus dem Lungenraum abzuführen. Dazu führt man eine Pleurapunktion (<i>drain fluid</i>) durch, bei der mit einer Nadel in die
+					<span use:tooltip data-tooltip="der Raum zwischen Lungenflügel und Rippenfell">Pleurahöhle</span> gestochen wird.
+				</p>
+				<p>Die Anwendung des AAT-Kits kann fehlschlagen, man sollte daher nach jeder Behandlung noch einmal die Atemgeräusche abhorchen.</p>
+			</section>
 		</section>
 
 		<section id="Herzinfarkt">
