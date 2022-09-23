@@ -1,11 +1,11 @@
 export const NAV_MENU = [
 	{
-		id: 'Grundlagen',
-		entries: ['Allgemeines', 'Funketikette', 'Erste Hilfe', 'Abteilungen', 'Sonstiges']
+		id: 'Über uns',
+		entries: ['Allgemeines', 'Abteilungen']
 	},
 	{
 		id: 'Ausbildung',
-		entries: ['Befehlsausgabe', 'Steuerung', 'Truppenteile']
+		entries: ['Erste Hilfe', 'Funketikette', 'Befehlsausgabe', 'Truppenteile', 'Steuerung']
 	},
 	{
 		id: 'Streitkräfte',
