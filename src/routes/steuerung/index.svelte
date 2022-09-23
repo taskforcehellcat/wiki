@@ -307,7 +307,7 @@
 
 		<section id="Weiterführende Informationen">
 			<ul>
-				<li><a href="funketikette#Steuerung">Bedienung und Einstellen von Funkgeräten</a></li>
+				<li><a href="funketikette#steuerung">Bedienung und Einstellen von Funkgeräten</a></li>
 			</ul>
 		</section>
 	</svelte:fragment>

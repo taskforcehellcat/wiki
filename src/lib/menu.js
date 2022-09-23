@@ -13,7 +13,7 @@ export const NAV_MENU = [
 	},
 	{
 		id: 'Sanitätsdienst',
-		entries: ['Sanitäter', 'MEDEVAC-Sanitäter']
+		entries: ['Sanitäter', 'Sanitäterfunk', 'Medikation', 'Behandlungen', 'MEDEVAC',]
 	},
 	{
 		id: 'Panzertruppen',
@@ -32,20 +32,3 @@ export const NAV_MENU = [
 		entries: ['Bodenfahrzeuge', 'Luftfahrzeuge']
 	}
 ];
-
-const REPLACEMENTS = {
-	' ': '',
-	'-': '',
-	'\u00e4': 'ae', // ä
-	'\u00fc': 'ue', // ü
-	'\u00f6': 'oe', // ö
-	'\u00df': 'ss' // ß
-};
-
-export function linkify(value) {
-	value = value.toLowerCase();
-	for (const [k, v] of Object.entries(REPLACEMENTS)) {
-		value = value.replace(k, v);
-	}
-	return value;
-}
