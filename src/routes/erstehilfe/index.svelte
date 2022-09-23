@@ -67,7 +67,7 @@
 					<li>
 						Spalte <b>Status</b>: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.
 					</li>
-					<li>Spalte <b>Overview</b>: Hier sieht man die Verwundungen.</li>
+					<li>Spalte <b>Overview</b>: Hier sieht man die Verwundungen des ausgewählten Körperteils.</li>
 					<li>
 						Spalte <b>Examine and Treatment</b>: Hier sieht man die Behandlungsoptionen und kann sie ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein.
 					</li>
@@ -76,7 +76,7 @@
 
 			<section id="Behandeln ansprechbarer Patienten">
 				<ol>
-					<h3>im Gefecht</h3>
+					<h4>im Gefecht</h4>
 					<li>Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)</li>
 					<li>Kopf und Torso verbinden, stärkere Verwundungen priorisieren</li>
 					<li>bei Schmerzen Schmerztabletten verwenden</li>
@@ -84,7 +84,7 @@
 						Splint anlegen <i>wenn nötig</i>. Splints, die von Nichtsanitätern angelegt worden sind, lösen sich mit einer gewissen Wahrscheinlichkeit wieder.
 					</li>
 
-					<h3>nach dem Gefecht</h3>
+					<h4>nach dem Gefecht</h4>
 					<li>verletzte Gliedmaßen bandagieren</li>
 					<li>Tourniquets abnehmen</li>
 					<li>Sanitäter zum Nähen lassen aufsuchen (möglichst zeitnah)</li>
@@ -99,7 +99,6 @@
 				</section>
 
 				<section id="Handlungsablauf">
-					<p />
 					<ol>
 						<li>
 							Im Medical Menu überprüfen, ob der Patient gezogen/getragen werden kann. Wenn nicht (Reiter <i>Drag/Carry</i> ist ausgegraut), ist der Patient tot. Ansonsten:
@@ -129,6 +128,8 @@
 					<p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
 					
 					<a href="{erste_hilfe_basic}" class="no-underline" target="_blank"><img src="{erste_hilfe_basic}" alt="Erste Hilfe, grundlegendes Flowchart" /></a>
+				
+					<p>Hinweis zur <b>Zyanose</b>: Ist kein Pulsoximeter zur Hand, kann man nach Anzeichen einer Zyanose (starken Sauerstoffmangels) suchen (<i>check cyanosis</i>). In der Praxis sind das bläuliche Lippen oder Fingerspitzen. Gibt es welche, ist die Sauerstoffsättigung des Blutes kritisch und man sollte sich den Atemwegen zuweden.</p>
 				</section>
 
 				<section id="Eintreffen des Sanitäters">
