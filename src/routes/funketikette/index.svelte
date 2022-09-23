@@ -36,7 +36,7 @@
 					</p>
 					<p>Der linke Drehknopf dient neben dem Einschalten dem Auswählen von Voreinstellungen. Die zwölf standardmäßigen Voreinstellungen bezeichnen wir auch als Kanäle. Die Einstellungen P und H dienen der Programmierung des Funkgeräts, was im Allgemeinen aber nicht notwendig werden sollte.</p>
 					<p>
-						Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man ohne dafür ohne das Funkgerät öffnen zu müssen die Taste <kbd>CAPS LOCK</kbd>).
+						Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man dafür ohne das Funkgerät öffnen zu müssen die Taste <kbd>CAPS LOCK</kbd>).
 					</p>
 
 					<a href="{semSL}" target="_blank" class="no-underline"><img src="{semSL}" alt="Oberfläche der SEM 52 SL" /></a>
