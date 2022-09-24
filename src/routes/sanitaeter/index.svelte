@@ -97,7 +97,7 @@
 		</section>
 
 		<section id="Fähigkeiten">
-			Sanitäter beherrschen neben den Grundlagen der <a href="../erstehilfe">Ersten Hilfe</a> und <a href="../funketikette">Funketikette</a> bzw. <a href="../sanitaeterfunk">Funketikette für Sanitäter</a> auch die <a href="../behandlungen">fortgeschrittenen Behandlungen</a>, welche andere Soldaten nicht leisten können. Außerdem können sie Ausfälle adäquat melden und beherrschen die Besonderheiten des <a href="../sanitaeterfunk">Sanitäterfunks</a>.
+			Sanitäter beherrschen neben den Grundlagen der <a href="../erstehilfe">Ersten Hilfe</a> und <a href="../funketikette">Funketikette</a> auch die <a href="../behandlungen">fortgeschrittenen Behandlungen</a>, welche andere Soldaten nicht leisten können. Außerdem können sie Ausfälle adäquat melden und beherrschen die Besonderheiten des <a href="../sanitaeterfunk">Sanitäterfunks</a>.
 		</section>
 
 		<section id="Verbrauchsmaterialien">
