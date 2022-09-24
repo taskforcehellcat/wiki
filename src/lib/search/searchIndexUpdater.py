@@ -9,7 +9,7 @@ from json import dump
 from bs4 import BeautifulSoup
 
 # directory that contains the directories with page content
-ROOT_PAGES = 'C:\\Users\\Leon\\Desktop\\tfhc-wiki\\src\\routes\\'
+ROOT_PAGES = r'./src/routes/'
 
 # symbol that's used to indicate that a section contains a subsection,
 # see also: http://xahlee.info/comp/unicode_arrows.html
