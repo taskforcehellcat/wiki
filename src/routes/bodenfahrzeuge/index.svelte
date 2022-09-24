@@ -13,7 +13,6 @@
 		
 		<section id="Rollenprofil">
 			<p />
-			<p>test hallo jaja</p>
 		</section>
 		<section id="Aufgaben">
 			<p />
