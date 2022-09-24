@@ -10,3 +10,7 @@ node_modules
 .output
 .idea
 .vscode/settings.json
+
+# may get created for debugging purposes but
+# does not need to be pushed to netlify anymore
+/src/lib/search/searchIndex.json
