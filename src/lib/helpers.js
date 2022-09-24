@@ -4,7 +4,7 @@ const REPLACEMENTS = {
 	'\u00e4': 'ae', // ä
 	'\u00fc': 'ue', // ü
 	'\u00f6': 'oe', // ö
-	'\u00df': 'ss'  // ß
+	'\u00df': 'ss' // ß
 };
 
 export function linkify(value) {

@@ -4,9 +4,11 @@
 [![TFHC Discord](https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord)](https://discord.taskforcehellcat.de/)
 
 ## Menu entries / Routing
+
 To add a new menu entry, look at the pattern in $lib/menu.js.
 
 A menu entry looks like this:
+
 ```
 id: 'Sanitätsdienst',
 entries: [
@@ -15,6 +17,7 @@ entries: [
 ```
 
 These entries will be rendered as:
+
 ```
 <span>
     Sanitätsdienst
