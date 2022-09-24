@@ -185,7 +185,7 @@
 
 		<section id="Herzinfarkt">
 			<p>
-				Werkzeuge zur Behandlung eines Herzinfarktes sind die Herz-Lungen-Wiederbelebung, ein Defibrillator, Epinephrin, Amiodaron und Lidokain. Infarkte lassen sich in zwei Kategorien unterteilen: Asystolien, welche nicht mit einem Defibrillator behandelt werden können, und das Kammerflimmern. Letzteres lässt sich möglicherweise mit einem Defibrillator behandeln.
+				Werkzeuge zur Behandlung eines Herzinfarktes sind die Herz-Lungen-Wiederbelebung, ein Defibrillator, Epinephrin, Amiodaron und Lidocain. Infarkte lassen sich in zwei Kategorien unterteilen: Asystolien, welche nicht mit einem Defibrillator behandelt werden können, und das Kammerflimmern. Letzteres lässt sich möglicherweise mit einem Defibrillator behandeln.
 			</p>
 			
 			<section id="Diagnose">
@@ -214,7 +214,7 @@
 
 			<section id="Behandlung einer Asystolie">
 				<p>
-					Bei der Asystolie liegt im Gegensatz zum Kammerflimmern gar keine Herzmuskelaktivität vor. Sie kann nur durch ständige Herz-Lungen-Wiederbelebung und gelegentliche Gaben von Epinephrin behandelt werden. Amiodaron und Lidokain verringern die Erregbarkeit des Herzmuskels, um Kammerflimmern entgegenzuwirken. Diese Medikamente sind bei der Asystolie also kontraindiziert.
+					Bei der Asystolie liegt im Gegensatz zum Kammerflimmern gar keine Herzmuskelaktivität vor. Sie kann nur durch ständige Herz-Lungen-Wiederbelebung und gelegentliche Gaben von Epinephrin behandelt werden. Amiodaron und Lidocain verringern die Erregbarkeit des Herzmuskels, um Kammerflimmern entgegenzuwirken. Diese Medikamente sind bei der Asystolie also kontraindiziert.
 				</p>
 				<p>
 					Während beständig Herz-Lungen-Wiederbelebung durchgeführt wird sollte ein- bis zweimal pro Minute kontrolliert werden, ob ein Kammerflimmern eingetreten oder der Puls wiedergekehrt ist.
