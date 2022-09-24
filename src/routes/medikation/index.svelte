@@ -55,20 +55,21 @@
 		</section>
 
 		<section id="Infarkttherapie">
-			<p>Medikamente zur Behandlung von Herzstillständen, siehe auch <a href="../behandlungen#Herzinfarkt">hier</a>.</p>
+			<p>Medikamente zur Behandlung von Herzstillständen, siehe auch <a href="../behandlungen#herzinfarkt">hier</a>.</p>
+			<p>Die Antiarrythmika Amiodaron und Lidocain stabilisieren das Membranpotential des Herzmuskels und verringern dadurch seine Erregbarkeit. Dies hilft, Kammerflimmern zu behandeln, wenn der Herzmuskel krampft. Bei einer Asystolie sind sie kontraindiziert.</p>
 			<section>
 				<h4>
 					<span use:tooltip data-tooltip-img="{amiodarone}">Amiodaron</span>
 				</h4>
 				<p>
-					<span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidocain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine
+					Klasse III <span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidocain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine
 					<span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardie</span>. Empfohlen ist eine Gabe pro Patient.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{lidocaine}">Lidocain</span>
 				</h4>
 				<p>
-					<span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.
+					Klasse Ib <span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{atropine}">Atropin</span>

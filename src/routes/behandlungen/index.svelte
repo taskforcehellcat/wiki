@@ -148,6 +148,10 @@
 			</p>
 		</section>
 
+		<section id="Verbrennungen">
+			<i>Aktuell nicht Behandelbar, folgt in künftigen ACE/KAT Updates.</i>
+		</section>
+
 		<section id="Bandagen">
 			<p>Nebenstehende Tabelle zeigt die idealen Bandagen zur Behandlung verschiedener Wundentypen.</p>
 
@@ -180,25 +184,49 @@
 		</section>
 
 		<section id="Herzinfarkt">
-			<p>Einen groben Überblick über die wichtigesten Behandlungsschritte eines Herzinfarktes gibt das nachfolgende Flowchart.  Es bezieht sich auf eine ältere Version von KAT Medical und sollte daher nicht ganz wörtlich genommen werden. Es wird demnächst aktualisiert.</p>
-
-			<a href="{infarkt}" target="_blank" class="no-underline"><img src="{infarkt}" alt="Flowchart Herzstillstand" /></a>
+			<p>
+				Werkzeuge zur Behandlung eines Herzinfarktes sind die Herz-Lungen-Wiederbelebung, ein Defibrillator, Epinephrin, Amiodaron und Lidokain. Infarkte lassen sich in zwei Kategorien unterteilen: Asystolien, welche nicht mit einem Defibrillator behandelt werden können, und das Kammerflimmern. Letzteres lässt sich möglicherweise mit einem Defibrillator behandeln.
+			</p>
 			
 			<section id="Diagnose">
-				<p>Ein Herzstillstand kann von allen Soldaten durch das Fühlen des Pulses festgestellt werden. Ein Defibrillator zeigt mittels Piepen die Herzrate an, bei einem Herzstillstand wird ein durchgehendes Signal wiedergegeben.</p>
+				<p>
+					Nachdem festgestellt wurde, dass kein Puls vorliegt, wird ein Defibrillator (AED oder AED-X) am Torso angelegt. Nach Auswahl von <i>analyze rhythm</i> gibt das Gerät <i>shock advised</i> oder <i>no shock advised</i> zurück. Letzteres bedeutet eine Asystolie, ersteres eine Form von Kammerflimmern.
+				</p>
+				<p>
+					Steht kein Defibrillator zur Verfügung, wird der Herzstillstand wie eine Asystolie behandelt. Amiodaron oder Lidocain dürfen nur angewandt werden, wenn sicher Kammerflimmern vorliegt, bei Asystolie verschlechtern sie den Zustand des Patienten möglicherweise.
+				</p>
+				<p>
+					Bei starkem Blutverlust ist es fast sicher, das der Patient in eine Asystolie fällt. Auch, wenn zwischendurch ein Puls zurückkehren sollte, muss damit gerechnet werden, dass dieser wieder verschwindet, solange der Blutverlust nicht ausgeglichen wurde.
+				</p>
 			</section>
 
-			<section id="Behandlung">
-				<i>TODO</i>
+			<section id="Behandlung vom Kammerflimmern">
+				<p>
+					Beim Kammerflimmern arbeiten die beiden Herzkammern gewissermaßen gegeneinander, sodass das Herz keine Auswurfleistung hat. Durch einen Schock vom Defibrillator können beide Kammern „wieder synchronisiert“ werden. Bis das gelungen ist, muss allerdings Herz-Lungen-Wiederbelebung durchgeführt werden.
+				</p>
+				<p>
+					Nachdem das Kammerflimmern festgestellt, ein Schock verabreicht wurde und kein Herzschlag zurückgekehrt ist, sollte eine Gabe Epinephrin verabreicht werden und daraufhin 30 bis 60 Sekunden Herz-Lungen-Wiederbelebung durchgeführt werden. Anschließend lässt man den Defibrillator erneut die Arrythmie ananlysieren und wiederholt das Prozedere gegebenenfalls. 
+				</p>
+				<p>
+					Bei der Behandlung vom Kammerflimmern können zusätzlich Amiodaron und Lidocain unterstützend wirken. Amiodaron solle nicht öfter als einmal angewendet werden, genaueres siehe <a href="../medikation#infarkttherapie">Medikationen</a>. Sollte eine Gabe Amiodaron nicht genügen, sollte nach angemessener Zeit Lidocain hinzugezogen werden.
+				</p>
+			</section>
+
+			<section id="Behandlung einer Asystolie">
+				<p>
+					Bei der Asystolie liegt im Gegensatz zum Kammerflimmern gar keine Herzmuskelaktivität vor. Sie kann nur durch ständige Herz-Lungen-Wiederbelebung und gelegentliche Gaben von Epinephrin behandelt werden. Amiodaron und Lidokain verringern die Erregbarkeit des Herzmuskels, um Kammerflimmern entgegenzuwirken. Diese Medikamente sind bei der Asystolie also kontraindiziert.
+				</p>
+				<p>
+					Während beständig Herz-Lungen-Wiederbelebung durchgeführt wird sollte ein- bis zweimal pro Minute kontrolliert werden, ob ein Kammerflimmern eingetreten oder der Puls wiedergekehrt ist.
+				</p>
 			</section>
 		
 		</section>
 
 		<section id="Transfusionen im Feld">
 			<p>
-				Standardmäßig führen Sanitäter Blut der Blutgruppe 0- oder Plasma/Kochsalzlösung mit, welches also immer verträglich ist. Genügen diese Reserven nicht, kann im Feld Blut abgenommen werden, wenn ein <a href="../sanitaeter#verbrauchsmaterialien">Feldtransfusionsset</a>
-				mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten. Die Blutgruppe eines Kameraden steht auf seiner Marke (Kopf,
-				<i>check dogtag</i>).
+				Standardmäßig führen Sanitäter Blut der Blutgruppe 0- oder Plasma/Kochsalzlösung mit, welche also immer verträglich sind. Genügen diese Reserven nicht, kann im Feld Blut abgenommen werden, wenn ein <a href="../sanitaeter#verbrauchsmaterialien">Feldtransfusionsset</a>
+				mitgeführt wird. Dabei ist allerdings die Kompatibilität von Spender- und Empfängerblut dringend zu beachten. Die Blutgruppe eines Kameraden steht auf seiner Marke (Kopf, <i>check dogtag</i>).
 			</p>
 
 			<section id="Blutgruppenverträglichkeit">
