@@ -79,7 +79,7 @@ def main():
                 section_text = ''
                 for child in section.children:
                     if child.name in TEXT_ELEMENTS:
-                        print(child.text)
+                        #print(child.text)
                         section_text = section_text + (child.text) + ' '
 
                 page_dict.update({section_name: section_text})
@@ -107,7 +107,7 @@ def main():
 
     # bundle everything into one json object
 
-    with open('searchIndex.json', 'w', encoding='utf-8') as f:
+    with open('./src/lib/search/searchIndex.json', 'w', encoding='utf-8') as f:
         dump(index_dict, f, ensure_ascii=True, indent=4)
 
 
