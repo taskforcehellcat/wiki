@@ -35,7 +35,7 @@
 					</tr>
 					<tr>
 						<td><b>Sauerstoffsättigung:</b></td>
-						<td>100 %</td>
+						<td>100 % SpO&#8322;</td>
 					</tr>
 				</table>
 			</section>
