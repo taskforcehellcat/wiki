@@ -50,7 +50,7 @@
 			</div>
 
 			<p>
-				Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das <a href="../sanitaeter#meldesystem" target="_blank">hier</a> nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
+				Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das <a href="../sanitaeterfunk#meldesystem" target="_blank">hier</a> nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
 			</p>
 		</section>
 

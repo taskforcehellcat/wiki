@@ -137,7 +137,7 @@
 
 	<div id="overlay" class:show={isOpen}>
 		{#each anchors as anchor}
-			<a href={anchor.link} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
+			<a href={linkify(anchor.link)} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
 		{/each}
 	</div>
 
