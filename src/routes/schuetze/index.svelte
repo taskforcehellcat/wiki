@@ -20,7 +20,7 @@
 		<section id="Aufgaben">
 			<p>Schützen nehmen unmittelbaren Einfluss auf die Gefechtseffektivität ihres Trupps beziehungsweise ihrer Gruppe. Das Aufgabenprofil der Schützen gestaltet sich dabei vielfältig. Zu den Hauptaufgaben eines Schützen zählen die folgenden Punkte.</p>
 
-			<ol>
+			<ul>
 				<li>Ausführen der Befehle des Trupp- oder Gruppenführers</li>
 				<li>Führen des Feuergefechts mit direktem oder indirektem Feuer mit Handfeuerwaffen</li>
 				<li>Leisten Erster Hilfe an Kameraden und sich selbst</li>
@@ -28,29 +28,29 @@
 				<li>Verwendung von Orientierungsmitteln wie Karte und Kompass</li>
 				<li>Fahren von Fahrzeugen und Bedienung derer Waffenanlagen</li>
 				<li>Bewegen in taktischen Formationen im Feld</li>
-			</ol>
+			</ul>
 		</section>
 		<section id="Ausrüstung">
 			<p>Die Ausrüstung des Schützen stellt die Grundausrüstung vieler anderer Rollen dar. Zusätzlich kann der Schütze besondere Ausrüstungsgegenstände anderer Rollen tragen, wie zum Beispiel Ersatzläufe eines MG-Schützen, zusätzliche Munition oder Infusionen. Zur Ausrüstung eines jeden Schützen zählen folgende Gegenstände:</p>
 
-			<ol>
+			<ul>
 				<li>eine Primärwaffe für das Gefecht auf mittlere Distanz</li>
 				<li>eine Sekundärwaffe für das Gefecht auf kurze Distanz</li>
 				<li>ein Funkgerät für den Informationsaustausch auf Trupp- oder Gruppenebene</li>
 				<li>ein Spaten für das Errichten von Schützengräben im Feld</li>
 				<li>eine Karte und einen Kompass zur Orientierung im Feld</li>
 				<li>ein Fernglas zur Feldaufklärung</li>
-			</ol>
+			</ul>
 		</section>
 		<section id="Fertigkeiten">
 			<p>Schützen müssen die grundlegendsten und damit wichtigsten Fertigkeiten beherrschen, auf die viele andere Rollen aufbauen. Dazu zählen folgende Punkte:</p>
 
-			<ol>
+			<ul>
 				<li>Kenntnisse über Formationen und Bewegung im Feld</li>
 				<li>Beherrschung der <a href="../erstehilfe">Ersten Hilfe</a> zur Selbst- und Fremdversorgung</li>
 				<li>Beherrschung der <a href="../funketikette">Funketikette</a></li>
 				<li>Kenntnisse zur <a href="../steuerung">Bedienung von Handfeuerwaffen</a></li>
-			</ol>
+			</ul>
 		</section>
 	</svelte:fragment>
 	<svelte:fragment slot="editdate">22.09.2022</svelte:fragment>
