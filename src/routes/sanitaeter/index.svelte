@@ -169,8 +169,8 @@
 				</h4>
 				<p>
 					<i>Automatisierter externer Defibrillator</i>. Zur Behandlung von
-					<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="#Herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
-					<a href="sanitaeter#Vitalparameter">Vitalparametern</a>.
+					<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="../behandlungen#herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
+					<a href="behandlungen#vitalparameter">Vitalparametern</a>.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{pulseoximeter}">Pulsoximeter</span>
@@ -178,7 +178,7 @@
 				<p>
 					erlaubt die Messung von Puls und des Sauerstoffgehalts des <span use:tooltip data-tooltip="peripher: außen, am Rande. Gemeint sind die Arme und Beine. Pulsoximeter messen an der Fingerkuppe.">peripheren</span>
 					Blutes (engl. <i>saturation peripher O&#8322</i>, SpO&#8322). Siehe auch Abschnitt
-					<a href="sanitaeter#Vitalparameter">Vitalparameter</a>.
+					<a href="behandlungen#vitalparameter">Vitalparameter</a>.
 				</p>
 			</section>
 		</section>
