@@ -491,6 +491,7 @@ input {
 	width: 100%;
 	top: 8rem;
 	text-align: center;
+	overflow-y: auto;
 
 	a {
 		transition: color 0.2s ease-out;
