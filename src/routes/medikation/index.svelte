@@ -91,7 +91,7 @@
 					<a href="../behandlungen#vitalparameter">Kriterien an Stabilität</a>) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
 				</p>
 				<h4>
-					<span use:tooltip data-tooltip-img="{naloxone}">Naloxon</span>
+					<span use:tooltip data-tooltip-img="{naloxone}">Naloxon (NARCAN)</span>
 				</h4>
 				<p>
 					Morphin-<span use:tooltip data-tooltip="dt. Gegenspieler. Antagonisten wirken einem bestimmten Medikament entgegen.">Antagonist</span>, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.
