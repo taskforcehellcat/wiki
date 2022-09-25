@@ -10,18 +10,18 @@ export function tooltip(element) {
 		tooltip = element.getAttribute('data-tooltip');
 		tooltipimg = element.getAttribute('data-tooltip-img');
 		//if element has attribute data-tooltip
+		
+		div = document.createElement('div');
+		div.className = 'tooltip';
 
 		if (tooltip) {
 			element.removeAttribute('data-tooltip');
-			div = document.createElement('div');
 			div.innerHTML = tooltip;
-			div.className = 'tooltip';
 			main.appendChild(div);
+
 		} else if (tooltipimg) {
-			div = document.createElement('div');
 			div.textContent = tooltip;
 			div.innerHTML = "<img style='max-width: 100%;' src='" + tooltipimg + "'>";
-			div.className = 'tooltip';
 			div.style.width = '80vw';
 			div.style.overflowX = 'hidden';
 			main.appendChild(div);
