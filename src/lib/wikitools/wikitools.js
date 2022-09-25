@@ -10,18 +10,18 @@ export function tooltip(element) {
 		tooltip = element.getAttribute('data-tooltip');
 		tooltipimg = element.getAttribute('data-tooltip-img');
 		//if element has attribute data-tooltip
+		
+		div = document.createElement('div');
+		div.className = 'tooltip';
 
 		if (tooltip) {
 			element.removeAttribute('data-tooltip');
-			div = document.createElement('div');
 			div.innerHTML = tooltip;
-			div.className = 'tooltip';
 			main.appendChild(div);
+
 		} else if (tooltipimg) {
-			div = document.createElement('div');
 			div.textContent = tooltip;
 			div.innerHTML = "<img style='max-width: 100%;' src='" + tooltipimg + "'>";
-			div.className = 'tooltip';
 			div.style.width = '80vw';
 			div.style.overflowX = 'hidden';
 			main.appendChild(div);
@@ -72,31 +72,36 @@ export function tooltip(element) {
 }
 
 export function exampleBox(element) {
-	let div;
-	let tooltip;
 
-	div = document.createElement('div');
-	div.className = 'exampleBox';
-	let topDiv = div.appendChild(document.createElement('div'));
+	let parent = element.parentNode;
+	let wrapper = document.createElement('div');
+
+	// wrap a new div around the source div
+	parent.replaceChild(wrapper, element);
+	wrapper.appendChild(element);
+
+	// set up the wrapper
+	wrapper.className = 'exampleBox';
+	let topDiv = wrapper.appendChild(document.createElement('div'));
 	topDiv.innerHTML = `<span class="noselect">Beispiel:</span><span class="material-icons noselect">add</span>`;
-	let bottomDiv = div.appendChild(document.createElement('div'));
-	bottomDiv.innerHTML = element.innerHTML;
-	element.innerHTML = null;
-	element.insertBefore(div, element.firstChild);
-	bottomDiv.style.display = 'none';
+	wrapper.appendChild(element);
+	
+	// hide text contents 
+	element.style.display = 'none';
 	topDiv.style.borderBottomLeftRadius = '0.5rem';
 	topDiv.style.borderBottomRightRadius = '0.5rem';
 
 	let exampleBoxOpen = false;
+
 	function toggleExampleBox() {
 		if (exampleBoxOpen) {
-			bottomDiv.style.display = 'none';
+			element.style.display = 'none';
 			topDiv.style.borderBottomLeftRadius = '0.5rem';
 			topDiv.style.borderBottomRightRadius = '0.5rem';
 			topDiv.innerHTML = `<span class="noselect">Beispiel:</span><span class="material-icons noselect">add</span>`;
 			exampleBoxOpen = false;
 		} else {
-			bottomDiv.style.display = 'block';
+			element.style.display = 'block';
 			topDiv.style.borderBottomLeftRadius = '0';
 			topDiv.style.borderBottomRightRadius = '0';
 			topDiv.innerHTML = `<span class="noselect">Beispiel:</span><span class="material-icons noselect">remove</span>`;
