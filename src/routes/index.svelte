@@ -109,10 +109,6 @@
 		white-space: nowrap;
 	}
 
-	#home__nav__logo > span {
-		font-weight: 700;
-	}
-
 	#home__top {
 		display: flex;
 		flex-direction: column;
