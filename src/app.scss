@@ -320,12 +320,7 @@ input {
 }
 
 #nav__logo {
-	font-size: 28pt;
-	font-weight: 300;
-	color: var(--brandNeutral);
-	font-family: 'purista-web', 'Segoe UI', sans-serif;
-	display: flex;
-	align-self: flex-start;
+	height: fit-content;
 	transition: transform 0.1s ease-in-out;
 	-webkit-transition: transform 0.1s ease-in-out;
 	-moz-transition: transform 0.1s ease-in-out;
@@ -333,8 +328,8 @@ input {
 	-o-transition: transform 0.1s ease-in-out;
 	gap: 6px;
 
-	> span {
-		font-weight: 700;
+	img {
+		height: 3rem;
 	}
 
 	&:hover {
@@ -548,15 +543,21 @@ input {
   */
 }
 
+img#home__nav__logo {
+	width: 38rem;
+	margin-top: 1rem;
+}
+
 #home__link {
 	color: var(--brandSecondaryTXT);
+
+	span.material-icons {
+		margin-left: -0.7rem;
+		margin-right: -0.3rem;
+	}
 }
 
 @media only screen and (max-width: 480px) {
-	#home__nav__logo {
-		font-size: 10vw;
-	}
-
 	.expandable > span {
 		min-width: unset;
 		width: 250px;
