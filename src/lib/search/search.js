@@ -1,3 +1,4 @@
+// @ts-ignore
 import searchIndex from '$lib/search/searchIndex.json';
 //import searchIndex from "./searchIndex.json" assert { type: "json" };
 import { linkify } from '$lib/helpers';
@@ -160,6 +161,13 @@ export function textSearch(query) {
 		});
 
 		result.bysection = sections;
+	});
+
+	// sort results by hit counts descending
+	results = results.sort((a, b) => {
+		if (a.hits < b. hits) { return 1; }
+		else if (a.hits === b.hits) { return 0; }
+		else { return -1; }
 	});
 
 	return results;
