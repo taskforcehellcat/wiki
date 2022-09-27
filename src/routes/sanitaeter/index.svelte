@@ -72,7 +72,7 @@
 				<li>
 					Verbrauchsmaterialien:
 					<ul>
-						<li><a href="../medikation">Medikamente</a></li>
+						<li><a href="../medikationen">Medikamente</a></li>
 						<li>Bandagen: siehe <a href="../behandlungen#bandagen">hier</a></li>
 						<li>sonstiges <a href="#verbrauchsmaterialien">Verschleißmaterial</a>, etwa Kanülen, Infusionen, Kits, etc.</li>
 						<li>Rauchgranaten</li>
