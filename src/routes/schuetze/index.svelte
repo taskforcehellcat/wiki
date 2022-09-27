@@ -9,7 +9,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="schuetze" />
 		<h1>Schütze</h1>
 
 		<section id="Rollenprofil">

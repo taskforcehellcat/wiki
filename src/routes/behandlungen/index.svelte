@@ -17,7 +17,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="behandlungen" />
 		<h1>Behandlungen</h1>
 
 		<section id="Vitalparameter">

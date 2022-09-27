@@ -14,7 +14,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="funketikette" />
 		<h1>Funketikette</h1>
 
 		<section id="Einleitung">

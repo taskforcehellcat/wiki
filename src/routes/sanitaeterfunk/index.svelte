@@ -9,7 +9,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="sanitaeterfunk" />
 		<h1>Sanitäterfunk</h1>
 
 		<section id="Meldesystem">

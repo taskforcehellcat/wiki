@@ -25,7 +25,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="medikation" />
 		<h1>Medikationen</h1>
 
 		<section>

@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="medevac" />
 		<h1>MEDEVAC</h1>
 
 		<section id="Rollenprofil">

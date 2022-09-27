@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="helikopterpilot" />
 		<h1>Helikopterpilot</h1>
 
 		<section id="Rollenprofil">

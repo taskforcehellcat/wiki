@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="mgschuetze" />
 		<h1>MG-Schütze</h1>
 
 		<section id="Rollenprofil">

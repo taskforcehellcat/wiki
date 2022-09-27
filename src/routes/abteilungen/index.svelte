@@ -9,7 +9,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="abteilungen" />
 		<h1>Abteilungen</h1>
 
 		<section id="Allgemeines">

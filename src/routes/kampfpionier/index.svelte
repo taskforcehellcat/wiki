@@ -9,7 +9,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="kampfpionier" />
 		<h1>Kampfpionier</h1>
 		<section id="Rollenprofil">
 			<p>Die Rolle des Kampfpioniers setzt sich zusammen aus der Rolle des Pioniers und des Schützen. Der Kampfpionier trägt die Verantwortung, den Schutz der eigenen Truppen zu verbessern und dadurch deren Überlebensfähigkeit zu erhöhen, ist anders als der Pionier aber aktiv am Kampfgefecht beteiligt.</p>
