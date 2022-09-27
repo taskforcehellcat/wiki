@@ -13,7 +13,7 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="erstehilfe" />
+		<article id="erste_hilfe" />
 		<h1>Erste Hilfe</h1>
 
 		<p>Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.</p>
