@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="richtschuetze" />
 		<h1>Richtschütze (Panzertruppen)</h1>
 
 		<section id="Rollenprofil">

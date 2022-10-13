@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="breacher" />
 		<h1>Breacher</h1>
 
 		<section id="Rollenprofil">

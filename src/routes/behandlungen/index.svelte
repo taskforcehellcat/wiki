@@ -17,7 +17,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="behandlungen" />
 		<h1>Behandlungen</h1>
 
 		<section id="Vitalparameter">
@@ -208,7 +207,7 @@
 					Nachdem das Kammerflimmern festgestellt, ein Schock verabreicht wurde und kein Herzschlag zurückgekehrt ist, sollte eine Gabe Epinephrin verabreicht werden und daraufhin 30 bis 60 Sekunden Herz-Lungen-Wiederbelebung durchgeführt werden. Anschließend lässt man den Defibrillator erneut die Arrythmie ananlysieren und wiederholt das Prozedere gegebenenfalls. 
 				</p>
 				<p>
-					Bei der Behandlung vom Kammerflimmern können zusätzlich Amiodaron und Lidocain unterstützend wirken. Amiodaron solle nicht öfter als einmal angewendet werden, genaueres siehe <a href="../medikation#infarkttherapie">Medikationen</a>. Sollte eine Gabe Amiodaron nicht genügen, sollte nach angemessener Zeit Lidocain hinzugezogen werden.
+					Bei der Behandlung vom Kammerflimmern können zusätzlich Amiodaron und Lidocain unterstützend wirken. Amiodaron solle nicht öfter als einmal angewendet werden, genaueres siehe <a href="../medikationen#infarkttherapie">Medikationen</a>. Sollte eine Gabe Amiodaron nicht genügen, sollte nach angemessener Zeit Lidocain hinzugezogen werden.
 				</p>
 			</section>
 

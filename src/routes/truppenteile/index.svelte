@@ -9,7 +9,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="truppenteile" />
 		<h1>Truppenteile</h1>
 
 		<section id="Einleitung">

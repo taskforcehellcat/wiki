@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="bodenfahrzeuge" />
 		<h1>Bodenfahrzeuge</h1>
 		
 		<section id="Rollenprofil">

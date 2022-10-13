@@ -1,5 +1,7 @@
+// @ts-ignore
 import searchIndex from '$lib/search/searchIndex.json';
 //import searchIndex from "./searchIndex.json" assert { type: "json" };
+
 import { linkify } from '$lib/helpers';
 
 export function textSearch(query) {
@@ -33,14 +35,8 @@ export function textSearch(query) {
 	let hits = [];
 
 	for (let page in searchIndex) {
-		let anchor = searchIndex[page]['route'];
-
+		
 		for (let section in searchIndex[page]) {
-			if (section === 'route') {
-				// this section only contains the link of the page and doesn't
-				// contain actual text from the page
-				continue;
-			}
 
 			let textContents = searchIndex[page][section];
 
@@ -95,6 +91,8 @@ export function textSearch(query) {
 					}
 				}
 
+				let anchor = linkify(page);
+
 				hits.push([page, section, anchor, { left: surrounding_left, match: match, right: surrounding_right }]);
 			}
 		}
@@ -113,7 +111,7 @@ export function textSearch(query) {
 			title: hits[0][0], // name on the page
 			hits: 0, // how many times the query appeared
 			// initially 0, later set to at least 1
-			route: searchIndex[hits[0][0]]['route'],
+			route: linkify(hits[0][0]),
 			bysection: null // later holds all hits
 			// on subsections of this page
 		}
@@ -128,7 +126,7 @@ export function textSearch(query) {
 			results.push({
 				title: hit[0],
 				hits: 1,
-				route: searchIndex[hit[0]]['route'],
+				route: linkify(hit[0]),
 				bysection: null
 			});
 			page_index += 1;
@@ -154,12 +152,19 @@ export function textSearch(query) {
 			}
 			sections.push({
 				title: hit[1], // section title
-				anchor: linkify(searchIndex[hit[0]]['route'] + '#' + subsec),
+				anchor: linkify(hit[0] + '#' + subsec),
 				surrounding: hit[3]
 			});
 		});
 
 		result.bysection = sections;
+	});
+
+	// sort results by hit counts descending
+	results = results.sort((a, b) => {
+		if (a.hits < b. hits) { return 1; }
+		else if (a.hits === b.hits) { return 0; }
+		else { return -1; }
 	});
 
 	return results;
@@ -175,24 +180,25 @@ export function directSearch(query) {
 
 	page_names.forEach((pagename) => {
 		let page_sections = Object.keys(searchIndex[pagename]);
+		let page_route = linkify(pagename);
 
 		if (pagename.toLowerCase().indexOf(query.toLowerCase()) != -1) {
 			results.push({
 				name: pagename,
-				route: searchIndex[pagename]['route']
+				route: page_route
 			});
 		}
 
 		page_sections.forEach((section) => {
-			if (section.toLowerCase().indexOf(query.toLowerCase()) == -1 || section === 'route') {
+			if (section.toLowerCase().indexOf(query.toLowerCase()) == -1) {
 				return;
 			}
-			let route = searchIndex[pagename]['route'] + '#' + section;
+			let route = page_route + '#' + section;
 
 			// if its a subsection, this route is not correct
 			let seperator_index = section.indexOf(' \u00bb ');
 			if (seperator_index != -1) {
-				route = searchIndex[pagename]['route'] + '#' + linkify(section.substring(section.indexOf(' \u00bb ') + 3));
+				route = page_route + '#' + linkify(section.substring(section.indexOf(' \u00bb ') + 3));
 
 				// also, if its a subsection its only an actual hit if the match occurs in the subsection part
 				// of the section name.

@@ -27,7 +27,6 @@
 		textResults = textSearch(query);
 		directResults = directSearch(query);
 	};
-
 </script>
 
 <svelte:head>
@@ -42,7 +41,7 @@
 			><span class="material-icons"> chevron_left </span>
 			Zurück zur Hauptseite</a
 		>
-		<div id="home__nav__logo">Task Force Hellcat <br /><span>Wiki</span></div>
+		<img id="home__nav__logo" class="noselect" src="/images/tfhcwiki_full.svg" alt="Task Force Hellcat Logo" />
 	</div>
 
 	<!-- search bar -->
@@ -106,13 +105,8 @@
 		font-size: 35pt;
 		font-weight: 300;
 		color: var(--brandNeutral);
-		font-family: 'purista-web', 'Segoe UI', sans-serif;
 		text-align: center;
 		white-space: nowrap;
-	}
-
-	#home__nav__logo > span {
-		font-weight: 700;
 	}
 
 	#home__top {

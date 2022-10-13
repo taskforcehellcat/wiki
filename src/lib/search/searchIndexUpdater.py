@@ -65,8 +65,6 @@ def main():
             #   route: its name for anchor links
             #   sections and subsections with their text contents
 
-            page_dict.update({'route': page_name})
-
             # for every section/subsection etc. get its text
 
             for section in page_sections:
@@ -81,6 +79,7 @@ def main():
                     if child.name in TEXT_ELEMENTS:
                         #print(child.text)
                         section_text = section_text + (child.text) + ' '
+                        section_text = section_text.replace('\n', '').replace('\t', '').replace('  ', ' ')
 
                 page_dict.update({section_name: section_text})
 

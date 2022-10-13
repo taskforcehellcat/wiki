@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="kommandant" />
 		<h1>Kommandant (Panzertruppen)</h1>
 
 		<section id="Rollenprofil">

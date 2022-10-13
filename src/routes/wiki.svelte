@@ -56,7 +56,6 @@
 
 		// for every element of the "H3sectionsArr" array
 		H3sectionsArr.forEach((element) => {
-
 			// add h3 tag with element's id as content
 			element.insertAdjacentHTML('afterbegin', '<h3>' + element.id + '</h3>');
 		});
@@ -76,14 +75,11 @@
 			document.querySelector(location.hash).scrollIntoView();
 		}
 	});
-	
-	
-	
 </script>
 
 <div id="wiki">
 	<nav>
-		<a href="/" id="nav__logo">TFHC <span>Wiki</span></a>
+		<a href="/" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a>
 
 		<button id="burgerMenu" on:click={() => (isOpen = !isOpen)} class:show={isOpen}>
 			{#if !isOpen}

@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="eod" />
 		<h1>EOD (Explosive Ordnance Disposal)</h1>
 
 		<section id="Rollenprofil">

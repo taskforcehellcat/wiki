@@ -8,7 +8,6 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<article id="fahrer" />
 		<h1>Fahrer (Panzertruppen)</h1>
 
 		<section id="Rollenprofil">
