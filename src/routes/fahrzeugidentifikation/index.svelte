@@ -15,7 +15,7 @@
 		<article id="fahrzeugidentifikation" />
 		<h1>Fahrzeugidentifikation</h1>
 
-		<section id="Grundlagen">
+		<section id="Übersicht">
 			<img src={guide} alt="Fahrzeugguide" />
 		</section>
 
@@ -29,7 +29,7 @@
 		</section>
 
 		<section id="Artilleriepanzer">
-			<p>Der Artilleriepanzer (SPG, <b>S</b>elf <b>P</b>ropelled <b>G</b>un) ist ein mobiles Artilleriegeschütz. Es besitzt ebenfalls eine Wanne und einen Turm. Beides ist meist größer als bei einem MBT. Auffällig ist das besonders große Geschütz mit einem Kaliber von 155-mm bis teilweise 203-mm. Sie haben einen hohen positiven Richtwinkel um auf große Entfernung wirken zu können. Einige Exemplare sind außerdem in der Lage ihren Turm samt Geschütz zu drehen.</p>
+			<p>Der Artilleriepanzer (<b>S</b>elf <b>P</b>ropelled <b>G</b>un, SPG) ist ein mobiles Artilleriegeschütz. Es besitzt ebenfalls eine Wanne und einen Turm. Beides ist meist größer als bei einem MBT. Auffällig ist das besonders große Geschütz mit einem Kaliber von 155-mm bis teilweise 203-mm. Sie haben einen hohen positiven Richtwinkel um auf große Entfernung wirken zu können. Einige Exemplare sind außerdem in der Lage ihren Turm samt Geschütz zu drehen.</p>
 		</section>
 
 		<section id="Mannschaftstransporter">
