@@ -74,7 +74,7 @@
 						</ol>
 					{/each}
 				{/if}
-				{#if directResults.length == 0 && textResults.length == 0}
+				{#if directResults.length === 0 && textResults.length === 0}
 					<p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
 				{/if}
 			{:else}

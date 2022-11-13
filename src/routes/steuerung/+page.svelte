@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Wiki from '../wiki.svelte';
+	import Wiki from '../wiki/+page.svelte';
 	import { exampleBox, tooltip } from '$lib/wikitools/wikitools';
 
 	let currentLayout = 'win';

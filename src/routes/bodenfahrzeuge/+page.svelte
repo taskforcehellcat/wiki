@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Wiki from '../wiki.svelte';
+	import Wiki from '../wiki/+page.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +9,7 @@
 <Wiki>
 	<svelte:fragment slot="content">
 		<h1>Bodenfahrzeuge</h1>
-		
+
 		<section id="Rollenprofil">
 			<p />
 		</section>

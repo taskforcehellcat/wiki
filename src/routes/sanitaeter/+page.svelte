@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Wiki from '../wiki.svelte';
+	import Wiki from '../wiki/+page.svelte';
 	import { tooltip, exampleBox } from '$lib/wikitools/wikitools';
 
 	/* images */
@@ -60,7 +60,7 @@
 				<i>„Air goes in and out, blood goes round and round. Any deviation from that is a problem.“</i>
 			</p>
 		</section>
-		
+
 		<section id="Rollenprofil">
 			<p>
 				Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen, oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Anwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung Ausfälle zu kommunizieren und bei der Bereitstellung von <a href="../medevac">MEDEVAC</a>s mitzuwirken.

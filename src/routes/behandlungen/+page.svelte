@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Wiki from '../wiki.svelte';
+	import Wiki from '../wiki/+page.svelte';
 	import { tooltip, exampleBox } from '$lib/wikitools/wikitools';
 
 
@@ -186,7 +186,7 @@
 			<p>
 				Werkzeuge zur Behandlung eines Herzinfarktes sind die Herz-Lungen-Wiederbelebung, ein Defibrillator, Epinephrin, Amiodaron und Lidocain. Infarkte lassen sich in zwei Kategorien unterteilen: Asystolien, welche nicht mit einem Defibrillator behandelt werden können, und das Kammerflimmern. Letzteres lässt sich möglicherweise mit einem Defibrillator behandeln.
 			</p>
-			
+
 			<section id="Diagnose">
 				<p>
 					Nachdem festgestellt wurde, dass kein Puls vorliegt, wird ein Defibrillator (AED oder AED-X) am Torso angelegt. Nach Auswahl von <i>analyze rhythm</i> gibt das Gerät <i>shock advised</i> oder <i>no shock advised</i> zurück. Letzteres bedeutet eine Asystolie, ersteres eine Form von Kammerflimmern.
@@ -204,7 +204,7 @@
 					Beim Kammerflimmern arbeiten die beiden Herzkammern gewissermaßen gegeneinander, sodass das Herz keine Auswurfleistung hat. Durch einen Schock vom Defibrillator können beide Kammern „wieder synchronisiert“ werden. Bis das gelungen ist, muss allerdings Herz-Lungen-Wiederbelebung durchgeführt werden.
 				</p>
 				<p>
-					Nachdem das Kammerflimmern festgestellt, ein Schock verabreicht wurde und kein Herzschlag zurückgekehrt ist, sollte eine Gabe Epinephrin verabreicht werden und daraufhin 30 bis 60 Sekunden Herz-Lungen-Wiederbelebung durchgeführt werden. Anschließend lässt man den Defibrillator erneut die Arrythmie ananlysieren und wiederholt das Prozedere gegebenenfalls. 
+					Nachdem das Kammerflimmern festgestellt, ein Schock verabreicht wurde und kein Herzschlag zurückgekehrt ist, sollte eine Gabe Epinephrin verabreicht werden und daraufhin 30 bis 60 Sekunden Herz-Lungen-Wiederbelebung durchgeführt werden. Anschließend lässt man den Defibrillator erneut die Arrythmie ananlysieren und wiederholt das Prozedere gegebenenfalls.
 				</p>
 				<p>
 					Bei der Behandlung vom Kammerflimmern können zusätzlich Amiodaron und Lidocain unterstützend wirken. Amiodaron solle nicht öfter als einmal angewendet werden, genaueres siehe <a href="../medikationen#infarkttherapie">Medikationen</a>. Sollte eine Gabe Amiodaron nicht genügen, sollte nach angemessener Zeit Lidocain hinzugezogen werden.
@@ -219,7 +219,7 @@
 					Während beständig Herz-Lungen-Wiederbelebung durchgeführt wird sollte ein- bis zweimal pro Minute kontrolliert werden, ob ein Kammerflimmern eingetreten oder der Puls wiedergekehrt ist.
 				</p>
 			</section>
-		
+
 		</section>
 
 		<section id="Transfusionen im Feld">

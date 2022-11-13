@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Wiki from '../wiki.svelte';
+	import Wiki from '../wiki/+page.svelte';
 	import { tooltip, exampleBox } from '$lib/wikitools/wikitools';
 
 	/* images */
@@ -125,9 +125,9 @@
 					</ol>
 
 					<p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
-					
+
 					<a href="{erste_hilfe_basic}" class="no-underline" target="_blank"><img src="{erste_hilfe_basic}" alt="Erste Hilfe, grundlegendes Flowchart" /></a>
-				
+
 					<p>Hinweis zur <b>Zyanose</b>: Ist kein Pulsoximeter zur Hand, kann man nach Anzeichen einer Zyanose (starken Sauerstoffmangels) suchen (<i>check cyanosis</i>). In der Praxis sind das bläuliche Lippen oder Fingerspitzen. Gibt es welche, ist die Sauerstoffsättigung des Blutes kritisch und man sollte sich den Atemwegen zuweden.</p>
 				</section>
 

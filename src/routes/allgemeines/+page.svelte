@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Wiki from '../wiki.svelte';
+	import Wiki from '../wiki/+page.svelte';
 	import { tooltip } from '$lib/wikitools/wikitools';
 
 	/* images */
@@ -25,7 +25,7 @@
 				Die Organisation unserer Einheit findet ausschließlich auf unserem <a class="no-underline" href="https://discord.taskforcehellcat.de/" target="_blank"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" style="vertical-align: middle;" alt="Shields.io Grafik mit Link zu unserem Discord"></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.
 			</p>
 
-			
+
 		</section>
 
 		<section id="Mitmachen">

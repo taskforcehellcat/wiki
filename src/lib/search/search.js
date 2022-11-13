@@ -35,7 +35,7 @@ export function textSearch(query) {
 	let hits = [];
 
 	for (let page in searchIndex) {
-		
+
 		for (let section in searchIndex[page]) {
 
 			let textContents = searchIndex[page][section];
@@ -98,7 +98,7 @@ export function textSearch(query) {
 		}
 	}
 
-	if (hits.length == 0) {
+	if (hits.length === 0) {
 		return [];
 	}
 
