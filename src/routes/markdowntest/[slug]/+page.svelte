@@ -19,6 +19,11 @@
 
     let Thing;
 
+    /** @type {import('./$types').PageData} */
+    export let data;
+    console.log(data)
+
+
     onMount(async () => {
         Thing = (await import('$lib/content/testing.svx')).default;
     });
@@ -88,6 +93,7 @@
     <main id="main">
         <Wipbanner />
         <Theme />
+        {data}
         <svelte:component this={Thing} answer={42}>
             <p>some slotted content</p>
         </svelte:component>
