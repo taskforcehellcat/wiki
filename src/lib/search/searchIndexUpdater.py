@@ -37,7 +37,7 @@ def main():
 
     # for every page, open its index.svelte
     for page_name, page_dir in pages:
-        with open(path.join(page_dir, 'index.svelte'), 'r', encoding='utf-8') as file:
+        with open(path.join(page_dir, '+page.svelte'), 'r', encoding='utf-8') as file:
             index = file.read()
             parser = BeautifulSoup(index, 'lxml')
 
@@ -73,7 +73,7 @@ def main():
                 except KeyError:
                     # sections without ids shouldn't be indexed
                     continue
-                
+
                 section_text = ''
                 for child in section.children:
                     if child.name in TEXT_ELEMENTS:
