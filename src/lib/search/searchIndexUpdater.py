@@ -24,6 +24,7 @@ def remove_escape_chars(str):
 
 
 def main():
+    return
     # collect all pages to be read from into the iterator 'pages'
     # page_names = next(walk(ROOT_PAGES))[1] # works in Python 3.10, does not in 3.8
     page_names = [ item for item in listdir(ROOT_PAGES) if path.isdir(path.join(ROOT_PAGES, item)) ]
@@ -37,7 +38,13 @@ def main():
 
     # for every page, open its index.svelte
     for page_name, page_dir in pages:
-        with open(path.join(page_dir, '+page.svelte'), 'r', encoding='utf-8') as file:
+        sv_path = path.join(page_dir, '+page.svelte')
+        if not path.exists(sv_path):
+            print(f'{sv_path} not existing, skipping')
+            continue
+
+        with open(sv_path, 'r', encoding='utf-8') as file:
+            print(sv_path)
             index = file.read()
             parser = BeautifulSoup(index, 'lxml')
 

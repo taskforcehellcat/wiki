@@ -45,7 +45,7 @@ export function textSearch(query) {
 
 			let cursor = -query.length;
 
-			if (query.length == 1) {
+			if (query.length === 1) {
 				console.debug(
 					`This script cannot handle query lengths of one character.
                     query was: {query}`
@@ -67,7 +67,7 @@ export function textSearch(query) {
 				 * loop.
 				 */
 
-				if (cursor == -1) {
+				if (cursor === -1) {
 					continue;
 				}
 
@@ -147,7 +147,7 @@ export function textSearch(query) {
 		on_page.forEach((hit) => {
 			// if this is a subsection, this will hold its anchor part
 			let subsec = hit[1];
-			if (hit[1].indexOf(' \u00bb ') != -1) {
+			if (hit[1].indexOf(' \u00bb ') !== -1) {
 				subsec = subsec.substring(subsec.indexOf(' \u00bb ') + 3);
 			}
 			sections.push({
@@ -182,7 +182,7 @@ export function directSearch(query) {
 		let page_sections = Object.keys(searchIndex[pagename]);
 		let page_route = linkify(pagename);
 
-		if (pagename.toLowerCase().indexOf(query.toLowerCase()) != -1) {
+		if (pagename.toLowerCase().indexOf(query.toLowerCase()) !== -1) {
 			results.push({
 				name: pagename,
 				route: page_route
