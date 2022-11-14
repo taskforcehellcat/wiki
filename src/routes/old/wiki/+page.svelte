@@ -11,7 +11,7 @@
 	import Nav from '$lib/nav/Nav.svelte';
 
 	// --- id conversions ---
-	import { linkify } from '$lib/helpers';
+	import { linkify } from '$lib/helpers.js';
 
 	let editdate;
 	let isOpen = false;
@@ -79,7 +79,7 @@
 
 <div id="wiki">
 	<nav>
-		<a href="/" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a>
+		<a href="/static" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a>
 
 		<button id="burgerMenu" on:click={() => (isOpen = !isOpen)} class:show={isOpen}>
 			{#if !isOpen}
@@ -128,7 +128,7 @@
 		</div>
 		<div class="nav__list-title">wiki</div>
 		<Nav />
-		<a href="/" id="return-button">Zurück</a>
+		<a href="/static" id="return-button">Zurück</a>
 	</nav>
 
 	<div id="overlay" class:show={isOpen}>
