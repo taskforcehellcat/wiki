@@ -1,10 +1,21 @@
 <script>
     export let data
-    const { title, date, Content } = data
+    const {title, date, Content} = data
+
+    // Custom Layout import since we can't use named slots here.
+    // See https://github.com/sveltejs/kit/issues/627
+    // import Layout from '../+layout.svelte'
 </script>
 
 <article>
     <h1>{title}</h1>
-    <p>Published: {date}</p>
-    <Content slot="content"/>
+    <Content/>
+
+    <!-- <footer>{date}</footer> -->
+    <!-- footer should be in +layout.svelte, but we cannot use slots. See comment above -->
+    <p></p>
+    zuletzt bearbeitet am:
+    <h5>{date}</h5>
 </article>
+
+

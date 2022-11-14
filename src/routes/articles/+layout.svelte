@@ -14,13 +14,14 @@
     // --- id conversions ---
     import { linkify } from '$lib/helpers.js';
 
-    let editdate;
     let isOpen = false;
     let anchors = [];
+
+    export let data;
 </script>
 
 {#if $themeId}
-	<div id="main" data-theme={$themeId}>
+	<div id="main" data-theme={$themeId} data-sveltekit-prefetch>
         <div id="wiki">
             <nav>
                 <a href="/static" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a>
@@ -32,30 +33,6 @@
                         <CloseMenuSVG />
                     {/if}
                 </button>
-
-                <!-- search bar -->
-                <!--
-                  <div id="search" dataset-empty="true">
-                    <div id="nav__search">
-                      <span class="material-icons">search</span>
-                      <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
-                    </div>
-
-
-                    <div id="nav__search-results">
-                      {#if showResults}
-                        {#if searchResults.length !== 0}
-                          <!- - Hier restliche Logik, erstmal nur Fehlertext zu Testzwecken - ->
-                          <p><span>Suchergebnisse</span></p>
-                        {:else}
-                          <p><span id="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
-                        {/if}
-                      {:else}
-                        <!- - <p><span id="search__errortext">Diggi drei Zeichen oder DDoS.</span></p> - ->
-                      {/if}
-                    </div>
-                  </div>
-                -->
 
                 <!-- navigation items -->
                 <div class="nav__list-title">navigation</div>
@@ -71,7 +48,7 @@
                     </div>
                 </div>
                 <div class="nav__list-title">wiki</div>
-                <Nav />
+                <Nav menu={data.menu} />
                 <a href="/static" id="return-button">Zurück</a>
             </nav>
 
@@ -84,15 +61,11 @@
             <main id="content">
                 <Wipbanner />
                 <Theme />
-                <slot />
+                <slot/>
             </main>
         </div>
 	</div>
 {/if}
-
-
-
-
 
 <style lang="scss">
 	#wiki {

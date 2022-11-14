@@ -1,12 +1,18 @@
-export async function load({ params }){
+export async function load({params}) {
     const slug = params.slug
-    const post = await import(`./${slug}.svx`)
-    const { title, date } = post.metadata
+
+    // TODO: 404 if import fails
+    const post = await import(
+        /* @vite-ignore */
+        `./${slug}.svx`
+        )
+    const {title, date, breadcrumbs} = post.metadata
     const Content = post.default
 
     return {
         Content,
         title,
         date,
+        breadcrumbs,
     }
 }
