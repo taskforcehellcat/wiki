@@ -1,4 +1,6 @@
-export const load = async ({fetch}) => {
+export const load = async ({fetch, url}) => {
+    const currentRoute = url.pathname
+
     const response = await fetch(`/api/articles`)
     const posts = await response.json()
 
@@ -20,7 +22,8 @@ export const load = async ({fetch}) => {
     }
 
     return {
-        posts: posts,
-        menu: menu
+        posts,
+        menu,
+        currentRoute,
     }
 }

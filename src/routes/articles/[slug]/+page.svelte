@@ -9,9 +9,9 @@
 
 <article>
     <h1>{title}</h1>
-    <Content/>
+    <Content />
 
-    <!-- <footer>{date}</footer> -->
+    <!-- <footer>{date}</footer>g -->
     <!-- footer should be in +layout.svelte, but we cannot use slots. See comment above -->
     <p></p>
     zuletzt bearbeitet am:

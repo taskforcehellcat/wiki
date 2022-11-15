@@ -8,10 +8,6 @@ breadcrumbs: ["Über uns", "Allgemeines"]
     import tfhc_struktur from '$lib/images/allgemeines/tfhc_struktur.svg';
 </script>
 
-
-Allgemeines
-===========
-
 Beschreibung
 ------------
 
