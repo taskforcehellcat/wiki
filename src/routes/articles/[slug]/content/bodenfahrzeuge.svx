@@ -1,0 +1,17 @@
+---
+title: Bodenfahrzeuge
+date: "2022-11-15"
+breadcrumbs: ["Fuhrpark", "Bodenfahrzeuge"]
+---
+
+Rollenprofil
+------------
+
+Aufgaben
+--------
+
+Ausrüstung
+----------
+
+Fertigkeiten
+------------

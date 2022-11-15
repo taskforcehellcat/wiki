@@ -1,0 +1,27 @@
+---
+title: Fahrer (Panzertruppen)
+date: "2022-11-15"
+breadcrumbs: ["Panzertruppen", "Fahrer (Panzertruppen)"]
+---
+
+Rollenprofil
+------------
+
+Der Kraftfahrer nimmt unmittelbar Einfluss auf die Bewegung des Fahrzeuges entsprechend der Anweisungen des Kommandanten. Die eigenständige Manövrierung seines Fahrzeuges entlang Straßen oder durch das Gelände bei oft schlechten Sichtmöglichkeiten stellt seine größte Hürde dar.
+
+Aufgaben
+--------
+
+Die Kraftfahrer der Panzertruppen unterstehen der kontinuierlichen Aufgabe die Befehle ihrer Kommandanten möglichst schnell in die Tat umzusetzen, um die Sicherheit ihres Fahrzeuges samt Besatzung zu gewährleisten. Das Aufgabenprofil der Kraftfahrer ist für alle Fahrzeugklassen der Panzertruppen gleich.
+
+1.  Herstellung der Gefechtsbereitschaft
+2.  Einlegen eines Schießhaltes (rascher Halt des Panzers, ausgerichtet in Feindrichtung)
+3.  Anfahren einer vom Kommandanten bestimmten Stellung
+4.  Wenn möglich Schussbeobachtung und Treffermeldung durchführen
+5.  Gefechtsfeldbeobachtung durchführen und Feindkontakte melden
+6.  Erkundigt sich nach dem Fortschritt des Einsatzes
+
+Weiteres
+--------
+
+Eine Konvention für Kraftfahrer der Panzertruppen ist die Wiederholung von Fahrbefehlen des Kommandanten, um ein gewisses Feedback zurückzugeben, dass der Befehl korrekt aufgenommen werden konnte. Im Gefecht kann darauf gegebenenfalls verzichtet werden.

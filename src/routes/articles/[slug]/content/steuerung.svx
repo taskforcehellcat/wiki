@@ -1,0 +1,274 @@
+---
+title: Steuerung
+date: "2022-11-15"
+breadcrumbs: ["Ausbildung", "Steuerung"]
+---
+
+Erklärung
+---------
+
+Hier findet ihr die Standard Steuerung für ArmA 3. Je nach Benutzereinstellungen kann sie allerdings variieren.
+Spieler mit Mac-Tastaturen können unten das Layout wechseln. Am Ende dieser Übersicht findet sich eine Liste mit weiterführenden Artikeln.
+
+Windows
+
+Allgemein
+---------
+
+Aktion
+
+Tastenbelegung
+
+Spiel pausieren
+
+ESC
+
+Umschauen (halten)
+
+LALT
+
+Umschauen (feststellen)
+
+2x LALT
+
+Inventar
+
+I
+
+Karte
+
+M
+
+Kompass
+
+K
+
+Armbanduhr
+
+O
+
+Fernglas
+
+B
+
+Right Panel Next
+
++
+
+Left Panel Next
+
+Ü
+
+Interagieren (Vanilla)
+
+SPACE
+
+Fremdinteraktion (Ace)
+
+LWIN
+
+Eigeninteraktion (Ace)
+
+LCTRL + LWIN
+
+Prim. Funkgerät
+
+CAPS
+
+Sekund. Funkgerät
+
+CTRL + CAPS
+
+Redereichweite
+
+TAB + SCROLL
+
+Medizinische Übersicht
+
+H
+
+Nachtsichtgerät
+
+N
+
+Zu Fuß
+------
+
+Aktion
+
+Tastenbelegung
+
+Bewegen
+
+WASD
+
+Lehnen
+
+QE
+
+Hocken
+
+X
+
+Hinlegen
+
+Y
+
+Sprinten
+
+LSHIFT
+
+Umschauen
+
+LALT
+
+Klettern
+
+User Action Key 1
+
+Salutieren
+
+#
+
+Hinsetzen
+
+ä
+
+Waffen
+------
+
+Aktion
+
+Tastenbelegung
+
+Schießen
+
+LMB
+
+Visier nutzen
+
+RMB
+
+Visierung wechseln
+
+LCTRL + RMB
+
+Nachladen
+
+R
+
+Feuermodus wechseln
+
+F
+
+Waffe sichern
+
+CTRL + ^
+
+Magazin prüfen
+
+CTRL + R
+
+Waffe senken
+
+2x CTRL
+
+High Ready
+
+T
+
+Low Ready
+
+LSHIFT + T
+
+Primärwaffe wechseln
+
+1
+
+Sekundärwaffe wechseln
+
+2
+
+Raketenwerfer wechseln
+
+3
+
+Waffe auflegen
+
+C
+
+Waffe holstern
+
+0
+
+Lampe/Laser
+
+L
+
+Lampe/Laser wechseln
+
+LCTRL + L
+
+Fahrzeuge
+---------
+
+Aktion
+
+Tastenbelegung
+
+Fahren
+
+WASD
+
+Motor an
+
+2
+
+Motor aus
+
+1
+
+Schneller fahren
+
+LSHIFT
+
+Langsamer fahren
+
+LCTRL
+
+Speed Limiter ein/aus
+
+DEL
+
+Höchstgeschwindigkeit einstellen
+
+LCTRL + SCROLL
+
+Handbremse
+
+X
+
+Scheinwerfer
+
+L
+
+Aussteigen (Motor aus)
+
+V
+
+Aussteigen (Motor an lassen)
+
+2x V
+
+Sitz höher
+
+CTRL + PgUp
+
+Sitz tiefer
+
+CTRL + PgDn
+
+Weiterführende Informationen
+----------------------------
+
+*   [Bedienung und Einstellen von Funkgeräten](funketikette#steuerung)

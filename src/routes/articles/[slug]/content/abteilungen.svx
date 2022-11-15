@@ -1,6 +1,6 @@
 ---
 title: Abteilungen
-date: "2022222-12-14"
+date: "2022-11-15"
 breadcrumbs: ["Über uns", "Abteilungen"]
 ---
 

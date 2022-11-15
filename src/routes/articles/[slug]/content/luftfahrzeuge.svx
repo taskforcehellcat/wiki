@@ -1,0 +1,17 @@
+---
+title: Luftfahrzeuge
+date: "2022-11-15"
+breadcrumbs: ["Fuhrpark", "Luftfahrzeuge"]
+---
+
+Rollenprofil
+------------
+
+Aufgaben
+--------
+
+Ausrüstung
+----------
+
+Fertigkeiten
+------------

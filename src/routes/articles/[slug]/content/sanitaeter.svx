@@ -1,0 +1,98 @@
+---
+title: Sanitäter
+date: "2022-11-15"
+breadcrumbs: ["Sanitätsdienst", "Sanitäter"]
+---
+
+_„Air goes in and out, blood goes round and round. Any deviation from that is a problem.“_
+
+Rollenprofil
+------------
+
+Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen, oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Anwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung Ausfälle zu kommunizieren und bei der Bereitstellung von [MEDEVAC](../medevac)s mitzuwirken.
+
+Ausrüstung
+----------
+
+*   Verbrauchsmaterialien:
+*   [Medikamente](../medikationen)
+*   Bandagen: siehe [hier](../behandlungen#bandagen)
+*   sonstiges [Verschleißmaterial](#verbrauchsmaterialien), etwa Kanülen, Infusionen, Kits, etc.
+*   Rauchgranaten
+*   Gebrauchsgegenstände
+*   [medizinischer Art](#gebrauchsgegenstaende)
+*   Fernglas
+*   Funkgerät
+*   Bewaffnung:
+*   eine Primärwaffe zur Selbstverteidigung auf kurze bis mittlere Distanzen
+*   ggf. eine Sekundärwaffe
+
+Fähigkeiten
+-----------
+
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](../erstehilfe) und [Funketikette](../funketikette) auch die [fortgeschrittenen Behandlungen](../behandlungen), welche andere Soldaten nicht leisten können. Außerdem können sie Ausfälle adäquat melden und beherrschen die Besonderheiten des [Sanitäterfunks](../sanitaeterfunk).
+
+Verbrauchsmaterialien
+---------------------
+
+Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.
+
+#### AAT-Kit
+
+gebraucht zur Behandlung von Hämothoraxen (siehe [Behandlung](../behandlungen#pneumothorax_und_haemothorax) von Hämothoraxen und Spannungspneumothoraxen).
+
+#### Field Blood Transfusion Kit (dt. Feldtransfusionsset)
+
+erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Siehe dazu [Transfusionen im Feld](../behandlungen#transfusionen_im_feld).
+
+#### Chest Seal (dt. Thoraxverschlusspflaster)
+
+ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe [Behandlung](../behandlungen#pneumothorax_und_haemothorax) von Hämothoraxen und Spannungspneumothoraxen.
+
+#### 16g IV
+
+eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie [in diesem Video](https://youtu.be/rzLuZWWZ2eQ) anschaulich gezeigt wird.
+
+#### FAST IO
+
+_First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.
+
+Gebrauchsgegenstände
+--------------------
+
+Die folgenden Gegenstände sind zur Mehrfachverwendung geeignet.
+
+#### Tourniquet
+
+Schnürt die Blutzufuhr eines Körperteils ab, um Blutverlust zu verhindern. **Achtung:** An Gliedmaßen mit Tourniquet kann kein Puls oder Blutdruck gemessen werden sowie keine Flüssigkeit angelegt werden. Außerdem heißt so ein absoluter Banger von Breaking Benjamin.
+
+Tourniquets sind essentiell zur Selbst- und Kameradenhilfe. Als Sanitäter sollte man seine Kameraden gelegentlich auffordern, zu prüfen, ob sie Tourniquets in ausreichender Anzahl mitführen und gegebenenfalls ausgleichen.
+
+#### Nähset
+
+erlaubt das Nähen von Wunden. Genähte Verbände lösen sich nicht mehr.
+
+#### Stethoskop
+
+erlaubt die Diagnose von Thoraxverletzungen.
+
+#### Accuvac
+
+erlaubt die endotracheale Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (_head turning_).
+
+#### AED / AED-X
+
+_Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe auch [Behandlung von Herzstillständen](../behandlungen#herzinfarkt). Die AED-X-Ausführung gestattet zusätzlich das Monitoring von [Vitalparametern](behandlungen#vitalparameter).
+
+#### Pulsoximeter
+
+erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes (engl. _saturation peripher O₂_, SpO₂). Siehe auch Abschnitt [Vitalparameter](behandlungen#vitalparameter).
+
+Nützliche Hinweise
+------------------
+
+*   Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, 0 und H auf Maustasten zu legen, oder ähnliches.
+*   G liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter G für Granaten zu unbinden und stattdessen zum Beispiel SHIFTG zu verwenden.
+*   Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.
+*   Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.
+*   die [empfohlenen Routinechecks](../behandlungen#empfohlene_routinechecks)

@@ -1,0 +1,101 @@
+---
+title: Erste Hilfe
+date: "2022-11-15"
+breadcrumbs: ["Ausbildung", "Erste Hilfe"]
+---
+
+Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.
+
+Versorgungsmaterial
+-------------------
+
+Um eine Grundversorgung gewährleisten zu können, sollte das folgende Material immer mitgeführt werden:
+
+*   Bandagen: Mullverband (_packing bandage_) min. 15 Stück, elastische Bandagen: min. 10 Stück
+*   Medikamente: Morphin: 1 Autoinjektor, Epinephrin: 2 Autoinjektoren, Schmerztabletten: 2 Schachteln (20 Tabletten)
+*   Tourniquets: 4 Stück
+*   Splints: 2 Stück
+*   Flüssigkeiten: 500 bis 1000 ml Kochsalzlösung (_saline solution_)
+*   Pulsoximeter: 1 Stück
+
+Die Standardloadouts zum Beispiel sind ausreichend ausgestattet.
+
+Melden
+------
+
+Der Patientenstatus wird mit einer der folgenden Kategorien angegeben:
+
+*   **Kat. Grün:** der Patient ist vollkommen einsatzbereit.
+*   **Kat. Gelb:** der Patient ist verwundet, aber bei Bewusstsein.
+*   **Kat. Rot:** der Patient ist schwer verwundet oder bewusstlos.
+*   **Kat. Schwarz:** der Patient ist verstorben.
+
+Beispiel:add
+
+Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:
+
+_„Linke Flanke ein Ausfall, Kat. Rot - kommen.“_
+
+Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das [hier](../sanitaeterfunk#meldesystem) nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
+
+Hilfeleistung
+-------------
+
+Der Standardkeybind zum Öffnen des Medical Menu ist H. Dabei muss man den Patienten ansehen. **Achtung:** Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
+
+### Lesen des Medical Menus
+
+[![ACE Medical Menu](/_app/immutable/assets/ace_medical_menu-a8800967.png)](/_app/immutable/assets/ace_medical_menu-a8800967.png)
+
+*   Spalte **Status**: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.
+*   Spalte **Overview**: Hier sieht man die Verwundungen des ausgewählten Körperteils.
+*   Spalte **Examine and Treatment**: Hier sieht man die Behandlungsoptionen und kann sie ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein.
+
+### Behandeln ansprechbarer Patienten
+
+#### im Gefecht
+
+2.  Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)
+3.  Kopf und Torso verbinden, stärkere Verwundungen priorisieren
+4.  bei Schmerzen Schmerztabletten verwenden
+5.  Splint anlegen _wenn nötig_. Splints, die von Nichtsanitätern angelegt worden sind, lösen sich mit einer gewissen Wahrscheinlichkeit wieder.
+
+#### nach dem Gefecht
+
+7.  verletzte Gliedmaßen bandagieren
+8.  Tourniquets abnehmen
+9.  Sanitäter zum Nähen lassen aufsuchen (möglichst zeitnah)
+
+### Behandeln bewusstloser Patienten
+
+#### Bergung
+
+Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. _Die Bergung muss mit großer Vorsicht und sehr guter Deckung erfolgen_. Ein Risiko einzugehen, um einen Kameraden zu bergen oder zu versorgen, und dabei möglicherweise selbst verwundet zu werden, bringt die Mission nicht voran. Sie wird also auch nicht von einer Person alleine, sondern im Verband durchgeführt.
+
+#### Handlungsablauf
+
+1.  Im Medical Menu überprüfen, ob der Patient gezogen/getragen werden kann. Wenn nicht (Reiter _Drag/Carry_ ist ausgegraut), ist der Patient tot. Ansonsten:
+2.  Tourniquet an blutende Gliedmaßen anlegen (am Torso und Kopf ist das nicht möglich)
+3.  Kopf und Torso verbinden, stärkere Verwundungen priorisieren
+4.  Atemwege überprüfen:
+
+1.  verstopft/verschlossen (_occluded/obstructed_): Kopf ausrichten (_head turning_) bis befreit
+2.  Kopf überstrecken (_hyperextend head_), damit die Zunge nicht die Atemwege verschließen kann
+
+6.  Puls prüfen:
+
+1.  kein Puls: Herz-Lungen-Wiederbelebung (_CPR_) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.
+2.  Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster Schritt.
+
+8.  in stabile Seitenlage bringen (_use recovery position_)
+9.  verbleibende Verletzungen bandagieren und Tourniquets entfernen
+
+Eine Kurzübersicht liefert auch das nachfolgende Flowchart.
+
+[![Erste Hilfe, grundlegendes Flowchart](/_app/immutable/assets/erste_hilfe_basic-d5768872.png)](/_app/immutable/assets/erste_hilfe_basic-d5768872.png)
+
+Hinweis zur **Zyanose**: Ist kein Pulsoximeter zur Hand, kann man nach Anzeichen einer Zyanose (starken Sauerstoffmangels) suchen (_check cyanosis_). In der Praxis sind das bläuliche Lippen oder Fingerspitzen. Gibt es welche, ist die Sauerstoffsättigung des Blutes kritisch und man sollte sich den Atemwegen zuweden.
+
+#### Eintreffen des Sanitäters
+
+Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.

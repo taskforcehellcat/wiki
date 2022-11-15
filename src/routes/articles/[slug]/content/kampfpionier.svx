@@ -1,0 +1,43 @@
+---
+title: Kampfpionier
+date: "2022-11-15"
+breadcrumbs: ["Logistik", "Kampfpionier"]
+---
+
+Rollenprofil
+------------
+
+Die Rolle des Kampfpioniers setzt sich zusammen aus der Rolle des Pioniers und des Schützen. Der Kampfpionier trägt die Verantwortung, den Schutz der eigenen Truppen zu verbessern und dadurch deren Überlebensfähigkeit zu erhöhen, ist anders als der Pionier aber aktiv am Kampfgefecht beteiligt.
+
+Aufgaben
+--------
+
+Die Aufgaben eines Kampfpioniers variieren je nach Mission und Situation. Die Hauptaufgaben lassen sich aber in wenigen Punkten grob zusammenfassen.
+
+*   die Instandsetzung von Boden- und Luftfahrzeugen
+*   die Instandsetzung von Infrastruktur, als auch das verstärken und befestigen militärisch genutzter Einrichtungen durch bauliche Maßnahmen
+*   das Befördern von außerstand-gesetzten Fahrzeugen
+*   das Aufklären und entschärfen von sowohl AP\- & AT\-Minen
+*   das Bedienen von UGV und UAV Dronen
+
+Ausrüstung
+----------
+
+In Ergänzung zu der Grundausrüstung des Schützen zählen folgende Gegenstände zur Ausrüstung des Kampfpioniers:
+
+*   Mine Detector
+*   Toolkit
+*   UAV-Terminal
+*   Entrenching-Tool
+*   je nach Situation ein Minenräumungsfahrzeug, oder diverse Dronen
+
+Fertigkeiten
+------------
+
+*   erweiterte Kenntnisse über eigene Fahrzeuge
+*   Verwendung der oben genannten Ausrüstung
+
+Weiteres
+--------
+
+Kampfpionier immer halal

@@ -1,0 +1,34 @@
+---
+title: Truppenteile
+date: "2022-11-15"
+breadcrumbs: ["Ausbildung", "Truppenteile"]
+---
+
+Einleitung
+----------
+
+Innerhalb unserer Einheit gibt es klare Festlegungen von Truppenteilen. Diese sind hilfreich, um zum Beispiel schnell und effizient über eigene oder feindliche Kräfte zu informieren. Sie werden auf dieser Seite näher erläutert.
+
+Buddyteam
+---------
+
+Das Buddyteam ist die kleinste taktische Einheit. Es setzt sich aus **zwei Soldaten** zusammen, die sich gegenseitig unterstützen und Aufträge erfüllen. Soldaten im Feld werden immer _mindestens_ in der Form des Buddyteams agieren. Das bringt mehrere Vorteile mit sich: Falls einer der beiden Soldaten ausfällt, kann der andere den Ausfall melden und mit der Erstversorgung beginnen. Zusätzlich können sich die beiden Soldaten abwechselnd im Feld decken, falls Freiflächen überquert werden müssen.
+
+Trupp
+-----
+
+Der Trupp ist eine taktische Einheit, die sich aus **drei bis sieben Soldaten** zusammensetzt. Grundsätzlich enthält er einen Truppführer und ihm unterstellte Soldaten.
+
+Eine besondere Form des Trupps ist der Panzergrenadiertrupp, der gemeinsam mit einem Schützenpanzer agiert.
+
+Gruppe
+------
+
+Die Gruppe ist eine taktische Einheit, die sich aus **acht bis zwölf Soldaten** zusammensetzt. Grundsätzlich besteht eine Gruppe aus einem Gruppenführer, einem stellvertretenden Gruppenführer und weiteren Soldaten. Oft teilen sich Gruppen in zwei Halbgruppen, um die Bewegung im Feld besser zu koordinieren und sich gegenseitig zu decken. Die beiden Halbgruppen werden vom Gruppenführer und dem stellvertretenden Gruppenführer geführt.
+
+Zug
+---
+
+Der Zug ist eine taktische Einheit, die sich aus **drei Gruppen und einem Zugtrupp** zusammensetzt. Der Zugtrupp wird vom Zugführer geführt, der gleichzeitig die restlichen Gruppen des Zuges befehligt. Die drei Gruppen des Zuges werden jeweils von einem Gruppenführer geführt, die dem Zugführer unterstellt sind.
+
+Bei den Panzertruppen wird unter einem Zug eine Zusammensetzung aus vier gepanzerten Fahrzeugen verstanden, zum Beispiel vier Kampfpanzer oder vier Schützenpanzer. Der Zugführer befindet sich dabei selbst aufgesessen auf einem der vier Fahrzeuge.
