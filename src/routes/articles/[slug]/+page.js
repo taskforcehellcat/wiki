@@ -1,11 +1,17 @@
+import {error} from "@sveltejs/kit";
+
 export async function load({params}) {
     const slug = params.slug
+    let post;
 
-    // TODO: 404 if import fails
-    const post = await import(
-        /* @vite-ignore */
-        `./${slug}.svx`
-        )
+    try {
+        post = await import(
+            `./content/${slug}.svx`
+            )
+    } catch (e) {
+        throw error(404, 'Not found');
+    }
+
     const {title, date, breadcrumbs} = post.metadata
     const Content = post.default
 

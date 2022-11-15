@@ -62,9 +62,7 @@
             <main id="content">
                 <Wipbanner/>
                 <Theme/>
-                {#key data.currentRoute}
-                    <slot/>
-                {/key}
+                <slot/>
             </main>
         </div>
     </div>

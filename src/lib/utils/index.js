@@ -1,6 +1,6 @@
 export const fetchMarkdownPosts = async () => {
     const regex = new RegExp('(?<=\\/)[\\w+-]+(?=\\.svx)');
-    const allPostFiles = import.meta.glob('/src/routes/articles/[slug]/*.svx')
+    const allPostFiles = import.meta.glob('/src/routes/articles/[slug]/content/*.svx')
     const iterablePostFiles = Object.entries(allPostFiles)
 
     return await Promise.all(
