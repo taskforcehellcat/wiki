@@ -5,11 +5,11 @@ export const NAV_MENU = [
 	},
 	{
 		id: 'Ausbildung',
-		entries: ['Erste Hilfe', 'Funketikette', 'Befehlsausgabe', 'Truppenteile', 'Steuerung']
+		entries: ['Erste Hilfe', 'Funketikette', 'Fahrzeugidentifikation', 'Befehlsausgabe', 'Truppenteile', 'Steuerung']
 	},
 	{
 		id: 'Streitkräfte',
-		entries: ['Schütze', 'Funker', 'MG-Schütze', 'AT-Schütze', 'Präzisionsschütze', 'Breacher', 'Grenadier']
+		entries: ['Schütze', 'Funker', 'MG-Schütze', 'PA-Schütze', 'Präzisionsschütze', 'Breacher', 'Grenadier']
 	},
 	{
 		id: 'Sanitätsdienst',
