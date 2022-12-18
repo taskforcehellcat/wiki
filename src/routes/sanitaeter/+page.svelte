@@ -72,7 +72,7 @@
 				<li>
 					Verbrauchsmaterialien:
 					<ul>
-						<li><a href="../medikationen">Medikamente</a></li>
+						<li><a href="../medikamente">Medikamente</a></li>
 						<li>Bandagen: siehe <a href="../behandlungen#bandagen">hier</a></li>
 						<li>sonstiges <a href="#verbrauchsmaterialien">Verschleißmaterial</a>, etwa Kanülen, Infusionen, Kits, etc.</li>
 						<li>Rauchgranaten</li>
@@ -123,7 +123,7 @@
 				</p>
 				<h4><span use:tooltip data-tooltip-img="{sixteen_g}">16g IV</span></h4>
 				<p>
-					eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ" target="_blank">in diesem Video</a> anschaulich gezeigt wird.
+					eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikamente zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie <a href="https://youtu.be/rzLuZWWZ2eQ" target="_blank">in diesem Video</a> anschaulich gezeigt wird.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{fast_io}">FAST IO</span>

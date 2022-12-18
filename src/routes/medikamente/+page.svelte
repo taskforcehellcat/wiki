@@ -25,7 +25,7 @@
 
 <Wiki>
 	<svelte:fragment slot="content">
-		<h1>Medikationen</h1>
+		<h1>Medikamente</h1>
 
 		<section>
 			<p>Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite <a href="../behandlungen">Behandlungen</a>.</p>
@@ -79,7 +79,7 @@
 			</section>
 		</section>
 
-		<section id="Spezialisierte Medikationen">
+		<section id="Spezialisierte Medikamente">
 			<p>Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.</p>
 			<section>
 				<h4>

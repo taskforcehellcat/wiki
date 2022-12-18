@@ -13,7 +13,7 @@ export const NAV_MENU = [
 	},
 	{
 		id: 'Sanitätsdienst',
-		entries: ['Sanitäter', 'Sanitäterfunk', 'Medikationen', 'Behandlungen', 'MEDEVAC']
+		entries: ['Sanitäter', 'Sanitäterfunk', 'Medikamente', 'Behandlungen', 'MEDEVAC']
 	},
 	{
 		id: 'Panzertruppen',
