@@ -25,7 +25,7 @@
 				<li>
 					das Bedienen von <span use:tooltip data-tooltip="Unmanned ground vehicle (unbemanntes Bodenfahrzeug)">UGV</span>
 					und
-					<span use:tooltip data-tooltip="Unmanned aerial vehicle (unbemanntes Fluggerät)">UAV</span> Dronen
+					<span use:tooltip data-tooltip="Unmanned aerial vehicle (unbemanntes Fluggerät)">UAV</span> Drohnen
 				</li>
 			</ul>
 		</section>
@@ -38,9 +38,9 @@
 					<span use:tooltip data-tooltip="Terminal zum Steuern von oben erläuterten UAVs & UGVs">UAV-Terminal</span>
 				</li>
 				<li>
-					<span use:tooltip data-tooltip="Klappspaten, zum aufschaufeln von Deckung im Feld">Entrenching-Tool</span>
+					<span use:tooltip data-tooltip="Klappspaten, zum Aufschaufeln von Deckung im Feld">Entrenching-Tool</span>
 				</li>
-				<li>je nach Situation ein Minenräumungsfahrzeug, oder diverse Dronen</li>
+				<li>je nach Situation ein Minenräumungsfahrzeug, oder diverse Drohnen</li>
 			</ul>
 		</section>
 		<section id="Fertigkeiten">

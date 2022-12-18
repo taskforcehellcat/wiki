@@ -103,7 +103,7 @@
 
 		<section id="Absichern der Atmung">
 			<p>
-				Die Atmung prüft man grundsätzlich am Kopf (genaueres zum Gebrauch des Medical Menus auch <a href="../erstehilfe#lesen_des_medical_menus" target="_blank">hier</a>). Eine der ersten Maßnahmen ist es, den Patienten in die stabile Seitenlage zu bringen (<i>establish recovery position</i>). Die Atemwege können teilweise oder vollständig verschlossen sein (<i>obstructed/occluded</i>). Ob dies der Fall ist, findet man mit der Option <i>check airways</i> heraus. Ist dies der Fall, verwendet man idealerweise den Accuvac, um die Atemwege frei zu machen und anschließend einen Larynx- oder Guedel-Tubus (<i>King LT / Guedel tube</i>). Sind diese nicht verfügbar, kann man die Atemwege mit geringerer Erfolgsaussicht auch händisch freimachen (<i>head turning</i>) und anschließend den Kopf überstrecken (<i>hyperextend head</i>). Ohne einen Tubus, der die Luftröhre offenhält, kann der Kopf allerdings verrutschen und diese Maßnahme muss eventuell häufiger durchgeführt werden.
+				Die Atmung prüft man grundsätzlich am Kopf (genaueres zum Gebrauch des Medical Menus auch <a href="../erstehilfe#lesen_des_medical_menus" target="_blank">hier</a>). Eine der ersten Maßnahmen ist es, den Patienten in die stabile Seitenlage zu bringen (<i>establish recovery position</i>). Die Atemwege können teilweise oder vollständig verschlossen sein (<i>obstructed/occluded</i>). Ob dies der Fall ist, findet man mit der Option <i>check airways</i> heraus. Ist dies der Fall, verwendet man idealerweise den Accuvac, um die Atemwege frei zu machen und anschließend einen Larynx- oder Guedel-Tubus (<i>King LT / Guedel tube</i>). Sind diese nicht verfügbar, kann man die Atemwege mit geringerer Erfolgsaussicht auch händisch freimachen (<i>head turning</i>) und anschließend den Kopf überstrecken (<i>hyperextend head</i>). Ohne einen Tubus, der die Luftröhre offen hält, kann der Kopf allerdings verrutschen und diese Maßnahme muss eventuell häufiger durchgeführt werden.
 			</p>
 			<p>Wenn keine weiteren Komplikationen auftreten, sollten diese Schritte ausreichen, um die Atemwege zu stabilisieren. Komplikationen, die bei der Atmung auftreten können sind Hämothorax und Pneumothorax, <a href="#pneumothorax_und_haemothorax">siehe unten</a>.</p>
 		</section>
@@ -121,7 +121,7 @@
 					<b>Avulsionen</b>: (engl. <i>avulsion</i>) ein Gewebeausriss, etwa der Verlust eines Fingers. <br />Starker Blutverlust, schwere Schmerzen.
 				</li>
 				<li>
-					<b>Splitterwirkung</b>: (engl. <i>velocity wound</i>) Verletzung durch Objekte mit hoher Geschwindigkeit, etwa Schrapnelln, Projektile, Splitter u.Ä. <br />Moderater Blutverlust, schwere Schmerzen.
+					<b>Splitterwirkung</b>: (engl. <i>velocity wound</i>) Verletzung durch Objekte mit hoher Geschwindigkeit, etwa Schrapnells, Projektile, Splitter u.Ä. <br />Moderater Blutverlust, schwere Schmerzen.
 				</li>
 				<li>
 					<b>Platzwunde</b>: (engl. <i>laceration</i>) Aufreißen der Haut durch Gewalteinwirkung eines stumpfen oder kantigen Gegenstandes. <br />Moderater Blutverlust, leichte Schmerzen.
@@ -139,7 +139,7 @@
 					<b>Schürfwunde</b>: (engl. <i>abrasion</i>) Abrieb der oberen Hautschicht. <br />Sehr leichter Blutverlust, leichte Schmerzen.
 				</li>
 				<li>
-					<b>Prellung</b>: (engl. <i>contussion</i>) Verletzungen durch Gewalteinwirkung von außen ohne äußerliche Schädigung. <br />Kein Blutverlust, kaum Schmerzen.
+					<b>Prellung</b>: (engl. <i>contusion</i>) Verletzungen durch Gewalteinwirkung von außen ohne äußerliche Schädigung. <br />Kein Blutverlust, kaum Schmerzen.
 				</li>
 			</ol>
 			<p>
@@ -154,7 +154,7 @@
 		<section id="Bandagen">
 			<p>Nebenstehende Tabelle zeigt die idealen Bandagen zur Behandlung verschiedener Wundentypen.</p>
 
-			<a href="{bandagen}" class="no-underline" target="_blank"><img src="{bandagen}" alt="Übersicht mit Wunden- und Bandagentypen" /></a>
+			<a href="{bandagen}" class="no-underline" target="_blank"><img src="{bandagen}" alt="Übersicht mit Wunden- und Bandage-Sorten" /></a>
 		</section>
 
 		<section id="Pneumothorax und Hämothorax">
@@ -204,10 +204,10 @@
 					Beim Kammerflimmern arbeiten die beiden Herzkammern gewissermaßen gegeneinander, sodass das Herz keine Auswurfleistung hat. Durch einen Schock vom Defibrillator können beide Kammern „wieder synchronisiert“ werden. Bis das gelungen ist, muss allerdings Herz-Lungen-Wiederbelebung durchgeführt werden.
 				</p>
 				<p>
-					Nachdem das Kammerflimmern festgestellt, ein Schock verabreicht wurde und kein Herzschlag zurückgekehrt ist, sollte eine Gabe Epinephrin verabreicht werden und daraufhin 30 bis 60 Sekunden Herz-Lungen-Wiederbelebung durchgeführt werden. Anschließend lässt man den Defibrillator erneut die Arrythmie ananlysieren und wiederholt das Prozedere gegebenenfalls.
+					Nachdem das Kammerflimmern festgestellt, ein Schock verabreicht wurde und kein Herzschlag zurückgekehrt ist, sollte eine Gabe Epinephrin verabreicht werden und daraufhin 30 bis 60 Sekunden Herz-Lungen-Wiederbelebung durchgeführt werden. Anschließend lässt man den Defibrillator erneut die Arrhythmie analysieren und wiederholt das Prozedere gegebenenfalls.
 				</p>
 				<p>
-					Bei der Behandlung vom Kammerflimmern können zusätzlich Amiodaron und Lidocain unterstützend wirken. Amiodaron solle nicht öfter als einmal angewendet werden, genaueres siehe <a href="../medikamente#infarkttherapie">Medikationen</a>. Sollte eine Gabe Amiodaron nicht genügen, sollte nach angemessener Zeit Lidocain hinzugezogen werden.
+					Bei der Behandlung vom Kammerflimmern können zusätzlich Amiodaron und Lidocain unterstützend wirken. Amiodaron solle nicht öfter als einmal angewendet werden, Genaueres siehe <a href="../medikamente#infarkttherapie">Medikamente</a>. Sollte eine Gabe Amiodaron nicht genügen, sollte nach angemessener Zeit Lidocain hinzugezogen werden.
 				</p>
 			</section>
 

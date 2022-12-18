@@ -37,7 +37,7 @@
 				<p>
 					Die Aufklärung setzt sich aus Scharfschützen, <span use:tooltip data-tooltip="dt. Beobachter">Spottern</span>
 					und <span use:tooltip data-tooltip="Joint Terminal Attack Controller">JTACs</span>
-					zusammen. Scharfschützen und Spotter sind meist im Trupp oder Buddy-Team zur Aufklärung oder Bekämpfung feindlicher Kräfte auf große Distanzen anzufinden. JTACs sind entweder im Aufklärungstrupp oder in Infanteriegruppen vertreten. Ihre Hauptaufgabe ist die Koordinierung vom
+					zusammen. Scharfschützen und Spotter sind meist im Trupp oder Buddy-Team zur Aufklärung oder Bekämpfung feindlicher Kräfte auf große Distanzen anzutreffen. JTACs sind entweder im Aufklärungstrupp oder in Infanteriegruppen vertreten. Ihre Hauptaufgabe ist die Koordinierung vom
 					<span use:tooltip data-tooltip="Close Air Support, dt. Luftnahunterstützung">CAS</span> auf feindliche Ziele.
 				</p>
 			</section>
@@ -75,7 +75,7 @@
 			</section>
 
 			<section id="Luftversorgung">
-				<p>Die Luftlogistik befasst sich im Kern mit der Versorgung anderer Truppenteile mit Luftfahrzeugen. Transportierte Güter sind hierbei Munition, Treibtstoff und Verbrauchsmaterialien. Die Luftversorgung kann sich ebenfalls mit der Verlegung eigener Kräfte ins Feld befassen.</p>
+				<p>Die Luftlogistik befasst sich im Kern mit der Versorgung anderer Truppenteile mit Luftfahrzeugen. Transportierte Güter sind hierbei Munition, Treibstoff und Verbrauchsmaterialien. Die Luftversorgung kann sich ebenfalls mit der Verlegung eigener Kräfte ins Feld befassen.</p>
 			</section>
 		</section>
 	</svelte:fragment>

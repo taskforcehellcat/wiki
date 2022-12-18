@@ -168,7 +168,7 @@
 				</h4>
 				<p>
 					<i>Automatisierter externer Defibrillator</i>. Zur Behandlung von
-					<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arryhthmien</span>, siehe auch <a href="../behandlungen#herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
+					<span use:tooltip data-tooltip="abnorme Herzrate (etwa Herzkammerflimmern)">Arrhythmien</span>, siehe auch <a href="../behandlungen#herzinfarkt">Behandlung von Herzstillständen</a>. Die AED-X-Ausführung gestattet zusätzlich das Monitoring von
 					<a href="behandlungen#vitalparameter">Vitalparametern</a>.
 				</p>
 				<h4>

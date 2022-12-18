@@ -82,11 +82,11 @@
 					<td><kbd>B</kbd></td>
 				</tr>
 				<tr>
-					<td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Right Panel Next</span></td>
+					<td><span use:tooltip data-tooltip="Zusätzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Right Panel Next</span></td>
 					<td><kbd> + </kbd></td>
 				</tr>
 				<tr>
-					<td><span use:tooltip data-tooltip="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Left Panel Next</span></td>
+					<td><span use:tooltip data-tooltip="Zusätzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Left Panel Next</span></td>
 					<td><kbd>Ü</kbd></td>
 				</tr>
 				<tr>

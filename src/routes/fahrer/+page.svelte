@@ -11,7 +11,7 @@
 		<h1>Fahrer (Panzertruppen)</h1>
 
 		<section id="Rollenprofil">
-			<p>Der Kraftfahrer nimmt unmittelbar Einfluss auf die Bewegung des Fahrzeuges entsprechend der Anweisungen des Kommandanten. Die eigenständige Manövrierung seines Fahrzeuges entlang Straßen oder durch das Gelände bei oft schlechten Sichtmöglichkeiten stellt seine größte Hürde dar.</p>
+			<p>Der Kraftfahrer nimmt unmittelbar Einfluss auf die Bewegung des Fahrzeuges entsprechend der Anweisungen des Kommandanten. Das eigenständige Manövrieren seines Fahrzeuges entlang Straßen oder durch das Gelände bei oft schlechten Sichtmöglichkeiten stellt seine größte Hürde dar.</p>
 		</section>
 
 		<section id="Aufgaben">

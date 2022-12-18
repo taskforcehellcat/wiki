@@ -31,7 +31,7 @@
 			<section id="Funkgerät einstellen">
 				<section id="SEM 52 SL">
 					<p>
-						Infanterie ist zumeist mit dem Funkgerät <span use:tooltip data-tooltip="Akronym für: Sender/Empfänger, mobil (Synthesizer mit LCD)"><i>SEM 52 SL</i></span> ausgerüstet, deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehknöpfen und einer Anzeige. Letztere zeigt die aktuell genutze Frequenz in kHz (Kilohertz), standardmäßig sind 46 MHz eingestellt. Die Drehknöpfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt.
+						Infanterie ist zumeist mit dem Funkgerät <span use:tooltip data-tooltip="Akronym für: Sender/Empfänger, mobil (Synthesizer mit LCD)"><i>SEM 52 SL</i></span> ausgerüstet, deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehknöpfen und einer Anzeige. Letztere zeigt die aktuell genutzte Frequenz in kHz (Kilohertz), standardmäßig sind 46 MHz eingestellt. Die Drehknöpfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt.
 					</p>
 					<p>Der linke Drehknopf dient neben dem Einschalten dem Auswählen von Voreinstellungen. Die zwölf standardmäßigen Voreinstellungen bezeichnen wir auch als Kanäle. Die Einstellungen P und H dienen der Programmierung des Funkgeräts, was im Allgemeinen aber nicht notwendig werden sollte.</p>
 					<p>

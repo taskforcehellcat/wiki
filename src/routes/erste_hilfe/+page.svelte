@@ -116,7 +116,7 @@
 						<li>Puls prüfen:</li>
 						<ol style="list-style-type: lower-alpha;">
 							<li>
-								kein Puls: Herz-Lungen-Wiederbelebung (<i>CPR</i>) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.
+								kein Puls: Herz-Lungen-Wiederbelebung (<i>CPR</i>) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alarmieren. Auch die Atemwege weiterhin prüfen.
 							</li>
 							<li>Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster Schritt.</li>
 						</ol>
@@ -128,11 +128,11 @@
 
 					<a href="{erste_hilfe_basic}" class="no-underline" target="_blank"><img src="{erste_hilfe_basic}" alt="Erste Hilfe, grundlegendes Flowchart" /></a>
 
-					<p>Hinweis zur <b>Zyanose</b>: Ist kein Pulsoximeter zur Hand, kann man nach Anzeichen einer Zyanose (starken Sauerstoffmangels) suchen (<i>check cyanosis</i>). In der Praxis sind das bläuliche Lippen oder Fingerspitzen. Gibt es welche, ist die Sauerstoffsättigung des Blutes kritisch und man sollte sich den Atemwegen zuweden.</p>
+					<p>Hinweis zur <b>Zyanose</b>: Ist kein Pulsoximeter zur Hand, kann man nach Anzeichen einer Zyanose (starken Sauerstoffmangels) suchen (<i>check cyanosis</i>). In der Praxis sind das bläuliche Lippen oder Fingerspitzen. Gibt es welche, ist die Sauerstoffsättigung des Blutes kritisch und man sollte sich den Atemwegen zuwenden.</p>
 				</section>
 
 				<section id="Eintreffen des Sanitäters">
-					<p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Widerbelebung bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
+					<p>Auch der Sanitäter benötigt bei der weiteren Versorgung noch Unterstützung, mindestens um gedeckt zu werden. Bei dessen Eintreffen sollte man melden, welche Medikation man bereits verabreicht hat. Eventuell braucht der Sanitäter auch bei der Versorgung schwerer Verletzungen weiterhin Hilfe, zum Beispiel für die Herz-Lungen-Wiederbelebung bei einem Herzstillstand. Auch für die mögliche Verlegung eines Verwundeten sollte man verfügbar bleiben.</p>
 				</section>
 			</section>
 		</section>

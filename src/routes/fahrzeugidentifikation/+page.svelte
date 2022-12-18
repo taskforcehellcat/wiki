@@ -34,7 +34,7 @@
 
 		<section id="Mannschaftstransporter">
 			<p>Der Schützenpanzer (<b>I</b>nfantry <b>F</b>ighting <b>V</b>ehicle, IFV) und der Mannschaftstransportwagen (<b>A</b>rmored <b>P</b>ersonnel <b>C</b>arrier, APC) sind äußerlich nicht allzu leicht zu unterscheiden. Sie sind beide ein fester Bestandteil ihres Trupps. Allerdings ist der APC oft auf Rädern unterwegs und sind gar nicht bis leicht, meist 7.62-mm, 50 cal, 14.5-mm oder 30/40-mm Granatwerfer, bewaffnet welche gegebenenfalls auch auf einen kleinen Turm montiert sein können.</p>
-			<p>Das IFV hingegen ist auf Ketten unterwegs und hat einen kleinen Turm welcher mit einem 20-mm oder noch großkalibrigeren Geschütz sowie Panzerabwehrraketen bewaffnet ist.</p>
+			<p>Das IFV hingegen ist auf Ketten unterwegs und hat einen kleinen Turm welcher mit einem 20-mm-Geschütz oder noch größerem Kaliber sowie Panzerabwehrraketen bewaffnet ist.</p>
 		</section>
 	</svelte:fragment>
 	<svelte:fragment slot="editdate">13.10.2022</svelte:fragment>

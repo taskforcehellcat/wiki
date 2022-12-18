@@ -37,7 +37,7 @@
 				<h4>
 					<span use:tooltip data-tooltip-img="{morphine}">Morphin-Autoinjektor</span>
 				</h4>
-				<p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
+				<p>unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, schnell überdosiert (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.</p>
 				<h4><span use:tooltip data-tooltip-img="">Painkillers</span> (dt. Schmerztabletten)</h4>
 				<p>
 					lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe <a href="../behandlungen#transfusionen_im_feld">Transfusion von Blut</a>). Werden im Arsenal bei den Magazinen geführt.
@@ -55,20 +55,20 @@
 
 		<section id="Infarkttherapie">
 			<p>Medikamente zur Behandlung von Herzstillständen, siehe auch <a href="../behandlungen#herzinfarkt">hier</a>.</p>
-			<p>Die Antiarrythmika Amiodaron und Lidocain stabilisieren das Membranpotential des Herzmuskels und verringern dadurch seine Erregbarkeit. Dies hilft, Kammerflimmern zu behandeln, wenn der Herzmuskel krampft. Bei einer Asystolie sind sie kontraindiziert.</p>
+			<p>Die Antiarrhythmika Amiodaron und Lidocain stabilisieren das Membranpotential des Herzmuskels und verringern dadurch seine Erregbarkeit. Dies hilft, Kammerflimmern zu behandeln, wenn der Herzmuskel krampft. Bei einer Asystolie sind sie kontraindiziert.</p>
 			<section>
 				<h4>
 					<span use:tooltip data-tooltip-img="{amiodarone}">Amiodaron</span>
 				</h4>
 				<p>
-					Klasse III <span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidocain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine
+					Klasse III <span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrhythmikum</span>, bis zu 2,5 Mal so wirksam wie Lidocain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine
 					<span use:tooltip data-tooltip="dauerhafte Unterschreitung der normalen Herzrate (unter 60 bpm für über 20 Minuten)">Bradykardie</span>. Empfohlen ist eine Gabe pro Patient.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{lidocaine}">Lidocain</span>
 				</h4>
 				<p>
-					Klasse Ib <span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.
+					Klasse Ib <span use:tooltip data-tooltip="Medikament zur Behandlung von abnormen Herzraten">Antiarrhythmikum</span>. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.
 				</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{atropine}">Atropin</span>
@@ -110,11 +110,11 @@
 				<h4>
 					<span use:tooltip data-tooltip-img="{phenylephrin}">Phenylephrin</span>
 				</h4>
-				<p>hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht.</p>
+				<p>hebt den Blutdruck bei gleichzeitiger Senkung des Pulses. Wird über einen Zugang verabreicht.</p>
 				<h4>
 					<span use:tooltip data-tooltip-img="{ondansetron}">Ondansetron</span>
 				</h4>
-				<p>verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.</p>
+				<p>verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch einen Guedel-Tubus o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.</p>
 			</section>
 		</section>
 
