@@ -119,7 +119,7 @@
 		<section id="Weiterführende Informationen">
 			<ul>
 				<li><a href="../sanitaeterfunk">Sanitäterfunk</a></li>
-				<li><a href="">Funk der Panzertruppen (wip)</a></li>
+				<li><a href="/">Funk der Panzertruppen (wip)</a></li>
 			</ul>
 		</section>
 	</svelte:fragment>
