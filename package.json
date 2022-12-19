@@ -2,7 +2,7 @@
 	"name": "sveltekit-template",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "python3 ./src/lib/search/searchIndexUpdater.py & vite dev",
+		"dev": "vite dev",
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
