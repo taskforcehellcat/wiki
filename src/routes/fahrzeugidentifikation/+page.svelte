@@ -1,6 +1,6 @@
 <script lang="ts">
 	import CloseMenu from '$lib/burgermenu/closeMenu.svelte';
-	import Wiki from '../wiki.svelte';
+	import Wiki from '../wiki/+page.svelte';
 
 	/* Images */
 	import guide from '$lib/images/fahrzeuge/guide.png';
