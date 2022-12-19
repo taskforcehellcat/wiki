@@ -49,7 +49,7 @@
 			</div>
 
 			<p>
-				Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das <a href="../sanitaeterfunk#meldesystem" target="_blank">hier</a> nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
+				Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das <a href="../sanitaeterfunk#meldesystem" target="_blank" rel="noreferrer">hier</a> nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
 			</p>
 		</section>
 
@@ -60,7 +60,7 @@
 			</p>
 
 			<section id="Lesen des Medical Menus">
-				<a href="{ace_medical_menu}" class="no-underline" target="_blank"><img alt="ACE Medical Menu" src="{ace_medical_menu}" class="noselect" /></a>
+				<a href="{ace_medical_menu}" class="no-underline" target="_blank" rel="noreferrer"><img alt="ACE Medical Menu" src="{ace_medical_menu}" class="noselect" /></a>
 				<p />
 				<ul>
 					<li>
@@ -126,7 +126,7 @@
 
 					<p>Eine Kurzübersicht liefert auch das nachfolgende Flowchart.</p>
 
-					<a href="{erste_hilfe_basic}" class="no-underline" target="_blank"><img src="{erste_hilfe_basic}" alt="Erste Hilfe, grundlegendes Flowchart" /></a>
+					<a href="{erste_hilfe_basic}" class="no-underline" target="_blank" rel="noreferrer"><img src="{erste_hilfe_basic}" alt="Erste Hilfe, grundlegendes Flowchart" /></a>
 
 					<p>Hinweis zur <b>Zyanose</b>: Ist kein Pulsoximeter zur Hand, kann man nach Anzeichen einer Zyanose (starken Sauerstoffmangels) suchen (<i>check cyanosis</i>). In der Praxis sind das bläuliche Lippen oder Fingerspitzen. Gibt es welche, ist die Sauerstoffsättigung des Blutes kritisch und man sollte sich den Atemwegen zuwenden.</p>
 				</section>

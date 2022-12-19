@@ -96,14 +96,14 @@
 		<section id="Stabilisierung">
 			<p>Einen Überblick über die wichtigsten Stabilisierungsschritte liefert das nachfolgende Flowchart. Es bezieht sich auf eine ältere Version von KAT Medical und sollte daher nicht ganz wörtlich genommen werden. Es wird demnächst aktualisiert.</p>
 
-			<a href="{stabilisierung}" target="_blank" class="no-underline"><img src="{stabilisierung}" alt="Flowchart Stabilisierung" /></a>
+			<a href="{stabilisierung}" target="_blank" rel="noreferrer" class="no-underline"><img src="{stabilisierung}" alt="Flowchart Stabilisierung" /></a>
 
 			<p>Bei der Stabilisierung ist es wichtig, Atmung und Kreislauf gleichermaßen im Blick zu behalten. Daher empfiehlt es sich, früh ein Pulsoximeter anzubringen um Sauerstoffsättigung des Blutes und Herzrate gleichzeitig und schnell ablesen zu können.</p>
 		</section>
 
 		<section id="Absichern der Atmung">
 			<p>
-				Die Atmung prüft man grundsätzlich am Kopf (genaueres zum Gebrauch des Medical Menus auch <a href="../erstehilfe#lesen_des_medical_menus" target="_blank">hier</a>). Eine der ersten Maßnahmen ist es, den Patienten in die stabile Seitenlage zu bringen (<i>establish recovery position</i>). Die Atemwege können teilweise oder vollständig verschlossen sein (<i>obstructed/occluded</i>). Ob dies der Fall ist, findet man mit der Option <i>check airways</i> heraus. Ist dies der Fall, verwendet man idealerweise den Accuvac, um die Atemwege frei zu machen und anschließend einen Larynx- oder Guedel-Tubus (<i>King LT / Guedel tube</i>). Sind diese nicht verfügbar, kann man die Atemwege mit geringerer Erfolgsaussicht auch händisch freimachen (<i>head turning</i>) und anschließend den Kopf überstrecken (<i>hyperextend head</i>). Ohne einen Tubus, der die Luftröhre offen hält, kann der Kopf allerdings verrutschen und diese Maßnahme muss eventuell häufiger durchgeführt werden.
+				Die Atmung prüft man grundsätzlich am Kopf (genaueres zum Gebrauch des Medical Menus auch <a href="../erstehilfe#lesen_des_medical_menus" target="_blank" rel="noreferrer">hier</a>). Eine der ersten Maßnahmen ist es, den Patienten in die stabile Seitenlage zu bringen (<i>establish recovery position</i>). Die Atemwege können teilweise oder vollständig verschlossen sein (<i>obstructed/occluded</i>). Ob dies der Fall ist, findet man mit der Option <i>check airways</i> heraus. Ist dies der Fall, verwendet man idealerweise den Accuvac, um die Atemwege frei zu machen und anschließend einen Larynx- oder Guedel-Tubus (<i>King LT / Guedel tube</i>). Sind diese nicht verfügbar, kann man die Atemwege mit geringerer Erfolgsaussicht auch händisch freimachen (<i>head turning</i>) und anschließend den Kopf überstrecken (<i>hyperextend head</i>). Ohne einen Tubus, der die Luftröhre offen hält, kann der Kopf allerdings verrutschen und diese Maßnahme muss eventuell häufiger durchgeführt werden.
 			</p>
 			<p>Wenn keine weiteren Komplikationen auftreten, sollten diese Schritte ausreichen, um die Atemwege zu stabilisieren. Komplikationen, die bei der Atmung auftreten können sind Hämothorax und Pneumothorax, <a href="#pneumothorax_und_haemothorax">siehe unten</a>.</p>
 		</section>
@@ -154,7 +154,7 @@
 		<section id="Bandagen">
 			<p>Nebenstehende Tabelle zeigt die idealen Bandagen zur Behandlung verschiedener Wundentypen.</p>
 
-			<a href="{bandagen}" class="no-underline" target="_blank"><img src="{bandagen}" alt="Übersicht mit Wunden- und Bandage-Sorten" /></a>
+			<a href="{bandagen}" class="no-underline" target="_blank" rel="noreferrer"><img src="{bandagen}" alt="Übersicht mit Wunden- und Bandage-Sorten" /></a>
 		</section>
 
 		<section id="Pneumothorax und Hämothorax">
@@ -238,7 +238,7 @@
 
 				<p>Eine vollständige Übersicht liefert auch die nachfolgende Tabelle. Am besten sucht man sich selbst einige Paare aus und testet anhand der Tabelle das eben beschriebene Muster.</p>
 
-				<a href="{blutgruppen}" target="_blank" class="no-underline"><img src="{blutgruppen}" alt="Tabelle Blutgruppenverträglichkeiten" /></a>
+				<a href="{blutgruppen}" target="_blank" rel="noreferrer" class="no-underline"><img src="{blutgruppen}" alt="Tabelle Blutgruppenverträglichkeiten" /></a>
 
 				<p>Eine ähnliche Tabelle kann auch ingame als Item mitgeführt und benutzt werden.</p>
 			</section>

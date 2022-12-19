@@ -26,7 +26,7 @@
 				Über die ACE Self-Interaction (<kbd>LCTRL</kbd>+<kbd>WIN</kbd>/<kbd>LCTRL</kbd>+<kbd>LCMD</kbd>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe <a href="#funkgeraet_einstellen">Funkgerät einstellen</a>). Die Unterpunkte werden im Folgenden erklärt.
 			</p>
 
-			<a href="{funk_aceself}" target="_blank" class="no-underline"><img src="{funk_aceself}" alt="Radioauswahl in der ACE Self Interaction" /></a>
+			<a href="{funk_aceself}" target="_blank" rel="noreferrer" class="no-underline"><img src="{funk_aceself}" alt="Radioauswahl in der ACE Self Interaction" /></a>
 
 			<section id="Funkgerät einstellen">
 				<section id="SEM 52 SL">
@@ -38,16 +38,16 @@
 						Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man dafür ohne das Funkgerät öffnen zu müssen die Taste <kbd>CAPS LOCK</kbd>).
 					</p>
 
-					<a href="{semSL}" target="_blank" class="no-underline"><img src="{semSL}" alt="Oberfläche der SEM 52 SL" /></a>
+					<a href="{semSL}" target="_blank" rel="noreferrer" class="no-underline"><img src="{semSL}" alt="Oberfläche der SEM 52 SL" /></a>
 
 					<p>
-						Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkgeräten finden sich auch in englischer Sprache im <a href="https://acre2.idi-systems.com/wiki/radios/overview" target="_blank">ACRE Wiki</a>.
+						Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkgeräten finden sich auch in englischer Sprache im <a href="https://acre2.idi-systems.com/wiki/radios/overview" target="_blank" rel="noreferrer">ACRE Wiki</a>.
 					</p>
 				</section>
 
 				<section id="AN/PRC 343">
 					<p>
-						<a href="https://acre2.idi-systems.com/wiki/radios/an-prc-343" target="_blank">ACRE Wiki Eintrag zum AN/PRC 343</a> in englischer Sprache.
+						<a href="https://acre2.idi-systems.com/wiki/radios/an-prc-343" target="_blank" rel="noreferrer">ACRE Wiki Eintrag zum AN/PRC 343</a> in englischer Sprache.
 					</p>
 				</section>
 			</section>
@@ -90,7 +90,7 @@
 			<section id="Buchstabieren">
 				<p>Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet.</p>
 
-				<a href="{alphabet}" class="no-underline" target="_blank"><img src="{alphabet}" alt="NATO-Buchstabiertafel" /></a>
+				<a href="{alphabet}" class="no-underline" target="_blank" rel="noreferrer"><img src="{alphabet}" alt="NATO-Buchstabiertafel" /></a>
 
 				<p>Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.</p>
 			</section>

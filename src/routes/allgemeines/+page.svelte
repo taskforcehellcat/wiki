@@ -16,13 +16,13 @@
 
 		<section id="Beschreibung">
 			<p>
-				Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation <a href="https://de.wikipedia.org/wiki/Arma_3" target="_blank">ArmA 3</a> spielt. Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt. Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden. Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit zu sorgen.
+				Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation <a href="https://de.wikipedia.org/wiki/Arma_3" target="_blank" rel="noreferrer">ArmA 3</a> spielt. Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt. Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden. Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit zu sorgen.
 			</p>
 		</section>
 
 		<section id="Organisation">
 			<p>
-				Die Organisation unserer Einheit findet ausschließlich auf unserem <a class="no-underline" href="https://discord.taskforcehellcat.de/" target="_blank"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" style="vertical-align: middle;" alt="Shields.io Grafik mit Link zu unserem Discord"></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.
+				Die Organisation unserer Einheit findet ausschließlich auf unserem <a class="no-underline" href="https://discord.taskforcehellcat.de/" target="_blank" rel="noreferrer"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" style="vertical-align: middle;" alt="Shields.io Grafik mit Link zu unserem Discord"></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.
 			</p>
 
 
@@ -38,18 +38,18 @@
 						<span use:tooltip data-tooltip="Basegame mit DLC ~45 GB + unser Modpack ~50 GB">genügend Festplattenspeicher</span>
 					</li>
 					<li>
-						das Spiel <a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank">ArmA 3</a>
+						das Spiel <a href="https://store.steampowered.com/app/107410/Arma_3/" target="_blank" rel="noreferrer">ArmA 3</a>
 					</li>
 					<li>ein Discord-Account mit verifizierter E-Mail</li>
 					<li>
-						<a href="https://www.teamspeak.com/en/" target="_blank">TeamSpeak 3</a> und mindestens ein Headset, vorzugsweise ein
+						<a href="https://www.teamspeak.com/en/" target="_blank" rel="noreferrer">TeamSpeak 3</a> und mindestens ein Headset, vorzugsweise ein
 						<span use:tooltip data-tooltip="für Ratschläge gerne Serverleitung fragen :)">vernünftiges Mikrofon</span>
 					</li>
 				</ul>
 				<p>
-					Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank">Apex DLC</a>
+					Zusätzlich werden zu ArmA 3 das <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/" target="_blank" rel="noreferrer">Apex DLC</a>
 					und das
-					<a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank">Global Mobilization DLC</a> empfohlen, allerdings nicht zwangsweise benötigt.
+					<a href="https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/" target="_blank" rel="noreferrer">Global Mobilization DLC</a> empfohlen, allerdings nicht zwangsweise benötigt.
 				</p>
 			</section>
 
