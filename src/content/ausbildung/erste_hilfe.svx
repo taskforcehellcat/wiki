@@ -4,6 +4,11 @@ date: "2022-11-15"
 nav_index: 1
 ---
 
+<script>
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+</script>
+
+
 Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.
 
 Versorgungsmaterial
@@ -30,9 +35,11 @@ Der Patientenstatus wird mit einer der folgenden Kategorien angegeben:
 *   **Kat. Rot:** der Patient ist schwer verwundet oder bewusstlos.
 *   **Kat. Schwarz:** der Patient ist verstorben.
 
-Beispiel:add
+<ExampleBox>
 
 Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:
+
+</ExampleBox>
 
 _„Linke Flanke ein Ausfall, Kat. Rot - kommen.“_
 

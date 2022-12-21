@@ -4,6 +4,11 @@ date: "2022-11-15"
 nav_index: 4
 ---
 
+<script>
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+</script>
+
+
 Vitalparameter
 --------------
 
@@ -187,9 +192,11 @@ Standardmäßig führen Sanitäter Blut der Blutgruppe 0- oder Plasma/Kochsalzl�
 
 Man kann sich merken, dass dabei die Spenderblutgruppe gewissermaßen in der des Empfängers „enthalten“ sein muss (dabei steckt „-“ gewissermaßen in „+“). Möchte man herausfinden, ob ein Patient eine bestimmte Blutgruppe empfangen kann, testet man also, ob das Spenderblut in seine Blutgruppe „hineinpasst“.
 
-Beispiel:add
+<ExampleBox>
 
 A- steckt zum Beispiel in diesem Sinne in AB+, A+ oder auch AB-, diese Blutgruppen können also A- empfangen. Es ist allerdings nicht enthalten in 0+, 0-, B+, etc. Diese Gruppen können also kein A- empfangen.
+
+</ExampleBox>
 
 AB+ kann beispielsweise jede Blutgruppe empfangen, 0- hingegen nur 0-.
 

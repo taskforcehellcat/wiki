@@ -745,55 +745,6 @@ kbd {
 	}
 }
 
-.exampleBox {
-	width: 100%;
-	background-color: var(--exampleBoxBG);
-	border-radius: 0.5rem;
-	margin-bottom: 4rem;
-
-	> div {
-		&:first-of-type {
-			border-top: 1px solid var(--exampleBoxBorder);
-			border-bottom: 1px solid var(--exampleBoxBorder);
-			border-right: 1px solid var(--exampleBoxBorder);
-			border-left: 1px solid var(--exampleBoxBorder);
-			border-top-left-radius: 0.5rem;
-			border-top-right-radius: 0.5rem;
-			height: 4rem;
-			padding-inline: 2rem;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			transition: all 0.5s ease-out;
-
-			&:hover {
-				cursor: pointer;
-			}
-
-			.material-icons {
-				font-size: 20pt;
-				margin-right: -4px;
-			}
-		}
-
-		&:last-of-type {
-			border-bottom: 1px solid var(--exampleBoxBorder);
-			border-right: 1px solid var(--exampleBoxBorder);
-			border-left: 1px solid var(--exampleBoxBorder);
-			border-bottom-left-radius: 0.5rem;
-			border-bottom-right-radius: 0.5rem;
-			height: fit-content;
-			padding: 2rem;
-		}
-	}
-}
-
-/*
-ol > ol > .exampleBox,
-ul > ul > .exampleBox {
-  margin-bottom: 0;
-}*/
-
 .no-underline {
 	border-bottom: none;
 }

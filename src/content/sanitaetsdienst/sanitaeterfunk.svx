@@ -4,6 +4,11 @@ date: "2022-11-15"
 nav_index: 2
 ---
 
+<script>
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+</script>
+
+
 Meldesystem
 -----------
 
@@ -14,9 +19,11 @@ Im Feld wird mit einem abkürzenden Meldesystem gearbeitet, das es erleichtern s
 1.  Kat. Grün **Alpha**: Der Patient ist einschränkungslos gefechtsbereit / im bestmöglichen Zustand.
 2.  Kat. Grün **Bravo**: Der Patient ist unwesentlich verletzt und bedarf keiner dringlichen sanitätsdienstlichen Fürsorge.
 
-Beispiel:add
+<ExampleBox>
 
 Ein Patient, dessen Wunden versorgt, aber noch nicht genäht wurden, fällt in die Kategorie Grün-B. Wenn die Verwundungen allerdings so großflächig sind, dass sie bei Wiederöffnung problematisch werden könnten, ist die Kategorisierung Grün-B unangebracht.
+
+</ExampleBox>
 
 4.  **Kat. Gelb:** Der Patient benötigt zeitnah sanitätsdienstliche Unterstützung. Kat. Gelb sind allerdings noch bei Bewusstsein, können sich also noch wenigstens eingeschränkt selbst versorgen.
 
@@ -31,8 +38,10 @@ Ein Patient, dessen Wunden versorgt, aber noch nicht genäht wurden, fällt in d
 
 8.  **Kat. Blau**: Eine Sonderkategorie, mit der bezeichnet wird, dass der Patient wahrscheinlich verloren ist.
 
-Beispiel:add
+<ExampleBox>
 
 Fällt ein Truppenteil an einer Stelle im Feld aus, an der es nur unter nicht tragbaren Risiko geborgen werden kann, oder sind die Verletzungen so schwerwiegend, dass die Behandlung aus Sicht der Triage verantwortungslos wäre, fällt dies in die Kategorie Blau.
+
+</ExampleBox>
 
 10.  **Kat. Schwarz**: Exitus letalis.
