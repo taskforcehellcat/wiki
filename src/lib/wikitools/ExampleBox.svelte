@@ -7,18 +7,16 @@
 </script>
 
 <div class="example-box">
-    <div class="example-box-header noselect" aria-expanded={isOpen} on:click={toggleOpen} role="presentation">
+    <div class="example-box-header noselect" aria-expanded="{isOpen}" on:click={toggleOpen} role="presentation">
         <span>{title}</span>
         <span class="material-icons">
             {#if isOpen}remove{:else}add{/if}
         </span>
     </div>
 
-    {#if isOpen}
-        <div class="example-box-content" transition:slide>
-            <slot></slot>
-        </div>
-    {/if}
+    <div class="example-box-content" transition:slide class:show={isOpen}>
+        <slot></slot>
+    </div>
 </div>
 
 <style lang="scss">
@@ -59,12 +57,13 @@
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
       height: fit-content;
+      display: none;
       padding: 2rem;
 
-      &.open {
-        display: none;
-        border-bottom-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
+      &.show {
+        display: block;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
       }
     }
   }
