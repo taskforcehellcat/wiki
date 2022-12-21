@@ -7,7 +7,7 @@
     // Or: Fix footer another way
 </script>
 
-<article>
+<section>
     <h1>{data.title}</h1>
 
     <!-- Use svelte:component instead of <Content/> to force reactivity if content changes (like changing articles) -->
@@ -18,4 +18,4 @@
     <p></p>
     zuletzt bearbeitet am:
     <h5>{data.date}</h5>
-</article>
+</section>
