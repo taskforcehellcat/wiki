@@ -4,6 +4,16 @@ date: "2022-11-15"
 nav_index: 1
 ---
 
+<script>
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+
+    /* images */
+    import erste_hilfe_basic from '$lib/images/erstehilfe/erste_hilfe_basic.png'
+    import ace_medical_menu from '$lib/images/erstehilfe/ace_medical_menu.png'
+</script>
+
+
 Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.
 
 Versorgungsmaterial
@@ -30,9 +40,11 @@ Der Patientenstatus wird mit einer der folgenden Kategorien angegeben:
 *   **Kat. Rot:** der Patient ist schwer verwundet oder bewusstlos.
 *   **Kat. Schwarz:** der Patient ist verstorben.
 
-Beispiel:add
+<ExampleBox>
 
-Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:
+    Ein Schütze bemerkt, dass ein Truppmitglied neben ihm stürzt und bewusstlos ist. Er funkt an den Truppführer:
+
+</ExampleBox>
 
 _„Linke Flanke ein Ausfall, Kat. Rot - kommen.“_
 
@@ -41,11 +53,11 @@ Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha
 Hilfeleistung
 -------------
 
-Der Standardkeybind zum Öffnen des Medical Menu ist H. Dabei muss man den Patienten ansehen. **Achtung:** Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
+Der Standardkeybind zum Öffnen des <Tooltip image="{ace_medical_menu}">Medical Menu</Tooltip> ist H. Dabei muss man den Patienten ansehen. **Achtung:** Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
 
 ### Lesen des Medical Menus
 
-[![ACE Medical Menu](/_app/immutable/assets/ace_medical_menu-a8800967.png)](/_app/immutable/assets/ace_medical_menu-a8800967.png)
+![ACE Medical Menu]({ace_medical_menu})
 
 *   Spalte **Status**: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.
 *   Spalte **Overview**: Hier sieht man die Verwundungen des ausgewählten Körperteils.
@@ -92,7 +104,7 @@ Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. _Die Bergung mus
 
 Eine Kurzübersicht liefert auch das nachfolgende Flowchart.
 
-[![Erste Hilfe, grundlegendes Flowchart](/_app/immutable/assets/erste_hilfe_basic-d5768872.png)](/_app/immutable/assets/erste_hilfe_basic-d5768872.png)
+![Erste Hilfe, grundlegendes Flowchart]({erste_hilfe_basic})
 
 Hinweis zur **Zyanose**: Ist kein Pulsoximeter zur Hand, kann man nach Anzeichen einer Zyanose (starken Sauerstoffmangels) suchen (_check cyanosis_). In der Praxis sind das bläuliche Lippen oder Fingerspitzen. Gibt es welche, ist die Sauerstoffsättigung des Blutes kritisch und man sollte sich den Atemwegen zuweden.
 
