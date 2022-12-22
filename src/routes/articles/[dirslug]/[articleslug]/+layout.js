@@ -30,9 +30,11 @@ export async function load({fetch}) {
         menu[key].entries.sort((a, b) => sortArticlesByNavIndex(a, b))
     }
 
-    let menuList = Array.from(menu)
-    menuList.sort((a, b) => sortDirectoriesByNavIndex(a, b))
+    let menuList = Object.keys(menu).map(function (key) {
+        return menu[key];
+    });
 
+    menuList.sort((a, b) => sortDirectoriesByNavIndex(a, b))
     return {
         posts: articles,
         menu: menuList,
