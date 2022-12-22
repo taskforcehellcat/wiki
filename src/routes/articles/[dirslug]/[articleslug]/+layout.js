@@ -7,7 +7,6 @@ function sortArticlesByNavIndex(a, b) {
 }
 
 function sortDirectoriesByNavIndex(a, b) {
-    console.log(a)
     if (!(a.config.nav_index && b.config.nav_index)) {
         return a.config.title.localeCompare(b.config.title)
     } else {
@@ -30,7 +29,6 @@ export async function load({fetch}) {
         menu[key].config = (await import(`../../../../content/${key}/metadata.js`)).config
         menu[key].entries.sort((a, b) => sortArticlesByNavIndex(a, b))
     }
-    console.log(menu)
 
     let menuList = Array.from(menu)
     menuList.sort((a, b) => sortDirectoriesByNavIndex(a, b))
