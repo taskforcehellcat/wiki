@@ -46,7 +46,7 @@
     <div id="main" data-theme={$themeId}>
         <div id="wiki">
             <nav>
-                <a href="/static" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki"/></a>
+                <a href="/" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki"/></a>
 
                 <button id="burgerMenu" on:click={() => (isOpen = !isOpen)} class:show={isOpen}>
                     {#if !isOpen}
@@ -71,7 +71,7 @@
                 </div>
                 <div class="nav__list-title">wiki</div>
                 <Nav menu={data.menu}/>
-                <a href="/static" id="return-button">Zurück</a>
+                <a href="/" id="return-button">Zurück</a>
             </nav>
 
             <div id="overlay" class:show={isOpen}>
