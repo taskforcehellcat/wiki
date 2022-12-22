@@ -110,12 +110,8 @@ The square brackets contain the text that is displayed and the round brackets co
 
 To link to a section on the same page, append `#` and the section name to the path.
 
-The following characters have to be replaced in order to create a valid link:
-
-Space becomes `_`, `ä` becomes `ae`, `ö` becomes `oe`, `ü` becomes `ue`, `ß` becomes `ss` and capital letters become lower case.
-
 ```markdown
-[Sanitäter](../sanitaetsdienst/sanitaeter#ausruestung)
+[Sanitäter](../sanitaetsdienst/sanitaeter#ausrüstung)
 ```
 
 To link to an external page, use the following syntax:
