@@ -2,12 +2,12 @@
 	"name": "sveltekit-template",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "python3 ./src/lib/search/searchIndexUpdater.py & vite dev",
+		"dev": "vite dev",
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"check": "svelte-check --tsconfig jsconfig.json",
+		"check:watch": "svelte-check --tsconfig jsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
@@ -36,6 +36,9 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/fira-mono": "^4.5.0",
-		"cookie": "^0.4.1"
+		"cookie": "^0.4.1",
+		"rehype-slug": "^5.1.0",
+		"svast-utils": "^0.0.5",
+		"svelte-parse": "^0.1.0"
 	}
 }

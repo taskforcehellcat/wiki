@@ -1,0 +1,21 @@
+---
+title: Richtschütze (Panzertruppen)
+date: "2022-11-15"
+---
+
+Rollenprofil
+------------
+
+Der Richtschütze bedient die Waffenanlage seines Fahrzeuges. Er untersteht dem auf seinem Fahrzeug aufgesessenem Kommandanten, der ihm im Verlauf eines Einsatzes eine Vielzahl an Anweisungen erteilen kann. Durch das Abfeuern der Waffensysteme nimmt er unmittelbar Einfluss auf das Gefechtsgeschehen. Aufgrund der Abwesenheit eines Ladeschützen bei der Mehrheit der gepanzerten Fahrzeugen nimmt lediglich der Richtschütze Einfluss auf die Munitionsart der Hauptbewaffnung.
+
+Aufgaben
+--------
+
+Das Aufgabenprofil eines Richtschützen kann je nach Fahrzeugklasse und Bewaffnung stark variieren, lässt sich aber in ein paar Punkten zusammenfassen.
+
+1.  Beobachtung eines zugewiesenen Feuerbereiches/der Hauptschussrichtung
+2.  Meldung feindlicher Kräfte entsprechend der REZ-Regel
+3.  Direkte Bekämpfung des Feindes durch geleitetes Feuern
+4.  Indirekte Bekämpfung des Feindes durch freies Feuern
+5.  Schussbeobachtung, Treffermeldung durchführen
+6.  Meldung über Status feindlicher Ziele
