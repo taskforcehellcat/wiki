@@ -29,7 +29,7 @@ These entries will be rendered as:
 
 ## Creating anchor tags
 
-(given [PR 21](https://github.com/Venrix/tfhc-wiki/pull/21) merged) If you want to link to a section using an anchor, use the section name for the anchor except for the following replacements:
+If you want to link to a section using an anchor, use the section name for the anchor except for the following replacements:
 Space becomes `_`, `ä` becomes `ae`, `ö` becomes `oe`, `ü` becomes `ue`, `ß` becomes `ss` and capital letters become lower case.
 
 E.g. if you want to link to the section `Funkgerät einstellen` on the page `Funketikette`, use `href="../funketikette#funkgeraet_einstellen"`.
