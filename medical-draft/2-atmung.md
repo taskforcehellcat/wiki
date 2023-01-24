@@ -31,9 +31,9 @@ Mittels _Examine And Treatment » Airway Management » (Kopf) Check Airways_ las
 - _Airways obstructed / occluded:_ Die Atemwege sind verstopft oder versperrt. Durch Überstrecken des Kopfes (_Hyperextend Head_) und ggf. mehrfaches Bewegen des Kopfes (_Head Turning_) können sie frei gemacht werden (erneut prüfen!).
 - _Medical Suction Needed:_ Mittels _Accuvac_ die Atemwege frei machen.
 
-_Achtung:_ Die stabile Seitenlage verhindert, dass die Atemwege erneut versperrt werden, etwa durch Rutschen der Zunge in den Hals. Es ist allerdings noch möglich, dass der Patient sich übergibt und das Erbrochene die Atemwege verstopft (siehe nötigenfalls (Ondansetron)[TODO: verlinken]). Außerdem macht die Seitenlage das Durchführen einer Herz-Lungen-Wiederbelebung unmöglich, sie muss dafür abgebrochen werden. Auch, wenn der Patient getragen oder gezogen wird, bricht die stabile Seitenlage ab.
+_Achtung:_ Die stabile Seitenlage verhindert, dass die Atemwege erneut versperrt werden, etwa durch Rutschen der Zunge in den Hals. Es ist allerdings noch möglich, dass der Patient sich übergibt und das Erbrochene die Atemwege verstopft (siehe nötigenfalls (Ondansetron)[TODO: verlinken]). Außerdem macht die Seitenlage das Durchführen einer Herz-Lungen-Wiederbelebung sowie einer Vielzahl weiterer Behandlungen unmöglich, sie muss dafür abgebrochen werden. Auch, wenn der Patient getragen, gezogen oder in ein Fahrzeug verlegt wird, bricht die stabile Seitenlage ab.
 
-_Hinweis:_ Mithilfe eines speziellen Tubus wie dem Guedel-Tubus oder des King Larynxtubus können die Atemwege auch beim Transport durch Ziehen oder Tragen offen gehalten werden.
+_Hinweis:_ Mithilfe eines speziellen Tubus wie dem Guedel-Tubus oder des King Larynxtubus können die Atemwege auch beim Transport durch Ziehen oder Tragen offen gehalten werden. Diese können nicht eingesetzt werden, während sich der Patient in stabiler Seitenlage befindet.
 
 ## Lungen
 
