@@ -55,8 +55,7 @@
 
 		<section id="Hilfeleistung">
 			<p>
-				Der Standardkeybind zum Öffnen des <span use:tooltip data-tooltip-img="{ace_medical_menu}">Medical Menu</span>
-				ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
+				Der Standardkeybind zum Öffnen des Medical Menu	ist <kbd>H</kbd>. Dabei muss man den Patienten ansehen. <b>Achtung:</b> Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
 			</p>
 
 			<section id="Lesen des Medical Menus">
