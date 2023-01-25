@@ -1,3 +1,5 @@
+Diese Seite beschäftigt sich mit dem Aufrechterhalten der Atmung.
+
 Neben dem Blutkreislauf ist das Sicherstellen der Sauerstoffversorgung oberste Priorität. Sie kann abreißen, wenn entweder die Atemwege versperrt sind oder die Lungen des Patienten verletzt wurden.
 
 # Diagnose
