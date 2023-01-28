@@ -40,6 +40,6 @@ Fertigkeiten
 Schützen müssen die grundlegendsten und damit wichtigsten Fertigkeiten beherrschen, auf die viele andere Rollen aufbauen. Dazu zählen folgende Punkte:
 
 *   Kenntnisse über Formationen und Bewegung im Feld
-*   Beherrschung der [Ersten Hilfe](../erstehilfe) zur Selbst- und Fremdversorgung
-*   Beherrschung der [Funketikette](../funketikette)
-*   Kenntnisse zur [Bedienung von Handfeuerwaffen](../steuerung)
+*   Beherrschung der [Ersten Hilfe](/articles/ausbildung/erstehilfe) zur Selbst- und Fremdversorgung
+*   Beherrschung der [Funketikette](/articles/ausbildung/funketikette)
+*   Kenntnisse zur [Bedienung von Handfeuerwaffen](/articles/ausbildung/steuerung)

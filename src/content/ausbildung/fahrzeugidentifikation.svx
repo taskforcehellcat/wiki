@@ -1,12 +1,11 @@
 ---
 title: Fahrzeugidentifikation
-date: "2022-11-15"
+date: "2023-01-13"
 nav_index: 3
 ---
 
 <script lang="ts">
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
-
     import guide from '$lib/images/fahrzeuge/guide.png';
 </script>
 

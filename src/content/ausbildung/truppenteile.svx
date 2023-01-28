@@ -4,10 +4,15 @@ date: "2022-11-15"
 nav_index: 5
 ---
 
+<script>
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+</script>
+
+
 Einleitung
 ----------
 
-Innerhalb unserer Einheit gibt es klare Festlegungen von Truppenteilen. Diese sind hilfreich, um zum Beispiel schnell und effizient über eigene oder feindliche Kräfte zu informieren. Sie werden auf dieser Seite näher erläutert.
+Innerhalb unserer Einheit gibt es klare Festlegungen von <Tooltip text="Die Anzahl von Soldaten">Truppenteilen</Tooltip>. Diese sind hilfreich, um zum Beispiel schnell und effizient über eigene oder feindliche Kräfte zu informieren. Sie werden auf dieser Seite näher erläutert.
 
 Buddyteam
 ---------
@@ -24,11 +29,11 @@ Eine besondere Form des Trupps ist der Panzergrenadiertrupp, der gemeinsam mit e
 Gruppe
 ------
 
-Die Gruppe ist eine taktische Einheit, die sich aus **acht bis zwölf Soldaten** zusammensetzt. Grundsätzlich besteht eine Gruppe aus einem Gruppenführer, einem stellvertretenden Gruppenführer und weiteren Soldaten. Oft teilen sich Gruppen in zwei Halbgruppen, um die Bewegung im Feld besser zu koordinieren und sich gegenseitig zu decken. Die beiden Halbgruppen werden vom Gruppenführer und dem stellvertretenden Gruppenführer geführt.
+Die Gruppe ist eine taktische Einheit, die sich aus **acht bis zwölf Soldaten** zusammensetzt. Grundsätzlich besteht eine Gruppe aus einem Gruppenführer, einem stellvertretenden Gruppenführer und weiteren Soldaten. Oft teilen sich Gruppen in zwei <Tooltip text="Angriff- und Deckungstrupp">Halbgruppen</Tooltip>, um die Bewegung im Feld besser zu koordinieren und sich gegenseitig zu decken. Die beiden Halbgruppen werden vom Gruppenführer und dem stellvertretenden Gruppenführer geführt.
 
 Zug
 ---
 
-Der Zug ist eine taktische Einheit, die sich aus **drei Gruppen und einem Zugtrupp** zusammensetzt. Der Zugtrupp wird vom Zugführer geführt, der gleichzeitig die restlichen Gruppen des Zuges befehligt. Die drei Gruppen des Zuges werden jeweils von einem Gruppenführer geführt, die dem Zugführer unterstellt sind.
+Der Zug ist eine taktische Einheit, die sich aus **<Tooltip text="circa vierzig Soldaten">drei Gruppen und einem Zugtrupp</Tooltip>** zusammensetzt. Der Zugtrupp wird vom Zugführer geführt, der gleichzeitig die restlichen Gruppen des Zuges befehligt. Die drei Gruppen des Zuges werden jeweils von einem Gruppenführer geführt, die dem Zugführer unterstellt sind.
 
 Bei den Panzertruppen wird unter einem Zug eine Zusammensetzung aus vier gepanzerten Fahrzeugen verstanden, zum Beispiel vier Kampfpanzer oder vier Schützenpanzer. Der Zugführer befindet sich dabei selbst aufgesessen auf einem der vier Fahrzeuge.

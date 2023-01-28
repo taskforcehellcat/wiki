@@ -6,6 +6,7 @@ nav_index: 4
 
 <script>
     import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
 </script>
 
 
@@ -38,7 +39,7 @@ In diesem Punkt wird über die Lage eigener Kräfte informiert. Dabei wird auf d
 <ExampleBox>
 
     „_Ein mechanisierter Infanteriezug und ein Infanteriehalbzug der Task Force Hellcat befinden sich aktuell im
-    Verfügungsraum 5000 östlich von Kavala. Absicht des Zugführers ist der Angriff in **drei** Phasen. In **Phase 1**
+    Verfügungsraum <Tooltip text="Meter">5000</Tooltip> östlich von Kavala. Absicht des Zugführers ist der Angriff in **drei** Phasen. In **Phase 1**
     nimmt der erste mechanisierte Halbzug den Südwesten Kavalas, der zweite mechanisierte Halbzug den Nordosten Kavalas.
     In **Phase 2** verteidigt der erste mechanisierte Halbzug den Südwesten Kavalas, der zweite mechanisierte Halbzug
     verteidigt den Nordosten Kavalas. In **Phase 3** nimmt der Infanteriehalbzug das Zentrum Kavalas. Absicht des
@@ -59,7 +60,7 @@ In diesem Punkt wird über die Lage von Zivilisten im Operationsraum informiert.
 
 ### 2\. Auftrag
 
-In diesem Punkt erfolgt eine knappe Darlegung des eigenen Auftrags. Das geschieht in Form einer stichpunktartigen Aufzählung, was erledigt werden muss. Hauptsächlich wird dieser Punkt auf Zugebene besprochen.
+In diesem Punkt erfolgt eine knappe Darlegung des eigenen <Tooltip text="z.B. eines Zuges oder einer Gruppe">Auftrags</Tooltip>. Das geschieht in Form einer stichpunktartigen Aufzählung, was erledigt werden muss. Hauptsächlich wird dieser Punkt auf Zugebene besprochen.
 
 <ExampleBox>
 
@@ -69,7 +70,7 @@ In diesem Punkt erfolgt eine knappe Darlegung des eigenen Auftrags. Das geschieh
 
 ### 3\. Durchführung
 
-In diesem Punkt werden die Einzelaufträge der unterstellten Truppenteile erläutert. Dabei geht der Zug- bzw. Gruppenführer genauer auf die Vorgehensweise bei der Erfüllung des Auftrages ein. Zusätzlich können hier wichtige Zeiten oder Verhaltensweisen mitgeteilt werden.
+In diesem Punkt werden die Einzelaufträge der <Tooltip text="z.B. die Gruppen eines Zuges">unterstellten Truppenteile</Tooltip> erläutert. Dabei geht der Zug- bzw. Gruppenführer genauer auf die Vorgehensweise bei der Erfüllung des Auftrages ein. Zusätzlich können hier <Tooltip text="z.B. Funkkreiseröffnung">wichtige Zeiten</Tooltip> oder <Tooltip text="z.B. Einsatz von gelenkten Raketen nur auf Befehl">Verhaltensweisen</Tooltip> mitgeteilt werden.
 
 <ExampleBox>
 
@@ -83,7 +84,7 @@ In diesem Punkt werden die Einzelaufträge der unterstellten Truppenteile erläu
 
 ### 4.1) Logistische Unterstützung
 
-In diesem Punkt wird über Maßnahmen und Einrichtungen der Versorgung informiert.
+In diesem Punkt wird über Maßnahmen und Einrichtungen der <Tooltip text="z.B. Munition und SanMat für Soldaten oder Instandhaltung der Fahrzeuge">Versorgung</Tooltip> informiert.
 
 <ExampleBox>
 
@@ -100,7 +101,7 @@ In diesem Punkt wird über Möglichkeiten der Versorgung verwundeter Kräfte inf
 
     „_Vorrangig erfolgt die Versorgung verwundeter Soldaten im Feld durch Selbst- und Kameradenhilfe. Jeder
     Panzergrenadiertrupp und beide Gruppen des Infanteriehalbzuges verfügen jeweils über einen Sanitäter. Für
-    medizinische Notfälle steht ein beweglicher Arzttrupp aufgesessen auf einem Unimog bereit._“
+    medizinische Notfälle steht ein <Tooltip text="kurz: BAT">beweglicher Arzttrupp</Tooltip> aufgesessen auf einem Unimog bereit._“
 
 </ExampleBox>
 
