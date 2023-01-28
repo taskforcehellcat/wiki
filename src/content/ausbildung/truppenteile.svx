@@ -1,7 +1,7 @@
 ---
 title: Truppenteile
 date: "2022-11-15"
-nav_index: 4
+nav_index: 5
 ---
 
 Einleitung
