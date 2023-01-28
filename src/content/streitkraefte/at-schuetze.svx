@@ -1,17 +1,48 @@
 ---
-title: AT-Schütze
-date: "2022-11-15"
+title: PA-Schütze
+date: "2023-01-28"
 nav_index: 4
 ---
+
+<script>
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+</script>
 
 Rollenprofil
 ------------
 
+Der PA-Schütze (engl. AT-Schütze) ist eine der grundlegenden Rollen der Infanterie. Die Rolle des PA-Schützen erfordert eine Fortbildung vom Schützen und ist für Anfänger geeignet. PA-Schützen werden in zwei Kategorien untergliedert: Leichte und schwere PA-Schützen, die sich in ihrer Ausrüstung und Anwendung unterscheiden.
+
 Aufgaben
 --------
+
+    ### Leichte PA-Schützen
+
+    Leichte PA-Schützen sind üblicherweise in Trupps und Gruppen der Infanterie eingegliedert und verfügen über leichte Panzerabwehrhandwaffen, die zur Bekämpfung von leichtgepanzerten Fahrzeugen und Gebäuden gedacht sind. Trotz ihrer Ausrüstung bleibt die Hauptaufgabe leichter PA-Schützen die Bekämpfung feindlicher Infanterie.
+    
+    ### Schwere PA-Schützen
+
+    Schwere PA-Schützen sind üblicherweise in Panzervernichtungstrupps anzutreffen und verfügen über schwere Panzerabwehrhandwaffen, die zur Bekämpfung von befestigten Stellungen und schwergepanzerten Fahrzeugen gedacht sind. Ihre Hauptaufgabe ist die Bekämpfung harter Ziele wie schwergepanzerte Fahrzeuge oder befestigte Stellungen.
+    
 
 Ausrüstung
 ----------
 
+Neben der Grundausrüstung eines Schützen verfügen PA-Schützen zusätzlich über die Panzerabwehrhandwaffe und die dazugehörige Munition. Panzerabwehrhandwaffen verfügen oftmals über unterschiedliche Munitionsarten, dabei sind die zwei grundlegenden Munitionsarten panzerbrechende Munition und hochexplosive Munition, wobei erstere zur Bekämpfung von harten Zielen und letztere zur Bekämpfung von weichen Zielen und Infanterie gedacht ist.
+
+    ### Leichte PA-Schützen
+
+    Zu den leichten Panzerabwehrhandwaffen zählen unter anderem die deutsche Panzerfaust 3, die amerikanische AT4 oder russische RPG-7.
+
+    ### Schwere PA-Schützen
+
+    Zu den schweren Panzerabwehrhandwaffen zählen unter anderem die amerikanische Javelin oder die schwedische NLAW. Aufgrund des Gewichts der schweren Panzerabwehrhandwaffen und der dazugehörigen Munition gehört zu einem schweren PA-Schützen meist ein Assistent, der zusätzlich Munition für die Panzerabwehrhandwaffe trägt.
+
 Fertigkeiten
 ------------
+
+Von einem neuen PA-Schützen werden folgende Fertigkeiten erwartet:
+
+* Ein stationäres Ziel sollte innerhalb der effektiven Reichweite der Panzerabwehrhandwaffe getroffen werden
+* Die Schadenswirkung der Panzerabwehrhandwaffe und der Munition sollte bekannt sein
+* In einer <Tooltip text="z.B.: Vorgesetzter ist ausgefallen und feindliches Fahrzeug stellt große Bedrohung für eigene Kräfte dar">Notsituation</Tooltip> selbstständig aktiv werden
