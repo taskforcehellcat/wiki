@@ -25,7 +25,7 @@ Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges un
 Fertigkeiten
 ------------
 
-Die Kommandanten der Panzertruppen müssen eine handvoll Fertigkeiten beherrschen, um ihr Fahrzeug möglichst sicher und effizient ins Gefecht zu führen. Diese Fertigkeiten tragen dazu bei die Übersicht zu behalten und Gefahrensituation einschätzen zu können, wodurch ein reibungsloser Einsatz gewährleistet werden kann.
+Die Kommandanten der Panzertruppen müssen eine handvoll Fertigkeiten beherrschen, um ihr Fahrzeug möglichst sicher und effizient ins Gefecht zu führen. Diese Fertigkeiten tragen dazu bei, die Übersicht zu behalten und Gefahrensituation einschätzen zu können, wodurch ein reibungsloser Einsatz gewährleistet werden kann.
 
 1.  Die Beherrschung und Einhaltung der Funketikette
 2.  Erweiterte Kenntnisse über eigene und feindliche Fahrzeuge
