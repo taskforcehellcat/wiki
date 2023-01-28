@@ -4,6 +4,14 @@ date: "2022-11-15"
 nav_index: 2
 ---
 
+<script lang="ts">
+    import alphabet from '$lib/images/funketikette/alphabet.png';
+    import funk_aceself from '$lib/images/funketikette/funk_aceself.png';
+    import sem52sl from '$lib/images/funketikette/sem52sl.png';
+    import kbd from '$lib/wikitools/KBD.svelte';
+    import KBD from "$lib/wikitools/KBD.svelte";
+</script>
+
 Einleitung
 ----------
 
@@ -14,21 +22,21 @@ Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach S
 Steuerung
 ---------
 
-Über die ACE Self-Interaction (LCTRL+WIN/LCTRL+LCMD) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe [Funkgerät einstellen](#funkgeraet_einstellen)). Die Unterpunkte werden im Folgenden erklärt.
+Über die ACE Self-Interaction (<KBD>LCTRL</KBD>+<KBD>WIN</KBD>/<KBD>LCTRL</KBD>+<KBD>LCMD</KBD>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe [Funkgerät einstellen](#funkgeraet_einstellen)). Die Unterpunkte werden im Folgenden erklärt.
 
-[![Radioauswahl in der ACE Self Interaction](/_app/immutable/assets/funk_aceself-33a9f4b3.png)](/_app/immutable/assets/funk_aceself-33a9f4b3.png)
+![Radioauswahl in der ACE Self Interaction]({funk_aceself})
 
 ### Funkgerät einstellen
 
 #### SEM 52 SL
 
-Infanterie ist zumeist mit dem Funkgerät _SEM 52 SL_ ausgerüstet, deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehknöpfen und einer Anzeige. Letztere zeigt die aktuell genutze Frequenz in kHz (Kilohertz), standardmäßig sind 46 MHz eingestellt. Die Drehknöpfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt.
+Infanterie ist zumeist mit dem Funkgerät _SEM 52 SL_ ausgerüstet, deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehknöpfen und einer Anzeige. Letztere zeigt die aktuell genutzte Frequenz in kHz (Kilohertz), standardmäßig sind 46 MHz eingestellt. Die Drehknöpfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt.
 
 Der linke Drehknopf dient neben dem Einschalten dem Auswählen von Voreinstellungen. Die zwölf standardmäßigen Voreinstellungen bezeichnen wir auch als Kanäle. Die Einstellungen P und H dienen der Programmierung des Funkgeräts, was im Allgemeinen aber nicht notwendig werden sollte.
 
-Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man dafür ohne das Funkgerät öffnen zu müssen die Taste CAPS LOCK).
+Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man dafür ohne das Funkgerät öffnen zu müssen die Taste <KBD>CAPS LOCK</KBD>).
 
-[![Oberfläche der SEM 52 SL](/_app/immutable/assets/sem52sl-10056415.png)](/_app/immutable/assets/sem52sl-10056415.png)
+![Oberfläche der SEM 52 SL]({sem52sl})
 
 Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkgeräten finden sich auch in englischer Sprache im [ACRE Wiki](https://acre2.idi-systems.com/wiki/radios/overview).
 
@@ -42,7 +50,7 @@ Je nach Präferenz kann man ein Funkgerät auf das rechte, linke oder beide Ohre
 
 Die Option „share“ ermöglicht es, mit einer anderen Person das Funkgerät zu teilen, solange sie in der Nähe ist, ohne dafür das Funkgerät aus dem Inventar geben zu müssen.
 
-Führt man mehrere Funkgeräte, gibt es zudem die Option „PPT“. Mit dem Funkgerät PPT1 funkt man mit CAPS LOCK, über PPT2 mit SHIFT+CAPS LOCK und über PPT3 mit ALT+CAPS LOCK.
+Führt man mehrere Funkgeräte, gibt es zudem die Option „PPT“. Mit dem Funkgerät PPT1 funkt man mit <KBD>CAPS LOCK</KBD>, über PPT2 mit SHIFT+<KBD>CAPS LOCK</KBD> und über PPT3 mit <KBD>ALT</KBD>+<KBD>CAPS LOCK</KBD>.
 
 Vor dem Funken
 --------------
@@ -77,7 +85,7 @@ Da die Windrichtungen Osten und Westen sehr ähnlich klingen, spricht man die er
 
 Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei guter Verbindung kaum zu verstehen. Wir verwenden daher zum Buchstabieren das NATO-Alphabet.
 
-[![NATO-Buchstabiertafel](/_app/immutable/assets/alphabet-ac058a88.png)](/_app/immutable/assets/alphabet-ac058a88.png)
+![NATO-Buchstabiertafel]({alphabet})
 
 Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.
 
@@ -106,5 +114,5 @@ Grundsätzlich herrscht während eines laufenden Austausches Funkstille für all
 Weiterführende Informationen
 ----------------------------
 
-*   [Sanitäterfunk](../sanitaeterfunk)
-*   Funk der Panzertruppen (wip)
+*   [Sanitäterfunk](/articles/sanitaetsdienst/sanitaeterfunk)
+*   [Funk der Panzertruppen (wip)](/)

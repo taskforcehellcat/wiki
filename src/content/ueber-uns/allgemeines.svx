@@ -1,6 +1,6 @@
 ---
 title: Allgemeines
-date: "202222211-12-14"
+date: "22.06.2022"
 nav_index: 1
 ---
 
@@ -11,7 +11,10 @@ nav_index: 1
 Beschreibung
 ------------
 
-Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation [ArmA 3](https://de.wikipedia.org/wiki/Arma_3) spielt. Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt. Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden. Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit zu sorgen.
+Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation [ArmA 3](https://de.wikipedia.org/wiki/Arma_3) spielt.
+Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt.
+Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden.
+Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit zu sorgen.
 
 Organisation
 ------------
