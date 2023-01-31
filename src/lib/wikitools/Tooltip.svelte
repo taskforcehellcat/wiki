@@ -41,7 +41,6 @@
 <style lang="scss">
   [data-tooltip] {
     position: relative;
-    margin-right: -3pt;
 
     &:after {
       position: absolute;
