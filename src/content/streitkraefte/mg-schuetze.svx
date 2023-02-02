@@ -17,7 +17,7 @@ Der <Tooltip text="Maschinengewehr">MG</Tooltip>-Schütze ist eine der grundlege
 Aufgaben
 --------
 
-MG-Schützen haben ein relativ simples Aufgabenprofil, das allerdings von großer Bedeutung für den infanteristischen Kampf ist. Neben den Aufgaben eines Schützen sind die des MG-Schützen unter anderem:
+MG-Schützen haben ein relativ simples Aufgabenprofil, das allerdings von großer Bedeutung für den infanteristischen Kampf ist. Zusätzliche Aufgaben der MG-Schützen neben denen der Schützen sind unter anderem:
 
 * Feuerüberlegenheit herstellen
 * Niederhaltungs-/Sperrfeuer geben
@@ -29,11 +29,11 @@ Neben der Grundausrüstung eines Schützen verfügen MG-Schützen über ein Masc
 
 ### Leichte Maschinengewehre
 
-Zu den leichten Maschinengewehren zählen unter anderem das deutsche MG5, das amerikanische M249 und das russische PKM. Diese Waffen können in der Hand mitgeführt und durch einen einzigen Soldaten bedient werden. Leichte Maschinengewehre verschießen Kaliber wie 5,56x45 mm oder 7,62x51 mm NATO und haben eine hohe Feuerkadenz.
+Zu den leichten Maschinengewehren zählen unter anderem das deutsche MG5, das amerikanische M249 und das russische PKM. Diese Waffen können in der Hand mitgeführt und durch einen einzigen Soldaten bedient werden. Leichte Maschinengewehre verschießen Kaliber wie 5,56x45 mm oder 7,62x51 mm NATO und haben eine hohe <Tooltip text="Schussfrequenz oder auch Schusskadenz">Feuerrate</Tooltip>.
 
 ### Schwere Maschinengewehre
 
-Zu den schweren Maschinengewehren zählen unter anderem das amerikanische M2 und das russische DShK. Diese Waffen werden aufgrund ihres Gewichtes hauptsächlich stationär auf einem Dreibein oder auf dem Dach eines Fahrzeugs montiert eingesetzt. Alternativ müssten sie demontiert in zwei Rucksäcken durch das Feld getragen werden, wodurch sie sich bei der Infanterie eher zu defensiven Zwecken eignen. Diese Waffen verschießen Kaliber wie 12,7x99 mm NATO oder 12,7x108 mm und haben eine niedrigere Feuerkadenz als leichte Maschinengewehre, dafür aber eine höhere effektive Reichweite und hohe Durchschlagskraft, die zur Bekämpfung von leichtgepanzerten Fahrzeugen eingesetzt werden kann.
+Zu den schweren Maschinengewehren zählen unter anderem das amerikanische M2 und das russische DShK. Diese Waffen werden aufgrund ihres Gewichtes hauptsächlich stationär auf einem Dreibein oder auf dem Dach eines Fahrzeugs montiert eingesetzt. Alternativ müssten sie demontiert in zwei Rucksäcken durch das Feld getragen werden, wodurch sie sich bei der Infanterie eher zu defensiven Zwecken eignen. Diese Waffen verschießen Kaliber wie 12,7x99 mm NATO oder 12,7x108 mm und haben eine niedrigere Feuerrate als leichte Maschinengewehre, dafür aber eine höhere effektive Reichweite und hohe Durchschlagskraft, die zur Bekämpfung von leichtgepanzerten Fahrzeugen eingesetzt werden kann.
 
 Fertigkeiten
 ------------
