@@ -1,5 +1,6 @@
 ---
-title: Kommandant
+title: Kommandant (Panzertruppen)
+title_short: Kommandant
 date: "2022-11-15"
 nav_index: 1
 ---

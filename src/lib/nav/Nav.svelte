@@ -11,6 +11,17 @@
 			activeNav = nav_id;
 		}
 	}
+
+	function shortName(article) {
+		/*
+			returns the articles short title if there is one set
+		*/
+		
+		if (article.meta.title_short) {
+			return article.meta.title_short;
+		}
+		return article.meta.title;
+	}
 </script>
 
 <div id="nav__list">
@@ -21,7 +32,7 @@
                 <i class="material-icons-round noselect">expand_more</i>
 			</span>
             {#each nav.entries as article}
-                <a href="/articles/{nav.id}/{article.id}">{article.meta.title}</a>
+                <a href="/articles/{nav.id}/{article.id}">{shortName(article)}</a>
             {/each}
         </div>
     {/each}
