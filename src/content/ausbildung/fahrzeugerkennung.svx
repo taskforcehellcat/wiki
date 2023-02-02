@@ -1,6 +1,5 @@
 ---
-title: Fahrzeugidentifikation
-title_short: Fahrzeuge
+title: Fahrzeugerkennung
 date: "2023-01-13"
 nav_index: 3
 ---
