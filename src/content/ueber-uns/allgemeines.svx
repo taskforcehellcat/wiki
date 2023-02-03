@@ -43,6 +43,6 @@ Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die Möglichkeit unsere 
 
 ## Struktur
 
-Die Task Force Hellcat ist in drei Abteilungen untergliedert, die verschiedene Truppengattungen umfassen. Jede Abteilung wird von einem eigenen Abteilungsleiter verwaltet und organisiert. Weitere Informationen und Erklärungen zu den Truppengattungen können [hier](/articles/abteilungen) eingesehen werden.
+Die Task Force Hellcat ist in drei Abteilungen untergliedert, die verschiedene Truppengattungen umfassen. Jede Abteilung wird von einem eigenen Abteilungsleiter verwaltet und organisiert. Weitere Informationen und Erklärungen zu den Truppengattungen können [hier](/articles/ueber-uns/abteilungen) eingesehen werden.
 
 ![Task Force Hellcat Struktur]({tfhc_struktur})
