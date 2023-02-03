@@ -1,27 +1,25 @@
-import {error} from "@sveltejs/kit";
+import { error } from '@sveltejs/kit';
 
 /** @type {import('./$types').PageLoad} */
-export async function load({params}) {
-    const articleslug = params["articleslug"]
-    const dirslug = params["dirslug"]
+export async function load({ params }) {
+  const articleslug = params['articleslug'];
+  const dirslug = params['dirslug'];
 
-    let post;
+  let post;
 
-    try {
-        post = await import(
-            `../../../../content/${dirslug}/${articleslug}.svx`
-            )
-    } catch (e) {
-        throw error(404, 'Not found');
-    }
+  try {
+    post = await import(`../../../../content/${dirslug}/${articleslug}.svx`);
+  } catch (e) {
+    throw error(404, 'Not found');
+  }
 
-    const {title, date, nav_index} = post.metadata
-    const Content = post.default
+  const { title, date, nav_index } = post.metadata;
+  const Content = post.default;
 
-    return {
-        Content,
-        title,
-        date,
-        nav_index,
-    }
+  return {
+    Content,
+    title,
+    date,
+    nav_index
+  };
 }

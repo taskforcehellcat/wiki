@@ -1,92 +1,92 @@
 <script lang="ts">
-    import '../../../../app.scss';
-    import {themeId} from '$lib/theme/stores';
+  import '../../../../app.scss';
+  import { themeId } from '$lib/theme/stores';
 
-    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
-    // --- themes ---
-    import Theme from '$lib/theme/Theme.svelte';
+  import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
+  // --- themes ---
+  import Theme from '$lib/theme/Theme.svelte';
 
-    // --- burger menu ---
-    import OpenMenuSVG from '$lib/burgermenu/openMenu.svelte';
-    import CloseMenuSVG from '$lib/burgermenu/closeMenu.svelte';
-    import Nav from '$lib/nav/Nav.svelte';
+  // --- burger menu ---
+  import OpenMenuSVG from '$lib/burgermenu/openMenu.svelte';
+  import CloseMenuSVG from '$lib/burgermenu/closeMenu.svelte';
+  import Nav from '$lib/nav/Nav.svelte';
 
-    // --- id conversions ---
-    import {linkify} from '$lib/helpers.js';
-    import {afterUpdate, onMount} from "svelte";
-    import {browser} from "$app/environment";
+  // --- id conversions ---
+  import { linkify } from '$lib/helpers.js';
+  import { afterUpdate, onMount } from 'svelte';
+  import { browser } from '$app/environment';
 
-    let isOpen = false;
-    export let anchors = [];
+  let isOpen = false;
+  export let anchors = [];
 
-    afterUpdate(() => {
-        let tempAnchors = []
-        if (browser) {
-            document.querySelectorAll('h2').forEach((element) => {
-                tempAnchors.push({
-                    text: element.innerText,
-                    link: '#' + element.id
-                });
-            });
-            anchors = tempAnchors
-        }
-    })
+  afterUpdate(() => {
+    let tempAnchors = [];
+    if (browser) {
+      document.querySelectorAll('h2').forEach((element) => {
+        tempAnchors.push({
+          text: element.innerText,
+          link: '#' + element.id
+        });
+      });
+      anchors = tempAnchors;
+    }
+  });
 
-    onMount(async () => {
-        if (location.hash) {
-            document.querySelector(location.hash).scrollIntoView();
-        }
-    });
+  onMount(async () => {
+    if (location.hash) {
+      document.querySelector(location.hash).scrollIntoView();
+    }
+  });
 
-    /** @type {import('./$types').LayoutData} */
-    export let data;
+  /** @type {import('./$types').LayoutData} */
+  export let data;
 </script>
 
 {#if $themeId}
-    <div id="main" data-theme={$themeId}>
-        <div id="wiki">
-            <nav>
-                <a href="/" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki"/></a>
+  <div id="main" data-theme={$themeId}>
+    <div id="wiki">
+      <nav>
+        <a href="/" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a>
 
-                <button id="burgerMenu" on:click={() => (isOpen = !isOpen)} class:show={isOpen}>
-                    {#if !isOpen}
-                        <OpenMenuSVG/>
-                    {:else}
-                        <CloseMenuSVG/>
-                    {/if}
-                </button>
+        <button id="burgerMenu" on:click={() => (isOpen = !isOpen)} class:show={isOpen}>
+          {#if !isOpen}
+            <OpenMenuSVG />
+          {:else}
+            <CloseMenuSVG />
+          {/if}
+        </button>
 
-                <!-- navigation items -->
-                <div class="nav__list-title">navigation</div>
-                <div id="nav__list-wrapper">
-                    <div id="nav__list-bar">
-                        <!-- <div id="nav__list-bar-thumb" /> -->
-                    </div>
+        <!-- navigation items -->
+        <div class="nav__list-title">navigation</div>
+        <div id="nav__list-wrapper">
+          <div id="nav__list-bar">
+            <!-- <div id="nav__list-bar-thumb" /> -->
+          </div>
 
-                    <div id="wiki-nav__list">
-                        {#each anchors as anchor}
-                            <a href={linkify(anchor.link)}>{anchor.text}</a>
-                        {/each}
-                    </div>
-                </div>
-                <div class="nav__list-title">wiki</div>
-                <Nav menu={data.menu}/>
-                <a href="/" id="return-button">Zurück</a>
-            </nav>
-
-            <div id="overlay" class:show={isOpen}>
-                {#each anchors as anchor}
-                    <a href={linkify(anchor.link)} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
-                {/each}
-            </div>
-
-            <main id="content">
-                <Wipbanner/>
-                <Theme/>
-                <slot/>
-            </main>
+          <div id="wiki-nav__list">
+            {#each anchors as anchor}
+              <a href={linkify(anchor.link)}>{anchor.text}</a>
+            {/each}
+          </div>
         </div>
+        <div class="nav__list-title">wiki</div>
+        <Nav menu={data.menu} />
+        <a href="/" id="return-button">Zurück</a>
+      </nav>
+
+      <div id="overlay" class:show={isOpen}>
+        {#each anchors as anchor}
+          <a href={linkify(anchor.link)} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
+        {/each}
+      </div>
+
+      <main id="content">
+        <Wipbanner />
+        <Theme />
+        <slot />
+      </main>
     </div>
+  </div>
 {/if}
 
 <style lang="scss">

@@ -1,41 +1,41 @@
 <script>
-    export let isHovered = false;
-    export let image;
-    export let text = '';
+  export let isHovered = false;
+  export let image;
+  export let text = '';
 
-    let x;
-    let y;
+  let x;
+  let y;
 
-    function mouseOver(event) {
-        isHovered = true;
-        x = event.pageX + 5;
-        y = event.pageY + 5;
-    }
+  function mouseOver(event) {
+    isHovered = true;
+    x = event.pageX + 5;
+    y = event.pageY + 5;
+  }
 
-    function mouseMove(event) {
-        x = event.pageX + 5;
-        y = event.pageY + 5;
-    }
+  function mouseMove(event) {
+    x = event.pageX + 5;
+    y = event.pageY + 5;
+  }
 
-    function mouseLeave() {
-        isHovered = false;
-    }
+  function mouseLeave() {
+    isHovered = false;
+  }
 </script>
 
-<svelte:window on:resize={mouseLeave}></svelte:window>
+<svelte:window on:resize={mouseLeave} />
 
 <span on:mouseover={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove} data-tooltip>
-    <slot/>
+  <slot />
 </span>
 
 {#if isHovered}
-    <div style="top: {y}px; left: {x}px;" class="tooltip">
-        {#if image}
-            <img style='max-width: 100%;' src="{image}" alt="">
-        {:else}
-            {text}
-        {/if}
-    </div>
+  <div style="top: {y}px; left: {x}px;" class="tooltip">
+    {#if image}
+      <img style="max-width: 100%;" src={image} alt="" />
+    {:else}
+      {text}
+    {/if}
+  </div>
 {/if}
 
 <style lang="scss">

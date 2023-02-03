@@ -1,5 +1,5 @@
 <kbd>
-    <slot></slot>
+  <slot />
 </kbd>
 
 <style lang="scss">

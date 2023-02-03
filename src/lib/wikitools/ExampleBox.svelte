@@ -1,22 +1,22 @@
 <script>
-    export let isOpen = false;
-    export let title = 'Beispiel:'
-    import {slide} from 'svelte/transition';
+  export let isOpen = false;
+  export let title = 'Beispiel:';
+  import { slide } from 'svelte/transition';
 
-    const toggleOpen = () => isOpen = !isOpen
+  const toggleOpen = () => (isOpen = !isOpen);
 </script>
 
 <div class="example-box">
-    <div class="example-box-header noselect" aria-expanded="{isOpen}" on:click={toggleOpen} role="presentation">
-        <span>{title}</span>
-        <span class="material-icons">
-            {#if isOpen}remove{:else}add{/if}
-        </span>
-    </div>
+  <div class="example-box-header noselect" aria-expanded={isOpen} on:click={toggleOpen} role="presentation">
+    <span>{title}</span>
+    <span class="material-icons">
+      {#if isOpen}remove{:else}add{/if}
+    </span>
+  </div>
 
-    <div class="example-box-content" transition:slide class:show={isOpen}>
-        <slot></slot>
-    </div>
+  <div class="example-box-content" transition:slide class:show={isOpen}>
+    <slot />
+  </div>
 </div>
 
 <style lang="scss">

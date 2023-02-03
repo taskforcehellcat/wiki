@@ -1,4 +1,4 @@
 export const config = {
-    nav_index: 5,
-    title: "Panzertruppen",
-}
+  nav_index: 5,
+  title: 'Panzertruppen'
+};
