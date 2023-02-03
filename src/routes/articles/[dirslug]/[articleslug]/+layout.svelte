@@ -81,7 +81,7 @@
       </div>
 
       <main id="content">
-        <Wipbanner />
+        <!-- <Wipbanner /> -->
         <Theme />
         <slot />
       </main>
