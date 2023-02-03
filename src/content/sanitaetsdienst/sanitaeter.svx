@@ -1,39 +1,35 @@
 ---
 title: Sanitäter
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 1
 ---
 
 _„Air goes in and out, blood goes round and round. Any deviation from that is a problem.“_
 
-Rollenprofil
-------------
+## Rollenprofil
 
 Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen, oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Anwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung Ausfälle zu kommunizieren und bei der Bereitstellung von [MEDEVAC](../medevac)s mitzuwirken.
 
-Ausrüstung
-----------
+## Ausrüstung
 
-*   Verbrauchsmaterialien:
-*   [Medikamente](../medikationen)
-*   Bandagen: siehe [hier](../behandlungen#bandagen)
-*   sonstiges [Verschleißmaterial](#verbrauchsmaterialien), etwa Kanülen, Infusionen, Kits, etc.
-*   Rauchgranaten
-*   Gebrauchsgegenstände
-*   [medizinischer Art](#gebrauchsgegenstaende)
-*   Fernglas
-*   Funkgerät
-*   Bewaffnung:
-*   eine Primärwaffe zur Selbstverteidigung auf kurze bis mittlere Distanzen
-*   ggf. eine Sekundärwaffe
+- Verbrauchsmaterialien:
+- [Medikamente](../medikationen)
+- Bandagen: siehe [hier](../behandlungen#bandagen)
+- sonstiges [Verschleißmaterial](#verbrauchsmaterialien), etwa Kanülen, Infusionen, Kits, etc.
+- Rauchgranaten
+- Gebrauchsgegenstände
+- [medizinischer Art](#gebrauchsgegenstaende)
+- Fernglas
+- Funkgerät
+- Bewaffnung:
+- eine Primärwaffe zur Selbstverteidigung auf kurze bis mittlere Distanzen
+- ggf. eine Sekundärwaffe
 
-Fähigkeiten
------------
+## Fähigkeiten
 
 Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](../erstehilfe) und [Funketikette](../funketikette) auch die [fortgeschrittenen Behandlungen](../behandlungen), welche andere Soldaten nicht leisten können. Außerdem können sie Ausfälle adäquat melden und beherrschen die Besonderheiten des [Sanitäterfunks](../sanitaeterfunk).
 
-Verbrauchsmaterialien
----------------------
+## Verbrauchsmaterialien
 
 Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.
 
@@ -57,8 +53,7 @@ eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird ben�
 
 _First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.
 
-Gebrauchsgegenstände
---------------------
+## Gebrauchsgegenstände
 
 Die folgenden Gegenstände sind zur Mehrfachverwendung geeignet.
 
@@ -88,11 +83,10 @@ _Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe 
 
 erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes (engl. _saturation peripher O₂_, SpO₂). Siehe auch Abschnitt [Vitalparameter](behandlungen#vitalparameter).
 
-Nützliche Hinweise
-------------------
+## Nützliche Hinweise
 
-*   Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, 0 und H auf Maustasten zu legen, oder ähnliches.
-*   G liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter G für Granaten zu unbinden und stattdessen zum Beispiel SHIFTG zu verwenden.
-*   Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.
-*   Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.
-*   die [empfohlenen Routinechecks](../behandlungen#empfohlene_routinechecks)
+- Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, 0 und H auf Maustasten zu legen, oder ähnliches.
+- G liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter G für Granaten zu unbinden und stattdessen zum Beispiel SHIFTG zu verwenden.
+- Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.
+- Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.
+- die [empfohlenen Routinechecks](../behandlungen#empfohlene_routinechecks)

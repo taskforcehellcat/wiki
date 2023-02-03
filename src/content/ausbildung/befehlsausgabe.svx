@@ -1,6 +1,6 @@
 ---
 title: Befehlsausgabe
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 4
 ---
 
@@ -9,14 +9,11 @@ nav_index: 4
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
 </script>
 
-
-Einleitung
-----------
+## Einleitung
 
 Die Befehlsausgabe erfolgt nach der Gliederung, Lage, Auftrag, Durchführung, Einsatzunterstützung und Führungsunterstützung (kurz LADEF). Diese Gliederung wird auf dieser Seite erläutert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage, Auftrag und Durchführung (kurz LAD), da die Punkte Einsatz- und Führungsunterstützung eher für Führungspersonal bedeutsam sind.
 
-Befehlsschema
--------------
+## Befehlsschema
 
 ### 1\. Lage
 

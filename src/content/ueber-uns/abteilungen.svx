@@ -1,16 +1,14 @@
 ---
 title: Abteilungen
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 2
 ---
 
-Allgemeines
------------
+## Allgemeines
 
 Die Task Force Hellcat ist in drei Abteilungen untergliedert, die jeweils durch einen Abteilungsleiter organisiert und verwaltet werden. Alle Abteilungen umfassen mehrere Truppengattungen, die auf dieser Seite erläutert werden.
 
-Streitkräfte
-------------
+## Streitkräfte
 
 Die Abteilung der Streitkräfte wird von Leon organisiert und verwaltet. Sie umfasst insgesamt vier Truppengattungen: Die (motorisierte) Infanterie, den Sanitätsdienst und die Aufklärung.
 
@@ -26,8 +24,7 @@ Der Sanitätsdienst setzt sich aus Sanitätern und Ärzten zusammen. Er wird von
 
 Die Aufklärung setzt sich aus Scharfschützen, Spottern und JTACs zusammen. Scharfschützen und Spotter sind meist im Trupp oder Buddy-Team zur Aufklärung oder Bekämpfung feindlicher Kräfte auf große Distanzen anzutreffen. JTACs sind entweder im Aufklärungstrupp oder in Infanteriegruppen vertreten. Ihre Hauptaufgabe ist die Koordinierung vom CAS auf feindliche Ziele.
 
-Panzertruppen
--------------
+## Panzertruppen
 
 Die Abteilung der Streitkräfte wird von Kevin organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen: Die mechanisierte Infanterie, die Kampfpanzer und die Artillerie. Alle Truppengattungen der Panzertruppen umfassen drei Rollen: Den Kommandanten, den Richtschützen und den Fahrer.
 
@@ -43,8 +40,7 @@ Die Soldaten der Kampfpanzer bedienen ausschließlich Fahrzeuge mit guter Panzer
 
 Die Artillerie setzt Panzerhaubitzen mit schweren Geschützen ein. Sie wirken auf große Distanz mittels gelenktem oder ungelenktem Steilfeuer auf feindliche Kräfte oder Stellungen. Um eine präzise Wirkung zu erzielen erfordert es eine gute Kommunikation zu eigenen Kräften im Operationsraum, die der Artillerie den Feuerbefehl erteilen.
 
-Logistik
---------
+## Logistik
 
 Die Abteilung der Logistik wird von ? organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen: Die Instandsetzung, die Versorgung und die Luftlogistik.
 

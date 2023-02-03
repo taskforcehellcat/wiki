@@ -1,6 +1,6 @@
 ---
 title: Funketikette
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 2
 ---
 
@@ -11,15 +11,13 @@ nav_index: 2
     import KBD from "$lib/wikitools/KBD.svelte";
 </script>
 
-Einleitung
-----------
+## Einleitung
 
 Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollten allen Soldaten bekannt sein.
 
 Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppführern, Sanitätern oder Aufklärern. Dazu finden sich Einträge mit weiterführenden Informationen auf den jeweiligen Unterseiten.
 
-Steuerung
----------
+## Steuerung
 
 Über die ACE Self-Interaction (<KBD>LCTRL</KBD>+<KBD>WIN</KBD>/<KBD>LCTRL</KBD>+<KBD>LCMD</KBD>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe [Funkgerät einstellen](#funkgeraet_einstellen)). Die Unterpunkte werden im Folgenden erklärt.
 
@@ -51,13 +49,11 @@ Die Option „share“ ermöglicht es, mit einer anderen Person das Funkgerät z
 
 Führt man mehrere Funkgeräte, gibt es zudem die Option „PPT“. Mit dem Funkgerät PPT1 funkt man mit <KBD>CAPS LOCK</KBD>, über PPT2 mit SHIFT+<KBD>CAPS LOCK</KBD> und über PPT3 mit <KBD>ALT</KBD>+<KBD>CAPS LOCK</KBD>.
 
-Vor dem Funken
---------------
+## Vor dem Funken
 
 Noch bevor man beginnt, Funkkontakt aufzubauen, überlegt man sich genau, was man mitteilen möchte. Ein Sender blockiert für die Dauer seines Funkspruches den Funkkanal und damit möglicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverständlich gehalten werden. Guter Funk folgt also der Devise: _So viel wie nötig, so kurz wie möglich._
 
-Verbindung
-----------
+## Verbindung
 
 Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfachen Schema: Der Sender identifiziert sich und den Empfänger des Funkspruches. Danach wird in einem Wort erklärt, welchen Zweck die Mitteilung verfolgt. Zum Beispiel:
 
@@ -67,8 +63,7 @@ Das Herstellen des Funkkontakts nennt man auch Verbindung. Sie folgt einem einfa
 
 Dies stellt eine Richtlinie für die Erstverbindung dar. Im weiteren Gesprächsverlauf ist es eventuell nicht mehr nötig, so explizit zu sein, da dann bereits klar ist, worum es geht. Gerade zu Beginn des Funkkontakts kann es dem Gegenüber jedoch das Verständnis erleichtern, wenn man seine Absicht ausspricht.
 
-Funkspruch
-----------
+## Funkspruch
 
 Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grundsätzen: er sollte knapp, aber eindeutig sein. Besonders Füllwörter und häufiges Versprechen können leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz überlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verständnis erleichtern sollen.
 
@@ -88,8 +83,7 @@ Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei 
 
 Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.
 
-Beendigung
-----------
+## Beendigung
 
 Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespräch ansonsten für unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalwörtern:
 
@@ -105,13 +99,11 @@ Mit „ende“ beendet man den Austausch. „Ende“ wird von der Partei gebrauc
 
 „Trennung“ ist effektiv ein „ende“. Es zeigt dem Funkkreis an, dass der Sprecher das Gespräch mit einer Partei für beendet erklärt, aber direkt zu einer Anderen Kontakt aufnehmen möchte. Es folgt auf „Trennung“ also direkt die Verbindung zum neuen Gesprächspartner.
 
-Ausnahmen und Notfälle
-----------------------
+## Ausnahmen und Notfälle
 
 Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.
 
-Weiterführende Informationen
-----------------------------
+## Weiterführende Informationen
 
-*   [Sanitäterfunk](/articles/sanitaetsdienst/sanitaeterfunk)
-*   [Funk der Panzertruppen (wip)](/)
+- [Sanitäterfunk](/articles/sanitaetsdienst/sanitaeterfunk)
+- [Funk der Panzertruppen (wip)](/)

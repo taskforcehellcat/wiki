@@ -1,13 +1,12 @@
 ---
 title: Medikation
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 3
 ---
 
 Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite [Behandlungen](../behandlungen).
 
-Basismedikamente
-----------------
+## Basismedikamente
 
 Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.
 
@@ -27,8 +26,7 @@ hebt die Herzrate, kann auch Behandlung von Morphin-Überdosen unterstützen.
 
 senkt die Herzrate, kann zur Behandlung von Epinephrin-Überdosen verwendet werden.
 
-Infarkttherapie
----------------
+## Infarkttherapie
 
 Medikamente zur Behandlung von Herzstillständen, siehe auch [hier](../behandlungen#herzinfarkt).
 
@@ -46,8 +44,7 @@ Klasse Ib Antiarrythmikum. Verbessert die Erfolgswahrscheinlichkeit des Defibril
 
 zur Behandlung von Bradykardien. Hebt die Herzrate wesentlich.
 
-Spezialisierte Medikationen
----------------------------
+## Spezialisierte Medikationen
 
 Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.
 

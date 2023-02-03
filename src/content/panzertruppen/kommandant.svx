@@ -1,17 +1,15 @@
 ---
 title: Kommandant (Panzertruppen)
 title_short: Kommandant
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 1
 ---
 
-Rollenprofil
-------------
+## Rollenprofil
 
 Der Kommandant hat die Befehlsgewalt und trägt die Verantwortung für sein Fahrzeug und die dazugehörige Besatzung. Seine Priorität ist der Erhalt der Gefechtsbereitschaft seines Fahrzeuges durch adäquate Führung seiner Besatzung. In der Befehlskette untersteht er dem Zugführer, der Anweisungen an einzelne Kommandanten oder den ganzen Zug erteilen kann.
 
-Aufgaben
---------
+## Aufgaben
 
 Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges und seiner Besatzung. Das Aufgabenprofil des Kommandanten kann zwischen Fahrzeugtypen variieren, lässt sich aber in wenigen Punkten grob zusammenfassen.
 
@@ -24,8 +22,7 @@ Der Kommandant nimmt unmittelbar Einfluss auf das Verhalten seines Fahrzeuges un
 7.  Bestimmen der Munitionsart der Hauptkanone
 8.  Einsatzvermittlung an seine Besatzung
 
-Fertigkeiten
-------------
+## Fertigkeiten
 
 Die Kommandanten der Panzertruppen müssen eine handvoll Fertigkeiten beherrschen, um ihr Fahrzeug möglichst sicher und effizient ins Gefecht zu führen. Diese Fertigkeiten tragen dazu bei, die Übersicht zu behalten und Gefahrensituation einschätzen zu können, wodurch ein reibungsloser Einsatz gewährleistet werden kann.
 

@@ -1,6 +1,6 @@
 ---
 title: Erste Hilfe
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 1
 ---
 
@@ -13,32 +13,29 @@ nav_index: 1
     import ace_medical_menu from '$lib/images/erstehilfe/ace_medical_menu.png'
 </script>
 
-
 Dass Kameraden im Feld verwundet werden, lässt sich kaum vermeiden. Daher ist es umso wichtiger, in solch einer Situation zu wissen, wie man richtig handelt.
 
-Versorgungsmaterial
--------------------
+## Versorgungsmaterial
 
 Um eine Grundversorgung gewährleisten zu können, sollte das folgende Material immer mitgeführt werden:
 
-*   Bandagen: Mullverband (_packing bandage_) min. 15 Stück, elastische Bandagen: min. 10 Stück
-*   Medikamente: Morphin: 1 Autoinjektor, Epinephrin: 2 Autoinjektoren, Schmerztabletten: 2 Schachteln (20 Tabletten)
-*   Tourniquets: 4 Stück
-*   Splints: 2 Stück
-*   Flüssigkeiten: 500 bis 1000 ml Kochsalzlösung (_saline solution_)
-*   Pulsoximeter: 1 Stück
+- Bandagen: Mullverband (_packing bandage_) min. 15 Stück, elastische Bandagen: min. 10 Stück
+- Medikamente: Morphin: 1 Autoinjektor, Epinephrin: 2 Autoinjektoren, Schmerztabletten: 2 Schachteln (20 Tabletten)
+- Tourniquets: 4 Stück
+- Splints: 2 Stück
+- Flüssigkeiten: 500 bis 1000 ml Kochsalzlösung (_saline solution_)
+- Pulsoximeter: 1 Stück
 
 Die Standardloadouts zum Beispiel sind ausreichend ausgestattet.
 
-Melden
-------
+## Melden
 
 Der Patientenstatus wird mit einer der folgenden Kategorien angegeben:
 
-*   **Kat. Grün:** der Patient ist vollkommen einsatzbereit.
-*   **Kat. Gelb:** der Patient ist verwundet, aber bei Bewusstsein.
-*   **Kat. Rot:** der Patient ist schwer verwundet oder bewusstlos.
-*   **Kat. Schwarz:** der Patient ist verstorben.
+- **Kat. Grün:** der Patient ist vollkommen einsatzbereit.
+- **Kat. Gelb:** der Patient ist verwundet, aber bei Bewusstsein.
+- **Kat. Rot:** der Patient ist schwer verwundet oder bewusstlos.
+- **Kat. Schwarz:** der Patient ist verstorben.
 
 <ExampleBox>
 
@@ -50,8 +47,7 @@ _„Linke Flanke ein Ausfall, Kat. Rot - kommen.“_
 
 Sanitäter verwenden oft eine genauere Einteilung mit den Subkategorien „Alpha“ und „Bravo“. „Bravo“ beschreibt dabei einen ernsteren Zustand, im Detail kann das [hier](../sanitaeterfunk#meldesystem) nachgelesen werden. Nichtsanitäter müssen diese Einteilung aber nicht zwingend beherrschen.
 
-Hilfeleistung
--------------
+## Hilfeleistung
 
 Der Standardkeybind zum Öffnen des <Tooltip image="{ace_medical_menu}">Medical Menu</Tooltip> ist H. Dabei muss man den Patienten ansehen. **Achtung:** Im Medical Menu sollte der Name des Patienten zu sehen sein! Andernfalls hat man versehentlich das eigene Medical Menu geöffnet.
 
@@ -59,9 +55,9 @@ Der Standardkeybind zum Öffnen des <Tooltip image="{ace_medical_menu}">Medical 
 
 ![ACE Medical Menu]({ace_medical_menu})
 
-*   Spalte **Status**: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.
-*   Spalte **Overview**: Hier sieht man die Verwundungen des ausgewählten Körperteils.
-*   Spalte **Examine and Treatment**: Hier sieht man die Behandlungsoptionen und kann sie ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein.
+- Spalte **Status**: Je dunkler der Rotton eines Körperteils, desto größeren Blutverlust verursacht es. Blaue Körperteile sind versorgt, aber noch nicht genäht. Es besteht die Gefahr, dass sich diese Bandagen wieder öffnen. Zum Nähen muss ein Sanitäter aufgesucht werden. Ein unverletztes oder endversorgtes Körperteil erscheint weiß.
+- Spalte **Overview**: Hier sieht man die Verwundungen des ausgewählten Körperteils.
+- Spalte **Examine and Treatment**: Hier sieht man die Behandlungsoptionen und kann sie ausführen. Diese Spalte hat weitere Reiter, unter denen die jeweiligen Behandlungen kategorisiert sind. Das kann anfangs verwirrend sein.
 
 ### Behandeln ansprechbarer Patienten
 
@@ -91,16 +87,16 @@ Grundsätzlich gilt bei der Ersten Hilfe: Eigenschutz geht vor. _Die Bergung mus
 3.  Kopf und Torso verbinden, stärkere Verwundungen priorisieren
 4.  Atemwege überprüfen:
 
-1.  verstopft/verschlossen (_occluded/obstructed_): Kopf ausrichten (_head turning_) bis befreit
-2.  Kopf überstrecken (_hyperextend head_), damit die Zunge nicht die Atemwege verschließen kann
+5.  verstopft/verschlossen (_occluded/obstructed_): Kopf ausrichten (_head turning_) bis befreit
+6.  Kopf überstrecken (_hyperextend head_), damit die Zunge nicht die Atemwege verschließen kann
 
-6.  Puls prüfen:
+7.  Puls prüfen:
 
-1.  kein Puls: Herz-Lungen-Wiederbelebung (_CPR_) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.
-2.  Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster Schritt.
+8.  kein Puls: Herz-Lungen-Wiederbelebung (_CPR_) dauerhaft durchführen, Epinephrin verabreichen, Sanitäter alamieren. Auch die Atemwege weiterhin prüfen.
+9.  Puls vorhanden: nach kurzer Zeit wieder prüfen, da er verschwinden könnte. Nächster Schritt.
 
-8.  in stabile Seitenlage bringen (_use recovery position_)
-9.  verbleibende Verletzungen bandagieren und Tourniquets entfernen
+10. in stabile Seitenlage bringen (_use recovery position_)
+11. verbleibende Verletzungen bandagieren und Tourniquets entfernen
 
 Eine Kurzübersicht liefert auch das nachfolgende Flowchart.
 

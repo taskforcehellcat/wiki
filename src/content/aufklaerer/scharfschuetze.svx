@@ -1,17 +1,13 @@
 ---
 title: Scharfschütze
-date: "2022-11-15"
+date: '2022-11-15'
 nav_index: 2
 ---
 
-Rollenprofil
-------------
+## Rollenprofil
 
-Aufgaben
---------
+## Aufgaben
 
-Ausrüstung
-----------
+## Ausrüstung
 
-Fertigkeiten
-------------
+## Fertigkeiten
