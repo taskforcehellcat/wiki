@@ -1,27 +1,27 @@
 <script lang="ts">
-	import Wiki from '../wiki/+page.svelte';
+  import Wiki from '../wiki/+page.svelte';
 </script>
 
 <svelte:head>
-	<title>Home | TFHC Wiki</title>
+  <title>Home | TFHC Wiki</title>
 </svelte:head>
 
 <Wiki>
-	<svelte:fragment slot="content">
-		<h1>AT-Schütze</h1>
+  <svelte:fragment slot="content">
+    <h1>AT-Schütze</h1>
 
-		<section id="Rollenprofil">
-			<p />
-		</section>
-		<section id="Aufgaben">
-			<p />
-		</section>
-		<section id="Ausrüstung">
-			<p />
-		</section>
-		<section id="Fertigkeiten">
-			<p />
-		</section>
-	</svelte:fragment>
-	<svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
+    <section id="Rollenprofil">
+      <p />
+    </section>
+    <section id="Aufgaben">
+      <p />
+    </section>
+    <section id="Ausrüstung">
+      <p />
+    </section>
+    <section id="Fertigkeiten">
+      <p />
+    </section>
+  </svelte:fragment>
+  <svelte:fragment slot="editdate">00.00.0000</svelte:fragment>
 </Wiki>
