@@ -14,7 +14,7 @@ Die Abteilung der Streitkräfte wird von Leon organisiert und verwaltet. Sie umf
 
 ### (Motorisierte) Infanterie
 
-Die Infanterie setzt sich aus Schützen, MG-Schützen, AT-Schützen, Präzisionsschützen, Funkern und Grenadieren zusammen. Ihre Bewegung und der Feuerkampf erfolgen ausschließlich zu Fuß. Alternativ können sich die Soldaten auf Fahrzeugen aufgesessen bewegen, auch motorisierte Infanterie genannt. Die Infanterie kann vielseitig eingesetzt werden. Sie erweist sich besonders im urbanen Gebiet und unwegsamen Gelände als effektiv, da Fahrzeuge dort nur eingeschränkt beweglich sind.
+Die Infanterie setzt sich aus Schützen, MG-Schützen, AT-Schützen, Präzisionsschützen zusammen. Ihre Bewegung und der Feuerkampf erfolgen ausschließlich zu Fuß. Alternativ können sich die Soldaten auf Fahrzeugen aufgesessen bewegen, auch motorisierte Infanterie genannt. Die Infanterie kann vielseitig eingesetzt werden. Sie erweist sich besonders im urbanen Gebiet und unwegsamen Gelände als effektiv, da Fahrzeuge dort nur eingeschränkt beweglich sind.
 
 ### Sanitätsdienst
 
