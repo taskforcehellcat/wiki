@@ -11,6 +11,7 @@ nav_index: 1
     /* images */
     import erste_hilfe_basic from '$lib/images/erstehilfe/erste_hilfe_basic.png'
     import ace_medical_menu from '$lib/images/erstehilfe/ace_medical_menu.png'
+    import KBD from "$lib/wikitools/KBD.svelte";
 </script>
 
 Im Gefecht kommt es unweigerlich zu Ausfällen. Diese Seite soll die Grundlagen der Selbst- und Kameradenhilfe erläutern. Dazu gehören nicht nur die medizinische Versorgung eines Verwundeten selbst, sondern auch das Verhalten vor und während der Behandlung. Das ist wesentlich, um die Gefechtsbereitschaft der Truppe zu erhalten. Diese Seite sollte daher aufmerksam gelesen werden.
