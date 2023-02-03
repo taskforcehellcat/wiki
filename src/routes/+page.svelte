@@ -37,9 +37,9 @@
   <title>Home | TFHC Wiki</title>
 </svelte:head>
 
-<Theme />
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
+    <Theme />
     <div id="home">
       <div id="home__top">
         <a id="home__link" href="https://taskforcehellcat.de/"
