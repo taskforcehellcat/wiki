@@ -1,0 +1,14 @@
+---
+title: EOD (Explosive Ordnance Disposal)
+title_short: EOD
+date: '2022-11-15'
+nav_index: 2
+---
+
+## Rollenprofil
+
+## Aufgaben
+
+## Ausrüstung
+
+## Fertigkeiten
