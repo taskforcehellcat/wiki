@@ -1,0 +1,90 @@
+Diese Seite beschäftigt sich mit dem Aufrechterhalten des Blutkreislaufes.
+
+Das Stoppen von Blutungen ist immer eine der ersten Aufgaben beim Versorgen eines Patienten. Dabei gebraucht man zunächst vorrangig Tourniquets. Verbinden von Wunden und Nähen sind zeitaufwändige Behandlungen, welche durchgeführt werden, wenn der Patient bereits weitgehend stabilisiert ist. Eine Ausnahme davon Bilden Verletzungen von Torso und Kopf, da diese Körperteile nicht mit Tourniquets abgeschnürt werden können.
+
+## Wundversorgung
+
+Im allgemeinen sind Avulsionen (_avulsions_, abgerissenes Gewebe) und Splitter- bzw. Projektilwunden (_velocity wounds_) die am stärksten blutenden Wunden, gefolgt von Schnitt- und Platzwunden (_cut, laceration_). Die verbleibenden Verletzungen verursachen nur leichten bis gar keinen Blutverlust.
+
+Zur Versorgung der diversen Verwundungen steht eine breite Auswahl an Bandagen zur Verfügung. Für jeden Wundentyp gibt es dabei jeweils die theoretisch effizienteste Bandage. Da Sanitäter aber ohnehin zeitnah nähen können, ist es nicht notwendig, diese alle auswendig zu beherrschen.
+
+Im Allgemeinen sind elastische Bandagen (_elastic bandage_) am schnellsten angewendet, allerdings nicht sehr haltbar. Dagegen bieten Mullverbände (_packing bandage_) eine gute Balance aus Geschwindigkeit, Wundabdeckung und Haltbarkeit.
+
+### Hämostase
+
+Im menschlichen Blut befinden sich sogenannte Thrombozyten (Blutplättchen), welche sich bei einer offenen Wunde an das getroffene Gewebe und aneinander heften und so für einen natürlichen Wundverschluss sorgen. So kann es sein, dass sich kleinere Wunden auch ohne Bandagieren schließen.
+
+Mit zunehmenden Blutverlust nimmt aber auch die Fähigkeit des Körpers dazu ab und großflächige Verwundungen bedürfen ohnehin medizinischer Aufmerksamkeit. Auf diesen Mechanismus sollte man sich also keinesfalls verlassen.
+
+Wenn ein Herzschlag von mindestens 20 Schlägen pro Minute vorliegt, beginnt sich Schorf auf offenen Wunden zu bilden (_unstable clot_). Dabei verbraucht der Körper sogenannte Koagulationsfaktoren, welche ihm durch Blut- oder Plasmatransfusionen wieder zugeführt werden können, (siehe unten)[#ausgleich_von_blutverlust] (TODO: Link prüfen).
+
+Über einen Zugang (siehe untern)[#ausgleich_von_blutverlust] (TODO: Link prüfen) kann ebenfalls Tranexamsäure (_TXA_) verabreicht werden, welche die Gerinnung stabilisiert. Das bedeutet, das vorhandene Gerinnung stärker wird (entspricht _packing bandage_ statt _unstable clot_). Tranexamsäure verursacht nicht von selbst Gerinnung, Koagulationsfaktoren müssen also unabhängig vorhanden sein!
+
+## Ausgleich von Blutverlust und Zugänge
+
+Zum Anlegen von Blut und verabreichen einiger Medikamente benötigt man einen Zugang in die Blutbahn des Patienten. Dafür stehen 16g Kanülen (ca. 1,5 mm Durchmesser, intravenös) sowie FAST-IO-Systeme (intraossär) zur Verfügung. Mit einer 16g Kanüle können Venen an den Extremitäten (Arme und Beine) punktiert werden, vorausgetzt das betroffene Körperteil ist nicht zu stark verwundet oder mit einem Tourniquet abgeschnürt (ein Zugang kann dann zwar gelegt werden, Flüssigkeiten und Medikamente gelangen allerdings nicht ins System). Falls das Legen eines Zuganges so nicht möglich ist, erlaubt die FAST IO (_First Access for Shock and Trauma IO_) einen Zugang über das Knochenmark des Brustbeins (sie wird also am Torso angewandt, stellt aber einen deutlich schmerzhafteren und invasiveren Eingriff dar).
+
+Da Blut und Blutplasma zuerst einem anderen Menschen abgenommen wurden, spricht man im Gegensatz zur Salzlösung streng genommen von Transfusionen statt Infusionen und zusammenfassend von Flüssigkeit oder Fluiden.
+
+### Statusmeldungen
+
+1. _„Lost Some Blood“:_ 6,0 bis 5,1 Liter
+2. _„Lost a Lot of Blood“:_ 5,1 bis 4,2 Liter
+3. _„Lost a Large Amount of Blood“:_ 4,2 bis 3,6 Liter
+4. _„Lost a Fatal Amount of Blood“:_ 3,6 bis 3,0 Liter
+
+Ein Blutvolumen unter 3 Litern ist tödlich.
+
+### Flüssigkeiten
+
+Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe Nierenfunktion)[TODO: ordentlich verlinken].
+
+- Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-ph-Wert
+- Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-ph-Wert
+- isotonische Kochsalzlösung: _kein_ Koagulationsfaktor, _negativen_ Einfluss auf den Blut-ph-Wert
+
+### Transfusionen im Feld
+
+Nötigenfalls kann auch mittels eines Transfusionskits im Feld Spenderblut gewonnen werden.
+
+#### Blutgruppenverträglichkeit
+
+Der folgende Abschnitt wird wichtig, wenn man im Feld gewonnene Blutreserven verwenden möchte. Das Verabreichen von Plasma, Salzlösung oder dem standardmäßig mitgeführten Gruppe-0-Blut kann bedenkenlos erfolgen.
+
+Man kann sich merken, dass dabei die Spenderblutgruppe gewissermaßen in der des Empfängers „enthalten“ sein muss (dabei steckt „-“ gewissermaßen in „+“). Möchte man herausfinden, ob ein Patient eine bestimmte Blutgruppe empfangen kann, testet man also, ob das Spenderblut in seine Blutgruppe „hineinpasst“.
+
+(TODO: Das ist eine Example Box)
+A- steckt zum Beispiel in diesem Sinne in AB+, A+ oder auch AB-, diese Blutgruppen können also A- empfangen. Es ist allerdings nicht enthalten in 0+, 0-, B+, etc. Diese Gruppen können also kein A- empfangen.
+
+AB+ kann beispielsweise jede Blutgruppe empfangen, 0- hingegen nur 0-.
+
+Eine vollständige Übersicht liefert die folgende Grafik.
+
+(TODO: Grafik einfügen)
+
+#### Bei falscher Blutgruppengabe
+
+Dass die falsche Blutgruppe verabreicht worden ist, erkennt man in der Regel an einer rapide fallenden Herzrate. Das Klumpen der Blutkörperchen kann vermindert werden, indem Schmerztabletten in großer Anzahl verabreicht werden. Die Infusion muss natürlich sofort abgebrochen werden.
+
+## Blutdruck
+
+Der Blutdruck nimmt mit steigendem Blutverlust ab, wenn dieser also ausgeglichen wurde und Herzschlag vorhanden ist, sollte sich der Blutdruck von selbst normalisieren. Ein Wert von etwa 120 : 80 mmHg gilt als normal.
+
+## Herzinfarkt
+
+Nachdem ein Herzstillstand festgestellt wurde, wird der Patient an einen Automatischen Externen Defibrillator (_AED_) angeschlossen. Dieser ist in der Lage, das Rhythmusmuster zu bestimmen und ggf. zu defibrillieren.
+
+### Defibrillierbare Arrhythmien
+
+Gibt der Defibrillator _„shock advised“_ zurück, handelt es sich um eine pulslose ventrikuläre Tachykardie (pVT) oder ventrikuläre Fibrillation (VF). In beiden Fällen krampft der Herzmuskel, bzw. die Herzkammern arbeiten gewissermaßen gegeneinander sodass das Herz keine Auswurfleistung erbringt. Somit ist kein Puls spürbar. Ein Schock des Defibrillators berichtigt möglicherweise dieses Kammerflimmern. Zudem werden unterstützend Epinephrin, Amiodaron und Lidocain (in dieser Reihenfolge, zwischen Schocks, Amiodaron höchstens einmal) eingesetzt.
+
+1. Schock, Epinephrin, Rhythmus analysieren. Wenn weiterhin schockbar:
+2. Schock, Amiodaron, Rhythmus analysieren. Wenn weiterhin schockbar:
+3. Schock, Lidocain, Rhythmus analysieren. Wenn weiterhin schockbar:
+4. Schock, Epinephrin, Rhythmus analysieren. Wenn weiterhin schockbar diesen Punkt wiederholen.
+
+Verabreichen von Amiodaron verursacht in einem von drei Fällen eine Bradykardie, also eine besonders niedrige Herzrate für längere Zeit. Eine Bradykardie kann mit Atropin behandelt werden.
+
+### Asystolien
+
+Gibt der Defibrillator _„no shock advised“_ aus, handelt es sich um eine Asystolie, also einen tatsächlichen Herzstillstand. Hier bleibt nur Epinephrin zu verabreichen gefolgt von drei Einheiten Herz-Lungen-Wiederbelebung, diese Kombination muss stetig wiederholt werden.

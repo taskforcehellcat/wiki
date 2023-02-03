@@ -1,115 +1,94 @@
----
-title: Erste Hilfe
-date: '2023-02-03'
-nav_index: 1
----
+Im Gefecht kommt es unweigerlich zu Ausfällen. Diese Seite soll die Grundlagen der Selbst- und Kameradenhilfe erläutern. Dazu gehören nicht nur die medizinische Versorgung eines Verwundeten selbst, sondern auch das Verhalten vor und während der Behandlung. Das ist wesentlich, um die Gefechtsbereitschaft der Truppe zu erhalten. Diese Seite sollte daher aufmerksam gelesen werden. Bei Verständnisproblemen hilft die [Sanitätsdienstleitung](TODO: sinnvoll verlinken) gerne weiter.
 
-<script>
-    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
-    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+# Meldung
 
-    /* images */
-    import erste_hilfe_basic from '$lib/images/erstehilfe/erste_hilfe_basic.png'
-    import ace_medical_menu from '$lib/images/erstehilfe/ace_medical_menu.png'
-</script>
+Der erste Schritt ist immer die Meldung des Ausfalls im Gruppenfunk. Von einem Ausfall spricht man dabei immer, sobald der Betroffene nicht mehr aktiv wirken kann. Also auch ein Kamerad, der „nur schwer verletzt“ und mit seiner Selbstversorgung beschäftigt ist, zählt als „Ausfall“. Zur genauen Kommunikation werden Ausfälle in verschiedene Kategorien eingeteilt.
 
-Im Gefecht kommt es unweigerlich zu Ausfällen. Diese Seite soll die Grundlagen der Selbst- und Kameradenhilfe erläutern. Dazu gehören nicht nur die medizinische Versorgung eines Verwundeten selbst, sondern auch das Verhalten vor und während der Behandlung. Das ist wesentlich, um die Gefechtsbereitschaft der Truppe zu erhalten. Diese Seite sollte daher aufmerksam gelesen werden.
-
-## Meldung
-
-Der erste Schritt ist immer die Meldung des Ausfalls im Gruppenfunk. Von einem Ausfall spricht man dabei immer, sobald der Betroffene nicht mehr aktiv wirken kann. Also auch ein Kamerad, der „nur verletzt“ und mit seiner Selbstversorgung beschäftigt ist, zählt als „Ausfall“. Zur genauen Kommunikation werden Ausfälle in verschiedene Kategorien eingeteilt:
-
-### Kat. Grün
+## Kat. Grün
 
 Ein „Kat. Grün“ ist kein Ausfall im eigentlichen Sinne, sondern der Ausdruck dafür, dass ein Patient wieder voll einsatzbereit ist.
 
-### Kat. Gelb
+## Kat. Gelb
 
 Die Kategorie „Gelb“ bezeichnet schwere Verletzungen, deren Behandlung vermutlich etwas Zeit benötigt, aber vor allem, dass der Patient bei Bewusstsein ist und bei der Selbstversorgung behilflich sein kann. Ein Kat. Gelb muss also hauptsächlich gedeckt werden bzw. kann selbst decken, während er versorgt wird.
 
-### Kat. Rot
+## Kat. Rot
 
-Die Kategorie „Rot“ bezeichnet einen Bewusstlosen. Bewusstlose müssen oft erst geborgen, dann gedeckt und versorgt werden, wobei sie selbst natürlich nicht helfen können. Die Versorgung eines Kat. Rot ist also direkt deutlich aufwändiger. Wie genau im Falle eines Kat. Rot vorgegangen wird, kann situativ unterschiedlich sein, siehe dafür [Sicherung](#sicherung).
+Die Kategorie „Rot“ bezeichnet einen Bewusstlosen. Bewusstlose müssen oft erst geborgen, dann gedeckt und versorgt werden, wobei sie selbst natürlich nicht helfen können. Die Versorgung eines Kat. Rot ist also direkt deutlich aufwändiger. Wie genau im Falle eines Kat. Rot vorgegangen wird, kann situativ unterschiedlich sein, siehe dafür [Sicherung](#Sicherung).
 
-### Kat. Blau
+## Kat. Blau
 
 Die Kategorie „Blau“ wird gelegentlich benutzt, wenn ein Patient zwar nicht verstorben ist, aber die Rettung sehr unwahrscheinlich oder unvernünftig ist (zum Beispiel, weil andere Verletzte priorisiert werden müssen oder eine Bergung zu risikoreich ist). Außerdem kann sie verwendet werden, wenn der Verbleib eines Soldaten unklar ist, aber davon ausgegangen werden muss, dass er verstorben ist.
 
-### Kat. Schwarz
+## Kat. Schwarz
 
 Die Kategorie „Schwarz“ bezeichnet den festgestellten Tod.
 
-## Sicherung von Verletzten
+# Sicherung
 
-Bevor mit der Versorgung begonnen werden kann, müssen der Patient und der Ersthelfer gesichert werden. Das bedeutet mindestens ein Deckungselement und eine sichere Stellung. Bei einem Kat. Gelb ist das meist schon dadurch gegeben, dass der Patient bei Bewusstsein ist.
+Bevor mit der Versorgung begonnen werden kann, müssen der Patient und der Ersthelfer gesichert werden. Das bedeutet mindestens ein Deckungselement und eine sichere Stellung.
 
-Ist erst eine Bergung nötig, wird diese durch den Gruppenführer veranlasst. Bei Bergungen ist es sehr wichtig, dass keine Alleingänge unternommen werden. Der Bereich, in dem sich der Kat. Rot befindet, ist zunächst definitiv nicht sicher (sonst wäre niemand an dieser Position ausgefallen) und weitere Verletzte gilt es dringend zu vermeiden. Daher sind Bergungen immer eine Gruppenanstrengung, bei der sehr vorsichtig vorgenangen wird.
+Bei einem Kat. Gelb ist das meist schon dadurch gegeben, dass der Patient bei Bewusstsein ist. Ist erst eine Bergung nötig, wird diese durch den Gruppenführer veranlasst. In Ausnahmefällen kann eine Bergung auch durch Sanitäter mit ausreichender Erfahrung organisiert werden.
 
-## Erste-Hilfe-Ausrüstung
+# Medizinische Versorgung
 
-### Medikamente
+## Medikamente
 
 Zur Standardausrüstung eines jeden Soldaten gehören Schmerztabletten sowie Epinephrin- und Morphin-Autoinjektoren.
 
 Im Allgemeinen sollten Medikamente von Sanitätern verabreicht werden, manchmal ist allerdings schnelles Handeln nötig. Dafür sollen die Besonderheiten dieser Medikamente hier kurz umrissen werden.
 
-#### Schmerztabletten
+### Schmerztabletten
 
 Bei Schmerzen aller Art die erste Wahl. Schmerztabletten sind relativ unproblematisch, sollten jedoch mehr als fünf Gaben auf einmal nötig sein, ist es wahrscheinlich sinnvoll, einen Sanitäter aufzusuchen. Nicht mehr als zehn Gaben pro zehn Minuten.
 
-#### Epinephrin
+### Epinephrin
 
 Epinephrin bezeichnet künstlich hergestelltes Adrenalin. Es hebt die Herzrate und den Blutdruck. Nicht mehr als fünf Gaben pro zwei Minuten.
 
-#### Morphium
+### Morphium
 
 Sehr starkes Schmerzmittel, welches Herzrate und Blutdruck stark senkt. Sollte nur im Notfall von Nichtsanitätern angewandt werden, nicht mehr als zwei Gaben pro 15 Minuten. Morphium verdünnt außerdem das Blut, was dazu führt, dass offene Wunden stärker bluten. Da Morphium ein sehr starkes Medikament ist, muss man die Anwendung einem Sanitäter mitteilen, wenn er die Behandlung übernimmt.
 
-### Bandagen
-
-Im Allgemeinen hat jede Wundart je nach Größe eine ideal versorgende Bandage, es genügt jedoch meist zu wissen, dass für große und/oder stark blutende Wunden ein Mullverband (_packing bandage_) die beste Wahl ist. Da es relativ lange dauert, diese anzuwenden, verwendet man für kleinere Verletzungen am besten eine elastische Bandage.
-
-Bandagen können sich immer wieder lösen. Daher sollten diese Verbände immer vom Truppsanitäter nachversorgt werden.
-
 ## Medical Menu
 
-Alle Optionen zur medizinischen Versorgung eines Patienten findet man im _Medical Menu_. Um es aufzurufen, drückt man während man den Patienten anschaut die Taste <kbd>H</kbd>.
+Alle Optionen zur medizinischen Versorgung eines Patienten findet man im _Medical Menu_. Um es aufzurufen, drückt man während man den Patienten anschaut die Taste H.
 
-_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste <kbd>G</kbd> standardmäßig Granaten geworfen werden. Wir empfehlen dringend, dafür in den Einstellungen stattdessen <kbd>Shift</kbd> + <kbd>G</kbd> festzulegen.
+_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste G standardmäßig Granaten geworfen werden. Wir empfehlen dringend, dafür in den Einstellungen stattdessen Shift + G festzulegen.
 
 _Hinweis:_ Oft kommt es vor, dass man versehentlich sein eigenes Medical Menu öffnet, wenn man den Patienten nicht richtig anschaut oder das Spiel die Blickrichtung nicht richtig registriert. Daher sollte man immer einen kurzen Blick auf den Namen werfen, der im Medical Menu angezeigt wird.
 
 Das Medical Menu ist in fünf mehr oder minder selbsterklärende Abschnitte eingeteilt.
 
-### Examine and Treatment
+#### Examine and Treatment
 
 Hier kann man den Patienten genauer untersuchen und Aktionen auswählen. Diese Kategorie ist bei Weitem die umfänglichste und daher mit einigen Reitern noch in Untermenüs gegliedert.
 
-### Status
+##### TODO: Reiter erläutern
+
+#### Status
 
 Hier verschafft man sich einen schnellen, groben Überblick. Gelb bis rot gefärbte Körperteile bluten, je nach Rotton schwächer oder stärker. Blau gefärbte Körperteile sind verletzt, die Blutung ist aber gestoppt. Das kann entweder durch eine angelegte Bandage oder Gerinnung passieren. In jedem Falle sollte ein Sanitäter gerufen werden, falls noch Wunden zu nähen sind. Ansonsten riskiert man, dass sich eine Wunde wieder öffnet und weiter blutet.
 
-Unter dem Körperschema findet sich ein Dropdown-Menü (Triage-Karte), in diesem lässt sich die Dringlichkeit der Behandlung festlegen, die Farbgebung entspricht dabei den [oben](#meldung) beschriebenen Ausfall-Kategorien.
+Unter dem Körperschema findet sich ein Dropdown-Menü, in diesem lässt sich die Dringlichkeit der Behandlung festlegen, siehe auch [Triage](TODO: sinnvoll verlinken). Die Optionen korrespondieren mit den Kategorien Grün, Gelb, Rot und Schwarz, [siehe oben](#meldung).
 
-### Overview
+#### Overview
 
 Klickt man im Abschnitt Status ein Körperteil an, erscheinen hier dessen Verletzungen und deren Behandlungsstatus. Dabei steht B _(bandaged)_ für bandagierte und S _(stitched)_ für genähte Verletzungen. Ist der Patient stabil, sollte man sicher gehen, dass alle Verwundungen genäht werden.
 
-### Activity Log und Quick View
+#### Activity Log und Quick View
 
 Im Activity Log erscheinen alle Aktionen, die kürzlich am Patienten unternommen wurden. Unter Quick View erscheinen besondere Meldungen. Insbesondere findet man hier die Ablesewerte vom Pulsoximeter.
 
-### Kat. Schwarz erkennen
+## Kat. Schwarz erkennen
 
 Ob ein Patient noch am Leben ist, kann man verlässlich daran erkennen, dass die Option _Drag/Carry_ noch verfügbar ist. Ist das entsprechende Icon stattdessen ausgegraut, bleibt leider nichts mehr zu tun.
 
-## Medizinische Versorgung
-
-### Prioritäten bestimmen
+## Prioritäten bestimmen
 
 Das Überleben eines Patienten wird im Wesentlichen dadurch bestimmt, ob er ausreichenden Blutdruck (das heißt, keinen zu hohen Blutverlust), Herzschlag und Blutsauerstoff hat. Findet man einen Verletzten vor, muss man also diese Systeme absichern. Dies erfordert ein gewisses Multitasking, da der Patient verstirbt, wenn auch nur einer dieser Werte kritisch wird.
 
-Um einen guten Überblick zu behalten, sollte der erste Schritt sein, dem Patienten ein Pulsoximeter anzulegen: _Examine and Treatment » Attach Pulse Oximeter_.
+Um einen guten Überblick zu behalten, sollte der erste Schritt sein, dem Patienten ein Pulsoximeter anzulegen: _Examine and Treatment » TODO_.
 
 Die folgenden Abschnitte sind in keiner speziellen Reihenfolge, worum man sich wann kümmert muss situativ nach Dringlichkeit entschieden werden. Eine grobe Orientierung können die folgenden Statusmeldungen liefern:
 
@@ -117,11 +96,11 @@ Die folgenden Abschnitte sind in keiner speziellen Reihenfolge, worum man sich w
 - kritischer Blutsauerstoff: weniger als 80 % SpO₂
 - kritisches Blutvolumen: _„lost a large/fatal amount of blood“_
 
-### Blutvolumen
+## Blutvolumen
 
 Der momentane Blutverlust wird im Abschnitt Overview angezeigt. Die Statusmeldung _„lost some blood“_ ist dabei noch verhältnismäßig unbedenklich, Blutungen sollten aber immer so schnell wie möglich gestoppt werden.
 
-Da nur Sanitäter Infusionen legen können, kann man als Ersthelfer lediglich versuchen, das bestehende Blutvolumen so gut es geht zu erhalten. Dazu müssen alle Blutungen mithilfe von Bandagen versorgt werden. Da dies etwas Zeit in Anspruch nehmen kann, empfiehlt es sich, an den Extremitäten (Arme und Beine) Tourniquets anzulegen. Tourniquets schnüren die Blutzufuhr des betroffenen Körperteils ab und verhindern so weiteren Blutverlust. Offensichtlich kann das nur eine vorübergehende Lösung sein, nach einigen Minuten verursachen sie starke schmerzen. Der Kopf und Torso müssen sofort verbunden werden, da man hier keine Tourniquets anlegen kann.
+Da nur Sanitäter Infusionen legen können, kann man als Ersthelfer lediglich versuchen, das bestehende Blutvolumen so gut es geht zu erhalten. Dazu müssen alle Blutungen mithilfe von Bandagen versorgt werden. Da dies etwas Zeit in Anspruch nehmen kann, empfiehlt es sich, an den Extremitäten (Arme und Beine) Tourniquets anzulegen (_TODO: wie genau geht das?_). Tourniquets schnüren die Blutzufuhr des betroffenen Körperteils ab und verhindern so weiteren Blutverlust. Offensichtlich kann das nur eine vorübergehende Lösung sein, nach einigen Minuten verursachen sie starke schmerzen. Der Kopf und Torso müssen sofort verbunden werden, da man hier keine Tourniquets anlegen kann.
 
 _Hinweise zum Tourniquet:_ Das Tourniquet ist mehrmals verwendbar, nachdem es wieder abgenommen wurde. Es wird dem Inventar des Spielers hinzugefügt, der es abnimmt. Daher sollte man gelegentlich prüfen, ob man noch seine Tourniquets beisammen hat.
 
@@ -129,15 +108,17 @@ Wenn ein Tourniquet angelegt ist, kann am betreffenden Körperteil kein Puls gen
 
 _Achtung:_ Hat man versehentlich ein Medikament in ein Körperteil mit Tourniquet gespritzt, ist es am sinnvollsten, das Tourniquet abzunehmen. Das Medikament wurde verabreicht, durch das Tourniquet gelangt es lediglich nicht in den Kreislauf. Belässt man das Tourniquet am betreffenden Körperteil und verabreicht eine weitere Gabe über ein anderes Körperteil, riskiert man eine Überdosis, sobald das Tourniquet doch abgenommen wird.
 
-### Blutsauerstoff
+## Blutsauerstoff
 
-Bei kritischen Blutsauerstoffwerten kommt es zur Zyanose, das sind bläuliche Verfärbungen etwa an den Fingern und Lippen. Man kann bei fehlendem Pulsoximeter den Blutsauerstoff also auch über _Examine and Treatment » Examine Patient » Check Cyanosis_ abschätzen.
+Bei kritischen Blutsauerstoffwerten kommt es zur Zyanose, das sind bläuliche Verfärbungen etwa an den Fingern und Lippen. Man kann bei fehlendem Pulsoximeter den Blutsauerstoff also auch über _Examine and Treatment » Examine Patient » Check Cyanosis (TODO: stimmt das?)_ abschätzen.
 
 Alternativ liest man den Blutsauerstoffwert über das Pulsoximeter unter _Quick View_ ab. Ein Wert von 65 % SpO₂ gilt als tödlich. Sobald die Luftzufuhr gesichert wurde, sollte der SpO₂-Wert kontinuierlich bis auf 100 % steigen.
 
 Liegen geringer Blutsauerstoff und Brustkorbverletzungen vor, ist eine Verletzung der Lunge nicht unwahrscheinlich und man sollte sofort einen Sanitäter anfordern.
 
 Ansonsten gilt es, die Atemwege freizuhalten:
+
+(TODO: genaue Angabe, wo die entsprechenden Optionen zu finden sind)
 
 - _Advanced Treatments » Establish Recovery Position_: bringt den Patienten in die stabile Seitenlage. Dies verhindert etwa, dass die Zunge die Atemwege blockiert. Die Stabile Seitenlage verhindert allerdings zum Beispiel das durchführen einer Herz-Lungen-Wiederbelebung, für diese muss der Patient auf dem Rücken liegen. Sie kann durch _Advanced Treatments » Cancel Recovery Position_ abgebrochen werden. Wenn der Patient gezogen oder getragen wird, wird sie ebenfalls abgebrochen.
 - _Airway Management » Hyperextend Head_: Überstreckt den Kopf, um die Atemwege freizumachen.
@@ -147,10 +128,10 @@ Ansonsten gilt es, die Atemwege freizuhalten:
   - _„Airways occluded“_: Atemwege verstopft, etwa durch Erbrochenes oder die Zunge des Patienten. Kann mittels _Head Turning_ beseitigt werden (muss eventuell mehrmals durchgeführt werden).
   - _„Medical Suction needed“_: Ein Sanitäter muss die Atemwege versorgen.
 
-### Herzschlag
+## Herzschlag
 
 Ein Herzschlag von unter 45 Schlägen pro Minute gilt als sehr niedrig. Es sollte mindestens eine Gabe Epinephrin verabreicht werden.
 
-Tritt ein Herzstillstand auf, muss umgehend mit der Herz-Lungen-Wiederbelebung (HLW) begonnen werden, _Advanced Treatments » Perform CPR_. Dies ist nicht möglich, wenn sich der Patient in der stabilen Seitenlage befindet, diese muss also hierfür abgebrochen werden: _Advanced Treatments » Cancel Recovery Position_. Darum sollte die Blutsauerstoffsättigung auch weiterhin gut beobachtet werden.
+Tritt ein Herzstillstand auf, muss umgehend mit der Herz-Lungen-Wiederbelebung (HLW) begonnen werden, _TODO » Perform CPR_. Dies ist nicht möglich, wenn sich der Patient in der stabilen Seitenlage befindet, diese muss also hierfür abgebrochen werden: _TODO » Cancel Recovery Position_. Darum sollte die Blutsauerstoffsättigung auch weiterhin gut beobachtet werden.
 
 Der Herzstillstand selbst kann effektiv nur von Sanitätern behandelt werden, es besteht jedoch eine Chance, dass der Puls spontan wieder einsetzt.
