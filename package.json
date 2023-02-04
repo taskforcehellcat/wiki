@@ -2,14 +2,14 @@
   "name": "sveltekit-template",
   "version": "0.0.1",
   "scripts": {
-    "dev": "npx prettier -w --loglevel silent . & vite dev",
+    "dev": "npm run format & vite dev",
     "build": "vite build",
     "package": "svelte-kit package",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig jsconfig.json",
     "check:watch": "svelte-check --tsconfig jsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint .",
-    "format": "prettier --write --plugin-search-dir=. ."
+    "format": "prettier --write --loglevel silent --plugin-search-dir=. ."
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
