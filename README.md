@@ -73,7 +73,7 @@ They will look like this when rendered:
 
 Images can be added by using the following syntax:
 
-Images are saved in `/src/lib/images/[group]` where `[group]` is the name of the group the image belongs to, like 'aubildung' or 'streitkraefte'.
+Images are saved in `/src/lib/images/[group]` where `[group]` is the name of the group the image belongs to, like 'ausbildung' or 'streitkraefte'.
 
 ```html
 <script>
