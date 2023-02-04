@@ -65,7 +65,7 @@
 
           <div id="wiki-nav__list">
             {#each anchors as anchor}
-              <a href={linkify(anchor.link)}>{anchor.text}</a>
+              <a href={anchor.link}>{anchor.text}</a>
             {/each}
           </div>
         </div>
