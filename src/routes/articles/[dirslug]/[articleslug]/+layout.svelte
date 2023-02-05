@@ -85,6 +85,8 @@
         <Theme />
         <slot />
       </main>
+
+      <footer />
     </div>
   </div>
 {/if}
