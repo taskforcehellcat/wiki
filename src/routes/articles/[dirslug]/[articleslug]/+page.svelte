@@ -17,7 +17,12 @@
   <!-- footer should be in +layout.svelte, but we cannot use slots. See comment above -->
   <p />
   <div id="footer-data">
-    zuletzt bearbeitet am:
-    {data.date}
+    zuletzt bearbeitet:
+    {new Date(data.date).toLocaleString('de-DE', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    })}
   </div>
 </section>
