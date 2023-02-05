@@ -1,13 +1,67 @@
 ---
 title: MEDEVAC
-date: '2022-11-15'
+date: '2023-02-05'
 nav_index: 5
 ---
 
-## Rollenprofil
+<script>
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+</script>
 
-## Aufgaben
+## MEDEVAC-Funk
 
-## Ausrüstung
+_Das hier beschriebene Protokoll ist noch nicht ausgereift und wird noch getestet._
 
-## Fertigkeiten
+Um einen Medevac anzufordern, verwenden wir das folgende, vom NATO-Neunzeiler abgeleitete Schema:
+
+- Zeile 1: Landezone (Koordinaten oder markante Beschreibung)
+- Zeile 2: Rufzeichen und Funkfrequenz
+- Zeile 3: Zahl der Patienten nach obigen Meldesystem
+  - Kat. Rot: kritisch
+  - Kat. Gelb: Priorität
+  - Kat. Grün: Routine
+- An dieser Stelle wird unterbrochen und die bisherigen Informationen bestätigt.
+- Zeile 4: Sicherheit der Landezone
+  - N _(no presence)_: keine feindlichen Teile in der Umgebung
+  - P _(possible presence)_: möglicherweise feindliche Teile in der Umgebung, Vorsicht beim Annähern
+  - E _(enemy presence)_: feindliche Teile in der Umgebung, Vorsicht beim Annähern
+  - X: feinliche Präsenz in der Umgebung, bewaffnete Eskortierung vonnöten
+- Zeile 5: Markierung der Landezone
+  - A: pyrotechnisches Signal
+  - B: Rauchsignal (Farbe benennen)
+  - C: keine
+  - D: andere (benennen)
+- Zeile 6: Zugehörigkeit der Patienten
+  - A: eigene Teile
+  - B: Zivilisten
+  - C: feindliche Teile
+
+Im Funk kann „Zeile“ auch mit „Z“ abgekürzt werden und „Zulu“ ausgesprochen werden.
+
+<ExampleBox>
+
+„Alpha-Lead, hier Alpha-2, Anfrage: MEDEVAC sechszeilig.“
+
+„Alpha-2, hier Alpha-Lead, bereit für Sechszeiler, kommen.“
+
+„Zulu eins: Koordinaten sechsstellig: eins zwo vier Trennung zwo fünnüf acht, markant Stadtzentrum zentraler Platz.
+
+Zulu zwo: Abholung für Alpha-3, Verständigung mit SEM fünnüf zwo SL, vier sieben Megahertz.
+
+Zulu drei: zwo Kat. rot, drei Kat. gelb und Kat. grün; Kat. Schwarz vorhanden. So mit?“
+
+„Bestätige: Medevac bei eins zwo vier Trennung zwo fünnüf acht, Stadtmitte, für Alpha-3 mit zwo Kat. rot, drei Kat. gelb und Kat. grün. Verständigung mit SEM, vier sieben Megahertz.“
+
+„Zulu vier: X-Ray, PzA erkannt.
+
+Zulu fünnüf: Bravo, türkis.
+
+Zulu sechs: fünnüf Alpha, zwo Bravo, ein Charlie. So mit?“
+
+„Bestätige: Landezone heiß, mindestens PA, markiert mit Rauch türkis, bereit für fünnüf eigene, zwo zivil, ein POW. Kommen.“
+
+„So korrekt. Kommen.“
+
+„ETA sechs Mike dreißig, Alpha-Lead Ende.“
+
+</ExampleBox>
