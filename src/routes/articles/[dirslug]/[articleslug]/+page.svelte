@@ -16,6 +16,8 @@
   <!-- <footer>{date}</footer>g -->
   <!-- footer should be in +layout.svelte, but we cannot use slots. See comment above -->
   <p />
-  zuletzt bearbeitet am:
-  <h5>{data.date}</h5>
+  <div id="footer-data">
+    zuletzt bearbeitet am:
+    <h5>{data.date}</h5>
+  </div>
 </section>
