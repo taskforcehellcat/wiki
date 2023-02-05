@@ -18,6 +18,6 @@
   <p />
   <div id="footer-data">
     zuletzt bearbeitet am:
-    <h5>{data.date}</h5>
+    {data.date}
   </div>
 </section>
