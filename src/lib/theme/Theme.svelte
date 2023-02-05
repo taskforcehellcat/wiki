@@ -56,7 +56,7 @@
     cursor: pointer;
     border-radius: var(--theme-border-radius);
     background-color: var(--brandSecondaryBG);
-    color: var(--brandSecondaryTXT);
+    color: var(--brandTertiaryTXT);
 
     &[data-visible='true'] {
       border-bottom-right-radius: 0;
@@ -114,7 +114,7 @@
           content: 'AUTO';
           font-size: 1.1rem;
           font-weight: 600;
-          color: var(--brandSecondaryTXT);
+          color: var(--brandTertiaryTXT);
         }
       }
     }

@@ -153,7 +153,7 @@
     height: 100vh;
     background-color: var(--brandPrimaryBG);
     display: flex;
-    color: var(--brandSecondaryTXT);
+    color: var(--brandTertiaryTXT);
     flex-direction: column;
     padding: 10%;
     gap: 3rem;

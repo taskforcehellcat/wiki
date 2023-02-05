@@ -111,7 +111,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--brandSecondaryTXT);
+    color: var(--brandTertiaryTXT);
     gap: 4rem;
   }
 
@@ -148,14 +148,14 @@
   #search__searchbar input {
     width: 100%;
     height: 24px;
-    color: var(--brandSecondaryTXT);
+    color: var(--brandTertiaryTXT);
     font-size: 14pt;
     font-weight: 300;
   }
 
   #search__searchbar .material-icons {
     font-size: 20pt;
-    color: var(--brandSecondaryTXT);
+    color: var(--brandTertiaryTXT);
   }
 
   :global(body) {
