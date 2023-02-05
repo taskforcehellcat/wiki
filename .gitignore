@@ -9,6 +9,7 @@ node_modules
 .vercel
 .output
 .idea
+.vite
 
 build/
 .netlify/
