@@ -17,7 +17,7 @@ Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich
 
 ## Organisation
 
-Die Organisation unserer Einheit findet ausschließlich auf unserem [![Shields.io Grafik mit Link zu unserem Discord](https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord)](https://discord.taskforcehellcat.de/) statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.
+Die Organisation unserer Einheit findet ausschließlich auf unserem <a href="https://discord.taskforcehellcat.de/" class="no-underline"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" alt="Shields.io Grafik mit Link zu unserem Discord" style="vertical-align: middle;"/></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.
 
 ## Mitmachen
 
