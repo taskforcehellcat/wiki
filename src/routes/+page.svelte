@@ -157,4 +157,16 @@
     font-size: 20pt;
     color: var(--brandSecondaryTXT);
   }
+
+  :global(body) {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    height: 100vh;
+  }
+
+  :global(#main) {
+    height: 100%;
+    overflow-y: overlay;
+  }
 </style>

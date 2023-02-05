@@ -42,7 +42,7 @@
 <style lang="scss">
   #theme {
     position: absolute;
-    right: 1rem;
+    right: 2.5rem;
     top: 1rem;
     z-index: 10;
   }
