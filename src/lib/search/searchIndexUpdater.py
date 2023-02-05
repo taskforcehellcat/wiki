@@ -9,7 +9,7 @@ from json import dump
 from bs4 import BeautifulSoup
 
 # directory that contains the directories with page content
-ROOT_PAGES = 'C:\\Users\\Leon\\Desktop\\tfhc-wiki\\src\\routes\\'
+ROOT_PAGES = r'./src/routes/'
 
 # symbol that's used to indicate that a section contains a subsection,
 # see also: http://xahlee.info/comp/unicode_arrows.html
@@ -24,6 +24,7 @@ def remove_escape_chars(str):
 
 
 def main():
+    return
     # collect all pages to be read from into the iterator 'pages'
     # page_names = next(walk(ROOT_PAGES))[1] # works in Python 3.10, does not in 3.8
     page_names = [ item for item in listdir(ROOT_PAGES) if path.isdir(path.join(ROOT_PAGES, item)) ]
@@ -37,7 +38,13 @@ def main():
 
     # for every page, open its index.svelte
     for page_name, page_dir in pages:
-        with open(path.join(page_dir, 'index.svelte'), 'r', encoding='utf-8') as file:
+        sv_path = path.join(page_dir, '+page.svelte')
+        if not path.exists(sv_path):
+            print(f'{sv_path} not existing, skipping')
+            continue
+
+        with open(sv_path, 'r', encoding='utf-8') as file:
+            print(sv_path)
             index = file.read()
             parser = BeautifulSoup(index, 'lxml')
 
@@ -65,8 +72,6 @@ def main():
             #   route: its name for anchor links
             #   sections and subsections with their text contents
 
-            page_dict.update({'route': page_name})
-
             # for every section/subsection etc. get its text
 
             for section in page_sections:
@@ -75,12 +80,13 @@ def main():
                 except KeyError:
                     # sections without ids shouldn't be indexed
                     continue
-                
+
                 section_text = ''
                 for child in section.children:
                     if child.name in TEXT_ELEMENTS:
-                        print(child.text)
+                        #print(child.text)
                         section_text = section_text + (child.text) + ' '
+                        section_text = section_text.replace('\n', '').replace('\t', '').replace('  ', ' ')
 
                 page_dict.update({section_name: section_text})
 
@@ -107,7 +113,7 @@ def main():
 
     # bundle everything into one json object
 
-    with open('searchIndex.json', 'w', encoding='utf-8') as f:
+    with open('./src/lib/search/searchIndex.json', 'w', encoding='utf-8') as f:
         dump(index_dict, f, ensure_ascii=True, indent=4)
 
 

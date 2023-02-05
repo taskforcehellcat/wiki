@@ -1,0 +1,14 @@
+---
+title: JTAC (Joint Terminal Attack Controller)
+title_short: JTAC
+date: '2022-11-15'
+nav_index: 1
+---
+
+## Rollenprofil
+
+## Aufgaben
+
+## Ausrüstung
+
+## Fertigkeiten

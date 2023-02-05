@@ -1,0 +1,42 @@
+---
+title: Kampfpionier
+date: '2022-11-15'
+nav_index: 1
+---
+
+<script>
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+</script>
+
+## Rollenprofil
+
+Die Rolle des Kampfpioniers setzt sich zusammen aus der Rolle des Pioniers und des Schützen. Der Kampfpionier trägt die Verantwortung, den Schutz der eigenen Truppen zu verbessern und dadurch deren Überlebensfähigkeit zu erhöhen, ist anders als der Pionier aber aktiv am Kampfgefecht beteiligt.
+
+## Aufgaben
+
+Die Aufgaben eines Kampfpioniers variieren je nach Mission und Situation. Die Hauptaufgaben lassen sich aber in wenigen Punkten grob zusammenfassen.
+
+- die Instandsetzung von Boden- und Luftfahrzeugen
+- die Instandsetzung von Infrastruktur, als auch das verstärken und befestigen militärisch genutzter Einrichtungen durch bauliche Maßnahmen
+- das Befördern von außerstand-gesetzten Fahrzeugen
+- das Aufklären und entschärfen von sowohl <Tooltip text="Anti-personnel (Antipersonen)">AP</Tooltip>\- & <Tooltip text="Anti-tank (Panzerabwehr)">AT</Tooltip>\-Minen
+- das Bedienen von <Tooltip text="Unmanned aerial vehicle (unbemanntes Fluggerät)">UGV</Tooltip> und <Tooltip text="Unmanned aerial vehicle (unbemanntes Fluggerät)">UAV</Tooltip> Drohnen
+
+## Ausrüstung
+
+In Ergänzung zu der Grundausrüstung des Schützen zählen folgende Gegenstände zur Ausrüstung des Kampfpioniers:
+
+- <Tooltip text="Minensuchgerät">Mine Detector</Tooltip>
+- <Tooltip text="Werkzeugkasten">Toolkit</Tooltip>
+- <Tooltip text="Terminal zum Steuern von oben erläuterten UAVs & UGVs">UAV-Terminal</Tooltip>
+- <Tooltip text="Klappspaten, zum aufschaufeln von Deckung im Feld">Entrenching-Tool</Tooltip>
+- je nach Situation ein Minenräumungsfahrzeug, oder diverse Drohnen
+
+## Fertigkeiten
+
+- erweiterte Kenntnisse über eigene Fahrzeuge
+- Verwendung der oben genannten Ausrüstung
+
+## Weiteres
+
+Kampfpionier immer halal
