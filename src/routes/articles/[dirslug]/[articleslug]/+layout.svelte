@@ -15,6 +15,7 @@
   import { linkify } from '$lib/helpers.js';
   import { afterUpdate, onMount } from 'svelte';
   import { browser } from '$app/environment';
+  import { afterNavigate } from '$app/navigation';
 
   let isOpen = false;
   export let anchors = [];
@@ -36,14 +37,15 @@
     if (location.hash) {
       document.querySelector(location.hash).scrollIntoView();
     }
+  });
 
-    function moveDateToFooter() {
-      const footer = document.querySelector('footer');
-      const footerData = document.getElementById('footer-data');
-      footer.innerHTML = footerData.innerHTML;
-      footerData.remove();
-    }
+  function moveDateToFooter() {
+    const footer = document.querySelector('footer');
+    const footerData = document.getElementById('footer-data');
+    footer.innerHTML = footerData.innerHTML;
+  }
 
+  afterNavigate(async () => {
     moveDateToFooter();
   });
 

@@ -1,6 +1,6 @@
 ---
 title: Allgemeines
-date: '22.06.2022'
+date: '2022-06-22'
 nav_index: 1
 ---
 

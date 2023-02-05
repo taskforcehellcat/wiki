@@ -16,7 +16,7 @@
   <!-- <footer>{date}</footer>g -->
   <!-- footer should be in +layout.svelte, but we cannot use slots. See comment above -->
   <p />
-  <div id="footer-data">
+  <div id="footer-data" style="display: none;">
     zuletzt bearbeitet:
     {new Date(data.date).toLocaleString('de-DE', {
       weekday: 'long',
