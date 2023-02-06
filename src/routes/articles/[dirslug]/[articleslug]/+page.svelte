@@ -12,17 +12,4 @@
 
   <!-- Use svelte:component instead of <Content/> to force reactivity if content changes (like changing articles) -->
   <svelte:component this={data.Content} />
-
-  <!-- <footer>{date}</footer>g -->
-  <!-- footer should be in +layout.svelte, but we cannot use slots. See comment above -->
-  <p />
-  <div id="footer-data" style="display: none;">
-    zuletzt bearbeitet:
-    {new Date(data.date).toLocaleString('de-DE', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    })}
-  </div>
 </section>
