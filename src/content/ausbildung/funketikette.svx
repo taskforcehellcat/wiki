@@ -1,6 +1,6 @@
 ---
 title: Funketikette
-date: '2022-11-15'
+date: '2023-02-06'
 nav_index: 2
 ---
 
@@ -17,41 +17,29 @@ Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommu
 
 Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppführern, Sanitätern oder Aufklärern. Dazu finden sich Einträge mit weiterführenden Informationen auf den jeweiligen Unterseiten.
 
-## Steuerung
-
-Über die ACE Self-Interaction (<KBD>LCTRL</KBD>+<KBD>WIN</KBD>/<KBD>LCTRL</KBD>+<KBD>LCMD</KBD>) können unter dem Punkt Radio die Funkgeräte eingestellt werden, siehe dazu auch untenstehendes Bild. Wählt man das Funkgerät aus, so öffnet es sich (siehe [Funkgerät einstellen](#funkgeraet_einstellen)). Die Unterpunkte werden im Folgenden erklärt.
-
-![Radioauswahl in der ACE Self Interaction]({funk_aceself})
-
-### Funkgerät einstellen
-
-#### SEM 52 SL
-
-Infanterie ist zumeist mit dem Funkgerät _SEM 52 SL_ ausgerüstet, deren Bedienelemente untenstehendes Bild zeigt. Sie bestehen im Wesentlichen aus zwei Drehknöpfen und einer Anzeige. Letztere zeigt die aktuell genutzte Frequenz in kHz (Kilohertz), standardmäßig sind 46 MHz eingestellt. Die Drehknöpfe werden mit Links- und Rechtsklick nach links bzw. rechts verstellt.
-
-Der linke Drehknopf dient neben dem Einschalten dem Auswählen von Voreinstellungen. Die zwölf standardmäßigen Voreinstellungen bezeichnen wir auch als Kanäle. Die Einstellungen P und H dienen der Programmierung des Funkgeräts, was im Allgemeinen aber nicht notwendig werden sollte.
-
-Der rechte Drehknopf ist die Lautstärkeeinstellung mit zwölf Stufen. Zwischen beiden Drehknöpfen befindet sich ein Knopf zum Senden (praktisch verwendet man dafür ohne das Funkgerät öffnen zu müssen die Taste <KBD>CAPS LOCK</KBD>).
-
-![Oberfläche der SEM 52 SL]({sem52sl})
-
-Alle weiteren Informationen zur SEM 52 SL und allen weiteren ACRE Funkgeräten finden sich auch in englischer Sprache im [ACRE Wiki](https://acre2.idi-systems.com/wiki/radios/overview).
-
-#### AN/PRC 343
-
-[ACRE Wiki Eintrag zum AN/PRC 343](https://acre2.idi-systems.com/wiki/radios/an-prc-343) in englischer Sprache.
-
-### Weitere Einstellungen
-
-Je nach Präferenz kann man ein Funkgerät auf das rechte, linke oder beide Ohren legen. Besonders, wenn man mehrere Funkgeräte gleichzeitig benutzt kann dies sinnvoll sein, um unterscheiden zu können, von welchem Funkgerät gerade Funk eingeht.
-
-Die Option „share“ ermöglicht es, mit einer anderen Person das Funkgerät zu teilen, solange sie in der Nähe ist, ohne dafür das Funkgerät aus dem Inventar geben zu müssen.
-
-Führt man mehrere Funkgeräte, gibt es zudem die Option „PPT“. Mit dem Funkgerät PPT1 funkt man mit <KBD>CAPS LOCK</KBD>, über PPT2 mit SHIFT+<KBD>CAPS LOCK</KBD> und über PPT3 mit <KBD>ALT</KBD>+<KBD>CAPS LOCK</KBD>.
-
 ## Vor dem Funken
 
 Noch bevor man beginnt, Funkkontakt aufzubauen, überlegt man sich genau, was man mitteilen möchte. Ein Sender blockiert für die Dauer seines Funkspruches den Funkkanal und damit möglicherweise andere eilige Meldungen. Darum sollte ein Funkspruch gut formuliert, knapp, aber unmissverständlich gehalten werden. Guter Funk folgt also der Devise: _So viel wie nötig, so kurz wie möglich._
+
+## Signalwörter
+
+Auf Funkebenen wie etwa dem Zugfunk wird eine Reihe von Signalwörtern genutzt, die den Funkaustausch vereinfachen und regeln. Auf Trupp- und Gruppenebene müssen diese Signalwörter nicht genutzt werden, da dort jederzeit eine klare Funkverbindung vorliegt.
+
+### Kommen
+
+Mit „Kommen“ am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegenüber erwartet. Man benutzt es auch nach dem Beantworten einer Frage.
+
+### Ende
+
+Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Die Partei, die den Funkspruch begonnen hat, beendet mit „Ende“ den Austausch. Mit dem Gebrauch des Signalwortes „Ende“ wird der Funkkanal freigegeben.
+
+### Trennung
+
+„Trennung“ ist effektiv ein „Ende“. Es zeigt dem Funkkreis an, dass der Sprecher das Gespräch mit einer Partei für beendet erklärt, aber direkt zu einer Anderen Kontakt aufnehmen möchte. Es folgt auf „Trennung“ also direkt die Verbindung zum neuen Gesprächspartner.
+
+## Ausnahmen und Notfälle
+
+Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „Eil“, „Sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.
 
 ## Verbindung
 
@@ -82,26 +70,6 @@ Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei 
 ![NATO-Buchstabiertafel]({alphabet})
 
 Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alphabet dringend aneignen.
-
-## Beendigung
-
-Hat man alles gesagt, muss man auch das dem Funkkreis signalisieren. Andere halten das Gespräch ansonsten für unbeendet und halten Funkstille. Hierzu gibt es eine Reihe von Signalwörtern:
-
-### Kommen
-
-Mit „kommen“ am Ende eines Funkspruches zeigt man an, dass man eine Antwort vom Gegenüber erwartet. Man benutzt es auch nach dem Beantworten einer Frage.
-
-### Ende
-
-Mit „ende“ beendet man den Austausch. „Ende“ wird von der Partei gebraucht, die den Austausch begonnen hat.
-
-### Trennung
-
-„Trennung“ ist effektiv ein „ende“. Es zeigt dem Funkkreis an, dass der Sprecher das Gespräch mit einer Partei für beendet erklärt, aber direkt zu einer Anderen Kontakt aufnehmen möchte. Es folgt auf „Trennung“ also direkt die Verbindung zum neuen Gesprächspartner.
-
-## Ausnahmen und Notfälle
-
-Grundsätzlich herrscht während eines laufenden Austausches Funkstille für alle anderen. Kommt es jedoch zu Notfällen, kann es sein, dass ein Dritter sich mit Signalwörtern wie „eil“, „sofort“ oder „Blitz“ einschaltet. Dies bedeutet offensichtlich eine Notlage und das laufende Gespräch ist zu unterbrechen.
 
 ## Weiterführende Informationen
 
