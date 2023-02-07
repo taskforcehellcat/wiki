@@ -152,31 +152,6 @@ h3 {
   display: block;
 }
 
-section {
-  &:not(section > section) {
-    /*
-    adds scroll-padding but breaks tooltips
-    padding-top: 10rem;
-    margin-top: -10rem;
-    */
-    width: 70%;
-  }
-
-  img {
-    max-height: 40rem;
-    margin-bottom: 0.15rem;
-    max-width: 100%;
-  }
-
-  > {
-    img,
-    object {
-      max-width: 100%;
-      object-fit: cover;
-    }
-  }
-}
-
 main p {
   text-align: justify;
   width: 100%;
@@ -185,34 +160,12 @@ main p {
   color: var(--brandSecondaryTXT);
 }
 
-section {
-  &:not(section > section) {
-    margin-bottom: 6rem;
-  }
-
-  > section {
-    padding-left: 1.7rem;
-    margin-bottom: 4rem;
-  }
-
-  /*
-	Does not work with tooltips
-	position: relative;
-	*/
-}
-
 td {
   padding-right: 2rem;
 }
 
 th {
   text-align: left;
-}
-
-section a {
-  color: var(--hyperLink);
-  position: relative;
-  border-bottom: 1px solid;
 }
 
 main {
@@ -338,21 +291,6 @@ input {
     outline: none;
   }
 }
-
-/*
-@media only screen and (min-width: 610px) {
-  #home__nav__logo br {
-    display: none;
-  }
-}
-
-
-@media only screen and (max-width: 380px) {
-  #home__nav__logo:not(#home__nav__logo > span) {
-    font-size: 30pt;
-  }
-}
-*/
 
 .noselect {
   -webkit-touch-callout: none;
@@ -580,14 +518,6 @@ input {
   main {
     padding: 6rem 3rem 10rem 3rem;
   }
-
-  /*
-  adds scroll-padding but breaks tooltips
-  section:not(section > section) {
-    padding-top: 20rem;
-    margin-top: -20rem;
-  }
-  */
 }
 
 img#home__nav__logo {
@@ -618,17 +548,7 @@ img#home__nav__logo {
   }
 }
 
-@media only screen and (max-width: 1530px) {
-  section {
-    width: 90%;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
-  section:not(section > section) {
-    width: 100%;
-  }
-
   main p {
     text-align: left;
   }
