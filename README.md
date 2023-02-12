@@ -175,10 +175,10 @@ They will look like this when rendered:
 
 ### Displaying keyboard keys
 
-Keyboard keys can be displayed by using the `<kbd>` tag:
+Keyboard keys can be displayed by using the custom `<KBD>` tag:
 
 ```html
-Sprinten: <kbd>SHIFT + W</kbd>
+Sprinten: <KBD keys="SHIFT,W"></KBD>
 ```
 
 They will look like this when rendered:
