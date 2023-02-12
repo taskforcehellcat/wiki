@@ -1,7 +1,85 @@
 ---
 title: Steuerung
-date: '2022-11-15'
+date: '2023-02-12'
 nav_index: 6
 ---
 
-todo.
+<script lang="ts">
+        import KBD from "$lib/wikitools/KBD.svelte";
+</script>
+
+<style>
+    details {
+        margin-block: 2rem;
+        font-size: 13pt;
+    }
+
+    tr {
+        display: flex;
+        justify-content: space-between;
+        width: 30rem;
+        padding-block: 0.5rem;
+    }
+
+    details > summary {
+        margin-bottom: 1rem;
+        cursor: pointer;
+        font-size: 2.3rem;
+    }
+
+    th {
+        padding-block: 1rem;
+    }
+
+    h4 {
+        width: min(45rem, 100%);
+        display: flex;
+        justify-content: space-between;
+        padding-block: 1rem;
+    }
+
+</style>
+
+<!--
+<details>
+    <summary>Kommunikation</summary>
+</details>
+-->
+
+<!-- ## Allgemein
+
+<h4><span>Aktion</span><span>Tastenbelegung</span></h4>
+<KBD keys="ESC">Spiel pausieren</KBD>
+<KBD keys="LALT">Inventar</KBD>
+<KBD keys="2x LALT">Karte</KBD>
+<KBD keys="K">Kompass</KBD>
+<KBD keys="O">Armbanduhr</KBD>
+<KBD keys="B">Fernglas</KBD>
+<KBD keys="+">Right Panel Next</KBD>
+<KBD keys="Ü">Left Panel Next</KBD>
+<KBD keys="SPACE">Interagieren (Vanilla)</KBD>
+<KBD keys="WIN">Fremdinteraktion (ace)</KBD>
+<KBD keys="CTRL + WIN">Eigeninteraktion (ace)</KBD>
+<KBD keys="H">Medizinische Übersicht</KBD>
+<KBD keys="N">Nachtsichtgerät</KBD>
+
+## Kommunikation
+
+<h4><span>Aktion</span><span>Tastenbelegung</span></h4>
+<KBD keys="CAPS">Prim. Funkgerät</KBD>
+<KBD keys="CTRL + CAPS">Sekund. Funkgerät</KBD>
+<KBD keys="TAB + SCROLL">Redereichweite</KBD>
+
+## Zu Fuß
+
+<h4><span>Aktion</span><span>Tastenbelegung</span></h4>
+<KBD keys="W,A,S,D">Bewegen</KBD> -->
+
+## Allgemein
+
+| Aktion          | Tastenbelegung        |
+| --------------- | --------------------- |
+| Spiel pausieren | <KBD keys="W,A,S,D"/> |
+| Sprinten        | <KBD keys="W,A,S,D"/> |
+| Springen        | <KBD keys="W,A,S,D"/> |
+| Klettern        | <KBD keys="W,A,S,D"/> |
