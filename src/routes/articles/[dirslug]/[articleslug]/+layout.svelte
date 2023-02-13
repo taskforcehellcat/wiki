@@ -112,7 +112,7 @@
   }
 
   #content {
-    padding-right: 25%;
+    width: min(100%, 120rem);
   }
 
   #nav__list-bar {
@@ -179,10 +179,6 @@
   }
 
   @media only screen and (max-width: 800px) {
-    #content {
-      padding-right: 3rem;
-    }
-
     .nav__list-title,
     #nav__list-wrapper {
       display: none;
