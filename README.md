@@ -178,7 +178,7 @@ They will look like this when rendered:
 Keyboard keys can be displayed by using the custom `<Keys>` tag:
 
 ```html
-Sprinten: <Keys keys="SHIFT,W"></Keys>
+Sprinten: <Keys keys="SHIFT,W" />
 ```
 
 They will look like this when rendered:
