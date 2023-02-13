@@ -117,6 +117,10 @@
     gap: 20px;
   }
 
+  :global(img:not(a > img)) {
+    width: min(100%, 60rem);
+  }
+
   .nav__list-title {
     color: var(--brandNeutral);
     text-transform: uppercase;
