@@ -24,9 +24,7 @@
 
 <svelte:window on:resize={mouseLeave} />
 
-<span on:mouseover={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove} data-tooltip><slot /></span>
-
-{#if isHovered}
+<span on:mouseover={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove} data-tooltip><slot /></span>{#if isHovered}
   <div style="top: {y}px; left: {x}px;" class="tooltip">
     {#if image}
       <img style="max-width: 100%;" src={image} alt="" />
