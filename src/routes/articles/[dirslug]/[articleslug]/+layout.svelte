@@ -1,6 +1,7 @@
 <script lang="ts">
   import '../../../../app.scss';
   import { themeId } from '$lib/theme/stores';
+  import '$lib/mdstyling/github.css';
 
   import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
   // --- themes ---
@@ -82,7 +83,7 @@
         {/each}
       </div>
 
-      <main id="content">
+      <main id="content" class="markdown-body">
         <!-- <Wipbanner /> -->
         <Theme />
         <slot />
