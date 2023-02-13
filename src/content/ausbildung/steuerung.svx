@@ -38,8 +38,11 @@ nav_index: 6
         padding-block: 1rem;
     }
 
-</style>
+    td,th {
+        border: none !important;
+    }
 
+</style>
 
 ## Allgemein
 
