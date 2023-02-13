@@ -111,6 +111,10 @@
     grid-template-rows: 18fr 12rem;
   }
 
+  #content {
+    padding-right: 25%;
+  }
+
   #nav__list-bar {
     display: flex;
     flex-direction: column;
@@ -175,6 +179,10 @@
   }
 
   @media only screen and (max-width: 800px) {
+    #content {
+      padding-right: 3rem;
+    }
+
     .nav__list-title,
     #nav__list-wrapper {
       display: none;
