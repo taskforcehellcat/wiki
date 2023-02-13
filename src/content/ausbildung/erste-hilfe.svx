@@ -11,7 +11,7 @@ nav_index: 1
     /* images */
     import erste_hilfe_basic from '$lib/images/erstehilfe/erste_hilfe_basic.png'
     import ace_medical_menu from '$lib/images/erstehilfe/ace_medical_menu.png'
-    import KBD from "$lib/wikitools/KBD.svelte";
+    import Keys from "$lib/wikitools/Keys.svelte";
 </script>
 
 Im Gefecht kommt es unweigerlich zu Ausfällen. Diese Seite soll die Grundlagen der Selbst- und Kameradenhilfe erläutern. Dazu gehören nicht nur die medizinische Versorgung eines Verwundeten selbst, sondern auch das Verhalten vor und während der Behandlung. Das ist wesentlich, um die Gefechtsbereitschaft der Truppe zu erhalten. Diese Seite sollte daher aufmerksam gelesen werden.
@@ -74,9 +74,9 @@ Bandagen können sich immer wieder lösen. Daher sollten diese Verbände immer v
 
 ## Medical Menu
 
-Alle Optionen zur medizinischen Versorgung eines Patienten findet man im _Medical Menu_. Um es aufzurufen, drückt man während man den Patienten anschaut die Taste <KBD>H</KBD>.
+Alle Optionen zur medizinischen Versorgung eines Patienten findet man im _Medical Menu_. Um es aufzurufen, drückt man während man den Patienten anschaut die Taste <Keys>H</Keys>.
 
-_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste <KBD>G</KBD> standardmäßig Granaten geworfen werden. Wir empfehlen dringend, dafür in den Einstellungen stattdessen <KBD>Shift</KBD> + <KBD>G</KBD> festzulegen.
+_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste <Keys>G</Keys> standardmäßig Granaten geworfen werden. Wir empfehlen dringend, dafür in den Einstellungen stattdessen <Keys>Shift</Keys> + <Keys>G</Keys> festzulegen.
 
 _Hinweis:_ Oft kommt es vor, dass man versehentlich sein eigenes Medical Menu öffnet, wenn man den Patienten nicht richtig anschaut oder das Spiel die Blickrichtung nicht richtig registriert. Daher sollte man immer einen kurzen Blick auf den Namen werfen, der im Medical Menu angezeigt wird.
 

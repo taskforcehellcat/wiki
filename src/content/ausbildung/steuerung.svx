@@ -5,7 +5,7 @@ nav_index: 6
 ---
 
 <script lang="ts">
-        import KBD from "$lib/wikitools/KBD.svelte";
+        import Keys from "$lib/wikitools/Keys.svelte";
 </script>
 
 <style>
@@ -77,9 +77,9 @@ nav_index: 6
 
 ## Allgemein
 
-| Aktion          | Tastenbelegung        |
-| --------------- | --------------------- |
-| Spiel pausieren | <KBD keys="W,A,S,D"/> |
-| Sprinten        | <KBD keys="W,A,S,D"/> |
-| Springen        | <KBD keys="W,A,S,D"/> |
-| Klettern        | <KBD keys="W,A,S,D"/> |
+| Aktion          | Tastenbelegung         |
+| --------------- | ---------------------- |
+| Spiel pausieren | <Keys keys="W,A,S,D"/> |
+| Sprinten        | <Keys keys="W,A,S,D"/> |
+| Springen        | <Keys keys="W,A,S,D"/> |
+| Klettern        | <Keys keys="W,A,S,D"/> |

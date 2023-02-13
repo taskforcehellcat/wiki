@@ -8,7 +8,7 @@ nav_index: 2
     import alphabet from '$lib/images/funketikette/alphabet.png';
     import funk_aceself from '$lib/images/funketikette/funk_aceself.png';
     import sem52sl from '$lib/images/funketikette/sem52sl.png';
-    import KBD from "$lib/wikitools/KBD.svelte";
+    import Keys from "$lib/wikitools/Keys.svelte";
 </script>
 
 ## Einleitung
