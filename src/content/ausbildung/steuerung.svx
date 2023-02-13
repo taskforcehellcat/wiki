@@ -40,40 +40,6 @@ nav_index: 6
 
 </style>
 
-<!--
-<details>
-    <summary>Kommunikation</summary>
-</details>
--->
-
-<!-- ## Allgemein
-
-<h4><span>Aktion</span><span>Tastenbelegung</span></h4>
-<KBD keys="ESC">Spiel pausieren</KBD>
-<KBD keys="LALT">Inventar</KBD>
-<KBD keys="2x LALT">Karte</KBD>
-<KBD keys="K">Kompass</KBD>
-<KBD keys="O">Armbanduhr</KBD>
-<KBD keys="B">Fernglas</KBD>
-<KBD keys="+">Right Panel Next</KBD>
-<KBD keys="Ü">Left Panel Next</KBD>
-<KBD keys="SPACE">Interagieren (Vanilla)</KBD>
-<KBD keys="WIN">Fremdinteraktion (ace)</KBD>
-<KBD keys="CTRL + WIN">Eigeninteraktion (ace)</KBD>
-<KBD keys="H">Medizinische Übersicht</KBD>
-<KBD keys="N">Nachtsichtgerät</KBD>
-
-## Kommunikation
-
-<h4><span>Aktion</span><span>Tastenbelegung</span></h4>
-<KBD keys="CAPS">Prim. Funkgerät</KBD>
-<KBD keys="CTRL + CAPS">Sekund. Funkgerät</KBD>
-<KBD keys="TAB + SCROLL">Redereichweite</KBD>
-
-## Zu Fuß
-
-<h4><span>Aktion</span><span>Tastenbelegung</span></h4>
-<KBD keys="W,A,S,D">Bewegen</KBD> -->
 
 ## Allgemein
 
