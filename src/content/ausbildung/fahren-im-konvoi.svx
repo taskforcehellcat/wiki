@@ -42,7 +42,7 @@ Zum Funken auf diesem Funkkreis sind nur Konvoiführer und Fahrzeugführer berec
 Um den Funkkreis eines Konvois möglichst frei zu halten, sollte dort nur aus folgenden Gründen gefunkt werden:
 
 - Anweisungen vom Konvoiführer
-- Informationen (Ziviles Fahrzeug voraus/nähert sich von hinten, Zivilist auf der Straße, Straßenblockade voraus, ...)
+- Informationen (ziviles Fahrzeug voraus/nähert sich von hinten, Zivilist auf der Straße, Straßenblockade voraus, ...)
 - Fahrzeug biegt ab (letztes Fahrzeug teilt mit, dass der gesamte Konvoi abgebogen ist)
 - Fahrzeug kann nicht mit Konvoi mithalten/wurde demobilisiert
 
