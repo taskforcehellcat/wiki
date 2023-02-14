@@ -54,10 +54,10 @@ Ein Konvoi aus vier Fahrzeugen biegt rechts ab. Das Abbiegen wird vor der Kurve 
 
 <ExampleBox>
 
-Konvoiführer: „_Führungsfahrzeug - nächste rechts_“<br>
-Fahrzeugführer 2: „_Fahrzeug 2 - rechts ab_“<br>
-Fahrzeugführer 3: „_Fahrzeug 3 - rechts ab_“<br>
-Fahrzeugführer 4: „_Fahrzeug 4 - rechts ab - Konvoi rechts_“
+Konvoiführer: „_Führungsfahrzeug — nächste rechts_“<br>
+Fahrzeugführer 2: „_Fahrzeug 2 — rechts ab_“<br>
+Fahrzeugführer 3: „_Fahrzeug 3 — rechts ab_“<br>
+Fahrzeugführer 4: „_Fahrzeug 4 — rechts ab — Konvoi rechts_“
 
 </ExampleBox>
 
@@ -65,8 +65,8 @@ Ein Konvoi aus vier Fahrzeugen gerät unter Beschuss. Der Konvoiführer gibt die
 
 <ExampleBox>
 
-Konvoiführer: „_Führungsfahrzeug - wir brechen durch - Feuer erwidern und Nebel legen_“<br>
-Fahrzeugführer 4: „_Fahrzeug 4 - Konvoi bricht durch_“
+Konvoiführer: „_Führungsfahrzeug — wir brechen durch — Feuer erwidern und Nebel legen_“<br>
+Fahrzeugführer 4: „_Fahrzeug 4 — Konvoi bricht durch_“
 
 </ExampleBox>
 
@@ -74,7 +74,7 @@ Ein Fahrzeug kann die Richtgeschwindigkeit nicht einhalten und teilt dies dem Ko
 
 <ExampleBox>
 
-Fahrzeugführer 2: „_Fahrzeug 2 - kann nicht mithalten - Höchstgeschwindigkeit drei null_“<br>
-Konvoiführer: „_Führungsfahrzeug - neue Richtgeschwindigkeit - drei null_“
+Fahrzeugführer 2: „_Fahrzeug 2 — kann nicht mithalten — Höchstgeschwindigkeit drei null_“<br>
+Konvoiführer: „_Führungsfahrzeug — neue Richtgeschwindigkeit — drei null_“
 
 </ExampleBox>
