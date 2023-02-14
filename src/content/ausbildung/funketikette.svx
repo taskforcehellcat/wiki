@@ -11,8 +11,6 @@ nav_index: 2
     import Keys from "$lib/wikitools/Keys.svelte";
 </script>
 
-## Einleitung
-
 Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollten allen Soldaten bekannt sein.
 
 Diese Anleitung vermittelt bloß die absoluten Grundlagen des Funkens. Je nach Spezialisierung sind noch weitere Dinge relevant, wie etwa beim Funken im Konvoi und zwischen der Logistik, im Funk unter Truppführern, Sanitätern oder Aufklärern. Dazu finden sich Einträge mit weiterführenden Informationen auf den jeweiligen Unterseiten.

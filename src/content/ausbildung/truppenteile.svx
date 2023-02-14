@@ -8,8 +8,6 @@ nav_index: 5
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
 </script>
 
-## Einleitung
-
 Innerhalb unserer Einheit gibt es klare Festlegungen von <Tooltip text="Die Anzahl von Soldaten">Truppenteilen</Tooltip>. Diese sind hilfreich, um zum Beispiel schnell und effizient über eigene oder feindliche Kräfte zu informieren. Sie werden auf dieser Seite näher erläutert.
 
 ## Buddyteam
