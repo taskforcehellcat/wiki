@@ -29,7 +29,7 @@ Die Gliederung und Koordinierung eines Konvois erfolgt durch den _Konvoiführer_
 
 ## Funken
 
-Neben der Anwendung der [Funketikette](../ausbildung/funketikette) sollen einige Sonderregelungen die Koordinierung von Konvois per Funk vereinfachen, die in diesem Abschnitt erläutert werden. **Signalwörter müssen im Konvoifunk nicht benutzt werden, insofern eine gute Funkverbindung vorliegt.**
+Neben der Anwendung der [Funketikette](../ausbildung/funketikette) sollen einige Sonderregelungen die Koordinierung von Konvois per Funk vereinfachen, die in diesem Abschnitt erläutert werden. **Signalwörter müssen im Konvoifunk nicht benutzt werden, insofern eine gute Funkverbindung vorliegt**. **Geschwindigkeiten werden im Konvoifunk aufgrund der Lautstärke der Fahrzeuge Zahl für Zahl in km/h angegeben. Statt „_Fünfzig km/h_“ wird „_Richtgeschwindigkeit fünf null_“ durchgegeben**.
 
 ### Funkkreis
 
