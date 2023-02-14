@@ -1,10 +1,10 @@
 ---
-title: Medikation
-date: '2022-11-15'
-nav_index: 3
+title: Medikamente
+date: '2023-02-14'
+nav_index: 2
 ---
 
-Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite [Behandlungen](../behandlungen).
+Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite [Behandlungen]().
 
 ## Basismedikamente
 
@@ -16,7 +16,7 @@ unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht über
 
 #### Painkillers (dt. Schmerztabletten)
 
-lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut](../behandlungen#transfusionen_im_feld)). Werden im Arsenal bei den Magazinen geführt.
+lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut]()). Werden im Arsenal bei den Magazinen geführt.
 
 #### Epinephrin-Autoinjektor (Adrenalin)
 
@@ -28,7 +28,7 @@ senkt die Herzrate, kann zur Behandlung von Epinephrin-Überdosen verwendet werd
 
 ## Infarkttherapie
 
-Medikamente zur Behandlung von Herzstillständen, siehe auch [hier](../behandlungen#herzinfarkt).
+Medikamente zur [Behandlung von Herzstillständen]().
 
 Die Antiarrythmika Amiodaron und Lidocain stabilisieren das Membranpotential des Herzmuskels und verringern dadurch seine Erregbarkeit. Dies hilft, Kammerflimmern zu behandeln, wenn der Herzmuskel krampft. Bei einer Asystolie sind sie kontraindiziert.
 
@@ -50,7 +50,7 @@ Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich s
 
 #### Ammonium Carbonat
 
-Inhalat, kann stabile Patienten (siehe [Kriterien an Stabilität](../behandlungen#vitalparameter)) aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
+Inhalat, kann [stabile]() Patienten aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
 
 #### Naloxon (NARCAN)
 

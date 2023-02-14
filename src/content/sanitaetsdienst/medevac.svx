@@ -1,13 +1,5 @@
 ---
 title: MEDEVAC
 date: '2022-11-15'
-nav_index: 5
+nav_index: 7
 ---
-
-## Rollenprofil
-
-## Aufgaben
-
-## Ausrüstung
-
-## Fertigkeiten

@@ -1,33 +1,43 @@
 ---
 title: Sanitäter
-date: '2022-11-15'
+date: '2023-02-14'
 nav_index: 1
 ---
 
-_„Air goes in and out, blood goes round and round. Any deviation from that is a problem.“_
+<script>
+    import Keys from "$lib/wikitools/Keys.svelte";
+</script>
 
 ## Rollenprofil
 
-Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen, oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Anwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung Ausfälle zu kommunizieren und bei der Bereitstellung von [MEDEVAC](../medevac)s mitzuwirken.
+Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC]()s mitzuwirken.
 
 ## Ausrüstung
 
 - Verbrauchsmaterialien:
-- [Medikamente](../medikationen)
-- Bandagen: siehe [hier](../behandlungen#bandagen)
-- sonstiges [Verschleißmaterial](#verbrauchsmaterialien), etwa Kanülen, Infusionen, Kits, etc.
-- Rauchgranaten
+  - [Medikamente]()
+  - Bandagen
+  - sonstiges [Verschleißmaterial](), etwa Kanülen, Infusionen, Kits, etc.
+  - Rauchgranaten
 - Gebrauchsgegenstände
-- [medizinischer Art](#gebrauchsgegenstaende)
-- Fernglas
-- Funkgerät
-- Bewaffnung:
-- eine Primärwaffe zur Selbstverteidigung auf kurze bis mittlere Distanzen
-- ggf. eine Sekundärwaffe
+  - [medizinisches Werkzeug]()
+  - Funkgerät
+- Bewaffnung: eine Primärwaffe zur Selbstverteidigung auf kurze bis mittlere Distanzen
 
 ## Fähigkeiten
 
-Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](../erstehilfe) und [Funketikette](../funketikette) auch die [fortgeschrittenen Behandlungen](../behandlungen), welche andere Soldaten nicht leisten können. Außerdem können sie Ausfälle adäquat melden und beherrschen die Besonderheiten des [Sanitäterfunks](../sanitaeterfunk).
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe]() und [Funketikette]() auch die [fortgeschrittenen Behandlungen](), welche andere Soldaten nicht leisten können.
+
+Konkret können sie:
+
+- Verletzungen versorgen und Blutungen stoppen
+- Verbände nähen
+- Blutverlust ausgleichen
+  - Nierenversagen verhindern
+- Bewusstlose versorgen
+  - Atemwegskomplikationen verhindern
+  - Herzstillstände behandeln
+- Brüche operieren
 
 ## Verbrauchsmaterialien
 
@@ -35,19 +45,19 @@ Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.
 
 #### AAT-Kit
 
-gebraucht zur Behandlung von Hämothoraxen (siehe [Behandlung](../behandlungen#pneumothorax_und_haemothorax) von Hämothoraxen und Spannungspneumothoraxen).
+gebraucht zur [Behandlung von Hämothoraxen und Spannungspneumothoraxen]().
 
 #### Field Blood Transfusion Kit (dt. Feldtransfusionsset)
 
-erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Siehe dazu [Transfusionen im Feld](../behandlungen#transfusionen_im_feld).
+erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Siehe dazu [Transfusionen im Feld]().
 
 #### Chest Seal (dt. Thoraxverschlusspflaster)
 
-ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe [Behandlung](../behandlungen#pneumothorax_und_haemothorax) von Hämothoraxen und Spannungspneumothoraxen.
+ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe [Behandlung]() von Hämothoraxen und Spannungspneumothoraxen.
 
 #### 16g IV
 
-eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie [in diesem Video](https://youtu.be/rzLuZWWZ2eQ) anschaulich gezeigt wird.
+eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird benötigt, um Flüssigkeiten wie Blutinfusionen, aber auch manche Medikationen zu verabreichen. Diese Nadeln können nicht wiederverwendet werden, wie [in diesem YouTube-Video](https://youtu.be/rzLuZWWZ2eQ) anschaulich gezeigt wird.
 
 #### FAST IO
 
@@ -77,16 +87,23 @@ erlaubt die endotracheale Absaugung von Erbrochenen und befreit so die Atemwege.
 
 #### AED / AED-X
 
-_Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe auch [Behandlung von Herzstillständen](../behandlungen#herzinfarkt). Die AED-X-Ausführung gestattet zusätzlich das Monitoring von [Vitalparametern](behandlungen#vitalparameter).
+_Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe auch [Behandlung von Herzstillständen](). Die AED-X-Ausführung gestattet zusätzlich das Monitoring von [Vitalparametern]().
 
 #### Pulsoximeter
 
-erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes (engl. _saturation peripher O₂_, SpO₂). Siehe auch Abschnitt [Vitalparameter](behandlungen#vitalparameter).
+erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes (engl. _saturation peripher O₂_, SpO₂). Siehe auch Abschnitt [Vitalparameter]().
 
 ## Nützliche Hinweise
 
-- Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, 0 und H auf Maustasten zu legen, oder ähnliches.
-- G liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter G für Granaten zu unbinden und stattdessen zum Beispiel SHIFTG zu verwenden.
+- Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, <kbd>0</kbd> und <kbd>H</kbd> auf Maustasten zu legen, oder ähnliches.
+- <kbd>G</kbd> liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen zum Beispiel <kbd>SHIFT</kbd>+<kbd>G</kbd> zu verwenden.
 - Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.
 - Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.
-- die [empfohlenen Routinechecks](../behandlungen#empfohlene_routinechecks)
+
+<Keys keys="0"/>
+
+<Keys keys="G"/>
+
+<Keys keys="H"/>
+
+<Keys keys="SHIFT"/>

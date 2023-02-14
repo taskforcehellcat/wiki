@@ -1,3 +1,14 @@
+---
+title: Blutkreislauf
+date: '2023-02-14'
+nav_index: 3
+---
+
+<script>
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+</script>
+
 Diese Seite beschäftigt sich mit dem Aufrechterhalten des Blutkreislaufes.
 
 Das Stoppen von Blutungen ist immer eine der ersten Aufgaben beim Versorgen eines Patienten. Dabei gebraucht man zunächst vorrangig Tourniquets. Verbinden von Wunden und Nähen sind zeitaufwändige Behandlungen, welche durchgeführt werden, wenn der Patient bereits weitgehend stabilisiert ist. Eine Ausnahme davon Bilden Verletzungen von Torso und Kopf, da diese Körperteile nicht mit Tourniquets abgeschnürt werden können.
@@ -37,7 +48,7 @@ Ein Blutvolumen unter 3 Litern ist tödlich.
 
 ### Flüssigkeiten
 
-Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe Nierenfunktion)[TODO: ordentlich verlinken].
+Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion]()) [TODO: ordentlich verlinken].
 
 - Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-ph-Wert
 - Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-ph-Wert
@@ -53,10 +64,13 @@ Der folgende Abschnitt wird wichtig, wenn man im Feld gewonnene Blutreserven ver
 
 Man kann sich merken, dass dabei die Spenderblutgruppe gewissermaßen in der des Empfängers „enthalten“ sein muss (dabei steckt „-“ gewissermaßen in „+“). Möchte man herausfinden, ob ein Patient eine bestimmte Blutgruppe empfangen kann, testet man also, ob das Spenderblut in seine Blutgruppe „hineinpasst“.
 
-(TODO: Das ist eine Example Box)
-A- steckt zum Beispiel in diesem Sinne in AB+, A+ oder auch AB-, diese Blutgruppen können also A- empfangen. Es ist allerdings nicht enthalten in 0+, 0-, B+, etc. Diese Gruppen können also kein A- empfangen.
+<ExampleBox>
 
-AB+ kann beispielsweise jede Blutgruppe empfangen, 0- hingegen nur 0-.
+    A- steckt zum Beispiel in diesem Sinne in AB+, A+ oder auch AB-, diese Blutgruppen können also A- empfangen. Es ist allerdings nicht enthalten in 0+, 0-, B+, etc. Diese Gruppen können also kein A- empfangen.
+
+    AB+ kann beispielsweise jede Blutgruppe empfangen, 0- hingegen nur 0-.
+
+</ExampleBox>
 
 Eine vollständige Übersicht liefert die folgende Grafik.
 
