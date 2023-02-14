@@ -39,6 +39,11 @@
       justify-content: space-between;
       padding-inline: 2rem;
 
+      &[aria-expanded='false'] {
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+
       &:hover {
         cursor: pointer;
       }
@@ -62,8 +67,6 @@
 
       &.show {
         display: block;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
       }
     }
   }
