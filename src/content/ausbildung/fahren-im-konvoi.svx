@@ -9,8 +9,6 @@ nav_index: 7
     import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
 </script>
 
-## Einleitung
-
 Die Koordinierung mehrerer Fahrzeuge (vor allem unterschiedlicher Typen) entlang einer Straße oder im Gelände ist ein kompliziertes Vorhaben, das durch Festlegungen und Regeln vereinfacht werden soll. Diese Seite gibt ein umfassendes Verständnis über das Fahren im Konvoi.
 
 ## Personal und Koordinierung
