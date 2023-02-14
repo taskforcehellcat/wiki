@@ -111,10 +111,6 @@
     grid-template-rows: 18fr 12rem;
   }
 
-  #content {
-    width: min(100%, 120rem);
-  }
-
   #nav__list-bar {
     display: flex;
     flex-direction: column;
