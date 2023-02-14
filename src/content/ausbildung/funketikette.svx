@@ -61,7 +61,7 @@ Zahlen werden im Funk grundsätzlich Ziffer für Ziffer diktiert, „1278“ als
 
 ### Windrichtungen
 
-Da die Windrichtungen Osten und Westen sehr ähnlich klingen, spricht man die erste Silbe im Gegensatz zur natürlichen Aussprache lang. Also zum Beispiel: „nord-ohst“ für nord-ost, „süd-wehst“ für süd-west, etc.
+Da die Windrichtungen Osten und Westen sehr ähnlich klingen, spricht man die erste Silbe im Gegensatz zur natürlichen Aussprache lang. Also zum Beispiel: „nord-<u>oh</u>st“ für nord-ost, „süd-<u>weh</u>st“ für süd-west, etc.
 
 ### Buchstabieren
 
@@ -73,5 +73,5 @@ Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alp
 
 ## Weiterführende Informationen
 
-- [Sanitäterfunk](/articles/sanitaetsdienst/sanitaeterfunk)
-- [Funk der Panzertruppen (wip)](/)
+- [Funk im MEDEVAC (wip)]()
+- [Funk der Panzertruppen (wip)]()
