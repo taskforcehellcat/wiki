@@ -1,0 +1,80 @@
+---
+title: Fahren im Konvoi
+date: 2023-02-14
+nav_index: 7
+---
+
+<script lang="ts">
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
+</script>
+
+## Einleitung
+
+Die Koordinierung mehrerer Fahrzeuge (vor allem unterschiedlicher Typen) entlang einer Straße oder im Gelände ist ein kompliziertes Vorhaben, das durch Festlegungen und Regeln vereinfacht werden soll. Diese Seite gibt ein umfassendes Verständnis über das Fahren im Konvoi.
+
+## Personal und Koordinierung
+
+Die Koordinierung eines einzelnen Fahrzeugs im Konvoi erfolgt durch den _Fahrzeugführer_, der die Verantwortung für das Fahrzeug und dessen Besatzung trägt. Fahrzeugführer geben Anweisungen an ihre Fahrer und Richtschützen entsprechend der Festlegungen und Anweisungen des Konvoiführers, damit sich ihr Fahrzeug ordnungsgemäß im Konvoi bewegt. **Der Fahrzeugführer ist grundsätzlich Beifahrer und ist nicht mit dem Fahrer zu verwechseln**.
+
+Die Gliederung und Koordinierung eines Konvois erfolgt durch den _Konvoiführer_. Er gibt Richtgeschwindigkeiten (innerorts und außerorts) und die <Tooltip text="Geschwindigkeit, die der Konvoi anstrebt, wenn er unter Beschuss gerät, um der Gefahr auszuweichen">Durchbruchgeschwindigkeit</Tooltip> vor, legt den minimalen Abstand zwischen Fahrzeugen fest und gibt Anweisungen an einzelne Fahrzeuge oder den gesamten Konvoi. Der Konvoiführer ist Fahrzeugführer des Führungsfahrzeugs, das an erster Stelle fährt.
+
+## Festlegungen
+
+- Konvois sind wie folgt gegliedert: Führungsfahrzeug, Fahrzeug 2, Fahrzeug 3, Fahrzeug 4, ...
+- Fällt der Konvoiführer aus, übernimmt der Fahrzeugführer von Fahrzeug 2 die Konvoiführung
+- Die vom Konvoiführer festgelegte Fahrzeugreihenfolge wird stets eingehalten
+- Von der Richtgeschwindigkeit darf nur abgewichen werden, um den Mindestabstand einzuhalten oder aufzuholen
+- Von Vorgaben des Konvoiführers darf abgewichen werden, wenn diese eine Gefahr für Fahrzeug oder Besatzung darstellen
+- Obstruktionen auf der Straße wie geparkte Fahrzeuge, Müll oder Ähnliches werden möglichst weiträumig umfahren
+- Zivilen Fahrzeugen wird stets die Vorfahrt gewährt, um den Konvoi zu erhalten
+
+## Funken
+
+Neben der Anwendung der [Funketikette](../ausbildung/funketikette) sollen einige Sonderregelungen die Koordinierung von Konvois per Funk vereinfachen, die in diesem Abschnitt erläutert werden. **Signalwörter müssen im Konvoifunk nicht benutzt werden, insofern eine gute Funkverbindung vorliegt.**
+
+### Funkkreis
+
+Innerhalb eines Konvois befinden sich der Konvoiführer, alle Fahrzeugführer und ihre Fahrer und Richtschützen in einem temporären Funkkreis, der für die Dauer des Konvois besteht. Das Funkgerät und der Funkkanal bzw. die Funkfrequenz werden vom Konvoiführer festgelegt.
+
+Zum Funken auf diesem Funkkreis sind nur Konvoiführer und Fahrzeugführer berechtigt. Ausnahme ist hierbei, dass der Fahrer den Funk übernimmt, weil der Fahrzeugführer ausgefallen ist. Fahrer und Richtschützen befinden sich im Funkkreis, um die Befehlskette nach unten zu verkürzen. Fahrzeugführer müssen damit lediglich sicherstellen, dass ihre Fahrer und Richtschützen die Anweisungen korrekt umsetzen.
+
+### Funkaustausch
+
+Um den Funkkreis eines Konvois möglichst frei zu halten, sollte dort nur aus folgenden Gründen gefunkt werden:
+
+- Anweisungen vom Konvoiführer
+- Informationen (Ziviles Fahrzeug voraus/nähert sich von hinten, Zivilist auf der Straße, Straßenblockade voraus, ...)
+- Fahrzeug biegt ab (letztes Fahrzeug teilt mit, dass der gesamte Konvoi abgebogen ist)
+- Fahrzeug kann nicht mit Konvoi mithalten/wurde demobilisiert
+
+### Beispiele
+
+Ein Konvoi aus vier Fahrzeugen biegt rechts ab. Das Abbiegen wird vor der Kurve vom Führungsfahrzeug angekündigt und das letzte Fahrzeug bestätigt, dass der ganze Konvoi abgebogen ist.
+
+<ExampleBox>
+
+Konvoiführer: „_Führungsfahrzeug - nächste rechts_“<br>
+Fahrzeugführer 2: „_Fahrzeug 2 - rechts ab_“<br>
+Fahrzeugführer 3: „_Fahrzeug 3 - rechts ab_“<br>
+Fahrzeugführer 4: „_Fahrzeug 4 - rechts ab - Konvoi rechts_“
+
+</ExampleBox>
+
+Ein Konvoi aus vier Fahrzeugen gerät unter Beschuss. Der Konvoiführer gibt die Anweisungen auf die Durchbruchgeschwindigkeit zu wechseln, das Feuer zu erwidern und (wenn vorhanden) die Nebelwerfer einzusetzen. Das letzte Fahrzeug informiert, sobald der gesamte Konvoi auf die Durchbruchgeschwindigkeit beschleunigt.
+
+<ExampleBox>
+
+Konvoiführer: „_Führungsfahrzeug - wir brechen durch - Feuer erwidern und Nebel legen_“<br>
+Fahrzeugführer 4: „_Fahrzeug 4 - Konvoi bricht durch_“
+
+</ExampleBox>
+
+Ein Fahrzeug kann die Richtgeschwindigkeit nicht einhalten und teilt dies dem Konvoi mit.
+
+<ExampleBox>
+
+Fahrzeugführer 2: „_Fahrzeug 2 - kann nicht mithalten - Höchstgeschwindigkeit drei null_“<br>
+Konvoiführer: „_Führungsfahrzeug - neue Richtgeschwindigkeit - drei null_“
+
+</ExampleBox>
