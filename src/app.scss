@@ -240,12 +240,8 @@ h3 {
   display: block;
 }
 
-main p {
-  text-align: justify;
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  color: var(--brandSecondaryTXT);
+.example-box p {
+  margin-bottom: 0 !important;
 }
 
 main {
