@@ -203,6 +203,27 @@
     }
   }
 
+  :global(kbd) {
+    color: var(--kbdTXT);
+    background-color: var(--kbdBG);
+    border-radius: 0.2rem;
+    font-family: monospace;
+    width: fit-content;
+    min-width: 5rem !important;
+    text-align: center;
+    border: 1px solid var(--kbdBRD);
+    padding-inline: 0.5rem;
+    font-size: inherit;
+
+    &:not(kbd:first-of-type) {
+      margin-left: 0.1rem;
+    }
+  }
+
+  :global(kbd[data-tooltip]::after) {
+    bottom: -0.5rem;
+  }
+
   #burgerMenu {
     display: none;
     /*
