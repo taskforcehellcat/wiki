@@ -60,6 +60,7 @@
     max-width: 50rem;
     text-align: justify;
     display: flex;
+    z-index: 99;
 
     @media only screen and (max-width: 1200px) {
       text-align: left !important;
