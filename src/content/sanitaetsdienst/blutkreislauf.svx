@@ -50,7 +50,7 @@ Ein Blutvolumen unter 3 Litern ist tödlich.
 
 Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion](./nierenfunktion)) [TODO: ordentlich verlinken].
 
-- Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den1 Blut-ph-Wert
+- Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-ph-Wert
 - Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-ph-Wert
 - isotonische Kochsalzlösung: _kein_ Koagulationsfaktor, _negativen_ Einfluss auf den Blut-ph-Wert
 
