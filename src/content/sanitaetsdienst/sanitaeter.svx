@@ -26,7 +26,7 @@ Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoc
 
 ## Fähigkeiten
 
-Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe]() und [Funketikette]() auch die [fortgeschrittenen Behandlungen](), welche andere Soldaten nicht leisten können.
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) und [Funketikette](./../ausbildung/funketikette), welche andere Soldaten nicht leisten können.
 
 Konkret können sie:
 
