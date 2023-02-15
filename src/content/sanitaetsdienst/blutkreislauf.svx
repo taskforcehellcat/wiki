@@ -27,9 +27,9 @@ Im menschlichen Blut befinden sich sogenannte Thrombozyten (Blutplättchen), wel
 
 Mit zunehmenden Blutverlust nimmt aber auch die Fähigkeit des Körpers dazu ab und großflächige Verwundungen bedürfen ohnehin medizinischer Aufmerksamkeit. Auf diesen Mechanismus sollte man sich also keinesfalls verlassen.
 
-Wenn ein Herzschlag von mindestens 20 Schlägen pro Minute vorliegt, beginnt sich Schorf auf offenen Wunden zu bilden (_unstable clot_). Dabei verbraucht der Körper sogenannte Koagulationsfaktoren, welche ihm durch Blut- oder Plasmatransfusionen wieder zugeführt werden können, (siehe unten)[Ausgleich von Blutverlust](#ausgleich-von-blutverlust-und-zugänge).
+Wenn ein Herzschlag von mindestens 20 Schlägen pro Minute vorliegt, beginnt sich Schorf auf offenen Wunden zu bilden (_unstable clot_). Dabei verbraucht der Körper sogenannte Koagulationsfaktoren, welche ihm durch Blut- oder Plasmatransfusionen wieder zugeführt werden können, (siehe unten)[#ausgleich_von_blutverlust] (TODO: Link prüfen).
 
-Über einen Zugang (siehe untern)[Ausgleich von Blutverlust](#ausgleich-von-blutverlust-und-zugänge) kann ebenfalls Tranexamsäure (_TXA_) verabreicht werden, welche die Gerinnung stabilisiert. Das bedeutet, das vorhandene Gerinnung stärker wird (entspricht _packing bandage_ statt _unstable clot_). Tranexamsäure verursacht nicht von selbst Gerinnung, Koagulationsfaktoren müssen also unabhängig vorhanden sein!
+Über einen Zugang (siehe untern)[#ausgleich_von_blutverlust] (TODO: Link prüfen) kann ebenfalls Tranexamsäure (_TXA_) verabreicht werden, welche die Gerinnung stabilisiert. Das bedeutet, das vorhandene Gerinnung stärker wird (entspricht _packing bandage_ statt _unstable clot_). Tranexamsäure verursacht nicht von selbst Gerinnung, Koagulationsfaktoren müssen also unabhängig vorhanden sein!
 
 ## Ausgleich von Blutverlust und Zugänge
 
@@ -48,7 +48,7 @@ Ein Blutvolumen unter 3 Litern ist tödlich.
 
 ### Flüssigkeiten
 
-Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion](./nierenfunktion)) [TODO: ordentlich verlinken].
+Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion]()) [TODO: ordentlich verlinken].
 
 - Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-ph-Wert
 - Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-ph-Wert
