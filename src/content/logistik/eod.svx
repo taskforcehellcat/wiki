@@ -5,10 +5,4 @@ date: '2022-11-15'
 nav_index: 2
 ---
 
-## Rollenprofil
-
-## Aufgaben
-
-## Ausrüstung
-
-## Fertigkeiten
+Das Aufgabenfeld des EOD wird in der Taskforce Hellcat aktuell vom [Kampfpionier](/articles/logistik/kampfpionier) abgedeckt.
