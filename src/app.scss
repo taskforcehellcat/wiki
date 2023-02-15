@@ -280,7 +280,6 @@ main {
   height: fit-content;
   display: flex;
   align-items: center;
-  transition: color 0.2s ease-out;
   justify-content: space-between;
 }
 
@@ -290,6 +289,8 @@ main {
 
 .expandable {
   a {
+    transition: color 0.2s ease-out;
+
     &:hover {
       color: var(--navHover);
     }
@@ -322,6 +323,7 @@ main {
     &:hover {
       color: var(--navHover);
     }
+    transition: color 0.2s ease-out;
 
     display: flex;
     align-items: center;
