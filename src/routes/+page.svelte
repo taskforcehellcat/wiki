@@ -7,10 +7,20 @@
 
   import { directSearch, textSearch } from '$lib/search/search';
 
+  import { Search } from '$lib/search/engine';
+
+  import index from '$lib/search/index.json';
+
+  import ResultsSection from '$lib/search/ResultsSection.svelte';
+  let search = new Search(index);
+
+  console.debug(index);
+
   let query = ''; // holds the query
   let showResults = false; // whether the search bar is currently in use
-  let textResults = []; // used to generate sections in search results
-  let directResults = [];
+  //let textResults = []; // used to generate sections in search results
+  //let directResults = [];
+  let searchResults = [];
 
   const handleQuery = (e) => {
     query = e.target.value;
@@ -26,8 +36,47 @@
 
     showResults = query.length > 2;
 
-    textResults = textSearch(query);
-    directResults = directSearch(query);
+    if (query.length > 2) {
+      //textResults = textSearch(query);
+      //directResults = directSearch(query);
+
+      console.debug(search.query(query));
+
+      searchResults = search.query(query);
+
+      /* REMOVE ME c: */
+      searchResults = [
+        {
+          type: 'page',
+          breadcrumbs: [
+            { link: 'testcat', display: 'Testcat 1' },
+            { link: 'testcat/textart', display: 'Testart 1' }
+          ]
+        },
+        {
+          type: 'page',
+          breadcrumbs: [
+            { link: 'testcat', display: 'Testcat 1' },
+            { link: 'testcat/textart3', display: 'Testart 3' }
+          ]
+        },
+        {
+          type: 'page',
+          breadcrumbs: [
+            { link: 'testcat2', display: 'Testcat 2' },
+            { link: 'testcat2/textart2', display: 'Testart 2' }
+          ]
+        },
+        {
+          type: 'heading',
+          breadcrumbs: [
+            { link: 'testcat', display: 'Testcat 1' },
+            { link: 'testcat/textart', display: 'Testart 1' },
+            { link: 'testcat/textart#heading', display: 'Überschrift 1' }
+          ]
+        }
+      ];
+    }
   };
 
   export let data;
@@ -57,36 +106,13 @@
         </div>
         <div id="search__results">
           {#if showResults}
-            {#if directResults.length !== 0}
-              {#each directResults as entry}
-                <p>
-                  <span><a class="search_pagetitle" href={entry.route}>{entry.name}</a></span>
-                </p>
-              {/each}
-            {/if}
-            {#if textResults.length !== 0}
-              <p>Texttreffer:</p>
-              {#each textResults as page}
-                <p>
-                  <span class="search__hits">{page.hits}</span> Treffer auf <a class="search_pagetitle" href={page.route}>{page.title}</a>
-                  gefunden:
-                </p>
-                <ol>
-                  {#each page.bysection as sec_hit}
-                    <li>
-                      <span class="search__env"
-                        ><i
-                          >{sec_hit.surrounding.left}
-                          <mark>{sec_hit.surrounding.match}</mark>{sec_hit.surrounding.right}</i
-                        ></span
-                      >
-                      <span class="noselect"> &#x21aa; </span> <a href={sec_hit.anchor}>{sec_hit.title}</a>
-                    </li>
-                  {/each}
-                </ol>
-              {/each}
-            {/if}
-            {#if directResults.length === 0 && textResults.length === 0}
+            {#if searchResults.length !== 0}
+              <div class="grid-container">
+                <ResultsSection results={searchResults} kind="page" />
+                <ResultsSection results={searchResults} kind="heading" />
+                <ResultsSection results={searchResults} kind="text" />
+              </div>
+            {:else}
               <p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
             {/if}
           {:else}
@@ -156,5 +182,15 @@
   #search__searchbar .material-icons {
     font-size: 20pt;
     color: var(--brandTertiaryTXT);
+  }
+
+  .search__errortext {
+    color: var(--errorTXT);
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 30px auto;
   }
 </style>

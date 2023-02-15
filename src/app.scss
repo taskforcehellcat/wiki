@@ -510,19 +510,6 @@ input {
   color: var(--navHover);
 }
 
-.search__hits {
-  color: var(--brandNeutral);
-}
-
-.search_pagetitle {
-  color: var(--brandNeutral);
-  text-decoration: underline;
-}
-
-.search__errortext {
-  color: var(--errorTXT);
-}
-
 #menuOpen:hover,
 #menuClose:hover {
   cursor: pointer;
