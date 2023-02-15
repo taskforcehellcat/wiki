@@ -10,12 +10,12 @@ nav_index: 1
 
 ## Rollenprofil
 
-Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC]()s mitzuwirken.
+Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC](./medevac)s mitzuwirken.
 
 ## Ausrüstung
 
 - Verbrauchsmaterialien:
-  - [Medikamente]()
+  - [Medikamente](./medikamente)
   - Bandagen
   - sonstiges [Verschleißmaterial](), etwa Kanülen, Infusionen, Kits, etc.
   - Rauchgranaten
@@ -26,7 +26,7 @@ Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoc
 
 ## Fähigkeiten
 
-Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe]() und [Funketikette]() auch die [fortgeschrittenen Behandlungen](), welche andere Soldaten nicht leisten können.
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) und [Funketikette](./../ausbildung/funketikette) auch die [fortgeschrittenen Behandlungen](), welche andere Soldaten nicht leisten können.
 
 Konkret können sie:
 

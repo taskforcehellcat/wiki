@@ -4,7 +4,7 @@ date: '2023-02-14'
 nav_index: 2
 ---
 
-Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite [Behandlungen]().
+Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite [Behandlungen](./behandlungen).
 
 ## Basismedikamente
 
