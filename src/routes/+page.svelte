@@ -40,7 +40,7 @@
       //textResults = textSearch(query);
       //directResults = directSearch(query);
 
-      console.debug(search.query(query));
+      //console.debug(search.query(query));
 
       searchResults = search.query(query);
 

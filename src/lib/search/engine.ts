@@ -1,5 +1,3 @@
-import INTERNALNAME_TO_DISPLAYNAME from './lookup.json' assert { type: 'json' };
-
 export class hit {
   /**
    * `type`
@@ -47,11 +45,11 @@ export class Search {
 
     Object.keys(this.index).forEach((categoryName) => {
       let categoryObj = this.index[categoryName];
-      console.debug(categoryName);
+      //console.debug(categoryName);
 
       Object.keys(categoryObj).forEach((pageName) => {
         let pageObj = categoryObj[pageName];
-        console.debug(pageName);
+        //console.debug(pageName);
 
         // check if the page title directly matches the query
         if (pageName.toLowerCase().includes(query)) {

@@ -8,10 +8,13 @@ export const fetchMarkdownPosts = async () => {
       const directory = path.split('/').at(-2);
       const metadata = data['metadata'];
 
+      console.debug(data);
+
       return {
         meta: metadata,
         id: articleId,
-        directory: directory
+        directory: directory,
+        content: data
       };
     })
   );
