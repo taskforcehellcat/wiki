@@ -45,7 +45,7 @@
   {/each}
 {/if}
 
-<style>
+<style lang="scss">
   .heading.count {
     font-size: large;
     justify-self: right;
