@@ -1,5 +1,5 @@
 // @ts-ignore
-import searchIndex from '$lib/search/searchIndex.json';
+import searchIndex from '$lib/search/index.json';
 //import searchIndex from "./searchIndex.json" assert { type: "json" };
 
 import { linkify } from '$lib/helpers';
