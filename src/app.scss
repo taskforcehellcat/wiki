@@ -256,6 +256,10 @@ main {
 
 #main {
   scroll-padding-top: 4rem;
+
+  @media (max-width: 800px) {
+    scroll-padding-top: 14rem;
+  }
 }
 
 #nav__list {
