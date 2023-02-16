@@ -225,6 +225,7 @@
   }
 
   #burgerMenu {
+    display: none;
     @media (max-width: 800px) {
       display: inline-block;
 
