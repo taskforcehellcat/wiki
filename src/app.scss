@@ -248,16 +248,14 @@ main {
   width: 100%;
   padding: 10.4rem 8rem 10rem 8rem;
   color: var(--brandPrimaryTXT);
-  scroll-padding-top: 500px;
   background: var(--wikiBG) !important;
   background-color: var(--brandPrimaryBG);
   background-size: 120%;
   background-position: -13rem 0;
 }
 
-#wiki,
 #main {
-  scroll-padding-top: 500px;
+  scroll-padding-top: 4rem;
 }
 
 #nav__list {
