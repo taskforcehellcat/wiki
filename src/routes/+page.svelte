@@ -5,81 +5,40 @@
   import Nav from '$lib/nav/Nav.svelte';
   import { themeId } from '$lib/theme/stores';
 
-  import { directSearch, textSearch } from '$lib/search/search';
-
   import { Search } from '$lib/search/engine';
-
-  import index from '$lib/search/index.json';
-
   import ResultsSection from '$lib/search/ResultsSection.svelte';
-  let search = new Search(index);
-
-  console.debug(index);
 
   let query = ''; // holds the query
   let showResults = false; // whether the search bar is currently in use
-  //let textResults = []; // used to generate sections in search results
-  //let directResults = [];
   let searchResults = [];
 
   const handleQuery = (e) => {
-    query = e.target.value;
+    let input = e.target.value;
 
-    let searchInUse = query.length !== 0;
-
-    // do the styling
     // hide results box if search bar empty
+    let searchInUse = input.length !== 0;
     document.getElementById('search').dataset.empty = (!searchInUse).toString();
 
     // show dropdown link menues if search bar empty
     document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
 
-    showResults = query.length > 2;
+    showResults = input.length > 2;
 
+    /*
     if (query.length > 2) {
-      //textResults = textSearch(query);
-      //directResults = directSearch(query);
-
-      //console.debug(search.query(query));
-
       searchResults = search.query(query);
-
-      /* REMOVE ME c: */
-      searchResults = [
-        {
-          type: 'page',
-          breadcrumbs: [
-            { link: 'testcat', display: 'Testcat 1' },
-            { link: 'testcat/textart', display: 'Testart 1' }
-          ]
-        },
-        {
-          type: 'page',
-          breadcrumbs: [
-            { link: 'testcat', display: 'Testcat 1' },
-            { link: 'testcat/textart3', display: 'Testart 3' }
-          ]
-        },
-        {
-          type: 'page',
-          breadcrumbs: [
-            { link: 'testcat2', display: 'Testcat 2' },
-            { link: 'testcat2/textart2', display: 'Testart 2' }
-          ]
-        },
-        {
-          type: 'heading',
-          breadcrumbs: [
-            { link: 'testcat', display: 'Testcat 1' },
-            { link: 'testcat/textart', display: 'Testart 1' },
-            { link: 'testcat/textart#heading', display: 'Überschrift 1' }
-          ]
-        }
-      ];
-    }
+    }*/
+    // for svelte reactivity, make it explicit this array did change
+    // doesnt even work...
+    searchResults = searchResults;
   };
 
   export let data;
+  let search = new Search(data.posts);
+
+  $: if (query.length > 2) {
+    searchResults = search.query(query);
+  }
 </script>
 
 <svelte:head>
@@ -102,13 +61,13 @@
       <div id="search" data-empty="true">
         <div id="search__searchbar">
           <span class="material-icons noselect">search</span>
-          <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
+          <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} bind:value={query} />
         </div>
         <div id="search__results">
           {#if showResults}
             {#if searchResults.length !== 0}
               <div class="grid-container">
-                <ResultsSection results={searchResults} kind="page" />
+                <ResultsSection results={searchResults} kind="article" />
                 <ResultsSection results={searchResults} kind="heading" />
                 <ResultsSection results={searchResults} kind="text" />
               </div>

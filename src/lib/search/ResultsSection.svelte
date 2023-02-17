@@ -6,12 +6,14 @@
     return hit.type == kind;
   });
 
+  console.debug('test');
+
   let hitCount = resultsOfKind.length;
 
   let pageTitle: string;
 
   switch (kind) {
-    case 'page':
+    case 'article':
       pageTitle = 'Artikel';
       break;
     case 'heading':
@@ -29,6 +31,8 @@
     pageTitle = pageTitle.replace('Textstellen', 'Textstelle');
     pageTitle = pageTitle.replace('Abschnitte', 'Abschnitt');
   }
+
+  $: console.debug(resultsOfKind.length);
 </script>
 
 {#if hitCount !== 0}

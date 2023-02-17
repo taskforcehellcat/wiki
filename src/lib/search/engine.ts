@@ -1,123 +1,104 @@
-export class hit {
-  /**
-   * `type`
-   * signifies the kind of text this matches
-   * `breadcrumbs`
-   * is used to link to the hit and the 'parents'
-   * `text`
-   * is the environment in which it is situated
-   * `occurrence`
-   * is the occurrence in said text to enable unique
-   * identification in case the same text matches multiple times
-   */
+// This information would be already available by the config property of
+// a menu entry object, but i want to get a prototype going therefore
+// i'll implement it this way for the time being and mark it TODO.
 
+const dirNameToDisplayName = new Map([
+  ['ueber-uns', 'Über uns'],
+  ['sanitaetsdienst', 'Sanitätsdienst'],
+  ['streitkraefte', 'Streitkräfte'],
+  ['panzertruppen', 'Panzertruppen'],
+  ['logistik', 'Logistik'],
+  ['aufklaerer', 'Aufklärer'],
+  ['fuhrpark', 'Fuhrpark']
+]);
+
+export class Hit {
+  // wheather this hit is a page itsself, a heading on this page
+  // or in a text on this page
   type: 'page' | 'heading' | 'text';
+  // basically the path to the hit(s)
   breadcrumbs: Array<{ display: string; link: string }>;
+  // the text in witch the index occured or the heading or article name
   text: string;
+  // the index at which the hit occures in the text
   occurrence: number;
+
+  constructor(type, crumbs, text, occ) {
+    this.type = type;
+    this.breadcrumbs = crumbs;
+    this.text = text;
+    this.occurrence = occ;
+  }
 }
 
 export class Search {
-  index: {};
+  articles: {
+    meta: {
+      title: string;
+      title_short: string;
+      date: string;
+      nav_index: number;
+    };
+    id: string;
+    directory: string;
+    html: string;
+  }[];
 
-  constructor(index) {
-    this.index = index;
+  constructor(articles) {
+    this.articles = articles;
   }
 
   query(query: string) {
     /*
      * Searches for the query in the index.
-     * May return: Array<hit>
+     * May return: Array<Hit>
      * May throw TODO document exception cases here
      */
 
     query = query.toLowerCase().trim();
 
     // will hold all the hits to be returned
-    let hits: Array<hit> = [];
+    let hits: Array<Hit> = [];
 
-    /*
-      What follows are insufferably deep nested loops.
+    this.articles.forEach((article) => {
+      let html = article['html'];
+      let htmlLower = html.toLowerCase();
 
-      Abandon all hope,
-      ye who enter here.
-    */
+      // this holds the index of the last found occurrence
+      let cursor = 0;
+      let occuringIndices = [];
 
-    Object.keys(this.index).forEach((categoryName) => {
-      let categoryObj = this.index[categoryName];
-      //console.debug(categoryName);
-
-      Object.keys(categoryObj).forEach((pageName) => {
-        let pageObj = categoryObj[pageName];
-        //console.debug(pageName);
-
-        // check if the page title directly matches the query
-        if (pageName.toLowerCase().includes(query)) {
-          let h = new hit();
-          h.type = 'page';
-          h.breadcrumbs = this.breadcrumbsArray([categoryName, pageName]);
-          hits.push(h);
+      while (cursor != -1) {
+        cursor = htmlLower.indexOf(query, cursor);
+        if (cursor != -1) {
+          occuringIndices.push(cursor);
+          cursor = cursor + query.length;
         }
+      }
 
-        // look for hits without a heading
-        if (Object.hasOwn(pageObj, 'no-heading')) {
-          pageObj['no-heading'].forEach((text) => {
-            // just to make ts happy:
-            if (!(typeof text == 'string')) {
-              console.error('The content index seems to be malformed.');
-              return;
-            }
+      // check if the article name itself is a match
+      // prefer the short title if it is defined and matches
+      let titleShort = article.meta.title_short ? article.meta.title_short : '';
+      let title = article.meta.title;
 
-            let occurrences = 0;
+      if (titleShort.toLocaleLowerCase().includes(query)) {
+        let crumbs = [
+          { display: dirNameToDisplayName.get(article.directory), link: '/' },
+          { display: titleShort, link: `/articles/${article.directory}/${article.id}` }
+        ];
+        hits.push(new Hit('article', crumbs, titleShort, 0));
+      } else if (title.toLocaleLowerCase().includes(query)) {
+        let crumbs = [
+          { display: dirNameToDisplayName.get(article.directory), link: '/' },
+          { display: title, link: `/articles/${article.directory}/${article.id}` }
+        ];
+        hits.push(new Hit('article', crumbs, title, 0));
+      }
 
-            let cursor = 0;
-            while (text.substring(cursor).includes(query)) {
-              occurrences++;
-
-              // discard text already looked at
-              cursor = text.substring(cursor).indexOf(query) + query.length;
-
-              let h = new hit();
-              h.type = 'text';
-              h.text = text;
-              h.occurrence = occurrences;
-              h.breadcrumbs = this.breadcrumbsArray([categoryName, pageName]);
-            }
-          });
-        }
-      });
+      // now for text matches...
+      // TODO implement.
     });
 
     return hits;
-  }
-
-  breadcrumbsArray(pathArray: Array<string>) {
-    let array: Array<{ display: string; link: string }> = []; // to be returned
-
-    let [category, page, heading] = pathArray;
-
-    let linkToPage = '/articles/' + INTERNALNAME_TO_DISPLAYNAME[category] + '/' + INTERNALNAME_TO_DISPLAYNAME[page];
-
-    array.push({ display: category, link: '/' });
-    array.push({ display: page, link: linkToPage });
-
-    // if a heading is provided, also add it
-    if (!(pathArray.length == 2)) {
-      const REPLACEMENTS = {
-        ' ': '-',
-        '\u00e4': 'ae', // ä
-        '\u00fc': 'ue', // ü
-        '\u00f6': 'oe', // ö
-        '\u00df': 'ss' // ß
-      };
-
-      for (const [k, v] of Object.entries(REPLACEMENTS)) {
-        heading = heading.replaceAll(k, v);
-      }
-
-      array.push({ display: heading, link: `${linkToPage}#${heading}` });
-    }
-
-    return array;
   }
 }
