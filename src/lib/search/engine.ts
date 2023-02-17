@@ -55,6 +55,10 @@ export class Search {
      * May throw TODO document exception cases here
      */
 
+    if (query.length == 0) {
+      throw Error('Cannot search for empty string.');
+    }
+
     query = query.toLowerCase().trim();
 
     // will hold all the hits to be returned
