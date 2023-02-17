@@ -15,7 +15,7 @@ const dirNameToDisplayName = new Map([
 export class Hit {
   // wheather this hit is a page itsself, a heading on this page
   // or in a text on this page
-  type: 'page' | 'heading' | 'text';
+  type: 'article' | 'heading' | 'text';
   // basically the path to the hit(s)
   breadcrumbs: Array<{ display: string; link: string }>;
   // the text in witch the index occured or the heading or article name
