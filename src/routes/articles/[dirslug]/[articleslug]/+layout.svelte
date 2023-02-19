@@ -104,11 +104,6 @@
 {/if}
 
 <style lang="scss">
-  // necessary to fix annoying bug with nav bar getting stuck behind the mobile browser's address bar
-  :global(html) {
-    position: fixed;
-  }
-
   #wiki {
     min-height: 120vh;
     display: grid;
