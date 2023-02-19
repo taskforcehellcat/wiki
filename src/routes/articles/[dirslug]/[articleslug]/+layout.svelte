@@ -107,6 +107,7 @@
   // necessary to fix annoying bug with nav bar getting stuck behind the mobile browser's address bar
   :global(html) {
     position: fixed;
+    width: 100%;
   }
 
   #wiki {
