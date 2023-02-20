@@ -4,6 +4,7 @@
 
 const dirNameToDisplayName = new Map([
   ['ueber-uns', 'Über uns'],
+  ['ausbildung', 'Ausbildung'],
   ['sanitaetsdienst', 'Sanitätsdienst'],
   ['streitkraefte', 'Streitkräfte'],
   ['panzertruppen', 'Panzertruppen'],
