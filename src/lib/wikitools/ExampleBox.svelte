@@ -1,7 +1,6 @@
 <script>
   export let isOpen = false;
   export let title = 'Beispiel:';
-  import { slide } from 'svelte/transition';
 
   const toggleOpen = () => (isOpen = !isOpen);
 </script>
@@ -14,7 +13,7 @@
     </span>
   </div>
 
-  <div class="example-box-content" transition:slide class:show={isOpen}>
+  <div class="example-box-content" class:show={isOpen}>
     <slot />
   </div>
 </div>
