@@ -79,7 +79,7 @@
 
       <div id="overlay" class:show={isOpen}>
         {#each anchors as anchor}
-          <a href={linkify(anchor.link)} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
+          <a href={anchor.link} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
         {/each}
       </div>
 
@@ -226,7 +226,6 @@
 
   #burgerMenu {
     display: none;
-    /*
     @media (max-width: 800px) {
       display: inline-block;
 
@@ -245,7 +244,6 @@
         }
       }
     }
-     */
   }
 
   #overlay {

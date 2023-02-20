@@ -1,0 +1,44 @@
+<script>
+    import ExampleBox from '$lib/wikitools/ExampleBox.svelte';
+</script>
+
+## MEDEVAC-Funk
+
+Um einen Medevac anzufordern, verwenden wir das folgende, vom NATO-Neunzeiler abgeleitete Schema:
+
+- Zeile 1: Landezone (Koordinaten oder markante Beschreibung)
+- Zeile 2: Rufzeichen und Funkfrequenz
+- Zeile 3: Zahl der Patienten nach obigen Meldesystem
+	- Kat. Rot: kritisch
+	- Kat. Gelb: Priorität
+	- Kat. Grün: Routine
+- An dieser Stelle wird unterbrochen und die bisherigen Informationen bestätigt.
+- Zeile 4: Sicherheit der Landezone
+	- N _(no presence)_: keine feindlichen Teile in der Umgebung
+	- P _(possible presence)_: möglicherweise feindliche Teile in der Umgebung, Vorsicht beim Annähern
+	- E _(enemy presence)_: feindliche Teile in der Umgebung, Vorsicht beim Annähern
+	- X: feindliche Präsenz in der Umgebung, bewaffnete Eskortierung vonnöten
+- Zeile 5: Markierung der Landezone
+	- A: pyrotechnisches Signal
+	- B: Rauchsignal (Farbe benennen)
+	- C: keine
+	- D: andere (benennen)
+- Zeile 6: Zugehörigkeit der Patienten
+	- A: eigene Teile
+	- B: Zivilisten
+	- C: feindliche Teile
+
+<ExampleBox>
+	„Alpha-Lead, hier Alpha-2, Anfrage: MEDEVAC sechszeilig.“
+	„Alpha-2, hier Alpha-Lead, bereit für Sechszeiler, kommen.“
+	„Zeile eins: Koordinaten sechsstellig: eins zwo vier Trennung zwo fünnüf acht, markant Stadtzentrum zentraler Platz.
+	Zeile zwo: Abholung für Alpha-3, Verständigung mit SEM fünnüf zwo SL, vier sieben Megahertz.
+	Zeile drei: zwo Kat. rot, drei Kat. gelb und Kat. grün; Kat. Schwarz vorhanden. So mit?“
+	„Bestätige: Medevac bei eins zwo vier Trennung zwo fünnüf acht, Stadtmitte, für Alpha-3 mit zwo Kat. rot, drei Kat. gelb und Kat. grün. Verständigung mit SEM, vier sieben Megahertz.“
+	„Zeile vier: X-Ray, PzA erkannt.
+	Zeile fünnüf: Bravo, türkis.
+	Zeile sechs: fünnüf Alpha, zwo Bravo, ein Charlie. So mit?“
+	„Bestätige: Landezone heiß, mindestens PzA, markiert mit Rauch türkis, bereit für fünnüf eigene, zwo zivil, ein POW. Kommen.“
+	„So korrekt. Kommen.“
+	„ETA sechs Mike dreißig, Alpha-Lead Ende.“
+</ExampleBox>

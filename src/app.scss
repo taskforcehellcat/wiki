@@ -248,16 +248,18 @@ main {
   width: 100%;
   padding: 10.4rem 8rem 10rem 8rem;
   color: var(--brandPrimaryTXT);
-  scroll-padding-top: 500px;
   background: var(--wikiBG) !important;
   background-color: var(--brandPrimaryBG);
   background-size: 120%;
   background-position: -13rem 0;
 }
 
-#wiki,
 #main {
-  scroll-padding-top: 500px;
+  scroll-padding-top: 4rem;
+
+  @media (max-width: 800px) {
+    scroll-padding-top: 14rem;
+  }
 }
 
 #nav__list {
@@ -280,8 +282,7 @@ main {
   height: fit-content;
   display: flex;
   align-items: center;
-  transition: color 0.2s ease-out;
-  justify-content: space-between;
+  justify-content: left;
 }
 
 #nav__list > a:not(.expandable):hover {
@@ -290,6 +291,8 @@ main {
 
 .expandable {
   a {
+    transition: color 0.2s ease-out;
+
     &:hover {
       color: var(--navHover);
     }
@@ -322,6 +325,7 @@ main {
     &:hover {
       color: var(--navHover);
     }
+    transition: color 0.2s ease-out;
 
     display: flex;
     align-items: center;
@@ -600,7 +604,7 @@ img#home__nav__logo {
 @media only screen and (max-width: 480px) {
   .expandable > span {
     min-width: unset;
-    width: 250px;
+    width: 300px;
   }
 }
 
