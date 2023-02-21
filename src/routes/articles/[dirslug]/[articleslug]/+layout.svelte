@@ -13,7 +13,6 @@
   import Nav from '$lib/nav/Nav.svelte';
 
   // --- id conversions ---
-  import { linkify } from '$lib/helpers.js';
   import { afterUpdate, onMount } from 'svelte';
   import { browser } from '$app/environment';
 

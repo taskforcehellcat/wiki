@@ -1,14 +1,15 @@
 <script lang="ts">
-  export let results;
+  import { searchResults } from '$lib/search/stores';
   export let kind;
 
-  let resultsOfKind = results.filter((hit) => {
+  let resultsOfKind = [];
+
+  $: resultsOfKind = $searchResults.filter((hit) => {
     return hit.type == kind;
   });
 
-  console.debug('test');
-
-  let hitCount = resultsOfKind.length;
+  let hitCount;
+  $: hitCount = resultsOfKind.length;
 
   let pageTitle: string;
 
@@ -23,7 +24,7 @@
       pageTitle = 'Textstellen';
       break;
     default:
-      throw 'Value Error';
+      throw new Error('Value Error');
   }
 
   // correct for singulars
@@ -44,7 +45,7 @@
     <span />
     <span class="breadcrumbs">
       {#each hit['breadcrumbs'] as crumb}
-        <span><a href={crumb.link}>{crumb.display}</a></span><span class="material-icons seperator">chevron_right</span>
+        <a href={crumb.link}>{crumb.display}</a><span class="material-icons seperator">chevron_right</span>
       {/each}
     </span>
   {/each}
@@ -74,7 +75,7 @@
     display: block;
   }
 
-  .breadcrumbs span a {
+  .breadcrumbs a {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.12rem;
@@ -83,17 +84,14 @@
     color: var(--brandTertiaryTXT);
     transition: color 0.2s ease-out;
   }
-  .breadcrumbs span a:hover {
+  .breadcrumbs a:last-of-type {
     color: var(--navHover);
   }
+  .breadcrumbs a:last-of-type:hover {
+    text-decoration: underline;
+  }
 
-  .breadcrumbs .seperator {
-    vertical-align: middle;
-  }
-  .breadcrumbs:nth-last-child(2) {
-    border: 2px solid blue;
-  }
-  /*.breadcrumbs .seperator:last-child {
+  .breadcrumbs .seperator:last-child {
     display: none;
-  }*/
+  }
 </style>

@@ -6,13 +6,15 @@
   import { themeId } from '$lib/theme/stores';
 
   import { Search } from '$lib/search/engine';
+  import { searchResults } from '$lib/search/stores';
   import ResultsSection from '$lib/search/ResultsSection.svelte';
 
   let query = ''; // holds the query
   let showResults = false; // whether the search bar is currently in use
-  let searchResults = [];
 
   const handleQuery = (e) => {
+    // this can surely be done prettier with svelte bindings
+
     let input = e.target.value;
 
     // hide results box if search bar empty
@@ -21,24 +23,17 @@
 
     // show dropdown link menues if search bar empty
     document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
-
-    showResults = input.length > 2;
-
-    /*
-    if (query.length > 2) {
-      searchResults = search.query(query);
-    }*/
-    // for svelte reactivity, make it explicit this array did change
-    // doesnt even work...
-    searchResults = searchResults;
   };
 
   export let data;
   let search = new Search(data.posts);
 
   $: if (query.length > 2) {
-    searchResults = search.query(query);
+    $searchResults = search.query(query);
+    console.debug($searchResults);
   }
+
+  $: showResults = query.length > 2;
 </script>
 
 <svelte:head>
@@ -65,11 +60,11 @@
         </div>
         <div id="search__results">
           {#if showResults}
-            {#if searchResults.length !== 0}
+            {#if $searchResults.length !== 0}
               <div class="grid-container">
-                <ResultsSection results={searchResults} kind="article" />
-                <ResultsSection results={searchResults} kind="heading" />
-                <ResultsSection results={searchResults} kind="text" />
+                <ResultsSection kind="article" />
+                <ResultsSection kind="heading" />
+                <ResultsSection kind="text" />
               </div>
             {:else}
               <p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>

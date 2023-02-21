@@ -1,3 +1,5 @@
+import { searchResults } from '$lib/search/stores';
+
 // This information would be already available by the config property of
 // a menu entry object, but i want to get a prototype going therefore
 // i'll implement it this way for the time being and mark it TODO.
