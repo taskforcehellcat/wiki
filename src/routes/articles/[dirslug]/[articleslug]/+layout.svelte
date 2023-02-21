@@ -3,7 +3,7 @@
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
 
-  import { fade, fly } from 'svelte/transition';
+  import { fade, fly, slide } from 'svelte/transition';
 
   import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
   // --- themes ---
@@ -19,6 +19,7 @@
   import { browser } from '$app/environment';
 
   import { page } from '$app/stores';
+  import { beforeNavigate } from '$app/navigation';
 
   let isOpen = false;
   export let anchors = [];
@@ -42,8 +43,15 @@
     }
   });
 
+  beforeNavigate(async () => {
+    anchors = [];
+  });
+
   /** @type {import('./$types').LayoutData} */
   export let data;
+
+  // animation stuff
+  let ANCHORS_FADING_DURATION = 300;
 </script>
 
 {#if $themeId}
@@ -68,8 +76,17 @@
           </div>
 
           <div id="wiki-nav__list">
-            {#each anchors as anchor}
-              <a href={anchor.link}>{anchor.text}</a>
+            {#each anchors as anchor, i}
+              <a
+                href={anchor.link}
+                in:fly|local={{
+                  delay: 100 * i,
+                  x: -5
+                }}
+                out:fade|local={{
+                  duration: ANCHORS_FADING_DURATION
+                }}>{anchor.text}</a
+              >
             {/each}
           </div>
         </div>
@@ -153,6 +170,7 @@
     background-color: var(--brandSecondaryBG);
     /* background-color: red; */
     height: 100%;
+    transition: height 1000ms;
     border-radius: 0.2rem;
     -webkit-border-radius: 0.2rem;
     -moz-border-radius: 0.2rem;

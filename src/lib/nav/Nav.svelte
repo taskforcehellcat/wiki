@@ -1,4 +1,6 @@
 <script>
+  import { slide } from 'svelte/transition';
+
   let activeNav;
   export let menu = [];
 
@@ -29,9 +31,13 @@
         {nav.config.title}
         <i class="material-icons-round noselect">expand_more</i>
       </span>
-      {#each nav.entries as article}
-        <a href="/articles/{nav.id}/{article.id}">{shortName(article)}</a>
-      {/each}
+      {#if activeNav}
+        <div transition:slide|local>
+          {#each nav.entries as article}
+            <a href="/articles/{nav.id}/{article.id}">{shortName(article)}</a>
+          {/each}
+        </div>
+      {/if}
     </div>
   {/each}
 </div>
