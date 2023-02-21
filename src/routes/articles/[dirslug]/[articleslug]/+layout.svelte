@@ -3,6 +3,8 @@
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
 
+  import { fade, fly } from 'svelte/transition';
+
   import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
   // --- themes ---
   import Theme from '$lib/theme/Theme.svelte';
@@ -13,7 +15,6 @@
   import Nav from '$lib/nav/Nav.svelte';
 
   // --- id conversions ---
-  import { linkify } from '$lib/helpers.js';
   import { afterUpdate, onMount } from 'svelte';
   import { browser } from '$app/environment';
 
