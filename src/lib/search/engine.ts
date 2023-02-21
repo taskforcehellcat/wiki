@@ -13,14 +13,14 @@ const dirNameToDisplayName = new Map([
 ]);
 
 export class Hit {
-  // wheather this hit is a page itsself, a heading on this page
+  // whether this hit is a page itself, a heading on this page
   // or in a text on this page
   type: 'article' | 'heading' | 'text';
   // basically the path to the hit(s)
   breadcrumbs: Array<{ display: string; link: string }>;
-  // the text in witch the index occured or the heading or article name
+  // the text in witch the index occurred or the heading or article name
   text: string;
-  // the index at which the hit occures in the text
+  // the index at which the hit occurs in the text
   occurrence: number;
 
   constructor(type, crumbs, text, occ) {
