@@ -68,18 +68,6 @@ export class Search {
       let html = article['html'];
       let htmlLower = html.toLowerCase();
 
-      // this holds the index of the last found occurrence
-      let cursor = 0;
-      let occuringIndices = [];
-
-      while (cursor != -1) {
-        cursor = htmlLower.indexOf(query, cursor);
-        if (cursor != -1) {
-          occuringIndices.push(cursor);
-          cursor = cursor + query.length;
-        }
-      }
-
       // check if the article name itself is a match
       // prefer the short title if it is defined and matches
       let titleShort = article.meta.title_short ? article.meta.title_short : '';
@@ -101,6 +89,18 @@ export class Search {
 
       // now for text matches...
       // TODO implement.
+
+      // this holds the index of the last found occurrence
+      let cursor = 0;
+      let occurringIndices: number[] = [];
+
+      while (cursor != -1) {
+        cursor = htmlLower.indexOf(query, cursor);
+        if (cursor != -1) {
+          occurringIndices.push(cursor);
+          cursor = cursor + query.length;
+        }
+      }
     });
 
     return hits;
