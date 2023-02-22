@@ -68,26 +68,55 @@ export class Search {
     let hits: Array<Hit> = [];
 
     this.articles.forEach((article) => {
-      let html = article['html'];
-      let htmlLower = html.toLowerCase();
+      const html = article['html'];
+      const htmlLower = html.toLowerCase();
 
       // check if the article name itself is a match
       // prefer the short title if it is defined and matches
-      let titleShort = article.meta.title_short ? article.meta.title_short : '';
-      let title = article.meta.title;
+      const titleShort = article.meta.title_short ? article.meta.title_short : '';
+      const title = article.meta.title;
 
       if (titleShort.toLocaleLowerCase().includes(query)) {
-        let crumbs = [
+        const crumbs = [
           { display: dirNameToDisplayName.get(article.directory), link: '/' },
           { display: titleShort, link: `/articles/${article.directory}/${article.id}` }
         ];
         hits.push(new Hit('article', crumbs, titleShort, 0));
       } else if (title.toLocaleLowerCase().includes(query)) {
-        let crumbs = [
+        const crumbs = [
           { display: dirNameToDisplayName.get(article.directory), link: '/' },
           { display: title, link: `/articles/${article.directory}/${article.id}` }
         ];
         hits.push(new Hit('article', crumbs, title, 0));
+      }
+
+      // now for heading matches...
+
+      // get all the headings with their ids
+      const headingRegex = /<h\d ?(id=".+"|class=".+")?>.+<\/h\d>/g;
+      const headingsRaw = html.match(headingRegex) ?? [];
+
+      const headings: { heading: string; id: string }[] = headingsRaw.map((str) => {
+        let title = str.replaceAll(/<h\d id=".+">/g, '');
+        title = title.replaceAll(/<\/h\d>/g, '');
+
+        let id = str.match(/id=".+"/g)[0] ?? '';
+        id = id.replace('id=', '');
+        id = id.replaceAll('"', '');
+        return { heading: title, id: id };
+      });
+
+      // find matching ones
+      for (const { heading, id } of headings) {
+        if (heading.toLocaleLowerCase().includes(query)) {
+          const crumbs = [
+            { display: dirNameToDisplayName.get(article.directory), link: '/' },
+            { display: title, link: `/articles/${article.directory}/${article.id}` },
+            { display: heading, link: `/articles/${article.directory}/${article.id}#${id}` }
+          ];
+
+          hits.push(new Hit('heading', crumbs, title, 0));
+        }
       }
 
       // now for text matches...

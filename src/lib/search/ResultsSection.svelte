@@ -32,8 +32,6 @@
     pageTitle = pageTitle.replace('Textstellen', 'Textstelle');
     pageTitle = pageTitle.replace('Abschnitte', 'Abschnitt');
   }
-
-  $: console.debug(resultsOfKind.length);
 </script>
 
 {#if hitCount !== 0}

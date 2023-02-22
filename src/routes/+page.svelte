@@ -30,7 +30,6 @@
 
   $: if (query.length > 2) {
     $searchResults = search.query(query);
-    console.debug($searchResults);
   }
 
   $: showResults = query.length > 2;
