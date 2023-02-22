@@ -106,7 +106,7 @@ In diesem Punkt wird über die Zuweisung der Funkgeräte, der Funkfrequenzen und
 
 <ExampleBox>
 
-    „_Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60.000 MHz. Im Zugkreis wird das Funkgerät
+    „_Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60 MHz. Im Zugkreis wird das Funkgerät
     AN/PRC-152 verwendet. Dabei ist für den mechanisierten Infanteriezug Kanal 01 und für den Infanteriehalbzug Kanal 02
     reserviert. Auf Gruppenebene wird mit der SEM 52 SL gefunkt. Für die vier Gruppen des mechanisierten Infanteriezuges
     sind Kanäle 01 bis 04 reserviert. Der Infanteriehalbzug verteilt sich auf den Kanälen 05 und 06._“
