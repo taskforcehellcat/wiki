@@ -5,31 +5,6 @@
   import Nav from '$lib/nav/Nav.svelte';
   import { themeId } from '$lib/theme/stores';
 
-  import { directSearch, textSearch } from '$lib/search/search';
-
-  let query = ''; // holds the query
-  let showResults = false; // whether the search bar is currently in use
-  let textResults = []; // used to generate sections in search results
-  let directResults = [];
-
-  const handleQuery = (e) => {
-    query = e.target.value;
-
-    let searchInUse = query.length !== 0;
-
-    // do the styling
-    // hide results box if search bar empty
-    document.getElementById('search').dataset.empty = (!searchInUse).toString();
-
-    // show dropdown link menues if search bar empty
-    document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
-
-    showResults = query.length > 2;
-
-    textResults = textSearch(query);
-    directResults = directSearch(query);
-  };
-
   export let data;
 </script>
 
@@ -53,46 +28,9 @@
       <div id="search" data-empty="true">
         <div id="search__searchbar">
           <span class="material-icons noselect">search</span>
-          <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} />
+          <input type="text" name="search" placeholder="Wiki durchsuchen..." />
         </div>
-        <div id="search__results">
-          {#if showResults}
-            {#if directResults.length !== 0}
-              {#each directResults as entry}
-                <p>
-                  <span><a class="search_pagetitle" href={entry.route}>{entry.name}</a></span>
-                </p>
-              {/each}
-            {/if}
-            {#if textResults.length !== 0}
-              <p>Texttreffer:</p>
-              {#each textResults as page}
-                <p>
-                  <span class="search__hits">{page.hits}</span> Treffer auf <a class="search_pagetitle" href={page.route}>{page.title}</a>
-                  gefunden:
-                </p>
-                <ol>
-                  {#each page.bysection as sec_hit}
-                    <li>
-                      <span class="search__env"
-                        ><i
-                          >{sec_hit.surrounding.left}
-                          <mark>{sec_hit.surrounding.match}</mark>{sec_hit.surrounding.right}</i
-                        ></span
-                      >
-                      <span class="noselect"> &#x21aa; </span> <a href={sec_hit.anchor}>{sec_hit.title}</a>
-                    </li>
-                  {/each}
-                </ol>
-              {/each}
-            {/if}
-            {#if directResults.length === 0 && textResults.length === 0}
-              <p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
-            {/if}
-          {:else}
-            <p><span class="search__errortext">Bitte mindestens drei Zeichen eingeben!</span></p>
-          {/if}
-        </div>
+        <div id="search__results" />
       </div>
       <div id="home__nav">
         <Nav menu={data.menu} />

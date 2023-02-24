@@ -1,6 +1,4 @@
 <script>
-  import { linkify } from '$lib/helpers';
-
   let activeNav;
   export let menu = [];
 

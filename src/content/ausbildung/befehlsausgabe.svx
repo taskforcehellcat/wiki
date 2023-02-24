@@ -11,11 +11,9 @@ nav_index: 4
 
 Die Befehlsausgabe erfolgt nach der Gliederung, Lage, Auftrag, Durchführung, Einsatzunterstützung und Führungsunterstützung (kurz LADEF). Diese Gliederung wird auf dieser Seite erläutert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage, Auftrag und Durchführung (kurz LAD), da die Punkte Einsatz- und Führungsunterstützung eher für Führungspersonal bedeutsam sind.
 
-## Befehlsschema
+## Lage
 
-### 1\. Lage
-
-### 1.1) Feindliche Lage
+### Feindliche Lage
 
 In diesem Punkt wird über die Lage feindlicher Kräfte im Operationsraum informiert. Dabei werden die Position, die Art und die Absicht des Feindes genauer beschrieben.
 
@@ -27,7 +25,7 @@ In diesem Punkt wird über die Lage feindlicher Kräfte im Operationsraum inform
 
 </ExampleBox>
 
-### 1.2) Eigene Lage
+### Eigene Lage
 
 In diesem Punkt wird über die Lage eigener Kräfte informiert. Dabei wird auf die Position und Art der eigenen Kräfte eingegangen. Des Weiteren kann hier die Absicht des Führungspersonals mitgeteilt werden.
 
@@ -42,7 +40,7 @@ In diesem Punkt wird über die Lage eigener Kräfte informiert. Dabei wird auf d
 
 </ExampleBox>
 
-### 1.3) Zivile Lage
+### Zivile Lage
 
 In diesem Punkt wird über die Lage von Zivilisten im Operationsraum informiert. Dabei wird auf das Verhalten der Zivilisten gegenüber dem Feind und eigenen Kräften eingegangen.
 
@@ -53,7 +51,7 @@ In diesem Punkt wird über die Lage von Zivilisten im Operationsraum informiert.
 
 </ExampleBox>
 
-### 2\. Auftrag
+## Auftrag
 
 In diesem Punkt erfolgt eine knappe Darlegung des eigenen <Tooltip text="z.B. eines Zuges oder einer Gruppe">Auftrags</Tooltip>. Das geschieht in Form einer stichpunktartigen Aufzählung, was erledigt werden muss. Hauptsächlich wird dieser Punkt auf Zugebene besprochen.
 
@@ -63,7 +61,7 @@ In diesem Punkt erfolgt eine knappe Darlegung des eigenen <Tooltip text="z.B. ei
 
 </ExampleBox>
 
-### 3\. Durchführung
+## Durchführung
 
 In diesem Punkt werden die Einzelaufträge der <Tooltip text="z.B. die Gruppen eines Zuges">unterstellten Truppenteile</Tooltip> erläutert. Dabei geht der Zug- bzw. Gruppenführer genauer auf die Vorgehensweise bei der Erfüllung des Auftrages ein. Zusätzlich können hier <Tooltip text="z.B. Funkkreiseröffnung">wichtige Zeiten</Tooltip> oder <Tooltip text="z.B. Einsatz von gelenkten Raketen nur auf Befehl">Verhaltensweisen</Tooltip> mitgeteilt werden.
 
@@ -75,9 +73,9 @@ In diesem Punkt werden die Einzelaufträge der <Tooltip text="z.B. die Gruppen e
 
 </ExampleBox>
 
-### 4\. Einsatzunterstützung
+## Einsatzunterstützung
 
-### 4.1) Logistische Unterstützung
+### Logistische Unterstützung
 
 In diesem Punkt wird über Maßnahmen und Einrichtungen der <Tooltip text="z.B. Munition und SanMat für Soldaten oder Instandhaltung der Fahrzeuge">Versorgung</Tooltip> informiert.
 
@@ -88,7 +86,7 @@ In diesem Punkt wird über Maßnahmen und Einrichtungen der <Tooltip text="z.B. 
 
 </ExampleBox>
 
-### 4.2) Sanitätsdienstliche Unterstützung
+### Sanitätsdienstliche Unterstützung
 
 In diesem Punkt wird über Möglichkeiten der Versorgung verwundeter Kräfte informiert.
 
@@ -100,15 +98,15 @@ In diesem Punkt wird über Möglichkeiten der Versorgung verwundeter Kräfte inf
 
 </ExampleBox>
 
-### 5\. Führungsunterstützung
+## Führungsunterstützung
 
-### 5.1) Funkverbindungsplan
+### Funkverbindungsplan
 
 In diesem Punkt wird über die Zuweisung der Funkgeräte, der Funkfrequenzen und der Aufteilung der Funkrufzeichen informiert.
 
 <ExampleBox>
 
-    „_Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60.000 MHz. Im Zugkreis wird das Funkgerät
+    „_Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60 MHz. Im Zugkreis wird das Funkgerät
     AN/PRC-152 verwendet. Dabei ist für den mechanisierten Infanteriezug Kanal 01 und für den Infanteriehalbzug Kanal 02
     reserviert. Auf Gruppenebene wird mit der SEM 52 SL gefunkt. Für die vier Gruppen des mechanisierten Infanteriezuges
     sind Kanäle 01 bis 04 reserviert. Der Infanteriehalbzug verteilt sich auf den Kanälen 05 und 06._“
@@ -117,7 +115,7 @@ In diesem Punkt wird über die Zuweisung der Funkgeräte, der Funkfrequenzen und
 
 „_Der mechanisierte Infanteriezug ist in ALPHA und der Infanteriehalbzug in BRAVO eingeteilt._“
 
-### 5.2) Führungsreihenfolge
+### Führungsreihenfolge
 
 In diesem Punkt wird über die Einteilung der Führungsübernahme bei einem Ausfall der Führungsperson informiert.
 

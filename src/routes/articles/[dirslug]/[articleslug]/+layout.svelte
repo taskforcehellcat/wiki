@@ -3,6 +3,8 @@
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
 
+  import { fade, fly } from 'svelte/transition';
+
   import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
   // --- themes ---
   import Theme from '$lib/theme/Theme.svelte';
@@ -13,7 +15,6 @@
   import Nav from '$lib/nav/Nav.svelte';
 
   // --- id conversions ---
-  import { linkify } from '$lib/helpers.js';
   import { afterUpdate, onMount } from 'svelte';
   import { browser } from '$app/environment';
 
@@ -79,7 +80,7 @@
 
       <div id="overlay" class:show={isOpen}>
         {#each anchors as anchor}
-          <a href={linkify(anchor.link)} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
+          <a href={anchor.link} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
         {/each}
       </div>
 
@@ -226,7 +227,6 @@
 
   #burgerMenu {
     display: none;
-    /*
     @media (max-width: 800px) {
       display: inline-block;
 
@@ -245,7 +245,6 @@
         }
       }
     }
-     */
   }
 
   #overlay {

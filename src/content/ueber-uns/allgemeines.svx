@@ -8,41 +8,51 @@ nav_index: 1
     import tfhc_struktur from '$lib/images/allgemeines/tfhc_struktur.svg';
 </script>
 
-## Beschreibung
-
-Die Task Force Hellcat ist eine 2021 gegründete Community, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation [ArmA 3](https://de.wikipedia.org/wiki/Arma_3) spielt.
-Dabei wird ein besonderer Wert auf Strategie, Teamplay, Realismus und Immersion gesetzt. Fast jedes Wochenende findet entweder ein Event oder eine Übung statt.
-Gespielt wird in Kampagnen, die in aufeinanderfolgenden Events absolviert werden.
-Die Karte und die Nation werden vor Beginn einer Kampagne gewählt, wodurch sich die Spieler aktiv bei der Planung beteiligen können, um für Abwechslung und Vielfältigkeit zu sorgen.
+Die Task Force Hellcat ist eine 2021 gegründete Einheit, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation [Arma 3](https://de.wikipedia.org/wiki/Arma_3) spielt. Innerhalb des Spiels wird ein besonderer Wert auf Strategie, Immersion und einen gemeinschaftlichen Umgang gesetzt. Zur Steigerung der Immersion und des Realismus benutzen wir Modifikationen wie ACE3, ACRE2 und KAT.
 
 ## Organisation
 
-Die Organisation unserer Einheit findet ausschließlich auf unserem <a href="https://discord.taskforcehellcat.de/" class="no-underline"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" alt="Shields.io Grafik mit Link zu unserem Discord" style="vertical-align: middle;"/></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Verabredungen zu Ausbildungen, Updates zum Modpack und vieles mehr. Auch Fragen bezüglich unserer Community, des Spiels oder Ähnlichem können dort gestellt werden.
+Die Organisation unserer Einheit findet auf unserem <a href="https://discord.taskforcehellcat.de/" class="no-underline"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" alt="Shields.io Grafik mit Link zu unserem Discord" style="vertical-align: middle;"/></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Updates zum Modpack, Anmeldungen zu Ausbildungen und vieles mehr. Auch Fragen jeglicher Art können dort gestellt werden.
+
+## Voraussetzungen
+
+- Mindestalter von 16 Jahren
+- [Arma 3](https://store.steampowered.com/app/107410/Arma_3/) auf Steam
+- Discord Account mit verifizierter E-Mail
+- [TeamSpeak 3](https://www.teamspeak.com/en/) und mindestens ein Headset, vorzugsweise ein Mikrofon
+
+Zusätzlich werden zu Arma 3 das [Apex DLC](https://store.steampowered.com/app/395180/Arma_3_Apex/) und das [Global Mobilization DLC](https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/) empfohlen.
 
 ## Mitmachen
 
-### Voraussetzungen
-
-- ein Mindestalter von 16 Jahren
-- ein geeigneter Computer mit genügend Festplattenspeicher
-- das Spiel [ArmA 3](https://store.steampowered.com/app/107410/Arma_3/)
-- ein Discord-Account mit verifizierter E-Mail
-- [TeamSpeak 3](https://www.teamspeak.com/en/) und mindestens ein Headset, vorzugsweise ein vernünftiges Mikrofon
-
-Zusätzlich werden zu ArmA 3 das [Apex DLC](https://store.steampowered.com/app/395180/Arma_3_Apex/) und das [Global Mobilization DLC](https://store.steampowered.com/app/1042220/Arma_3_Creator_DLC_Global_Mobilization__Cold_War_Germany/) empfohlen, allerdings nicht zwangsweise benötigt.
-
 ### Beitritt
 
-Vor dem Beitritt in unsere Community durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch möchten wir die Vorlieben des Bewerbers erfahren und erklären unsererseits, wie wir uns das gemeinsame Spielen vorstellen.
-
-Wenn wir im Laufe des Gesprächs feststellen, dass wir zueinander passen, freuen wir uns, ein neues Mitglied in unsere Einheit aufzunehmen.
+Vor dem Beitritt in unsere Einheit durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch möchten wir die Vorlieben des Bewerbers erfahren und erklären unsererseits, wie wir uns das gemeinsame Spielen vorstellen. Wenn wir im Laufe des persönlichen Gesprächs feststellen, dass wir zueinander passen, freuen wir uns, einen neuen Mitspieler in unsere Einheit aufzunehmen.
 
 ### Aufstieg
 
-Jeder Bewerber beginnt als Rekrut. Diese Rolle gibt ihm die Möglichkeit unsere Community kennenzulernen und festzustellen, ob wir die richtige Community für ihn sind. Der Rekrut kann zum Kadett aufsteigen, indem er die Grundausbildung durchläuft, die ihm die Teilnahme an Kampagnen und Übungen sowie die Fortbildung zu grundlegenden Rollen der Infanterie ermöglicht. Ein Kadett kann zum Mitglied werden, indem er gutes Verhalten und Erfahrenheit aufweist. Mitglieder haben die Möglichkeit fortgeschrittene Aus- und Fortbildungen aller Abteilungen zu durchlaufen.
+Mit erfolgreichem Abschluss des persönlichen Gesprächs wird ein _Bewerber zum Rekruten_. Diese Rolle öffnet die Möglichkeit, die Grundausbildung zu durchlaufen. Sobald die Grundausbildung erfolgreich durchlaufen wurde, wird ein _Rekrut zum Kadetten_. Mitspieler mit dieser Rolle dürfen an Events und Übungen teilnehmen. Erfahrene Mitspieler können auf Absprache mit unserem Personal _vom Kadetten zum Mitglied_ aufsteigen, indem sie gutes Verhalten und Erfahrenheit aufweisen. Diese Rolle ermöglicht es, fortgeschrittene Aus- und Fortbildungen zu durchlaufen.
 
-## Struktur
+### Anmeldung
 
-Die Task Force Hellcat ist in drei Abteilungen untergliedert, die verschiedene Truppengattungen umfassen. Jede Abteilung wird von einem eigenen Abteilungsleiter verwaltet und organisiert. Weitere Informationen und Erklärungen zu den Truppengattungen können [hier](/articles/ueber-uns/abteilungen) eingesehen werden.
+Anmeldungen für das persönliche Gespräch, die Grundausbildung oder fortgeschrittene Aus- und Fortbildungen erfolgen im mentoring-Textkanal in den dafür vorgesehenen Threads. Dort kann sich gemeldet und gemeinsam mit unseren Mentoren ein passender Zeitraum festgestellt werden.
 
-![Task Force Hellcat Struktur]({tfhc_struktur})
+## Unser Spiel
+
+### Spieltage
+
+Wir spielen ausschließlich an Freitagen und Samstagen. Events beginnen immer nachmittags oder abends.
+
+### Spielprinzip
+
+Gespielt wird in Kampagnen, die mehrere Monate andauern können. Dabei werden aufeinanderfolgende Events gespielt, bis das Hauptziel der jeweiligen Kampagne erreicht ist.
+
+### Wahlen
+
+Vor Beginn einer Kampagne können Kadetten und Mitglieder abstimmen, auf welcher Karte und mit welcher Nation gespielt wird.
+
+## Rollensystem
+
+In unserer Einheit gibt es viele verschiedene Rollen mit unterschiedlichsten Aufgabenbereichen. Mitspieler unserer Einheit dürfen mehrere Rollen erlernen, allerdings darf während eines Events lediglich eine Rolle gespielt werden. Es gibt keine Begrenzungen bei dem Erlernen von Rollen, ein Spieler kann sowohl die Rolle des Sanitäters erlernen als auch die Rolle des Panzerkommandanten.
+
+Die Rolle eines Spielers wird vor Eventbeginn vom Eventveranstalter und -planer festgelegt, da manche Rollen bei unterschiedlicher Teilnehmerzahl mehr gebraucht sind als andere.

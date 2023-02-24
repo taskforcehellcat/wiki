@@ -1,6 +1,6 @@
 ---
 title: Fahren im Konvoi
-date: 2023-02-14
+date: '2023-02-14'
 nav_index: 7
 ---
 
@@ -25,7 +25,8 @@ Die Gliederung und Koordinierung eines Konvois erfolgt durch den _Konvoiführer_
 - Von der Richtgeschwindigkeit darf nur abgewichen werden, um den Mindestabstand einzuhalten oder aufzuholen
 - Von Vorgaben des Konvoiführers darf abgewichen werden, wenn diese eine Gefahr für Fahrzeug oder Besatzung darstellen
 - Obstruktionen auf der Straße wie geparkte Fahrzeuge, Müll oder Ähnliches werden möglichst weiträumig umfahren
-- Zivilen Fahrzeugen wird stets die Vorfahrt gewährt, um den Konvoi zu erhalten
+- Zivilen Fahrzeugen wird stets die Vorfahrt gewährt, um die Konvoireihenfolge zu erhalten
+- Zivile Fahrzeuge und andere Fahrzeuge im Konvoi werden nicht überholt, insofern keine Gefahrensituation vorliegt
 
 ## Funken
 
