@@ -6,6 +6,12 @@
   let x;
   let y;
 
+  function tapped(event) {
+    isHovered = !isHovered;
+    x = event.pageX + 5;
+    y = event.pageY + 5;
+  }
+
   function mouseOver(event) {
     isHovered = true;
     x = event.pageX + 5;
@@ -24,7 +30,8 @@
 
 <svelte:window on:resize={mouseLeave} />
 
-<span on:mouseover={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove} data-tooltip><slot /></span>{#if isHovered}
+<span on:touchstart={tapped} on:mouseover={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove} data-tooltip><slot /></span>{#if isHovered}
+  <!-- we can't line break the {#if } here because else we get whitespace characters after the tooltip for some reason... -->
   <div style="top: {y}px; left: {x}px;" class="tooltip">
     {#if image}
       <img style="max-width: 100%;" src={image} alt="" />
