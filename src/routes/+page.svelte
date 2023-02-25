@@ -38,7 +38,12 @@
           ><span class="material-icons"> chevron_left </span>
           Zurück zur Hauptseite</a
         >
-        <img id="home__nav__logo" class="noselect" src="/images/tfhcwiki_full.svg" alt="Task Force Hellcat Logo" />
+        <img
+          id="home__nav__logo"
+          class="noselect"
+          src="/images/tfhcwiki_full.svg"
+          alt="Task Force Hellcat Logo"
+        />
       </div>
 
       <!-- search bar -->
