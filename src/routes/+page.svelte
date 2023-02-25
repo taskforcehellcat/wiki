@@ -5,7 +5,24 @@
   import Nav from '$lib/nav/Nav.svelte';
   import { themeId } from '$lib/theme/stores';
 
+  import { Search } from '$lib/search/engine';
+  import { searchResults } from '$lib/search/stores';
+  import ResultsSection from '$lib/search/ResultsSection.svelte';
+
   export let data;
+
+  let rawInput = '';
+  let query; // holds the query
+  let showResults = false; // whether the search bar is currently in use
+  let search = new Search(data.posts);
+
+  $: query = rawInput.trim();
+
+  $: if (query.length > 2) {
+    $searchResults = search.query(query);
+  }
+
+  $: showResults = query.length > 2;
 </script>
 
 <svelte:head>
@@ -25,10 +42,23 @@
       </div>
 
       <!-- search bar -->
-      <div id="search" data-empty="true">
+      <div id="search" data-empty={(query.length === 0).toString()}>
         <div id="search__searchbar">
           <span class="material-icons noselect">search</span>
-          <input type="text" name="search" placeholder="Wiki durchsuchen..." />
+          <input type="text" name="search" placeholder="Wiki durchsuchen..." bind:value={rawInput} />
+        </div>
+        <div id="search__results">
+          {#if showResults}
+            {#if $searchResults.length !== 0}
+              <ResultsSection kind="article" />
+              <ResultsSection kind="heading" />
+              <ResultsSection kind="text" />
+            {:else}
+              <p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
+            {/if}
+          {:else}
+            <p><span class="search__errortext">Bitte mindestens drei Zeichen eingeben!</span></p>
+          {/if}
         </div>
         <div id="search__results" />
       </div>
@@ -94,5 +124,9 @@
   #search__searchbar .material-icons {
     font-size: 20pt;
     color: var(--brandTertiaryTXT);
+  }
+
+  .search__errortext {
+    color: var(--errorTXT);
   }
 </style>
