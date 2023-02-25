@@ -69,6 +69,10 @@
     margin-right: 1ch;
   }
 
+  .heading.title {
+    color: var(--navHover);
+  }
+
   .breadcrumbs {
     color: var(--brandNeutral);
   }

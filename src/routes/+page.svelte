@@ -138,10 +138,4 @@
   .search__errortext {
     color: var(--errorTXT);
   }
-
-  .grid-container {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 30px auto;
-  }
 </style>
