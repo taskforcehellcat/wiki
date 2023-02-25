@@ -4,4 +4,8 @@ date: '2022-11-15'
 nav_index: 2
 ---
 
-Diese Seite befindet sich in Bearbeitung.
+<script>
+    import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
+</script>
+
+<Wipbanner />

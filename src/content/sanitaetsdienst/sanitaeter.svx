@@ -6,7 +6,10 @@ nav_index: 1
 
 <script>
     import Keys from "$lib/wikitools/Keys.svelte";
+    import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
 </script>
+
+<Wipbanner />
 
 ## Rollenprofil
 

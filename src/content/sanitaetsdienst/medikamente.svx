@@ -4,6 +4,12 @@ date: '2023-02-14'
 nav_index: 2
 ---
 
+<script>
+    import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
+</script>
+
+<Wipbanner />
+
 Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite [Behandlungen]().
 
 ## Basismedikamente
