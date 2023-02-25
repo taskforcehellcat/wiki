@@ -9,7 +9,8 @@
   import { searchResults } from '$lib/search/stores';
   import ResultsSection from '$lib/search/ResultsSection.svelte';
 
-  let query = ''; // holds the query
+  let rawInput = '';
+  let query; // holds the query
   let showResults = false; // whether the search bar is currently in use
 
   const handleQuery = (e) => {
@@ -27,6 +28,8 @@
 
   export let data;
   let search = new Search(data.posts);
+
+  $: query = rawInput.trim();
 
   $: if (query.length > 2) {
     $searchResults = search.query(query);
@@ -55,7 +58,7 @@
       <div id="search" data-empty="true">
         <div id="search__searchbar">
           <span class="material-icons noselect">search</span>
-          <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} bind:value={query} />
+          <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} bind:value={rawInput} />
         </div>
         <div id="search__results">
           {#if showResults}
