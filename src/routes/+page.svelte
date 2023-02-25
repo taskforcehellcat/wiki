@@ -6,7 +6,7 @@
   import { themeId } from '$lib/theme/stores';
 
   import { Search } from '$lib/search/engine';
-  import { searchResults } from '$lib/search/stores';
+  import { searchInUse, searchResults } from '$lib/search/stores';
   import ResultsSection from '$lib/search/ResultsSection.svelte';
 
   export let data;
@@ -17,6 +17,7 @@
   let search = new Search(data.posts);
 
   $: query = rawInput.trim();
+  $: $searchInUse = query.length > 0;
 
   $: if (query.length > 2) {
     $searchResults = search.query(query);
@@ -50,7 +51,7 @@
       <div id="search" data-empty={(query.length === 0).toString()}>
         <div id="search__searchbar">
           <span class="material-icons noselect">search</span>
-          <input type="text" name="search" placeholder="Wiki durchsuchen..." bind:value={rawInput} />
+          <input type="text" name="search" placeholder="Wiki durchsuchen…" bind:value={rawInput} />
         </div>
         <div id="search__results">
           {#if showResults}

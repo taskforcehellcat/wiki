@@ -1,4 +1,6 @@
 <script>
+  import { searchInUse } from '$lib/search/stores';
+
   let activeNav;
   export let menu = [];
 
@@ -24,7 +26,7 @@
 
 <div id="nav__list">
   {#each menu as nav}
-    <div class="expandable" class:open={activeNav === nav.id}>
+    <div class="expandable" class:open={activeNav === nav.id} class:invisible={$searchInUse}>
       <span on:click={() => toggleOpen(nav.id)}>
         {nav.config.title}
         <i class="material-icons-round noselect">expand_more</i>
@@ -35,3 +37,9 @@
     </div>
   {/each}
 </div>
+
+<style lang="scss">
+  .invisible {
+    display: none;
+  }
+</style>
