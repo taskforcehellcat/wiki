@@ -60,7 +60,6 @@
             <p><span class="search__errortext">Bitte mindestens drei Zeichen eingeben!</span></p>
           {/if}
         </div>
-        <div id="search__results" />
       </div>
       <div id="home__nav">
         <Nav menu={data.menu} />
