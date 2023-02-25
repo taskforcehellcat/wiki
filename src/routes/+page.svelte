@@ -9,24 +9,11 @@
   import { searchResults } from '$lib/search/stores';
   import ResultsSection from '$lib/search/ResultsSection.svelte';
 
+  export let data;
+
   let rawInput = '';
   let query; // holds the query
   let showResults = false; // whether the search bar is currently in use
-
-  const handleQuery = (e) => {
-    // this can surely be done prettier with svelte bindings
-
-    let input = e.target.value;
-
-    // hide results box if search bar empty
-    let searchInUse = input.length !== 0;
-    document.getElementById('search').dataset.empty = (!searchInUse).toString();
-
-    // show dropdown link menues if search bar empty
-    document.getElementById('nav__list').style.display = searchInUse ? 'none' : 'flex';
-  };
-
-  export let data;
   let search = new Search(data.posts);
 
   $: query = rawInput.trim();
@@ -55,10 +42,10 @@
       </div>
 
       <!-- search bar -->
-      <div id="search" data-empty="true">
+      <div id="search" data-empty={(query.length === 0).toString()}>
         <div id="search__searchbar">
           <span class="material-icons noselect">search</span>
-          <input type="text" name="search" placeholder="Wiki durchsuchen..." on:input={handleQuery} bind:value={rawInput} />
+          <input type="text" name="search" placeholder="Wiki durchsuchen..." bind:value={rawInput} />
         </div>
         <div id="search__results">
           {#if showResults}
