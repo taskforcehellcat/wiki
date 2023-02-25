@@ -35,21 +35,34 @@
 </script>
 
 {#if hitCount !== 0}
-  <div class="heading count">{hitCount}</div>
-  <span class="heading">
-    <span class="heading title">{pageTitle}</span> <span class="heading text">gefunden</span>
-  </span>
-  {#each resultsOfKind as hit}
-    <span />
-    <span class="breadcrumbs">
-      {#each hit['breadcrumbs'] as crumb}
-        <a href={crumb.link}>{crumb.display}</a><span class="material-icons seperator">chevron_right</span>
-      {/each}
+  <div class="container">
+    <div class="heading count">{hitCount}</div>
+    <span class="heading">
+      <span class="heading title">{pageTitle}</span> <span class="heading text">gefunden</span>
     </span>
-  {/each}
+    {#each resultsOfKind as hit}
+      <span />
+      <span class="breadcrumbs">
+        {#each hit['breadcrumbs'] as crumb}
+          <a href={crumb.link}>{crumb.display}</a><span class="material-icons seperator">chevron_right</span>
+        {/each}
+      </span>
+    {/each}
+  </div>
 {/if}
 
 <style lang="scss">
+  .container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 30px auto;
+
+    margin-bottom: 1em;
+  }
+  .container:last-child {
+    margin-bottom: 0;
+  }
+
   .heading.count {
     font-size: large;
     justify-self: right;

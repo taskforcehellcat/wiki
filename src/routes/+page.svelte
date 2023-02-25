@@ -60,11 +60,9 @@
         <div id="search__results">
           {#if showResults}
             {#if $searchResults.length !== 0}
-              <div class="grid-container">
-                <ResultsSection kind="article" />
-                <ResultsSection kind="heading" />
-                <ResultsSection kind="text" />
-              </div>
+              <ResultsSection kind="article" />
+              <ResultsSection kind="heading" />
+              <ResultsSection kind="text" />
             {:else}
               <p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
             {/if}
