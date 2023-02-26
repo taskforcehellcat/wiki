@@ -3,9 +3,6 @@
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
 
-  import { fade, fly } from 'svelte/transition';
-
-  import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
   // --- themes ---
   import Theme from '$lib/theme/Theme.svelte';
 
@@ -35,12 +32,16 @@
       anchors = tempAnchors;
     }
   });
+  /*
+
+  This code should scroll to anchor links, but doesn't.
 
   onMount(async () => {
     if (location.hash) {
       document.querySelector(location.hash).scrollIntoView();
     }
   });
+  */
 
   /** @type {import('./$types').LayoutData} */
   export let data;
@@ -85,7 +86,6 @@
       </div>
 
       <main id="content" class="markdown-body">
-        <!-- <Wipbanner /> -->
         <Theme />
         <slot />
       </main>
