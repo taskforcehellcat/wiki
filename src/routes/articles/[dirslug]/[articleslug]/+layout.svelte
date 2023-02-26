@@ -3,7 +3,6 @@
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
 
-  import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
   // --- themes ---
   import Theme from '$lib/theme/Theme.svelte';
 
@@ -87,7 +86,6 @@
       </div>
 
       <main id="content" class="markdown-body">
-        <!-- <Wipbanner /> -->
         <Theme />
         <slot />
       </main>
