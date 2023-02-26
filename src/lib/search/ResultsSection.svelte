@@ -44,7 +44,7 @@
       <span />
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb}
-          <a href={crumb.link}>{crumb.display}</a><span class="material-icons seperator">chevron_right</span>
+          <a href={crumb.link} rel="external">{crumb.display}</a><span class="material-icons seperator">chevron_right</span>
         {/each}
       </span>
     {/each}

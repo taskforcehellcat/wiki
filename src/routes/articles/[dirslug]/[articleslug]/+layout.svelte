@@ -33,12 +33,16 @@
       anchors = tempAnchors;
     }
   });
+  /*
+
+  This code should scroll to anchor links, but doesn't.
 
   onMount(async () => {
     if (location.hash) {
       document.querySelector(location.hash).scrollIntoView();
     }
   });
+  */
 
   /** @type {import('./$types').LayoutData} */
   export let data;
