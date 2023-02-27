@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import { afterNavigate } from '$app/navigation';
+  import OpenGraph from '$lib/seo/OpenGraph.svelte';
   export let data;
 
   const umlautReplacements = [
@@ -28,31 +29,15 @@
   // See https://github.com/sveltejs/kit/issues/627
   // import Layout from '../+layout.svelte'
   // Or: Fix footer another way
+
+  const propsOpenGraph = {
+    imgUrl: `https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/${data.articleslug}.png`,
+    url: `http://feature-opengraph.wiki.taskforcehellcat.de/articles/${data.dirslug}/${data.articleslug}.png`,
+    title: `${data.title} · TFHC Wiki`
+  };
 </script>
 
-<svelte:head>
-  <!-- this enables rich link previews -->
-  <meta property="og:type" content="website" />
-  <!-- TODO THIS NEEDS TO BE CHANGED WHEN MERGING INTO MAIN -->
-  <meta
-    property="og:url"
-    content="https://feature-opengraph.wiki.taskforcehellcat.de/articles/{data.dirslug}/{data.articleslug}"
-  />
-  <meta property="og:title" content={data.title} />
-  <meta
-    property="og:image"
-    content="https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/{data.articleslug}.png"
-  />
-  <meta
-    property="og:image:secure_url"
-    content="https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/{data.articleslug}.png"
-  />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="627" />
-  <meta property="og:site_name" content="Task Force Hellcat Wiki" />
-  <meta property="og:modified_time" content={new Date(data.date).toISOString()} />
-  <meta property="og:locale" content="de_DE" />
-</svelte:head>
+<OpenGraph {...propsOpenGraph} />
 
 <section>
   <h1>{data.title}</h1>
