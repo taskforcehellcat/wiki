@@ -44,11 +44,7 @@
       <span />
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb}
-          <!-- rel="external" is a hack because umlaute screw up anchor links when using rehydration;
-          This is meant as a temporary fix until we find a cleaner solution. -->
-          <a href={crumb.link} rel="external">{crumb.display}</a><span class="material-icons seperator"
-            >chevron_right</span
-          >
+          <a href={crumb.link}>{crumb.display}</a><span class="material-icons seperator">chevron_right</span>
         {/each}
       </span>
     {/each}

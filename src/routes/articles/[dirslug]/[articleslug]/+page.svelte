@@ -1,21 +1,28 @@
 <script>
+  import { afterNavigate } from '$app/navigation';
   export let data;
-  /*
-  This was an idea to fix anchor links, it doesn't work.
 
-  import { onMount } from 'svelte';
-  onMount(() => {
+  const umlautReplacements = [
+    ['%C3%A4', 'ä'],
+    ['%C3%B6', 'ö'],
+    ['%C3%BC', 'ü'],
+    ['%C3%9F', 'ß']
+  ];
+
+  afterNavigate(() => {
     if (window.location.hash) {
-      let hash = window.location.hash;
+      let hash = window.location.hash.replace('#', '');
 
       if (hash.length) {
-        hash = hash.replace('%C3%A4', 'ä');
-
-        document.querySelector(hash).scrollIntoView();
+        // NOTE: i dont know why this is necessary…
+        // replace escape sequences by unicode characters
+        for (const [k, v] of umlautReplacements) {
+          hash = hash.replaceAll(k, v);
+        }
+        document.getElementById(hash).scrollIntoView();
       }
     }
   });
-  */
 
   // Custom Layout import since we can't use named slots here.
   // See https://github.com/sveltejs/kit/issues/627
