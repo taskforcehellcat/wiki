@@ -30,6 +30,18 @@
   // Or: Fix footer another way
 </script>
 
+<svelte:head>
+  <!-- this enables rich link previews -->
+  <!-- placeholders for now! -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://wiki.taskforcehellcat.de/articles/ausbildung/erste-hilfe" />
+  <meta property="og:title" content={data.title} />
+  <meta property="og:site_name" content="Task Force Hellcat Wiki" />
+  <meta property="og:modified_time" content={new Date(data.date).toISOString()} />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:description" content="Platzhalterbeschreibung lorem ipsum…" />
+</svelte:head>
+
 <section>
   <h1>{data.title}</h1>
 
