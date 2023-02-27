@@ -19,6 +19,8 @@ export async function load({ params }) {
   return {
     Content,
     title,
+    dirslug,
+    articleslug,
     date,
     nav_index
   };
