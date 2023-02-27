@@ -33,11 +33,20 @@
 <svelte:head>
   <!-- this enables rich link previews -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://wiki.taskforcehellcat.de/articles/{data.directory}/{data.id}" />
+  <!--meta property="og:url" content="https://wiki.taskforcehellcat.de/articles/{data.directory}/{data.id}" /-->
+  <!-- TODO THIS NEEDS TO BE CHANGED WHEN MERGING INTO MAIN -->
+  <meta
+    property="og:url"
+    content="https://feature-opengraph.wiki.taskforcehellcat.de/articles/{data.directory}/{data.id}"
+  />
   <meta property="og:title" content={data.title} />
   <meta
+    property="og:image"
+    content="https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/{data.id}.png"
+  />
+  <meta
     property="og:image:secure_url"
-    content="https://wiki.taskforcehellcat.de/images/thumbnails/{data.id}.png"
+    content="https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/{data.id}.png"
   />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="627" />
