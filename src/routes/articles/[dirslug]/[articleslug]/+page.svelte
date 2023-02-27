@@ -32,14 +32,18 @@
 
 <svelte:head>
   <!-- this enables rich link previews -->
-  <!-- placeholders for now! -->
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://wiki.taskforcehellcat.de/articles/ausbildung/erste-hilfe" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wiki.taskforcehellcat.de/articles/{data.directory}/{data.id}" />
   <meta property="og:title" content={data.title} />
+  <meta
+    property="og:image:secure_url"
+    content="https://wiki.taskforcehellcat.de/images/thumbnails/{data.id}.png"
+  />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
   <meta property="og:site_name" content="Task Force Hellcat Wiki" />
   <meta property="og:modified_time" content={new Date(data.date).toISOString()} />
   <meta property="og:locale" content="de_DE" />
-  <meta property="og:description" content="Platzhalterbeschreibung lorem ipsum…" />
 </svelte:head>
 
 <section>
