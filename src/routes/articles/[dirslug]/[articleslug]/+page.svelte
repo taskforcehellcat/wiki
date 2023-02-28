@@ -43,7 +43,7 @@
   titleTemplate="%s · TFHC Wiki"
   canonical="https://wiki.taskforcehellcat.de/"
   openGraph={{
-    url: `https://www.url.ie/articles/${data.dirslug}/${data.articleslug}`,
+    url: `https://feature-opengraph.wiki.taskforcehellcat.de/articles/${data.dirslug}/${data.articleslug}`,
     title: `${data.title}`,
     description: 'Platzhalter',
     images: [
