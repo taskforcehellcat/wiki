@@ -10,6 +10,7 @@
   ];
 
   afterNavigate(() => {
+    // NOTE: this does not work if it's included inside of +layout.svelte
     if (window.location.hash) {
       let hash = window.location.hash.replace('#', '');
 

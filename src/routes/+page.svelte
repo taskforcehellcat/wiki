@@ -8,6 +8,7 @@
   import { Search } from '$lib/search/engine';
   import { searchInUse, searchResults } from '$lib/search/stores';
   import ResultsSection from '$lib/search/ResultsSection.svelte';
+  import { beforeNavigate } from '$app/navigation';
 
   export let data;
 
@@ -24,6 +25,12 @@
   }
 
   $: showResults = query.length > 2;
+
+  beforeNavigate(() => {
+    // reset the query when leaving the site, else the nav menu thinks the
+    // search is in use and stays hidden on article pages.
+    query = '';
+  });
 </script>
 
 <svelte:head>
