@@ -71,5 +71,5 @@ Da es auch außerhalb des Funkes viel benutzt wird, sollte man sich das NATO-Alp
 
 ## Weiterführende Informationen
 
-- [Funk im MEDEVAC (wip)]()
-- [Funk der Panzertruppen (wip)]()
+- [~~Funk im MEDEVAC~~]() (wip)
+- [~~Funk der Panzertruppen~~]() (wip)
