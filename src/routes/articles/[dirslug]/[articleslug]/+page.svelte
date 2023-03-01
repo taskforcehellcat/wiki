@@ -1,6 +1,5 @@
 <script lang="ts">
   import { afterNavigate } from '$app/navigation';
-  import { MetaTags } from 'svelte-meta-tags';
   export let data;
 
   const umlautReplacements = [
@@ -37,30 +36,3 @@
   <!-- Use svelte:component instead of <Content/> to force reactivity if content changes (like changing articles) -->
   <svelte:component this={data.Content} />
 </section>
-
-<MetaTags
-  title={data.title}
-  titleTemplate="%s · TFHC Wiki"
-  canonical="https://wiki.taskforcehellcat.de/"
-  openGraph={{
-    url: `https://feature-opengraph.wiki.taskforcehellcat.de/articles/${data.dirslug}/${data.articleslug}`,
-    title: `${data.title}`,
-    description: 'Platzhalter',
-    images: [
-      {
-        url: `https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/${data.articleslug}.png`,
-        width: 1200,
-        height: 627,
-        alt: 'Artikelbanner'
-      }
-    ],
-    site_name: 'Task Force Hellcat Wiki'
-  }}
-  twitter={{
-    cardType: 'summary_large_image',
-    title: `${data.title}`,
-    description: 'Platzhalterbeschreibung',
-    image: `https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/${data.articleslug}.png`,
-    imageAlt: 'Artikelbanner'
-  }}
-/>

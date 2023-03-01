@@ -16,6 +16,7 @@
   import { browser } from '$app/environment';
 
   import { page } from '$app/stores';
+  import PageMeta from '$lib/linkpreview/PageMeta.svelte';
 
   let isOpen = false;
   export let anchors = [];
@@ -103,6 +104,8 @@
     </div>
   </div>
 {/if}
+
+<PageMeta description="bla" title="blaa" />
 
 <style lang="scss">
   #wiki {
