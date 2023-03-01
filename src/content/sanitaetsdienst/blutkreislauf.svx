@@ -48,7 +48,7 @@ Ein Blutvolumen unter 3 Litern ist tödlich.
 
 ### Flüssigkeiten
 
-Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion]()) [TODO: ordentlich verlinken].
+Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion](/articles/sanitaetsdienst/nierenfunktion)).
 
 - Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-ph-Wert
 - Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-ph-Wert
@@ -82,7 +82,7 @@ Dass die falsche Blutgruppe verabreicht worden ist, erkennt man in der Regel an 
 
 ## Blutdruck
 
-Der Blutdruck nimmt mit steigendem Blutverlust ab, wenn dieser also ausgeglichen wurde und Herzschlag vorhanden ist, sollte sich der Blutdruck von selbst normalisieren. Ein Wert von etwa 120 : 80 mmHg gilt als normal.
+Der Blutdruck nimmt mit steigendem Blutverlust ab, wenn dieser also ausgeglichen wurde und Herzschlag vorhanden ist, sollte sich der Blutdruck von selbst normalisieren. Ein Wert von etwa 120 : 80 <Tooltip text="ein Millimeter Quecksilber ist der statische Druck, der von einer ein Millimeter hohen Säule Quecksilber erzeugt wird">mmHg</Tooltip> gilt als normal.
 
 ## Herzinfarkt
 
