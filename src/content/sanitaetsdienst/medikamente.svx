@@ -33,6 +33,10 @@ hebt die Herzrate, kann auch Behandlung von Morphin-Überdosen unterstützen.
 
 senkt die Herzrate, kann zur Behandlung von Epinephrin-Überdosen verwendet werden.
 
+### Koffein
+
+verbessert die Ausdauer, hebt die Herzrate leicht. 15 Dosen pro Packung, verbleibt 30 Minuten im Körper. Maximal sechs Dosen.
+
 ## Infarkttherapie
 
 Medikamente zur Behandlung von [Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt).
@@ -51,17 +55,33 @@ Klasse Ib Antiarrythmikum. Verbessert die Erfolgswahrscheinlichkeit des Defibril
 
 zur Behandlung von Bradykardien. Hebt die Herzrate wesentlich.
 
+## Chirurgie
+
+Die folgenden Medikamente ermöglichen das Operieren von Brüchen, siehe dazu [Behandlung von Brüchen](/articles/sanitaetsdienst/chirurgie#brüche).
+
+### Etomidat
+
+Anästhetikum (verursacht Bewusstlosigkeit), unterdrückt Schmerz, vermindert Herzrate. Verbleibt 45 Sekunden im Körper, maximal 10 Dosen.
+
+### Lorazepam
+
+vermindert Blutdruck, wirkt sedierend (ermüdend).
+
+### Flumazenil
+
+hebt die Wirkung von Lorazepam auf.
+
 ## Spezialisierte Medikationen
 
 Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.
 
 ### Ammonium Carbonat
 
-Inhalat, kann <Tooltip text="Herzschlag über 60 Schläge pro Minute, SpO₂-Wert über 95 %">stabile</Tooltip> Patienten aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
+Inhalat, kann <Tooltip text="Herzschlag 70 bis 110 Schläge pro Minute, SpO₂-Wert über 85 %, Blutdruck systolisch 110 bis 130 mmHg">stabile</Tooltip> Patienten aus der Bewusstlosigkeit holen. Wird am Kopf angewendet.
 
 ### Naloxon (NARCAN)
 
-Morphin-Antagonist, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.
+Morphin-Antagonist, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf. Kann auch bei Fentanyl- und Nalbuphin-Überdosen abgewandt werden.
 
 ### Tranexamsäure (TXA)
 
@@ -69,19 +89,23 @@ treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. �
 
 ### Norepinephrin
 
-hebt den Blutdruck (Vasopressor). Wird über einen Zugang verabreicht.
+hebt den Blutdruck (Vasopressor) und die Herzrate. Wird über einen Zugang verabreicht. Verdickt das Blut.
 
 ### Nitroglycerin
 
-senkt den Blutdruck (Vasodepressor). Wird über einen Zugang verabreicht.
+senkt den Blutdruck (Vasodepressor). Wird über einen Zugang verabreicht. Verdünnt das Blut.
 
 ### Phenylephrin
 
-hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht.
+hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht. Verdickt das Blut stärker als [Norepinephrin](#norepinephrin).
 
 ### Ondansetron
 
 verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.
+
+## Rangfolge der Schmerzmedikamente
+
+In absteigender Reihenfolge ist die Stärke der Schmerzmittel: [Fentanyl](#fentanyl), [Morphium](#morphin-autoinjektor), [Ketamin](#ketamin), [Nalbuphin](#nalbuphin) und [Schmerztabletten](#painkillers-dt-schmerztabletten).
 
 ## Siehe auch
 

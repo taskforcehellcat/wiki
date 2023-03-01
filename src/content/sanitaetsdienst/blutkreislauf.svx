@@ -27,15 +27,15 @@ Im menschlichen Blut befinden sich sogenannte Thrombozyten (Blutplättchen), wel
 
 Mit zunehmenden Blutverlust nimmt aber auch die Fähigkeit des Körpers dazu ab und großflächige Verwundungen bedürfen ohnehin medizinischer Aufmerksamkeit. Auf diesen Mechanismus sollte man sich also keinesfalls verlassen.
 
-Wenn ein Herzschlag von mindestens 20 Schlägen pro Minute vorliegt, beginnt sich Schorf auf offenen Wunden zu bilden (_unstable clot_). Dabei verbraucht der Körper sogenannte Koagulationsfaktoren, welche ihm durch Blut- oder Plasmatransfusionen wieder zugeführt werden können, (siehe unten)[#ausgleich_von_blutverlust] (TODO: Link prüfen).
+Wenn ein Herzschlag von mindestens 20 Schlägen pro Minute vorliegt, beginnt sich Schorf auf offenen Wunden zu bilden (_unstable clot_). Dabei verbraucht der Körper sogenannte Koagulationsfaktoren, welche ihm durch Blut- oder Plasmatransfusionen wieder zugeführt werden können, [siehe unten](#ausgleich-von-blutverlust).
 
-Über einen Zugang (siehe untern)[#ausgleich_von_blutverlust] (TODO: Link prüfen) kann ebenfalls Tranexamsäure (_TXA_) verabreicht werden, welche die Gerinnung stabilisiert. Das bedeutet, das vorhandene Gerinnung stärker wird (entspricht _packing bandage_ statt _unstable clot_). Tranexamsäure verursacht nicht von selbst Gerinnung, Koagulationsfaktoren müssen also unabhängig vorhanden sein!
+Über einen [Zugang](#ausgleich-von-blutverlust) kann ebenfalls Tranexamsäure (_TXA_) verabreicht werden, welche die Gerinnung stabilisiert. Das bedeutet, das vorhandene Gerinnung stärker wird (entspricht _packing bandage_ statt _unstable clot_). Tranexamsäure verursacht nicht von selbst Gerinnung, Koagulationsfaktoren müssen also unabhängig vorhanden sein!
 
 ## Ausgleich von Blutverlust und Zugänge
 
-Zum Anlegen von Blut und verabreichen einiger Medikamente benötigt man einen Zugang in die Blutbahn des Patienten. Dafür stehen 16g Kanülen (ca. 1,5 mm Durchmesser, intravenös) sowie FAST-IO-Systeme (intraossär) zur Verfügung. Mit einer 16g Kanüle können Venen an den Extremitäten (Arme und Beine) punktiert werden, vorausgetzt das betroffene Körperteil ist nicht zu stark verwundet oder mit einem Tourniquet abgeschnürt (ein Zugang kann dann zwar gelegt werden, Flüssigkeiten und Medikamente gelangen allerdings nicht ins System). Falls das Legen eines Zuganges so nicht möglich ist, erlaubt die FAST IO (_First Access for Shock and Trauma IO_) einen Zugang über das Knochenmark des Brustbeins (sie wird also am Torso angewandt, stellt aber einen deutlich schmerzhafteren und invasiveren Eingriff dar).
+Zum Anlegen von Blut und verabreichen einiger Medikamente benötigt man einen Zugang in die Blutbahn des Patienten. Dafür stehen 16g Kanülen (ca. 1,5 mm Durchmesser, intravenös) sowie FAST-IO-Systeme (intraossär) zur Verfügung. Mit einer 16g Kanüle können Venen an den Extremitäten (Arme und Beine) punktiert werden, vorausgetzt das betroffene Körperteil ist nicht zu stark verwundet oder mit einem Tourniquet abgeschnürt (ein Zugang kann dann zwar gelegt werden, Flüssigkeiten und Medikamente gelangen allerdings nicht ins System). Falls das Legen eines Zuganges so nicht möglich ist, erlaubt die FAST IO (_First Access for Shock and Trauma IO_) einen Zugang über das Knochenmark des Brustbeins (sie wird also am Torso angewandt, stellt aber einen deutlich schmerzhafteren und invasiveren Eingriff dar). Außerdem kann mit der FAST IO auch dann Flüssigkeit verabreicht werden,
 
-Da Blut und Blutplasma zuerst einem anderen Menschen abgenommen wurden, spricht man im Gegensatz zur Salzlösung streng genommen von Transfusionen statt Infusionen und zusammenfassend von Flüssigkeit oder Fluiden.
+_Bemerkung:_ Da Blut und Blutplasma zuerst einem anderen Menschen abgenommen wurden, spricht man im Gegensatz zur Salzlösung streng genommen von Transfusionen statt Infusionen und zusammenfassend von Flüssigkeit oder Fluiden.
 
 ### Statusmeldungen
 
@@ -72,9 +72,7 @@ Man kann sich merken, dass dabei die Spenderblutgruppe gewissermaßen in der des
 
 </ExampleBox>
 
-Eine vollständige Übersicht liefert die folgende Grafik.
-
-(TODO: Grafik einfügen)
+Eine vollständige Übersicht liefert die folgende Grafik<sup>[TODO: Grafik einfügen]</sup>.
 
 #### Bei falscher Blutgruppengabe
 
@@ -102,3 +100,5 @@ Verabreichen von Amiodaron verursacht in einem von drei Fällen eine Bradykardie
 ### Asystolien
 
 Gibt der Defibrillator _„no shock advised“_ aus, handelt es sich um eine Asystolie, also einen tatsächlichen Herzstillstand. Hier bleibt nur Epinephrin zu verabreichen gefolgt von drei Einheiten Herz-Lungen-Wiederbelebung, diese Kombination muss stetig wiederholt werden.
+
+**Wichtig:** Amiodaron senkt die Erregbarkeit des Herzmuskels. Dies hilft bei Kammerflimmern, man beide Herzkammern durch einen Stromstoß des Defibrillators „synchronisieren“ möchte. Bei einer Asystolie, bei der gar kein Herzschlag vorliegt, verschlechtert es den Zustand des Patienten allerdings noch. Falls man sich also unsicher ist, welche Art Infarkt vorliegt, sollte man jeden Herzstillstand wie eine Asystolie behandeln.

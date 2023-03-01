@@ -16,6 +16,21 @@ nav_index: 1
 
 Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC](/articles/sanitaetsdienst/medevac)s mitzuwirken.
 
+## Fähigkeiten
+
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) und [Funketikette](./../ausbildung/funketikette), welche andere Soldaten nicht leisten können.
+
+Konkret können sie:
+
+- Verletzungen versorgen und Blutungen stoppen
+- Verbände nähen
+- Blutverlust ausgleichen
+  - Nierenversagen verhindern
+- Bewusstlose versorgen
+  - Atemwegskomplikationen verhindern
+  - Herzstillstände behandeln
+- Brüche operieren
+
 ## Ausrüstung
 
 ### Verbrauchsmaterialien
@@ -40,7 +55,15 @@ eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird ben�
 
 #### FAST IO
 
-_First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.
+_First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind. Außerdem ist kein Puls nötig, um über diesen Zugang Flüssigkeiten verabreichen zu können<sup>[aktuell?]</sup>.
+
+#### Skalpel
+
+Gebraucht, um komplizierte Brüche zu operieren, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+
+#### Bone Plate (dt. Knochenplatte)
+
+Eine Metallplatte, die in den gebrochenen Knochen geschraubt wird. Gebraucht, um offene Reduktionen bei komplizierten Brüchen durchzuführen, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
 
 ### Gebrauchsgegenstände
 
@@ -70,26 +93,19 @@ _Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe 
 
 #### Pulsoximeter
 
-erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes (engl. _saturation peripher O₂_, SpO₂).
+erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes.
 
-## Fähigkeiten
+#### Clamp (dt. Klemme)
 
-Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) und [Funketikette](./../ausbildung/funketikette), welche andere Soldaten nicht leisten können.
+gebraucht, um beim Operieren eine Wunde offen zu halten, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
 
-Konkret können sie:
+#### Retractor (dt. Retraktor)
 
-- Verletzungen versorgen und Blutungen stoppen
-- Verbände nähen
-- Blutverlust ausgleichen
-  - Nierenversagen verhindern
-- Bewusstlose versorgen
-  - Atemwegskomplikationen verhindern
-  - Herzstillstände behandeln
-- Brüche operieren
+gebraucht, um Frakturen offen zu legen und zu behandeln, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
 
 ## Nützliche Hinweise
 
 - Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, <kbd>0</kbd> und <kbd>H</kbd> auf Maustasten zu legen, oder ähnliches.
-- <kbd>G</kbd> liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen zum Beispiel <kbd>SHIFT</kbd>+<kbd>G</kbd> zu verwenden.
+- <kbd>G</kbd> liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen zum Beispiel <Keys keys="UMSCHALT, G" /> zu verwenden.
 - Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.
 - Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.
