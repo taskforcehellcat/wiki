@@ -18,7 +18,7 @@
   />
   <meta property="og:type" content="website" />
   <meta property="og:title" content={title} />
-  <meta property="og:description" content="Platzhalter" />
+  <meta property="og:description" content="Artikel im TFHC Wiki" />
   <meta
     property="og:image"
     content="https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/{article}.png"
@@ -32,7 +32,7 @@
     content="https://feature-opengraph.wiki.taskforcehellcat.de/articles/ausbildung/fahrzeugerkennung"
   />
   <meta name="twitter:title" content={title} />
-  <meta name="twitter:description" content="bla" />
+  <meta name="twitter:description" content="Artikel im TFHC Wiki" />
   <meta
     name="twitter:image"
     content="https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/{article}.png"
