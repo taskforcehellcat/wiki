@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
   import { afterNavigate } from '$app/navigation';
   export let data;
 
