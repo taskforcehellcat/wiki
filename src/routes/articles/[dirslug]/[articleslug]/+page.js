@@ -13,7 +13,7 @@ export async function load({ params }) {
     throw error(404, 'Not found');
   }
 
-  const { title, date, nav_index } = post.metadata;
+  const { title, description, date, nav_index } = post.metadata;
   const Content = post.default;
 
   return {
@@ -22,6 +22,7 @@ export async function load({ params }) {
     dirslug,
     articleslug,
     date,
+    description,
     nav_index
   };
 }

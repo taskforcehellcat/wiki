@@ -1,6 +1,7 @@
 ---
 title: Fahrer (Panzertruppen)
 title_short: Fahrer
+description: Der Kraftfahrer nimmt unmittelbar Einfluss auf die Bewegung des Fahrzeuges entsprechend der Anweisungen des Kommandanten. Das eigenständige Manövrieren seines Fahrzeuges entlang Straßen oder durch das Gelände bei oft schlechten Sichtmöglichkeiten stellt seine größte Hürde dar.
 date: '2022-11-15'
 nav_index: 3
 ---
