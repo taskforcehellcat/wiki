@@ -1,6 +1,6 @@
 <script>
   export let isHovered = false;
-  export let image;
+  export let image = undefined;
   export let text = '';
 
   let x;
