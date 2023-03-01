@@ -5,7 +5,35 @@ nav_index: 6
 ---
 
 <script>
-    import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
+    import Tooltip from '$lib/wikitools/Tooltip.svelte';
 </script>
 
-<Wipbanner />
+## Brüche
+
+Während einfache Brüche auch durch Schienen mit einem Splint behandelt werden können, können auch Komplikationen vorkommen, die eine Operation erfordern.
+
+### Diagnose
+
+Der Bruch kann unter _Examine Patient » Check Fracture_ untersucht werden.
+
+- Einfache Fraktur (_simple fracture_)
+- Chirurgische Fraktur (_compound fracture_/_comminuted fracture_)
+
+### Behandlung
+
+#### Einfache Fraktur
+
+- Lidocain oder Morphin verabreichen (Schmerzunterdrückung)
+- geschlossene Reduktion durchführen (_perform closed reduction_)
+
+#### Chirurgische Fraktur
+
+- falls noch bei Bewusstsein, Patienten mit Lorazepam sedieren
+- allgemeine Anästhesie mit Etomidat, alle 40 Sekunden neue Gabe
+- Inzision (Einschnitt) mit Skalpel vornehmen
+- mit Retraktor die Fraktur offen legen
+  - mehrfacher Bruch (_compound fracture_): Wunde mit 250 ml Salzlösung befeuchten
+  - Splitterbruch (_comminuted fracture_): Wunde mit Klemme offenhalten
+- offene Reduktion mit einer Knochenplatte (_bone plate_) durchführen
+- Flumazenil verabreichen um dem Effekt vom Lorazepam entgegenzuwirken
+- Patienten aufwecken, zum Beispiel mit Ammoniumcarbonat
