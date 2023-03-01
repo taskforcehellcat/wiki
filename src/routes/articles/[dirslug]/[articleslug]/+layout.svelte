@@ -105,7 +105,7 @@
   </div>
 {/if}
 
-<PageMeta description="bla" title="blaa" />
+<PageMeta data={$page.data} />
 
 <style lang="scss">
   #wiki {
