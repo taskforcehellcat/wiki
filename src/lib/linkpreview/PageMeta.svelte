@@ -1,9 +1,9 @@
 <script lang="ts">
   export let data;
 
-  let title = 'test'; // data.title;
+  let title = data.title;
   let dir = data.dirslug;
-  let article = 'art'; //data.articleslug;
+  let article = data.articleslug;
 </script>
 
 <svelte:head>
