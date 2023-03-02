@@ -5,11 +5,8 @@ nav_index: 2
 ---
 
 <script lang='ts'>
-    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
     import Tooltip from '$lib/wikitools/Tooltip.svelte';
 </script>
-
-<Wipbanner />
 
 Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklären die speziellen Seiten zu den [Behandlungen](#siehe-auch).
 
