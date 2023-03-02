@@ -28,6 +28,8 @@ Der Bruch kann unter _Examine Patient » Check Fracture_ untersucht werden.
 
 #### Chirurgische Fraktur
 
+Beim Operieren ist es wichtig, den Patienten betäubt zu halten. Etomidat muss daher für die Dauer der Operation alle 40 Sekunden erneut angewandt werden. Ansonsten führen die starken Schmerzen dazu, dass der Patient nicht aus der Bewusstlosigkeit aufwachen kann.
+
 - falls noch bei Bewusstsein, Patienten mit Lorazepam sedieren
 - allgemeine Anästhesie mit Etomidat, alle 40 Sekunden neue Gabe
 - Inzision (Einschnitt) mit Skalpel vornehmen

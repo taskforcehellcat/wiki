@@ -1,6 +1,6 @@
 ---
 title: Medikamente
-date: '2023-03-01'
+date: '2023-03-02'
 nav_index: 2
 ---
 
@@ -119,4 +119,4 @@ In absteigender Reihenfolge ist die Stärke der Schmerzmittel: [Fentanyl](#fenta
 
 - [Erste Hilfe](/articles/ausbildung/erste-hilfe#medizinische-versorgung)
 - Behandlung von [Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt)
-- [~~Narkose bei Operationen~~ (wip)](/articles/sanitaetsdienst/chirurgie)
+- [Narkose bei Operationen](/articles/sanitaetsdienst/chirurgie)
