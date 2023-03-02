@@ -85,7 +85,15 @@ Morphin-Antagonist, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe
 
 ### Tranexamsäure (TXA)
 
-treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten.
+treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten. Höchstens drei Gaben.
+
+TXA und EACA können den Zugang, über den sie verabreicht werden, verstopfen. Zugänge können über _inspect catheter_ untersucht und gegebenenfalls mit _flush saline_ freigespült werden.
+
+### ε-Aminocapronsäure (EACA)
+
+treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zum Nähen eines Verbunds pro sechs Sekunden. Verbleibt zehn Minuten im Körper. Höchstens zehn Gaben.
+
+TXA und EACA können den Zugang, über den sie verabreicht werden, verstopfen. Zugänge können über _inspect catheter_ untersucht und gegebenenfalls mit _flush saline_ freigespült werden.
 
 ### Norepinephrin
 
