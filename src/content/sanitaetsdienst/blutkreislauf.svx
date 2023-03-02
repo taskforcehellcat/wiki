@@ -48,11 +48,11 @@ Ein Blutvolumen unter 3 Litern ist tödlich.
 
 ### Flüssigkeiten
 
-Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion](/articles/sanitaetsdienst/nierenfunktion)).
+Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion](#nierenfunkion)).
 
-- Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-ph-Wert
-- Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-ph-Wert
-- isotonische Kochsalzlösung: _kein_ Koagulationsfaktor, _negativen_ Einfluss auf den Blut-ph-Wert
+- Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-pH-Wert
+- Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-pH-Wert
+- isotonische Kochsalzlösung: _kein_ Koagulationsfaktor, _negativen_ Einfluss auf den Blut-pH-Wert
 
 ### Transfusionen im Feld
 
@@ -102,3 +102,17 @@ Verabreichen von Amiodaron verursacht in einem von drei Fällen eine Bradykardie
 Gibt der Defibrillator _„no shock advised“_ aus, handelt es sich um eine Asystolie, also einen tatsächlichen Herzstillstand. Hier bleibt nur Epinephrin zu verabreichen gefolgt von drei Einheiten Herz-Lungen-Wiederbelebung, diese Kombination muss stetig wiederholt werden.
 
 **Wichtig:** Amiodaron senkt die Erregbarkeit des Herzmuskels. Dies hilft bei Kammerflimmern, man beide Herzkammern durch einen Stromstoß des Defibrillators „synchronisieren“ möchte. Bei einer Asystolie, bei der gar kein Herzschlag vorliegt, verschlechtert es den Zustand des Patienten allerdings noch. Falls man sich also unsicher ist, welche Art Infarkt vorliegt, sollte man jeden Herzstillstand wie eine Asystolie behandeln.
+
+## Nierenfunkion
+
+Werden große Mengen Blutverlust durch Salzlösung ausgeglichen, kann dies die Nieren schädigen. Im schlimmsten Falle versagen sie, was zu einem Herzstillstand führt.
+
+### Diagnose
+
+Über die Option _Examine Patient » Check Breath_ lässt sich der Atem des Patienten kontrollieren. Ein metallischer Geruch deutet auf mangelnde Nierenfunktion hin.
+
+### Behandlung
+
+Transfusion von Blut oder ersatzweise Plasma verbessert den pH-Wert des Blutes und entlastet die Nieren wieder.
+
+In medizinischen Fahrzeugen und Einrichtungen gibt es auch die Möglichkeit, eine Dialyse durchzuführen.
