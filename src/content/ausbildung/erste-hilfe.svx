@@ -30,7 +30,7 @@ Die Kategorie „Gelb“ bezeichnet schwere Verletzungen, deren Behandlung vermu
 
 ### Kat. Rot
 
-Die Kategorie „Rot“ bezeichnet einen Bewusstlosen. Bewusstlose müssen oft erst geborgen, dann gedeckt und versorgt werden, wobei sie selbst natürlich nicht helfen können. Die Versorgung eines Kat. Rot ist also direkt deutlich aufwändiger. Wie genau im Falle eines Kat. Rot vorgegangen wird, kann situativ unterschiedlich sein, siehe dafür [Sicherung](#sicherung).
+Die Kategorie „Rot“ bezeichnet einen Bewusstlosen. Bewusstlose müssen oft erst geborgen, dann gedeckt und versorgt werden, wobei sie selbst natürlich nicht helfen können. Die Versorgung eines Kat. Rot ist also direkt deutlich aufwändiger. Wie genau im Falle eines Kat. Rot vorgegangen wird, kann situativ unterschiedlich sein, siehe dafür [Sicherung](#sicherung-von-verletzten).
 
 ### Kat. Blau
 
@@ -140,7 +140,7 @@ Liegen geringer Blutsauerstoff und Brustkorbverletzungen vor, ist eine Verletzun
 
 Ansonsten gilt es, die Atemwege freizuhalten:
 
-- _Advanced Treatments » Establish Recovery Position_: bringt den Patienten in die stabile Seitenlage. Dies verhindert etwa, dass die Zunge die Atemwege blockiert. Die Stabile Seitenlage verhindert allerdings zum Beispiel das durchführen einer Herz-Lungen-Wiederbelebung, für diese muss der Patient auf dem Rücken liegen. Sie kann durch _Advanced Treatments » Cancel Recovery Position_ abgebrochen werden. Wenn der Patient gezogen oder getragen wird, wird sie ebenfalls abgebrochen.
+- _Advanced Treatments » Establish Recovery Position_: bringt den Patienten in die stabile Seitenlage. Dies verhindert etwa, dass die Zunge die Atemwege blockiert. Die Stabile Seitenlage verhindert allerdings zum Beispiel das durchführen einer Herz-Lungen-Wiederbelebung, für diese muss der Patient auf dem Rücken liegen. Sie kann durch _Advanced Treatments » Cancel Recovery Position_ abgebrochen werden. Wenn der Patient gezogen oder getragen oder in ein Fahrzeug verladen wird, wird sie ebenfalls abgebrochen.
 - _Airway Management » Hyperextend Head_: Überstreckt den Kopf, um die Atemwege freizumachen.
 - _Airway Management » Check Airways_: Atemwege überprüfen. Das Ergebnis erscheint als Hint in der rechten oberen Bildschirmecke:
   - _„Airways clear“_: kein Handlungsbedarf. Fällt der Blutsauerstoff dennoch, ist die Lunge verletzt und ein Sanitäter vonnöten.
@@ -155,3 +155,9 @@ Ein Herzschlag von unter 45 Schlägen pro Minute gilt als sehr niedrig. Es sollt
 Tritt ein Herzstillstand auf, muss umgehend mit der Herz-Lungen-Wiederbelebung (HLW) begonnen werden, _Advanced Treatments » Perform CPR_. Dies ist nicht möglich, wenn sich der Patient in der stabilen Seitenlage befindet, diese muss also hierfür abgebrochen werden: _Advanced Treatments » Cancel Recovery Position_. Darum sollte die Blutsauerstoffsättigung auch weiterhin gut beobachtet werden.
 
 Der Herzstillstand selbst kann effektiv nur von Sanitätern behandelt werden, es besteht jedoch eine Chance, dass der Puls spontan wieder einsetzt.
+
+## Siehe auch
+
+- umfänglicher [Leitfaden](/articles/sanitaetsdienst/behandlungsleitfaden) für alle üblichen Behandlungsschritte (ausgelegt für Sanitäter)
+- Einzelheiten zum [Blutkreislauf](/articles/sanitaetsdienst/blutkreislauf) (Wundverschluss, Herzstillstand)
+- Einzelheiten zur [Atmung](/articles/sanitaetsdienst/atmung) (Blutsauerstoff, Lungenverletzungen)
