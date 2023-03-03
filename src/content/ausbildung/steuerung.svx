@@ -91,40 +91,44 @@ _Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener
 
 ## Waffen
 
-| Aktion               | Tastenbelegung                    |
-| -------------------- | --------------------------------- |
-| Schuss               | <kbd>LINKSKLICK</kbd>             |
-| Visier               | <kbd>RECHTSKLICK</kbd>            |
-| Visier wechseln      | <Keys keys="STRG, RECHTSKLICK" /> |
-| Waffe sichern        | <Keys keys="STRG, ^" />           |
-| Nachladen            | <kbd>R</kbd>                      |
-| Feuermodus rotieren  | <kbd>F</kbd>                      |
-| Magazin prüfen       | <Keys keys="STRG, R" />           |
-| Waffe senken         | <Keys keys="STRG, STRG" />        |
-| Lauf nach oben       | <kbd>T</kbd>                      |
-| Lauf nach unten      | <Keys keys="UMSCHALT, T" />       |
-| Waffe holstern       | <kbd>0</kbd>                      |
-| Primärwaffe          | <kbd>1</kbd>                      |
-| Sekundärwaffe        | <kbd>2</kbd>                      |
-| Raketenwerfer        | <kbd>3</kbd>                      |
-| Waffe auflegen       | <kbd>C</kbd>                      |
-| Licht/Laser          | <kbd>L</kbd>                      |
-| Licht/Laser wechseln | <Keys keys="STRG, L" />           |
+| Aktion                      | Tastenbelegung                    |
+| --------------------------- | --------------------------------- |
+| Schuss                      | <kbd>LINKSKLICK</kbd>             |
+| Visier                      | <kbd>RECHTSKLICK</kbd>            |
+| Visier wechseln             | <Keys keys="STRG, RECHTSKLICK" /> |
+| Waffe sichern               | <Keys keys="STRG, ^" />           |
+| Nachladen                   | <kbd>R</kbd>                      |
+| Feuermodus rotieren         | <kbd>F</kbd>                      |
+| Magazin prüfen              | <Keys keys="STRG, R" />           |
+| Waffe senken                | <Keys keys="STRG, STRG" />        |
+| Lauf nach oben              | <kbd>T</kbd>                      |
+| Lauf nach unten             | <Keys keys="UMSCHALT, T" />       |
+| Waffe holstern              | <kbd>0</kbd>                      |
+| Primärwaffe                 | <kbd>1</kbd>                      |
+| Sekundärwaffe               | <kbd>2</kbd>                      |
+| Raketenwerfer               | <kbd>3</kbd>                      |
+| Waffe auflegen              | <kbd>C</kbd>                      |
+| Granate werfen<sup>1</sup>  | <kbd>G</kbd>                      |
+| Granate kontrolliert werfen | <Keys keys="UMSCHALT, G" />       |
+| Licht/Laser                 | <kbd>L</kbd>                      |
+| Licht/Laser wechseln        | <Keys keys="STRG, L" />           |
+
+<sup>1</sup>Um nicht statt mit <kbd>H</kbd> die medizinische Übersicht zu öffnen, versehentlich mit <kbd>G</kbd> eine Granate zu werfen, empfehlen wir, diesen Keybind in den Einstellungen zu lösen und stattdessen ausschließlich <Keys keys="UMSCHALT, G" /> zu verwenden.
 
 ## Fahrzeuge
 
-| Aktion                 | Tastenbelegung                           |
-| ---------------------- | ---------------------------------------- |
-| Fahren                 | <Keys keys="W,A,S,D" />                  |
-| Motor aus              | <kbd>1</kbd>                             |
-| Motor an               | <kbd>2</kbd>                             |
-| Vollgas                | <kbd>UMSCHALT</kbd> halten               |
-| weniger Gas            | <kbd>STRG</kbd> halten                   |
-| Handbremse             | <kbd>X</kbd>                             |
-| Scheinwerfer           | <kbd>L</kbd>                             |
-| Aussteigen             | <kbd>V</kbd>                             |
-| Fahrzeug zurücklassen¹ | <Keys keys="V,V" />                      |
-| Sitzhöhe verstellen    | <kbd>BILD AUF</kbd> / <kbd>BILD AB</kbd> |
-| Fahrersitz verrücken   | <Keys keys="STRG, NUMMERNBLOCK" />       |
+| Aktion                            | Tastenbelegung                           |
+| --------------------------------- | ---------------------------------------- |
+| Fahren                            | <Keys keys="W,A,S,D" />                  |
+| Motor aus                         | <kbd>1</kbd>                             |
+| Motor an                          | <kbd>2</kbd>                             |
+| Vollgas                           | <kbd>UMSCHALT</kbd> halten               |
+| weniger Gas                       | <kbd>STRG</kbd> halten                   |
+| Handbremse                        | <kbd>X</kbd>                             |
+| Scheinwerfer                      | <kbd>L</kbd>                             |
+| Aussteigen                        | <kbd>V</kbd>                             |
+| Fahrzeug zurücklassen<sup>2</sup> | <Keys keys="V,V" />                      |
+| Sitzhöhe verstellen               | <kbd>BILD AUF</kbd> / <kbd>BILD AB</kbd> |
+| Fahrersitz verrücken              | <Keys keys="STRG, NUMMERNBLOCK" />       |
 
-¹Beim Drücken von <Keys keys="V,V" /> wird das Fahrzeug eher fluchtartig verlassen. Der Motor wird laufen gelassen; bei voller Fahrt oder im Flug wird abgesprungen.
+<sup>2</sup>Beim Drücken von <Keys keys="V,V" /> wird das Fahrzeug eher fluchtartig verlassen. Der Motor wird laufen gelassen; bei voller Fahrt oder im Flug wird abgesprungen.

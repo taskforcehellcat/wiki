@@ -106,6 +106,6 @@ gebraucht, um Frakturen offen zu legen und zu behandeln, siehe [Chirurgie](/arti
 ## Nützliche Hinweise
 
 - Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, <kbd>0</kbd> und <kbd>H</kbd> auf Maustasten zu legen, oder ähnliches.
-- <kbd>G</kbd> liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen zum Beispiel <Keys keys="UMSCHALT, G" /> zu verwenden.
+- <kbd>G</kbd> liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen das ACE Advanced Grenade Throwing mit <Keys keys="UMSCHALT, G" /> zu verwenden. Darüber hinaus sind für Sanitäter Rauchgranaten deutlich nützlicher als Splitter- und Blendgranaten.
 - Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.
 - Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.

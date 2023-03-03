@@ -76,7 +76,7 @@ Bandagen können sich immer wieder lösen. Daher sollten diese Verbände immer v
 
 Alle Optionen zur medizinischen Versorgung eines Patienten findet man im _Medical Menu_. Um es aufzurufen, drückt man während man den Patienten anschaut die Taste <Keys keys="H"/>.
 
-_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste <Keys keys="G"/> standardmäßig Granaten geworfen werden. Wir empfehlen dringend, dafür in den Einstellungen stattdessen <Keys keys="Shift"/> + <Keys keys="G"/> festzulegen.
+_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste <Keys keys="G"/> standardmäßig Granaten geworfen werden. Wir empfehlen dringend, diesen Keybind in den Einstellungen aufzuheben. Granaten können kontrollierter mit <Keys keys="UMSCHALT, G" /> geworfen werden.
 
 _Hinweis:_ Oft kommt es vor, dass man versehentlich sein eigenes Medical Menu öffnet, wenn man den Patienten nicht richtig anschaut oder das Spiel die Blickrichtung nicht richtig registriert. Daher sollte man immer einen kurzen Blick auf den Namen werfen, der im Medical Menu angezeigt wird.
 
