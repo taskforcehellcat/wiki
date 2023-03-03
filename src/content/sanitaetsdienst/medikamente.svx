@@ -10,17 +10,21 @@ nav_index: 2
 
 Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklären die speziellen Seiten zu den [Behandlungen](#siehe-auch).
 
+Allgemein nehmen alle Medikamente auf mehr als eine Weise Einfluss auf den Zustand des Patienten, zum Beispiel indem sie die Viskosität (Dicke) des Blutes beeinflussen. Dickeres Blut führt dazu, dass ein Patient langsamer durch Verletzungen Blut verliert, verlangsamt aber auch die Flussrate von Infusionen. Fast alle Medikamente beeinflussen Herzrate und Blutdruck. Beim verabreichen von starken Medikamenten sollte man daher besonders die Herzrate einen Moment beobachten.
+
+Die Angabe _relative Stärke_ bei Schmerzmittel gibt die Stärke verglichen mit Fentanyl (dem stärksten Schmerzmittel) an.
+
 ## Basismedikamente
 
 Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.
 
 ### Morphin-Autoinjektor
 
-unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.
+Schmerzmittel (relative Stärke: 0,8). Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.
 
 ### Painkillers (dt. Schmerztabletten)
 
-lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut](/articles/sanitaetsdienst/blutkreislauf#transfusionen-im-feld)). Werden im Arsenal bei den Magazinen geführt.
+lindern Schmerzen (relative Stärke: 0,3). Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut](/articles/sanitaetsdienst/blutkreislauf#transfusionen-im-feld)). Werden im Arsenal bei den Magazinen geführt.
 
 ### Epinephrin-Autoinjektor (Adrenalin)
 
@@ -107,6 +111,18 @@ hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang
 ### Ondansetron
 
 verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.
+
+### Fentanyl
+
+Schmerzmittel (relative Stärke: 1). Senkt Herzrate und Blutdruck. Sehr stark, sehr leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als zwei Gaben pro 15 Minuten. Kann die Farbwahrnehmung beeinträchtigen.
+
+### Ketamin
+
+Schmerzmittel (relative Stärke: 0,8). Hebt Herzrate und Blutdruck. Nicht mehr als vier Gaben pro 15 Minuten. Kann die Farbwahrnehmung beeinträchtigen.
+
+### Nalbuphin
+
+Schmerzmittel (relative Stärke: 0,6). Senkt Herzrate und Blutdruck. Überdosis-Therapie mit Naloxon. Nicht mehr als vier Gaben pro 15 Minuten.
 
 ## Rangfolge der Schmerzmedikamente
 
