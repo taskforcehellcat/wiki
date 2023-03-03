@@ -55,7 +55,7 @@ eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird ben�
 
 #### FAST IO
 
-_First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind. Außerdem ist kein Puls nötig, um über diesen Zugang Flüssigkeiten verabreichen zu können<sup>[aktuell?]</sup>.
+_First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind. Außerdem ist kein Puls nötig, um über diesen Zugang Flüssigkeiten verabreichen zu können.
 
 #### Skalpel
 
