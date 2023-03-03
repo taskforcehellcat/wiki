@@ -18,7 +18,7 @@ Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoc
 
 ## Fähigkeiten
 
-Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) und [Funketikette](./../ausbildung/funketikette), welche andere Soldaten nicht leisten können.
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) fortgeschrittene Behandlungen, welche andere Soldaten nicht leisten können.
 
 Konkret können sie:
 
@@ -73,7 +73,7 @@ Die folgenden Gegenstände sind zur Mehrfachverwendung geeignet.
 
 Schnürt die Blutzufuhr eines Körperteils ab, um Blutverlust zu verhindern. **Achtung:** An Gliedmaßen mit Tourniquet kann kein Puls oder Blutdruck gemessen werden sowie keine Flüssigkeit angelegt werden. Außerdem heißt so ein absoluter Banger von Breaking Benjamin.
 
-Tourniquets sind essentiell zur Selbst- und Kameradenhilfe. Als Sanitäter sollte man seine Kameraden gelegentlich auffordern, zu prüfen, ob sie Tourniquets in ausreichender Anzahl mitführen und gegebenenfalls ausgleichen.
+Tourniquets sind essenziell zur Selbst- und Kameradenhilfe. Als Sanitäter sollte man seine Kameraden gelegentlich auffordern, zu prüfen, ob sie Tourniquets in ausreichender Anzahl mitführen und gegebenenfalls ausgleichen.
 
 #### Nähset
 
@@ -85,7 +85,7 @@ erlaubt die Diagnose von Thoraxverletzungen.
 
 #### Accuvac
 
-erlaubt die endotracheale Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (_head turning_).
+erlaubt die endotracheale Absaugung von Erbrochenem und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (_head turning_).
 
 #### AED / AED-X
 

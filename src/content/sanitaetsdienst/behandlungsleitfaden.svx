@@ -10,7 +10,7 @@ Diese Prozedur soll eine Hilfestellung sein und ist nur beispielhaft. Sie konzen
 ## Wundversorgung
 
 - Tourniquets an blutende Gliedmaßen anlegen
-- Kopf und Torso verbinden und Nähen (bei starker Blutung können TXA und EACA hilfreich sein)
+- Kopf und Torso verbinden und nähen (bei starker Blutung können TXA und EACA hilfreich sein)
 
 ## Vitalwerte
 
@@ -26,7 +26,7 @@ Diese Prozedur soll eine Hilfestellung sein und ist nur beispielhaft. Sie konzen
 ## Blutkreislauf
 
 - bei fatalem Blutverlust mindestens einen Liter Flüssigkeit anlegen
-- wenn ohne Puls, Herzinfarkt behandeln. Wenn Debibrillator verfügbar ist, nach den einzelnen Schocks den Herzrhythmus prüfen
+- wenn ohne Puls, Herzinfarkt behandeln. Wenn Defibrillator verfügbar ist, nach den einzelnen Schocks den Herzrhythmus prüfen
   - _shock advised:_ Epinephrin verabreichen, Schock, Amiodaron verabreichen, Schock, Lidocain verabreichen, Schock, wiederholen
   - _no shock advised_ / kein Defibrillator: Epinephrin verabreichen, drei Einheiten Herz-Lungen-Wiederbelebung, wiederholen
 
@@ -52,7 +52,7 @@ Diese Prozedur soll eine Hilfestellung sein und ist nur beispielhaft. Sie konzen
 
 - Wunden bandagieren und Nähen
 - Tourniquets abnehmen
-- einfache Brüche mit Split schienen
+- einfache Brüche mit Splint schienen
 - komplizierte Brüche operieren
 - Blutverlust ausgleichen
 - falls noch bewusstlos, ggf. Schmerzmittel und/oder Epinephrin verabreichen
