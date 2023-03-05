@@ -1,0 +1,59 @@
+---
+title: Behandlungsleitfaden
+title_short: Leitfaden
+date: '2023-03-02'
+nav_index: 7
+---
+
+Diese Prozedur soll eine Hilfestellung sein und ist nur beispielhaft. Sie konzentriert sich auf die gewünschten Effekte, welche ggf. auf unterschiedlichen Wegen erreicht werden können, siehe [Medikamente](/articles/sanitaetsdienst/medikamente).
+
+## Wundversorgung
+
+- Tourniquets an blutende Gliedmaßen anlegen
+- Kopf und Torso verbinden und nähen (bei starker Blutung können TXA und EACA hilfreich sein)
+
+## Vitalwerte
+
+- Pulsoximeter an Körperteil ohne Tourniquet anlegen
+
+## Atemwege
+
+- Atemwege kontrollieren:
+  - _occluded:_ Accuvac verwenden oder _head turning_ bis die Atemwege frei sind
+  - _obstructed:_ Kopf überstrecken
+  - _clear:_ Atemwege absichern durch stabile Seitenlage oder Larynxtubus
+
+## Blutkreislauf
+
+- bei fatalem Blutverlust mindestens einen Liter Flüssigkeit anlegen
+- wenn ohne Puls, Herzinfarkt behandeln. Wenn Defibrillator verfügbar ist, nach den einzelnen Schocks den Herzrhythmus prüfen
+  - _shock advised:_ Epinephrin verabreichen, Schock, Amiodaron verabreichen, Schock, Lidocain verabreichen, Schock, wiederholen
+  - _no shock advised_ / kein Defibrillator: Epinephrin verabreichen, drei Einheiten Herz-Lungen-Wiederbelebung, wiederholen
+
+## Lungen kontrollieren
+
+- SpO<sub>2</sub>-Wert niedrig oder fallend bzw. Zyanose vorhanden, Lungen untersuchen:
+  - normale Atemgeräusche: Lungen sind nicht das Problem, Atemwege untersuchen
+  - Kurzatmigkeit (Pneumothorax): Thoraxverschlusspflaster kleben, erneut Atemgeräusche abhören
+    - selbes Geräusch: Punktion mit Nadel zur Dekompression, erneut Atemgeräusche abhören
+    - gewöhnliche Geräusche: kurz SpO<sub>2</sub>-Wert beobachten
+  - rasselnder Atem (Hämothorax):
+    - Thoraxverschlusspflaster kleben, Flüssigkeitsdrainage durchführen
+    - erneut Atemgeräusche abhören
+
+## Nieren untersuchen
+
+- Atem kontrollieren
+  - _ok:_ keine Behandlung nötig
+  - _slightly fruity_: vorzugsweise Bluttransfusion, ansonsten Plasma, ansonsten Dialyse durchführen
+  - _harsh and metallic_: vorzugsweise Dialyse durchführen, ansonsten Bluttransfusion, ansonsten Plasma, auf Möglichkeit von Herzversagen vorbereiten
+
+## Nachversorgung
+
+- Wunden bandagieren und Nähen
+- Tourniquets abnehmen
+- einfache Brüche mit Splint schienen
+- komplizierte Brüche operieren
+- Blutverlust ausgleichen
+- falls noch bewusstlos, ggf. Schmerzmittel und/oder Epinephrin verabreichen
+- falls noch bewusstlos, aber stabilisiert, Ammonium-Carbonat versuchen

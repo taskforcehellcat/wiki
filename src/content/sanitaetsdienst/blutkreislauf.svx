@@ -1,6 +1,6 @@
 ---
 title: Blutkreislauf
-date: '2023-02-14'
+date: '2023-03-02'
 nav_index: 3
 ---
 
@@ -11,11 +11,11 @@ nav_index: 3
 
 Diese Seite beschäftigt sich mit dem Aufrechterhalten des Blutkreislaufes.
 
-Das Stoppen von Blutungen ist immer eine der ersten Aufgaben beim Versorgen eines Patienten. Dabei gebraucht man zunächst vorrangig Tourniquets. Verbinden von Wunden und Nähen sind zeitaufwändige Behandlungen, welche durchgeführt werden, wenn der Patient bereits weitgehend stabilisiert ist. Eine Ausnahme davon Bilden Verletzungen von Torso und Kopf, da diese Körperteile nicht mit Tourniquets abgeschnürt werden können.
+Das Stoppen von Blutungen ist immer eine der ersten Aufgaben beim Versorgen eines Patienten. Dabei gebraucht man zunächst vorrangig Tourniquets. Verbinden von Wunden und Nähen sind zeitaufwändige Behandlungen, welche durchgeführt werden, wenn der Patient bereits weitgehend stabilisiert ist. Eine Ausnahme davon bilden Verletzungen von Torso und Kopf, da diese Körperteile nicht mit Tourniquets abgeschnürt werden können.
 
 ## Wundversorgung
 
-Im allgemeinen sind Avulsionen (_avulsions_, abgerissenes Gewebe) und Splitter- bzw. Projektilwunden (_velocity wounds_) die am stärksten blutenden Wunden, gefolgt von Schnitt- und Platzwunden (_cut, laceration_). Die verbleibenden Verletzungen verursachen nur leichten bis gar keinen Blutverlust.
+Im Allgemeinen sind Avulsionen (_avulsions_, abgerissenes Gewebe) und Splitter- bzw. Projektilwunden (_velocity wounds_) die am stärksten blutenden Wunden, gefolgt von Schnitt- und Platzwunden (_cut, laceration_). Die verbleibenden Verletzungen verursachen nur leichten bis gar keinen Blutverlust.
 
 Zur Versorgung der diversen Verwundungen steht eine breite Auswahl an Bandagen zur Verfügung. Für jeden Wundentyp gibt es dabei jeweils die theoretisch effizienteste Bandage. Da Sanitäter aber ohnehin zeitnah nähen können, ist es nicht notwendig, diese alle auswendig zu beherrschen.
 
@@ -27,15 +27,15 @@ Im menschlichen Blut befinden sich sogenannte Thrombozyten (Blutplättchen), wel
 
 Mit zunehmenden Blutverlust nimmt aber auch die Fähigkeit des Körpers dazu ab und großflächige Verwundungen bedürfen ohnehin medizinischer Aufmerksamkeit. Auf diesen Mechanismus sollte man sich also keinesfalls verlassen.
 
-Wenn ein Herzschlag von mindestens 20 Schlägen pro Minute vorliegt, beginnt sich Schorf auf offenen Wunden zu bilden (_unstable clot_). Dabei verbraucht der Körper sogenannte Koagulationsfaktoren, welche ihm durch Blut- oder Plasmatransfusionen wieder zugeführt werden können, (siehe unten)[#ausgleich_von_blutverlust] (TODO: Link prüfen).
+Wenn ein Herzschlag von mindestens 20 Schlägen pro Minute vorliegt, beginnt sich Schorf auf offenen Wunden zu bilden (_unstable clot_). Dabei verbraucht der Körper sogenannte Koagulationsfaktoren, welche ihm durch Blut- oder Plasmatransfusionen wieder zugeführt werden können, [siehe unten](#ausgleich-von-blutverlust).
 
-Über einen Zugang (siehe untern)[#ausgleich_von_blutverlust] (TODO: Link prüfen) kann ebenfalls Tranexamsäure (_TXA_) verabreicht werden, welche die Gerinnung stabilisiert. Das bedeutet, das vorhandene Gerinnung stärker wird (entspricht _packing bandage_ statt _unstable clot_). Tranexamsäure verursacht nicht von selbst Gerinnung, Koagulationsfaktoren müssen also unabhängig vorhanden sein!
+Über einen [Zugang](#ausgleich-von-blutverlust) kann ebenfalls Tranexamsäure (_TXA_) verabreicht werden, welche die Gerinnung stabilisiert. Das bedeutet, dass vorhandene Gerinnung stärker wird (entspricht _packing bandage_ statt _unstable clot_). Tranexamsäure verursacht nicht von selbst Gerinnung, Koagulationsfaktoren müssen also unabhängig vorhanden sein!
 
-## Ausgleich von Blutverlust und Zugänge
+## Ausgleich von Blutverlust
 
-Zum Anlegen von Blut und verabreichen einiger Medikamente benötigt man einen Zugang in die Blutbahn des Patienten. Dafür stehen 16g Kanülen (ca. 1,5 mm Durchmesser, intravenös) sowie FAST-IO-Systeme (intraossär) zur Verfügung. Mit einer 16g Kanüle können Venen an den Extremitäten (Arme und Beine) punktiert werden, vorausgetzt das betroffene Körperteil ist nicht zu stark verwundet oder mit einem Tourniquet abgeschnürt (ein Zugang kann dann zwar gelegt werden, Flüssigkeiten und Medikamente gelangen allerdings nicht ins System). Falls das Legen eines Zuganges so nicht möglich ist, erlaubt die FAST IO (_First Access for Shock and Trauma IO_) einen Zugang über das Knochenmark des Brustbeins (sie wird also am Torso angewandt, stellt aber einen deutlich schmerzhafteren und invasiveren Eingriff dar).
+Zum Anlegen von Blut und verabreichen einiger Medikamente benötigt man einen Zugang in die Blutbahn des Patienten. Dafür stehen 16g Kanülen (ca. 1,5 mm Durchmesser, intravenös) sowie FAST-IO-Systeme (intraossär) zur Verfügung. Mit einer 16g Kanüle können Venen an den Extremitäten (Arme und Beine) punktiert werden, vorausgesetzt das betroffene Körperteil ist nicht zu stark verwundet oder mit einem Tourniquet abgeschnürt (ein Zugang kann dann zwar gelegt werden, Flüssigkeiten und Medikamente gelangen allerdings nicht ins System). Falls das Legen eines Zuganges so nicht möglich ist, erlaubt die FAST IO (_First Access for Shock and Trauma IO_) einen Zugang über das Knochenmark des Brustbeins (sie wird also am Torso angewandt, stellt aber einen deutlich schmerzhafteren und invasiveren Eingriff dar). Außerdem kann mit der FAST IO auch dann Flüssigkeit verabreicht werden, wenn kein Puls vorliegt.
 
-Da Blut und Blutplasma zuerst einem anderen Menschen abgenommen wurden, spricht man im Gegensatz zur Salzlösung streng genommen von Transfusionen statt Infusionen und zusammenfassend von Flüssigkeit oder Fluiden.
+_Bemerkung:_ Da Blut und Blutplasma zuerst einem anderen Menschen abgenommen wurden, spricht man im Gegensatz zur Salzlösung streng genommen von Transfusionen statt Infusionen und zusammenfassend von Flüssigkeit oder Fluiden.
 
 ### Statusmeldungen
 
@@ -48,11 +48,11 @@ Ein Blutvolumen unter 3 Litern ist tödlich.
 
 ### Flüssigkeiten
 
-Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion]()) [TODO: ordentlich verlinken].
+Zum Flüssigkeitsausgleich stehen Blut, Blutplasma und isotonische Kochsalzlösung zur Verfügung. Blut und Blutplasma enthalten dabei die zur Blutgerinnung nötigen Koagulationsfaktoren und sind von höherer Güte als Salzlösung. Zudem nehmen alle Flüssigkeitsoptionen unterschiedlichen Einfluss auf den pH-Wert des Blutes, (siehe [Nierenfunktion](#nierenfunkion)).
 
-- Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-ph-Wert
-- Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-ph-Wert
-- isotonische Kochsalzlösung: _kein_ Koagulationsfaktor, _negativen_ Einfluss auf den Blut-ph-Wert
+- Vollblut: _sehr viel_ Koagulationsfaktor, _positiven_ Einfluss auf den Blut-pH-Wert
+- Plasma: _viel_ Koagulationsfaktor, _sehr positiven_ Einfluss auf den Blut-pH-Wert
+- isotonische Kochsalzlösung: _kein_ Koagulationsfaktor, _negativen_ Einfluss auf den Blut-pH-Wert
 
 ### Transfusionen im Feld
 
@@ -72,9 +72,7 @@ Man kann sich merken, dass dabei die Spenderblutgruppe gewissermaßen in der des
 
 </ExampleBox>
 
-Eine vollständige Übersicht liefert die folgende Grafik.
-
-(TODO: Grafik einfügen)
+Eine vollständige Übersicht liefert die folgende Grafik<sup>[TODO: Grafik einfügen]</sup>.
 
 #### Bei falscher Blutgruppengabe
 
@@ -82,7 +80,7 @@ Dass die falsche Blutgruppe verabreicht worden ist, erkennt man in der Regel an 
 
 ## Blutdruck
 
-Der Blutdruck nimmt mit steigendem Blutverlust ab, wenn dieser also ausgeglichen wurde und Herzschlag vorhanden ist, sollte sich der Blutdruck von selbst normalisieren. Ein Wert von etwa 120 : 80 mmHg gilt als normal.
+Der Blutdruck nimmt mit steigendem Blutverlust ab, wenn dieser also ausgeglichen wurde und Herzschlag vorhanden ist, sollte sich der Blutdruck von selbst normalisieren. Ein Wert von etwa 120 : 80 <Tooltip text="ein Millimeter Quecksilber ist der statische Druck, der von einer ein Millimeter hohen Säule Quecksilber erzeugt wird">mmHg</Tooltip> gilt als normal.
 
 ## Herzinfarkt
 
@@ -102,3 +100,19 @@ Verabreichen von Amiodaron verursacht in einem von drei Fällen eine Bradykardie
 ### Asystolien
 
 Gibt der Defibrillator _„no shock advised“_ aus, handelt es sich um eine Asystolie, also einen tatsächlichen Herzstillstand. Hier bleibt nur Epinephrin zu verabreichen gefolgt von drei Einheiten Herz-Lungen-Wiederbelebung, diese Kombination muss stetig wiederholt werden.
+
+**Wichtig:** Amiodaron senkt die Erregbarkeit des Herzmuskels. Dies hilft bei Kammerflimmern, man beide Herzkammern durch einen Stromstoß des Defibrillators „synchronisieren“ möchte. Bei einer Asystolie, bei der gar kein Herzschlag vorliegt, verschlechtert es den Zustand des Patienten allerdings noch. Falls man sich also unsicher ist, welche Art Infarkt vorliegt, sollte man jeden Herzstillstand wie eine Asystolie behandeln.
+
+## Nierenfunkion
+
+Werden große Mengen Blutverlust durch Salzlösung ausgeglichen, kann dies die Nieren schädigen. Im schlimmsten Falle versagen sie, was zu einem Herzstillstand führt.
+
+### Diagnose
+
+Über die Option _Examine Patient » Check Breath_ lässt sich der Atem des Patienten kontrollieren. Ein metallischer Geruch deutet auf mangelnde Nierenfunktion hin.
+
+### Behandlung
+
+Transfusion von Blut oder ersatzweise Plasma verbessert den pH-Wert des Blutes und entlastet die Nieren wieder.
+
+In medizinischen Fahrzeugen und Einrichtungen gibt es auch die Möglichkeit, eine Dialyse durchzuführen.

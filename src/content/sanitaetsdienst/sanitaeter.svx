@@ -6,6 +6,7 @@ nav_index: 1
 
 <script>
     import Keys from "$lib/wikitools/Keys.svelte";
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
     import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
 </script>
 
@@ -13,23 +14,11 @@ nav_index: 1
 
 ## Rollenprofil
 
-Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC]()s mitzuwirken.
-
-## Ausrüstung
-
-- Verbrauchsmaterialien:
-  - [Medikamente]()
-  - Bandagen
-  - sonstiges [Verschleißmaterial](), etwa Kanülen, Infusionen, Kits, etc.
-  - Rauchgranaten
-- Gebrauchsgegenstände
-  - [medizinisches Werkzeug]()
-  - Funkgerät
-- Bewaffnung: eine Primärwaffe zur Selbstverteidigung auf kurze bis mittlere Distanzen
+Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC](/articles/sanitaetsdienst/medevac)s mitzuwirken.
 
 ## Fähigkeiten
 
-Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) und [Funketikette](./../ausbildung/funketikette), welche andere Soldaten nicht leisten können.
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) fortgeschrittene Behandlungen, welche andere Soldaten nicht leisten können.
 
 Konkret können sie:
 
@@ -42,21 +31,23 @@ Konkret können sie:
   - Herzstillstände behandeln
 - Brüche operieren
 
-## Verbrauchsmaterialien
+## Ausrüstung
+
+### Verbrauchsmaterialien
 
 Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.
 
 #### AAT-Kit
 
-gebraucht zur [Behandlung von Hämothoraxen und Spannungspneumothoraxen]().
+gebraucht zur [Behandlung von Lungenverletzungen](/articles/sanitaetsdienst/atmung#lungen).
 
 #### Field Blood Transfusion Kit (dt. Feldtransfusionsset)
 
-erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Siehe dazu [Transfusionen im Feld]().
+erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Siehe dazu [Transfusionen im Feld](/articles/sanitaetsdienst/blutkreislauf#transfusionen-im-feld).
 
 #### Chest Seal (dt. Thoraxverschlusspflaster)
 
-ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe [Behandlung]() von Hämothoraxen und Spannungspneumothoraxen.
+ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe [Behandlung von Lungenverletzungen](/articles/sanitaetsdienst/atmung#lungen).
 
 #### 16g IV
 
@@ -64,9 +55,17 @@ eine 16g-Kanüle (Durchmesser 1,5 mm) für intravenöse (IV) Zugänge. Wird ben�
 
 #### FAST IO
 
-_First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind.
+_First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbein. Wird verwendet, wenn die Extremitäten für einen intravenösen Zugang zu stark verletzt sind. Außerdem ist kein Puls nötig, um über diesen Zugang Flüssigkeiten verabreichen zu können.
 
-## Gebrauchsgegenstände
+#### Skalpel
+
+Gebraucht, um komplizierte Brüche zu operieren, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+
+#### Bone Plate (dt. Knochenplatte)
+
+Eine Metallplatte, die in den gebrochenen Knochen geschraubt wird. Gebraucht, um offene Reduktionen bei komplizierten Brüchen durchzuführen, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+
+### Gebrauchsgegenstände
 
 Die folgenden Gegenstände sind zur Mehrfachverwendung geeignet.
 
@@ -74,7 +73,7 @@ Die folgenden Gegenstände sind zur Mehrfachverwendung geeignet.
 
 Schnürt die Blutzufuhr eines Körperteils ab, um Blutverlust zu verhindern. **Achtung:** An Gliedmaßen mit Tourniquet kann kein Puls oder Blutdruck gemessen werden sowie keine Flüssigkeit angelegt werden. Außerdem heißt so ein absoluter Banger von Breaking Benjamin.
 
-Tourniquets sind essentiell zur Selbst- und Kameradenhilfe. Als Sanitäter sollte man seine Kameraden gelegentlich auffordern, zu prüfen, ob sie Tourniquets in ausreichender Anzahl mitführen und gegebenenfalls ausgleichen.
+Tourniquets sind essenziell zur Selbst- und Kameradenhilfe. Als Sanitäter sollte man seine Kameraden gelegentlich auffordern, zu prüfen, ob sie Tourniquets in ausreichender Anzahl mitführen und gegebenenfalls ausgleichen.
 
 #### Nähset
 
@@ -86,19 +85,27 @@ erlaubt die Diagnose von Thoraxverletzungen.
 
 #### Accuvac
 
-erlaubt die endotracheale Absaugung von Erbrochenen und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (_head turning_).
+erlaubt die endotracheale Absaugung von Erbrochenem und befreit so die Atemwege. Höhere Erfolgswahrscheinlichkeit als Ausrichten der Atemwege (_head turning_).
 
 #### AED / AED-X
 
-_Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe auch [Behandlung von Herzstillständen](). Die AED-X-Ausführung gestattet zusätzlich das Monitoring von [Vitalparametern]().
+_Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe auch [Behandlung von Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt). Die AED-X-Ausführung gestattet zusätzlich das Monitoring von <Tooltip text="Blutdruck, Herzrate und Sauerstoffsättigung">Vitalparametern</Tooltip>.
 
 #### Pulsoximeter
 
-erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes (engl. _saturation peripher O₂_, SpO₂). Siehe auch Abschnitt [Vitalparameter]().
+erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes.
+
+#### Clamp (dt. Klemme)
+
+gebraucht, um beim Operieren eine Wunde offen zu halten, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+
+#### Retractor (dt. Retraktor)
+
+gebraucht, um Frakturen offen zu legen und zu behandeln, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
 
 ## Nützliche Hinweise
 
 - Die Waffe muss sehr oft für medizinische Maßnahmen weggelegt werden, außerdem muss das Medical Menu häufig geöffnet werden. Möglicherweise ist es sinnvoll, <kbd>0</kbd> und <kbd>H</kbd> auf Maustasten zu legen, oder ähnliches.
-- <kbd>G</kbd> liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen zum Beispiel <kbd>SHIFT</kbd>+<kbd>G</kbd> zu verwenden.
+- <kbd>G</kbd> liegt auf der Tastatur neben H. Da es fatal wäre, beim Versuch, das Medical Menu zu öffnen eine Granate zu werfen, sollte man sich überlegen, als Sanitäter <kbd>G</kbd> für Granaten zu unbinden und stattdessen das ACE Advanced Grenade Throwing mit <Keys keys="UMSCHALT, G" /> zu verwenden. Darüber hinaus sind für Sanitäter Rauchgranaten deutlich nützlicher als Splitter- und Blendgranaten.
 - Gefangene müssen ebenfalls versorgt werden. Nachdem sie gefesselt wurden, können sie sich nicht mehr selbst verbinden, sollten sich ihre Bandagen lösen.
 - Es ist sinnvoll, sich einzuprägen, wo man einen Zugang gelegt hat, um später unnötiges Suchen zu vermeiden. Am besten teilt man dies auch anderen Sanitätern mit, wenn sie einen Patienten übernehmen.

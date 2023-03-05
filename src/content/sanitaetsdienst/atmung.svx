@@ -12,7 +12,7 @@ Neben dem Blutkreislauf ist das Sicherstellen der Sauerstoffversorgung oberste P
 
 ### Pulsoximetrie
 
-Der Sauerstoffgehalt des Blutes kann am leichtesten mit einem Pulsoximeter eingesehen werden, siehe dazu (Erste Hilfe)[TODO: ordentlich verlinken]. Dieses gibt die Sauerstoffsättigung des Blutes durch Messung an einer Fingerkuppe mittels Pulsoximetrie an. Dabei wird die Fingerkuppe vom Pulsoximeter mit Licht durchleuchtet, aus dem Absorptionsverhalten des Blutes kann man seinen Sauerstoffgehalt berechnen. Der bestimmte Wert wird in % SpO₂ angegeben. O₂ steht dabei für Sauerstoff, S für _saturation_ (Sättigung) und p dafür, dass der Wert pulsoximetrisch festgestellt wurde.
+Der Sauerstoffgehalt des Blutes kann am leichtesten mit einem Pulsoximeter eingesehen werden, siehe dazu [Erste Hilfe](/articles/ausbildung/erste-hilfe). Dieses gibt die Sauerstoffsättigung des Blutes durch Messung an einer Fingerkuppe mittels Pulsoximetrie an. Dabei wird die Fingerkuppe vom Pulsoximeter mit Licht durchleuchtet, aus dem Absorptionsverhalten des Blutes kann man seinen Sauerstoffgehalt berechnen. Der bestimmte Wert wird in % SpO₂ angegeben. O₂ steht dabei für Sauerstoff, S für _saturation_ (Sättigung) und p dafür, dass der Wert pulsoximetrisch festgestellt wurde.
 
 ### Ohne Pulsoximeter
 
@@ -39,7 +39,7 @@ Mittels _Examine And Treatment » Airway Management » (Kopf) Check Airways_ las
 - _Airways obstructed / occluded:_ Die Atemwege sind verstopft oder versperrt. Durch Überstrecken des Kopfes (_Hyperextend Head_) und ggf. mehrfaches Bewegen des Kopfes (_Head Turning_) können sie frei gemacht werden (erneut prüfen!).
 - _Medical Suction Needed:_ Mittels _Accuvac_ die Atemwege frei machen.
 
-_Achtung:_ Die stabile Seitenlage verhindert, dass die Atemwege erneut versperrt werden, etwa durch Rutschen der Zunge in den Hals. Es ist allerdings noch möglich, dass der Patient sich übergibt und das Erbrochene die Atemwege verstopft (siehe nötigenfalls (Ondansetron)[TODO: verlinken]). Außerdem macht die Seitenlage das Durchführen einer Herz-Lungen-Wiederbelebung sowie einer Vielzahl weiterer Behandlungen unmöglich, sie muss dafür abgebrochen werden. Auch, wenn der Patient getragen, gezogen oder in ein Fahrzeug verlegt wird, bricht die stabile Seitenlage ab.
+_Achtung:_ Die stabile Seitenlage verhindert, dass die Atemwege erneut versperrt werden, etwa durch Rutschen der Zunge in den Hals. Es ist allerdings noch möglich, dass der Patient sich übergibt und das Erbrochene die Atemwege verstopft (siehe nötigenfalls [Ondansetron](/articles/sanitaetsdienst/medikamente#ondansetron)). Außerdem macht die Seitenlage das Durchführen einer Herz-Lungen-Wiederbelebung sowie einer Vielzahl weiterer Behandlungen unmöglich, sie muss dafür abgebrochen werden. Auch, wenn der Patient getragen, gezogen oder in ein Fahrzeug verlegt wird, bricht die stabile Seitenlage ab.
 
 _Hinweis:_ Mithilfe eines speziellen Tubus wie dem Guedel-Tubus oder des King Larynxtubus können die Atemwege auch beim Transport durch Ziehen oder Tragen offen gehalten werden. Diese können nicht eingesetzt werden, während sich der Patient in stabiler Seitenlage befindet.
 

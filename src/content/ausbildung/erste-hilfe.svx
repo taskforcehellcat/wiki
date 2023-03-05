@@ -30,7 +30,7 @@ Die Kategorie „Gelb“ bezeichnet schwere Verletzungen, deren Behandlung vermu
 
 ### Kat. Rot
 
-Die Kategorie „Rot“ bezeichnet einen Bewusstlosen. Bewusstlose müssen oft erst geborgen, dann gedeckt und versorgt werden, wobei sie selbst natürlich nicht helfen können. Die Versorgung eines Kat. Rot ist also direkt deutlich aufwändiger. Wie genau im Falle eines Kat. Rot vorgegangen wird, kann situativ unterschiedlich sein, siehe dafür [Sicherung](#sicherung).
+Die Kategorie „Rot“ bezeichnet einen Bewusstlosen. Bewusstlose müssen oft erst geborgen, dann gedeckt und versorgt werden, wobei sie selbst natürlich nicht helfen können. Die Versorgung eines Kat. Rot ist also direkt deutlich aufwändiger. Wie genau im Falle eines Kat. Rot vorgegangen wird, kann situativ unterschiedlich sein, siehe dafür [Sicherung](#sicherung-von-verletzten).
 
 ### Kat. Blau
 
@@ -44,7 +44,7 @@ Die Kategorie „Schwarz“ bezeichnet den festgestellten Tod.
 
 Bevor mit der Versorgung begonnen werden kann, müssen der Patient und der Ersthelfer gesichert werden. Das bedeutet mindestens ein Deckungselement und eine sichere Stellung. Bei einem Kat. Gelb ist das meist schon dadurch gegeben, dass der Patient bei Bewusstsein ist.
 
-Ist erst eine Bergung nötig, wird diese durch den Gruppenführer veranlasst. Bei Bergungen ist es sehr wichtig, dass keine Alleingänge unternommen werden. Der Bereich, in dem sich der Kat. Rot befindet, ist zunächst definitiv nicht sicher (sonst wäre niemand an dieser Position ausgefallen) und weitere Verletzte gilt es dringend zu vermeiden. Daher sind Bergungen immer eine Gruppenanstrengung, bei der sehr vorsichtig vorgenangen wird.
+Ist erst eine Bergung nötig, wird diese durch den Gruppenführer veranlasst. Bei Bergungen ist es sehr wichtig, dass keine Alleingänge unternommen werden. Der Bereich, in dem sich der Kat. Rot befindet, ist zunächst definitiv nicht sicher (sonst wäre niemand an dieser Position ausgefallen) und weitere Verletzte gilt es dringend zu vermeiden. Daher sind Bergungen immer eine Gruppenanstrengung, bei der sehr vorsichtig vorgegangen wird.
 
 ## Erste-Hilfe-Ausrüstung
 
@@ -76,7 +76,7 @@ Bandagen können sich immer wieder lösen. Daher sollten diese Verbände immer v
 
 Alle Optionen zur medizinischen Versorgung eines Patienten findet man im _Medical Menu_. Um es aufzurufen, drückt man während man den Patienten anschaut die Taste <Keys keys="H"/>.
 
-_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste <Keys keys="G"/> standardmäßig Granaten geworfen werden. Wir empfehlen dringend, dafür in den Einstellungen stattdessen <Keys keys="Shift"/> + <Keys keys="G"/> festzulegen.
+_Hinweis:_ Hier kann es oft zu Missgeschicken kommen, da mit der Taste <Keys keys="G"/> standardmäßig Granaten geworfen werden. Wir empfehlen dringend, diesen Keybind in den Einstellungen aufzuheben. Granaten können kontrollierter mit <Keys keys="UMSCHALT, G" /> geworfen werden.
 
 _Hinweis:_ Oft kommt es vor, dass man versehentlich sein eigenes Medical Menu öffnet, wenn man den Patienten nicht richtig anschaut oder das Spiel die Blickrichtung nicht richtig registriert. Daher sollte man immer einen kurzen Blick auf den Namen werfen, der im Medical Menu angezeigt wird.
 
@@ -126,7 +126,7 @@ Da nur Sanitäter Infusionen legen können, kann man als Ersthelfer lediglich ve
 
 _Hinweise zum Tourniquet:_ Das Tourniquet ist mehrmals verwendbar, nachdem es wieder abgenommen wurde. Es wird dem Inventar des Spielers hinzugefügt, der es abnimmt. Daher sollte man gelegentlich prüfen, ob man noch seine Tourniquets beisammen hat.
 
-Wenn ein Tourniquet angelegt ist, kann am betreffenden Körperteil kein Puls genommen werden, Pulsoximeter geben keine sinnvollen Ablesewerte aus. Auch die Gabe von Medikamenten mittels Autoinjektor oder Infusionen über einen Zugang funktionieren nicht.
+Wenn ein Tourniquet angelegt ist, kann am betreffenden Körperteil kein Puls genommen werden, Pulsoximeter geben keine sinnvollen Ablesewerte aus. Auch die Gabe von Medikamenten mittels Autoinjektor oder Infusionen über einen [Zugang](/articles/sanitaetsdienst/blutkreislauf#ausgleich-von-blutverlust) funktionieren nicht.
 
 _Achtung:_ Hat man versehentlich ein Medikament in ein Körperteil mit Tourniquet gespritzt, ist es am sinnvollsten, das Tourniquet abzunehmen. Das Medikament wurde verabreicht, durch das Tourniquet gelangt es lediglich nicht in den Kreislauf. Belässt man das Tourniquet am betreffenden Körperteil und verabreicht eine weitere Gabe über ein anderes Körperteil, riskiert man eine Überdosis, sobald das Tourniquet doch abgenommen wird.
 
@@ -140,7 +140,7 @@ Liegen geringer Blutsauerstoff und Brustkorbverletzungen vor, ist eine Verletzun
 
 Ansonsten gilt es, die Atemwege freizuhalten:
 
-- _Advanced Treatments » Establish Recovery Position_: bringt den Patienten in die stabile Seitenlage. Dies verhindert etwa, dass die Zunge die Atemwege blockiert. Die Stabile Seitenlage verhindert allerdings zum Beispiel das durchführen einer Herz-Lungen-Wiederbelebung, für diese muss der Patient auf dem Rücken liegen. Sie kann durch _Advanced Treatments » Cancel Recovery Position_ abgebrochen werden. Wenn der Patient gezogen oder getragen wird, wird sie ebenfalls abgebrochen.
+- _Advanced Treatments » Establish Recovery Position_: bringt den Patienten in die stabile Seitenlage. Dies verhindert etwa, dass die Zunge die Atemwege blockiert. Die Stabile Seitenlage verhindert allerdings zum Beispiel das durchführen einer Herz-Lungen-Wiederbelebung, für diese muss der Patient auf dem Rücken liegen. Sie kann durch _Advanced Treatments » Cancel Recovery Position_ abgebrochen werden. Wenn der Patient gezogen oder getragen oder in ein Fahrzeug verladen wird, wird sie ebenfalls abgebrochen.
 - _Airway Management » Hyperextend Head_: Überstreckt den Kopf, um die Atemwege freizumachen.
 - _Airway Management » Check Airways_: Atemwege überprüfen. Das Ergebnis erscheint als Hint in der rechten oberen Bildschirmecke:
   - _„Airways clear“_: kein Handlungsbedarf. Fällt der Blutsauerstoff dennoch, ist die Lunge verletzt und ein Sanitäter vonnöten.
@@ -155,3 +155,9 @@ Ein Herzschlag von unter 45 Schlägen pro Minute gilt als sehr niedrig. Es sollt
 Tritt ein Herzstillstand auf, muss umgehend mit der Herz-Lungen-Wiederbelebung (HLW) begonnen werden, _Advanced Treatments » Perform CPR_. Dies ist nicht möglich, wenn sich der Patient in der stabilen Seitenlage befindet, diese muss also hierfür abgebrochen werden: _Advanced Treatments » Cancel Recovery Position_. Darum sollte die Blutsauerstoffsättigung auch weiterhin gut beobachtet werden.
 
 Der Herzstillstand selbst kann effektiv nur von Sanitätern behandelt werden, es besteht jedoch eine Chance, dass der Puls spontan wieder einsetzt.
+
+## Siehe auch
+
+- umfänglicher [Leitfaden](/articles/sanitaetsdienst/behandlungsleitfaden) für alle üblichen Behandlungsschritte (ausgelegt für Sanitäter)
+- Einzelheiten zum [Blutkreislauf](/articles/sanitaetsdienst/blutkreislauf) (Wundverschluss, Herzstillstand)
+- Einzelheiten zur [Atmung](/articles/sanitaetsdienst/atmung) (Blutsauerstoff, Lungenverletzungen)

@@ -1,83 +1,135 @@
 ---
 title: Medikamente
-date: '2023-02-14'
+date: '2023-03-02'
 nav_index: 2
 ---
 
-<script>
-    import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
+<script lang='ts'>
+    import Tooltip from '$lib/wikitools/Tooltip.svelte';
 </script>
 
-<Wipbanner />
+Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklären die speziellen Seiten zu den [Behandlungen](#siehe-auch).
 
-Diese Seite enthält Medikamente, ihre Wirkung und Hinweise zu Dosierung und Wechselwirkungen. Wann und wie genau sie zur Anwendung kommen, erklärt die Seite [Behandlungen]().
+Allgemein nehmen alle Medikamente auf mehr als eine Weise Einfluss auf den Zustand des Patienten, zum Beispiel indem sie die Viskosität (Dicke) des Blutes beeinflussen. Dickeres Blut führt dazu, dass ein Patient langsamer durch Verletzungen Blut verliert, verlangsamt aber auch die Flussrate von Infusionen. Fast alle Medikamente beeinflussen Herzrate und Blutdruck. Beim verabreichen von starken Medikamenten sollte man daher besonders die Herzrate einen Moment beobachten.
+
+Die Angabe _relative Stärke_ bei Schmerzmittel gibt die Stärke verglichen mit Fentanyl (dem stärksten Schmerzmittel) an.
 
 ## Basismedikamente
 
 Medikamente, die als Autoinjektoren mitgeführt werden, bedürfen keines Zuganges für die Verabreichung und können daher auch von Nichtsanitätern angewandt werden.
 
-#### Morphin-Autoinjektor
+### Morphin-Autoinjektor
 
-unterdrückt Schmerz. Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.
+Schmerzmittel (relative Stärke: 0,8). Wirkt Blutverdünnend, senkt Herzrate. Stark, leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als eine Gabe pro 10 Minuten.
 
-#### Painkillers (dt. Schmerztabletten)
+### Painkillers (dt. Schmerztabletten)
 
-lindern Schmerzen. Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut]()). Werden im Arsenal bei den Magazinen geführt.
+lindern Schmerzen (relative Stärke: 0,3). Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut](/articles/sanitaetsdienst/blutkreislauf#transfusionen-im-feld)).
 
-#### Epinephrin-Autoinjektor (Adrenalin)
+### Epinephrin-Autoinjektor (Adrenalin)
 
 hebt die Herzrate, kann auch Behandlung von Morphin-Überdosen unterstützen.
 
-#### Adenosin-Autoinjektor
+### Adenosin-Autoinjektor
 
 senkt die Herzrate, kann zur Behandlung von Epinephrin-Überdosen verwendet werden.
 
+### Koffein
+
+verbessert die Ausdauer, hebt die Herzrate leicht. 15 Dosen pro Packung, verbleibt 30 Minuten im Körper. Maximal sechs Dosen.
+
 ## Infarkttherapie
 
-Medikamente zur [Behandlung von Herzstillständen]().
+Medikamente zur Behandlung von [Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt).
 
 Die Antiarrythmika Amiodaron und Lidocain stabilisieren das Membranpotential des Herzmuskels und verringern dadurch seine Erregbarkeit. Dies hilft, Kammerflimmern zu behandeln, wenn der Herzmuskel krampft. Bei einer Asystolie sind sie kontraindiziert.
 
-#### Amiodaron
+### Amiodaron
 
 Klasse III Antiarrythmikum, bis zu 2,5 Mal so wirksam wie Lidocain. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Verursacht in einem von drei Fällen eine Bradykardie. Empfohlen ist eine Gabe pro Patient.
 
-#### Lidocain
+### Lidocain
 
 Klasse Ib Antiarrythmikum. Verbessert die Erfolgswahrscheinlichkeit des Defibrillators für Patienten in einem defibrillierbaren Zustand. Empfohlen, wenn Amiodaron keine ausreichende Wirkung zeigt.
 
-#### Atropin
+### Atropin
 
 zur Behandlung von Bradykardien. Hebt die Herzrate wesentlich.
+
+## Chirurgie
+
+Die folgenden Medikamente ermöglichen das Operieren von Brüchen, siehe dazu [Behandlung von Brüchen](/articles/sanitaetsdienst/chirurgie#brüche).
+
+### Etomidat
+
+Anästhetikum (verursacht Bewusstlosigkeit), unterdrückt Schmerz, vermindert Herzrate. Verbleibt 45 Sekunden im Körper, maximal 10 Dosen.
+
+### Lorazepam
+
+vermindert Blutdruck, wirkt sedierend (ermüdend).
+
+### Flumazenil
+
+hebt die Wirkung von Lorazepam auf.
 
 ## Spezialisierte Medikationen
 
 Die nachfolgenden Medikamente können in speziellen Situationen sehr nützlich sein, sind aber nicht essentiell und sollten daher nur in begrenzten Mengen mitgeführt werden. Im Zweifelsfall sollten stattdessen mehr Bandagen, Infusionsbeutel, Kanülen, etc. der Vorzug gegeben werden.
 
-#### Ammonium Carbonat
+### Ammonium Carbonat
 
-Inhalat, kann [stabile]() Patienten aus der Bewusstlosigkeit holen. Wird am Kopf angewendet. Im Arsenal bei den Magazinen.
+Inhalat, kann <Tooltip text="Herzschlag 70 bis 110 Schläge pro Minute, SpO₂-Wert über 85 %, Blutdruck systolisch 110 bis 130 mmHg">stabile</Tooltip> Patienten aus der Bewusstlosigkeit holen. Wird am Kopf angewendet.
 
-#### Naloxon (NARCAN)
+### Naloxon (NARCAN)
 
-Morphin-Antagonist, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf.
+Morphin-Antagonist, genutzt zur Therapie von Morphin-Überdosierungen. Eine Gabe Naloxon hemmt die Wirkung einer Gabe Morphin. Verhindert negative Effekte durch Überdosierung, hebt aber auch die schmerzlindernde Wirkung von Morphin auf. Kann auch bei Fentanyl- und Nalbuphin-Überdosen abgewandt werden.
 
-#### Tranexamsäure (TXA)
+### Tranexamsäure (TXA)
 
-treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten.
+treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zur Anwendung von QuikClot-Bandagen auf alle Körperteile, alle sechs Sekunden. Die Gesamtwirkdauer beträgt zwei Minuten. Höchstens drei Gaben.
 
-#### Norepinephrin
+TXA und EACA können den Zugang, über den sie verabreicht werden, verstopfen. Zugänge können über _inspect catheter_ untersucht und gegebenenfalls mit _flush saline_ freigespült werden.
 
-hebt den Blutdruck (Vasopressor). Wird über einen Zugang verabreicht.
+### ε-Aminocapronsäure (EACA)
 
-#### Nitroglycerin
+treibt die Blutgerinnung voran und verbessert den Wundverschluss von Bandagen. Äquivalent zum Nähen eines Verbunds pro sechs Sekunden. Verbleibt zehn Minuten im Körper. Höchstens zehn Gaben.
 
-senkt den Blutdruck (Vasodepressor). Wird über einen Zugang verabreicht.
+TXA und EACA können den Zugang, über den sie verabreicht werden, verstopfen. Zugänge können über _inspect catheter_ untersucht und gegebenenfalls mit _flush saline_ freigespült werden.
 
-#### Phenylephrin
+### Norepinephrin
 
-hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht.
+hebt den Blutdruck (Vasopressor) und die Herzrate. Wird über einen Zugang verabreicht. Verdickt das Blut.
 
-#### Ondansetron
+### Nitroglycerin
+
+senkt den Blutdruck (Vasodepressor). Wird über einen Zugang verabreicht. Verdünnt das Blut.
+
+### Phenylephrin
+
+hebt den Blutdruck bei gleichzeitiger Sekung des Pulses. Wird über einen Zugang verabreicht. Verdickt das Blut stärker als [Norepinephrin](#norepinephrin).
+
+### Ondansetron
 
 verhindert, dass ein bewusstloser Patient sich übergibt. Nützlich, wenn die Atemwege nicht durch eine Güdel-Röhre o.Ä. gesichert werden können. Wird über einen Zugang verabreicht.
+
+### Fentanyl
+
+Schmerzmittel (relative Stärke: 1). Senkt Herzrate und Blutdruck. Sehr stark, sehr leicht überzudosieren (Überdosis-Therapie mit Naloxon). Nicht mehr als zwei Gaben pro 15 Minuten. Kann die Farbwahrnehmung beeinträchtigen.
+
+### Ketamin
+
+Schmerzmittel (relative Stärke: 0,8). Hebt Herzrate und Blutdruck. Nicht mehr als vier Gaben pro 15 Minuten. Kann die Farbwahrnehmung beeinträchtigen.
+
+### Nalbuphin
+
+Schmerzmittel (relative Stärke: 0,6). Senkt Herzrate und Blutdruck. Überdosis-Therapie mit Naloxon. Nicht mehr als vier Gaben pro 15 Minuten.
+
+## Rangfolge der Schmerzmedikamente
+
+In absteigender Reihenfolge ist die Stärke der Schmerzmittel: [Fentanyl](#fentanyl), [Morphium](#morphin-autoinjektor), [Ketamin](#ketamin), [Nalbuphin](#nalbuphin) und [Schmerztabletten](#painkillers-dt-schmerztabletten).
+
+## Siehe auch
+
+- [Erste Hilfe](/articles/ausbildung/erste-hilfe#medizinische-versorgung)
+- Behandlung von [Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt)
+- [Narkose bei Operationen](/articles/sanitaetsdienst/chirurgie)
