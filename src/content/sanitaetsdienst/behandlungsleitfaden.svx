@@ -50,7 +50,7 @@ Diese Prozedur soll eine Hilfestellung sein und ist nur beispielhaft. Sie konzen
 
 ## Nachversorgung
 
-- Wunden bandagieren und Nähen
+- Wunden bandagieren und nähen
 - Tourniquets abnehmen
 - einfache Brüche mit Splint schienen
 - komplizierte Brüche operieren
