@@ -100,10 +100,10 @@
         {/each}
       </div>
 
-      <main id="content" class="markdown-body">
         <Theme />
+      <content class="markdown-body">
         <slot />
-      </main>
+      </content>
 
       {#if $page.status == 200}
         <footer>

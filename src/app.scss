@@ -224,7 +224,7 @@ h3 {
   margin-bottom: 0 !important;
 }
 
-main {
+#content {
   width: 100%;
   padding: 10.4rem 8rem 10rem 8rem;
   color: var(--brandPrimaryTXT);
@@ -561,7 +561,7 @@ input {
     padding-top: 20%;
   }
 
-  main {
+  #content {
     padding: 6rem 3rem 10rem 3rem;
   }
 }
@@ -597,7 +597,7 @@ img#home__nav__logo {
 }
 
 @media only screen and (max-width: 1200px) {
-  main p {
+  #content p {
     text-align: left;
   }
 }
