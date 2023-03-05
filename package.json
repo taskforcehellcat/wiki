@@ -36,6 +36,7 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^4.5.0",
+    "@fontsource/material-icons-rounded": "^4.5.4",
     "cookie": "^0.4.1",
     "rehype-slug": "^5.1.0",
     "svast-utils": "^0.0.5",
