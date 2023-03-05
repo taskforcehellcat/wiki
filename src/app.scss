@@ -599,6 +599,8 @@ img#home__nav__logo {
 
 #home__link {
   color: var(--brandTertiaryTXT);
+  display: flex;
+  align-items: center;
 
   span.material-icons {
     margin-left: -0.7rem;
