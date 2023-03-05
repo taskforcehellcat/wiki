@@ -20,7 +20,7 @@
     }}
     data-visible={themesOpen}
   >
-    <span class="material-icons">format_paint</span>
+    <span class="material-icons-rounded">format_paint</span>
   </button>
   <div id="theme__picker" data-visible={themesOpen}>
     {#each themeChoices as themeChoice}
