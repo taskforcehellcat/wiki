@@ -204,34 +204,9 @@ a {
   color: inherit;
 }
 
-p {
-  font-size: 13pt;
-  font-weight: 430;
-}
-
-h1 {
-  font-size: 30pt;
-  margin-bottom: 4rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 19pt;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
-}
-
 // first h2 on the page should not have margin-top
 h2:first-of-type {
   margin-top: 2rem;
-}
-
-h3 {
-  font-size: 16pt;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 h4 {
