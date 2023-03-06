@@ -120,6 +120,7 @@
   :global(p) {
     text-align: justify;
     display: inline-block;
+    font-size: 13pt;
     margin-bottom: 1.5rem;
   }
 
