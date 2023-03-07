@@ -1,10 +1,51 @@
 <script lang="ts">
   export let keys = '';
+  import { keysLayout } from '$lib/stores';
   let keysArray = keys.split(',');
   keysArray = keysArray.map((key) => key.trim());
-  // let slot = $$props.$$slots;
+
+  const mapDeEn = new Map([
+    ['CTRL', 'STRG'],
+    ['SHIFT', 'UMSCHALT'],
+    ['CAPS', 'FESTSTELLEN'],
+    ['NUMPAD', 'ZIFFERNBLOCK'],
+    ['LMB', 'LINKSKLICK'],
+    ['RMB', 'RECHTSKLICK'],
+    ['SPACE', 'LEERTASTE'],
+    ['INS', 'EINFG'],
+    ['DEL', 'ENTF'],
+    ['PGUP', 'BILD AUF'],
+    ['PGDWN', 'BILD AB'],
+    ['SCROLL', 'MAUSRAD']
+  ]);
+
+  const mapWinMac = new Map([
+    ['STRG', 'CMD'],
+    ['CTRL', 'CMD']
+  ]);
+
+  let keysArrayTranslated = keysArray;
+
+  $: if ($keysLayout) {
+    keysArrayTranslated = keysArray;
+
+    console.debug(mapDeEn.get('SHIFT'));
+    console.debug(mapDeEn.get('UMSCHALT'));
+
+    if (['de-win', 'de-mac'].includes($keysLayout)) {
+      keysArrayTranslated = keysArrayTranslated.map((key) => {
+        return mapDeEn.get(key) ?? key;
+      });
+    }
+
+    if (['de-mac', 'en-mac'].includes($keysLayout)) {
+      keysArrayTranslated = keysArrayTranslated.map((key) => {
+        return mapWinMac.get(key) ?? key;
+      });
+    }
+  }
 </script>
 
-{#each keysArray as key}
+{#each keysArrayTranslated as key}
   <kbd>{key}</kbd>
 {/each}

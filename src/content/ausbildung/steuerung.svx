@@ -5,9 +5,18 @@ nav_index: 6
 ---
 
 <script lang="ts">
-        import Keys from "$lib/wikitools/Keys.svelte";
-        import Tooltip from "$lib/wikitools/Tooltip.svelte";
+    import Keys from "$lib/wikitools/Keys.svelte";
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+    import { keysLayout } from '$lib/stores';
 </script>
+
+<!-- Debugging only. If you want to use two switches for language and keyboard each, give me a hint -- Emmy -->
+<select bind:value={$keysLayout} style="display: block; margin-bottom: 1rem;">
+    <option value="de-win">Windows, deutsch</option>
+    <option value="en-win">Windows, englisch</option>
+    <option value="de-mac">Mac, deutsch</option>
+    <option value="en-mac">Mac, englisch</option>
+</select>
 
 <style>
     details {
@@ -49,27 +58,27 @@ _Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener
 
 ## Allgemein
 
-| Aktion                                                                                                                               | Tastenbelegung                                         |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------ |
-| Pause                                                                                                                                | <Keys keys="ESC" />                                    |
-| Inventar                                                                                                                             | <Keys keys="I" />                                      |
-| Karte                                                                                                                                | <Keys keys="M" />                                      |
-| Kompass                                                                                                                              | <Keys keys="K" />                                      |
-| Uhr                                                                                                                                  | <Keys keys="O" />                                      |
-| Fernglas                                                                                                                             | <Keys keys="B" />                                      |
-| <Tooltip text="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Linkes Fenster nächst.</Tooltip>   | <Keys keys="+" />                                      |
-| <Tooltip text="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Rechtes Fenster nächst.</Tooltip> | <Keys keys="Ü" />                                      |
-| Interagieren (Vanilla)                                                                                                               | <Keys keys="LEER" />                                   |
-| Fremdinteraktion (ACE)                                                                                                               | <Keys keys="LWIN" />                                   |
-| Eigeninteraktion (ACE)                                                                                                               | <Keys keys="STRG" /> + <Keys keys="LWIN" />            |
-| Umschauen                                                                                                                            | <Keys keys="ALT" /> (halten)                           |
-| Umschauen (umschalten)                                                                                                               | 2x <Keys keys="ALT" />                                 |
-| Primäres Funkgerät                                                                                                                   | <Keys keys="FESTSTELLEN" />                            |
-| Sekundäres Funkgerät                                                                                                                 | <Keys keys="UMSCHALT" /> + <Keys keys="FESTSTELLEN" /> |
-| Redereichweite                                                                                                                       | <Keys keys="TAB" /> + <Keys keys="MAUSRAD" />          |
-| Medizinische Übersicht                                                                                                               | <Keys keys="H" />                                      |
-| Nachtsichtgerät                                                                                                                      | <Keys keys="N" />                                      |
-| Perspektive wechseln                                                                                                                 | <Keys keys="ENTER" /> (Numpad)                         |
+| Aktion                                                                                                                               | Tastenbelegung                               |
+| ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
+| Pause                                                                                                                                | <Keys keys="ESC" />                          |
+| Inventar                                                                                                                             | <Keys keys="I" />                            |
+| Karte                                                                                                                                | <Keys keys="M" />                            |
+| Kompass                                                                                                                              | <Keys keys="K" />                            |
+| Uhr                                                                                                                                  | <Keys keys="O" />                            |
+| Fernglas                                                                                                                             | <Keys keys="B" />                            |
+| <Tooltip text="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Linkes Fenster nächst.</Tooltip>   | <Keys keys="+" />                            |
+| <Tooltip text="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Rechtes Fenster nächst.</Tooltip> | <Keys keys="Ü" />                            |
+| Interagieren (Vanilla)                                                                                                               | <Keys keys="SPACE" />                        |
+| Fremdinteraktion (ACE)                                                                                                               | <Keys keys="WIN" />                          |
+| Eigeninteraktion (ACE)                                                                                                               | <Keys keys="CTRL, WIN" />                    |
+| Umschauen                                                                                                                            | <Keys keys="ALT" /> (halten)                 |
+| Umschauen (umschalten)                                                                                                               | 2x <Keys keys="ALT" />                       |
+| Primäres Funkgerät                                                                                                                   | <Keys keys="CAPS" />                         |
+| Sekundäres Funkgerät                                                                                                                 | <Keys keys="SHIFT" /> + <Keys keys="CAPS" /> |
+| Redereichweite                                                                                                                       | <Keys keys="TAB" /> + <Keys keys="SCROLL" /> |
+| Medizinische Übersicht                                                                                                               | <Keys keys="H" />                            |
+| Nachtsichtgerät                                                                                                                      | <Keys keys="N" />                            |
+| Perspektive wechseln                                                                                                                 | <Keys keys="ENTER" /> (Numpad)               |
 
 ## Zu Fuß
 
@@ -79,58 +88,58 @@ _Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener
 | Lehnen                                                                                                  | <Keys keys="Q" /> / <Keys keys="E" />                                         |
 | Hocken                                                                                                  | <Keys keys="X" />                                                             |
 | Hinlegen                                                                                                | <Keys keys="Y" />                                                             |
-| Wechsel Marsch / Marsch Marsch                                                                          | <Keys keys="STRG" /> + <Keys keys="C" />                                      |
+| Wechsel Marsch / Marsch Marsch                                                                          | <Keys keys="CTRL" /> + <Keys keys="C" />                                      |
 | <Tooltip text="nur mit gezogener Waffe möglich">Wechsel langsam/schnell Marsch Marsch &Dagger</Tooltip> | 2x <Keys keys="C" />                                                          |
-| <Tooltip text="nur mit gezogener Waffe möglich">Haltung anpassen &Dagger</Tooltip>                      | <Keys keys="STRG" /> + <Keys keys="W,A,S,D" />                                |
-| Sprung (Sprint)                                                                                         | <Keys keys="W" /> + <Keys keys="UMSCHALT" />                                  |
+| <Tooltip text="nur mit gezogener Waffe möglich">Haltung anpassen &Dagger</Tooltip>                      | <Keys keys="CTRL" /> + <Keys keys="W,A,S,D" />                                |
+| Sprung (Sprint)                                                                                         | <Keys keys="W" /> + <Keys keys="SHIFT" />                                     |
 | Übersteigen                                                                                             | <Keys keys="V" />                                                             |
-| Klettern                                                                                                | <Keys keys="UMSCHALT" /> + <Keys keys="V" />                                  |
+| Klettern                                                                                                | <Keys keys="SHIFT" /> + <Keys keys="V" />                                     |
 | Hinsetzen                                                                                               | <Keys keys="Ä" />                                                             |
 | Salutieren                                                                                              | <Keys keys="#" />                                                             |
-| Verschiedene Gesten                                                                                     | <Keys keys="STRG" /> + <Keys keys="NUMMERNBLOCK" />                           |
+| Verschiedene Gesten                                                                                     | <Keys keys="CTRL" /> + <Keys keys="NUMPAD" />                                 |
 
 ## Waffen
 
-| Aktion                      | Tastenbelegung                                     |
-| --------------------------- | -------------------------------------------------- |
-| Primärwaffe                 | <Keys keys="1" />                                  |
-| Sekundärwaffe               | <Keys keys="2" />                                  |
-| Raketenwerfer               | <Keys keys="3" />                                  |
-| Schießen                    | <Keys keys="LINKSKLICK" />                         |
-| Zielen                      | <Keys keys="RECHTSKLICK" />                        |
-| Nachladen                   | <Keys keys="R" />                                  |
-| Feuermodus wechseln         | <Keys keys="F" />                                  |
-| Visier wechseln             | <Keys keys="STRG" /> + <Keys keys="RECHTSKLICK" /> |
-| Magazin prüfen              | <Keys keys="STRG" /> + <Keys keys="R" />           |
-| Waffe auflegen              | <Keys keys="C" />                                  |
-| Waffe senken                | 2x <Keys keys="STRG" />                            |
-| Waffe sichern               | <Keys keys="STRG" /> + <Keys keys="^" />           |
-| Waffe nullen                | <Keys keys="STRG" /> + <Keys keys="MAUSRAD" />     |
-| Lauf nach oben              | <Keys keys="T" />                                  |
-| Lauf nach unten             | <Keys keys="UMSCHALT" /> + <Keys keys="T" />       |
-| Waffe holstern              | <Keys keys="0" />                                  |
-| Granate werfen<sup>1</sup>  | <Keys keys="G" />                                  |
-| Granate kontrolliert werfen | <Keys keys="UMSCHALT" /> + <Keys keys="G" />       |
-| Licht/Laser einschalten     | <Keys keys="L" />                                  |
-| Licht/Laser wechseln        | <Keys keys="STRG" /> + <Keys keys="L" />           |
+| Aktion                      | Tastenbelegung                                |
+| --------------------------- | --------------------------------------------- |
+| Primärwaffe                 | <Keys keys="1" />                             |
+| Sekundärwaffe               | <Keys keys="2" />                             |
+| Raketenwerfer               | <Keys keys="3" />                             |
+| Schießen                    | <Keys keys="LMB" />                           |
+| Zielen                      | <Keys keys="RMB" />                           |
+| Nachladen                   | <Keys keys="R" />                             |
+| Feuermodus wechseln         | <Keys keys="F" />                             |
+| Visier wechseln             | <Keys keys="CTRL" /> + <Keys keys="RMB" />    |
+| Magazin prüfen              | <Keys keys="CTRL" /> + <Keys keys="R" />      |
+| Waffe auflegen              | <Keys keys="C" />                             |
+| Waffe senken                | 2x <Keys keys="CTRL" />                       |
+| Waffe sichern               | <Keys keys="CTRL" /> + <Keys keys="^" />      |
+| Waffe nullen                | <Keys keys="CTRL" /> + <Keys keys="SCROLL" /> |
+| Lauf nach oben              | <Keys keys="T" />                             |
+| Lauf nach unten             | <Keys keys="SHIFT" /> + <Keys keys="T" />     |
+| Waffe holstern              | <Keys keys="0" />                             |
+| Granate werfen<sup>1</sup>  | <Keys keys="G" />                             |
+| Granate kontrolliert werfen | <Keys keys="SHIFT" /> + <Keys keys="G" />     |
+| Licht/Laser einschalten     | <Keys keys="L" />                             |
+| Licht/Laser wechseln        | <Keys keys="CTRL" /> + <Keys keys="L" />      |
 
 <sup>1</sup>Um nicht statt mit <kbd>H</kbd> die medizinische Übersicht zu öffnen, versehentlich mit <kbd>G</kbd> eine Granate zu werfen, empfehlen wir, diesen Keybind in den Einstellungen zu lösen und stattdessen ausschließlich den kontrollierten Granatenwurf zu verwenden.
 
 ## Fahrzeuge
 
-| Aktion                 | Tastenbelegung                                                            |
-| ---------------------- | ------------------------------------------------------------------------- |
-| Fahren                 | <Keys keys="W" /> / <Keys keys="S" />                                     |
-| Lenken                 | <Keys keys="A" /> / <Keys keys="D" />                                     |
-| Schnell vorwärts       | <Keys keys="W" /> + <Keys keys="UMSCHALT" />                              |
-| Langsam vorwärts       | <Keys keys="W" /> + <Keys keys="STRG" />                                  |
-| Motor aus              | <Keys keys="1" />                                                         |
-| Motor an               | <Keys keys="2" />                                                         |
-| Handbremse             | <Keys keys="X" />                                                         |
-| Scheinwerfer           | <Keys keys="L" />                                                         |
-| Aussteigen             | <Keys keys="V" />                                                         |
-| Abspringen<sup>2</sup> | 2x <Keys keys="V" />                                                      |
-| Sitzhöhe verstellen    | <Keys keys="STRG" /> + <Keys keys="BILD AUF" /> / <Keys keys="BILD AB" /> |
-| Fahrersitz verrücken   | <Keys keys="STRG" /> + <Keys keys="NUMMERNBLOCK" />                       |
+| Aktion                 | Tastenbelegung                                                      |
+| ---------------------- | ------------------------------------------------------------------- |
+| Fahren                 | <Keys keys="W" /> / <Keys keys="S" />                               |
+| Lenken                 | <Keys keys="A" /> / <Keys keys="D" />                               |
+| Schnell vorwärts       | <Keys keys="W" /> + <Keys keys="SHIFT" />                           |
+| Langsam vorwärts       | <Keys keys="W" /> + <Keys keys="CTRL" />                            |
+| Motor aus              | <Keys keys="1" />                                                   |
+| Motor an               | <Keys keys="2" />                                                   |
+| Handbremse             | <Keys keys="X" />                                                   |
+| Scheinwerfer           | <Keys keys="L" />                                                   |
+| Aussteigen             | <Keys keys="V" />                                                   |
+| Abspringen<sup>2</sup> | 2x <Keys keys="V" />                                                |
+| Sitzhöhe verstellen    | <Keys keys="CTRL" /> + <Keys keys="PGUP" /> / <Keys keys="PGDWN" /> |
+| Fahrersitz verrücken   | <Keys keys="CTRL" /> + <Keys keys="NUMPAD" />                       |
 
 <sup>2</sup>Kann während der Fahrt/des Fluges genutzt werden. Durch das Abspringen des Fahrers wird der Motor des Fahrzeugs weiterhin laufen.
