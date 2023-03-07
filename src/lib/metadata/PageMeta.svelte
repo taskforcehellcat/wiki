@@ -8,9 +8,9 @@
 
   let url = `https://wiki.taskforcehellcat.de/articles/${dir}/${article}`;
 
-  // FIXME use this in production:
-  //let thumbnailsUrl = `https://wiki.taskforcehellcat.de/images/thumbnails/`;
-  let thumbnailsUrl = `https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/`
+  // let thumbnailsUrl = `https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/`
+  // use this in production:
+  let thumbnailsUrl = `https://wiki.taskforcehellcat.de/images/thumbnails/`;
 </script>
 
 <svelte:head>
