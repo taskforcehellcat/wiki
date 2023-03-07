@@ -1,4 +1,4 @@
 export const config = {
-  nav_index: 7,
+  nav_index: 9,
   title: 'Aufklärungstruppe'
 };

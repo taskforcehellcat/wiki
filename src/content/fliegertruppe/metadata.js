@@ -1,4 +1,4 @@
 export const config = {
-  nav_index: 9,
+  nav_index: 5,
   title: 'Fliegertruppe'
 };
