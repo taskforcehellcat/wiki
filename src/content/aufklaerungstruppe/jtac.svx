@@ -1,8 +1,0 @@
----
-title: Joint Terminal Attack Controller
-title_short: JTAC
-date: '2022-11-15'
-nav_index: 1
----
-
-JTACS werden in der Taskforce Hellcat aktuell nicht eingesetzt.
