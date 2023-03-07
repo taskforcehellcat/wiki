@@ -11,11 +11,14 @@ nav_index: 6
 </script>
 
 <!-- Debugging only. If you want to use two switches for language and keyboard each, give me a hint -- Emmy -->
-<select bind:value={$keysLayout} style="display: block; margin-bottom: 1rem;">
-    <option value="de-win">Windows, deutsch</option>
-    <option value="en-win">Windows, englisch</option>
-    <option value="de-mac">Mac, deutsch</option>
-    <option value="en-mac">Mac, englisch</option>
+
+<select bind:value={$keysLayout} style="display: block; margin-bottom: 1rem;" on:input={({currentTarget: { value }})=>{
+localStorage.setItem('preferredKeyboardLayout', value)
+}}>
+<option value="de-win">Windows, deutsch</option>
+<option value="en-win">Windows, englisch</option>
+<option value="de-mac">Mac, deutsch</option>
+<option value="en-mac">Mac, englisch</option>
 </select>
 
 <style>
@@ -58,27 +61,27 @@ _Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener
 
 ## Allgemein
 
-| Aktion                                                                                                                               | Tastenbelegung                               |
-| ------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------- |
-| Pause                                                                                                                                | <Keys keys="ESC" />                          |
-| Inventar                                                                                                                             | <Keys keys="I" />                            |
-| Karte                                                                                                                                | <Keys keys="M" />                            |
-| Kompass                                                                                                                              | <Keys keys="K" />                            |
-| Uhr                                                                                                                                  | <Keys keys="O" />                            |
-| Fernglas                                                                                                                             | <Keys keys="B" />                            |
-| <Tooltip text="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Linkes Fenster nächst.</Tooltip>   | <Keys keys="+" />                            |
-| <Tooltip text="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Rechtes Fenster nächst.</Tooltip> | <Keys keys="Ü" />                            |
-| Interagieren (Vanilla)                                                                                                               | <Keys keys="SPACE" />                        |
-| Fremdinteraktion (ACE)                                                                                                               | <Keys keys="WIN" />                          |
-| Eigeninteraktion (ACE)                                                                                                               | <Keys keys="CTRL, WIN" />                    |
-| Umschauen                                                                                                                            | <Keys keys="ALT" /> (halten)                 |
-| Umschauen (umschalten)                                                                                                               | 2x <Keys keys="ALT" />                       |
-| Primäres Funkgerät                                                                                                                   | <Keys keys="CAPS" />                         |
-| Sekundäres Funkgerät                                                                                                                 | <Keys keys="SHIFT" /> + <Keys keys="CAPS" /> |
-| Redereichweite                                                                                                                       | <Keys keys="TAB" /> + <Keys keys="SCROLL" /> |
-| Medizinische Übersicht                                                                                                               | <Keys keys="H" />                            |
-| Nachtsichtgerät                                                                                                                      | <Keys keys="N" />                            |
-| Perspektive wechseln                                                                                                                 | <Keys keys="ENTER" /> (Numpad)               |
+| Aktion                                                                                                                               | Tastenbelegung                                      |
+| ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
+| Pause                                                                                                                                | <Keys keys="ESC" />                                 |
+| Inventar                                                                                                                             | <Keys keys="I" />                                   |
+| Karte                                                                                                                                | <Keys keys="M" />                                   |
+| Kompass                                                                                                                              | <Keys keys="K" />                                   |
+| Uhr                                                                                                                                  | <Keys keys="O" />                                   |
+| Fernglas                                                                                                                             | <Keys keys="B" />                                   |
+| <Tooltip text="Zusäzliches Fenster auf der linken Seite des Bildschirms, z.B. GPS, Minendetektor">Linkes Fenster nächst.</Tooltip>   | <Keys keys="+" />                                   |
+| <Tooltip text="Zusäzliches Fenster auf der rechten Seite des Bildschirms, z.B. GPS, Minendetektor">Rechtes Fenster nächst.</Tooltip> | <Keys keys="Ü" />                                   |
+| Interagieren (Vanilla)                                                                                                               | <Keys keys="SPACE" />                               |
+| Fremdinteraktion (ACE)                                                                                                               | <Keys keys="WIN" />                                 |
+| Eigeninteraktion (ACE)                                                                                                               | <Keys keys="CTRL" /> + <Keys keys="WIN" /> (halten) |
+| Umschauen                                                                                                                            | <Keys keys="ALT" /> (halten)                        |
+| Umschauen (umschalten)                                                                                                               | 2x <Keys keys="ALT" />                              |
+| Primäres Funkgerät                                                                                                                   | <Keys keys="CAPS" />                                |
+| Sekundäres Funkgerät                                                                                                                 | <Keys keys="SHIFT" /> + <Keys keys="CAPS" />        |
+| Redereichweite                                                                                                                       | <Keys keys="TAB" /> + <Keys keys="SCROLL" />        |
+| Medizinische Übersicht                                                                                                               | <Keys keys="H" />                                   |
+| Nachtsichtgerät                                                                                                                      | <Keys keys="N" />                                   |
+| Perspektive wechseln                                                                                                                 | <Keys keys="ENTER" /> (Numpad)                      |
 
 ## Zu Fuß
 
