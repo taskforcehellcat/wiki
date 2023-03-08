@@ -22,6 +22,8 @@ localStorage.setItem('preferredKeyboardLayout', value)
 <option value="en-mac">Mac, englisch</option>
 </select>
 
+<p>Diese Einstellung wird im ganzen Wiki angewandt.</p>
+
 <style>
     details {
         margin-block: 2rem;
@@ -94,7 +96,7 @@ _Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener
 | Wechsel Marsch / Marsch Marsch                                                                          | <Keys keys="CTRL" /> + <Keys keys="C" />                                      |
 | <Tooltip text="nur mit gezogener Waffe möglich">Wechsel langsam/schnell Marsch Marsch &Dagger</Tooltip> | 2x <Keys keys="C" />                                                          |
 | <Tooltip text="nur mit gezogener Waffe möglich">Haltung anpassen &Dagger</Tooltip>                      | <Keys keys="CTRL" /> + <Keys keys="W,A,S,D" />                                |
-| Sprung (Sprint)                                                                                         | <Keys keys="W" /> + <Keys keys="SHIFT" />                                     |
+| Sprung (Sprint)                                                                                         | <Keys keys="SHIFT" /> + <Keys keys="W" />                                     |
 | Übersteigen                                                                                             | <Keys keys="V" />                                                             |
 | Klettern                                                                                                | <Keys keys="SHIFT" /> + <Keys keys="V" />                                     |
 | Hinsetzen                                                                                               | <Keys keys="Ä" />                                                             |
@@ -134,8 +136,8 @@ _Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener
 | ---------------------- | ------------------------------------------------------------------- |
 | Fahren                 | <Keys keys="W" /> / <Keys keys="S" />                               |
 | Lenken                 | <Keys keys="A" /> / <Keys keys="D" />                               |
-| Schnell vorwärts       | <Keys keys="W" /> + <Keys keys="SHIFT" />                           |
-| Langsam vorwärts       | <Keys keys="W" /> + <Keys keys="CTRL" />                            |
+| Schnell vorwärts       | <Keys keys="SHIFT" /> + <Keys keys="W" />                           |
+| Langsam vorwärts       | <Keys keys="CTRL" /> + <Keys keys="W" />                            |
 | Motor aus              | <Keys keys="1" />                                                   |
 | Motor an               | <Keys keys="2" />                                                   |
 | Handbremse             | <Keys keys="X" />                                                   |
