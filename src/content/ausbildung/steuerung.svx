@@ -15,6 +15,7 @@ nav_index: 6
 <select bind:value={$keysLayout} style="display: block; margin-bottom: 1rem;" on:input={({currentTarget: { value }})=>{
 localStorage.setItem('preferredKeyboardLayout', value)
 }}>
+
 <option value="de-win">Windows, deutsch</option>
 <option value="en-win">Windows, englisch</option>
 <option value="de-mac">Mac, deutsch</option>
@@ -30,7 +31,6 @@ localStorage.setItem('preferredKeyboardLayout', value)
     tr {
         display: flex;
         justify-content: space-between;
-        width: 30rem;
         padding-block: 0.5rem;
     }
 
