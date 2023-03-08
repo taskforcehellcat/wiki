@@ -1,5 +1,7 @@
 <script lang="ts">
-  export let data;
+  import { page } from '$app/stores';
+
+  let data = $page.data;
 
   let title = data.title;
   let dir = data.dirslug;
@@ -11,6 +13,8 @@
   // let thumbnailsUrl = `https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/`
   // use this in production:
   let thumbnailsUrl = `https://wiki.taskforcehellcat.de/images/thumbnails/`;
+
+  $: title = $page.data.title;
 </script>
 
 <svelte:head>
