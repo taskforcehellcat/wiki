@@ -29,9 +29,6 @@
   $: if ($keysLayout) {
     keysArrayTranslated = keysArray;
 
-    console.debug(mapDeEn.get('SHIFT'));
-    console.debug(mapDeEn.get('UMSCHALT'));
-
     if (['de-win', 'de-mac'].includes($keysLayout)) {
       keysArrayTranslated = keysArrayTranslated.map((key) => {
         return mapDeEn.get(key) ?? key;
