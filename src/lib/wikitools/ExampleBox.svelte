@@ -10,7 +10,7 @@
 <div class="example-box">
   <div class="example-box-header noselect" aria-expanded={isOpen} on:click={toggleOpen} role="presentation">
     <span>{title}</span>
-    <span class="material-icons">
+    <span class="material-icons-rounded">
       {#if isOpen}remove{:else}add{/if}
     </span>
   </div>
@@ -42,7 +42,7 @@
         cursor: pointer;
       }
 
-      .material-icons {
+      .material-icons-rounded {
         font-size: 20pt;
         margin-right: -4px;
       }

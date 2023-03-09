@@ -29,7 +29,7 @@
     <div class="expandable" class:open={activeNav === nav.id} class:invisible={$searchInUse}>
       <span on:click={() => toggleOpen(nav.id)}>
         {nav.config.title}
-        <i class="material-icons-round noselect">expand_more</i>
+        <i class="material-icons-rounded noselect">expand_more</i>
       </span>
       {#each nav.entries as article}
         <a href="/articles/{nav.id}/{article.id}">{shortName(article)}</a>

@@ -1,3 +1,5 @@
+@import '@fontsource/material-icons-rounded';
+
 * {
   margin: 0;
   padding: 0;
@@ -189,7 +191,9 @@ html {
 
 body {
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'GeneralSans-Variable', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  font-weight: 430;
   font-size: 12pt;
   background-color: #000;
   background-color: var(--brandPrimaryBG);
@@ -200,33 +204,9 @@ a {
   color: inherit;
 }
 
-p {
-  font-size: 13pt;
-}
-
-h1 {
-  font-size: 30pt;
-  margin-bottom: 4rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 19pt;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
-}
-
 // first h2 on the page should not have margin-top
 h2:first-of-type {
   margin-top: 2rem;
-}
-
-h3 {
-  font-size: 16pt;
-  font-weight: 600;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 h4 {
@@ -352,7 +332,7 @@ main {
   }
 }
 
-.material-icons {
+.material-icons-rounded {
   vertical-align: text-bottom;
   color: inherit;
 }
@@ -449,7 +429,7 @@ input {
 }
 
 .open {
-  .material-icons-round {
+  .material-icons-rounded {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -495,7 +475,7 @@ input {
   #nav__list {
     font-size: 15pt;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     gap: 15px;
     letter-spacing: 0.12rem;
   }
@@ -532,8 +512,7 @@ input {
   align-items: center;
   gap: 2rem;
   font-size: 18pt;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 500;
   padding-top: 10rem;
   color: var(--brandTertiaryTXT);
   background-color: var(--brandPrimaryBG);

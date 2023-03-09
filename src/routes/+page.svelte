@@ -43,7 +43,7 @@
     <div id="home">
       <div id="home__top">
         <a id="home__link" href="https://taskforcehellcat.de/"
-          ><span class="material-icons"> chevron_left </span>
+          ><span class="material-icons-rounded"> chevron_left </span>
           Zurück zur Hauptseite</a
         >
         <img
@@ -57,7 +57,7 @@
       <!-- search bar -->
       <div id="search" data-empty={(query.length === 0).toString()}>
         <div id="search__searchbar">
-          <span class="material-icons noselect">search</span>
+          <span class="material-icons-rounded noselect">search</span>
           <input type="text" name="search" placeholder="Wiki durchsuchen…" bind:value={rawInput} />
         </div>
         <div id="search__results">
@@ -133,7 +133,7 @@
     font-weight: 300;
   }
 
-  #search__searchbar .material-icons {
+  #search__searchbar .material-icons-rounded {
     font-size: 20pt;
     color: var(--brandTertiaryTXT);
   }
