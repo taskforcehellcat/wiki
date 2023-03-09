@@ -38,7 +38,7 @@ Die Truppengattung der Fliegertruppe verfügt aktuell über keinen Truppengattun
 
 ### Sanitätsdienst
 
-Die Truppengattung des Sanitätsdienstes wird von Emmi organisiert und verwaltet. Sie befasst sich mit der medizinischen Behandlung, Evakuierung und Endversorgung verwundeter Soldaten. Überwiegend sind Mitglieder des Sanitätsdienstes in die Infanterie eingegliedert, allerdings werden sie auch bei speziellen Unterstützungselementen wie dem beweglichen Arzttrupp (kurz BAT) oder dem MEDEVAC (MEDical EVACuation) eingesetzt. Der [Sanitäter](../sanitaetsdienst/sanitaeter/) ist die vielfältige Rolle des Sanitätsdienstes.
+Die Truppengattung des Sanitätsdienstes wird von Emmi organisiert und verwaltet. Sie befasst sich mit der medizinischen Behandlung, Evakuierung und Endversorgung verwundeter Soldaten. Überwiegend sind Mitglieder des Sanitätsdienstes in die Infanterie eingegliedert, allerdings werden sie auch bei speziellen Unterstützungselementen wie dem beweglichen Arzttrupp (kurz BAT) oder dem MEDEVAC (<u>med</u>ical <u>evac</u>uation) eingesetzt. Der [Sanitäter](../sanitaetsdienst/sanitaeter/) ist die vielfältige Rolle des Sanitätsdienstes.
 
 ### Logistiktruppe
 
