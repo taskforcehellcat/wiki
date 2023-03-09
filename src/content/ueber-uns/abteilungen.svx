@@ -14,13 +14,13 @@ Die Task Force Hellcat besteht aus drei Abteilungen, die verschiedene Truppengat
 
 Die Truppengattung der Infanterie wird von Leon organisiert und verwaltet. Sie umfasst mit Handwaffen ausgerüstete, sich zu Fuß bewegende und kämpfende Soldaten, die in [Trupps](../ausbildung/truppenteile#trupp) oder [Gruppen](../ausbildung/truppenteile#gruppe) agieren. Zur Infanterie zählen die Rollen des [Schützen](../streitkraefte/schuetze), des [MG-Schützen](../streitkraefte/mg-schuetze), des [PA-Schützen](../streitkraefte/pa-schuetze) und des [Präzisionsschützen](../streitkraefte/praezisionsschuetze).
 
-_Bemerkung_: Infanterie, die aufgesessen auf [geschützten Fahrzeugen (DEAD)](../fuhrpark/geschuetzte-fahrzeuge) agiert, nennt man **motorisierte Infanterie**.
+_Bemerkung_: Infanterie, die aufgesessen auf [~~geschützten Fahrzeugen~~](../fuhrpark/geschuetzte-fahrzeuge) agiert, nennt man **motorisierte Infanterie**.
 
 ### Panzertruppen
 
 Die Panzertruppen sind ein Truppengattungsverbund aus drei Truppengattungen: Die Panzertruppe, die Panzergrenadiertruppe und die Artillerietruppe. Die Truppengattungen dieses Verbundes werden von Kevin organisiert und verwaltet.
 
-Die Truppengattung der **_Panzertruppe_** setzt sich aus Panzerbesatzungen zusammen, die [Kampfpanzer (DEAD)](../fuhrpark/kampfpanzer) bedienen. Die Truppengattung der **_Panzergrenadiertruppe_** setzt sich aus Panzerbesatzungen und Infanteristen (hier: _Panzergrenadieren_) zusammen, die gemeinsam auf einem [Schützenpanzer (DEAD)](../fuhrpark/schuetzenpanzer) agieren. Die Truppengattung der **_Artillerietruppe_** setzt sich aus Panzerbesatzungen zusammen, die [Artilleriepanzer (DEAD)](../fuhrpark/artilleriepanzer) und [Raketenwerfer-Artilleriesysteme (DEAD)](../fuhrpark/raketenwerferartillerie) bedienen. Eine Panzerbesatzung besteht aus einem [Kommandanten](../panzertruppen/kommandant), einem [Richtschützen](../panzertruppen/richtschuetze) und einem [Fahrer](../panzertruppen/fahrer).
+Die Truppengattung der **_Panzertruppe_** setzt sich aus Panzerbesatzungen zusammen, die [~~Kampfpanzer~~](../fuhrpark/kampfpanzer) bedienen. Die Truppengattung der **_Panzergrenadiertruppe_** setzt sich aus Panzerbesatzungen und Infanteristen (hier: _Panzergrenadieren_) zusammen, die gemeinsam auf einem [~~Schützenpanzer~~](../fuhrpark/schuetzenpanzer) agieren. Die Truppengattung der **_Artillerietruppe_** setzt sich aus Panzerbesatzungen zusammen, die [~~Artilleriepanzer~~](../fuhrpark/artilleriepanzer) und [~~Raketenwerfer-Artilleriesysteme~~](../fuhrpark/raketenwerferartillerie) bedienen. Eine Panzerbesatzung besteht aus einem [Kommandanten](../panzertruppen/kommandant), einem [Richtschützen](../panzertruppen/richtschuetze) und einem [Fahrer](../panzertruppen/fahrer).
 
 _Bemerkung_: Panzerbesatzungen und Panzergrenadiere, die gemeinsam auf einem Schützenpanzer agieren, nennt man **mechanisierte Infanterie**.
 
@@ -32,7 +32,7 @@ Die Truppengattung der Pioniertruppe wird von ? organisiert und verwaltet. Sie f
 
 ### Fliegertruppe
 
-Die Truppengattung der Fliegertruppe wird von ? organisiert und verwaltet. Sie versorgt die Kampftruppen mit Verbrauchsmaterial, führt die (Nach-) Verlegung von Kräften durch und liefert Luftnahunterstützung. Dazu bedienen sie [Transport- (DEAD)](../fuhrpark/transporthubschrauber) und [Kampfhubschrauber (DEAD)](../fuhrpark/kampfhubschrauber). Zur Fliegertruppe zählen die Rollen des [Transportpiloten (DEAD)](../logistik/transportpilot/) und des [Kampfpiloten (DEAD)](../logistik/kampfpilot/).
+Die Truppengattung der Fliegertruppe wird von ? organisiert und verwaltet. Sie versorgt die Kampftruppen mit Verbrauchsmaterial, führt die (Nach-) Verlegung von Kräften durch und liefert Luftnahunterstützung. Dazu bedienen sie [~~Transport-~~](../fuhrpark/transporthubschrauber) und [~~Kampfhubschrauber~~](../fuhrpark/kampfhubschrauber). Zur Fliegertruppe zählen die Rollen des [~~Transportpiloten~~](../logistik/transportpilot/) und des [~~Kampfpiloten~~](../logistik/kampfpilot/).
 
 ## Einsatz- und Führungsunterstützung
 
@@ -42,7 +42,7 @@ Die Truppengattung des Sanitätsdienstes wird von Emmi organisiert und verwaltet
 
 ### Logistiktruppe
 
-Die Truppengattung der Logistiktruppe wird von ? organisiert und verwaltet. Sie befasst sich mit dem Nachschub, dem Transport und der Instandsetzung. Mit Land- und Wasserfahrzeugen stellen sie sicher, dass den Kampftruppen ausreichend Verbrauchsmaterial (Munition, Sanitätsmaterial), Ersatzreifen und -ketten, Treibstoff und Fahrzeugmunition zur Verfügung steht. Darüber hinaus übernimmt die Logistiktruppe die (Nach-) Verlegung von Nachzüglern über den Landweg und sorgt für die Instandsetzung von Fahrzeugen. Die Logistiktruppe umfasst die Rolle des [Logistikers (DEAD)](../logistik/logistiker).
+Die Truppengattung der Logistiktruppe wird von ? organisiert und verwaltet. Sie befasst sich mit dem Nachschub, dem Transport und der Instandsetzung. Mit Land- und Wasserfahrzeugen stellen sie sicher, dass den Kampftruppen ausreichend Verbrauchsmaterial (Munition, Sanitätsmaterial), Ersatzreifen und -ketten, Treibstoff und Fahrzeugmunition zur Verfügung steht. Darüber hinaus übernimmt die Logistiktruppe die (Nach-) Verlegung von Nachzüglern über den Landweg und sorgt für die Instandsetzung von Fahrzeugen. Die Logistiktruppe umfasst die Rolle des [~~Logistikers~~](../logistik/logistiker).
 
 ### Aufklärungstruppe
 
