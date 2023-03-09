@@ -101,9 +101,9 @@
         {/each}
       </div>
 
-        <Theme />
       <div id="info-bar">
         <Searchbar />
+        <Theme location="article" />
       </div>
 
       <content class="markdown-body">

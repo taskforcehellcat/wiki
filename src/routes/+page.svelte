@@ -40,7 +40,7 @@
 
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
-    <Theme />
+    <Theme location="home" />
     <div id="home">
       <div id="home__top">
         <a id="home__link" href="https://taskforcehellcat.de/"

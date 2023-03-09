@@ -2,6 +2,9 @@
   import { browser } from '$app/environment';
   import { themeId } from '$lib/theme/stores';
 
+  export let location = '';
+  let themeDiv: HTMLDivElement;
+
   let themesOpen = false;
   let themeChoices = ['dark', 'light', 'auto'];
 
@@ -12,7 +15,7 @@
   });
 </script>
 
-<div id="theme">
+<div id="theme" bind:this={themeDiv} data-location={location}>
   <button
     id="theme__button"
     on:click={() => {
@@ -41,44 +44,57 @@
 
 <style lang="scss">
   #theme {
-    position: absolute;
-    right: 2.5rem;
-    top: 1rem;
-    z-index: 10;
+    &[data-location='home'] {
+      position: absolute;
+      right: 2.5rem;
+      top: 1rem;
+      z-index: 10;
+      width: 5rem;
+    }
+    &[data-location='article'] {
+      position: unset;
+      right: unset;
+      top: unset;
+      z-index: unset;
+    }
   }
 
   #theme__button {
-    --theme-border-radius: 1.5rem;
+    --theme-border-radius: 0.7rem;
+    border: 1px solid var(--border);
 
-    width: 6rem;
-    height: 6rem;
-    border: none;
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 1/1;
     cursor: pointer;
-    border-radius: var(--theme-border-radius);
-    background-color: var(--brandSecondaryBG);
-    color: var(--brandTertiaryTXT);
+    color: #687076;
+    background-color: #05294d07;
+    border-radius: 0.6rem;
+
+    span {
+      font-size: 2.1rem;
+    }
 
     &[data-visible='true'] {
       border-bottom-right-radius: 0;
       border-bottom-left-radius: 0;
+      border-bottom: none;
     }
   }
 
   #theme__picker {
-    --themePickerBG: #fff;
-    --themePickerBG: #1b1b1b;
-    width: 6rem;
+    width: 100%;
     height: fit-content;
-    border-bottom-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
-    background-color: var(--brandSecondaryBG);
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1rem;
     display: none;
-    padding-block: 2rem;
-    border: 0.2rem solid var(--brandSecondaryBG);
+    border: 1px solid var(--border);
+    background-color: var(--theme-main);
+    padding-top: 1rem;
 
     &[data-visible='true'] {
       display: flex;
@@ -89,15 +105,15 @@
     }
 
     label {
-      width: 4.5rem;
-      height: 4.5rem;
-      border-radius: 50%;
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 0.6rem;
       cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 1rem;
-      border: 0.2rem solid var(--themePickerBorderColor);
+      border: 1px solid var(--border);
 
       &[for='theme_light'] {
         background: linear-gradient(-45deg, #fff 50%, #101b3b 5%);
@@ -111,7 +127,7 @@
         background-color: var(--brandPrimaryBG);
 
         &:after {
-          content: 'AUTO';
+          content: 'A';
           font-size: 1.1rem;
           font-weight: 600;
           color: var(--brandTertiaryTXT);
