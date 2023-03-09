@@ -4,6 +4,7 @@
   import '../../../app.scss';
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
+  import Searchbar from '$lib/search/Searchbar.svelte';
 
   // --- themes ---
   import Theme from '$lib/theme/Theme.svelte';
@@ -101,6 +102,10 @@
       </div>
 
         <Theme />
+      <div id="info-bar">
+        <Searchbar />
+      </div>
+
       <content class="markdown-body">
         <slot />
       </content>
@@ -131,7 +136,44 @@
     min-height: 120vh;
     display: grid;
     grid-template-columns: 38rem 4fr;
-    grid-template-rows: 18fr 12rem;
+    grid-template-rows: 6rem 18fr 12rem;
+
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 10rem 18fr 12rem;
+    }
+  }
+
+  #info-bar {
+    width: 100%;
+    height: 100%;
+    background: var(--wikiBG);
+    grid-column: 2;
+    gap: 1rem;
+    grid-row: 1;
+    border-bottom: 1px solid var(--color-border-muted);
+    position: sticky;
+    top: 0;
+    padding-inline: 8rem;
+    padding-block: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 800px) {
+      grid-row: unset;
+      grid-column: unset;
+      display: none;
+    }
+  }
+
+  content {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  footer {
+    grid-row: 3;
+    grid-column: 2;
   }
 
   #nav__list-bar {
@@ -214,9 +256,16 @@
     padding: 10%;
     gap: 3rem;
     position: sticky;
-    z-index: 99;
     top: 0;
     overflow-y: auto;
+
+    @media only screen and (max-width: 800px) {
+      grid-row: unset;
+      grid-column: unset;
+      display: none;
+      grid-column: 2;
+      height: 100%;
+    }
   }
 
   nav::-webkit-scrollbar {
