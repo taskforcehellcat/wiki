@@ -28,11 +28,11 @@ _Bemerkung_: Panzerbesatzungen und Panzergrenadiere, die gemeinsam auf einem Sch
 
 ### Pioniertruppe
 
-Die Truppengattung der Pioniertruppe wird von ? organisiert und verwaltet. Sie fördert die Beweglichkeit und Durchhaltefähigkeit der Kampftruppen und hemmt die der feindlichen Truppen. Durch das Legen temporärer Brücken, das Räumen von Minenfeldern und das Beseitigen von Trümmern und Barrikaden stellen sie sicher, dass eigene Truppen Geländeabschnitte sicher überqueren können. Darüber hinaus führt die Pioniertruppe die Feldinstandsetzung von Fahrzeugen durch. Sie umfasst die Rollen des [Kampfpioniers](../logistik/kampfpionier/) und des [EOD](../logistik/eod/).
+Die Truppengattung der Pioniertruppe wird von Mav organisiert und verwaltet. Sie fördert die Beweglichkeit und Durchhaltefähigkeit der Kampftruppen und hemmt die der feindlichen Truppen. Durch das Legen temporärer Brücken, das Räumen von Minenfeldern und das Beseitigen von Trümmern und Barrikaden stellen sie sicher, dass eigene Truppen Geländeabschnitte sicher überqueren können. Darüber hinaus führt die Pioniertruppe die Feldinstandsetzung von Fahrzeugen durch. Sie umfasst die Rollen des [Kampfpioniers](../logistik/kampfpionier/) und des [EOD](../logistik/eod/).
 
 ### Fliegertruppe
 
-Die Truppengattung der Fliegertruppe wird von ? organisiert und verwaltet. Sie versorgt die Kampftruppen mit Verbrauchsmaterial, führt die (Nach-) Verlegung von Kräften durch und liefert Luftnahunterstützung. Dazu bedienen sie [~~Transport-~~](../fuhrpark/transporthubschrauber) und [~~Kampfhubschrauber~~](../fuhrpark/kampfhubschrauber). Zur Fliegertruppe zählen die Rollen des [~~Transportpiloten~~](../logistik/transportpilot/) und des [~~Kampfpiloten~~](../logistik/kampfpilot/).
+Die Truppengattung der Fliegertruppe verfügt aktuell über keinen Truppengattungsleiter. Sie versorgt die Kampftruppen mit Verbrauchsmaterial, führt die (Nach-) Verlegung von Kräften durch und liefert Luftnahunterstützung. Dazu bedienen sie [~~Transport-~~](../fuhrpark/transporthubschrauber) und [~~Kampfhubschrauber~~](../fuhrpark/kampfhubschrauber). Zur Fliegertruppe zählen die Rollen des [~~Transportpiloten~~](../logistik/transportpilot/) und des [~~Kampfpiloten~~](../logistik/kampfpilot/).
 
 ## Einsatz- und Führungsunterstützung
 
@@ -42,8 +42,8 @@ Die Truppengattung des Sanitätsdienstes wird von Emmi organisiert und verwaltet
 
 ### Logistiktruppe
 
-Die Truppengattung der Logistiktruppe wird von ? organisiert und verwaltet. Sie befasst sich mit dem Nachschub, dem Transport und der Instandsetzung. Mit Land- und Wasserfahrzeugen stellen sie sicher, dass den Kampftruppen ausreichend Verbrauchsmaterial (Munition, Sanitätsmaterial), Ersatzreifen und -ketten, Treibstoff und Fahrzeugmunition zur Verfügung steht. Darüber hinaus übernimmt die Logistiktruppe die (Nach-) Verlegung von Nachzüglern über den Landweg und sorgt für die Instandsetzung von Fahrzeugen. Die Logistiktruppe umfasst die Rolle des [~~Logistikers~~](../logistik/logistiker).
+Die Truppengattung der Logistiktruppe verfügt aktuell über keinen Truppengattungsleiter. Sie befasst sich mit dem Nachschub, dem Transport und der Instandsetzung. Mit Land- und Wasserfahrzeugen stellen sie sicher, dass den Kampftruppen ausreichend Verbrauchsmaterial (Munition, Sanitätsmaterial), Ersatzreifen und -ketten, Treibstoff und Fahrzeugmunition zur Verfügung steht. Darüber hinaus übernimmt die Logistiktruppe die (Nach-) Verlegung von Nachzüglern über den Landweg und sorgt für die Instandsetzung von Fahrzeugen. Die Logistiktruppe umfasst die Rolle des [~~Logistikers~~](../logistik/logistiker).
 
 ### Aufklärungstruppe
 
-Die Truppengattung der Aufklärungstruppe wird von ? verwaltet und organisiert. Ihre Hauptaufgabe ist die Feldaufklärung feindlicher Truppenbewegungen während und außerhalb des Gefechts. Darüber hinaus werden Artilleriefeuer und Luftnahunterstützung durch die Aufklärungstruppe koordiniert und organisiert. Die Aufklärungstruppe umfasst die Rollen des [Scharfschützen](../aufklaerer/scharfschuetze), des [Beobachters](../aufklaerer/spotter) und des [FAC](../aufklaerer/jtac).
+Die Truppengattung der Aufklärungstruppe verfügt aktuell über keinen Truppengattungsleiter. Ihre Hauptaufgabe ist die Feldaufklärung feindlicher Truppenbewegungen während und außerhalb des Gefechts. Darüber hinaus werden Artilleriefeuer und Luftnahunterstützung durch die Aufklärungstruppe koordiniert und organisiert. Die Aufklärungstruppe umfasst die Rollen des [Scharfschützen](../aufklaerer/scharfschuetze), des [Beobachters](../aufklaerer/spotter) und des [FAC](../aufklaerer/jtac).
