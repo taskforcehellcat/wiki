@@ -8,7 +8,10 @@ nav_index: 6
     import Keys from "$lib/wikitools/Keys.svelte";
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
     import { keysLayout } from '$lib/stores';
+    import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
 </script>
+
+<Wipbanner />
 
 <!-- Debugging only. If you want to use two switches for language and keyboard each, give me a hint -- Emmy -->
 
