@@ -20,8 +20,9 @@
   ]);
 
   const mapWinMac = new Map([
-    ['STRG', 'CMD'],
-    ['CTRL', 'CMD']
+    ['ALT', 'OPT'],
+    ['WIN', 'CMD'],
+    ['ENTER', 'RETURN']
   ]);
 
   let keysArrayTranslated = keysArray;
