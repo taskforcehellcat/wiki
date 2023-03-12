@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import { afterNavigate } from '$app/navigation';
+  import { afterUpdate } from 'svelte';
   export let data;
 
   const umlautReplacements = [
@@ -14,7 +15,7 @@
     if (window.location.hash) {
       let hash = window.location.hash.replace('#', '');
 
-      if (hash.length) {
+      if (hash.length > 0) {
         // NOTE: i dont know why this is necessary…
         // replace escape sequences by unicode characters
         for (const [k, v] of umlautReplacements) {
@@ -22,6 +23,9 @@
         }
         document.getElementById(hash).scrollIntoView();
       }
+    } else {
+      // scroll to top if there is no hash provided
+      document.getElementById('main').scrollTop = 0;
     }
   });
 
