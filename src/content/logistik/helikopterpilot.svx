@@ -1,7 +1,0 @@
----
-title: Helikopterpilot
-date: '2022-11-15'
-nav_index: 3
----
-
-Dedizierte Helikopterpiloten werden in der Taskforce Hellcat aktuell nicht eingesetzt.

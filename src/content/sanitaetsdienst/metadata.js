@@ -1,4 +1,4 @@
 export const config = {
-  nav_index: 4,
+  nav_index: 7,
   title: 'Sanitätsdienst'
 };

@@ -1,4 +1,4 @@
 export const config = {
-  nav_index: 8,
+  nav_index: 10,
   title: 'Fuhrpark'
 };

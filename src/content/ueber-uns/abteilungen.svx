@@ -1,57 +1,49 @@
 ---
 title: Abteilungen
-date: '2022-11-15'
+date: '2023-03-07'
 nav_index: 2
 ---
 
-## Allgemeines
+Die Task Force Hellcat besteht aus drei Abteilungen, die verschiedene Truppengattungen umfassen. Auf dieser Seite werden die Truppengattungen der Abteilungen näher erläutert.
 
-Die Task Force Hellcat ist in drei Abteilungen untergliedert, die jeweils durch einen Abteilungsleiter organisiert und verwaltet werden. Alle Abteilungen umfassen mehrere Truppengattungen, die auf dieser Seite erläutert werden.
+<!-- (TODO: Insert tfhc structure diagram here?) -->
 
-## Streitkräfte
+## Kampftruppen
 
-Die Abteilung der Streitkräfte wird von Leon organisiert und verwaltet. Sie umfasst insgesamt vier Truppengattungen: Die (motorisierte) Infanterie, den Sanitätsdienst und die Aufklärung.
+### Infanterie
 
-### (Motorisierte) Infanterie
+Die Truppengattung der Infanterie wird von Leon organisiert und verwaltet. Sie umfasst mit Handwaffen ausgerüstete, sich zu Fuß bewegende und kämpfende Soldaten, die in [Trupps](../ausbildung/truppenteile#trupp) oder [Gruppen](../ausbildung/truppenteile#gruppe) agieren. Zur Infanterie zählen die Rollen des [Schützen](../streitkraefte/schuetze), des [MG-Schützen](../streitkraefte/mg-schuetze), des [PA-Schützen](../streitkraefte/pa-schuetze) und des [Präzisionsschützen](../streitkraefte/praezisionsschuetze).
 
-Die Infanterie setzt sich aus Schützen, MG-Schützen, AT-Schützen, Präzisionsschützen zusammen. Ihre Bewegung und der Feuerkampf erfolgen ausschließlich zu Fuß. Alternativ können sich die Soldaten auf Fahrzeugen aufgesessen bewegen, auch motorisierte Infanterie genannt. Die Infanterie kann vielseitig eingesetzt werden. Sie erweist sich besonders im urbanen Gebiet und unwegsamen Gelände als effektiv, da Fahrzeuge dort nur eingeschränkt beweglich sind.
+_Bemerkung_: Infanterie, die aufgesessen auf [~~geschützten Fahrzeugen~~](../fuhrpark/geschuetzte-fahrzeuge) agiert, nennt man **motorisierte Infanterie**.
 
-### Sanitätsdienst
+### Panzertruppen
 
-Der Sanitätsdienst setzt sich aus Sanitätern und Ärzten zusammen. Er wird von ptolemy organisiert und verwaltet. Sanitäter sind in Trupps und Gruppen der Infanterie vertreten und übernehmen die fortgeschrittene Versorgung von verwundeten Soldaten im Feld. Ärzte sind vorwiegend bei Spezialanwendungen wie dem MEDEVAC oder dem BAT anzutreffen.
+Die Panzertruppen sind ein Truppengattungsverbund aus drei Truppengattungen: Die Panzertruppe, die Panzergrenadiertruppe und die Artillerietruppe. Die Truppengattungen dieses Verbundes werden von Kevin organisiert und verwaltet.
 
-### Aufklärung
+Die Truppengattung der **_Panzertruppe_** setzt sich aus Panzerbesatzungen zusammen, die [~~Kampfpanzer~~](../fuhrpark/kampfpanzer) bedienen. Die Truppengattung der **_Panzergrenadiertruppe_** setzt sich aus Panzerbesatzungen und Infanteristen (hier: _Panzergrenadieren_) zusammen, die gemeinsam auf einem [~~Schützenpanzer~~](../fuhrpark/schuetzenpanzer) agieren. Die Truppengattung der **_Artillerietruppe_** setzt sich aus Panzerbesatzungen zusammen, die [~~Artilleriepanzer~~](../fuhrpark/artilleriepanzer) und [~~Raketenwerfer-Artilleriesysteme~~](../fuhrpark/raketenwerferartillerie) bedienen. Eine Panzerbesatzung besteht aus einem [Kommandanten](../panzertruppen/kommandant), einem [Richtschützen](../panzertruppen/richtschuetze) und einem [Fahrer](../panzertruppen/fahrer).
 
-Die Aufklärung setzt sich aus Scharfschützen, Spottern und JTACs zusammen. Scharfschützen und Spotter sind meist im Trupp oder Buddy-Team zur Aufklärung oder Bekämpfung feindlicher Kräfte auf große Distanzen anzutreffen. JTACs sind entweder im Aufklärungstrupp oder in Infanteriegruppen vertreten. Ihre Hauptaufgabe ist die Koordinierung vom CAS auf feindliche Ziele.
+_Bemerkung_: Panzerbesatzungen und Panzergrenadiere, die gemeinsam auf einem Schützenpanzer agieren, nennt man **mechanisierte Infanterie**.
 
-## Panzertruppen
-
-Die Abteilung der Streitkräfte wird von Kevin organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen: Die mechanisierte Infanterie, die Kampfpanzer und die Artillerie. Alle Truppengattungen der Panzertruppen umfassen drei Rollen: Den Kommandanten, den Richtschützen und den Fahrer.
-
-### Mechanisierte Infanterie
-
-Die mechanisierte Infanterie setzt sich aus Panzerbesatzungen und Panzergrenadieren zusammen, wobei die Panzergrenadiere die gleichen Rollen vertreten wie die Infanterie. Sie vereinigt die Vorteile der Infanterie mit den Vorteilen der Schützenpanzer in einer Truppengattung.
-
-### Kampfpanzer
-
-Die Soldaten der Kampfpanzer bedienen ausschließlich Fahrzeuge mit guter Panzerung und überwältigender Feuerkraft. Kampfpanzer sind besonders gut gegen feindliche Panzerverbände und befestigte Stellungen geeignet, erweisen sich jedoch als äußerst ineffektiv im urbanen Gelände. Oft agieren Kampfpanzer gemeinsam mit der mechanisierten Infanterie, um die Schwachstellen der Kampfpanzer zu kompensieren.
-
-### Panzerartillerie
-
-Die Artillerie setzt Panzerhaubitzen mit schweren Geschützen ein. Sie wirken auf große Distanz mittels gelenktem oder ungelenktem Steilfeuer auf feindliche Kräfte oder Stellungen. Um eine präzise Wirkung zu erzielen erfordert es eine gute Kommunikation zu eigenen Kräften im Operationsraum, die der Artillerie den Feuerbefehl erteilen.
-
-## Logistik
-
-Die Abteilung der Logistik wird von ? organisiert und verwaltet. Sie umfasst insgesamt drei Truppengattungen: Die Instandsetzung, die Versorgung und die Luftlogistik.
+## Kampfunterstützung
 
 ### Pioniertruppe
 
-Die Pioniertruppe setzt sich aus Pionieren und Kampfpionieren zusammen. Die Hauptaufgabe der Pioniere ist die Wartung, Bergung und Instandsetzung eigener Fahrzeuge. Zusätzlich kann es auch zu Spezialanwendungen kommen, wie zum Beispiel der Einsatz eines Brückenlegepanzers durch die Pioniertruppe.
+Die Truppengattung der Pioniertruppe wird von Mav organisiert und verwaltet. Sie fördert die Beweglichkeit und Durchhaltefähigkeit der Kampftruppen und hemmt die der feindlichen Truppen. Durch das Legen temporärer Brücken, das Räumen von Minenfeldern und das Beseitigen von Trümmern und Barrikaden stellen sie sicher, dass eigene Truppen Geländeabschnitte sicher überqueren können. Darüber hinaus führt die Pioniertruppe die Feldinstandsetzung von Fahrzeugen durch. Sie umfasst die Rollen des [Kampfpioniers](../logistik/kampfpionier/) und des [EOD](../logistik/eod/).
 
-### Versorgung
+### Fliegertruppe
 
-Die Truppengattung der Versorgung befasst sich mit der Versorgung anderer Truppenteile mit Bodenfahrzeugen. Häufig transportiert werden Güter wie Munition, Treibstoff und Verbrauchsmaterialien. Gegebenenfalls kann die Versorgung auch eigene Kräfte ins Feld verlegen.
+Die Truppengattung der Fliegertruppe verfügt aktuell über keinen Truppengattungsleiter. Sie versorgt die Kampftruppen mit Verbrauchsmaterial, führt die (Nach-) Verlegung von Kräften durch und liefert Luftnahunterstützung. Dazu bedienen sie [~~Transport-~~](../fuhrpark/transporthubschrauber) und [~~Kampfhubschrauber~~](../fuhrpark/kampfhubschrauber). Zur Fliegertruppe zählen die Rollen des [~~Transportpiloten~~](../logistik/transportpilot/) und des [~~Kampfpiloten~~](../logistik/kampfpilot/).
 
-### Luftversorgung
+## Einsatz- und Führungsunterstützung
 
-Die Luftlogistik befasst sich im Kern mit der Versorgung anderer Truppenteile mit Luftfahrzeugen. Transportierte Güter sind hierbei Munition, Treibstoff und Verbrauchsmaterialien. Die Luftversorgung kann sich ebenfalls mit der Verlegung eigener Kräfte ins Feld befassen.
+### Sanitätsdienst
+
+Die Truppengattung des Sanitätsdienstes wird von Emmi organisiert und verwaltet. Sie befasst sich mit der medizinischen Behandlung, Evakuierung und Endversorgung verwundeter Soldaten. Überwiegend sind Mitglieder des Sanitätsdienstes in die Infanterie eingegliedert, allerdings werden sie auch bei speziellen Unterstützungselementen wie dem beweglichen Arzttrupp (kurz BAT) oder dem MEDEVAC (<u>med</u>ical <u>evac</u>uation) eingesetzt. Der [Sanitäter](../sanitaetsdienst/sanitaeter/) ist die vielfältige Rolle des Sanitätsdienstes.
+
+### Logistiktruppe
+
+Die Truppengattung der Logistiktruppe verfügt aktuell über keinen Truppengattungsleiter. Sie befasst sich mit dem Nachschub, dem Transport und der Instandsetzung. Mit Land- und Wasserfahrzeugen stellen sie sicher, dass den Kampftruppen ausreichend Verbrauchsmaterial (Munition, Sanitätsmaterial), Ersatzreifen und -ketten, Treibstoff und Fahrzeugmunition zur Verfügung steht. Darüber hinaus übernimmt die Logistiktruppe die (Nach-) Verlegung von Nachzüglern über den Landweg und sorgt für die Instandsetzung von Fahrzeugen. Die Logistiktruppe umfasst die Rolle des [~~Logistikers~~](../logistik/logistiker).
+
+### Aufklärungstruppe
+
+Die Truppengattung der Aufklärungstruppe verfügt aktuell über keinen Truppengattungsleiter. Ihre Hauptaufgabe ist die Feldaufklärung feindlicher Truppenbewegungen während und außerhalb des Gefechts. Darüber hinaus werden Artilleriefeuer und Luftnahunterstützung durch die Aufklärungstruppe koordiniert und organisiert. Die Aufklärungstruppe umfasst die Rollen des [Scharfschützen](../aufklaerer/scharfschuetze), des [Beobachters](../aufklaerer/spotter) und des [FAC](../aufklaerer/jtac).
