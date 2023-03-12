@@ -4,10 +4,8 @@ date: '2022-11-15'
 nav_index: 5
 ---
 
-## Rollenprofil
+<script>
+    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
+</script>
 
-## Aufgaben
-
-## Ausrüstung
-
-## Fertigkeiten
+<Wipbanner />

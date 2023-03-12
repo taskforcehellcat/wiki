@@ -5,4 +5,10 @@ date: '2022-11-15'
 nav_index: 2
 ---
 
+<script>
+    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
+</script>
+
+<Wipbanner />
+
 Das Aufgabenfeld des EOD wird in der Taskforce Hellcat aktuell vom [Kampfpionier](/articles/logistik/kampfpionier) abgedeckt.

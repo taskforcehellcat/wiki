@@ -3,3 +3,9 @@ title: Logistiker
 date: '2022-11-15'
 nav_index: 1
 ---
+
+<script>
+    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
+</script>
+
+<Wipbanner />
