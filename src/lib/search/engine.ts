@@ -81,13 +81,13 @@ export class Search {
       if (titleShort.toLocaleLowerCase().includes(query)) {
         const crumbs = [
           { display: dirNameToDisplayName.get(article.directory), link: '/' },
-          { display: titleShort, link: `/articles/${article.directory}/${article.id}` }
+          { display: titleShort, link: `/${article.directory}/${article.id}` }
         ];
         hits.push(new Hit('article', crumbs, titleShort, 0));
       } else if (title.toLocaleLowerCase().includes(query)) {
         const crumbs = [
           { display: dirNameToDisplayName.get(article.directory), link: '/' },
-          { display: title, link: `/articles/${article.directory}/${article.id}` }
+          { display: title, link: `/${article.directory}/${article.id}` }
         ];
         hits.push(new Hit('article', crumbs, title, 0));
       }
@@ -122,8 +122,8 @@ export class Search {
         if (heading.toLocaleLowerCase().includes(query)) {
           const crumbs = [
             { display: dirNameToDisplayName.get(article.directory), link: '/' },
-            { display: title, link: `/articles/${article.directory}/${article.id}` },
-            { display: heading, link: `/articles/${article.directory}/${article.id}#${id}` }
+            { display: title, link: `/${article.directory}/${article.id}` },
+            { display: heading, link: `/${article.directory}/${article.id}#${id}` }
           ];
 
           hits.push(new Hit('heading', crumbs, title, 0));

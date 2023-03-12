@@ -5,7 +5,7 @@ date: '2023-03-02'
 nav_index: 7
 ---
 
-Diese Prozedur soll eine Hilfestellung sein und ist nur beispielhaft. Sie konzentriert sich auf die gewünschten Effekte, welche ggf. auf unterschiedlichen Wegen erreicht werden können, siehe [Medikamente](/articles/sanitaetsdienst/medikamente).
+Diese Prozedur soll eine Hilfestellung sein und ist nur beispielhaft. Sie konzentriert sich auf die gewünschten Effekte, welche ggf. auf unterschiedlichen Wegen erreicht werden können, siehe [Medikamente](/sanitaetsdienst/medikamente).
 
 ## Wundversorgung
 

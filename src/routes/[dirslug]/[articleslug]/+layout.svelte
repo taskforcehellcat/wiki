@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '../../../../app.scss';
+  import '../../../app.scss';
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
 
