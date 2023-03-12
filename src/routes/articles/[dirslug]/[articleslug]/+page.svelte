@@ -1,6 +1,5 @@
 <script lang="ts">
   import { afterNavigate } from '$app/navigation';
-  import { afterUpdate } from 'svelte';
   export let data;
 
   const umlautReplacements = [
