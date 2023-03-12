@@ -5,14 +5,16 @@ import { searchResults } from '$lib/search/stores';
 // i'll implement it this way for the time being and mark it TODO.
 
 const dirNameToDisplayName = new Map([
-  ['ueber-uns', 'Über uns'],
+  ['aufklaerungstruppe', 'Aufklärungstruppe'],
   ['ausbildung', 'Ausbildung'],
-  ['sanitaetsdienst', 'Sanitätsdienst'],
-  ['streitkraefte', 'Streitkräfte'],
+  ['fliegertruppe', 'Fliegertruppe'],
+  ['fuhrpark', 'Fuhrpark'],
+  ['infanterie', 'Infanterie'],
+  ['logistiktruppe', 'Logistiktruppe'],
   ['panzertruppen', 'Panzertruppen'],
-  ['logistik', 'Logistik'],
-  ['aufklaerer', 'Aufklärer'],
-  ['fuhrpark', 'Fuhrpark']
+  ['pioniertruppe', 'Pioniertruppe'],
+  ['sanitaetsdienst', 'Sanitätsdienst'],
+  ['ueber-uns', 'Über uns']
 ]);
 
 export class Hit {
