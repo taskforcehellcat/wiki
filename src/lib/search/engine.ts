@@ -94,6 +94,15 @@ export class Search {
 
       // now for heading matches...
 
+      /**
+       * ok so about those regexes
+       * i dont really know why they work
+       * i am afraid to touch them
+       * i tried to clean it up but i just broke everything
+       * please dont make me rework this
+       * ´.+´ might look sloppy and it is but it works for now
+       */
+
       // get all the headings with their ids
       const headingRegex = /<h\d ?(id=".+"|class=".+")?>.+<\/h\d>/g;
       const headingsRaw = html.match(headingRegex) ?? [];
@@ -102,7 +111,7 @@ export class Search {
         let title = str.replaceAll(/<h\d id=".+">/g, '');
         title = title.replaceAll(/<\/h\d>/g, '');
 
-        let id = str.match(/id=".+"/g)[0] ?? '';
+        let id = str.match(/id="[^"]+"/g)[0] ?? '';
         id = id.replace('id=', '');
         id = id.replaceAll('"', '');
         return { heading: title, id: id };
