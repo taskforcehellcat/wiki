@@ -9,7 +9,9 @@ nav_index: 4
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
 </script>
 
-Die Befehlsausgabe erfolgt nach der Gliederung, Lage, Auftrag, Durchführung, Einsatzunterstützung und Führungsunterstützung (kurz LADEF). Diese Gliederung wird auf dieser Seite erläutert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage, Auftrag und Durchführung (kurz LAD), da die Punkte Einsatz- und Führungsunterstützung eher für Führungspersonal bedeutsam sind.
+Die Befehlsausgabe erfolgt nach der Gliederung Lage, Auftrag, Durchführung, Einsatzunterstützung und Führungsunterstützung (kurz LADEF). Diese Gliederung wird auf dieser Seite erläutert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage, Auftrag und Durchführung (kurz LAD), da die Punkte Einsatz- und Führungsunterstützung eher für Führungspersonal bedeutsam sind.
+
+Die Befehlsausgabe ist der Hauptbestandteil eines jeden Briefing vor Operationsbeginn. Sie enthält alle operationsrelevanten Informationen, die zur Bewältigung der anstehenden Operation bekannt sein müssen. Jede Befehlsausgabe enthält einen militärischen Befehl, der in ein Befehlsschema gegliedert ist.
 
 ## Lage
 
