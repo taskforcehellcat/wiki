@@ -131,7 +131,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: min(90%, 80rem);
-      height: 90%;
+      max-height: 90%;
       background-color: var(--popupBG);
       border-radius: 0.5rem;
       border: 1px solid var(--popupBorder);
