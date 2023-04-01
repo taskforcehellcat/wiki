@@ -141,9 +141,9 @@
       gap: 4rem;
 
       > #popup__header {
-        display: flex;
-        justify-content: flex-end;
         padding: 1rem;
+        position: absolute;
+        right: 0;
 
         > #popup__close {
           display: flex;
@@ -175,6 +175,7 @@
         padding-inline: 5rem;
         padding-bottom: 5rem;
         overflow-y: overlay;
+        padding-top: 5rem;
 
         #price {
           display: flex;
