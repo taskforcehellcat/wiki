@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Popup from '$lib/aprilfools/Popup.svelte';
+
   import '../../../../app.scss';
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
@@ -47,6 +49,8 @@
   /** @type {import('./$types').LayoutData} */
   export let data;
 </script>
+
+<Popup />
 
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
