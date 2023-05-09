@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Popup from '$lib/aprilfools/Popup.svelte';
+
   import '../../../app.scss';
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
@@ -48,6 +50,8 @@
   export let data;
 </script>
 
+<Popup />
+
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
     <div id="wiki">
@@ -63,18 +67,20 @@
         </button>
 
         <!-- navigation items -->
-        <div class="nav__list-title">navigation</div>
-        <div id="nav__list-wrapper">
-          <div id="nav__list-bar">
-            <!-- <div id="nav__list-bar-thumb" /> -->
-          </div>
+        {#if anchors.length > 0}
+          <div class="nav__list-title">navigation</div>
+          <div id="nav__list-wrapper">
+            <div id="nav__list-bar">
+              <!-- <div id="nav__list-bar-thumb" /> -->
+            </div>
 
-          <div id="wiki-nav__list">
-            {#each anchors as anchor}
-              <a href={anchor.link}>{anchor.text}</a>
-            {/each}
+            <div id="wiki-nav__list">
+              {#each anchors as anchor}
+                <a href={anchor.link}>{anchor.text}</a>
+              {/each}
+            </div>
           </div>
-        </div>
+        {/if}
         <div class="nav__list-title">wiki</div>
         <Nav menu={data.menu} />
         <a href="/" id="return-button">Zurück</a>
@@ -91,16 +97,18 @@
         <slot />
       </main>
 
-      <footer>
-        <p>
-          zuletzt bearbeitet: {new Date($page.data.date).toLocaleString('de-DE', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-          })}
-        </p>
-      </footer>
+      {#if $page.status == 200}
+        <footer>
+          <p>
+            zuletzt bearbeitet: {new Date($page.data.date).toLocaleString('de-DE', {
+              weekday: 'long',
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric'
+            })}
+          </p>
+        </footer>
+      {/if}
     </div>
   </div>
 {/if}
