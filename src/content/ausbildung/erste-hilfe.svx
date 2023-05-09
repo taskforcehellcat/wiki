@@ -126,7 +126,7 @@ Da nur Sanitäter Infusionen legen können, kann man als Ersthelfer lediglich ve
 
 _Hinweise zum Tourniquet:_ Das Tourniquet ist mehrmals verwendbar, nachdem es wieder abgenommen wurde. Es wird dem Inventar des Spielers hinzugefügt, der es abnimmt. Daher sollte man gelegentlich prüfen, ob man noch seine Tourniquets beisammen hat.
 
-Wenn ein Tourniquet angelegt ist, kann am betreffenden Körperteil kein Puls genommen werden, Pulsoximeter geben keine sinnvollen Ablesewerte aus. Auch die Gabe von Medikamenten mittels Autoinjektor oder Infusionen über einen [Zugang](/articles/sanitaetsdienst/blutkreislauf#ausgleich-von-blutverlust) funktionieren nicht.
+Wenn ein Tourniquet angelegt ist, kann am betreffenden Körperteil kein Puls genommen werden, Pulsoximeter geben keine sinnvollen Ablesewerte aus. Auch die Gabe von Medikamenten mittels Autoinjektor oder Infusionen über einen [Zugang](/sanitaetsdienst/blutkreislauf#ausgleich-von-blutverlust) funktionieren nicht.
 
 _Achtung:_ Hat man versehentlich ein Medikament in ein Körperteil mit Tourniquet gespritzt, ist es am sinnvollsten, das Tourniquet abzunehmen. Das Medikament wurde verabreicht, durch das Tourniquet gelangt es lediglich nicht in den Kreislauf. Belässt man das Tourniquet am betreffenden Körperteil und verabreicht eine weitere Gabe über ein anderes Körperteil, riskiert man eine Überdosis, sobald das Tourniquet doch abgenommen wird.
 
@@ -158,6 +158,6 @@ Der Herzstillstand selbst kann effektiv nur von Sanitätern behandelt werden, es
 
 ## Siehe auch
 
-- umfänglicher [Leitfaden](/articles/sanitaetsdienst/behandlungsleitfaden) für alle üblichen Behandlungsschritte (ausgelegt für Sanitäter)
-- Einzelheiten zum [Blutkreislauf](/articles/sanitaetsdienst/blutkreislauf) (Wundverschluss, Herzstillstand)
-- Einzelheiten zur [Atmung](/articles/sanitaetsdienst/atmung) (Blutsauerstoff, Lungenverletzungen)
+- umfänglicher [Leitfaden](/sanitaetsdienst/behandlungsleitfaden) für alle üblichen Behandlungsschritte (ausgelegt für Sanitäter)
+- Einzelheiten zum [Blutkreislauf](/sanitaetsdienst/blutkreislauf) (Wundverschluss, Herzstillstand)
+- Einzelheiten zur [Atmung](/sanitaetsdienst/atmung) (Blutsauerstoff, Lungenverletzungen)

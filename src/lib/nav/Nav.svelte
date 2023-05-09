@@ -32,7 +32,7 @@
         <i class="material-icons-rounded noselect">expand_more</i>
       </span>
       {#each nav.entries as article}
-        <a href="/articles/{nav.id}/{article.id}">{shortName(article)}</a>
+        <a href="/{nav.id}/{article.id}">{shortName(article)}</a>
       {/each}
     </div>
   {/each}

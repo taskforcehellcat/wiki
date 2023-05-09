@@ -14,11 +14,11 @@ nav_index: 1
 
 ## Rollenprofil
 
-Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC](/articles/sanitaetsdienst/medevac)s mitzuwirken.
+Im Gefechtsgeschehen sind Verletzungen kaum zu vermeiden. Damit der Trupp dennoch schlagfertig bleibt, gibt es Sanitäter, die den Schaden ungeschehen machen können. Dafür muss ein Sanitäter viele Handlungsabfolgen im Kopf haben, etwa wenn es darum geht, die Situation eines Patienten schnell richtig einzuschätzen oder Komplikationen wie ein Herzstillstand vorliegen. Dazu verfügt ein Sanitäter über eine breite Ausstattung mit Diagnosewerkzeugen, Bandagen, Medikamenten und Infusionen und ein genauso breites Wissen, wenn es um deren richtige Verwendung geht. Auch liegt es in seiner Verantwortung, der Truppführung den Gesamtzustand seines Trupps zu kommunizieren und bei der Bereitstellung von [MEDEVAC](/sanitaetsdienst/medevac)s mitzuwirken.
 
 ## Fähigkeiten
 
-Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](./../ausbildung/erste-hilfe) fortgeschrittene Behandlungen, welche andere Soldaten nicht leisten können.
+Sanitäter beherrschen neben den Grundlagen der [Ersten Hilfe](/ausbildung/erste-hilfe) fortgeschrittene Behandlungen, welche andere Soldaten nicht leisten können.
 
 Konkret können sie:
 
@@ -39,15 +39,15 @@ Die folgenden Materialien sind zum einmaligen Gebrauch bestimmt.
 
 #### AAT-Kit
 
-gebraucht zur [Behandlung von Lungenverletzungen](/articles/sanitaetsdienst/atmung#lungen).
+gebraucht zur [Behandlung von Lungenverletzungen](/sanitaetsdienst/atmung#lungen).
 
 #### Field Blood Transfusion Kit (dt. Feldtransfusionsset)
 
-erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Siehe dazu [Transfusionen im Feld](/articles/sanitaetsdienst/blutkreislauf#transfusionen-im-feld).
+erlaubt es, im Feld Blut abzunehmen und Bedürftigen zu verabreichen. Siehe dazu [Transfusionen im Feld](/sanitaetsdienst/blutkreislauf#transfusionen-im-feld).
 
 #### Chest Seal (dt. Thoraxverschlusspflaster)
 
-ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe [Behandlung von Lungenverletzungen](/articles/sanitaetsdienst/atmung#lungen).
+ein großes Pflaster mit einem Ein-Weg-Ventil. Das Ventil lässt Luft und Flüssigkeiten aus dem Brustkorb entweichen und verhindert so einen Pneumothorax, siehe [Behandlung von Lungenverletzungen](/sanitaetsdienst/atmung#lungen).
 
 #### 16g IV
 
@@ -59,11 +59,11 @@ _First Access for Shock and Trauma IO,_ ein intraossärer (IO) Zugang am Brustbe
 
 #### Skalpel
 
-Gebraucht, um komplizierte Brüche zu operieren, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+Gebraucht, um komplizierte Brüche zu operieren, siehe [Chirurgie](/sanitaetsdienst/chirurgie#brüche).
 
 #### Bone Plate (dt. Knochenplatte)
 
-Eine Metallplatte, die in den gebrochenen Knochen geschraubt wird. Gebraucht, um offene Reduktionen bei komplizierten Brüchen durchzuführen, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+Eine Metallplatte, die in den gebrochenen Knochen geschraubt wird. Gebraucht, um offene Reduktionen bei komplizierten Brüchen durchzuführen, siehe [Chirurgie](/sanitaetsdienst/chirurgie#brüche).
 
 ### Gebrauchsgegenstände
 
@@ -89,7 +89,7 @@ erlaubt die endotracheale Absaugung von Erbrochenem und befreit so die Atemwege.
 
 #### AED / AED-X
 
-_Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe auch [Behandlung von Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt). Die AED-X-Ausführung gestattet zusätzlich das Monitoring von <Tooltip text="Blutdruck, Herzrate und Sauerstoffsättigung">Vitalparametern</Tooltip>.
+_Automatisierter externer Defibrillator_. Zur Behandlung von Arryhthmien, siehe auch [Behandlung von Herzstillständen](/sanitaetsdienst/blutkreislauf#herzinfarkt). Die AED-X-Ausführung gestattet zusätzlich das Monitoring von <Tooltip text="Blutdruck, Herzrate und Sauerstoffsättigung">Vitalparametern</Tooltip>.
 
 #### Pulsoximeter
 
@@ -97,11 +97,11 @@ erlaubt die Messung von Puls und des Sauerstoffgehalts des peripheren Blutes.
 
 #### Clamp (dt. Klemme)
 
-gebraucht, um beim Operieren eine Wunde offen zu halten, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+gebraucht, um beim Operieren eine Wunde offen zu halten, siehe [Chirurgie](/sanitaetsdienst/chirurgie#brüche).
 
 #### Retractor (dt. Retraktor)
 
-gebraucht, um Frakturen offen zu legen und zu behandeln, siehe [Chirurgie](/articles/sanitaetsdienst/chirurgie#brüche).
+gebraucht, um Frakturen offen zu legen und zu behandeln, siehe [Chirurgie](/sanitaetsdienst/chirurgie#brüche).
 
 ## Nützliche Hinweise
 

@@ -1,7 +1,7 @@
 <script lang="ts">
   import Popup from '$lib/aprilfools/Popup.svelte';
 
-  import '../../../../app.scss';
+  import '../../../app.scss';
   import { themeId } from '$lib/theme/stores';
   import '$lib/mdstyling/github.css';
 

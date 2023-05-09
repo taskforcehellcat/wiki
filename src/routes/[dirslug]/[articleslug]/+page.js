@@ -8,7 +8,7 @@ export async function load({ params }) {
   let post;
 
   try {
-    post = await import(`../../../../content/${dirslug}/${articleslug}.svx`);
+    post = await import(`../../../content/${dirslug}/${articleslug}.svx`);
   } catch (e) {
     throw error(404, 'Not found');
   }

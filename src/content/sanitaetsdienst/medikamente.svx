@@ -24,7 +24,7 @@ Schmerzmittel (relative Stärke: 0,8). Wirkt Blutverdünnend, senkt Herzrate. St
 
 ### Painkillers (dt. Schmerztabletten)
 
-lindern Schmerzen (relative Stärke: 0,3). Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut](/articles/sanitaetsdienst/blutkreislauf#transfusionen-im-feld)).
+lindern Schmerzen (relative Stärke: 0,3). Heben den Blutdruck leicht (unbedeutend, solange keine große Menge verwendet wurde). Sollten zur Behandlung leichter Schmerzen Morphin vorgezogen werden. Können auch von Soldaten eigenständig ohne größeres Risiko eingenommen werden. Kann bei versehentlicher Bluttransfusion mit falscher Blutgruppe lebensrettend wirken (siehe [Transfusion von Blut](/sanitaetsdienst/blutkreislauf#transfusionen-im-feld)).
 
 ### Epinephrin-Autoinjektor (Adrenalin)
 
@@ -40,7 +40,7 @@ verbessert die Ausdauer, hebt die Herzrate leicht. 15 Dosen pro Packung, verblei
 
 ## Infarkttherapie
 
-Medikamente zur Behandlung von [Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt).
+Medikamente zur Behandlung von [Herzstillständen](/sanitaetsdienst/blutkreislauf#herzinfarkt).
 
 Die Antiarrythmika Amiodaron und Lidocain stabilisieren das Membranpotential des Herzmuskels und verringern dadurch seine Erregbarkeit. Dies hilft, Kammerflimmern zu behandeln, wenn der Herzmuskel krampft. Bei einer Asystolie sind sie kontraindiziert.
 
@@ -58,7 +58,7 @@ zur Behandlung von Bradykardien. Hebt die Herzrate wesentlich.
 
 ## Chirurgie
 
-Die folgenden Medikamente ermöglichen das Operieren von Brüchen, siehe dazu [Behandlung von Brüchen](/articles/sanitaetsdienst/chirurgie#brüche).
+Die folgenden Medikamente ermöglichen das Operieren von Brüchen, siehe dazu [Behandlung von Brüchen](/sanitaetsdienst/chirurgie#brüche).
 
 ### Etomidat
 
@@ -130,6 +130,6 @@ In absteigender Reihenfolge ist die Stärke der Schmerzmittel: [Fentanyl](#fenta
 
 ## Siehe auch
 
-- [Erste Hilfe](/articles/ausbildung/erste-hilfe#medizinische-versorgung)
-- Behandlung von [Herzstillständen](/articles/sanitaetsdienst/blutkreislauf#herzinfarkt)
-- [Narkose bei Operationen](/articles/sanitaetsdienst/chirurgie)
+- [Erste Hilfe](/ausbildung/erste-hilfe#medizinische-versorgung)
+- Behandlung von [Herzstillständen](/sanitaetsdienst/blutkreislauf#herzinfarkt)
+- [Narkose bei Operationen](/sanitaetsdienst/chirurgie)

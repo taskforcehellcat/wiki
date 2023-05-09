@@ -8,7 +8,7 @@
   let article = data.articleslug;
   let description = data.description ?? 'Artikel im TFHC Wiki';
 
-  let url = `https://wiki.taskforcehellcat.de/articles/${dir}/${article}`;
+  let url = `https://wiki.taskforcehellcat.de/${dir}/${article}`;
 
   // let thumbnailsUrl = `https://feature-opengraph.wiki.taskforcehellcat.de/images/thumbnails/`
   // use this in production:

@@ -103,7 +103,7 @@ To use an **external** image, just use the URL instead of the variable name:
 To link to another wiki page, use the following syntax:
 
 ```markdown
-[Sanitäter](../sanitaetsdienst/sanitaeter)
+[Sanitäter](/sanitaetsdienst/sanitaeter)
 ```
 
 The square brackets contain the text that is displayed and the round brackets contain the path to the page.
@@ -111,7 +111,7 @@ The square brackets contain the text that is displayed and the round brackets co
 To link to a section on the same page, append `#` and the section name to the path.
 
 ```markdown
-[Sanitäter](../sanitaetsdienst/sanitaeter#ausrüstung)
+[Sanitäter](/sanitaetsdienst/sanitaeter#ausrüstung)
 ```
 
 To link to an external page, use the following syntax:
