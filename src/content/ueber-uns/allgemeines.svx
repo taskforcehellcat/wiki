@@ -1,6 +1,6 @@
 ---
 title: Allgemeines
-date: '2022-06-22'
+date: '2023-05-17'
 nav_index: 1
 ---
 
@@ -8,11 +8,13 @@ nav_index: 1
     import tfhc_struktur from '$lib/images/allgemeines/tfhc_struktur.svg';
 </script>
 
-Die Task Force Hellcat ist eine 2021 gegründete Einheit, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation [Arma 3](https://de.wikipedia.org/wiki/Arma_3) spielt. Innerhalb des Spiels wird ein besonderer Wert auf Strategie, Immersion und einen gemeinschaftlichen Umgang gesetzt. Zur Steigerung der Immersion und des Realismus benutzen wir Modifikationen wie ACE3, ACRE2 und KAT.
+Die Task Force Hellcat ist eine im Jahr 2021 gegründete Einheit, die Milsim in der von Bohemia Interactive entwickelten Militärsimulation [Arma 3](https://de.wikipedia.org/wiki/Arma_3) spielt. Innerhalb des Spiels wird ein besonderer Wert auf Strategie, Immersion und einen gemeinschaftlichen Umgang gelegt. Zur Steigerung der Immersion und des Realismus benutzen wir Modifikationen wie ACE3, ACRE2 und KAT.
+
+_Hinweis:_ Unsere Einheit befindet sich in der Entwicklung. Daher können sich Spielstil, Ausbildungsinhalte, Festlegungen, etc. stets verändern. Derzeit können noch nicht alle Rollen erlernt und vergeben werden.
 
 ## Organisation
 
-Die Organisation unserer Einheit findet auf unserem <a href="https://discord.taskforcehellcat.de/" class="no-underline"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" alt="Shields.io Grafik mit Link zu unserem Discord" style="vertical-align: middle;"/></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Updates zum Modpack, Anmeldungen zu Ausbildungen und vieles mehr. Auch Fragen jeglicher Art können dort gestellt werden.
+Die Organisation unserer Einheit findet auf unserem <a href="https://discord.taskforcehellcat.de/" class="no-underline"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" alt="Shields.io Grafik mit Link zu unserem Discord" style="vertical-align: middle;"/></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Updates zum Modpack, Anmeldungen zu Ausbildungen und vieles mehr. Fragen jeglicher Art können dort gestellt werden.
 
 ## Voraussetzungen
 
@@ -27,32 +29,28 @@ Zusätzlich werden zu Arma 3 das [Apex DLC](https://store.steampowered.com/app/3
 
 ### Beitritt
 
-Vor dem Beitritt in unsere Einheit durchläuft der Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch möchten wir die Vorlieben des Bewerbers erfahren und erklären unsererseits, wie wir uns das gemeinsame Spielen vorstellen. Wenn wir im Laufe des persönlichen Gesprächs feststellen, dass wir zueinander passen, freuen wir uns, einen neuen Mitspieler in unsere Einheit aufzunehmen.
+Vor dem Beitritt in unsere Einheit durchlaufen Bewerber ein persönliches Gespräch mit unserem Personal. In diesem Gespräch möchten wir die Vorlieben des Bewerbers erfahren und erklären unsererseits, wie wir uns das gemeinsame Spielen vorstellen. Wenn wir im Laufe des persönlichen Gesprächs feststellen, dass wir zueinander passen, freuen wir uns, einen neuen Mitspieler in unsere Einheit aufzunehmen.
 
-### Aufstieg
+### Anmeldungen
 
-Mit erfolgreichem Abschluss des persönlichen Gesprächs wird ein _Bewerber zum Rekruten_. Diese Rolle öffnet die Möglichkeit, die Grundausbildung zu durchlaufen. Sobald die Grundausbildung erfolgreich durchlaufen wurde, wird ein _Rekrut zum Kadetten_. Mitspieler mit dieser Rolle dürfen an Events und Übungen teilnehmen. Erfahrene Mitspieler können auf Absprache mit unserem Personal _vom Kadetten zum Mitglied_ aufsteigen, indem sie gutes Verhalten und Erfahrenheit aufweisen. Diese Rolle ermöglicht es, fortgeschrittene Aus- und Fortbildungen zu durchlaufen.
+Anmeldungen für das _persönliche Gespräch, die Grundausbildung oder fortgeschrittene Aus- und Fortbildungen_ erfolgen auf unserem Discord im Textkanal "mentoring" in den dafür vorgesehenen Threads. Dort kann sich gemeldet und gemeinsam mit unseren Ausbildern ein passender Zeitraum für die jeweilige Aus- oder Fortbildung festgestellt werden.
 
-### Anmeldung
-
-Anmeldungen für das persönliche Gespräch, die Grundausbildung oder fortgeschrittene Aus- und Fortbildungen erfolgen im mentoring-Textkanal in den dafür vorgesehenen Threads. Dort kann sich gemeldet und gemeinsam mit unseren Mentoren ein passender Zeitraum festgestellt werden.
+Anmeldungen zu Veranstaltungen wie _Operationen oder Übungen_ erfolgen auf unserem Discord im Textkanal "ankündigungen". Dort kann sich bei der jeweiligen Ankündigung per Knopfdruck angemeldet werden. Die Teilnahme an unseren Veranstaltungen ist **nicht** obligatorisch, insofern sich nicht bei der jeweiligen Veranstaltung angemeldet wurde. Können angemeldete Spieler nicht mehr an einer Veranstaltung teilnehmen, müssen sie dies rechtzeitig vor Veranstaltungsbeginn beim Stab melden. Das ist wichtig, da eine veränderte Spielerzahl die Operationsplanung beeinflusst.
 
 ## Unser Spiel
 
+### Spielstil
+
+In unserer Einheit wird in Kampagnen gespielt, die mehrere Monate andauern können. Eine Kampagne umfasst dabei mehrere Operationen, in denen wir auf das Endziel der jeweiligen Kampagne zuarbeiten. Jede Kampagne wird auf einer anderen Karte und mit einer anderen Nation gespielt.
+
 ### Spieltage
 
-Wir spielen ausschließlich an Freitagen und Samstagen. Events beginnen immer nachmittags oder abends.
-
-### Spielprinzip
-
-Gespielt wird in Kampagnen, die mehrere Monate andauern können. Dabei werden aufeinanderfolgende Events gespielt, bis das Hauptziel der jeweiligen Kampagne erreicht ist.
-
-### Wahlen
-
-Vor Beginn einer Kampagne können Kadetten und Mitglieder abstimmen, auf welcher Karte und mit welcher Nation gespielt wird.
+Unsere Operationen finden ausschließlich an Wochenenden statt. Unsere Übungen sind flexibel und können sowohl unter der Woche als auch am Wochenende stattfinden.
 
 ## Rollensystem
 
-In unserer Einheit gibt es viele verschiedene Rollen mit unterschiedlichsten Aufgabenbereichen. Mitspieler unserer Einheit dürfen mehrere Rollen erlernen, allerdings darf während eines Events lediglich eine Rolle gespielt werden. Es gibt keine Begrenzungen bei dem Erlernen von Rollen, ein Spieler kann sowohl die Rolle des Sanitäters erlernen als auch die Rolle des Panzerkommandanten.
+Unsere Einheit umfasst viele verschiedene Rollen mit unterschiedlichsten Aufgabenbereichen. Alle Spieler, die die Grundausbildung durchlaufen haben, dürfen grundsätzlich alle Rollen erlernen und spielen. Ausnahmen sind Rollen wie die der Führungskräfte, die zusätzlich entsprechende Erfahrung und Kenntnisse voraussetzen.
 
-Die Rolle eines Spielers wird vor Eventbeginn vom Eventveranstalter und -planer festgelegt, da manche Rollen bei unterschiedlicher Teilnehmerzahl mehr gebraucht sind als andere.
+Die Rolle eines Spielers innerhalb einer Veranstaltung wird grundsätzlich vom Operationsplaner oder den jeweiligen Führungskräften vorgeschrieben.
+
+Eine Hierarchie von Dienstgeraden gibt es in unserer Einheit nicht.
