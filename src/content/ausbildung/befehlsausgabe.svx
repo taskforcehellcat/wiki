@@ -1,129 +1,141 @@
 ---
 title: Befehlsausgabe
-date: '2022-11-15'
+date: '2023-05-28'
 nav_index: 4
 ---
 
 <script>
+    import operationsplan from '$lib/images/befehlsausgabe/graphischer_operationsplan.png';
     import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
 </script>
 
-Die Befehlsausgabe erfolgt nach der Gliederung Lage, Auftrag, Durchführung, Einsatzunterstützung und Führungsunterstützung (kurz LADEF). Diese Gliederung wird auf dieser Seite erläutert. Oft erfolgt die Befehlsausgabe im Feld auch in der Form Lage, Auftrag und Durchführung (kurz LAD), da die Punkte Einsatz- und Führungsunterstützung eher für Führungspersonal bedeutsam sind.
+Die Befehlsausgabe ist ein wichtiger Bestandteil der Vorbereitungsphase vor einer Operation, in der relevante Informationen vergeben werden. Die Ausgabe der Informationen erfolgt nach dem militärischen Befehlsschema _Lage_, _Auftrag_ und _Durchführung_ (kurz LAD). Führungskräfte werden zusätzlich über die _Einsatz- und Führungsunterstützung_ (kurz LADEF) informiert.
 
-Die Befehlsausgabe ist der Hauptbestandteil eines jeden Briefing vor Operationsbeginn. Sie enthält alle operationsrelevanten Informationen, die zur Bewältigung der anstehenden Operation bekannt sein müssen. Jede Befehlsausgabe enthält einen militärischen Befehl, der in ein Befehlsschema gegliedert ist.
+Das Befehlsschema wird auf dieser Seite anhand einer Operationsplanung mit graphischem Operationsplan näher erläutert.
 
-## Lage
+## Operationsplan
 
-### Feindliche Lage
+![Graphischer Operationsplan]({operationsplan})
 
-In diesem Punkt wird über die Lage feindlicher Kräfte im Operationsraum informiert. Dabei werden die Position, die Art und die Absicht des Feindes genauer beschrieben.
+Abgebildet ist ein klassischer Operationsplan auf der Karte Kunduz, einer afghanischen Provinz. Das Befehlsschema ist unmittelbar an den Operationsplan geknüpft. Viele Markierungen des Plans werden in den Beispielen des Befehlsschemas aufgegriffen.
 
-<ExampleBox>
+## Befehlsschema
 
-    _„In der Stadt Kavala im Nordwesten von Altis ist ein feindlicher Infanteriezug in Stellung. Davon befindet
-    sich ein Halbzug im Nordosten und ein Halbzug um Südwesten der Stadt. Vermutete Absicht des Zuges ist die
-    Verteidigung einer zentralen Hafenanlage der Insel.“_
+### Lage
 
-</ExampleBox>
+#### Feindliche Lage
 
-### Eigene Lage
-
-In diesem Punkt wird über die Lage eigener Kräfte informiert. Dabei wird auf die Position und Art der eigenen Kräfte eingegangen. Des Weiteren kann hier die Absicht des Führungspersonals mitgeteilt werden.
+Relevante Informationen zu feindlichen Truppenbewegungen. Vorwiegend wird über die Position, Art und Absicht des Feindes informiert.
 
 <ExampleBox>
 
-    „_Ein mechanisierter Infanteriezug und ein Infanteriehalbzug der Task Force Hellcat befinden sich aktuell im
-    Verfügungsraum <Tooltip text="Meter">5000</Tooltip> östlich von Kavala. Absicht des Zugführers ist der Angriff in **drei** Phasen. In **Phase 1**
-    nimmt der erste mechanisierte Halbzug den Südwesten Kavalas, der zweite mechanisierte Halbzug den Nordosten Kavalas.
-    In **Phase 2** verteidigt der erste mechanisierte Halbzug den Südwesten Kavalas, der zweite mechanisierte Halbzug
-    verteidigt den Nordosten Kavalas. In **Phase 3** nimmt der Infanteriehalbzug das Zentrum Kavalas. Absicht des
-    Angriffs ist der Zugang zu einer zentralen Hafenanlage der Insel Altis._“
+    „_Im Operationsraum ist eine feindliche Infanteriekompanie mit einer Mannstärke von circa 100 in Stellung. Vermutete Absicht der Kompanie ist die Verteidigung der Stadt Tappeh Ka, um den Zugriff auf eine dort befindliche Landbrücke zu wahren. Diese Brücke ist von hohem strategischen Wert, da sie die einzige Zufahrtsmöglichkeit an das östliche Flussufer im Süden von Kunduz ist. Zivile Informanten haben über feindliche Rekrutierungszentren und Sprengvorrichtungsfabriken informiert._“
 
 </ExampleBox>
 
-### Zivile Lage
+#### Eigene Lage
 
-In diesem Punkt wird über die Lage von Zivilisten im Operationsraum informiert. Dabei wird auf das Verhalten der Zivilisten gegenüber dem Feind und eigenen Kräften eingegangen.
+Relevante Informationen zu eigenen Kräften, darunter die Art und Position zum Zeitpunkt der Befehlsausgabe. Zusätzlich wird die Absicht des Führungspersonals mitgeteilt.
 
 <ExampleBox>
 
-    „_Die Zivilbevölkerung im Raum Kavala geht dem Alltäglichen nach. Zivilisten meiden den Kontakt zu feindlichen
-    Kräften und treten den eigenen Kräften neutral gegenüber._“
+    „_Die Operationskräfte befinden sich derzeit circa 500 Meter nördlich des Operationsraumes. Zur Durchführung stehen zwo motorisierte Infanterieteile (OSCAR-ECHO und OSCAR-WHISKEY) und ein Unterstützungsteil (SIERRA) bereit. Zur Operation stehen ein Transportpanzer, ein geschütztes Fahrzeug mit HMG und ein Sanitätsfahrzeug zur Verfügung._“
 
 </ExampleBox>
 
-## Auftrag
+#### Zivile Lage
 
-In diesem Punkt erfolgt eine knappe Darlegung des eigenen <Tooltip text="z.B. eines Zuges oder einer Gruppe">Auftrags</Tooltip>. Das geschieht in Form einer stichpunktartigen Aufzählung, was erledigt werden muss. Hauptsächlich wird dieser Punkt auf Zugebene besprochen.
+Relevante Informationen zur Zivilbevölkerung. Dabei wird besonders auf das Verhältnis zwischen Zivilisten und eigenen Kräften eingegangen. Zusätzlich wird über das Vorkommen von Zivilisten und ziviler Fahrzeuge informiert.
 
 <ExampleBox>
 
-    „_Der Infanteriehalbzug nimmt das Zentrum der Stadt Kavala._“
+    „_Die Zivilbevölkerung im Operationsraum geht dem Alltäglichen nach. Zivilisten stehen den eigenen Kräften gemischt gegenüber. Im Operationsraum ist mit <Tooltip text="Improvised Explosive Device">IEDs</Tooltip>, <Tooltip text="Vehicle-Bound IED">VBIEDs</Tooltip> und Selbstmordattentätern zu rechnen._“
 
 </ExampleBox>
 
-## Durchführung
+### Auftrag
 
-In diesem Punkt werden die Einzelaufträge der <Tooltip text="z.B. die Gruppen eines Zuges">unterstellten Truppenteile</Tooltip> erläutert. Dabei geht der Zug- bzw. Gruppenführer genauer auf die Vorgehensweise bei der Erfüllung des Auftrages ein. Zusätzlich können hier <Tooltip text="z.B. Funkkreiseröffnung">wichtige Zeiten</Tooltip> oder <Tooltip text="z.B. Einsatz von gelenkten Raketen nur auf Befehl">Verhaltensweisen</Tooltip> mitgeteilt werden.
+Knappe Darlegung der Einzelaufträge der agierenden Truppenteile.
 
 <ExampleBox>
 
-    „_Die beiden Halbzüge des mechanisierten Infanteriezuges bewegen sich nebeneinander auf Kavala zu. Ab Ablauflinie
-    Adler trennen sich die beiden Halbzüge und bewegen sich jeweils auf den ihnen zugewiesenen südwestlichen
-    beziehungsweise nordöstlichen Teil Kavalas zu und nehmen diesen._“
+    „_Verlegung aller Truppenteile in den Operationsraum. SIERRA nimmt den Compound auf Markierung FP-1._“
+    ---
+    „_Nehmen von blauem Rechteck durch OSCAR-WHISKEY und SIERRA, nehmen von rotem Rechteck durch OSCAR-ECHO._“
+    ---
+    „_Verminung der Brücke (OBJECTIVE) durch SIERRA._“
+    ---
+    „_Nehmen von südöstlichen Compounds durch alle Teile._“
 
 </ExampleBox>
 
-## Einsatzunterstützung
+### Durchführung
 
-### Logistische Unterstützung
+In diesem Punkt werden die Einzelaufträge der <Tooltip text="zum Beispiel die Gruppen eines Zuges">Truppenteile</Tooltip> erläutert. Dabei wird genauer auf die Vorgehensweise zur Erfüllung des Auftrags eingegangen.
+
+<ExampleBox>
+
+    „_SIERRA nimmt den Compound auf Markierung FP-1. OSCAR-WHISKEY positioniert sich westlich von FP-1 und übernimmt die rechte Flankensicherung. OSCAR-ECHO positioniert sich östlich von FP-1 und übernimmt die linke Flankensicherung._“
+    ---
+    „_Überlaufen von PL ALPHA durch alle Teile, gemeinsames Vorstoßen bis Höhe PL BRAVO. Ab PL BRAVO Sicherung des blauen Rechtecks durch OSCAR-WHISKEY und SIERRA, währenddessen nehmen von Compound "Overwatch" durch OSCAR-ECHO._“
+    ---
+    „_OSCAR-WHISKEY und OSCAR-ECHO beziehen Stellung an PL CHARLIE, währenddessen vermint SIERRA die Brücke (OBJECTIVE)._“
+    ---
+    „_Nach Verminung der Brücke gemeinsames Überlaufen von PL CHARLIE, OSCAR-WHISKEY und SIERRA stoßen Richtung Südosten vor, OSCAR-ECHO stößt Richtung Osten vor. Gemeinsames Nehmen der gelb eingezeichneten Compounds im Südosten._“
+
+</ExampleBox>
+
+### Einsatzunterstützung
+
+#### Logistische Unterstützung
 
 In diesem Punkt wird über Maßnahmen und Einrichtungen der <Tooltip text="z.B. Munition und SanMat für Soldaten oder Instandhaltung der Fahrzeuge">Versorgung</Tooltip> informiert.
 
 <ExampleBox>
 
-    „_Verbrauchsmaterial und Ersatzketten befinden sich auf den Schützenpanzern der mechanisierten Infanterie. Zur
-    Versorgung des Infanteriehalbzuges steht ein Unimog mit Verbrauchsmaterial bereit._“
+    „_Verbrauchsmaterial für Infanteristen befindet sich auf den Fahrzeugen im Feld. Alle Fahrzeuge sind mit Feldreparaturausrüstung, Radfahrzeuge mit Ersatzreifen und Kettenfahrzeuge mit Ersatzketten ausgestattet. Munition, Treibstoff, Reparaturgüter und weitere Verbrauchsmaterialien stehen im Verfügungsraum bereit._“
+    ---
+    „_Das Nachziehen von Nachzüglern wird durch SIERRA organisiert. Die Nachzügler können sich dazu im internen Funkkreis von SIERRA melden._“
 
 </ExampleBox>
 
-### Sanitätsdienstliche Unterstützung
+#### Sanitätsdienstliche Unterstützung
 
 In diesem Punkt wird über Möglichkeiten der Versorgung verwundeter Kräfte informiert.
 
 <ExampleBox>
 
-    „_Vorrangig erfolgt die Versorgung verwundeter Soldaten im Feld durch Selbst- und Kameradenhilfe. Jeder
-    Panzergrenadiertrupp und beide Gruppen des Infanteriehalbzuges verfügen jeweils über einen Sanitäter. Für
-    medizinische Notfälle steht ein <Tooltip text="kurz: BAT">beweglicher Arzttrupp</Tooltip> aufgesessen auf einem Unimog bereit._“
+    „_Vorrangig erfolgt die Versorgung verwundeter Soldaten durch Selbst- und Kameradenhilfe. Zur fortgeschrittenen Feldversorgung befinden sich Sanitäter im Operationsraum. Endversorgungen können beim Sanitätsfahrzeug in FP-1 durchgeführt werden._“
 
 </ExampleBox>
 
-## Führungsunterstützung
+### Führungsunterstützung
 
-### Funkverbindungsplan
+#### Funkverbindungsplan
 
 In diesem Punkt wird über die Zuweisung der Funkgeräte, der Funkfrequenzen und der Aufteilung der Funkrufzeichen informiert.
 
 <ExampleBox>
 
-    „_Der Kompaniekreis befindet sich auf der SEM 70 mit der Frequenz 60 MHz. Im Zugkreis wird das Funkgerät
-    AN/PRC-152 verwendet. Dabei ist für den mechanisierten Infanteriezug Kanal 01 und für den Infanteriehalbzug Kanal 02
-    reserviert. Auf Gruppenebene wird mit der SEM 52 SL gefunkt. Für die vier Gruppen des mechanisierten Infanteriezuges
-    sind Kanäle 01 bis 04 reserviert. Der Infanteriehalbzug verteilt sich auf den Kanälen 05 und 06._“
+    „_Der Zugfunk befindet sich auf der AN/PRC-152 Kanal 01. Dieses Funkgerät ist für Führungspersonen und Stellvertreter reserviert._“
+    ---
+    „_OSCAR-WHISKEY funkt intern auf der AN/PRC-343 Kanal 01._“
+    ---
+    „_OSCAR-ECHO funkt intern auf der AN/PRC-343 Kanal 02._“
+    ---
+    „_SIERRA funkt intern auf der AN/PRC-343 Kanal 03._“
 
 </ExampleBox>
 
-„_Der mechanisierte Infanteriezug ist in ALPHA und der Infanteriehalbzug in BRAVO eingeteilt._“
+#### Führungsreihenfolge
 
-### Führungsreihenfolge
-
-In diesem Punkt wird über die Einteilung der Führungsübernahme bei einem Ausfall der Führungsperson informiert.
+In diesem Punkt wird über die Einteilung der Führungsübernahme bei einem Ausfall einer Führungsperson informiert.
 
 <ExampleBox>
 
-    „_Die Kompanieführung beginnt beim Zugführer von ALPHA. Fällt dieser aus, übernimmt der Gruppenführer von ALPHA-2.
-    Im Falle seines Ausfalls übernimmt der Zugführer von BRAVO die Kompanie._“
+    „_Leon ist Operationsleiter. Fällt dieser aus, übernimmt Emmi die Koordination der Truppenteile im Feld._“
+    ---
+    „_Stellvertreter der Trupp- und Gruppenführer werden individuell von den Führungskräften festgelegt._“
 
 </ExampleBox>
