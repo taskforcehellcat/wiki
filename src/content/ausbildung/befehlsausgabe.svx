@@ -50,7 +50,7 @@ Relevante Informationen zur Zivilbevölkerung. Dabei wird besonders auf das Verh
 
 <ExampleBox>
 
-    „_Die Zivilbevölkerung im Operationsraum geht dem Alltäglichen nach. Zivilisten stehen den eigenen Kräften gemischt gegenüber. Im Operationsraum ist mit <Tooltip text="Improvised Explosive Device">IEDs</Tooltip>, <Tooltip text="Vehicle-Bound IED">VBIEDs</Tooltip> und Selbstmordattentätern zu rechnen._“
+    „_Die Zivilbevölkerung im Operationsraum geht dem Alltäglichen nach. Zivilisten stehen den eigenen Kräften gemischt gegenüber. Im Operationsraum ist mit <Tooltip text="Improvised Explosive Device">IEDs</Tooltip>, <Tooltip text="Vehicle-Borne IED">VBIEDs</Tooltip> und Selbstmordattentätern zu rechnen._“
 
 </ExampleBox>
 
