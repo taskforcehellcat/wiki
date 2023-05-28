@@ -10,7 +10,7 @@ nav_index: 4
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
 </script>
 
-Die Befehlsausgabe ist ein wichtiger Bestandteil der Vorbereitungsphase vor einer Operation, in der relevante Informationen vergeben werden. Die Ausgabe der Informationen erfolgt nach dem militärischen Befehlsschema _Lage_, _Auftrag_ und _Durchführung_ (kurz LAD). Führungskräfte werden zusätzlich über die _Einsatz- und Führungsunterstützung_ (kurz LADEF) informiert.
+Die Befehlsausgabe ist ein wichtiger Bestandteil der Vorbereitungsphase vor einer Operation, in dem relevante Informationen zur Operationsdurchführung vergeben werden. Die Ausgabe der Informationen erfolgt nach dem militärischen Befehlsschema _Lage_, _Auftrag_ und _Durchführung_ (kurz LAD). Führungskräfte werden zusätzlich über die _Einsatz- und Führungsunterstützung_ (kurz LADEF) informiert.
 
 Das Befehlsschema wird auf dieser Seite anhand einer Operationsplanung mit graphischem Operationsplan näher erläutert.
 
@@ -40,7 +40,7 @@ Relevante Informationen zu eigenen Kräften, darunter die Art und Position zum Z
 
 <ExampleBox>
 
-    „_Die Operationskräfte befinden sich derzeit circa 500 Meter nördlich des Operationsraumes. Zur Durchführung stehen zwo motorisierte Infanterieteile (OSCAR-ECHO und OSCAR-WHISKEY) und ein Unterstützungsteil (SIERRA) bereit. Zur Operation stehen ein Transportpanzer, ein geschütztes Fahrzeug mit HMG und ein Sanitätsfahrzeug zur Verfügung._“
+    „_Die Operationskräfte befinden sich derzeit circa 500 Meter nördlich des Operationsraumes. Zur Durchführung stehen zwo motorisierte Infanterieteile (OSCAR-ECHO und OSCAR-WHISKEY) und ein Unterstützungsteil (SIERRA) bereit. Für die Operation stehen ein Transportpanzer, ein geschütztes Fahrzeug mit HMG und ein Sanitätsfahrzeug zur Verfügung._“
 
 </ExampleBox>
 
