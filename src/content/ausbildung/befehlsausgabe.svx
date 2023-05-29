@@ -72,7 +72,7 @@ Knappe Darlegung der Einzelaufträge der agierenden Truppenteile.
 
 ### Durchführung
 
-In diesem Punkt werden die Einzelaufträge der <Tooltip text="zum Beispiel die Gruppen eines Zuges">Truppenteile</Tooltip> erläutert. Dabei wird genauer auf die Vorgehensweise zur Erfüllung des Auftrags eingegangen.
+Erläuterung der Einzelaufträge der <Tooltip text="zum Beispiel die Gruppen eines Zuges">Truppenteile</Tooltip>. Dabei wird genauer auf die Vorgehensweise zur Erfüllung des Auftrags eingegangen.
 
 <ExampleBox>
 
@@ -90,7 +90,7 @@ In diesem Punkt werden die Einzelaufträge der <Tooltip text="zum Beispiel die G
 
 #### Logistische Unterstützung
 
-In diesem Punkt wird über Maßnahmen und Einrichtungen der <Tooltip text="z.B. Munition und SanMat für Soldaten oder Instandhaltung der Fahrzeuge">Versorgung</Tooltip> informiert.
+Informationen zu Maßnahmen und Einrichtungen der Versorgung.
 
 <ExampleBox>
 
@@ -102,7 +102,7 @@ In diesem Punkt wird über Maßnahmen und Einrichtungen der <Tooltip text="z.B. 
 
 #### Sanitätsdienstliche Unterstützung
 
-In diesem Punkt wird über Möglichkeiten der Versorgung verwundeter Kräfte informiert.
+Informationen zu Maßnahmen und Einrichtungen zur Versorgung verwundeter Kräfte.
 
 <ExampleBox>
 
@@ -114,7 +114,7 @@ In diesem Punkt wird über Möglichkeiten der Versorgung verwundeter Kräfte inf
 
 #### Funkverbindungsplan
 
-In diesem Punkt wird über die Zuweisung der Funkgeräte, der Funkfrequenzen und der Aufteilung der Funkrufzeichen informiert.
+Zuweisung der Funkgeräte und den entsprechenden Funkfrequenzen der Truppenteile.
 
 <ExampleBox>
 
@@ -130,7 +130,7 @@ In diesem Punkt wird über die Zuweisung der Funkgeräte, der Funkfrequenzen und
 
 #### Führungsreihenfolge
 
-In diesem Punkt wird über die Einteilung der Führungsübernahme bei einem Ausfall einer Führungsperson informiert.
+Informationen zur Einteilung der Führungsübernahme im Falle des Ausfalls einer Führungsperson.
 
 <ExampleBox>
 
