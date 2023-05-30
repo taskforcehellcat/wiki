@@ -78,11 +78,11 @@ Erläuterung der Einzelaufträge der <Tooltip text="zum Beispiel die Gruppen ein
 
     „_SIERRA nimmt den Compound auf Markierung FP-1. OSCAR-WHISKEY positioniert sich westlich von FP-1 und übernimmt die rechte Flankensicherung. OSCAR-ECHO positioniert sich östlich von FP-1 und übernimmt die linke Flankensicherung._“
     ---
-    „_Überlaufen von PL ALPHA durch alle Teile, gemeinsames Vorstoßen bis Höhe PL BRAVO. Ab PL BRAVO Sicherung des blauen Rechtecks durch OSCAR-WHISKEY und SIERRA, währenddessen nehmen von Compound "Overwatch" durch OSCAR-ECHO._“
+    „_Überlaufen von PL ALPHA durch alle Teile, gemeinsames Vorstoßen bis Höhe PL BRAVO. Ab PL BRAVO Sicherung der blau verzeichneten Compounds durch OSCAR-WHISKEY und SIERRA, währenddessen nehmen von Compound "Overwatch" durch OSCAR-ECHO._“
     ---
     „_OSCAR-WHISKEY und OSCAR-ECHO beziehen Stellung an PL CHARLIE, währenddessen vermint SIERRA die Brücke (OBJECTIVE)._“
     ---
-    „_Nach Verminung der Brücke gemeinsames Überlaufen von PL CHARLIE, OSCAR-WHISKEY und SIERRA stoßen Richtung Südosten vor, OSCAR-ECHO stößt Richtung Osten vor. Gemeinsames Nehmen der gelb eingezeichneten Compounds im Südosten._“
+    „_Nach Verminung der Brücke gemeinsames Überlaufen von PL CHARLIE, OSCAR-WHISKEY und SIERRA stoßen Richtung Südosten vor, OSCAR-ECHO stößt Richtung Osten vor. Gemeinsames Nehmen der gelb verzeichneten Compounds im Südosten._“
 
 </ExampleBox>
 
