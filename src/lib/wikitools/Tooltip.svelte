@@ -33,6 +33,7 @@
 <span
   on:touchstart={tapped}
   on:mouseover={mouseOver}
+  on:focus={mouseOver}
   on:mouseleave={mouseLeave}
   on:mousemove={mouseMove}
   data-tooltip><slot /></span

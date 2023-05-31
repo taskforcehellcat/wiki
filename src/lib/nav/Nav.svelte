@@ -27,7 +27,7 @@
 <div id="nav__list">
   {#each menu as nav}
     <div class="expandable" class:open={activeNav === nav.id} class:invisible={$searchInUse}>
-      <span on:click={() => toggleOpen(nav.id)}>
+      <span on:click={() => toggleOpen(nav.id)} on:keypress={() => toggleOpen(nav.id)}>
         {nav.config.title}
         <i class="material-icons-rounded noselect">expand_more</i>
       </span>
