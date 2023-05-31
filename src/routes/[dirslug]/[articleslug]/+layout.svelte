@@ -242,21 +242,6 @@
     display: none;
     @media (max-width: 800px) {
       display: inline-block;
-
-      > #menuOpen {
-        display: block;
-
-        &#burgermenu .show {
-          display: none;
-        }
-      }
-      > #menuClose {
-        display: none;
-
-        &.show {
-          display: block;
-        }
-      }
     }
   }
 

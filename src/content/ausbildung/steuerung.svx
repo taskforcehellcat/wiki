@@ -28,31 +28,13 @@ localStorage.setItem('preferredKeyboardLayout', value)
 <p>Diese Einstellung wird im ganzen Wiki angewandt.</p>
 
 <style>
-    details {
-        margin-block: 2rem;
-        font-size: 13pt;
-    }
-
     tr {
         display: flex;
         justify-content: space-between;
         padding-block: 0.5rem;
     }
 
-    details > summary {
-        margin-bottom: 1rem;
-        cursor: pointer;
-        font-size: 2.3rem;
-    }
-
     th {
-        padding-block: 1rem;
-    }
-
-    h4 {
-        width: min(45rem, 100%);
-        display: flex;
-        justify-content: space-between;
         padding-block: 1rem;
     }
 
