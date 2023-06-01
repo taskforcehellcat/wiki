@@ -24,10 +24,13 @@
         </div>
       </div>
       <div id="popup__content" class="fancy-scrollbar">
-        <h1>Um diesen Artikel zu lesen, musst du TFHC Wiki Plus+ Mitglied sein!</h1>
+        <h1>
+          Um diesen Artikel zu lesen, musst du TFHC Wiki Plus+ Mitglied sein!
+        </h1>
         <p>
-          Mit unserem neuen Abonnement-Service kannst du dir alle Artikel des TFHC Wikis ansehen. Klicke auf
-          die Schaltfläche unten, um das Abonnement abzuschließen!
+          Mit unserem neuen Abonnement-Service kannst du dir alle Artikel des
+          TFHC Wikis ansehen. Klicke auf die Schaltfläche unten, um das
+          Abonnement abzuschließen!
         </p>
 
         <div id="price">
@@ -48,7 +51,9 @@
                 </div>
               </div>
               <div class="popup__buttons">
-                <button class="popup__button" on:click={togglePopup}>Jetzt abonnieren!</button>
+                <button class="popup__button" on:click={togglePopup}
+                  >Jetzt abonnieren!</button
+                >
               </div>
             </div>
           </div>
@@ -74,7 +79,9 @@
                 </div>
               </div>
               <div class="popup__buttons">
-                <button class="popup__button" on:click={togglePopup}>Jetzt abonnieren!</button>
+                <button class="popup__button" on:click={togglePopup}
+                  >Jetzt abonnieren!</button
+                >
               </div>
             </div>
           </div>

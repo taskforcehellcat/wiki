@@ -26,7 +26,9 @@ export async function load({ fetch }) {
   }
 
   for (const [key] of Object.entries(menu)) {
-    menu[key].config = (await import(`../../../content/${key}/metadata.js`)).config;
+    menu[key].config = (
+      await import(`../../../content/${key}/metadata.js`)
+    ).config;
     menu[key].entries.sort((a, b) => sortArticlesByNavIndex(a, b));
   }
 

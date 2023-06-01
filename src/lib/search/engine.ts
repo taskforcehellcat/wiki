@@ -75,7 +75,9 @@ export class Search {
 
       // check if the article name itself is a match
       // prefer the short title if it is defined and matches
-      const titleShort = article.meta.title_short ? article.meta.title_short : '';
+      const titleShort = article.meta.title_short
+        ? article.meta.title_short
+        : '';
       const title = article.meta.title;
 
       if (titleShort.toLocaleLowerCase().includes(query)) {
@@ -107,15 +109,17 @@ export class Search {
       const headingRegex = /<h\d ?(id=".+"|class=".+")?>.+<\/h\d>/g;
       const headingsRaw = html.match(headingRegex) ?? [];
 
-      const headings: { heading: string; id: string }[] = headingsRaw.map((str) => {
-        let title = str.replaceAll(/<h\d id=".+">/g, '');
-        title = title.replaceAll(/<\/h\d>/g, '');
+      const headings: { heading: string; id: string }[] = headingsRaw.map(
+        (str) => {
+          let title = str.replaceAll(/<h\d id=".+">/g, '');
+          title = title.replaceAll(/<\/h\d>/g, '');
 
-        let id = str.match(/id="[^"]+"/g)[0] ?? '';
-        id = id.replace('id=', '');
-        id = id.replaceAll('"', '');
-        return { heading: title, id: id };
-      });
+          let id = str.match(/id="[^"]+"/g)[0] ?? '';
+          id = id.replace('id=', '');
+          id = id.replaceAll('"', '');
+          return { heading: title, id: id };
+        }
+      );
 
       // find matching ones
       for (const { heading, id } of headings) {
@@ -123,7 +127,10 @@ export class Search {
           const crumbs = [
             { display: dirNameToDisplayName.get(article.directory), link: '/' },
             { display: title, link: `/${article.directory}/${article.id}` },
-            { display: heading, link: `/${article.directory}/${article.id}#${id}` }
+            {
+              display: heading,
+              link: `/${article.directory}/${article.id}#${id}`
+            }
           ];
 
           hits.push(new Hit('heading', crumbs, title, 0));

@@ -56,9 +56,15 @@
   <div id="main" data-theme={$themeId}>
     <div id="wiki">
       <nav>
-        <a href="/" id="nav__logo"><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a>
+        <a href="/" id="nav__logo"
+          ><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a
+        >
 
-        <button id="burgerMenu" on:click={() => (isOpen = !isOpen)} class:show={isOpen}>
+        <button
+          id="burgerMenu"
+          on:click={() => (isOpen = !isOpen)}
+          class:show={isOpen}
+        >
           {#if !isOpen}
             <OpenMenuSVG />
           {:else}
@@ -88,7 +94,9 @@
 
       <div id="overlay" class:show={isOpen}>
         {#each anchors as anchor}
-          <a href={anchor.link} on:click={() => (isOpen = !isOpen)}>{anchor.text}</a>
+          <a href={anchor.link} on:click={() => (isOpen = !isOpen)}
+            >{anchor.text}</a
+          >
         {/each}
       </div>
 
@@ -100,12 +108,15 @@
       {#if $page.status == 200}
         <footer>
           <p>
-            zuletzt bearbeitet: {new Date($page.data.date).toLocaleString('de-DE', {
-              weekday: 'long',
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
+            zuletzt bearbeitet: {new Date($page.data.date).toLocaleString(
+              'de-DE',
+              {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+              }
+            )}
           </p>
         </footer>
       {/if}
@@ -135,8 +146,21 @@
     margin-bottom: 1.5rem;
   }
 
-  :global(#content p, #content h1, #content h2, #content h3, #content h4, #content h5, #content h6, #content
-      ul, #content ol, #content blockquote, #content pre, #content table, #content .example-box) {
+  :global(
+      #content p,
+      #content h1,
+      #content h2,
+      #content h3,
+      #content h4,
+      #content h5,
+      #content h6,
+      #content ul,
+      #content ol,
+      #content blockquote,
+      #content pre,
+      #content table,
+      #content .example-box
+    ) {
     width: 100%;
     color: var(--brandSecondaryTXT);
     width: min(110rem, 100%);

@@ -7,7 +7,15 @@
   fill="#fff"
 >
   <g transform="translate(-1355.001 -567.001)">
-    <rect width="400" height="78" transform="translate(1410.156 567.001) rotate(45)" />
-    <rect width="400" height="78" transform="translate(1355.001 849.844) rotate(-45)" />
+    <rect
+      width="400"
+      height="78"
+      transform="translate(1410.156 567.001) rotate(45)"
+    />
+    <rect
+      width="400"
+      height="78"
+      transform="translate(1355.001 849.844) rotate(-45)"
+    />
   </g>
 </svg>

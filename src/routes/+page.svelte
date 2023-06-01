@@ -35,7 +35,7 @@
 
 <svelte:head>
   <title>Home | TFHC Wiki</title>
-  <meta name="description" content="Wiki der Arma Unit 'Task Force Hellcat'."/>
+  <meta name="description" content="Wiki der Arma Unit 'Task Force Hellcat'." />
 </svelte:head>
 
 {#if $themeId}
@@ -59,7 +59,12 @@
       <div id="search" data-empty={(query.length === 0).toString()}>
         <div id="search__searchbar">
           <span class="material-icons-rounded noselect">search</span>
-          <input type="text" name="search" placeholder="Wiki durchsuchen…" bind:value={rawInput} />
+          <input
+            type="text"
+            name="search"
+            placeholder="Wiki durchsuchen…"
+            bind:value={rawInput}
+          />
         </div>
         <div id="search__results">
           {#if showResults}
@@ -68,10 +73,18 @@
               <ResultsSection kind="heading" />
               <ResultsSection kind="text" />
             {:else}
-              <p><span class="search__errortext">Es wurden keine Übereinstimmungen gefunden!</span></p>
+              <p>
+                <span class="search__errortext"
+                  >Es wurden keine Übereinstimmungen gefunden!</span
+                >
+              </p>
             {/if}
           {:else}
-            <p><span class="search__errortext">Bitte mindestens drei Zeichen eingeben!</span></p>
+            <p>
+              <span class="search__errortext"
+                >Bitte mindestens drei Zeichen eingeben!</span
+              >
+            </p>
           {/if}
         </div>
       </div>
