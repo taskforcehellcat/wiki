@@ -35,7 +35,7 @@
 
 <svelte:head>
   <title>Home | TFHC Wiki</title>
-  <meta name="description" content="Wiki der Arma Unit 'Task Force Hellcat'.">
+  <meta name="description" content="Wiki der Arma Unit 'Task Force Hellcat'."/>
 </svelte:head>
 
 {#if $themeId}
