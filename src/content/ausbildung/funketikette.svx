@@ -32,7 +32,7 @@ Dies stellt eine Richtlinie für die Erstverbindung dar. Im weiteren Gesprächsv
 
 Auf Funkebenen wie etwa dem Zugfunk wird eine Reihe von Signalwörtern genutzt, die den Funkaustausch vereinfachen und regeln. Auf Trupp- und Gruppenebene müssen diese Signalwörter nicht genutzt werden, da dort jederzeit eine klare Funkverbindung vorliegt.
 
-Auf <Tooltip text="wie der Zugfunk, an dem nur der Zugführer und die ihm unterstellten Führungspersonen teilnehmen, die mehrere Kilometer voneinander entfernt sein können">höheren Funkebenen</Tooltip> wird eine Reihe von Signalwörtern genutzt, die den Funkaustausch vereinfachen und regeln. Auf <Tooltip text="wie der Trupp- oder Gruppenfunk">niedrigeren Funkebenen</Tooltip> müssen diese Signalwörter in erster Linie nicht benutzt werden, da hier durchgehend von einer klaren Funkverbindung ausgegangen werden kann und die Koordination der Teilnehmer dieser Funkebenen signifikant einfacher ist.
+Auf <Tooltip text="wie der Zugfunk, an dem nur der Zugführer und die ihm unterstellten Führungspersonen teilnehmen, die mehrere Kilometer voneinander entfernt sein können">höheren Funkebenen</Tooltip> wird eine Reihe von Signalwörtern genutzt, die den Funkaustausch vereinfachen und regeln. Auf <Tooltip text="wie der Trupp- oder Gruppenfunk">niedrigeren Funkebenen</Tooltip> müssen diese Signalwörter nicht zwangsläufig benutzt werden, da hier durchgehend von einer klaren Funkverbindung ausgegangen werden kann und die Koordination der Teilnehmer dieser Funkebenen signifikant einfacher ist.
 
 ### Kommen
 
@@ -68,7 +68,7 @@ Buchstabieren wird oft nötig werden. Einzelne Buchstaben sind dabei selbst bei 
 
 ![NATO-Buchstabiertafel]({alphabet})
 
-Da das NATO-Alphabet auch außerhalb des Funkens viel Anwendung findet, sollte es sich dringend angeeignet werden.
+Da das NATO-Alphabet auch außerhalb des Funkens viel Anwendung findet, sollte man es sich dringend aneignen.
 
 ## Weiterführende Informationen
 
