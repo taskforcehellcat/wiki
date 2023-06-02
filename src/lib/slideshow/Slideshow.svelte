@@ -53,7 +53,7 @@
   <span class="caption">{caption}</span>
 </div>
 
-<style>
+<style lang="scss">
   .container {
     width: min(60rem, 100%);
   }
@@ -77,28 +77,32 @@
     position: absolute;
     top: 50%;
 
-    height: 25px;
-    width: 25px;
+    height: 3rem;
+    width: 3rem;
 
-    border-radius: 0;
+    border-radius: 0.3rem;
     border: none;
 
     transform: translate(0, -50%);
     opacity: '1';
 
-    background-color: light-grey;
-  }
+    line-height: 3rem;
 
-  .button:hover {
-    background-color: rgb(213, 213, 213);
-  }
+    background-color: rgba(213, 213, 213, 0.7);
 
-  .button-right {
-    right: 0;
-  }
+    cursor: pointer;
 
-  .button-left {
-    left: 0;
+    &:hover {
+      background-color: rgba(228, 228, 228, 0.9);
+    }
+
+    &.button-right {
+      right: 0.4rem;
+    }
+
+    &.button-left {
+      left: 0.4rem;
+    }
   }
 
   .caption {
