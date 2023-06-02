@@ -19,7 +19,7 @@
 
 <svelte:head>
   <!-- HTML Meta Tags -->
-  <title>{title}</title>
+  <title>{title} | TFHC Wiki</title>
   <meta name="description" content={description} />
 
   <!-- Facebook Meta Tags -->
