@@ -96,6 +96,30 @@ To use an **external** image, just use the URL instead of the variable name:
 ![Image Alt Text](https://example.com/image.png)
 ```
 
+### Adding Slideshows
+
+For slideshows you can use the slideshow component:
+
+```html
+<script>
+  import Slideshow from '$lib/slideshow/Slideshow.svelte';
+</script>
+```
+
+It takes two arrays as properties, `images` containing the paths to the images to be displayed, `captions` their respective captions. You can use external images as well.
+
+A complete example might look like this:
+
+```svelte
+<script lang="ts">
+  import Slideshow from '$lib/slideshow/Slideshow.svelte';
+
+  import leopard from '$lib/path/to/leopard.jpg';
+</script>
+
+<Slideshow images={[leopard, "https://www.hoster.com/challenger.jpg"]} captions={['Das ist der Leopard', 'Das ist der Challenger']} />
+```
+
 ---
 
 ### Creating links

@@ -7,6 +7,11 @@ nav_index: 3
 <script lang="ts">
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
     import guide from '$lib/images/fahrzeuge/guide.png';
+    import Slideshow from '$lib/slideshow/Slideshow.svelte';
+
+    // main battle tanks
+    import leopard from '$lib/images/fuhrpark/kpz_demo/lA5.jpg';
+    import challenger from '$lib/images/fuhrpark/kpz_demo/Challenger2.jpg';
 </script>
 
 ## Übersicht
@@ -14,6 +19,11 @@ nav_index: 3
 ![Fahrzeugguide]({guide})
 
 ## Kampfpanzer
+
+<Slideshow
+images={[leopard,challenger]}
+captions={["KPz Leopard 2 A5", "MBT Challenger 2"]}
+/>
 
 Ein <Tooltip text="kurz: KPz">Kampfpanzer</Tooltip> (engl. <Tooltip text="kurz: MBT">Main Battle Tank</Tooltip>) ist ein schwer gepanzertes Kettenfahrzeug.
 
