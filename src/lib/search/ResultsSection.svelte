@@ -38,14 +38,15 @@
   <div class="container">
     <div class="heading count">{hitCount}</div>
     <span class="heading">
-      <span class="heading title">{pageTitle}</span> <span class="heading text">gefunden</span>
+      <span class="heading title">{pageTitle}</span>
+      <span class="heading text">gefunden</span>
     </span>
     {#each resultsOfKind as hit}
       <span />
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb}
-          <a href={crumb.link}>{crumb.display}</a><span class="material-icons-rounded seperator"
-            >chevron_right</span
+          <a href={crumb.link}>{crumb.display}</a><span
+            class="material-icons-rounded seperator">chevron_right</span
           >
         {/each}
       </span>

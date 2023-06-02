@@ -11,7 +11,8 @@
 {#if $page.status == 500}
   <p>Irgendwas ist bei uns schiefgelaufen, das hätte nicht passieren sollen.</p>
   <p>
-    Sag uns gerne, wie du hier hier gelandet bist, damit wir das Problem beheben können: <a
+    Sag uns gerne, wie du hier hier gelandet bist, damit wir das Problem beheben
+    können: <a
       href="https://discord.com/channels/629333468299526164/1021556229857882182"
       target="_blank"
       rel="noreferrer">Feedback-Forum auf Discord</a

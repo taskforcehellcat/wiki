@@ -8,7 +8,12 @@
 </script>
 
 <div class="example-box">
-  <div class="example-box-header noselect" aria-expanded={isOpen} on:click={toggleOpen} role="presentation">
+  <div
+    class="example-box-header noselect"
+    aria-expanded={isOpen}
+    on:click={toggleOpen}
+    role="presentation"
+  >
     <span>{title}</span>
     <span class="material-icons-rounded">
       {#if isOpen}remove{:else}add{/if}
