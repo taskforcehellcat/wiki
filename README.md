@@ -106,18 +106,18 @@ For slideshows you can use the slideshow component:
 </script>
 ```
 
-It takes two arrays as properties, `images` containing the paths to the images to be displayed, `captions` their respective captions. A complete example might look like this:
+It takes two arrays as properties, `images` containing the paths to the images to be displayed, `captions` their respective captions. You can use external images as well.
+
+A complete example might look like this:
 
 ```svelte
 <script lang="ts">
   import Slideshow from '$lib/slideshow/Slideshow.svelte';
 
-  // main battle tanks
   import leopard from '$lib/path/to/leopard.jpg';
-  import challenger from '$lib/path/to/challenger.jpg';
 </script>
 
-<Slideshow images={[leopard, captions]} captions={['Das ist der Leopard', 'Das ist der Challenger']} />
+<Slideshow images={[leopard, "https://www.hoster.com/challenger.jpg"]} captions={['Das ist der Leopard', 'Das ist der Challenger']} />
 ```
 
 ---
