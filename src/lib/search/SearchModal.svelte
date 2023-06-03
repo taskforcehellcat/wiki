@@ -1,6 +1,23 @@
 <script lang="ts">
-  import { afterUpdate } from 'svelte';
-  import { searchInUse } from './stores';
+  import { page } from '$app/stores';
+  import { onMount } from 'svelte';
+
+  import { Search } from '$lib/search/engine';
+  import { searchInUse, searchResults } from '$lib/search/stores';
+  import ResultsSection from '$lib/search/ResultsSection.svelte';
+
+  let rawInput = '';
+  let query = ''; // holds the query
+  let showResults = false; // whether the search bar is currently in use
+  let search = new Search($page.data.posts);
+
+  $: query = rawInput.trim();
+
+  $: if (query.length > 2) {
+    $searchResults = search.query(query);
+  }
+
+  $: showResults = query.length > 2;
 
   let searchModalInput: HTMLInputElement;
 
@@ -8,7 +25,7 @@
     $searchInUse = false;
   }
 
-  afterUpdate(function () {
+  onMount(function () {
     searchModalInput.focus();
   });
 </script>
@@ -26,8 +43,29 @@
       type="text"
       placeholder="Wiki durchsuchen..."
       bind:this={searchModalInput}
+      bind:value={rawInput}
     />
   </div>
+
+  {#if showResults}
+    {#if $searchResults.length !== 0}
+      <ResultsSection kind="article" />
+      <ResultsSection kind="heading" />
+      <ResultsSection kind="text" />
+    {:else}
+      <p>
+        <span class="search__errortext"
+          >Es wurden keine Übereinstimmungen gefunden!</span
+        >
+      </p>
+    {/if}
+  {:else}
+    <p>
+      <span class="search__errortext"
+        >Bitte mindestens drei Zeichen eingeben!</span
+      >
+    </p>
+  {/if}
 </div>
 
 <div
