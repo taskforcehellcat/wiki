@@ -62,11 +62,11 @@ Knappe Darlegung der Einzelaufträge der agierenden Truppenteile.
 
     „_Verlegung aller Truppenteile in den Operationsraum. SIERRA nimmt den Compound auf Markierung FP-1._“
     ---
-    „_Nehmen von blauem Rechteck durch OSCAR-WHISKEY und SIERRA, nehmen von rotem Rechteck durch OSCAR-ECHO._“
+    „_Nehmen von blau verzeichneten Compounds durch OSCAR-WHISKEY und SIERRA, nehmen von rot verzeichneten Compounds durch OSCAR-ECHO._“
     ---
     „_Verminung der Brücke (OBJECTIVE) durch SIERRA._“
     ---
-    „_Nehmen von südöstlichen Compounds durch alle Teile._“
+    „_Nehmen von südöstlichen, gelb verzeichneten Compounds durch alle Teile._“
 
 </ExampleBox>
 
