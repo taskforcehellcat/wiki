@@ -1,5 +1,7 @@
 <!-- Homepage -->
 <script lang="ts">
+  export let data;
+
   import '../app.scss';
   import Theme from '$lib/theme/Theme.svelte';
   import Nav from '$lib/nav/Nav.svelte';
@@ -10,10 +12,8 @@
   import ResultsSection from '$lib/search/ResultsSection.svelte';
   import { beforeNavigate } from '$app/navigation';
 
-  export let data;
-
   let rawInput = '';
-  let query; // holds the query
+  let query: string; // holds the query
   let showResults = false; // whether the search bar is currently in use
   let search = new Search(data.posts);
 

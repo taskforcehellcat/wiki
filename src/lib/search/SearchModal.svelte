@@ -21,23 +21,12 @@
 
   let searchModalInput: HTMLInputElement;
 
-  function resetSearchModal() {
-    $searchInUse = false;
-  }
-
   onMount(function () {
     searchModalInput.focus();
   });
 </script>
 
-<div
-  id="search-dialog"
-  on:keydown={(event) => {
-    if (event.key === 'Escape') {
-      resetSearchModal();
-    }
-  }}
->
+<div id="search-dialog">
   <div id="input-wrapper">
     <input
       type="text"
@@ -72,7 +61,12 @@
   id="bg-tint"
   role="dialog"
   on:click={() => {
-    resetSearchModal();
+    $searchInUse = false;
+  }}
+  on:keydown={(e) => {
+    if (e.key === 'Escape') {
+      $searchInUse = false;
+    }
   }}
 />
 

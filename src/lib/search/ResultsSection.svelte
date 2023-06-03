@@ -1,14 +1,16 @@
 <script lang="ts">
   import { searchResults } from '$lib/search/stores';
-  export let kind;
+  import type { Hit } from './engine';
 
-  let resultsOfKind = [];
+  export let kind: string;
+
+  let resultsOfKind: Array<Hit> = [];
 
   $: resultsOfKind = $searchResults.filter((hit) => {
     return hit.type == kind;
   });
 
-  let hitCount;
+  let hitCount: number;
   $: hitCount = resultsOfKind.length;
 
   let pageTitle: string;

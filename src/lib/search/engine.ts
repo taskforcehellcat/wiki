@@ -1,8 +1,7 @@
-import { searchResults } from '$lib/search/stores';
-
 // This information would be already available by the config property of
 // a menu entry object, but i want to get a prototype going therefore
-// i'll implement it this way for the time being and mark it TODO.
+// i'll implement it this way for the time being and mark it
+// FIXME.
 
 const dirNameToDisplayName = new Map([
   ['aufklaerungstruppe', 'Aufklärungstruppe'],
@@ -28,7 +27,12 @@ export class Hit {
   // the index at which the hit occurs in the text
   occurrence: number;
 
-  constructor(type, crumbs, text, occ) {
+  constructor(
+    type: 'article' | 'heading' | 'text',
+    crumbs: Array<{ display: string; link: string }>,
+    text: string,
+    occ: number
+  ) {
     this.type = type;
     this.breadcrumbs = crumbs;
     this.text = text;
@@ -49,7 +53,7 @@ export class Search {
     html: string;
   }[];
 
-  constructor(articles) {
+  constructor(articles: any) {
     this.articles = articles;
   }
 
@@ -82,13 +86,19 @@ export class Search {
 
       if (titleShort.toLocaleLowerCase().includes(query)) {
         const crumbs = [
-          { display: dirNameToDisplayName.get(article.directory), link: '/' },
+          {
+            display: dirNameToDisplayName.get(article.directory) ?? '',
+            link: '/'
+          },
           { display: titleShort, link: `/${article.directory}/${article.id}` }
         ];
         hits.push(new Hit('article', crumbs, titleShort, 0));
       } else if (title.toLocaleLowerCase().includes(query)) {
         const crumbs = [
-          { display: dirNameToDisplayName.get(article.directory), link: '/' },
+          {
+            display: dirNameToDisplayName.get(article.directory) ?? '',
+            link: '/'
+          },
           { display: title, link: `/${article.directory}/${article.id}` }
         ];
         hits.push(new Hit('article', crumbs, title, 0));
@@ -114,7 +124,7 @@ export class Search {
           let title = str.replaceAll(/<h\d id=".+">/g, '');
           title = title.replaceAll(/<\/h\d>/g, '');
 
-          let id = str.match(/id="[^"]+"/g)[0] ?? '';
+          let id = (str.match(/id="[^"]+"/g) ?? [])[0] ?? '';
           id = id.replace('id=', '');
           id = id.replaceAll('"', '');
           return { heading: title, id: id };
@@ -125,7 +135,10 @@ export class Search {
       for (const { heading, id } of headings) {
         if (heading.toLocaleLowerCase().includes(query)) {
           const crumbs = [
-            { display: dirNameToDisplayName.get(article.directory), link: '/' },
+            {
+              display: dirNameToDisplayName.get(article.directory) ?? '',
+              link: '/'
+            },
             { display: title, link: `/${article.directory}/${article.id}` },
             {
               display: heading,
