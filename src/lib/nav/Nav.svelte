@@ -1,6 +1,4 @@
 <script>
-  import { searchInUse } from '$lib/search/stores';
-
   let activeNav;
   export let menu = [];
 
@@ -26,11 +24,7 @@
 
 <div id="nav__list">
   {#each menu as nav}
-    <div
-      class="expandable"
-      class:open={activeNav === nav.id}
-      class:invisible={$searchInUse}
-    >
+    <div class="expandable" class:open={activeNav === nav.id}>
       <span
         on:click={() => toggleOpen(nav.id)}
         on:keypress={() => toggleOpen(nav.id)}
@@ -44,9 +38,3 @@
     </div>
   {/each}
 </div>
-
-<style lang="scss">
-  .invisible {
-    display: none;
-  }
-</style>

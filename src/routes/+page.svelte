@@ -88,9 +88,12 @@
           {/if}
         </div>
       </div>
-      <div id="home__nav">
-        <Nav menu={data.menu} />
-      </div>
+
+      {#if !$searchInUse}
+        <div id="home__nav">
+          <Nav menu={data.menu} />
+        </div>
+      {/if}
     </div>
   </div>
 {/if}
