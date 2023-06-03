@@ -27,7 +27,7 @@
   }
 
   function update(direction: number): void {
-    showIndex = Math.abs(showIndex + direction) % images.length;
+    showIndex = (showIndex + direction + images.length) % images.length;
     slideshow.style.opacity = '0';
 
     caption = captions[showIndex];
