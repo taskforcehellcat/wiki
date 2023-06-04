@@ -1,6 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import { onMount } from 'svelte';
+  import { beforeNavigate } from '$app/navigation';
 
   import { Search } from '$lib/search/engine';
   import { searchInUse, searchResults } from '$lib/search/stores';
@@ -23,6 +24,11 @@
 
   onMount(function () {
     searchModalInput.focus();
+  });
+
+  beforeNavigate(() => {
+    // hide the modal when navigating
+    $searchInUse = false;
   });
 </script>
 

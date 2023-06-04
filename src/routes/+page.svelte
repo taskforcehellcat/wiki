@@ -27,8 +27,7 @@
   $: showResults = query.length > 2;
 
   beforeNavigate(() => {
-    // reset the query when leaving the site, else the nav menu thinks the
-    // search is in use and stays hidden on article pages.
+    // reset the query when leaving the site
     query = '';
   });
 </script>
