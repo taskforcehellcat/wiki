@@ -1,0 +1,118 @@
+---
+title: Technisches
+date: '2023-06-04'
+nav_index: 8
+---
+
+<script>
+    import Tooltip from "$lib/wikitools/Tooltip.svelte";
+    import launcher_server_browser from '$lib/images/technisches/launcher_server_browser.png';
+    import server_browser_mod_setup from '$lib/images/technisches/server_browser_mod_setup.png';
+    import launcher_direct_connect from '$lib/images/technisches/launcher_direct_connect.png';
+    import direct_connect_screen from '$lib/images/technisches/direct_connect_screen.png';
+    import mod_setup_screen from '$lib/images/technisches/mod_setup_screen.png';
+    import teamspeak_bookmark_screen from '$lib/images/technisches/teamspeak_bookmark_screen.png';
+    import teamspeak_open_bookmarks from '$lib/images/technisches/teamspeak_open_bookmarks.png';
+    import teamspeak_use_bookmark from '$lib/images/technisches/teamspeak_open_bookmarks.png';
+    import acre_installed from '$lib/images/technisches/acre_installed.png';
+    import discord_modpack_channel from '$lib/images/technisches/discord_modpack_channel.png';
+    import launcher_mod_drag_drop from '$lib/images/technisches/launcher_mod_drag_drop.png';
+    import launcher_select_modpack from '$lib/images/technisches/launcher_select_modpack.png';
+    import discord_launcher_check from '$lib/images/technisches/discord_launcher_check.png';
+</script>
+
+Auf dieser Seite sind die wichtigsten Vorkehrungen zur Teilnahme an unseren Spieltagen zusammengefasst.
+
+## Serverbeitritt (Arma)
+
+Voraussetzung für einen reibungslosen Serverbeitritt ist die vollständige Installation unserer Modpacks, siehe dazu [Modpack](/ausbildung/technisches#modpack). Der Arma 3 Launcher bietet zwei Möglichkeiten, um auf unseren Server beizutreten. Beide Varianten werden in diesem Abschnitt erläutert.
+
+### Variante 1: Server Browser
+
+Das Beitreten über den Server Browser ist der bequemste Weg, um unserem Server beizutreten, da der Arma Launcher dabei automatisch alle Mods auswählt, die vom Server erwartet werden.
+
+#### Schritt 1
+
+![Launcher Server Browser]({launcher_server_browser})
+
+#### Schritt 2
+
+![Mod Setup Screen]({server_browser_mod_setup})
+
+**Hinweis:** Erscheinen rote Schriftzüge in der Modliste, bedeutet das, dass die eigenen Modversionen nicht mit denen des Servers übereinstimmen. In diesem Fall prüfen, ob Updates für die eigenen Modifikationen verfügbar sind.
+
+---
+
+### Variante 2: Direkt verbinden
+
+**Wichtig:** Durch das Beitreten über Direkt verbinden werden die Mods nicht automatisch ausgewählt! Das muss vor dem Verbinden manuell stattfinden, siehe dazu // TODO
+
+#### Schritt 1
+
+![Launcher Direct Connect]({launcher_direct_connect})
+
+#### Schritt 2
+
+![Direct Connect Screen]({direct_connect_screen})
+
+## Teamspeak und ACRE
+
+### Teamspeak beitreten
+
+Zum Beitritt zu unserem Teamspeak Server empfehlen wir das Anlegen eines Lesezeichens. Die folgenden Schritte zeigen, wie man ein solches Bookmark anlegt und benutzt.
+
+#### Schritt 1
+
+![Open Teamspeak Bookmarks]({teamspeak_open_bookmarks})
+
+#### Schritt 2
+
+![Teamspeak Bookmark Screen]({teamspeak_bookmark_screen})
+
+#### Schritt 3
+
+![Teamspeak Joining Bookmark]({teamspeak_use_bookmark})
+
+### ACRE einrichten
+
+ACRE2 ist ein Teamspeak Plugin, das uns eine realistische Kommunikation im Spiel erlaubt.
+
+#### Installation
+
+ACRE2 wird automatisch installiert, wenn man Arma 3 mit der Modifikation ACRE2 startet und Teamspeak installiert hat. Wenn alles funktioniert hat, sollte die folgende Nachricht erscheinen:
+
+![ACRE Installation Prompt]({acre_installed})
+
+_Bei fehlgeschlagener automatischer Installation bitte auf unserem Discord beim Stab melden._
+
+## Modpack
+
+**Wichtig:** Das vollständige Herunterladen unseres Modpacks wird zu jedem Spieltag von den Teilnehmern erwartet. Aufgrund der Größe mancher Modifikationen ist es ratsam, am Vortag eines Events zu prüfen, ob man über das aktuelle Modpack verfügt.
+
+### Modpack installieren
+
+Jede neue Version eines Modpacks muss beim Launcher manuell integriert werden, damit dieser die Änderungen am jeweiligen Modpack übernehmen kann.
+
+#### Schritt 1
+
+![Discord Modpack Channel]({discord_modpack_channel})
+
+Öffne den Textkanal "modpack" unter dem Reiter "WICHTIG" auf unserem Discord Server und lade die Modpackdatei herunter, die benötigt wird.
+
+#### Schritt 2
+
+![Discord Modpack Drag and Drop]({launcher_mod_drag_drop})
+
+Die heruntergeladene Modpackdatei (.html) kann mit der Maus per Drag & Drop in den Arma Launcher gezogen werden. Daraufhin öffnet der Launcher eine Liste an Modifikationen und fragt, ob diese heruntergeladen werden soll. Um zu überprüfen, ob der Launcher alle Modifikationen richtig installiert hat, siehe _Modpack überprüfen_.
+
+### Modpack auswählen
+
+Grundsätzlich ist es ratsam, vor jedem Serverbeitritt das Modpack auszuwählen und damit alle Mods zu laden. Auf diese Weise stößt man auf die wenigsten Probleme bei der Serververbindung. Das Auswählen und Laden eines Modpacks erfolgt durch Anklicken des Modpacknamen im Launcher:
+
+![Launcher Modpack Selection]({launcher_select_modpack})
+
+### Modpack überprüfen
+
+Ob das Auswählen oder die Installation des Modpacks gelungen ist, kann man in einem einfachen Schritt prüfen. Dazu gleicht man die Anzahl der im Launcher geladenen Mods mit der Anzahl der Mods im Textkanal "modpack" auf unserem Discord ab.
+
+![Launcher & Discord Modpack Check]({discord_launcher_check})
