@@ -3,19 +3,6 @@
 // i'll implement it this way for the time being and mark it
 // FIXME.
 
-const dirNameToDisplayName = new Map([
-  ['aufklaerungstruppe', 'Aufklärungstruppe'],
-  ['ausbildung', 'Ausbildung'],
-  ['fliegertruppe', 'Fliegertruppe'],
-  ['fuhrpark', 'Fuhrpark'],
-  ['infanterie', 'Infanterie'],
-  ['logistiktruppe', 'Logistiktruppe'],
-  ['panzertruppen', 'Panzertruppen'],
-  ['pioniertruppe', 'Pioniertruppe'],
-  ['sanitaetsdienst', 'Sanitätsdienst'],
-  ['ueber-uns', 'Über uns']
-]);
-
 export class Hit {
   // whether this hit is a page itself, a heading on this page
   // or in a text on this page
@@ -53,8 +40,15 @@ export class Search {
     html: string;
   }[];
 
-  constructor(articles: any) {
+  menu: Map<string, string>;
+
+  constructor(articles: any, menu: any) {
     this.articles = articles;
+    this.menu = new Map(
+      menu.map((e: { id: string; config: { title: string } }) => {
+        return [e.id, e.config.title];
+      })
+    );
   }
 
   query(query: string) {
@@ -87,7 +81,7 @@ export class Search {
       if (titleShort.toLocaleLowerCase().includes(query)) {
         const crumbs = [
           {
-            display: dirNameToDisplayName.get(article.directory) ?? '',
+            display: this.menu.get(article.directory) ?? '',
             link: '/'
           },
           { display: titleShort, link: `/${article.directory}/${article.id}` }
@@ -96,7 +90,7 @@ export class Search {
       } else if (title.toLocaleLowerCase().includes(query)) {
         const crumbs = [
           {
-            display: dirNameToDisplayName.get(article.directory) ?? '',
+            display: this.menu.get(article.directory) ?? '',
             link: '/'
           },
           { display: title, link: `/${article.directory}/${article.id}` }
@@ -136,7 +130,7 @@ export class Search {
         if (heading.toLocaleLowerCase().includes(query)) {
           const crumbs = [
             {
-              display: dirNameToDisplayName.get(article.directory) ?? '',
+              display: this.menu.get(article.directory) ?? '',
               link: '/'
             },
             { display: title, link: `/${article.directory}/${article.id}` },

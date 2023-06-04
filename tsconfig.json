@@ -2,7 +2,7 @@
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
     "outDir": "./.svelte-kit/",
-    "lib": ["ES2023"],
+    "lib": ["ES2023", "DOM"],
     "allowJs": true,
     "checkJs": true,
     "esModuleInterop": true,

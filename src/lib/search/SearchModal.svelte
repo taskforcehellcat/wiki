@@ -9,7 +9,7 @@
   let rawInput = '';
   let query = ''; // holds the query
   let showResults = false; // whether the search bar is currently in use
-  let search = new Search($page.data.posts);
+  let search = new Search($page.data.posts, $page.data.menu);
 
   $: query = rawInput.trim();
 
