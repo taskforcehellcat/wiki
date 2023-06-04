@@ -1,8 +1,8 @@
 <script lang="ts">
   import { searchResults } from '$lib/search/stores';
-  import type { Hit } from './engine';
+  import type { Hit, HitKind } from './d.ts';
 
-  export let kind: string;
+  export let kind: HitKind;
 
   let resultsOfKind: Array<Hit> = [];
 

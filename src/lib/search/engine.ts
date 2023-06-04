@@ -1,51 +1,14 @@
-// This information would be already available by the config property of
-// a menu entry object, but i want to get a prototype going therefore
-// i'll implement it this way for the time being and mark it
-// FIXME.
-
-export class Hit {
-  // whether this hit is a page itself, a heading on this page
-  // or in a text on this page
-  type: 'article' | 'heading' | 'text';
-  // basically the path to the hit(s)
-  breadcrumbs: Array<{ display: string; link: string }>;
-  // the text in witch the index occurred or the heading or article name
-  text: string;
-  // the index at which the hit occurs in the text
-  occurrence: number;
-
-  constructor(
-    type: 'article' | 'heading' | 'text',
-    crumbs: Array<{ display: string; link: string }>,
-    text: string,
-    occ: number
-  ) {
-    this.type = type;
-    this.breadcrumbs = crumbs;
-    this.text = text;
-    this.occurrence = occ;
-  }
-}
+import type { Hit, Breadcrumb } from './.d.ts';
+import type { Article, Directory } from '../../app.js';
 
 export class Search {
-  articles: {
-    meta: {
-      title: string;
-      title_short: string;
-      date: string;
-      nav_index: number;
-    };
-    id: string;
-    directory: string;
-    html: string;
-  }[];
+  articles: Array<Article>;
+  directoryIdsToDisplay: Map<string, string>;
 
-  menu: Map<string, string>;
-
-  constructor(articles: any, menu: any) {
+  constructor(articles: Array<Article>, menu: Array<Directory>) {
     this.articles = articles;
-    this.menu = new Map(
-      menu.map((e: { id: string; config: { title: string } }) => {
+    this.directoryIdsToDisplay = new Map(
+      menu.map((e) => {
         return [e.id, e.config.title];
       })
     );
@@ -79,23 +42,35 @@ export class Search {
       const title = article.meta.title;
 
       if (titleShort.toLocaleLowerCase().includes(query)) {
-        const crumbs = [
+        const crumbs: Array<Breadcrumb> = [
           {
-            display: this.menu.get(article.directory) ?? '',
+            display: this.directoryIdsToDisplay.get(article.directory) ?? '',
             link: '/'
           },
           { display: titleShort, link: `/${article.directory}/${article.id}` }
         ];
-        hits.push(new Hit('article', crumbs, titleShort, 0));
+
+        hits.push({
+          type: 'article',
+          breadcrumbs: crumbs,
+          text: titleShort,
+          occurrence: 0
+        });
       } else if (title.toLocaleLowerCase().includes(query)) {
-        const crumbs = [
+        const crumbs: Array<Breadcrumb> = [
           {
-            display: this.menu.get(article.directory) ?? '',
+            display: this.directoryIdsToDisplay.get(article.directory) ?? '',
             link: '/'
           },
           { display: title, link: `/${article.directory}/${article.id}` }
         ];
-        hits.push(new Hit('article', crumbs, title, 0));
+
+        hits.push({
+          type: 'article',
+          breadcrumbs: crumbs,
+          text: title,
+          occurrence: 0
+        });
       }
 
       // now for heading matches...
@@ -128,9 +103,9 @@ export class Search {
       // find matching ones
       for (const { heading, id } of headings) {
         if (heading.toLocaleLowerCase().includes(query)) {
-          const crumbs = [
+          const crumbs: Array<Breadcrumb> = [
             {
-              display: this.menu.get(article.directory) ?? '',
+              display: this.directoryIdsToDisplay.get(article.directory) ?? '',
               link: '/'
             },
             { display: title, link: `/${article.directory}/${article.id}` },
@@ -140,7 +115,12 @@ export class Search {
             }
           ];
 
-          hits.push(new Hit('heading', crumbs, title, 0));
+          hits.push({
+            type: 'heading',
+            breadcrumbs: crumbs,
+            text: title,
+            occurrence: 0
+          });
         }
       }
 

@@ -1,8 +1,10 @@
-<script>
-  let activeNav;
-  export let menu = [];
+<script lang="ts">
+  import type { Article, Directory } from '../../app';
 
-  function toggleOpen(nav_id) {
+  export let menu: Array<Directory> = [];
+  let activeNav: string | null;
+
+  function toggleOpen(nav_id: string) {
     if (nav_id === activeNav) {
       activeNav = null;
     } else {
@@ -10,7 +12,7 @@
     }
   }
 
-  function shortName(article) {
+  function shortName(article: Article) {
     /*
 			returns the articles short title if there is one set
 		*/
