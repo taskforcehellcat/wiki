@@ -45,7 +45,7 @@ Das Beitreten über den Server Browser ist der bequemste Weg, um unserem Server 
 
 ### Variante 2: Direkt verbinden
 
-**Wichtig:** Durch das Beitreten über Direkt verbinden werden die Mods nicht automatisch ausgewählt! Das muss vor dem Verbinden manuell stattfinden, siehe dazu // TODO
+**Wichtig:** Durch das Beitreten über Direkt verbinden werden die Mods nicht automatisch ausgewählt! Das muss vor dem Verbinden manuell stattfinden, siehe dazu [Modpack überprüfen](#modpack-überprüfen).
 
 #### Schritt 1
 
@@ -103,7 +103,7 @@ Jede neue Version eines Modpacks muss beim Launcher manuell integriert werden, d
 
 ![Discord Modpack Drag and Drop]({launcher_mod_drag_drop})
 
-Die heruntergeladene Modpackdatei (.html) kann mit der Maus per Drag & Drop in den Arma Launcher gezogen werden. Daraufhin öffnet der Launcher eine Liste an Modifikationen und fragt, ob diese heruntergeladen werden soll. Um zu überprüfen, ob der Launcher alle Modifikationen richtig installiert hat, siehe _Modpack überprüfen_.
+Die heruntergeladene Modpackdatei (.html) kann mit der Maus per Drag & Drop in den Arma Launcher gezogen werden. Daraufhin öffnet der Launcher eine Liste an Modifikationen und fragt, ob diese heruntergeladen werden soll. Um zu überprüfen, ob der Launcher alle Modifikationen richtig installiert hat, siehe [Modpack überprüfen](#modpack-überprüfen).
 
 ### Modpack auswählen
 
