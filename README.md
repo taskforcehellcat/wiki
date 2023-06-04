@@ -117,7 +117,10 @@ A complete example might look like this:
   import leopard from '$lib/path/to/leopard.jpg';
 </script>
 
-<Slideshow images={[leopard, "https://www.hoster.com/challenger.jpg"]} captions={['Das ist der Leopard', 'Das ist der Challenger']} />
+<Slideshow
+  images={[leopard, 'https://www.hoster.com/challenger.jpg']}
+  captions={['Das ist der Leopard', 'Das ist der Challenger']}
+/>
 ```
 
 ---
