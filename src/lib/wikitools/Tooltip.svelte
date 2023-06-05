@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
   export let isHovered = false;
-  export let image = undefined;
+  export let image: string;
   export let text = '';
 
-  let x;
-  let y;
+  let x: number;
+  let y: number;
+
+  // FIXME proper event handling
 
   function tapped(event) {
     isHovered = !isHovered;
