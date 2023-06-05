@@ -10,7 +10,7 @@ nav_index: 8
     import server_browser_mod_setup from '$lib/images/technisches/server_browser_mod_setup.png';
     import launcher_direct_connect from '$lib/images/technisches/launcher_direct_connect.png';
     import direct_connect_screen from '$lib/images/technisches/direct_connect_screen.png';
-    import mod_setup_screen from '$lib/images/technisches/mod_setup_screen.png';
+    // import mod_setup_screen from '$lib/images/technisches/mod_setup_screen.png';
     import teamspeak_bookmark_screen from '$lib/images/technisches/teamspeak_bookmark_screen.png';
     import teamspeak_open_bookmarks from '$lib/images/technisches/teamspeak_open_bookmarks.png';
     import teamspeak_use_bookmark from '$lib/images/technisches/teamspeak_open_bookmarks.png';
