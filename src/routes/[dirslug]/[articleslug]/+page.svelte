@@ -20,11 +20,18 @@
         for (const [k, v] of umlautReplacements) {
           hash = hash.replaceAll(k, v);
         }
-        document.getElementById(hash).scrollIntoView();
+        document.getElementById(hash)?.scrollIntoView();
       }
     } else {
       // scroll to top if there is no hash provided
-      document.getElementById('main').scrollTop = 0;
+      const mainElement = document.getElementById('main');
+      if (mainElement) {
+        mainElement.scrollTop = 0;
+      } else {
+        console.warn(
+          `Element with id "main" wasn't found, automatic scrolling may not work correctly.`
+        );
+      }
     }
   });
 

@@ -1,14 +1,4 @@
-import type { Article } from '../../app';
-
-// FIXME you should be able to get this dynamically...
-type ArticleFile = {
-  metadata: Article['meta'];
-  default: {
-    render: () => {
-      html: string;
-    };
-  };
-};
+import type { Article, ArticleFile } from '../../app';
 
 export const fetchMarkdownPosts = async () => {
   const allArticleFiles = import.meta.glob<ArticleFile>(

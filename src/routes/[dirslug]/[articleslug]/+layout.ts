@@ -1,4 +1,6 @@
-function sortArticlesByNavIndex(a, b) {
+import type { Article, Directory, Menu } from '../../../app.js';
+
+function sortArticlesByNavIndex(a: Article, b: Article) {
   if (!(a.meta.nav_index && b.meta.nav_index)) {
     return a.meta.title.localeCompare(b.meta.title);
   } else {
@@ -6,7 +8,7 @@ function sortArticlesByNavIndex(a, b) {
   }
 }
 
-function sortDirectoriesByNavIndex(a, b) {
+function sortDirectoriesByNavIndex(a: Directory, b: Directory) {
   if (!(a.config.nav_index && b.config.nav_index)) {
     return a.config.title.localeCompare(b.config.title);
   } else {
@@ -16,13 +18,17 @@ function sortDirectoriesByNavIndex(a, b) {
 
 export async function load({ fetch }) {
   const response = await fetch(`/api/articles`);
-  const articles = await response.json();
+  const articles: Array<Article> = await response.json();
 
-  let menu = {};
+  let menu: Menu = {};
 
-  for (const element of articles) {
-    menu[element.directory] ??= { entries: [], id: element.directory };
-    menu[element.directory].entries.push(element);
+  for (const article of articles) {
+    menu[article.directory] ??= {
+      entries: [],
+      id: article.directory,
+      config: { title: '', date: '', nav_index: 0 }
+    };
+    menu[article.directory].entries.push(article);
   }
 
   for (const [key] of Object.entries(menu)) {
@@ -32,13 +38,13 @@ export async function load({ fetch }) {
     menu[key].entries.sort((a, b) => sortArticlesByNavIndex(a, b));
   }
 
-  let menuList = Object.keys(menu).map(function (key) {
+  let directories = Object.keys(menu).map(function (key) {
     return menu[key];
   });
 
-  menuList.sort((a, b) => sortDirectoriesByNavIndex(a, b));
+  directories.sort((a, b) => sortDirectoriesByNavIndex(a, b));
   return {
     posts: articles,
-    menu: menuList
+    menu: directories
   };
 }
