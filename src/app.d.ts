@@ -40,3 +40,13 @@ export type Article = {
   directory: string;
   html: string;
 };
+
+// FIXME you should be able to get this dynamically...
+type ArticleFile = {
+  metadata: Article['meta'];
+  default: {
+    render: () => {
+      html: string;
+    };
+  };
+};
