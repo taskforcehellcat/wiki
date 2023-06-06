@@ -7,25 +7,11 @@ nav_index: 6
 <script lang="ts">
     import Keys from "$lib/wikitools/Keys.svelte";
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
-    import { keysLayout } from '$lib/stores';
+    import { layoutId } from '$lib/pickers/stores';
     import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
 </script>
 
 <Wipbanner />
-
-<!-- Debugging only. If you want to use two switches for language and keyboard each, give me a hint -- Emmy -->
-
-<select bind:value={$keysLayout} style="display: block; margin-bottom: 1rem;" on:input={({currentTarget: { value }})=>{
-localStorage.setItem('preferredKeyboardLayout', value)
-}}>
-
-<option value="de-win">Windows, deutsch</option>
-<option value="en-win">Windows, englisch</option>
-<option value="de-mac">Mac, deutsch</option>
-<option value="en-mac">Mac, englisch</option>
-</select>
-
-<p>Diese Einstellung wird im ganzen Wiki angewandt.</p>
 
 <style>
     tr {

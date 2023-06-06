@@ -2,12 +2,12 @@
   import Popup from '$lib/aprilfools/Popup.svelte';
 
   import '../../../app.scss';
-  import { themeId } from '$lib/theme/stores';
+  import { themeId } from '$lib/pickers/stores';
   import '$lib/mdstyling/github.css';
   import Searchbar from '$lib/search/Searchbar.svelte';
 
   // --- themes ---
-  import Theme from '$lib/theme/Theme.svelte';
+  import ThemePicker from '$lib/pickers/ThemePicker.svelte';
 
   // --- burger menu ---
   import OpenMenuSVG from '$lib/burgermenu/openMenu.svelte';
@@ -20,6 +20,7 @@
 
   import { page } from '$app/stores';
   import PageMeta from '$lib/metadata/PageMeta.svelte';
+  import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
 
   let isOpen = false;
   export let anchors = [];
@@ -103,7 +104,10 @@
 
       <div id="info-bar">
         <Searchbar />
-        <Theme location="article" />
+        <div id="pickers">
+          <ThemePicker location="article" />
+          <LayoutPicker location="article" />
+        </div>
       </div>
 
       <content class="markdown-body">
@@ -149,8 +153,8 @@
     height: 100%;
     background: var(--wikiBG);
     grid-column: 2;
-    gap: 1rem;
     grid-row: 1;
+    gap: 1rem;
     border-bottom: 1px solid var(--color-border-muted);
     position: sticky;
     top: 0;
@@ -176,6 +180,11 @@
   footer {
     grid-row: 3;
     grid-column: 2;
+  }
+
+  #pickers {
+    display: flex;
+    gap: 1rem;
   }
 
   #nav__list-bar {

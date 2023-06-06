@@ -3,9 +3,9 @@
   export let data;
 
   import '../app.scss';
-  import Theme from '$lib/theme/Theme.svelte';
+  import ThemePicker from '$lib/pickers/ThemePicker.svelte';
   import Nav from '$lib/nav/Nav.svelte';
-  import { themeId } from '$lib/theme/stores';
+  import { themeId } from '$lib/pickers/stores';
 
   import { Search } from '$lib/search/engine';
   import { searchInUse, searchResults } from '$lib/search/stores';
@@ -39,7 +39,7 @@
 
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
-    <Theme location="home" />
+    <ThemePicker location="home" />
     <div id="home">
       <div id="home__top">
         <a id="home__link" href="https://taskforcehellcat.de/"

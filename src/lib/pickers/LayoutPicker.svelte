@@ -1,45 +1,41 @@
 <script lang="ts">
   import { browser } from '$app/environment';
-  import { themeId } from '$lib/theme/stores';
+  import { layoutId } from '$lib/pickers/stores';
   import { slide } from 'svelte/transition';
 
   export let location = '';
 
-  let themesOpen = false;
-  let themeChoices = ['dark', 'light', 'auto'];
+  let open = false;
+  let choices = ['de-win', 'de-mac', 'en-win', 'en-mac'];
 
-  themeId.subscribe((value) => {
-    if (browser) {
-      return (localStorage.theme = value);
-    }
-  });
+  $: if (browser) localStorage.layout = $layoutId;
 </script>
 
-<div id="theme-picker" data-location={location}>
+<div id="layout-picker" data-location={location}>
   <button
-    id="theme-button"
+    id="layout-button"
     on:click={() => {
-      themesOpen = !themesOpen;
+      open = !open;
     }}
   >
-    <span class="material-icons-rounded">format_paint</span>
+    <span class="material-icons-rounded">keyboard</span>
   </button>
-  {#if themesOpen}
+  {#if open}
     <div
-      id="theme-choices"
+      id="layout-choices"
       transition:slide={{ axis: 'x', duration: 500 }}
-      data-visible={themesOpen}
+      data-visible={open}
     >
-      {#each themeChoices as themeChoice}
-        <div id="theme-choice">
+      {#each choices as choice}
+        <div id="layout-choice">
           <input
             type="radio"
-            id="theme_{themeChoice}"
-            name="theme"
-            value={themeChoice}
-            bind:group={$themeId}
+            id={choice}
+            name="layout"
+            value={choice}
+            bind:group={$layoutId}
           />
-          <label for="theme_{themeChoice}" />
+          <label for={choice} />
         </div>
       {/each}
     </div>
@@ -47,10 +43,10 @@
 </div>
 
 <style lang="scss">
-  // FIXME theme picker placement when collapsed
-  // FIXME theme picker on the homepage
+  // FIXME picker placement when collapsed
+  // FIXME picker on the homepage
 
-  #theme-picker {
+  #layout-picker {
     &[data-location='home'] {
       position: absolute;
       right: 2.5rem;
@@ -74,7 +70,7 @@
     }
   }
 
-  #theme-button {
+  #layout-button {
     border: none;
     height: 3.5rem; // HACK this should probably be dynamic
     width: 3.5rem;
@@ -88,11 +84,15 @@
     }
   }
 
-  #theme-choices {
+  // TODO keyboard layout options styling
+
+  #layout-choices {
     height: 100%;
-    width: 12rem;
+    width: fit-content;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 
     border-left: none;
@@ -119,23 +119,10 @@
       align-items: center;
       font-size: 1rem;
 
-      &[for='theme_light'] {
+      background: red;
+
+      &[for='de-win'] {
         background: linear-gradient(-45deg, #fff 50%, #101b3b 5%);
-      }
-
-      &[for='theme_dark'] {
-        background: linear-gradient(-45deg, #0a0a0a 50%, #1b1b1b 5%);
-      }
-
-      &[for='theme_auto'] {
-        background-color: var(--brandPrimaryBG);
-
-        &:after {
-          content: 'A';
-          font-size: 1.5rem;
-          font-weight: 600;
-          color: var(--brandTertiaryTXT);
-        }
       }
     }
   }
