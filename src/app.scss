@@ -8,6 +8,24 @@
   font-variant-ligatures: none;
 }
 
+// mark external links (i didnt know where else to put it)
+a[href]:not(:where(
+  /* exclude hash only links and empty */
+  [href^="#"],
+  [href=""],
+  /* exclude relative but not double slash only links */
+  [href^="/"]:not([href^="//"]),
+  /* domains to exclude */
+  [href*="//taskforcehellcat.de"],
+  /* subdomains to exclude */
+  [href*="//wiki.taskforcehellcat.de"]
+)):after {
+  font-family: Material Icons Rounded;
+  content: 'launch';
+  margin-left: 0.3rem;
+  vertical-align: bottom;
+}
+
 @mixin theme-light {
   --brandPrimaryBG: #101b3b;
   --brandSecondaryBG: #273252;
