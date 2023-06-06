@@ -1,9 +1,9 @@
 <script lang="ts">
   import { browser } from '$app/environment';
   import { themeId } from '$lib/theme/stores';
+  import { slide } from 'svelte/transition';
 
   export let location = '';
-  let themeDiv: HTMLDivElement;
 
   let themesOpen = false;
   let themeChoices = ['dark', 'light', 'auto'];
@@ -15,35 +15,42 @@
   });
 </script>
 
-<div id="theme" bind:this={themeDiv} data-location={location}>
+<div id="theme-picker" data-location={location}>
   <button
-    id="theme__button"
+    id="theme-button"
     on:click={() => {
       themesOpen = !themesOpen;
     }}
-    data-visible={themesOpen}
   >
     <span class="material-icons-rounded">format_paint</span>
   </button>
-  <div id="theme__picker" data-visible={themesOpen}>
-    {#each themeChoices as themeChoice}
-      <input
-        type="radio"
-        id="theme_{themeChoice}"
-        name="theme"
-        value={themeChoice}
-        bind:group={$themeId}
-        on:click={() => {
-          themesOpen = !themesOpen;
-        }}
-      />
-      <label for="theme_{themeChoice}" />
-    {/each}
-  </div>
+  {#if themesOpen}
+    <div
+      id="theme-choices"
+      transition:slide={{ axis: 'x', duration: 500 }}
+      data-visible={themesOpen}
+    >
+      {#each themeChoices as themeChoice}
+        <div id="theme-choice">
+          <input
+            type="radio"
+            id="theme_{themeChoice}"
+            name="theme"
+            value={themeChoice}
+            bind:group={$themeId}
+          />
+          <label for="theme_{themeChoice}" />
+        </div>
+      {/each}
+    </div>
+  {/if}
 </div>
 
 <style lang="scss">
-  #theme {
+  // FIXME theme picker placement when collapsed
+  // FIXME theme picker on the homepage
+
+  #theme-picker {
     &[data-location='home'] {
       position: absolute;
       right: 2.5rem;
@@ -56,48 +63,46 @@
       right: unset;
       top: unset;
       z-index: unset;
+
+      display: flex;
+      align-items: center;
+      width: fit-content;
+
+      border: 1px solid var(--border);
+      background-color: #05294d07;
+      border-radius: 0.6rem;
     }
   }
 
-  #theme__button {
-    --theme-border-radius: 0.7rem;
-    border: 1px solid var(--border);
-
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 1/1;
+  #theme-button {
+    border: none;
+    height: 3.5rem; // HACK this should probably be dynamic
+    width: 3.5rem;
     cursor: pointer;
     color: #687076;
-    background-color: #05294d07;
     border-radius: 0.6rem;
+    background-color: transparent;
 
     span {
-      font-size: 2.1rem;
-    }
-
-    &[data-visible='true'] {
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-      border-bottom: none;
+      font-size: 1.8rem;
     }
   }
 
-  #theme__picker {
-    width: 100%;
-    height: fit-content;
-    border-bottom-left-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
-    flex-direction: column;
+  #theme-choices {
+    height: 100%;
+    width: 12rem;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    display: none;
-    border: 1px solid var(--border);
-    background-color: var(--theme-main);
-    padding-top: 1rem;
+
+    border-left: none;
+    border-top-right-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
 
     &[data-visible='true'] {
-      display: flex;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      border-left: 1px solid var(--border);
     }
 
     input {
@@ -105,7 +110,7 @@
     }
 
     label {
-      width: 100%;
+      height: 2.5rem;
       aspect-ratio: 1/1;
       border-radius: 0.6rem;
       cursor: pointer;
@@ -113,7 +118,6 @@
       justify-content: center;
       align-items: center;
       font-size: 1rem;
-      border: 1px solid var(--border);
 
       &[for='theme_light'] {
         background: linear-gradient(-45deg, #fff 50%, #101b3b 5%);
@@ -128,7 +132,7 @@
 
         &:after {
           content: 'A';
-          font-size: 1.1rem;
+          font-size: 1.5rem;
           font-weight: 600;
           color: var(--brandTertiaryTXT);
         }
