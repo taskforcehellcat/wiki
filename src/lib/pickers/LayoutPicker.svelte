@@ -95,14 +95,12 @@
     display: flex;
     align-items: center;
 
-    border-left: none;
-    border-top-right-radius: 0.6rem;
-    border-bottom-right-radius: 0.6rem;
+    border-right: none;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0.6rem;
 
     &[data-visible='true'] {
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
-      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
     }
 
     input {
