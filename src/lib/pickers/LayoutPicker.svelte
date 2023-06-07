@@ -27,7 +27,7 @@
             value={choice}
             bind:group={$layoutId}
           />
-          <label for={choice} />
+          <label for={choice}><div class="symbol" /></label>
         </div>
       {/each}
     </div>
@@ -118,11 +118,32 @@
       justify-content: center;
       align-items: center;
       font-size: 1rem;
+      background-color: darkgray;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: var(--color-canvas-default);
 
-      background: red;
+      .symbol {
+        width: 60%;
+        height: 60%;
+        -webkit-mask-size: 100%;
+        mask-size: 100%;
+        mask-position: center;
+        -webkit-mask-position: center;
+        background-color: var(--brandSecondaryTXT);
+      }
 
       &[for='de-win'] {
-        background: linear-gradient(-45deg, #fff 50%, #101b3b 5%);
+        .symbol {
+          -webkit-mask-image: url(/images/win.svg);
+          mask-image: url(/images/win.svg);
+        }
+      }
+      &[for='de-mac'] {
+        .symbol {
+          -webkit-mask-image: url(/images/mac.svg);
+          mask-image: url(/images/mac.svg);
+        }
       }
     }
   }
