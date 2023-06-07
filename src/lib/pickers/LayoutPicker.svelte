@@ -118,6 +118,7 @@
       justify-content: center;
       align-items: center;
       font-size: 1rem;
+      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
       background-color: darkgray;
       background-position: center;
       background-repeat: no-repeat;

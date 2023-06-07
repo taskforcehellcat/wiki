@@ -116,6 +116,7 @@
       justify-content: center;
       align-items: center;
       font-size: 1rem;
+      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
 
       &[for='theme_light'] {
         background: linear-gradient(-45deg, #fff 50%, #101b3b 5%);
