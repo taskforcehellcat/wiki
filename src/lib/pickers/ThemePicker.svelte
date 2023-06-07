@@ -12,14 +12,6 @@
 </script>
 
 <div id="theme-picker" data-location={location}>
-  <button
-    id="theme-button"
-    on:click={() => {
-      open = !open;
-    }}
-  >
-    <span class="material-icons-rounded">format_paint</span>
-  </button>
   {#if open}
     <div
       id="theme-choices"
@@ -40,6 +32,14 @@
       {/each}
     </div>
   {/if}
+  <button
+    id="theme-button"
+    on:click={() => {
+      open = !open;
+    }}
+  >
+    <span class="material-icons-rounded">format_paint</span>
+  </button>
 </div>
 
 <style lang="scss">
