@@ -12,14 +12,6 @@
 </script>
 
 <div id="layout-picker" data-location={location}>
-  <button
-    id="layout-button"
-    on:click={() => {
-      open = !open;
-    }}
-  >
-    <span class="material-icons-rounded">keyboard</span>
-  </button>
   {#if open}
     <div
       id="layout-choices"
@@ -40,6 +32,14 @@
       {/each}
     </div>
   {/if}
+  <button
+    id="layout-button"
+    on:click={() => {
+      open = !open;
+    }}
+  >
+    <span class="material-icons-rounded">keyboard</span>
+  </button>
 </div>
 
 <style lang="scss">
