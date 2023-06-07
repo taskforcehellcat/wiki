@@ -10,10 +10,9 @@ nav_index: 8
     import server_browser_mod_setup from '$lib/images/technisches/server_browser_mod_setup.png';
     import launcher_direct_connect from '$lib/images/technisches/launcher_direct_connect.png';
     import direct_connect_screen from '$lib/images/technisches/direct_connect_screen.png';
-    // import mod_setup_screen from '$lib/images/technisches/mod_setup_screen.png';
     import teamspeak_bookmark_screen from '$lib/images/technisches/teamspeak_bookmark_screen.png';
     import teamspeak_open_bookmarks from '$lib/images/technisches/teamspeak_open_bookmarks.png';
-    import teamspeak_use_bookmark from '$lib/images/technisches/teamspeak_open_bookmarks.png';
+    import teamspeak_use_bookmark from '$lib/images/technisches/teamspeak_use_bookmark.png';
     import acre_installed from '$lib/images/technisches/acre_installed.png';
     import discord_modpack_channel from '$lib/images/technisches/discord_modpack_channel.png';
     import launcher_mod_drag_drop from '$lib/images/technisches/launcher_mod_drag_drop.png';
@@ -23,7 +22,7 @@ nav_index: 8
 
 Auf dieser Seite sind die wichtigsten Vorkehrungen zur Teilnahme an unseren Spieltagen zusammengefasst.
 
-## Serverbeitritt (Arma)
+## Arma 3
 
 Voraussetzung für einen reibungslosen Serverbeitritt ist die vollständige Installation unserer Modpacks, siehe dazu [Modpack](/ausbildung/technisches#modpack). Der Arma 3 Launcher bietet zwei Möglichkeiten, um auf unseren Server beizutreten. Beide Varianten werden in diesem Abschnitt erläutert.
 
@@ -45,7 +44,7 @@ Das Beitreten über den Server Browser ist der bequemste Weg, um unserem Server 
 
 ### Variante 2: Direkt verbinden
 
-**Wichtig:** Durch das Beitreten über Direkt verbinden werden die Mods nicht automatisch ausgewählt! Das muss vor dem Verbinden manuell stattfinden, siehe dazu [Modpack überprüfen](#modpack-überprüfen).
+**Wichtig:** Durch das Beitreten über Direkt verbinden werden die Mods nicht automatisch ausgewählt! Das muss vor dem Verbinden manuell stattfinden, siehe dazu [Modpack auswählen](#modpack-auswählen).
 
 #### Schritt 1
 
