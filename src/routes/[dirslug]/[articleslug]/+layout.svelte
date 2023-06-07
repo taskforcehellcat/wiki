@@ -159,6 +159,8 @@
     display: flex;
     justify-content: space-between;
 
+    z-index: 100;
+
     @media only screen and (max-width: 800px) {
       grid-row: unset;
       grid-column: unset;
