@@ -32,7 +32,7 @@
   });
 </script>
 
-<div id="search-dialog">
+<div class="search dialog">
   <div id="input-wrapper">
     <input
       type="text"
@@ -42,25 +42,27 @@
     />
   </div>
 
-  {#if showResults}
-    {#if $searchResults.length !== 0}
-      <ResultsSection kind="article" />
-      <ResultsSection kind="heading" />
-      <ResultsSection kind="text" />
+  <div class="search results">
+    {#if showResults}
+      {#if $searchResults.length !== 0}
+        <ResultsSection kind="article" />
+        <ResultsSection kind="heading" />
+        <ResultsSection kind="text" />
+      {:else}
+        <p>
+          <span class="search errortext"
+            >Es wurden keine Übereinstimmungen gefunden!</span
+          >
+        </p>
+      {/if}
     {:else}
       <p>
-        <span class="search__errortext"
-          >Es wurden keine Übereinstimmungen gefunden!</span
+        <span class="search errortext"
+          >Bitte mindestens drei Zeichen eingeben!</span
         >
       </p>
     {/if}
-  {:else}
-    <p>
-      <span class="search__errortext"
-        >Bitte mindestens drei Zeichen eingeben!</span
-      >
-    </p>
-  {/if}
+  </div>
 </div>
 
 <div
@@ -77,55 +79,96 @@
 />
 
 <style lang="scss">
-  #search-dialog {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    width: min(75rem, 100%);
-    height: 40rem;
-    border-radius: 1.5rem;
-    z-index: 100;
+  .search {
+    &.dialog {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--brandSecondaryBG);
+      width: min(75rem, 100%);
+      height: 40rem;
+      border-radius: 1.5rem;
 
-    #input-wrapper {
-      width: 100%;
-      height: 8rem;
       display: flex;
-      gap: 2rem;
-      border-top-right-radius: 1.5rem;
-      border-bottom: 1px solid var(--border);
-      border-top-left-radius: 1.5rem;
-      padding-inline: 4rem;
+      flex-direction: column;
+      z-index: 100;
 
-      input {
-        border-top-right-radius: inherit;
-        border-top-left-radius: inherit;
-        font-size: 2rem;
-        color: var(--text);
-        height: 100%;
+      box-shadow: 1rem 1rem 4rem var(--brandPrimaryBG);
+
+      #input-wrapper {
         width: 100%;
-        color: var(--brandSecondaryTXT);
-        padding-block: 2rem;
+        height: flex;
         display: flex;
-        align-items: center;
+        gap: 2rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom: 1px solid var(--brandTertiaryTXT);
+        border-top-left-radius: 1.5rem;
+        padding-inline: 4rem;
+
+        input {
+          border-top-right-radius: inherit;
+          border-top-left-radius: inherit;
+          font-size: 2rem;
+          color: var(--text);
+          height: 100%;
+          width: 100%;
+          color: var(--brandTertiaryTXT);
+          padding-block: 2rem;
+          display: flex;
+          align-items: center;
+        }
+
+        &:before {
+          content: 'search';
+          display: inline;
+          width: fit-content;
+          font-size: 2.8rem;
+          font-family: 'Material Icons Rounded';
+          color: var(--brandTertiaryTXT);
+          display: flex;
+          align-items: center;
+        }
       }
 
-      &:before {
-        content: 'search';
-        display: inline;
-        width: fit-content;
-        font-size: 2.8rem;
-        font-family: 'Material Icons Rounded';
-        color: #687076;
-        display: flex;
-        align-items: center;
+      /* fade overflowing text */
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(
+          rgba(255, 255, 255, 0) 85%,
+          var(--brandSecondaryBG)
+        );
+        pointer-events: none;
+        border-radius: inherit;
       }
+    }
+
+    &.results {
+      margin-left: 2rem;
+      margin-bottom: 0;
+      padding-bottom: 5rem;
+      padding-top: 2rem;
+      color: var(--brandTertiaryTXT);
+
+      overflow-y: scroll;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        width: 0;
+      }
+    }
+
+    &.errortext {
+      color: var(--errorTXT);
     }
   }
 
   #bg-tint {
-    background-color: rgba(0, 0, 0, 0.55);
+    background-color: rgba(0, 0, 0, 0.35);
     position: fixed;
     top: 0;
     left: 0;
