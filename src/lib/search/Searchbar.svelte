@@ -41,6 +41,8 @@
       background-position: center;
       margin-inline-end: 1.5rem;
       white-space: nowrap;
+      display: flex;
+      align-items: center;
 
       &::before {
         content: 'search';
@@ -53,7 +55,6 @@
         background-repeat: no-repeat;
         background-position: center;
         margin-inline-end: 1.5rem;
-        vertical-align: -22%; // i dont want to talk about it
       }
     }
   }
