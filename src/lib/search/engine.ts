@@ -1,5 +1,6 @@
-import type { Hit, Breadcrumb } from './.d.ts';
+import type { Hit, Breadcrumb, HitKind } from './.d.ts';
 import type { Article, Directory } from '../../app.js';
+import * as htmlparser2 from 'htmlparser2';
 
 export class Search {
   articles: Array<Article>;
@@ -21,123 +22,153 @@ export class Search {
      * May throw TODO document exception cases here
      */
 
+    // *** abandon all hope, ye who enter here. ***
+
+    query = query.toLowerCase().trim();
+
     if (query.length == 0) {
       throw Error('Cannot search for empty string.');
     }
 
-    query = query.toLowerCase().trim();
-
     // will hold all the hits to be returned
     let hits: Array<Hit> = [];
 
-    this.articles.forEach((article) => {
-      const html = article['html'];
-      const htmlLower = html.toLowerCase();
+    // will be used to keep track of the state while traversing the ast and articles
+    let currentArticle: Article;
+    let currentH2: { title?: string; id: string } | null = null;
+    let currentH3: { title?: string; id: string } | null = null;
 
-      // check if the article name itself is a match
-      // prefer the short title if it is defined and matches
-      const titleShort = article.meta.title_short
-        ? article.meta.title_short
-        : '';
-      const title = article.meta.title;
+    let currentlyNotAHeading = true;
 
-      if (titleShort.toLocaleLowerCase().includes(query)) {
-        const crumbs: Array<Breadcrumb> = [
-          {
-            display: this.directoryIdsToDisplay.get(article.directory) ?? '',
-            link: '/'
-          },
-          { display: titleShort, link: `/${article.directory}/${article.id}` }
-        ];
+    const directoryIdsToDisplay = this.directoryIdsToDisplay;
 
-        hits.push({
-          type: 'article',
-          breadcrumbs: crumbs,
-          text: titleShort,
-          occurrence: 0
-        });
-      } else if (title.toLocaleLowerCase().includes(query)) {
-        const crumbs: Array<Breadcrumb> = [
-          {
-            display: this.directoryIdsToDisplay.get(article.directory) ?? '',
-            link: '/'
-          },
-          { display: title, link: `/${article.directory}/${article.id}` }
-        ];
-
-        hits.push({
-          type: 'article',
-          breadcrumbs: crumbs,
-          text: title,
-          occurrence: 0
-        });
-      }
-
-      // now for heading matches...
-
-      /**
-       * ok so about those regexes
-       * i dont really know why they work
-       * i am afraid to touch them
-       * i tried to clean it up but i just broke everything
-       * please dont make me rework this
-       * ´.+´ might look sloppy and it is but it works for now
-       */
-
-      // get all the headings with their ids
-      const headingRegex = /<h\d ?(id=".+"|class=".+")?>.+<\/h\d>/g;
-      const headingsRaw = html.match(headingRegex) ?? [];
-
-      const headings: { heading: string; id: string }[] = headingsRaw.map(
-        (str) => {
-          let title = str.replaceAll(/<h\d id=".+">/g, '');
-          title = title.replaceAll(/<\/h\d>/g, '');
-
-          let id = (str.match(/id="[^"]+"/g) ?? [])[0] ?? '';
-          id = id.replace('id=', '');
-          id = id.replaceAll('"', '');
-          return { heading: title, id: id };
+    function get_crumbs(article: Article): Array<Breadcrumb> {
+      // placing might look weird but we need this to be local to
+      // both the Search class and the htmlparser2.Parser callbacks
+      return [
+        {
+          display: directoryIdsToDisplay.get(article.directory) ?? 'undefined',
+          link: `/`
+        },
+        {
+          display: article.meta.title_short ?? article.meta.title,
+          link: `/${article.directory}/${article.id}`
         }
-      );
+      ];
+    }
 
-      // find matching ones
-      for (const { heading, id } of headings) {
-        if (heading.toLocaleLowerCase().includes(query)) {
-          const crumbs: Array<Breadcrumb> = [
-            {
-              display: this.directoryIdsToDisplay.get(article.directory) ?? '',
-              link: '/'
-            },
-            { display: title, link: `/${article.directory}/${article.id}` },
-            {
-              display: heading,
-              link: `/${article.directory}/${article.id}#${id}`
-            }
-          ];
+    // h-hey wh- no regexes???? owo
 
-          hits.push({
-            type: 'heading',
-            breadcrumbs: crumbs,
-            text: title,
-            occurrence: 0
+    const parser = new htmlparser2.Parser({
+      onopentag(name, attributes) {
+        // h2 opens
+        if (name === 'h2') {
+          currentH2 = {
+            title: undefined,
+            id: attributes['id']
+          };
+
+          currentlyNotAHeading = false;
+
+          // if an h2 opens, we want to register hits directly under it
+          // not under any h3 from the last section.
+          currentH3 = null;
+        }
+
+        // h3 opens
+        if (name === 'h3') {
+          currentH3 = {
+            title: undefined,
+            id: attributes['id']
+          };
+
+          currentlyNotAHeading = false;
+        }
+      },
+
+      onclosetag(name) {
+        if (name === 'h2' || name === 'h3') {
+          // text that follows this instruction belongs to an element that is not a heading.
+          currentlyNotAHeading = true;
+        }
+      },
+
+      ontext(text) {
+        // first text that follows a heading opening tag is its content
+        if (currentH2) {
+          currentH2.title ??= text;
+        }
+        if (currentH3) {
+          currentH3.title ??= text;
+        }
+
+        if (!text.toLowerCase().includes(query)) return;
+
+        /* register a hit */
+
+        // determine kind
+        let kind: HitKind;
+
+        if (currentlyNotAHeading) {
+          kind = 'text';
+        } else if (currentH3 || currentH2) {
+          kind = 'heading';
+        } else {
+          kind = 'article';
+        }
+
+        // determine breadcrumbs to hit
+        let crumbs: Array<Breadcrumb> = [];
+
+        // article is always there
+        let articleLink = `/${currentArticle.directory}/${currentArticle.id}`;
+        crumbs = get_crumbs(currentArticle);
+
+        if (currentH2) {
+          crumbs.push({
+            display: currentH2.title ?? 'undefined',
+            link: articleLink + `#${currentH2.id}`
           });
         }
-      }
 
-      // now for text matches...
-      // TODO implement.
-
-      // this holds the index of the last found occurrence
-      let cursor = 0;
-      let occurringIndices: number[] = [];
-
-      while (cursor != -1) {
-        cursor = htmlLower.indexOf(query, cursor);
-        if (cursor != -1) {
-          occurringIndices.push(cursor);
-          cursor = cursor + query.length;
+        if (currentH3) {
+          crumbs.push({
+            display: currentH3.title ?? 'undefined',
+            link: articleLink + `#${currentH3.id}`
+          });
         }
+
+        hits.push({
+          type: kind,
+          breadcrumbs: crumbs,
+          text: text
+        });
       }
+    });
+
+    this.articles.forEach((article) => {
+      currentArticle = article;
+
+      // the .svx files do not contain h1 headings,
+      // we need to check for article matches manually.
+
+      if (
+        currentArticle.meta.title_short?.toLowerCase().includes(query) ||
+        currentArticle.meta.title.toLowerCase().includes(query)
+      ) {
+        hits.push({
+          type: 'article',
+          breadcrumbs: get_crumbs(currentArticle),
+          text: currentArticle.meta.title_short ?? currentArticle.meta.title
+        });
+      }
+
+      // search article contents
+      parser.write(article['html']);
+
+      currentH2 = null;
+      currentH3 = null;
+      currentlyNotAHeading = true;
     });
 
     return hits;

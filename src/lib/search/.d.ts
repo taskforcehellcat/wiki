@@ -6,8 +6,6 @@ export type Hit = {
   breadcrumbs: Array<Breadcrumb>;
   // the text in witch the index occurred or the heading or article name
   text: string;
-  // the index at which the hit occurs in the text
-  occurrence: number;
 };
 
 export type Breadcrumb = {
