@@ -6,9 +6,15 @@
   export let location = '';
 
   let open = false;
-  let choices = ['de-win', 'de-mac', 'en-win', 'en-mac'];
+
+  let lang: 'de' | 'us' = 'de';
+  let platform: 'win' | 'mac' = 'win';
 
   $: if (browser) localStorage.layout = $layoutId;
+  $: {
+    $layoutId = `${lang}-${platform}`;
+    console.debug($layoutId);
+  }
 </script>
 
 <div id="layout-picker" data-location={location}>
@@ -18,17 +24,25 @@
       transition:slide={{ axis: 'x', duration: 500 }}
       data-visible={open}
     >
-      {#each choices as choice}
-        <div id="layout-choice">
-          <input
-            type="radio"
-            id={choice}
-            name="layout"
-            value={choice}
-            bind:group={$layoutId}
-          />
-          <label for={choice}><div class="symbol" /></label>
-        </div>
+      {#each ['win', 'mac'] as choice}
+        <input
+          type="radio"
+          id={choice}
+          name="layout"
+          value={choice}
+          bind:group={platform}
+        />
+        <label for={choice}><div class="symbol" /></label>
+      {/each}
+      {#each ['de', 'us'] as choice}
+        <input
+          type="radio"
+          id={choice}
+          name="layout"
+          value={choice}
+          bind:group={lang}
+        />
+        <label for={choice}><div class="symbol" /></label>
       {/each}
     </div>
   {/if}
@@ -43,7 +57,6 @@
 </div>
 
 <style lang="scss">
-  // FIXME picker placement when collapsed
   // FIXME picker on the homepage
 
   #layout-picker {
@@ -83,8 +96,6 @@
       font-size: 1.8rem;
     }
   }
-
-  // TODO keyboard layout options styling
 
   #layout-choices {
     height: 100%;
@@ -129,19 +140,31 @@
         mask-size: 100%;
         mask-position: center;
         -webkit-mask-position: center;
-        background-color: var(--brandSecondaryTXT);
       }
 
-      &[for='de-win'] {
+      &[for='win'] {
         .symbol {
+          background-color: var(--brandSecondaryTXT);
           -webkit-mask-image: url(/images/win.svg);
           mask-image: url(/images/win.svg);
         }
       }
-      &[for='de-mac'] {
+      &[for='mac'] {
         .symbol {
+          background-color: var(--brandSecondaryTXT);
           -webkit-mask-image: url(/images/mac.svg);
           mask-image: url(/images/mac.svg);
+        }
+      }
+
+      &[for='de'] {
+        .symbol {
+          background-image: url(/images/de.svg);
+        }
+      }
+      &[for='us'] {
+        .symbol {
+          background-image: url(/images/us.svg);
         }
       }
     }

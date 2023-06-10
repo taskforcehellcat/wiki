@@ -43,7 +43,6 @@
 </div>
 
 <style lang="scss">
-  // FIXME theme picker placement when collapsed
   // FIXME theme picker on the homepage
 
   #theme-picker {

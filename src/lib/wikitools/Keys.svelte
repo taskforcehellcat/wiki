@@ -4,7 +4,7 @@
   let keysArray = keys.split(',');
   keysArray = keysArray.map((key) => key.trim());
 
-  const mapDeEn = new Map([
+  const mapDeUs = new Map([
     ['CTRL', 'STRG'],
     ['SHIFT', 'UMSCHALT'],
     ['CAPS', 'FESTSTELLEN'],
@@ -32,11 +32,11 @@
 
     if (['de-win', 'de-mac'].includes($layoutId)) {
       keysArrayTranslated = keysArrayTranslated.map((key) => {
-        return mapDeEn.get(key) ?? key;
+        return mapDeUs.get(key) ?? key;
       });
     }
 
-    if (['de-mac', 'en-mac'].includes($layoutId)) {
+    if (['de-mac', 'us-mac'].includes($layoutId)) {
       keysArrayTranslated = keysArrayTranslated.map((key) => {
         return mapWinMac.get(key) ?? key;
       });
