@@ -1,6 +1,6 @@
 <script lang="ts">
   import { searchResults } from '$lib/search/stores';
-  import type { Hit, HitKind } from './d.ts';
+  import type { Hit, HitKind } from './.d.ts';
 
   export let kind: HitKind;
 
@@ -44,34 +44,37 @@
       <span class="heading text">gefunden</span>
     </span>
     {#each resultsOfKind as hit}
-      <span />
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb}
           <a href={crumb.link}>{crumb.display}</a><span
             class="material-icons-rounded seperator">chevron_right</span
           >
         {/each}
-      </span>
+      </span>{#if kind === 'text'}
+        <p class="preview text">{@html hit.text}</p>
+      {/if}
     {/each}
   </div>
 {/if}
 
 <style lang="scss">
+  // TODO this needs a rewrite ...
+
   .container {
     display: grid;
-    gap: 5px;
-    grid-template-columns: 30px auto;
+    gap: 0.5rem;
+    grid-template-columns: 30px 1fr 30px;
 
     margin-bottom: 1em;
-  }
-  .container:last-child {
-    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .heading.count {
     font-size: large;
-    justify-self: right;
-    margin-right: 1ch;
+    justify-self: center;
   }
 
   .heading.title {
@@ -80,6 +83,7 @@
 
   .breadcrumbs {
     color: var(--brandNeutral);
+    grid-column: 2;
   }
 
   span.heading {
@@ -113,5 +117,11 @@
 
   .breadcrumbs .seperator:last-child {
     display: none;
+  }
+
+  .preview.text {
+    display: block;
+    font-style: italic;
+    grid-column: 2;
   }
 </style>

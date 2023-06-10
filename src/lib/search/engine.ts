@@ -117,6 +117,27 @@ export class Search {
           kind = 'article';
         }
 
+        // insert maker to text
+        // TODO make this type safe
+        if (kind === 'text') {
+          const indices = [
+            ...text.toLowerCase().matchAll(new RegExp(query, 'gi'))
+          ].map((a) => a.index);
+
+          let splits: Array<string> = [];
+          indices.forEach((index) => {
+            splits.push(
+              text.slice(0, index),
+              '<mark>',
+              text.slice(index, index + query.length),
+              '</mark>',
+              text.slice(index + query.length)
+            );
+          });
+
+          text = splits.join('');
+        }
+
         // determine breadcrumbs to hit
         let crumbs: Array<Breadcrumb> = [];
 
