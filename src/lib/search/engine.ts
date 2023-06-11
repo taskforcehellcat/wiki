@@ -35,6 +35,11 @@ export class Search {
     // wha-whats this??? no regexes?? owo
     this.parser = new htmlparser2.Parser({
       onopentag(name, attributes) {
+        // handle `li` tags
+        if (name === 'li') {
+          self.currentText += ' - ';
+        }
+
         // update the heading
         if (HEADINGS.includes(name)) {
           // before updating the heading, search the text
@@ -73,6 +78,12 @@ export class Search {
             text = ' (Beispielbox)';
           }
           self.currentText += text;
+        }
+      },
+
+      onclosetag(name) {
+        if (name === 'p') {
+          self.currentText += ' ';
         }
       }
     });

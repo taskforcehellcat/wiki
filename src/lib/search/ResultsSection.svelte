@@ -30,7 +30,7 @@
   }
 
   // correct for singulars
-  if (hitCount == 1) {
+  $: if (hitCount == 1) {
     pageTitle = pageTitle.replace('Textstellen', 'Textstelle');
     pageTitle = pageTitle.replace('Abschnitte', 'Abschnitt');
   }
@@ -120,7 +120,6 @@
   }
 
   .preview.text {
-    display: block;
     font-style: italic;
     grid-column: 2;
   }
