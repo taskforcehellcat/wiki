@@ -142,7 +142,13 @@ export class Search {
     this.hits.push({
       type: kind,
       breadcrumbs: crumbs,
-      text: kind === 'text' ? this.currentText : undefined
+      text: kind === 'text' ? this.highlight(this.currentText) : undefined
     });
+  }
+
+  highlight(text: string): string {
+    text = text.replaceAll('\n', '');
+    const regex = new RegExp(this.queryLower, 'gi');
+    return text.replace(regex, '<mark>$&</mark>');
   }
 }
