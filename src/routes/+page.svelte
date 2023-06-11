@@ -73,14 +73,14 @@
               <ResultsSection kind="text" />
             {:else}
               <p>
-                <span class="search__errortext"
+                <span id="search__errortext"
                   >Es wurden keine Übereinstimmungen gefunden!</span
                 >
               </p>
             {/if}
           {:else}
             <p>
-              <span class="search__errortext"
+              <span id="search__errortext"
                 >Bitte mindestens drei Zeichen eingeben!</span
               >
             </p>
@@ -97,7 +97,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="scss">
   #home {
     padding: 15rem 5rem 20%;
     width: 100%;
@@ -154,7 +154,29 @@
     color: var(--brandTertiaryTXT);
   }
 
-  .search__errortext {
+  #search[data-empty='false'] {
+    #search__results {
+      display: block;
+    }
+
+    #search__searchbar {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  #search__results {
+    height: fit-content;
+    width: 80rem;
+    background-color: var(--brandSecondaryBG);
+    padding: 1rem 3.5rem 3.5rem 3.5rem;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+
+    display: none;
+  }
+
+  #search__errortext {
     color: var(--errorTXT);
   }
 </style>
