@@ -209,7 +209,7 @@ They will look like this when rendered:
 ![keyboard key image](./src/lib/images/readme/kbd.png)
 
 **Important:** Use american english key identifiers and the keyboard layout under windows. They will get translated accordingly.
-For a list of the mappings used see `src/lib/wikitools/Keys.svelte`, `mapDeEn` and `mapWinMac` respectively.
+For a list of the mappings used see `src/lib/wikitools/Keys.svelte`, `mapDeUs` and `mapWinMac` respectively.
 Be sure to use the `Keys` component instead of the `<kbd>` tag if your key needs to be mapped!
 
 ---
