@@ -2,196 +2,147 @@ import type { Hit, Breadcrumb, HitKind } from './.d.ts';
 import type { Article, Directory } from '../../app.js';
 import * as htmlparser2 from 'htmlparser2';
 
+type Heading = {
+  content?: string;
+  id: string;
+};
+
+const HEADINGS = ['h2', 'h3', 'h4', 'h5'];
+
 export class Search {
+  // constants
   articles: Array<Article>;
   directoryIdsToDisplay: Map<string, string>;
+  parser: htmlparser2.Parser;
+
+  // state
+  currentArticle!: Article;
+  currentHeading?: Heading;
+  currentText: string = '';
+
+  hits: Array<Hit> = [];
+  queryLower: string = '';
 
   constructor(articles: Array<Article>, menu: Array<Directory>) {
+    const self = this;
     this.articles = articles;
     this.directoryIdsToDisplay = new Map(
       menu.map((e) => {
         return [e.id, e.config.title];
       })
     );
-  }
 
-  query(query: string) {
-    /*
-     * Searches for the query in the index.
-     * May return: Array<Hit>
-     * May throw TODO document exception cases here
-     */
-
-    // *** abandon all hope, ye who enter here. ***
-
-    query = query.toLowerCase().trim();
-
-    if (query.length == 0) {
-      throw Error('Cannot search for empty string.');
-    }
-
-    // will hold all the hits to be returned
-    let hits: Array<Hit> = [];
-
-    // will be used to keep track of the state while traversing the ast and articles
-    let currentArticle: Article;
-    let currentH2: { title?: string; id: string } | null = null;
-    let currentH3: { title?: string; id: string } | null = null;
-
-    let currentlyNotAHeading = true;
-
-    const directoryIdsToDisplay = this.directoryIdsToDisplay;
-
-    function get_crumbs(article: Article): Array<Breadcrumb> {
-      // placing might look weird but we need this to be local to
-      // both the Search class and the htmlparser2.Parser callbacks
-      return [
-        {
-          display: directoryIdsToDisplay.get(article.directory) ?? 'undefined',
-          link: `/`
-        },
-        {
-          display: article.meta.title_short ?? article.meta.title,
-          link: `/${article.directory}/${article.id}`
-        }
-      ];
-    }
-
-    // h-hey wh- no regexes???? owo
-
-    const parser = new htmlparser2.Parser({
+    // wha-whats this??? no regexes?? owo
+    this.parser = new htmlparser2.Parser({
       onopentag(name, attributes) {
-        // h2 opens
-        if (name === 'h2') {
-          currentH2 = {
-            title: undefined,
+        // update the heading
+        if (HEADINGS.includes(name)) {
+          // before updating the heading, search the text
+          if (self.currentText.toLowerCase().includes(self.queryLower)) {
+            self.add_hit('text');
+          }
+
+          self.currentHeading = {
+            content: undefined,
             id: attributes['id']
           };
 
-          currentlyNotAHeading = false;
-
-          // if an h2 opens, we want to register hits directly under it
-          // not under any h3 from the last section.
-          currentH3 = null;
-        }
-
-        // h3 opens
-        if (name === 'h3') {
-          currentH3 = {
-            title: undefined,
-            id: attributes['id']
-          };
-
-          currentlyNotAHeading = false;
-        }
-      },
-
-      onclosetag(name) {
-        if (name === 'h2' || name === 'h3') {
-          // text that follows this instruction belongs to an element that is not a heading.
-          currentlyNotAHeading = true;
+          self.currentText = '';
         }
       },
 
       ontext(text) {
-        // first text that follows a heading opening tag is its content
-        if (currentH2) {
-          currentH2.title ??= text;
-        }
-        if (currentH3) {
-          currentH3.title ??= text;
-        }
+        // this text might be the content of a new heading
+        let textIsHeading = false;
 
-        if (!text.toLowerCase().includes(query)) return;
+        if (self.currentHeading && !self.currentHeading.content) {
+          self.currentHeading.content = text;
+          textIsHeading = true;
 
-        /* register a hit */
-
-        // determine kind
-        let kind: HitKind;
-
-        if (currentlyNotAHeading) {
-          kind = 'text';
-        } else if (currentH3 || currentH2) {
-          kind = 'heading';
-        } else {
-          kind = 'article';
+          // register hits
+          if (text.toLowerCase().includes(self.queryLower)) {
+            self.add_hit('heading');
+          }
         }
 
-        // insert maker to text
-        // TODO make this type safe
-        if (kind === 'text') {
-          const indices = [
-            ...text.toLowerCase().matchAll(new RegExp(query, 'gi'))
-          ].map((a) => a.index);
-
-          let splits: Array<string> = [];
-          indices.forEach((index) => {
-            splits.push(
-              text.slice(0, index),
-              '<mark>',
-              text.slice(index, index + query.length),
-              '</mark>',
-              text.slice(index + query.length)
-            );
-          });
-
-          text = splits.join('');
+        if (!textIsHeading) {
+          self.currentText += text;
         }
-
-        // determine breadcrumbs to hit
-        let crumbs: Array<Breadcrumb> = [];
-
-        // article is always there
-        let articleLink = `/${currentArticle.directory}/${currentArticle.id}`;
-        crumbs = get_crumbs(currentArticle);
-
-        if (currentH2) {
-          crumbs.push({
-            display: currentH2.title ?? 'undefined',
-            link: articleLink + `#${currentH2.id}`
-          });
-        }
-
-        if (currentH3) {
-          crumbs.push({
-            display: currentH3.title ?? 'undefined',
-            link: articleLink + `#${currentH3.id}`
-          });
-        }
-
-        hits.push({
-          type: kind,
-          breadcrumbs: crumbs,
-          text: text
-        });
       }
     });
+  }
+
+  breadcrumbs(article: Article): Array<Breadcrumb> {
+    return [
+      // section part
+      {
+        display:
+          this.directoryIdsToDisplay.get(article.directory) ?? 'undefined',
+        link: `/`
+      },
+      // article part
+      {
+        display: article.meta.title_short ?? article.meta.title,
+        link: `/${article.directory}/${article.id}`
+      }
+    ];
+  }
+
+  query(query: string): Array<Hit> {
+    this.queryLower = query.toLowerCase().trim();
+    this.hits = [];
+
+    if (this.queryLower.length == 0) {
+      throw new Error('Cannot search for empty string.');
+    }
 
     this.articles.forEach((article) => {
-      currentArticle = article;
+      this.currentHeading = undefined;
+      this.currentText = '';
+      this.currentArticle = article;
 
-      // the .svx files do not contain h1 headings,
-      // we need to check for article matches manually.
-
+      // register hit in the article name
       if (
-        currentArticle.meta.title_short?.toLowerCase().includes(query) ||
-        currentArticle.meta.title.toLowerCase().includes(query)
+        article.meta.title.toLowerCase().includes(this.queryLower) ||
+        article.meta.title_short?.toLowerCase().includes(this.queryLower)
       ) {
-        hits.push({
-          type: 'article',
-          breadcrumbs: get_crumbs(currentArticle),
-          text: currentArticle.meta.title_short ?? currentArticle.meta.title
-        });
+        this.add_hit('article');
       }
 
-      // search article contents
-      parser.write(article['html']);
-
-      currentH2 = null;
-      currentH3 = null;
-      currentlyNotAHeading = true;
+      // register hits in the body
+      this.parser.write(article['html']);
     });
 
-    return hits;
+    return this.hits;
+  }
+
+  add_hit(kind: HitKind): void {
+    const article = this.currentArticle;
+    let crumbs = this.breadcrumbs(article);
+
+    if (kind === 'article') {
+      this.hits.push({
+        type: kind,
+        breadcrumbs: crumbs
+      });
+
+      return;
+    }
+
+    const heading = this.currentHeading;
+    const articleLink = crumbs[1].link;
+
+    if (heading) {
+      crumbs.push({
+        display: heading.content ?? '',
+        link: `${articleLink}#${heading?.id}`
+      });
+    }
+
+    this.hits.push({
+      type: kind,
+      breadcrumbs: crumbs,
+      text: kind === 'text' ? this.currentText : undefined
+    });
   }
 }

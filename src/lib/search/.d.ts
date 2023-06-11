@@ -1,11 +1,11 @@
 export type Hit = {
   // whether this hit is a page itself, a heading on this page
   // or in a text on this page
-  type: 'article' | 'heading' | 'text';
+  type: HitKind;
   // basically the path to the hit(s)
   breadcrumbs: Array<Breadcrumb>;
   // the text in witch the index occurred or the heading or article name
-  text: string;
+  text?: string;
 };
 
 export type Breadcrumb = {
