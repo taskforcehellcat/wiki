@@ -111,6 +111,12 @@ export class Search {
 
       // register hits in the body
       this.parser.write(article['html']);
+
+      // only every new heading triggers text search, so we need to do this once here
+      // because of the last text on the article that is not followed by a heading
+      if (this.currentText.toLowerCase().includes(this.queryLower)) {
+        this.add_hit('text');
+      }
     });
 
     return this.hits;
