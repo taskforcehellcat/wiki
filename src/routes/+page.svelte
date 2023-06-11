@@ -55,8 +55,8 @@
       </div>
 
       <!-- search bar -->
-      <div id="search" data-empty={(query.length === 0).toString()}>
-        <div id="search__searchbar">
+      <div id="search">
+        <div id="search__searchbar" class:open={$searchInUse}>
           <span class="material-icons-rounded noselect">search</span>
           <input
             type="text"
@@ -65,27 +65,25 @@
             bind:value={rawInput}
           />
         </div>
-        <div id="search__results">
-          {#if showResults}
-            {#if $searchResults.length !== 0}
-              <ResultsSection kind="article" />
-              <ResultsSection kind="heading" />
-              <ResultsSection kind="text" />
+        {#if $searchInUse}
+          <div id="search__results">
+            {#if showResults}
+              {#if $searchResults.length !== 0}
+                <ResultsSection kind="article" />
+                <ResultsSection kind="heading" />
+                <ResultsSection kind="text" />
+              {:else}
+                <span id="search__errortext">
+                  Es wurden keine Übereinstimmungen gefunden!
+                </span>
+              {/if}
             {:else}
-              <p>
-                <span id="search__errortext"
-                  >Es wurden keine Übereinstimmungen gefunden!</span
-                >
-              </p>
+              <span id="search__errortext">
+                Bitte mindestens drei Zeichen eingeben!
+              </span>
             {/if}
-          {:else}
-            <p>
-              <span id="search__errortext"
-                >Bitte mindestens drei Zeichen eingeben!</span
-              >
-            </p>
-          {/if}
-        </div>
+          </div>
+        {/if}
       </div>
 
       {#if !$searchInUse}
@@ -154,15 +152,9 @@
     color: var(--brandTertiaryTXT);
   }
 
-  #search[data-empty='false'] {
-    #search__results {
-      display: block;
-    }
-
-    #search__searchbar {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+  #search__searchbar.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 
   #search__results {
@@ -172,8 +164,6 @@
     padding: 1rem 3.5rem 3.5rem 3.5rem;
     border-bottom-left-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
-
-    display: none;
   }
 
   #search__errortext {
