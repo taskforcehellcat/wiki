@@ -66,6 +66,12 @@ export class Search {
         }
 
         if (!textIsHeading) {
+          // handle example boxes
+          if (text.trim() === 'add') {
+            text = '';
+          } else if (text.trim() === 'Beispiel:') {
+            text = ' (Beispielbox)';
+          }
           self.currentText += text;
         }
       }
