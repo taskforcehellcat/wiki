@@ -150,6 +150,7 @@
 
     &.results {
       margin-left: 2rem;
+      margin-right: 2rem;
       margin-bottom: 0;
       padding-bottom: 5rem;
       padding-top: 2rem;
