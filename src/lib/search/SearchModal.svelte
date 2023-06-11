@@ -49,18 +49,14 @@
         <ResultsSection kind="heading" />
         <ResultsSection kind="text" />
       {:else}
-        <p>
-          <span class="search errortext"
-            >Es wurden keine Übereinstimmungen gefunden!</span
-          >
-        </p>
+        <span class="search errortext"
+          ><p>Es wurden keine Übereinstimmungen gefunden!</p></span
+        >
       {/if}
     {:else}
-      <p>
-        <span class="search errortext"
-          >Bitte mindestens drei Zeichen eingeben!</span
-        >
-      </p>
+      <span class="search errortext">
+        <p>Bitte mindestens drei Zeichen eingeben!</p></span
+      >
     {/if}
   </div>
 </div>
@@ -149,7 +145,10 @@
     }
 
     &.results {
+      height: 100%;
+
       margin-left: 2rem;
+      margin-right: 2rem;
       margin-bottom: 0;
       padding-bottom: 5rem;
       padding-top: 2rem;
@@ -164,6 +163,12 @@
 
     &.errortext {
       color: var(--errorTXT);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
     }
   }
 

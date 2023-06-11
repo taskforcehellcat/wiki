@@ -1,145 +1,177 @@
-import type { Hit, Breadcrumb } from './.d.ts';
+import type { Hit, Breadcrumb, HitKind } from './.d.ts';
 import type { Article, Directory } from '../../app.js';
+import * as htmlparser2 from 'htmlparser2';
+
+type Heading = {
+  content?: string;
+  id: string;
+};
+
+const HEADINGS = ['h2', 'h3', 'h4', 'h5'];
 
 export class Search {
+  // constants
   articles: Array<Article>;
   directoryIdsToDisplay: Map<string, string>;
+  parser: htmlparser2.Parser;
+
+  // state
+  currentArticle!: Article;
+  currentHeading?: Heading;
+  currentText: string = '';
+
+  hits: Array<Hit> = [];
+  queryLower: string = '';
 
   constructor(articles: Array<Article>, menu: Array<Directory>) {
+    const self = this;
     this.articles = articles;
     this.directoryIdsToDisplay = new Map(
       menu.map((e) => {
         return [e.id, e.config.title];
       })
     );
-  }
 
-  query(query: string) {
-    /*
-     * Searches for the query in the index.
-     * May return: Array<Hit>
-     * May throw TODO document exception cases here
-     */
-
-    if (query.length == 0) {
-      throw Error('Cannot search for empty string.');
-    }
-
-    query = query.toLowerCase().trim();
-
-    // will hold all the hits to be returned
-    let hits: Array<Hit> = [];
-
-    this.articles.forEach((article) => {
-      const html = article['html'];
-      const htmlLower = html.toLowerCase();
-
-      // check if the article name itself is a match
-      // prefer the short title if it is defined and matches
-      const titleShort = article.meta.title_short
-        ? article.meta.title_short
-        : '';
-      const title = article.meta.title;
-
-      if (titleShort.toLocaleLowerCase().includes(query)) {
-        const crumbs: Array<Breadcrumb> = [
-          {
-            display: this.directoryIdsToDisplay.get(article.directory) ?? '',
-            link: '/'
-          },
-          { display: titleShort, link: `/${article.directory}/${article.id}` }
-        ];
-
-        hits.push({
-          type: 'article',
-          breadcrumbs: crumbs,
-          text: titleShort,
-          occurrence: 0
-        });
-      } else if (title.toLocaleLowerCase().includes(query)) {
-        const crumbs: Array<Breadcrumb> = [
-          {
-            display: this.directoryIdsToDisplay.get(article.directory) ?? '',
-            link: '/'
-          },
-          { display: title, link: `/${article.directory}/${article.id}` }
-        ];
-
-        hits.push({
-          type: 'article',
-          breadcrumbs: crumbs,
-          text: title,
-          occurrence: 0
-        });
-      }
-
-      // now for heading matches...
-
-      /**
-       * ok so about those regexes
-       * i dont really know why they work
-       * i am afraid to touch them
-       * i tried to clean it up but i just broke everything
-       * please dont make me rework this
-       * ´.+´ might look sloppy and it is but it works for now
-       */
-
-      // get all the headings with their ids
-      const headingRegex = /<h\d ?(id=".+"|class=".+")?>.+<\/h\d>/g;
-      const headingsRaw = html.match(headingRegex) ?? [];
-
-      const headings: { heading: string; id: string }[] = headingsRaw.map(
-        (str) => {
-          let title = str.replaceAll(/<h\d id=".+">/g, '');
-          title = title.replaceAll(/<\/h\d>/g, '');
-
-          let id = (str.match(/id="[^"]+"/g) ?? [])[0] ?? '';
-          id = id.replace('id=', '');
-          id = id.replaceAll('"', '');
-          return { heading: title, id: id };
+    // wha-whats this??? no regexes?? owo
+    this.parser = new htmlparser2.Parser({
+      onopentag(name, attributes) {
+        // handle `li` tags
+        if (name === 'li') {
+          self.currentText += ' - ';
         }
-      );
 
-      // find matching ones
-      for (const { heading, id } of headings) {
-        if (heading.toLocaleLowerCase().includes(query)) {
-          const crumbs: Array<Breadcrumb> = [
-            {
-              display: this.directoryIdsToDisplay.get(article.directory) ?? '',
-              link: '/'
-            },
-            { display: title, link: `/${article.directory}/${article.id}` },
-            {
-              display: heading,
-              link: `/${article.directory}/${article.id}#${id}`
-            }
-          ];
+        // update the heading
+        if (HEADINGS.includes(name)) {
+          // before updating the heading, search the text
+          if (self.currentText.toLowerCase().includes(self.queryLower)) {
+            self.add_hit('text');
+          }
 
-          hits.push({
-            type: 'heading',
-            breadcrumbs: crumbs,
-            text: title,
-            occurrence: 0
-          });
+          self.currentHeading = {
+            content: undefined,
+            id: attributes['id']
+          };
+
+          self.currentText = '';
         }
-      }
+      },
 
-      // now for text matches...
-      // TODO implement.
+      ontext(text) {
+        // this text might be the content of a new heading
+        let textIsHeading = false;
 
-      // this holds the index of the last found occurrence
-      let cursor = 0;
-      let occurringIndices: number[] = [];
+        if (self.currentHeading && !self.currentHeading.content) {
+          self.currentHeading.content = text;
+          textIsHeading = true;
 
-      while (cursor != -1) {
-        cursor = htmlLower.indexOf(query, cursor);
-        if (cursor != -1) {
-          occurringIndices.push(cursor);
-          cursor = cursor + query.length;
+          // register hits
+          if (text.toLowerCase().includes(self.queryLower)) {
+            self.add_hit('heading');
+          }
+        }
+
+        if (!textIsHeading) {
+          // handle example boxes
+          if (text.trim() === 'add') {
+            text = '';
+          } else if (text.trim() === 'Beispiel:') {
+            text = ' (Beispielbox)';
+          }
+          self.currentText += text;
+        }
+      },
+
+      onclosetag(name) {
+        if (name === 'p') {
+          self.currentText += ' ';
         }
       }
     });
+  }
 
-    return hits;
+  breadcrumbs(article: Article): Array<Breadcrumb> {
+    return [
+      // section part
+      {
+        display:
+          this.directoryIdsToDisplay.get(article.directory) ?? 'undefined',
+        link: `/`
+      },
+      // article part
+      {
+        display: article.meta.title_short ?? article.meta.title,
+        link: `/${article.directory}/${article.id}`
+      }
+    ];
+  }
+
+  query(query: string): Array<Hit> {
+    this.queryLower = query.toLowerCase().trim();
+    this.hits = [];
+
+    if (this.queryLower.length == 0) {
+      throw new Error('Cannot search for empty string.');
+    }
+
+    this.articles.forEach((article) => {
+      this.currentHeading = undefined;
+      this.currentText = '';
+      this.currentArticle = article;
+
+      // register hit in the article name
+      if (
+        article.meta.title.toLowerCase().includes(this.queryLower) ||
+        article.meta.title_short?.toLowerCase().includes(this.queryLower)
+      ) {
+        this.add_hit('article');
+      }
+
+      // register hits in the body
+      this.parser.write(article['html']);
+
+      // only every new heading triggers text search, so we need to do this once here
+      // because of the last text on the article that is not followed by a heading
+      if (this.currentText.toLowerCase().includes(this.queryLower)) {
+        this.add_hit('text');
+      }
+    });
+
+    return this.hits;
+  }
+
+  add_hit(kind: HitKind): void {
+    const article = this.currentArticle;
+    let crumbs = this.breadcrumbs(article);
+
+    if (kind === 'article') {
+      this.hits.push({
+        type: kind,
+        breadcrumbs: crumbs
+      });
+
+      return;
+    }
+
+    const heading = this.currentHeading;
+    const articleLink = crumbs[1].link;
+
+    if (heading) {
+      crumbs.push({
+        display: heading.content ?? '',
+        link: `${articleLink}#${heading?.id}`
+      });
+    }
+
+    this.hits.push({
+      type: kind,
+      breadcrumbs: crumbs,
+      text: kind === 'text' ? this.highlight(this.currentText) : undefined
+    });
+  }
+
+  highlight(text: string): string {
+    text = text.replaceAll('\n', '');
+    const regex = new RegExp(this.queryLower, 'gi');
+    return text.replace(regex, '<mark>$&</mark>');
   }
 }

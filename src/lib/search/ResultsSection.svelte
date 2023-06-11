@@ -1,6 +1,6 @@
 <script lang="ts">
   import { searchResults } from '$lib/search/stores';
-  import type { Hit, HitKind } from './d.ts';
+  import type { Hit, HitKind } from './.d.ts';
 
   export let kind: HitKind;
 
@@ -30,7 +30,7 @@
   }
 
   // correct for singulars
-  if (hitCount == 1) {
+  $: if (hitCount == 1) {
     pageTitle = pageTitle.replace('Textstellen', 'Textstelle');
     pageTitle = pageTitle.replace('Abschnitte', 'Abschnitt');
   }
@@ -38,20 +38,21 @@
 
 {#if hitCount !== 0}
   <div class="container">
-    <div class="heading count">{hitCount}</div>
+    <span class="hit-count"><div>{hitCount}</div></span>
     <span class="heading">
-      <span class="heading title">{pageTitle}</span>
-      <span class="heading text">gefunden</span>
+      <span>{pageTitle}</span>
+      <span>gefunden</span>
     </span>
     {#each resultsOfKind as hit}
-      <span />
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb}
           <a href={crumb.link}>{crumb.display}</a><span
             class="material-icons-rounded seperator">chevron_right</span
           >
         {/each}
-      </span>
+      </span>{#if kind === 'text'}
+        <p class="preview-text">{@html hit.text}</p>
+      {/if}
     {/each}
   </div>
 {/if}
@@ -59,59 +60,90 @@
 <style lang="scss">
   .container {
     display: grid;
-    gap: 5px;
-    grid-template-columns: 30px auto;
+    grid-template-columns: 3rem 1fr 3rem;
+    gap: 1rem;
 
     margin-bottom: 1em;
-  }
-  .container:last-child {
-    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  .heading.count {
+  .heading {
     font-size: large;
-    justify-self: right;
-    margin-right: 1ch;
+    display: flex;
+    align-items: center;
+
+    span:not(:last-of-type) {
+      margin-right: 1rem;
+      color: var(--brandNeutral);
+    }
   }
 
-  .heading.title {
-    color: var(--navHover);
-  }
+  .hit-count {
+    grid-column: 1;
 
-  .breadcrumbs {
-    color: var(--brandNeutral);
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  span.heading {
-    font-size: large;
-  }
-
-  .heading.count {
-    display: inline;
-  }
-
-  .breadcrumbs {
-    color: var(--brandTertiaryTXT);
-    display: block;
-  }
-
-  .breadcrumbs a {
-    text-transform: uppercase;
+    color: var(--brandSecondaryBG);
     font-weight: 600;
-    letter-spacing: 0.12rem;
-    text-decoration: none;
 
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    background-color: var(--brandTertiaryTXT);
+  }
+
+  .breadcrumbs {
     color: var(--brandTertiaryTXT);
-    transition: color 0.2s ease-out;
-  }
-  .breadcrumbs a:last-of-type {
-    color: var(--navHover);
-  }
-  .breadcrumbs a:last-of-type:hover {
-    text-decoration: underline;
+
+    grid-column: 2;
+    display: block;
+
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.12rem;
+      text-decoration: none;
+
+      color: var(--brandTertiaryTXT);
+      transition: color 0.2s ease-out;
+
+      &:last-of-type {
+        color: var(--brandNeutral);
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &:hover:not(:first-child) {
+        color: var(--brandNeutral);
+      }
+    }
+
+    .seperator:last-child {
+      display: none;
+    }
   }
 
-  .breadcrumbs .seperator:last-child {
-    display: none;
+  .preview-text {
+    grid-column: 2;
+    font-style: italic;
+    text-align: justify;
+  }
+
+  :global(mark) {
+    background: linear-gradient(
+      -100deg,
+      hsla(48, 100%, 67%, 0.3),
+      hsla(54, 95%, 57%, 0.616) 95%,
+      hsla(48, 92%, 75%, 0.1)
+    );
+    border-radius: 1rem 0;
+    padding: 0.2rem;
+
+    color: var(--brandSecondaryTXT);
   }
 </style>
