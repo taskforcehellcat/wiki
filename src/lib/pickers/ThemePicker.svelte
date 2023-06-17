@@ -15,7 +15,7 @@
   {#if open}
     <div
       id="theme-choices"
-      transition:slide={{ axis: 'x', duration: 500 }}
+      transition:slide|local={{ axis: 'x', duration: 500 }}
       data-visible={open}
     >
       {#each choices as choice}

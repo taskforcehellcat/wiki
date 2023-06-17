@@ -13,7 +13,6 @@
   $: if (browser) localStorage.layout = $layoutId;
   $: {
     $layoutId = `${lang}-${platform}`;
-    console.debug($layoutId);
   }
 </script>
 
@@ -21,7 +20,7 @@
   {#if open}
     <div
       id="layout-choices"
-      transition:slide={{ axis: 'x', duration: 500 }}
+      transition:slide|local={{ axis: 'x', duration: 500 }}
       data-visible={open}
     >
       {#each ['win', 'mac'] as choice}
