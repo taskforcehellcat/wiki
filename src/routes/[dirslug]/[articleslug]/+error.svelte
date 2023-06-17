@@ -2,7 +2,7 @@
   import { page } from '$app/stores';
 </script>
 
-<h1>Fehler {$page.status}: {$page.error.message}</h1>
+<h1>Fehler {$page.status}: {$page.error?.message}</h1>
 
 {#if $page.status == 404}
   <p>Diesen Artikel konnten wir nicht finden.</p>

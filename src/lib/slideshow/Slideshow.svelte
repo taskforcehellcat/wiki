@@ -1,15 +1,14 @@
 <script lang="ts">
   import { onMount } from 'svelte/internal';
 
-  export let images;
-  export let captions;
+  export let images: Array<string>;
+  export let captions: Array<string>;
 
   let slideshow: HTMLDivElement;
   let showIndex = 0;
   let interacting = false;
 
-  let caption =
-    'Looorem ipsum dolor sit was bassiert eig wenn di unnerschrift sooo lang würd dasser lax nimmer inne einzelne zeilne rinnepassen tut';
+  let caption: string;
 
   function slide(direction: number): void {
     update(direction);

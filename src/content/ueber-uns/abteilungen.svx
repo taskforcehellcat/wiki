@@ -14,7 +14,7 @@ Die Task Force Hellcat besteht aus drei Abteilungen, die verschiedene Truppengat
 
 Die Truppengattung der Infanterie wird von Leon organisiert und verwaltet. Sie umfasst mit Handwaffen ausgerüstete, sich zu Fuß bewegende und kämpfende Soldaten, die in [Trupps](/ausbildung/truppenteile#trupp) oder [Gruppen](/ausbildung/truppenteile#gruppe) agieren. Zur Infanterie zählen die Rollen des [Schützen](/infanterie/schuetze), des [MG-Schützen](/infanterie/mg-schuetze), des [PA-Schützen](/infanterie/pa-schuetze) und des [Präzisionsschützen](/infanterie/praezisionsschuetze).
 
-_Bemerkung_: Infanterie, die aufgesessen auf [~~geschützten Fahrzeugen~~](../fuhrpark/geschuetzte-fahrzeuge) agiert, nennt man **motorisierte Infanterie**.
+_Bemerkung_: Infanterie, die aufgesessen auf [~~geschützten Fahrzeugen~~](/fuhrpark/geschuetzte-fahrzeuge) agiert, nennt man **motorisierte Infanterie**.
 
 ### Panzertruppen
 

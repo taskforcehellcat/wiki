@@ -21,12 +21,18 @@
   import { page } from '$app/stores';
   import PageMeta from '$lib/metadata/PageMeta.svelte';
   import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
+  import type { LayoutData } from './$types';
+
+  type Anchor = {
+    text: string;
+    link: string;
+  };
 
   let isOpen = false;
-  export let anchors = [];
+  let anchors: Array<Anchor> = [];
 
   afterUpdate(() => {
-    let tempAnchors = [];
+    let tempAnchors: Array<Anchor> = [];
     if (browser) {
       document.querySelectorAll('h2').forEach((element) => {
         tempAnchors.push({
@@ -37,19 +43,8 @@
       anchors = tempAnchors;
     }
   });
-  /*
 
-  This code should scroll to anchor links, but doesn't.
-
-  onMount(async () => {
-    if (location.hash) {
-      document.querySelector(location.hash).scrollIntoView();
-    }
-  });
-  */
-
-  /** @type {import('./$types').LayoutData} */
-  export let data;
+  export let data: LayoutData;
 </script>
 
 <Popup />

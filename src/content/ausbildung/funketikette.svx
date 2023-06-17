@@ -8,6 +8,7 @@ nav_index: 2
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
     import alphabet from '$lib/images/funketikette/alphabet.png';
     import Keys from "$lib/wikitools/Keys.svelte";
+    import ExampleBox from "$lib/wikitools/ExampleBox.svelte";
 </script>
 
 Grundvoraussetzung für eine gelungene Missionsdurchführung ist eine gute Kommunikation zwischen allen Kräften. Über längere Strecken und Einheiten hinweg nutzt man den Funk. Die Grundzüge von gutem Funken sollten allen Soldaten bekannt sein.
@@ -53,6 +54,18 @@ Grundsätzlich herrscht während eines laufenden Austausches Funkstille für all
 ## Konventionen
 
 Der eigentliche Inhalt des Funkspruches folgt den oben beschriebenen Grundsätzen: er sollte knapp, aber eindeutig sein. Besonders Füllwörter und häufiges Versprechen können leicht vermieden werden, indem man sich den Inhalt seines Funkes vor dem Funken kurz überlegt. Abgesehen davon gibt es noch ein paar Konventionen, die das Verständnis erleichtern sollen.
+
+### Aufzählungen
+
+Sowohl bei kleinen als auch bei großen Kampfverbänden kann es vorkommen, dass im Zuge eines Funkaustauschs von mehreren Funkteilnehmern eine Antwort erwartet wird. Werden mehrere Empfänger bei der [Verbindung](/ausbildung/funketikette#verbindung) aufgezählt, so müssen diese nacheinander in der genannten Reihenfolge reagieren. Folgendes Beispiel dient zum Verständnis:
+
+„Team Blau und Team Rot für Gruppenführung - Frage - aktuelle Lage - Kommen.“
+
+„Hier Team Blau - Lage - unverändert, wenig Feindkontakt, halten Stellung - Kommen.“
+
+„Hier Team Rot - Lage - wenige Ausfälle erlitten, stehen unter starkem Feindbeschuss - Kommen.“
+
+„Hier Gruppenführung - so aufgenommen, warten Sie auf weitere Anweisungen - Ende.“
 
 ### Zahlen
 
