@@ -1,10 +1,10 @@
-<script>
-  import { searchInUse } from '$lib/search/stores';
+<script lang="ts">
+  import type { Article, Directory } from '../../app';
 
-  let activeNav;
-  export let menu = [];
+  export let menu: Array<Directory> = [];
+  let activeNav: string | null;
 
-  function toggleOpen(nav_id) {
+  function toggleOpen(nav_id: string) {
     if (nav_id === activeNav) {
       activeNav = null;
     } else {
@@ -12,7 +12,7 @@
     }
   }
 
-  function shortName(article) {
+  function shortName(article: Article) {
     /*
 			returns the articles short title if there is one set
 		*/
@@ -26,11 +26,7 @@
 
 <div id="nav__list">
   {#each menu as nav}
-    <div
-      class="expandable"
-      class:open={activeNav === nav.id}
-      class:invisible={$searchInUse}
-    >
+    <div class="expandable" class:open={activeNav === nav.id}>
       <span
         on:click={() => toggleOpen(nav.id)}
         on:keypress={() => toggleOpen(nav.id)}
@@ -44,9 +40,3 @@
     </div>
   {/each}
 </div>
-
-<style lang="scss">
-  .invisible {
-    display: none;
-  }
-</style>

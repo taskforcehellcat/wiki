@@ -6,6 +6,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth !important;
   font-variant-ligatures: none;
+
+  // #DEBUG
+  // &:focus {
+  //   outline: 2px solid rgb(97, 162, 0) !important;
+  // }
 }
 
 // mark external links (i didnt know where else to put it)
@@ -27,6 +32,7 @@ a[href]:not(:where(
 }
 
 @mixin theme-light {
+  --theme-main: #fff;
   --brandPrimaryBG: #101b3b;
   --brandSecondaryBG: #273252;
   --brandTertiaryBG: #11182e;
@@ -34,6 +40,7 @@ a[href]:not(:where(
   --brandSecondaryTXT: #101b3b;
   --brandTertiaryTXT: #94a2cf;
   --brandNeutral: #fff;
+  --border: #e6e8eb;
   --navHover: #fff;
   --wikiBG: #fff;
   --kbdBG: #ebebeb;
@@ -91,6 +98,7 @@ a[href]:not(:where(
 }
 
 @mixin theme-dark {
+  --theme-main: #181818;
   --brandPrimaryBG: #0a0a0a;
   --brandSecondaryBG: #1b1b1b;
   --brandTertiaryBG: #050505;
@@ -98,6 +106,7 @@ a[href]:not(:where(
   --brandSecondaryTXT: #e9e9e9;
   --brandTertiaryTXT: #767676;
   --brandNeutral: #fff;
+  --border: #3d3d3d;
   --navHover: #fff;
   --wikiBG: url('/images/dark-bg.jpg');
   --kbdBG: #1e1e1e;
@@ -242,9 +251,9 @@ h3 {
   margin-bottom: 0 !important;
 }
 
-main {
+content {
   width: 100%;
-  padding: 10.4rem 8rem 10rem 8rem;
+  padding: 4.4rem 8rem 10rem 8rem;
   color: var(--brandPrimaryTXT);
   background: var(--wikiBG) !important;
   background-color: var(--brandPrimaryBG);
@@ -253,7 +262,7 @@ main {
 }
 
 #main {
-  scroll-padding-top: 4rem;
+  scroll-padding-top: 7rem;
 
   @media (max-width: 800px) {
     scroll-padding-top: 14rem;
@@ -413,39 +422,6 @@ input {
   }
 }
 
-#search__results {
-  height: fit-content;
-  width: 80rem;
-  background-color: var(--brandSecondaryBG);
-  padding: 1rem 3.5rem 3.5rem 3.5rem;
-  border-bottom-left-radius: 0.7rem;
-  border-bottom-right-radius: 0.7rem;
-
-  p {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    color: var(--brandTertiaryTXT);
-  }
-
-  > ol {
-    font-weight: 300;
-    padding-left: 1.7rem;
-
-    > li {
-      margin-top: 0.1rem;
-      margin-bottom: 0.1rem;
-
-      > a {
-        text-decoration: underline;
-
-        &:hover {
-          color: var(--brandNeutral);
-        }
-      }
-    }
-  }
-}
-
 .open {
   .material-icons-rounded {
     transform: rotate(90deg);
@@ -458,35 +434,6 @@ input {
   a {
     display: flex;
   }
-}
-
-#search[data-empty='false'] {
-  #search__results {
-    display: block;
-  }
-
-  #search__searchbar {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  #nav__search-results {
-    display: block;
-  }
-
-  #nav__search {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  #nav__list {
-    display: none;
-  }
-}
-
-#search__results,
-#article {
-  display: none;
 }
 
 #home__nav {
@@ -557,16 +504,6 @@ input {
     display: none !important;
   }
 
-  #wiki {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 10rem 22fr 13rem !important;
-  }
-
-  footer {
-    grid-column: initial !important;
-    grid-row: initial !important;
-  }
-
   #nav__logo:hover {
     transform: none;
     -webkit-transform: none;
@@ -579,7 +516,7 @@ input {
     padding-top: 20%;
   }
 
-  main {
+  content {
     padding: 6rem 3rem 10rem 3rem;
   }
 }
@@ -615,7 +552,7 @@ img#home__nav__logo {
 }
 
 @media only screen and (max-width: 1200px) {
-  main p {
+  content p {
     text-align: left;
   }
 }

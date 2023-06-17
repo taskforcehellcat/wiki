@@ -28,7 +28,7 @@
 
 <style lang="scss">
   .example-box {
-    width: 100%;
+    width: min(100%, 110rem);
     background-color: var(--exampleBoxBG);
     border-radius: 0.5rem;
     border: 1px solid var(--exampleBoxBorder);

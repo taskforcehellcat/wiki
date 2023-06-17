@@ -2,11 +2,12 @@
   import Popup from '$lib/aprilfools/Popup.svelte';
 
   import '../../../app.scss';
-  import { themeId } from '$lib/theme/stores';
+  import { themeId } from '$lib/pickers/stores';
   import '$lib/mdstyling/github.css';
+  import Searchbar from '$lib/search/Searchbar.svelte';
 
   // --- themes ---
-  import Theme from '$lib/theme/Theme.svelte';
+  import ThemePicker from '$lib/pickers/ThemePicker.svelte';
 
   // --- burger menu ---
   import OpenMenuSVG from '$lib/burgermenu/openMenu.svelte';
@@ -19,6 +20,7 @@
 
   import { page } from '$app/stores';
   import PageMeta from '$lib/metadata/PageMeta.svelte';
+  import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
   import type { LayoutData } from './$types';
 
   type Anchor = {
@@ -95,10 +97,17 @@
         {/each}
       </div>
 
-      <main id="content" class="markdown-body">
-        <Theme />
+      <div id="info-bar">
+        <Searchbar />
+        <div id="pickers">
+          <ThemePicker location="article" />
+          <LayoutPicker location="article" />
+        </div>
+      </div>
+
+      <content class="markdown-body">
         <slot />
-      </main>
+      </content>
 
       {#if $page.status == 200}
         <footer>
@@ -126,7 +135,51 @@
     min-height: 120vh;
     display: grid;
     grid-template-columns: 38rem 4fr;
-    grid-template-rows: 18fr 12rem;
+    grid-template-rows: 6rem 18fr 12rem;
+
+    @media only screen and (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 10rem 18fr 12rem;
+    }
+  }
+
+  #info-bar {
+    width: 100%;
+    height: 100%;
+    background: var(--wikiBG);
+    grid-column: 2;
+    grid-row: 1;
+    gap: 1rem;
+    border-bottom: 1px solid var(--color-border-muted);
+    position: sticky;
+    top: 0;
+    padding-inline: 8rem;
+    padding-block: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    z-index: 100;
+
+    @media only screen and (max-width: 800px) {
+      grid-row: unset;
+      grid-column: unset;
+      display: none;
+    }
+  }
+
+  content {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  footer {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  #pickers {
+    display: flex;
+    gap: 1rem;
   }
 
   #nav__list-bar {
@@ -142,19 +195,19 @@
   }
 
   :global(
-      #content p,
-      #content h1,
-      #content h2,
-      #content h3,
-      #content h4,
-      #content h5,
-      #content h6,
-      #content ul,
-      #content ol,
-      #content blockquote,
-      #content pre,
-      #content table,
-      #content .example-box
+      content p,
+      content h1,
+      content h2,
+      content h3,
+      content h4,
+      content h5,
+      content h6,
+      content ul,
+      content ol,
+      content blockquote,
+      content pre,
+      content table,
+      content .example-box
     ) {
     width: 100%;
     color: var(--brandSecondaryTXT);
@@ -209,9 +262,16 @@
     padding: 10%;
     gap: 3rem;
     position: sticky;
-    z-index: 99;
     top: 0;
     overflow-y: auto;
+
+    @media only screen and (max-width: 800px) {
+      grid-row: unset;
+      grid-column: unset;
+      display: none;
+      grid-column: 2;
+      height: 100%;
+    }
   }
 
   nav::-webkit-scrollbar {

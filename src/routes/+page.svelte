@@ -1,21 +1,21 @@
 <!-- Homepage -->
 <script lang="ts">
+  export let data;
+
   import '../app.scss';
-  import Theme from '$lib/theme/Theme.svelte';
+  import ThemePicker from '$lib/pickers/ThemePicker.svelte';
   import Nav from '$lib/nav/Nav.svelte';
-  import { themeId } from '$lib/theme/stores';
+  import { themeId } from '$lib/pickers/stores';
 
   import { Search } from '$lib/search/engine';
   import { searchInUse, searchResults } from '$lib/search/stores';
   import ResultsSection from '$lib/search/ResultsSection.svelte';
   import { beforeNavigate } from '$app/navigation';
 
-  export let data;
-
   let rawInput = '';
-  let query; // holds the query
+  let query: string; // holds the query
   let showResults = false; // whether the search bar is currently in use
-  let search = new Search(data.posts);
+  let search = new Search(data.posts, data.menu);
 
   $: query = rawInput.trim();
   $: $searchInUse = query.length > 0;
@@ -27,8 +27,7 @@
   $: showResults = query.length > 2;
 
   beforeNavigate(() => {
-    // reset the query when leaving the site, else the nav menu thinks the
-    // search is in use and stays hidden on article pages.
+    // reset the query when leaving the site
     query = '';
   });
 </script>
@@ -40,7 +39,7 @@
 
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
-    <Theme />
+    <!--ThemePicker location="home" /-->
     <div id="home">
       <div id="home__top">
         <a id="home__link" href="https://taskforcehellcat.de/"
@@ -56,8 +55,8 @@
       </div>
 
       <!-- search bar -->
-      <div id="search" data-empty={(query.length === 0).toString()}>
-        <div id="search__searchbar">
+      <div id="search">
+        <div id="search__searchbar" class:open={$searchInUse}>
           <span class="material-icons-rounded noselect">search</span>
           <input
             type="text"
@@ -66,36 +65,37 @@
             bind:value={rawInput}
           />
         </div>
-        <div id="search__results">
-          {#if showResults}
-            {#if $searchResults.length !== 0}
-              <ResultsSection kind="article" />
-              <ResultsSection kind="heading" />
-              <ResultsSection kind="text" />
+        {#if $searchInUse}
+          <div id="search__results">
+            {#if showResults}
+              {#if $searchResults.length !== 0}
+                <ResultsSection kind="article" />
+                <ResultsSection kind="heading" />
+                <ResultsSection kind="text" />
+              {:else}
+                <span id="search__errortext">
+                  Es wurden keine Übereinstimmungen gefunden!
+                </span>
+              {/if}
             {:else}
-              <p>
-                <span class="search__errortext"
-                  >Es wurden keine Übereinstimmungen gefunden!</span
-                >
-              </p>
+              <span id="search__errortext">
+                Bitte mindestens drei Zeichen eingeben!
+              </span>
             {/if}
-          {:else}
-            <p>
-              <span class="search__errortext"
-                >Bitte mindestens drei Zeichen eingeben!</span
-              >
-            </p>
-          {/if}
+          </div>
+        {/if}
+      </div>
+
+      {#if !$searchInUse}
+        <div id="home__nav">
+          <Nav menu={data.menu} />
         </div>
-      </div>
-      <div id="home__nav">
-        <Nav menu={data.menu} />
-      </div>
+      {/if}
     </div>
   </div>
 {/if}
 
-<style>
+<style lang="scss">
   #home {
     padding: 15rem 5rem 20%;
     width: 100%;
@@ -152,7 +152,21 @@
     color: var(--brandTertiaryTXT);
   }
 
-  .search__errortext {
+  #search__searchbar.open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  #search__results {
+    height: fit-content;
+    width: 80rem;
+    background-color: var(--brandSecondaryBG);
+    padding: 1rem 3.5rem 3.5rem 3.5rem;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+  }
+
+  #search__errortext {
     color: var(--errorTXT);
   }
 </style>

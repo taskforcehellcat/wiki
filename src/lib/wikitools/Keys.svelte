@@ -1,10 +1,10 @@
 <script lang="ts">
   export let keys = '';
-  import { keysLayout } from '$lib/stores';
+  import { layoutId } from '$lib/pickers/stores';
   let keysArray = keys.split(',');
   keysArray = keysArray.map((key) => key.trim());
 
-  const mapDeEn = new Map([
+  const mapDeUs = new Map([
     ['CTRL', 'STRG'],
     ['SHIFT', 'UMSCHALT'],
     ['CAPS', 'FESTSTELLEN'],
@@ -27,16 +27,16 @@
 
   let keysArrayTranslated = keysArray;
 
-  $: if ($keysLayout) {
+  $: if ($layoutId) {
     keysArrayTranslated = keysArray;
 
-    if (['de-win', 'de-mac'].includes($keysLayout)) {
+    if (['de-win', 'de-mac'].includes($layoutId)) {
       keysArrayTranslated = keysArrayTranslated.map((key) => {
-        return mapDeEn.get(key) ?? key;
+        return mapDeUs.get(key) ?? key;
       });
     }
 
-    if (['de-mac', 'en-mac'].includes($keysLayout)) {
+    if (['de-mac', 'us-mac'].includes($layoutId)) {
       keysArrayTranslated = keysArrayTranslated.map((key) => {
         return mapWinMac.get(key) ?? key;
       });

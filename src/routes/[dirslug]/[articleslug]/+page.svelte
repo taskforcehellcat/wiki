@@ -10,6 +10,13 @@
   ];
 
   afterNavigate(() => {
+    // TODO
+    /**
+     * I think we can delete this whole block,
+     * but I wont do it now because I am fixing 
+     * #88 right now.
+    */
+
     // NOTE: this does not work if it's included inside of +layout.svelte
     if (window.location.hash) {
       let hash = window.location.hash.replace('#', '');
@@ -24,13 +31,12 @@
       }
     } else {
       // scroll to top if there is no hash provided
-      const mainElemenet = document.getElementById('main');
-
-      if (mainElemenet) {
-        mainElemenet.scrollTop = 0;
+      const mainElement = document.getElementById('main');
+      if (mainElement) {
+        mainElement.scrollTop = 0;
       } else {
         console.warn(
-          `Couldn't scroll top because no "main" element was found.`
+          `Element with id "main" wasn't found, automatic scrolling may not work correctly.`
         );
       }
     }

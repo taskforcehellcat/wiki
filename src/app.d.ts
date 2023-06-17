@@ -14,3 +14,39 @@ declare namespace App {
 
   // interface Stuff {}
 }
+
+export type Menu = {
+  [key: string]: Directory;
+};
+
+export type Directory = {
+  entries: Array<Article>;
+  id: string;
+  config: {
+    title: string;
+    date: string;
+    nav_index: number;
+  };
+};
+
+export type Article = {
+  meta: {
+    title: string;
+    title_short: string;
+    date: string;
+    nav_index: number;
+  };
+  id: string;
+  directory: string;
+  html: string;
+};
+
+// FIXME you should be able to get this dynamically...
+type ArticleFile = {
+  metadata: Article['meta'];
+  default: {
+    render: () => {
+      html: string;
+    };
+  };
+};
