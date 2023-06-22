@@ -13,9 +13,9 @@
     // TODO
     /**
      * I think we can delete this whole block,
-     * but I wont do it now because I am fixing 
+     * but I wont do it now because I am fixing
      * #88 right now.
-    */
+     */
 
     // NOTE: this does not work if it's included inside of +layout.svelte
     if (window.location.hash) {
