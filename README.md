@@ -3,6 +3,13 @@
 [![](https://img.shields.io/website?down_color=red&down_message=offline&label=TFHC%20Wiki&up_color=green&up_message=online&url=https%3A%2F%2Fwiki.taskforcehellcat.de%2F)](https://wiki.taskforcehellcat.de)
 [![TFHC Discord](https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord)](https://discord.taskforcehellcat.de/)
 
+Contents:
+
+- [Adding new pages](#adding-new-pages)
+- [Markdown formatting](#markdown-formatting)
+- [Custom components](#custom-components)
+- [Mass-formatting files](#mass-formatting-files)
+
 ## Adding new pages
 
 To add a new wiki page, just add a `[name].svx` file in `/src/content` where `[name]` is the short name of the page:
@@ -19,17 +26,18 @@ The top of the file should contain the following metadata:
 
 ```
 ---
-title:      [Full Page Title]
-date:       [Date of last edit in 'YYYY-MM-DD' format]
-nav_index:  [Order of the page in the navigation]
+title:        [Full Page Title]
+title_short:  [(optional) Shortened Page Title]
+date:         [Date of last edit in 'YYYY-MM-DD' format]
+nav_index:    [Order of the page in the navigation]
 ---
 ```
 
-## Formatting Pages
+The `title_short` may be set if you notice that the full title is too long for e.g. the navigation UI.
 
-Pages are written in Markdown and are saved as `.svx` files. The pages are then compiled into HTML using [SvelteKit](https://kit.svelte.dev/).
+## Markdown formatting
 
----
+Pages are written in Markdown and are saved as `.svx` files. The pages are then compiled into HTML using [mdsvex](https://mdsvex.com/).
 
 ### Adding headings
 
@@ -51,7 +59,27 @@ They will look like this when rendered:
 
 The title does not need to be added to the page as it is automatically generated from the page name set at the top of the file (see [Adding new pages](##Adding-new-pages)).
 
----
+### Adding links
+
+To link to another wiki page, use the following syntax:
+
+```markdown
+[Sanitäter](/sanitaetsdienst/sanitaeter)
+```
+
+The square brackets contain the text that is displayed and the round brackets contain the path to the page.
+
+To link to a section on the same page, append `#` and the section name to the path.
+
+```markdown
+[Sanitäter](/sanitaetsdienst/sanitaeter#ausrüstung)
+```
+
+To link to an external page, use the following syntax:
+
+```markdown
+[Wikipedia](https://wikipedia.org)
+```
 
 ### Adding lists
 
@@ -66,8 +94,6 @@ Lists can be created by using `-` at the beginning of a line.
 They will look like this when rendered:
 
 ![list image](./src/lib/images/readme/list.png)
-
----
 
 ### Adding images
 
@@ -96,6 +122,25 @@ To use an **external** image, just use the URL instead of the variable name:
 ![Image Alt Text](https://example.com/image.png)
 ```
 
+### Creating tables
+
+Tables can be created by using the following syntax:
+
+```markdown
+| Header 1 | Header 2 | Header 3 |
+| -------- | -------- | -------- |
+| Row 1    | Row 1    | Row 1    |
+| Row 2    | Row 2    | Row 2    |
+```
+
+They will look like this when rendered:
+
+![table image](./src/lib/images/readme/table.png)
+
+## Custom components
+
+HTML tags are rendered as usual, for example `<u>text</u>` underlines text.
+
 ### Adding Slideshows
 
 For slideshows you can use the slideshow component:
@@ -123,32 +168,6 @@ A complete example might look like this:
 />
 ```
 
----
-
-### Creating links
-
-To link to another wiki page, use the following syntax:
-
-```markdown
-[Sanitäter](/sanitaetsdienst/sanitaeter)
-```
-
-The square brackets contain the text that is displayed and the round brackets contain the path to the page.
-
-To link to a section on the same page, append `#` and the section name to the path.
-
-```markdown
-[Sanitäter](/sanitaetsdienst/sanitaeter#ausrüstung)
-```
-
-To link to an external page, use the following syntax:
-
-```markdown
-[Wikipedia](https://wikipedia.org)
-```
-
----
-
 ### Creating tooltips
 
 Tooltips can be added by using `<Tooltip>` tags:
@@ -160,8 +179,6 @@ Tooltips can be added by using `<Tooltip>` tags:
 They will look like this when hovered over:
 
 ![tooltip image](./src/lib/images/readme/tooltip.png)
-
----
 
 ### Creating example boxes
 
@@ -176,25 +193,6 @@ They can be added by using `<ExampleBox>` tags:
 They will look like this when rendered:
 
 ![example box image](./src/lib/images/readme/example-box.png)
-
----
-
-### Creating tables
-
-Tables can be created by using the following syntax:
-
-```markdown
-| Header 1 | Header 2 | Header 3 |
-| -------- | -------- | -------- |
-| Row 1    | Row 1    | Row 1    |
-| Row 2    | Row 2    | Row 2    |
-```
-
-They will look like this when rendered:
-
-![table image](./src/lib/images/readme/table.png)
-
----
 
 ### Displaying keyboard keys
 
@@ -211,8 +209,6 @@ They will look like this when rendered:
 **Important:** Use american english key identifiers and the keyboard layout under windows. They will get translated accordingly.
 For a list of the mappings used see `src/lib/wikitools/Keys.svelte`, `mapDeUs` and `mapWinMac` respectively.
 Be sure to use the `Keys` component instead of the `<kbd>` tag if your key needs to be mapped!
-
----
 
 ### Adding YouTube videos
 
@@ -241,3 +237,5 @@ npm run format
 ```
 
 This will format all files using [Prettier](https://prettier.io/).
+
+It is strongly recommended to activate _format on save_ in your editor.
