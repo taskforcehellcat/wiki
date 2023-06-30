@@ -45,10 +45,10 @@
 <div class="container">
   <div class="image-wrapper">
     <div bind:this={slideshow} class="slideshow" />
-    <button class="button button-left" on:click={() => scrollSlide(1)}
+    <button class="button button-left" on:click={() => scrollSlide(-1)}
       >&#10094;</button
     >
-    <button class="button button-right" on:click={() => scrollSlide(-1)}
+    <button class="button button-right" on:click={() => scrollSlide(1)}
       >&#10095;</button
     >
   </div>
