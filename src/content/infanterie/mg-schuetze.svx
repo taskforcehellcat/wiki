@@ -1,41 +1,75 @@
 ---
 title: MG-Schütze
-date: '2023-01-31'
+date: '2023-06-26'
 nav_index: 3
 ---
 
 <script>
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
+    import Slideshow from '$lib/slideshow/Slideshow.svelte';
+
+    // machine gun images
+    import m249_lmg from '$lib/images/mg-schuetze/m249_lmg_handheld.jpg';
+    import stoner_lmg from '$lib/images/mg-schuetze/stoner_lmg_handheld.jpg';
+    import minimi_lmg from '$lib/images/mg-schuetze/minimi_lmg_handheld.jpg';
+    import m240b_mmg from '$lib/images/mg-schuetze/m240b_mmg_handheld.jpg';
+    import pkm_mmg from '$lib/images/mg-schuetze/pkm_mmg_handheld.jpg';
+    import m60_mmg from '$lib/images/mg-schuetze/m60_mmg_handheld.jpg';
+    import mg3_mmg from '$lib/images/mg-schuetze/mg3_mmg_handheld.jpg';
+    import m2_hmg from '$lib/images/mg-schuetze/m2_hmg_mounted.jpg';
+    import dshkm_hmg from '$lib/images/mg-schuetze/dshkm_hmg_mounted.jpg';
+    import kord_hmg from '$lib/images/mg-schuetze/kord_hmg_mounted.jpg';
+    import nsv_hmg from '$lib/images/mg-schuetze/nsv_hmg_mounted.jpg';
 </script>
 
 ## Rollenprofil
 
-Der <Tooltip text="Maschinengewehr">MG</Tooltip>-Schütze ist eine der grundlegenden Rollen der Infanterie. Die Rolle des MG-Schützen erfordert eine Fortbildung vom Schützen und ist für Anfänger sehr gut geeignet. MG-Schützen sind ein wichtiger Bestandteil von Trupps und Gruppen der Infanterie. In Gruppen sind sie grundsätzlich in Deckungstrupps anzutreffen.
+Der Maschinengewehr-Schütze ist eine der grundlegenden Rollen der Infanterie. Die Rolle des MG-Schützen erfordert eine Fortbildung vom Schützen und ist für Anfänger sehr gut geeignet. MG-Schützen sind ein wichtiger Bestandteil von Trupps und Gruppen der Infanterie. In Gruppen sind sie üblicherweise in Deckungstrupps anzutreffen.
 
 ## Aufgaben
 
-MG-Schützen haben ein relativ simples Aufgabenprofil, das allerdings von großer Bedeutung für den infanteristischen Kampf ist. Zusätzliche Aufgaben der MG-Schützen neben denen der Schützen sind unter anderem:
+MG-Schützen haben ein relativ überschaubares Aufgabenprofil, das allerdings von großer Bedeutung für den infanteristischen Kampf ist. Zusätzliche Aufgaben der MG-Schützen neben denen der Schützen sind unter anderem:
 
-- Feuerüberlegenheit herstellen
-- Niederhaltungs-/Sperrfeuer geben
+- Herstellung der Feuerüberlegenheit
+- Niederhaltung feindlicher Infanterie
+- Decken eigener Kräfte, besonders bei abwechselnder Bewegung im Feld
 
 ## Ausrüstung
 
-Neben der Grundausrüstung eines Schützen verfügen MG-Schützen über ein Maschinengewehr und die dazugehörige Munition in einem großen Rucksack. Maschinengewehre gibt es in vielen verschiedenen Variationen, darunter variiert oftmals das Gewicht der Waffe, die verschossene Munitionsart und die Magazingröße. Grundsätzlich unterscheiden wir zwischen _leichten_ und _schweren_ Maschinengewehren.
+Neben der Grundausrüstung eines Schützen verfügen MG-Schützen über ein Maschinengewehr und die dazugehörige Munition in einem großen Rucksack. Maschinengewehre gibt es in verschiedenen Variationen, darunter variiert oftmals das Gewicht der Waffe, die verschossene Munitionsart und die Magazingröße. Grundsätzlich unterscheiden wir zwischen _leichten_, _mittleren_ und _schweren_ Maschinengewehren, die in den folgenden Absätzen erläutert werden:
 
-### Leichte Maschinengewehre
+### Leichte Maschinengewehre (<Tooltip text="Light Machine Gun">LMG</Tooltip>)
 
-Zu den leichten Maschinengewehren zählen unter anderem das deutsche MG5, das amerikanische M249 und das russische PKM. Diese Waffen können in der Hand mitgeführt und durch einen einzigen Soldaten bedient werden. Leichte Maschinengewehre verschießen Kaliber wie 5,56x45 mm oder 7,62x51 mm NATO und haben eine hohe <Tooltip text="Schussfrequenz oder auch Schusskadenz">Feuerrate</Tooltip>.
+Zu den leichten Maschinengewehren zählen wir agile Handfeuerwaffen mit hoher <Tooltip text="Schussfrequenz oder auch Feuerkadenz, gemessen in rpm (rounds per minute, dt. Schuss pro Minute)">Feuerrate</Tooltip>, die grundsätzlich durch einen einzelnen Soldaten bedient werden können und den Munitionstyp 5,56x45 mm verschießen. MG-Schützen, die mit einem LMG ausgerüstet sind, können grundsätzlich autark agieren, da ein einzelner Soldat <Tooltip text="bis zu 1200 Schuss">viel Munition</Tooltip> mitführen kann. Aufgrund des kleinen Kalibers haben LMG die geringste Durchschlagskraft aller MG-Klassen und eine effektive Reichweite von 600 bis 800 Metern.
 
-### Schwere Maschinengewehre
+<Slideshow
+images={[m249_lmg,stoner_lmg,minimi_lmg]}
+captions={["M249, USA","Stoner LMG, USA","FN Minimi Para, Frankreich"]}
+/>
 
-Zu den schweren Maschinengewehren zählen unter anderem das amerikanische M2 und das russische DShK. Diese Waffen werden aufgrund ihres Gewichtes hauptsächlich stationär auf einem Dreibein oder auf dem Dach eines Fahrzeugs montiert eingesetzt. Alternativ müssten sie demontiert in zwei Rucksäcken durch das Feld getragen werden, wodurch sie sich bei der Infanterie eher zu defensiven Zwecken eignen. Diese Waffen verschießen Kaliber wie 12,7x99 mm NATO oder 12,7x108 mm und haben eine niedrigere Feuerrate als leichte Maschinengewehre, dafür aber eine höhere effektive Reichweite und hohe Durchschlagskraft, die zur Bekämpfung von leichtgepanzerten Fahrzeugen eingesetzt werden kann.
+### Mittlere Maschinengewehre (<Tooltip text="Medium Machine Gun">MMG</Tooltip>)
+
+Zu den mittleren Maschinengewehren zählen wir schwere Handfeuerwaffen, die durch ein [MG-Buddyteam](/ausbildung/truppenteile#buddyteam) eingesetzt werden. Das Buddyteam besteht aus dem MG-Schützen und einem MG-Assistenten, der zusätzlich Munition für das MMG mitführt. Im Gegensatz zu LMG-Schützen agieren MMG-Schützen also nicht autark. MMG verschießen im Durchschnitt den Munitionstyp 7,62x51 mm NATO und haben damit eine höhere Durchschlagskraft als LMG und eine effektive Reichweite von 800 bis 1800 Metern.
+
+<Slideshow
+images={[m240b_mmg,pkm_mmg,mg3_mmg,m60_mmg]}
+captions={["M240B, USA","PKM, Russland","MG3, Deutschland","M60, USA"]}
+/>
+
+### Schwere Maschinengewehre (<Tooltip text="Heavy Machine Gun">HMG</Tooltip>)
+
+Zu den schweren Maschinengewehren zählen grundsätzlich stationäre oder auf Fahrzeugen montierte Waffen, die primär zu defensiven Zwecken eingesetzt werden. Diese können demontiert in zwei Rucksäcken von Infanteristen mitgeführt werden, was aufgrund der Vorteile von LMG und MMG gegenüber HMG allerdings selten vorkommt. Diese Waffen verschießen Munitionstypen wie 12,7x99 mm NATO oder 12,7x108 mm und haben damit eine überwältigende Durchschlagskraft und eine effektive Reichweite von bis zu 2000 Metern. Mit ihrer Durchschlagskraft eignen sich HMG zur Bekämpfung von leichtgepanzerten Fahrzeugen.
+
+<Slideshow
+images={[m2_hmg,dshkm_hmg,kord_hmg,nsv_hmg]}
+captions={["M2, USA","DSHKM, Russland","KORD, Russland","NSV, Russland"]}
+/>
 
 ## Fertigkeiten
 
-Von einsteigenden MG-Schützen werden folgende Fertigkeiten erwartet:
+Von neuen MG-Schützen erwarten wir folgende Fertigkeiten:
 
-- Kenntnis über die Waffe (effektive Reichweite, Durchschlagskraft, Haltung)
-- Fachgerechte <Tooltip text="z.B. kein Dauerfeuer geben, um das Überhitzen der Waffe zu vermeiden">Benutzung</Tooltip> der Waffe
-- Munitionsmanagement
+- Kenntnis über die Waffe (effektive Reichweite, Durchschlagskraft, Handhabung)
+- Umgang mit Verschleiß der Waffe
+- Munitionsmanagement (Sperrbestand, MG-Buddyteam)
 - Verständnis des Prinzips der Niederhaltung
