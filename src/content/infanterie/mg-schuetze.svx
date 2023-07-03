@@ -40,7 +40,7 @@ Neben der Grundausrüstung eines Schützen verfügen MG-Schützen über ein Masc
 
 ### Leichte Maschinengewehre (<Tooltip text="Light Machine Gun">LMG</Tooltip>)
 
-Zu den leichten Maschinengewehren zählen wir agile Handfeuerwaffen mit hoher <Tooltip text="Schussfrequenz oder auch Feuerkadenz, gemessen in rpm (rounds per minute, dt. Schuss pro Minute)">Feuerrate</Tooltip>, die grundsätzlich durch einen einzelnen Soldaten bedient werden können und den Munitionstyp 5,56x45mm verschießen. MG-Schützen, die mit einem LMG ausgerüstet sind, können grundsätzlich autark agieren, da ein einzelner Soldat <Tooltip text="bis zu 1200 Schuss">viel Munition</Tooltip> mitführen kann. Aufgrund des kleinen Kalibers haben LMG die geringste Durchschlagskraft aller MG-Klassen und eine effektive Reichweite von 600-800 Metern.
+Zu den leichten Maschinengewehren zählen wir agile Handfeuerwaffen mit hoher <Tooltip text="Schussfrequenz oder auch Feuerkadenz, gemessen in rpm (rounds per minute, dt. Schuss pro Minute)">Feuerrate</Tooltip>, die grundsätzlich durch einen einzelnen Soldaten bedient werden können und den Munitionstyp 5,56x45 mm verschießen. MG-Schützen, die mit einem LMG ausgerüstet sind, können grundsätzlich autark agieren, da ein einzelner Soldat <Tooltip text="bis zu 1200 Schuss">viel Munition</Tooltip> mitführen kann. Aufgrund des kleinen Kalibers haben LMG die geringste Durchschlagskraft aller MG-Klassen und eine effektive Reichweite von 600-800 Metern.
 
 <Slideshow
 images={[m249_lmg,stoner_lmg,minimi_lmg]}
@@ -49,7 +49,7 @@ captions={["M249, USA","Stoner LMG, USA","FN Minimi Para, Frankreich"]}
 
 ### Mittlere Maschinengewehre (<Tooltip text="Medium Machine Gun">MMG</Tooltip>)
 
-Zu den mittleren Maschinengewehren zählen wir schwere Handfeuerwaffen, die durch ein [MG-Buddyteam](/ausbildung/truppenteile#buddyteam) eingesetzt werden. Das Buddyteam besteht aus dem MG-Schützen und einem MG-Assistenten, der zusätzlich Munition für das MMG mitführt. Im Gegensatz zu LMG-Schützen agieren MMG-Schützen also nicht autark. MMG verschießen im Durchschnitt den Munitionstyp 7,62x51mm NATO und haben damit eine höhere Durchschlagskraft als LMG und eine effektive Reichweite von 800-1800 Metern.
+Zu den mittleren Maschinengewehren zählen wir schwere Handfeuerwaffen, die durch ein [MG-Buddyteam](/ausbildung/truppenteile#buddyteam) eingesetzt werden. Das Buddyteam besteht aus dem MG-Schützen und einem MG-Assistenten, der zusätzlich Munition für das MMG mitführt. Im Gegensatz zu LMG-Schützen agieren MMG-Schützen also nicht autark. MMG verschießen im Durchschnitt den Munitionstyp 7,62x51 mm NATO und haben damit eine höhere Durchschlagskraft als LMG und eine effektive Reichweite von 800-1800 Metern.
 
 <Slideshow
 images={[m240b_mmg,pkm_mmg,mg3_mmg,m60_mmg]}
@@ -58,7 +58,7 @@ captions={["M240B, USA","PKM, Russland","MG3, Deutschland","M60, USA"]}
 
 ### Schwere Maschinengewehre (<Tooltip text="Heavy Machine Gun">HMG</Tooltip>)
 
-Zu den schweren Maschinengewehren zählen grundsätzlich stationäre oder auf Fahrzeugen montierte Waffen, die primär zu defensiven Zwecken eingesetzt werden. Diese können demontiert in zwei Rucksäcken von Infanteristen mitgeführt werden, was aufgrund der Vorteile von LMG und MMG gegenüber HMG allerdings selten vorkommt. Diese Waffen verschießen Munitionstypen wie 12,7x99mm NATO oder 12,7x108mm und haben damit eine überwältigende Durchschlagskraft und eine effektive Reichweite von bis zu 2000 Metern. Mit ihrer Durchschlagskraft eignen sich HMG zur Bekämpfung von leichtgepanzerten Fahrzeugen.
+Zu den schweren Maschinengewehren zählen grundsätzlich stationäre oder auf Fahrzeugen montierte Waffen, die primär zu defensiven Zwecken eingesetzt werden. Diese können demontiert in zwei Rucksäcken von Infanteristen mitgeführt werden, was aufgrund der Vorteile von LMG und MMG gegenüber HMG allerdings selten vorkommt. Diese Waffen verschießen Munitionstypen wie 12,7x99 mm NATO oder 12,7x108 mm und haben damit eine überwältigende Durchschlagskraft und eine effektive Reichweite von bis zu 2000 Metern. Mit ihrer Durchschlagskraft eignen sich HMG zur Bekämpfung von leichtgepanzerten Fahrzeugen.
 
 <Slideshow
 images={[m2_hmg,dshkm_hmg,kord_hmg,nsv_hmg]}
