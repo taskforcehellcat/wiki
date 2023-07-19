@@ -1,11 +1,32 @@
 ---
-title: Kampfpilot
-date: '2023-03-07'
-nav_index: 2
+title: Kampfpilot (Drehflügler)
+title_short: Kampfpilot
+date: '2023-07-19'
+nav_index: 1
 ---
 
-<script>
-    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
-</script>
+## Rollenprofil
 
-<Wipbanner />
+Der Kampfpilot ist verantwortlich für ein komplexes Waffensystem, mit dem Truppenteile durch Kampf aus der Luft unterstützt werden. Er weiß, wie er unter herausfordernden Bedingungen und in unterschiedlichen Geländen effektiv und unter Beachtung der Sicherheitsbestimmungen seinen Auftrag erfüllt.
+
+## Aufgaben
+
+Die Aufgaben eines Kampfpiloten sind unter anderem:
+
+- die Führung und Verantwortung für den zu nutzenden Hubschrauber und die dazugehörige Besatzung
+- der fachgerechte Einsatz von den Waffensystemen des Hubschraubers
+- die fachgerechte Bedienung der Flugsysteme des Hubschraubers
+- die Bereitstellung des fliegerischen Einsatzes des Hubschraubers
+- die Durchführbarkeit des Fluges oder Einsatzes in besonderen Lagen abwägen
+
+## Fertigkeiten
+
+Der Kampfpilot ist eine herausfordernde Rolle, die einem viel abverlangt. Zu den Fertigkeiten zählen:
+
+- das fachgerechte Funken auf Zugebene unter Beachtung der [Funketikette](/ausbildung/funketikette)
+- die Beherrschung des NATO-Alphabets
+- Kenntnisse zur Identifikation von Luft- und Bodenfahrzeugen
+- Kenntnisse im Bereich der Navigation, Aerodynamik, Fluglehre, Luftfahrzeugkunde
+- Kenntnisse über fliegerische und taktische Verfahren
+- Kenntnisse über den Hubschrauber und seine Waffenanlagen
+- Verständnis über die Wirkungsweise verschiedener Munitionstypen und Waffenanlagen
