@@ -1,15 +1,9 @@
 ---
 title: Kampfpilot (Drehflügler)
 title_short: Kampfpilot
-date: '2023-06-24'
+date: '2023-07-19'
 nav_index: 1
 ---
-
-<script>
-    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
-</script>
-
-<Wipbanner />
 
 ## Rollenprofil
 
@@ -17,17 +11,22 @@ Der Kampfpilot ist verantwortlich für ein komplexes Waffensystem, mit dem Trupp
 
 ## Aufgaben
 
-Die Aufgaben eines Drehflügler-Kampfpiloten sind unter anderem:
+Die Aufgaben eines Kampfpiloten sind unter anderem:
 
-- die Verantwortung für den zu nutzenden Hubschraubers
+- die Führung und Verantwortung für den zu nutzenden Hubschrauber und die dazugehörige Besatzung
+- der fachgerechte Einsatz von den Waffensystemen des Hubschraubers
+- die fachgerechte Bedienung der Flugsysteme des Hubschraubers
 - die Bereitstellung des fliegerischen Einsatzes des Hubschraubers
-- der Besitz von Kenntnissen über den Hubschrauber und seinen Waffenanlagen, sowie die Wirkungsweise der Munition
-- die Verantwortung für das unterstellte Personal sowie die sichere Durchführung des Fluges
-- der Besitz von fliegerische und taktische Verfahren
-- der Besitz von Kenntnissen im Bereich der Navigation, Aerodynamik, Fluglehre, Luftfahrzeugkunde
-- die Durchführbarkeit des Fluges oder Einsatzes in besonderen Lagen
-- die Führung einer Besatzung auch unter schwierigen Rahmenbedingungen
+- die Durchführbarkeit des Fluges oder Einsatzes in besonderen Lagen abwägen
 
 ## Fertigkeiten
 
-Der Kampfpilot sollte in der Lage sein, unter Beachtung der [Funketikette](/ausbildung/funketikette) auf Zugebene zu kommunizieren. Dazu beherrscht er das NATO-Alphabet und die Identifikation von feindlichen Luft- und Bodenfahrzeugen.
+Der Kampfpilot ist eine herausfordernde Rolle, die einem viel abverlangt. Zu den Fertigkeiten zählen:
+
+- das fachgerechte Funken auf Zugebene unter Beachtung der [Funketikette](/ausbildung/funketikette)
+- die Beherrschung des NATO-Alphabets
+- Kenntnisse zur Identifikation von Luft- und Bodenfahrzeugen
+- Kenntnisse im Bereich der Navigation, Aerodynamik, Fluglehre, Luftfahrzeugkunde
+- Kenntnisse über fliegerische und taktische Verfahren
+- Kenntnisse über den Hubschrauber und seine Waffenanlagen
+- Verständnis über die Wirkungsweise verschiedener Munitionstypen und Waffenanlagen
