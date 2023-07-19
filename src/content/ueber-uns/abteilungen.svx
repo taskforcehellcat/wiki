@@ -32,7 +32,7 @@ Die Truppengattung der Pioniertruppe wird von Mav organisiert und verwaltet. Sie
 
 ### Fliegertruppe
 
-Die Truppengattung der Fliegertruppe verfügt aktuell über keinen Truppengattungsleiter. Sie versorgt die Kampftruppen mit Verbrauchsmaterial, führt die (Nach-) Verlegung von Kräften durch und liefert Luftnahunterstützung. Dazu bedienen sie [~~Transport-~~](/fuhrpark/transporthubschrauber) und [~~Kampfhubschrauber~~](/fuhrpark/kampfhubschrauber). Zur Fliegertruppe zählen die Rollen des [~~Transportpiloten~~](/fliegertruppe/transportpilot/) und des [~~Kampfpiloten~~](/fliegertruppe/kampfpilot/).
+Die Truppengattung der Fliegertruppe verfügt aktuell über keinen Truppengattungsleiter. Sie versorgt die Kampftruppen mit Verbrauchsmaterial, führt die (Nach-) Verlegung von Kräften durch und liefert Luftnahunterstützung. Dazu bedienen sie [~~Transport-~~](/fuhrpark/transporthubschrauber) und [~~Kampfhubschrauber~~](/fuhrpark/kampfhubschrauber). Zur Fliegertruppe zählen die Rollen des [~~Transportpiloten~~](/fliegertruppe/transportpilot/) und des [Kampfpiloten](/fliegertruppe/kampfpilot/).
 
 ## Einsatz- und Führungsunterstützung
 
