@@ -1,0 +1,115 @@
+---
+title: Taktische Begriffe
+date: '2023-07-25'
+nav_index: 9
+---
+
+<script>
+    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
+
+    /* images */
+    import kampfrichtung_front from '$lib/images/taktische-begriffe/kampfrichtung_front.png'
+    import kampfrichtung_fluegel from '$lib/images/taktische-begriffe/kampfrichtung_fluegel.png'
+    import kampfrichtung_flanken from '$lib/images/taktische-begriffe/kampfrichtung_flanken.png'
+    import kampfrichtung_ruecken from '$lib/images/taktische-begriffe/kampfrichtung_ruecken.png'
+</script>
+
+<Wipbanner />
+
+## Kampfrichtungen
+
+### Front
+
+Die Front wird auch oft als Hauptkampfrichtung bezeichnet, da sie grundsätzlich auf feindliche Kräfte oder ein militärisches Ziel ausgerichtet ist.
+
+![kampfrichtung front image]({kampfrichtung_front})
+
+### Flügel
+
+Die Flügel befinden sich ungefähr 45° links und rechts von der Front. Wir unterscheiden zwischen dem linken und rechten Flügel.
+
+![kampfrichtung fluegel image]({kampfrichtung_fluegel})
+
+### Flanken
+
+Die Flanken sind orthogonal zur Front ausgerichtet. Wir unterscheiden zwischen der linken und rechten Flanke.
+
+![kampfrichtung flanke image]({kampfrichtung_flanken})
+
+### Rücken
+
+Der Rücken, oft auch als Rückraum bezeichnet, liegt gegenüber der Front.
+
+![kampfrichtung ruecken image]({kampfrichtung_ruecken})
+
+## Wirkungsarten
+
+Die Wirkungsarten dienen der effizienten Beschreibung von Waffenwirkungen auf den Feind oder ein Ziel sowohl im verbalen Austausch als auch im Funk. Die unterschiedlichen Wirkungsarten werden in diesem Abschnitt näher erläutert.
+
+### Vernichten
+
+Feindliche Kräfte in ihrer Kampfkraft um circa 60% herabsetzen. Durch das Vernichten sollen die feindlichen Kräfte keine Aufträge mehr durchführen können und vollständig aus dem Gefecht ausgeschlossen werden.
+
+### Zerschlagen
+
+Feindliche Kräfte in ihrer Kampfkraft um circa 30% herabsetzen. Das Zerschlagen feindlicher Kräfte verfolgt die Absicht sie von der Ausführung ihrer derzeitigen Aufträge abzuhalten. Durch das Zerschlagen sollen die feindlichen Kräfte zum [Ausweichen](#ausweichen-taktischer-rückzug) und zur Reorganisation und Regruppierung gezwungen werden.
+
+### Zerstören
+
+Das Zerstören verfolgt die Absicht feindliche Infrastruktur oder Fahrzeuge irreparabel zu beschädigen und damit unbrauchbar zu machen.
+
+### Niederhalten
+
+Feindliche Kräfte durch indirektes Feuer in Deckung zwingen und sie so in ihren Beobachtungs- und Wirkungsmöglichkeiten behindern. Absicht des Niederhaltens ist die Deckung eigener, sich bewegender Kräfte, wodurch unter anderem das Flankieren der feindlichen Kräfte ermöglicht wird. Das Zufügen von Verlusten ist dabei _keine_ Priorität.
+
+Näheres dazu unter [Unterstützungsfeuer](#unterstützungsfeuer).
+
+## Taktiken
+
+### Erreichen
+
+Die Besitzergreifung eines feindfreien Zieles durch eigene Truppen. Impliziert grundsätzlich, dass ein militärisches Ziel ohne Gefecht erworben werden kann.
+
+### Gewinnen
+
+Die Besitzergreifung eines militärischen Zieles, das möglicherweise durch Feindkräfte verteidigt wird. Dieser Begriff wird verwendet, wenn unklar ist, ob sich Feindkräfte im Ziel befinden.
+
+### Nehmen
+
+Die Besitzergreifung eines militärischen Zieles mit feindlicher Präsenz. Dieses Ziel muss höchstwahrscheinlich durch Kampf erworben werden.
+
+### Umfassen (Flankieren)
+
+Die Bewegung eigener Kräfte in die [Flanke](#flanken) oder den [Rücken](#rücken) feindlicher Kräfte, um auf diese von dortaus zu wirken. Das Umfassen ist eine der effektivsten Taktiken, um feindliche Kräfte zu [vernichten](#vernichten) oder zur Aufgabe zu zwingen.
+
+### Durchbrechen
+
+Ein aggressiver Frontalangriff auf eine feindliche Stellung, mit der Absicht, den gebündelten Beschuss einer zusammenhängenden Verteidigung zu entgehen.
+
+Die Taktik Durchbrechen ist nicht mit dem _Durchbruch_ beim [Fahren im Konvoi](/ausbildung/fahren-im-konvoi) zu verwechseln, der die Beschleunigung auf eine vor Beginn der Konvoifahrt festgelegte Durchbruchgeschwindigkeit meint.
+
+### Halten
+
+Der Auftrag einen Geländeabschnitt oder eine Stellung zu verteidigen.
+
+### Aufklären
+
+Die Erkenntnisgewinnung über die Position und Zusammensetzung feindlicher Kräfte, die Beschaffenheit von Geländeabschnitten oder das Vorkommen von ziviler Präsenz. Die Aufklärung kann sowohl vor einer Operation, als auch während des Gefechtes oder während des [Haltens](#halten) durchgeführt werden.
+
+### Ausweichen (taktischer Rückzug)
+
+Das gefechtsmäßige Lösen vom Feind, wodurch die Reorganisation und Regruppierung eigener Kräfte ermöglicht werden soll. Dabei geht es in erster Linie darum, die eigene Kampfkraft so zu präservieren, dass die eigenen Aufträge durchführbar bleiben. Grundsätzlich wird ausgewichen, wenn man sich in einer nachteilhaften Situation befindet, wie dass der Feind die Feuerüberlegenheit gewinnt.
+
+## Unterstützungsfeuer
+
+### Feuerschutz
+
+Beim Feuerschutz deckt ein Element die Bewegung eines anderen. Dabei wird grundsätzlich erst das Feuer eröffnet, wenn feindliche Aktivität beobachtet wird.
+
+### Deckungsfeuer
+
+Beim Deckungsfeuer wird ebenfalls ein sich bewegendes Element gedeckt. Der Unterschied zum Feuerschutz ist, dass der Feind durch sofortigen, durchgehenden Beschuss niedergehalten wird. Die tatsächliche Feindaktivität spielt dabei keine Rolle.
+
+### Feuerunterstützung
+
+Unterstützung eigener Truppen durch Niederhaltung feindlicher Kräfte mittels Artillerie oder Luftunterstützung.
