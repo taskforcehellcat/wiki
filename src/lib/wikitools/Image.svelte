@@ -1,23 +1,23 @@
 <script lang="ts">
   import { themeId } from '$lib/pickers/stores';
+  import getTheme from '$lib/utils/getTheme';
 
   export let lightsrc: string;
   export let darksrc: string;
   export let alt: string;
 
-  let prefersDark: boolean = window.matchMedia(
-    '(prefers-color-scheme: dark)'
-  ).matches;
+  let preferredTheme: 'dark' | 'light';
+  preferredTheme = getTheme();
+  let imgSrc = preferredTheme ? lightsrc : darksrc;
+
+  $: {
+    $themeId;
+    console.debug('themeId changed');
+    preferredTheme = getTheme();
+    imgSrc = preferredTheme === 'light' ? lightsrc : darksrc;
+    console.debug('theme is', preferredTheme);
+    console.debug('src is', imgSrc);
+  }
 </script>
 
-{#if $themeId === 'dark'}
-  <img src={darksrc} {alt} />
-{:else if $themeId === 'light'}
-  <img src={lightsrc} {alt} />
-{:else if $themeId === 'auto'}
-  {#if prefersDark}
-    <img src={darksrc} {alt} />
-  {:else}
-    <img src={lightsrc} {alt} />
-  {/if}
-{/if}
+<img src={imgSrc} {alt} />
