@@ -3,12 +3,13 @@
   import { getTheme, clientPrefLight } from '$lib/utils/getTheme';
 
   export let lightsrc: string;
-  export let darksrc: string | undefined = undefined;
+  export let darksrc: string = '';
   export let alt: string;
   export let caption: string | undefined = undefined;
 
   // if no `darksrc` is specified, use `lightsrc`
-  darksrc ??= lightsrc;
+  darksrc = darksrc ? darksrc : lightsrc;
+  // basically `darksrc ??= lightsrc;` but `darksrc` can't be `undefined`, else TS is angry
 
   let preferredTheme: 'dark' | 'light';
   preferredTheme = getTheme();
