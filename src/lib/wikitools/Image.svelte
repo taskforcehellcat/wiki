@@ -1,6 +1,7 @@
 <script lang="ts">
   import { themeId } from '$lib/pickers/stores';
   import getTheme from '$lib/utils/getTheme';
+  import clientPrefLight from '$lib/utils/clientPrefLight';
 
   export let lightsrc: string;
   export let darksrc: string;
@@ -8,10 +9,11 @@
 
   let preferredTheme: 'dark' | 'light';
   preferredTheme = getTheme();
-  let imgSrc = preferredTheme ? lightsrc : darksrc;
+  let imgSrc = preferredTheme === 'light' ? lightsrc : darksrc;
 
   $: {
     $themeId;
+    $clientPrefLight;
     console.debug('themeId changed');
     preferredTheme = getTheme();
     imgSrc = preferredTheme === 'light' ? lightsrc : darksrc;
