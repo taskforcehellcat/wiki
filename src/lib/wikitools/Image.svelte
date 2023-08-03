@@ -5,6 +5,7 @@
   export let lightsrc: string;
   export let darksrc: string;
   export let alt: string;
+  export let caption: string | undefined = undefined;
 
   let preferredTheme: 'dark' | 'light';
   preferredTheme = getTheme();
@@ -19,3 +20,16 @@
 </script>
 
 <img src={imgSrc} {alt} />
+{#if caption}
+  <span class="caption">{caption}</span>
+{/if}
+
+<style>
+  .caption {
+    max-width: 100%;
+    display: block;
+    font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+</style>
