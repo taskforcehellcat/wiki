@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let isHovered = false;
-  export let image: string;
+  let isHovered = false;
+  export let image: string | undefined = undefined;
   export let text = '';
 
   let x: number;
