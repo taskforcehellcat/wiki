@@ -5,7 +5,7 @@
 import { themeId } from '$lib/pickers/stores';
 import { get } from 'svelte/store';
 
-function getTheme(): 'dark' | 'light' {
+export function getTheme(): 'dark' | 'light' {
   // note: $-syntax does not work outside svelte files
   const themeChoice = get(themeId) || 'light';
 
@@ -24,4 +24,21 @@ function getTheme(): 'dark' | 'light' {
   return clientPreference;
 }
 
-export default getTheme;
+/* 
+    store that contains whether the client prefers a light color theme
+*/
+
+import { readable } from 'svelte/store';
+
+export const clientPrefLight = readable(true, (set) => {
+  const query = window.matchMedia('(prefers-color-scheme: light)');
+  set(query.matches);
+
+  const update = (e: MediaQueryListEvent) => set(e.matches);
+
+  query.addEventListener('change', update);
+
+  return function stop() {
+    query.removeEventListener('change', update);
+  };
+});
