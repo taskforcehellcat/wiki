@@ -47,7 +47,7 @@
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb}
           <a href={crumb.link}>{crumb.display}</a><span
-            class="material-icons-rounded seperator">chevron_right</span
+            class="material-icons-round seperator">chevron_right</span
           >
         {/each}
       </span>{#if kind === 'text'}

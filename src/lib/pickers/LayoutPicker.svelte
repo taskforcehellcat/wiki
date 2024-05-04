@@ -51,7 +51,7 @@
       open = !open;
     }}
   >
-    <span class="material-icons-rounded">keyboard</span>
+    <span class="material-icons-round">keyboard</span>
   </button>
 </div>
 

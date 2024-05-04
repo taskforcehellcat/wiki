@@ -32,7 +32,7 @@
         on:keypress={() => toggleOpen(nav.id)}
       >
         {nav.config.title}
-        <i class="material-icons-rounded noselect">expand_more</i>
+        <i class="material-icons-round noselect">expand_more</i>
       </span>
       {#each nav.entries as article}
         <a href="/{nav.id}/{article.id}">{shortName(article)}</a>

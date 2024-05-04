@@ -20,7 +20,7 @@
     <div class="popup-box" transition:slide|local>
       <div id="popup__header">
         <div id="popup__close" on:click={togglePopup} on:keydown={togglePopup}>
-          <span class="material-icons-rounded">close</span>
+          <span class="material-icons-round">close</span>
         </div>
       </div>
       <div id="popup__content" class="fancy-scrollbar">
@@ -167,7 +167,7 @@
             background-color: var(--popupCloseBGHover);
           }
 
-          > .material-icons-rounded {
+          > .material-icons-round {
             font-size: 20pt;
             margin-right: -4px;
           }

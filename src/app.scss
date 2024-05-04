@@ -1,4 +1,4 @@
-@import '@fontsource/material-icons-rounded';
+@import '@fontsource/material-icons-round';
 
 * {
   margin: 0;
@@ -218,8 +218,15 @@ html {
 
 body {
   width: 100%;
-  font-family: 'GeneralSans-Variable', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    'GeneralSans-Variable',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-weight: 430;
   font-size: 12pt;
   background-color: #000;
@@ -359,7 +366,7 @@ content {
   }
 }
 
-.material-icons-rounded {
+.material-icons-round {
   vertical-align: text-bottom;
   color: inherit;
 }
@@ -423,7 +430,7 @@ input {
 }
 
 .open {
-  .material-icons-rounded {
+  .material-icons-round {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);

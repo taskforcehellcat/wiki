@@ -120,7 +120,7 @@
           display: inline;
           width: fit-content;
           font-size: 2.8rem;
-          font-family: 'Material Icons Rounded';
+          font-family: 'Material Icons Round';
           color: var(--brandTertiaryTXT);
           display: flex;
           align-items: center;

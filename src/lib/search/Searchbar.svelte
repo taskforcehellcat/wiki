@@ -48,7 +48,7 @@
         content: 'search';
         display: inline-block;
         width: 1.5rem;
-        font-family: 'Material Icons Rounded';
+        font-family: 'Material Icons Round';
         font-size: 2.1rem;
         color: #687076;
         background-size: contain;

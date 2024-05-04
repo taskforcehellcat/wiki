@@ -15,7 +15,7 @@
     role="presentation"
   >
     <span>{title}</span>
-    <span class="material-icons-rounded">
+    <span class="material-icons-round">
       {#if isOpen}remove{:else}add{/if}
     </span>
   </div>
@@ -47,7 +47,7 @@
         cursor: pointer;
       }
 
-      .material-icons-rounded {
+      .material-icons-round {
         font-size: 20pt;
         margin-right: -4px;
       }

@@ -38,7 +38,7 @@
       open = !open;
     }}
   >
-    <span class="material-icons-rounded">format_paint</span>
+    <span class="material-icons-round">format_paint</span>
   </button>
 </div>
 

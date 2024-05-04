@@ -43,7 +43,7 @@
     <div id="home">
       <div id="home__top">
         <a id="home__link" href="https://taskforcehellcat.de/"
-          ><span class="material-icons-rounded"> chevron_left </span>
+          ><span class="material-icons-round"> chevron_left </span>
           Zurück zur Hauptseite</a
         >
         <img
@@ -57,7 +57,7 @@
       <!-- search bar -->
       <div id="search">
         <div id="search__searchbar" class:open={$searchInUse}>
-          <span class="material-icons-rounded noselect">search</span>
+          <span class="material-icons-round noselect">search</span>
           <input
             type="text"
             name="search"
@@ -147,7 +147,7 @@
     font-weight: 300;
   }
 
-  #search__searchbar .material-icons-rounded {
+  #search__searchbar .material-icons-round {
     font-size: 20pt;
     color: var(--brandTertiaryTXT);
   }
