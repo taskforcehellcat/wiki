@@ -113,9 +113,9 @@
 
   .home {
     position: relative;
-    padding: 15rem 5rem 20%;
+    padding-top: 15rem;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     height: fit-content;
     background-color: var(--color-bg-primary);
     display: flex;
