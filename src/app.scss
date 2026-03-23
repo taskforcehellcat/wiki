@@ -349,7 +349,6 @@ input {
 .home__nav {
   .tree-view {
     font-size: 15pt;
-    text-transform: uppercase;
     font-weight: 500;
     gap: 15px;
     letter-spacing: 0.12rem;
@@ -357,6 +356,8 @@ input {
 
   .tree-view__leaf a {
     font-size: 13pt;
+    font-weight: 400;
+    letter-spacing: initial;
   }
 }
 
