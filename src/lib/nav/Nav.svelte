@@ -24,9 +24,9 @@
   }
 </script>
 
-<div id="nav__list">
+<div class="nav__list">
   {#each menu as nav}
-    <div class="expandable" class:open={activeNav === nav.id}>
+    <div class="nav__item--expandable" class:nav__item--open={activeNav === nav.id}>
       <span
         on:click={() => toggleOpen(nav.id)}
         on:keypress={() => toggleOpen(nav.id)}

@@ -51,16 +51,16 @@
 
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
-    <div id="wiki">
+    <div class="wiki">
       <nav>
-        <a href="/" id="nav__logo"
+        <a href="/" class="nav__logo"
           ><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a
         >
 
         <button
-          id="burgerMenu"
+          class="nav__burger"
           on:click={() => (isOpen = !isOpen)}
-          class:show={isOpen}
+          class:nav__burger--open={isOpen}
         >
           {#if !isOpen}
             <OpenMenuSVG />
@@ -72,12 +72,12 @@
         <!-- navigation items -->
         {#if anchors.length > 0}
           <div class="nav__list-title">navigation</div>
-          <div id="nav__list-wrapper">
-            <div id="nav__list-bar">
+          <div class="nav__list-wrapper">
+            <div class="nav__list-bar">
               <!-- <div id="nav__list-bar-thumb" /> -->
             </div>
 
-            <div id="wiki-nav__list">
+            <div class="wiki-nav__list">
               {#each anchors as anchor}
                 <a href={anchor.link}>{anchor.text}</a>
               {/each}
@@ -86,10 +86,10 @@
         {/if}
         <div class="nav__list-title">wiki</div>
         <Nav menu={data.menu} />
-        <a href="/" id="return-button">Zurück</a>
+        <a href="/" class="nav__return">Zurück</a>
       </nav>
 
-      <div id="overlay" class:show={isOpen}>
+      <div class="nav__overlay" class:nav__overlay--show={isOpen}>
         {#each anchors as anchor}
           <a href={anchor.link} on:click={() => (isOpen = !isOpen)}
             >{anchor.text}</a
@@ -97,9 +97,9 @@
         {/each}
       </div>
 
-      <div id="info-bar">
+      <div class="info-bar">
         <Searchbar />
-        <div id="pickers">
+        <div class="info-bar__pickers">
           <ThemePicker location="article" />
           <LayoutPicker location="article" />
         </div>
@@ -131,7 +131,7 @@
 <PageMeta />
 
 <style lang="scss">
-  #wiki {
+  .wiki {
     min-height: 120vh;
     display: grid;
     grid-template-columns: 38rem 4fr;
@@ -143,7 +143,7 @@
     }
   }
 
-  #info-bar {
+  .info-bar {
     width: 100%;
     height: 100%;
     background: var(--color-wiki-bg);
@@ -177,12 +177,12 @@
     grid-column: 2;
   }
 
-  #pickers {
+  .info-bar__pickers {
     display: flex;
     gap: 1rem;
   }
 
-  #nav__list-bar {
+  .nav__list-bar {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -226,14 +226,14 @@
     margin-bottom: -2rem;
   }
 
-  #nav__list-wrapper {
+  .nav__list-wrapper {
     display: flex;
     gap: 15px;
     height: fit-content;
     box-sizing: unset;
   }
 
-  #nav__list-bar {
+  .nav__list-bar {
     width: 3px;
     background-color: var(--color-bg-secondary);
     /* background-color: red; */
@@ -245,7 +245,7 @@
     -o-border-radius: 0.2rem;
   }
 
-  #wiki-nav__list {
+  .wiki-nav__list {
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -280,7 +280,7 @@
 
   @media only screen and (max-width: 800px) {
     .nav__list-title,
-    #nav__list-wrapper {
+    .nav__list-wrapper {
       display: none;
     }
 
@@ -317,18 +317,18 @@
     bottom: -0.5rem;
   }
 
-  #burgerMenu {
+  .nav__burger {
     display: none;
     @media (max-width: 800px) {
       display: inline-block;
     }
   }
 
-  #overlay {
+  .nav__overlay {
     display: none;
 
     @media (max-width: 800px) {
-      &.show {
+      &.nav__overlay--show {
         display: flex;
       }
     }

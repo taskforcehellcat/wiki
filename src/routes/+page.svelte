@@ -40,23 +40,22 @@
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
     <!--ThemePicker location="home" /-->
-    <div id="home">
-      <div id="home__top">
-        <a id="home__link" href="https://taskforcehellcat.de/"
+    <div class="home">
+      <div class="home__top">
+        <a class="home__link" href="https://taskforcehellcat.de/"
           ><span class="material-icons-round"> chevron_left </span>
           Zurück zur Hauptseite</a
         >
         <img
-          id="home__nav__logo"
-          class="noselect"
+          class="home__logo noselect"
           src="/images/tfhcwiki_full.svg"
           alt="Task Force Hellcat Logo"
         />
       </div>
 
       <!-- search bar -->
-      <div id="search">
-        <div id="search__searchbar" class:open={$searchInUse}>
+      <div class="search">
+        <div class="search__bar" class:search__bar--open={$searchInUse}>
           <span class="material-icons-round noselect">search</span>
           <input
             type="text"
@@ -66,19 +65,19 @@
           />
         </div>
         {#if $searchInUse}
-          <div id="search__results">
+          <div class="search__results">
             {#if showResults}
               {#if $searchResults.length !== 0}
                 <ResultsSection kind="article" />
                 <ResultsSection kind="heading" />
                 <ResultsSection kind="text" />
               {:else}
-                <span id="search__errortext">
+                <span class="search__error">
                   Es wurden keine Übereinstimmungen gefunden!
                 </span>
               {/if}
             {:else}
-              <span id="search__errortext">
+              <span class="search__error">
                 Bitte mindestens drei Zeichen eingeben!
               </span>
             {/if}
@@ -87,7 +86,7 @@
       </div>
 
       {#if !$searchInUse}
-        <div id="home__nav">
+        <div class="home__nav">
           <Nav menu={data.menu} />
         </div>
       {/if}
@@ -96,7 +95,7 @@
 {/if}
 
 <style lang="scss">
-  #home {
+  .home {
     padding: 15rem 5rem 20%;
     width: 100%;
     min-height: 100vh;
@@ -109,7 +108,7 @@
     gap: 4rem;
   }
 
-  #home__nav__logo {
+  .home__logo {
     font-size: 35pt;
     font-weight: 300;
     color: var(--color-neutral);
@@ -117,13 +116,13 @@
     white-space: nowrap;
   }
 
-  #home__top {
+  .home__top {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #search__searchbar {
+  .search__bar {
     background-color: var(--color-bg-secondary);
     width: 80rem;
     height: 3rem;
@@ -139,7 +138,7 @@
     padding: 3.5rem;
   }
 
-  #search__searchbar input {
+  .search__bar input {
     width: 100%;
     height: 24px;
     color: var(--color-text-muted);
@@ -147,17 +146,17 @@
     font-weight: 300;
   }
 
-  #search__searchbar .material-icons-round {
+  .search__bar .material-icons-round {
     font-size: 20pt;
     color: var(--color-text-muted);
   }
 
-  #search__searchbar.open {
+  .search__bar--open {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  #search__results {
+  .search__results {
     height: fit-content;
     width: 80rem;
     background-color: var(--color-bg-secondary);
@@ -166,7 +165,7 @@
     border-bottom-right-radius: 0.7rem;
   }
 
-  #search__errortext {
+  .search__error {
     color: var(--color-error);
   }
 </style>
