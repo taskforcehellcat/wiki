@@ -1,4 +1,4 @@
-@import 'markdown';
+@use 'markdown';
 
 * {
   margin: 0;
@@ -43,7 +43,7 @@ a[href]:not(:where(
   --color-error: #c1a03e;
   --color-theme-picker-border: #666666;
 
-  @include markdown-vars-light;
+  @include markdown.markdown-vars-light;
 }
 
 @mixin theme-dark {
@@ -67,7 +67,7 @@ a[href]:not(:where(
   --color-error: #9d884a;
   --color-theme-picker-border: #111111;
 
-  @include markdown-vars-dark;
+  @include markdown.markdown-vars-dark;
 }
 
 html {
