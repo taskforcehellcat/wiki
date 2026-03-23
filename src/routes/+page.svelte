@@ -46,17 +46,16 @@
     </div>
     <div class="home" id="main-content">
       <div class="home__top">
-        <a class="home__link" href="https://taskforcehellcat.de/"
-          ><span class="material-icons-round" aria-hidden="true">
+        <a class="home__link" href="https://taskforcehellcat.de/">
+          <span class="material-icons-round" aria-hidden="true">
             chevron_left
           </span>
-          Zurück zur Hauptseite</a
-        >
+          Zurück zur Hauptseite
+        </a>
         <img
           class="home__logo noselect"
           src="/images/tfhcwiki_full.svg"
-          alt="Task Force Hellcat Logo"
-        />
+          alt="Task Force Hellcat Logo" />
       </div>
 
       <!-- search bar -->
@@ -68,8 +67,7 @@
             name="search"
             placeholder="Wiki durchsuchen…"
             aria-label="Wiki durchsuchen"
-            bind:value={rawInput}
-          />
+            bind:value={rawInput} />
         </div>
         {#if $searchInUse}
           <div class="search__results">

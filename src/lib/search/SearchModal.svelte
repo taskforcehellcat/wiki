@@ -36,16 +36,14 @@
   class="search dialog"
   role="dialog"
   aria-modal="true"
-  aria-label="Wiki durchsuchen"
->
+  aria-label="Wiki durchsuchen">
   <div id="input-wrapper">
     <input
       type="text"
       placeholder="Wiki durchsuchen..."
       aria-label="Wiki durchsuchen"
       bind:this={searchModalInput}
-      bind:value={rawInput}
-    />
+      bind:value={rawInput} />
   </div>
 
   <div class="search results">
@@ -55,14 +53,14 @@
         <ResultsSection kind="heading" />
         <ResultsSection kind="text" />
       {:else}
-        <span class="search errortext"
-          ><p>Es wurden keine Übereinstimmungen gefunden!</p></span
-        >
+        <span class="search errortext">
+          <p>Es wurden keine Übereinstimmungen gefunden!</p>
+        </span>
       {/if}
     {:else}
       <span class="search errortext">
-        <p>Bitte mindestens drei Zeichen eingeben!</p></span
-      >
+        <p>Bitte mindestens drei Zeichen eingeben!</p>
+      </span>
     {/if}
   </div>
 </div>
@@ -77,8 +75,7 @@
     if (e.key === 'Escape') {
       $searchInUse = false;
     }
-  }}
-/>
+  }} />
 
 <style lang="scss">
   .search {

@@ -11,8 +11,7 @@
   <button
     class="example-box-header noselect"
     aria-expanded={isOpen}
-    on:click={toggleOpen}
-  >
+    on:click={toggleOpen}>
     <span>{title}</span>
     <span class="material-icons-round" aria-hidden="true">
       {#if isOpen}remove{:else}add{/if}

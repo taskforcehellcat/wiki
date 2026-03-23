@@ -8,8 +8,7 @@
   id="search-bar"
   on:click={() => {
     $searchInUse = true;
-  }}
->
+  }}>
   <span class="placeholder">Wiki durchsuchen...</span>
   <span><Keys keys={'CTRL, K'} /></span>
 </button>

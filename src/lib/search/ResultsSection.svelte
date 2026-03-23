@@ -46,12 +46,13 @@
     {#each resultsOfKind as hit}
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb}
-          <a href={crumb.link}>{crumb.display}</a><span
-            class="material-icons-round seperator"
-            aria-hidden="true">chevron_right</span
-          >
+          <a href={crumb.link}>{crumb.display}</a>
+          <span class="material-icons-round seperator" aria-hidden="true">
+            chevron_right
+          </span>
         {/each}
-      </span>{#if kind === 'text'}
+      </span>
+      {#if kind === 'text'}
         <p class="preview-text">{@html hit.text}</p>
       {/if}
     {/each}

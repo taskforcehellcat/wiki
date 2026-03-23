@@ -21,8 +21,7 @@
     <div
       id="theme-choices"
       transition:slide|local={{ axis: 'x', duration: 500 }}
-      data-visible={open}
-    >
+      data-visible={open}>
       {#each choices as choice}
         <div id="theme-choice">
           <input
@@ -31,8 +30,7 @@
             name="theme"
             value={choice}
             aria-label={choiceLabels[choice]}
-            bind:group={$themeId}
-          />
+            bind:group={$themeId} />
           <label for="theme_{choice}" aria-hidden="true" />
         </div>
       {/each}
@@ -44,8 +42,7 @@
       open = !open;
     }}
     aria-label="Farbschema auswählen"
-    aria-expanded={open}
-  >
+    aria-expanded={open}>
     <span class="material-icons-round" aria-hidden="true">format_paint</span>
   </button>
 </div>

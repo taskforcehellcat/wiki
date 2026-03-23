@@ -27,8 +27,7 @@
     <div
       id="layout-choices"
       transition:slide|local={{ axis: 'x', duration: 500 }}
-      data-visible={open}
-    >
+      data-visible={open}>
       {#each ['win', 'mac'] as choice}
         <input
           type="radio"
@@ -36,8 +35,7 @@
           name="platform"
           value={choice}
           aria-label={platformLabels[choice]}
-          bind:group={platform}
-        />
+          bind:group={platform} />
         <label for={choice} aria-hidden="true"><div class="symbol" /></label>
       {/each}
       {#each ['de', 'us'] as choice}
@@ -47,8 +45,7 @@
           name="lang"
           value={choice}
           aria-label={langLabels[choice]}
-          bind:group={lang}
-        />
+          bind:group={lang} />
         <label for={choice} aria-hidden="true"><div class="symbol" /></label>
       {/each}
     </div>
@@ -59,8 +56,7 @@
       open = !open;
     }}
     aria-label="Tastaturlayout auswählen"
-    aria-expanded={open}
-  >
+    aria-expanded={open}>
     <span class="material-icons-round" aria-hidden="true">keyboard</span>
   </button>
 </div>

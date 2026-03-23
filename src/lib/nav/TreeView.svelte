@@ -28,7 +28,9 @@
 
   function focusItem(id: string) {
     focusedId = id;
-    document.querySelector<HTMLElement>(`[data-treeid="${CSS.escape(id)}"]`)?.focus();
+    document
+      .querySelector<HTMLElement>(`[data-treeid="${CSS.escape(id)}"]`)
+      ?.focus();
   }
 
   function handleDirKeydown(e: KeyboardEvent, dir: Directory) {
@@ -71,7 +73,11 @@
     }
   }
 
-  function handleLeafKeydown(e: KeyboardEvent, dir: Directory, article: Article) {
+  function handleLeafKeydown(
+    e: KeyboardEvent,
+    dir: Directory,
+    article: Article
+  ) {
     e.stopPropagation();
     const itemId = `${dir.id}/${article.id}`;
     const ids = visibleIds();
@@ -79,7 +85,9 @@
     switch (e.key) {
       case 'Enter':
         e.preventDefault();
-        (e.currentTarget as HTMLElement).querySelector<HTMLAnchorElement>('a')?.click();
+        (e.currentTarget as HTMLElement)
+          .querySelector<HTMLAnchorElement>('a')
+          ?.click();
         break;
       case 'ArrowDown':
         e.preventDefault();
@@ -120,11 +128,12 @@
       class="tree-view__item"
       class:tree-view__item--open={expandedId === dir.id}
       on:keydown={(e) => handleDirKeydown(e, dir)}
-      on:focus={() => (focusedId = dir.id)}
-    >
+      on:focus={() => (focusedId = dir.id)}>
       <button on:click={() => toggle(dir.id)} tabindex="-1">
         {dir.config.title}
-        <i class="material-icons-round noselect" aria-hidden="true">expand_more</i>
+        <i class="material-icons-round noselect" aria-hidden="true">
+          expand_more
+        </i>
       </button>
       {#if expandedId === dir.id}
         <ul role="group" class="tree-view__group">
@@ -135,9 +144,10 @@
               data-treeid={`${dir.id}/${article.id}`}
               class="tree-view__leaf"
               on:keydown={(e) => handleLeafKeydown(e, dir, article)}
-              on:focus={() => (focusedId = `${dir.id}/${article.id}`)}
-            >
-              <a href="/{dir.id}/{article.id}" tabindex="-1">{shortName(article)}</a>
+              on:focus={() => (focusedId = `${dir.id}/${article.id}`)}>
+              <a href="/{dir.id}/{article.id}" tabindex="-1">
+                {shortName(article)}
+              </a>
             </li>
           {/each}
         </ul>

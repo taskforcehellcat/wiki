@@ -48,13 +48,15 @@
     <button
       class="button button-left"
       on:click={() => scrollSlide(-1)}
-      aria-label="Vorheriges Bild">&#10094;</button
-    >
+      aria-label="Vorheriges Bild">
+      &#10094;
+    </button>
     <button
       class="button button-right"
       on:click={() => scrollSlide(1)}
-      aria-label="Nächstes Bild">&#10095;</button
-    >
+      aria-label="Nächstes Bild">
+      &#10095;
+    </button>
   </div>
 
   <span class="caption" aria-live="polite">{caption}</span>

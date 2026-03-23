@@ -15,8 +15,9 @@
     können: <a
       href="https://discord.com/channels/629333468299526164/1021556229857882182"
       target="_blank"
-      rel="noreferrer">Feedback-Forum auf Discord</a
-    >
+      rel="noreferrer">
+      Feedback-Forum auf Discord
+    </a>
   </p>
 {/if}
 

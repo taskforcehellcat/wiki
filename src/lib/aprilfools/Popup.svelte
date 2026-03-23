@@ -22,8 +22,7 @@
       role="dialog"
       aria-modal="true"
       aria-labelledby="popup-heading"
-      transition:slide|local
-    >
+      transition:slide|local>
       <div id="popup__header">
         <button id="popup__close" on:click={togglePopup} aria-label="Schließen">
           <span class="material-icons-round" aria-hidden="true">close</span>
@@ -47,7 +46,9 @@
               </div>
               <div class="price__box__content">
                 <div class="price__box__content__price">
-                  <h1>9,99€ <span class="sub-text">pro Monat</span></h1>
+                  <h1>
+                    9,99€ <span class="sub-text">pro Monat</span>
+                  </h1>
                 </div>
                 <div class="price__box__content__features">
                   <ul>
@@ -57,9 +58,9 @@
                 </div>
               </div>
               <div class="popup__buttons">
-                <button class="popup__button" on:click={togglePopup}
-                  >Jetzt abonnieren!</button
-                >
+                <button class="popup__button" on:click={togglePopup}>
+                  Jetzt abonnieren!
+                </button>
               </div>
             </div>
           </div>
@@ -71,7 +72,9 @@
               </div>
               <div class="price__box__content">
                 <div class="price__box__content__price">
-                  <h1>19,99€ <span class="sub-text">pro Monat</span></h1>
+                  <h1>
+                    19,99€ <span class="sub-text">pro Monat</span>
+                  </h1>
                 </div>
                 <div class="price__box__content__features">
                   <ul>
@@ -85,9 +88,9 @@
                 </div>
               </div>
               <div class="popup__buttons">
-                <button class="popup__button" on:click={togglePopup}
-                  >Jetzt abonnieren!</button
-                >
+                <button class="popup__button" on:click={togglePopup}>
+                  Jetzt abonnieren!
+                </button>
               </div>
             </div>
           </div>

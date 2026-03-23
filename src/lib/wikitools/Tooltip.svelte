@@ -45,8 +45,10 @@
   on:blur={mouseLeave}
   on:mouseleave={mouseLeave}
   on:mousemove={mouseMove}
-  data-tooltip><slot /></span
->{#if isHovered}
+  data-tooltip>
+  <slot />
+</span>
+{#if isHovered}
   <!-- we can't line break the {#if } here because else we get whitespace characters after the tooltip for some reason... -->
   <div style="top: {y}px; left: {x}px;" class="tooltip">
     {#if image}
