@@ -101,18 +101,18 @@
     width: 100%;
     min-height: 100vh;
     height: fit-content;
-    background-color: var(--brandPrimaryBG);
+    background-color: var(--color-bg-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--brandTertiaryTXT);
+    color: var(--color-text-muted);
     gap: 4rem;
   }
 
   #home__nav__logo {
     font-size: 35pt;
     font-weight: 300;
-    color: var(--brandNeutral);
+    color: var(--color-neutral);
     text-align: center;
     white-space: nowrap;
   }
@@ -124,7 +124,7 @@
   }
 
   #search__searchbar {
-    background-color: var(--brandSecondaryBG);
+    background-color: var(--color-bg-secondary);
     width: 80rem;
     height: 3rem;
     border-radius: 0.7rem;
@@ -142,14 +142,14 @@
   #search__searchbar input {
     width: 100%;
     height: 24px;
-    color: var(--brandTertiaryTXT);
+    color: var(--color-text-muted);
     font-size: 14pt;
     font-weight: 300;
   }
 
   #search__searchbar .material-icons-round {
     font-size: 20pt;
-    color: var(--brandTertiaryTXT);
+    color: var(--color-text-muted);
   }
 
   #search__searchbar.open {
@@ -160,13 +160,13 @@
   #search__results {
     height: fit-content;
     width: 80rem;
-    background-color: var(--brandSecondaryBG);
+    background-color: var(--color-bg-secondary);
     padding: 1rem 3.5rem 3.5rem 3.5rem;
     border-bottom-left-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
   }
 
   #search__errortext {
-    color: var(--errorTXT);
+    color: var(--color-error);
   }
 </style>

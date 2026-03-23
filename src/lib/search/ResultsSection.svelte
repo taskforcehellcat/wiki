@@ -77,7 +77,7 @@
 
     span:not(:last-of-type) {
       margin-right: 1rem;
-      color: var(--brandNeutral);
+      color: var(--color-neutral);
     }
   }
 
@@ -88,16 +88,16 @@
     align-items: center;
     justify-content: center;
 
-    color: var(--brandSecondaryBG);
+    color: var(--color-bg-secondary);
     font-weight: 600;
 
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-color: var(--brandTertiaryTXT);
+    background-color: var(--color-text-muted);
   }
 
   .breadcrumbs {
-    color: var(--brandTertiaryTXT);
+    color: var(--color-text-muted);
 
     grid-column: 2;
     display: block;
@@ -108,18 +108,18 @@
       letter-spacing: 0.12rem;
       text-decoration: none;
 
-      color: var(--brandTertiaryTXT);
+      color: var(--color-text-muted);
       transition: color 0.2s ease-out;
 
       &:last-of-type {
-        color: var(--brandNeutral);
+        color: var(--color-neutral);
         &:hover {
           text-decoration: underline;
         }
       }
 
       &:hover:not(:first-child) {
-        color: var(--brandNeutral);
+        color: var(--color-neutral);
       }
     }
 
@@ -144,6 +144,6 @@
     border-radius: 1rem 0;
     padding: 0.2rem;
 
-    color: var(--brandSecondaryTXT);
+    color: var(--color-text-secondary);
   }
 </style>

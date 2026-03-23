@@ -146,7 +146,7 @@
   #info-bar {
     width: 100%;
     height: 100%;
-    background: var(--wikiBG);
+    background: var(--color-wiki-bg);
     grid-column: 2;
     grid-row: 1;
     gap: 1rem;
@@ -210,7 +210,7 @@
       content .example-box
     ) {
     width: 100%;
-    color: var(--brandSecondaryTXT);
+    color: var(--color-text-secondary);
     width: min(110rem, 100%);
   }
 
@@ -219,7 +219,7 @@
   }
 
   .nav__list-title {
-    color: var(--brandNeutral);
+    color: var(--color-neutral);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.1rem;
@@ -235,7 +235,7 @@
 
   #nav__list-bar {
     width: 3px;
-    background-color: var(--brandSecondaryBG);
+    background-color: var(--color-bg-secondary);
     /* background-color: red; */
     height: 100%;
     border-radius: 0.2rem;
@@ -255,9 +255,9 @@
 
   nav {
     height: 100vh;
-    background-color: var(--brandPrimaryBG);
+    background-color: var(--color-bg-primary);
     display: flex;
-    color: var(--brandTertiaryTXT);
+    color: var(--color-text-muted);
     flex-direction: column;
     padding: 10%;
     gap: 3rem;
@@ -297,14 +297,14 @@
   }
 
   :global(kbd) {
-    color: var(--kbdTXT);
-    background-color: var(--kbdBG);
+    color: var(--color-kbd-text);
+    background-color: var(--color-kbd-bg);
     border-radius: 0.2rem;
     font-family: monospace;
     width: fit-content;
     min-width: 5rem !important;
     text-align: center;
-    border: 1px solid var(--kbdBRD);
+    border: 1px solid var(--color-kbd-border);
     padding-inline: 0.5rem;
     font-size: inherit;
 

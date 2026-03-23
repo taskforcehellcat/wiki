@@ -66,16 +66,16 @@
       left: 0;
       right: 0;
       width: 100%;
-      border-bottom: 2px dotted var(--brandPrimaryTXT);
+      border-bottom: 2px dotted var(--color-text-primary);
       pointer-events: none;
     }
   }
 
   .tooltip {
-    color: var(--brandPrimaryTXT);
+    color: var(--color-text-primary);
     border: 1px solid #c4c4c4;
     box-shadow: 1px 1px 1px #ddd;
-    background: var(--exampleBoxBG);
+    background: var(--color-example-bg);
     padding: 4px;
     position: absolute;
     max-width: 50rem;

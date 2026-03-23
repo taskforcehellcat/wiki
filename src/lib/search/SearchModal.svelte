@@ -81,7 +81,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: var(--brandSecondaryBG);
+      background-color: var(--color-bg-secondary);
       width: min(75rem, 100%);
       height: 40rem;
       border-radius: 1.5rem;
@@ -90,7 +90,7 @@
       flex-direction: column;
       z-index: 100;
 
-      box-shadow: 1rem 1rem 4rem var(--brandPrimaryBG);
+      box-shadow: 1rem 1rem 4rem var(--color-bg-primary);
 
       #input-wrapper {
         width: 100%;
@@ -98,7 +98,7 @@
         display: flex;
         gap: 2rem;
         border-top-right-radius: 1.5rem;
-        border-bottom: 1px solid var(--brandTertiaryTXT);
+        border-bottom: 1px solid var(--color-text-muted);
         border-top-left-radius: 1.5rem;
         padding-inline: 4rem;
 
@@ -109,7 +109,7 @@
           color: var(--text);
           height: 100%;
           width: 100%;
-          color: var(--brandTertiaryTXT);
+          color: var(--color-text-muted);
           padding-block: 2rem;
           display: flex;
           align-items: center;
@@ -121,7 +121,7 @@
           width: fit-content;
           font-size: 2.8rem;
           font-family: 'Material Icons Round';
-          color: var(--brandTertiaryTXT);
+          color: var(--color-text-muted);
           display: flex;
           align-items: center;
         }
@@ -137,7 +137,7 @@
         top: 0;
         background: linear-gradient(
           rgba(255, 255, 255, 0) 85%,
-          var(--brandSecondaryBG)
+          var(--color-bg-secondary)
         );
         pointer-events: none;
         border-radius: inherit;
@@ -152,7 +152,7 @@
       margin-bottom: 0;
       padding-bottom: 5rem;
       padding-top: 2rem;
-      color: var(--brandTertiaryTXT);
+      color: var(--color-text-muted);
 
       overflow-y: scroll;
       scrollbar-width: none;
@@ -162,7 +162,7 @@
     }
 
     &.errortext {
-      color: var(--errorTXT);
+      color: var(--color-error);
 
       display: flex;
       justify-content: center;

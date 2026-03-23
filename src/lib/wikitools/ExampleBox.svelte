@@ -29,9 +29,9 @@
 <style lang="scss">
   .example-box {
     width: min(100%, 110rem);
-    background-color: var(--exampleBoxBG);
+    background-color: var(--color-example-bg);
     border-radius: 0.5rem;
-    border: 1px solid var(--exampleBoxBorder);
+    border: 1px solid var(--color-example-border);
     margin-bottom: 4rem;
     height: fit-content;
     display: inline-flexbox;
@@ -54,7 +54,7 @@
     }
 
     > .example-box-content {
-      border-top: 1px solid var(--exampleBoxBorder);
+      border-top: 1px solid var(--color-example-border);
       height: fit-content;
       display: block;
       padding: 2rem;

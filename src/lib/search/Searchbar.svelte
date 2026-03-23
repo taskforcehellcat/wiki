@@ -27,7 +27,7 @@
     justify-content: space-between;
     cursor: pointer;
     background-color: #05294d07;
-    border: 1px solid var(--border);
+    border: 1px solid var(--color-border);
     padding-inline: 1.5rem;
     border-radius: 0.6rem;
 

@@ -76,7 +76,7 @@
       align-items: center;
       width: fit-content;
 
-      border: 1px solid var(--border);
+      border: 1px solid var(--color-border);
       background-color: #05294d07;
       border-radius: 0.6rem;
     }
@@ -110,7 +110,7 @@
     border-bottom-left-radius: 0.6rem;
 
     &[data-visible='true'] {
-      border-right: 1px solid var(--border);
+      border-right: 1px solid var(--color-border);
     }
 
     input {
@@ -143,14 +143,14 @@
 
       &[for='win'] {
         .symbol {
-          background-color: var(--brandSecondaryTXT);
+          background-color: var(--color-text-secondary);
           -webkit-mask-image: url(/images/win.svg);
           mask-image: url(/images/win.svg);
         }
       }
       &[for='mac'] {
         .symbol {
-          background-color: var(--brandSecondaryTXT);
+          background-color: var(--color-text-secondary);
           -webkit-mask-image: url(/images/mac.svg);
           mask-image: url(/images/mac.svg);
         }

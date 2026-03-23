@@ -63,7 +63,7 @@
       align-items: center;
       width: fit-content;
 
-      border: 1px solid var(--border);
+      border: 1px solid var(--color-border);
       background-color: #05294d07;
       border-radius: 0.6rem;
     }
@@ -97,7 +97,7 @@
     border-bottom-left-radius: 0.6rem;
 
     &[data-visible='true'] {
-      border-right: 1px solid var(--border);
+      border-right: 1px solid var(--color-border);
     }
 
     input {
@@ -124,13 +124,13 @@
       }
 
       &[for='theme_auto'] {
-        background-color: var(--brandPrimaryBG);
+        background-color: var(--color-bg-primary);
 
         &:after {
           content: 'A';
           font-size: 1.5rem;
           font-weight: 600;
-          color: var(--brandTertiaryTXT);
+          color: var(--color-text-muted);
         }
       }
     }
