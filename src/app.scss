@@ -210,6 +210,8 @@ body {
 #main {
   height: 100%;
   overflow-y: overlay;
+  background-color: var(--brandPrimaryBG);
+  scrollbar-color: #d6dee1 transparent;
 }
 
 html {
