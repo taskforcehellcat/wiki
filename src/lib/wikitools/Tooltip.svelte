@@ -38,9 +38,11 @@
 <svelte:window on:resize={mouseLeave} />
 
 <span
+  tabindex="0"
   on:touchstart={tapped}
   on:mouseover={mouseOver}
   on:focus={onFocus}
+  on:blur={mouseLeave}
   on:mouseleave={mouseLeave}
   on:mousemove={mouseMove}
   data-tooltip><slot /></span

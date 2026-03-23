@@ -32,11 +32,17 @@
   });
 </script>
 
-<div class="search dialog">
+<div
+  class="search dialog"
+  role="dialog"
+  aria-modal="true"
+  aria-label="Wiki durchsuchen"
+>
   <div id="input-wrapper">
     <input
       type="text"
       placeholder="Wiki durchsuchen..."
+      aria-label="Wiki durchsuchen"
       bind:this={searchModalInput}
       bind:value={rawInput}
     />
@@ -63,7 +69,7 @@
 
 <div
   id="bg-tint"
-  role="dialog"
+  aria-hidden="true"
   on:click={() => {
     $searchInUse = false;
   }}

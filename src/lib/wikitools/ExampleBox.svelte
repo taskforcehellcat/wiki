@@ -8,17 +8,16 @@
 </script>
 
 <div class="example-box">
-  <div
+  <button
     class="example-box-header noselect"
     aria-expanded={isOpen}
     on:click={toggleOpen}
-    role="presentation"
   >
     <span>{title}</span>
-    <span class="material-icons-round">
+    <span class="material-icons-round" aria-hidden="true">
       {#if isOpen}remove{:else}add{/if}
     </span>
-  </div>
+  </button>
   {#if isOpen}
     <div class="example-box-content" transition:slide|local>
       <slot />
@@ -37,15 +36,19 @@
     display: inline-flexbox;
 
     > .example-box-header {
+      background: none;
+      border: none;
+      border-radius: 0;
+      font: inherit;
+      color: inherit;
+      text-align: left;
+      width: 100%;
       align-items: center;
       display: flex;
       height: 4rem;
       justify-content: space-between;
       padding-inline: 2rem;
-
-      &:hover {
-        cursor: pointer;
-      }
+      cursor: pointer;
 
       .material-icons-round {
         font-size: 20pt;

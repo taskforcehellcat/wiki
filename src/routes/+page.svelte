@@ -44,10 +44,12 @@
       <ThemePicker location="article" />
       <LayoutPicker location="article" />
     </div>
-    <div class="home">
+    <div class="home" id="main-content">
       <div class="home__top">
         <a class="home__link" href="https://taskforcehellcat.de/"
-          ><span class="material-icons-round"> chevron_left </span>
+          ><span class="material-icons-round" aria-hidden="true">
+            chevron_left
+          </span>
           Zurück zur Hauptseite</a
         >
         <img
@@ -65,6 +67,7 @@
             type="text"
             name="search"
             placeholder="Wiki durchsuchen…"
+            aria-label="Wiki durchsuchen"
             bind:value={rawInput}
           />
         </div>

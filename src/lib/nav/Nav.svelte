@@ -30,13 +30,15 @@
       class="nav__item--expandable"
       class:nav__item--open={activeNav === nav.id}
     >
-      <span
+      <button
         on:click={() => toggleOpen(nav.id)}
-        on:keypress={() => toggleOpen(nav.id)}
+        aria-expanded={activeNav === nav.id}
       >
         {nav.config.title}
-        <i class="material-icons-round noselect">expand_more</i>
-      </span>
+        <i class="material-icons-round noselect" aria-hidden="true"
+          >expand_more</i
+        >
+      </button>
       {#each nav.entries as article}
         <a href="/{nav.id}/{article.id}">{shortName(article)}</a>
       {/each}

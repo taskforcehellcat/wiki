@@ -10,6 +10,12 @@
   let lang: 'de' | 'us' = 'de';
   let platform: 'win' | 'mac' = 'win';
 
+  const platformLabels: Record<string, string> = {
+    win: 'Windows',
+    mac: 'macOS'
+  };
+  const langLabels: Record<string, string> = { de: 'Deutsch', us: 'Englisch' };
+
   $: if (browser) localStorage.layout = $layoutId;
   $: {
     $layoutId = `${lang}-${platform}`;
@@ -27,21 +33,23 @@
         <input
           type="radio"
           id={choice}
-          name="layout"
+          name="platform"
           value={choice}
+          aria-label={platformLabels[choice]}
           bind:group={platform}
         />
-        <label for={choice}><div class="symbol" /></label>
+        <label for={choice} aria-hidden="true"><div class="symbol" /></label>
       {/each}
       {#each ['de', 'us'] as choice}
         <input
           type="radio"
           id={choice}
-          name="layout"
+          name="lang"
           value={choice}
+          aria-label={langLabels[choice]}
           bind:group={lang}
         />
-        <label for={choice}><div class="symbol" /></label>
+        <label for={choice} aria-hidden="true"><div class="symbol" /></label>
       {/each}
     </div>
   {/if}
@@ -50,8 +58,10 @@
     on:click={() => {
       open = !open;
     }}
+    aria-label="Tastaturlayout auswählen"
+    aria-expanded={open}
   >
-    <span class="material-icons-round">keyboard</span>
+    <span class="material-icons-round" aria-hidden="true">keyboard</span>
   </button>
 </div>
 

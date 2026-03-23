@@ -7,6 +7,11 @@
 
   let open = false;
   let choices = ['dark', 'light', 'auto'];
+  const choiceLabels: Record<string, string> = {
+    dark: 'Dunkles Design',
+    light: 'Helles Design',
+    auto: 'Automatisches Design'
+  };
 
   $: if (browser) localStorage.theme = $themeId;
 </script>
@@ -25,9 +30,10 @@
             id="theme_{choice}"
             name="theme"
             value={choice}
+            aria-label={choiceLabels[choice]}
             bind:group={$themeId}
           />
-          <label for="theme_{choice}" />
+          <label for="theme_{choice}" aria-hidden="true" />
         </div>
       {/each}
     </div>
@@ -37,8 +43,10 @@
     on:click={() => {
       open = !open;
     }}
+    aria-label="Farbschema auswählen"
+    aria-expanded={open}
   >
-    <span class="material-icons-round">format_paint</span>
+    <span class="material-icons-round" aria-hidden="true">format_paint</span>
   </button>
 </div>
 

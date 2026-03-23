@@ -4,6 +4,7 @@
   height="32"
   viewBox="0 0 338 338"
   fill="#fff"
+  aria-hidden="true"
 >
   <g transform="translate(-1355.001 -567.001)">
     <rect

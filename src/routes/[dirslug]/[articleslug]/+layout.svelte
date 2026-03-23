@@ -52,7 +52,7 @@
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
     <div class="wiki">
-      <nav>
+      <nav aria-label="Seitennavigation">
         <a href="/" class="nav__logo"
           ><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a
         >
@@ -61,6 +61,9 @@
           class="nav__burger"
           on:click={() => (isOpen = !isOpen)}
           class:nav__burger--open={isOpen}
+          aria-expanded={isOpen}
+          aria-label={isOpen ? 'Navigation schließen' : 'Navigation öffnen'}
+          aria-controls="mobile-nav"
         >
           {#if !isOpen}
             <OpenMenuSVG />
@@ -89,13 +92,19 @@
         <a href="/" class="nav__return">Zurück</a>
       </nav>
 
-      <div class="nav__overlay" class:nav__overlay--show={isOpen}>
+      <nav
+        id="mobile-nav"
+        class="nav__overlay"
+        class:nav__overlay--show={isOpen}
+        aria-label="Mobile Navigation"
+        aria-hidden={!isOpen}
+      >
         {#each anchors as anchor}
           <a href={anchor.link} on:click={() => (isOpen = !isOpen)}
             >{anchor.text}</a
           >
         {/each}
-      </div>
+      </nav>
 
       <div class="info-bar">
         <Searchbar />
@@ -105,7 +114,7 @@
         </div>
       </div>
 
-      <content class="markdown-body">
+      <content id="main-content" role="main" class="markdown-body">
         <slot />
       </content>
 

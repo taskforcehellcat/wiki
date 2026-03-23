@@ -231,7 +231,12 @@ content {
     }
   }
 
-  > span {
+  > button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -472,7 +477,7 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-  .nav__item--expandable > span {
+  .nav__item--expandable > button {
     min-width: unset;
     width: 300px;
   }
@@ -486,7 +491,7 @@ footer {
 }
 
 @media only screen and (max-width: 350px) {
-  .nav__item--expandable > span {
+  .nav__item--expandable > button {
     min-width: unset;
     width: 230px;
   }

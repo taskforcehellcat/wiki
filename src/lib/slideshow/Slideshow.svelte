@@ -45,15 +45,19 @@
 <div class="container">
   <div class="image-wrapper">
     <div bind:this={slideshow} class="slideshow" />
-    <button class="button button-left" on:click={() => scrollSlide(-1)}
-      >&#10094;</button
+    <button
+      class="button button-left"
+      on:click={() => scrollSlide(-1)}
+      aria-label="Vorheriges Bild">&#10094;</button
     >
-    <button class="button button-right" on:click={() => scrollSlide(1)}
-      >&#10095;</button
+    <button
+      class="button button-right"
+      on:click={() => scrollSlide(1)}
+      aria-label="Nächstes Bild">&#10095;</button
     >
   </div>
 
-  <span class="caption">{caption}</span>
+  <span class="caption" aria-live="polite">{caption}</span>
 </div>
 
 <style lang="scss">

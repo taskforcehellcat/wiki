@@ -17,14 +17,20 @@
 
 {#if popupIsOpen}
   <div id="popup">
-    <div class="popup-box" transition:slide|local>
+    <div
+      class="popup-box"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="popup-heading"
+      transition:slide|local
+    >
       <div id="popup__header">
-        <div id="popup__close" on:click={togglePopup} on:keydown={togglePopup}>
-          <span class="material-icons-round">close</span>
-        </div>
+        <button id="popup__close" on:click={togglePopup} aria-label="Schließen">
+          <span class="material-icons-round" aria-hidden="true">close</span>
+        </button>
       </div>
       <div id="popup__content" class="fancy-scrollbar">
-        <h1>
+        <h1 id="popup-heading">
           Um diesen Artikel zu lesen, musst du TFHC Wiki Plus+ Mitglied sein!
         </h1>
         <p>
@@ -153,6 +159,8 @@
         right: 0;
 
         > #popup__close {
+          appearance: none;
+          padding: 0;
           display: flex;
           align-items: center;
           justify-content: center;
