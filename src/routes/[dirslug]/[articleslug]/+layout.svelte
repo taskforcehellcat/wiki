@@ -52,7 +52,7 @@
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
     <div class="wiki">
-      <nav aria-label="Seitennavigation">
+      <nav class="nav__sidebar" aria-label="Seitennavigation">
         <a href="/" class="nav__logo"
           ><img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" /></a
         >
@@ -262,7 +262,7 @@
     padding: 0.8rem 0 0.8rem 0;
   }
 
-  nav {
+  .nav__sidebar {
     height: 100vh;
     background-color: var(--color-bg-primary);
     display: flex;
@@ -280,10 +280,12 @@
       display: none;
       grid-column: 2;
       height: 100%;
+      position: sticky;
+      z-index: 300;
     }
   }
 
-  nav::-webkit-scrollbar {
+  .nav__sidebar::-webkit-scrollbar {
     display: none;
   }
 
@@ -293,7 +295,7 @@
       display: none;
     }
 
-    nav {
+    .nav__sidebar {
       height: 100%;
       flex-direction: initial;
       align-items: center;
@@ -335,6 +337,14 @@
 
   .nav__overlay {
     display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background-color: var(--color-bg-primary);
+    padding: 12rem 4rem 4rem 4rem;
+    overflow-y: auto;
+    flex-direction: column;
+    gap: 2rem;
 
     @media (max-width: 800px) {
       &.nav__overlay--show {
