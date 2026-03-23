@@ -8,19 +8,24 @@
 
   // FIXME proper event handling
 
-  function tapped(event) {
+  function tapped(event: TouchEvent) {
     isHovered = !isHovered;
-    x = event.pageX + 5;
-    y = event.pageY + 5;
+    const touch = event.changedTouches[0];
+    x = touch.pageX + 5;
+    y = touch.pageY + 5;
   }
 
-  function mouseOver(event) {
+  function mouseOver(event: MouseEvent) {
     isHovered = true;
     x = event.pageX + 5;
     y = event.pageY + 5;
   }
 
-  function mouseMove(event) {
+  function onFocus() {
+    isHovered = true;
+  }
+
+  function mouseMove(event: MouseEvent) {
     x = event.pageX + 5;
     y = event.pageY + 5;
   }
@@ -35,7 +40,7 @@
 <span
   on:touchstart={tapped}
   on:mouseover={mouseOver}
-  on:focus={mouseOver}
+  on:focus={onFocus}
   on:mouseleave={mouseLeave}
   on:mousemove={mouseMove}
   data-tooltip><slot /></span

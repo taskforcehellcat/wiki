@@ -1,5 +1,5 @@
-<script>
-  let wipBanner;
+<script lang="ts">
+  let wipBanner: HTMLDivElement;
 
   function closeWIP() {
     wipBanner.style.display = 'none';
