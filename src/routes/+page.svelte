@@ -4,6 +4,7 @@
 
   import '../app.scss';
   import ThemePicker from '$lib/pickers/ThemePicker.svelte';
+  import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
   import Nav from '$lib/nav/Nav.svelte';
   import { themeId } from '$lib/pickers/stores';
 
@@ -39,7 +40,10 @@
 
 {#if $themeId}
   <div id="main" data-theme={$themeId}>
-    <!--ThemePicker location="home" /-->
+    <div class="home__pickers">
+      <ThemePicker location="article" />
+      <LayoutPicker location="article" />
+    </div>
     <div class="home">
       <div class="home__top">
         <a class="home__link" href="https://taskforcehellcat.de/"
@@ -95,7 +99,17 @@
 {/if}
 
 <style lang="scss">
+  .home__pickers {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+  }
+
   .home {
+    position: relative;
     padding: 15rem 5rem 20%;
     width: 100%;
     min-height: 100vh;
