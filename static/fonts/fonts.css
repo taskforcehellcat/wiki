@@ -1,5 +1,13 @@
 /* Material Icons Rounded */
 
+@font-face {
+  font-family: 'Material Icons Round';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url('../fonts/material-icons-round.woff2') format('woff2');
+}
+
 .material-icons-round {
   font-family: 'Material Icons Round';
   font-weight: normal;
@@ -37,7 +45,7 @@
     url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
     url('../fonts/GeneralSans-Variable.woff') format('woff');
   font-weight: 200 700;
-  font-display: swap;
+  font-display: optional;
   font-style: normal;
 }
 
@@ -47,6 +55,6 @@
     url('../fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
     url('../fonts/GeneralSans-VariableItalic.woff') format('woff');
   font-weight: 200 700;
-  font-display: swap;
+  font-display: optional;
   font-style: italic;
 }

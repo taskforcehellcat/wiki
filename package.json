@@ -38,7 +38,6 @@
   "type": "module",
   "dependencies": {
     "@fontsource/fira-mono": "^5.0.13",
-    "@fontsource/material-icons-round": "^5.0.12",
     "cookie": "^0.6.0",
     "htmlparser2": "^9.1.0",
     "only-allow": "^1.2.1",

@@ -195,20 +195,20 @@
   }
 
   :global(
-      content p,
-      content h1,
-      content h2,
-      content h3,
-      content h4,
-      content h5,
-      content h6,
-      content ul,
-      content ol,
-      content blockquote,
-      content pre,
-      content table,
-      content .example-box
-    ) {
+    content p,
+    content h1,
+    content h2,
+    content h3,
+    content h4,
+    content h5,
+    content h6,
+    content ul,
+    content ol,
+    content blockquote,
+    content pre,
+    content table,
+    content .example-box
+  ) {
     width: 100%;
     color: var(--color-text-secondary);
     width: min(110rem, 100%);
