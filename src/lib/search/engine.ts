@@ -1,4 +1,4 @@
-import type { Hit, Breadcrumb, HitKind } from './.d.ts';
+import type { Hit, Breadcrumb, HitKind, PreviewChunk } from './.d.ts';
 import type { Article, Directory } from '../../app.js';
 import * as htmlparser2 from 'htmlparser2';
 
@@ -8,6 +8,10 @@ type Heading = {
 };
 
 const HEADINGS = ['h2', 'h3', 'h4', 'h5'];
+
+function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
 export class Search {
   // constants
@@ -165,13 +169,44 @@ export class Search {
     this.hits.push({
       type: kind,
       breadcrumbs: crumbs,
-      text: kind === 'text' ? this.highlight(this.currentText) : undefined
+      previewChunks:
+        kind === 'text' ? this.highlight(this.currentText) : undefined
     });
   }
 
-  highlight(text: string): string {
+  highlight(text: string): Array<PreviewChunk> {
     text = text.replaceAll('\n', '');
-    const regex = new RegExp(this.queryLower, 'gi');
-    return text.replace(regex, '<mark>$&</mark>');
+    const regex = new RegExp(escapeRegExp(this.queryLower), 'gi');
+
+    const chunks: Array<PreviewChunk> = [];
+    let previousMatchEnd = 0;
+
+    for (const match of text.matchAll(regex)) {
+      const matchIndex = match.index ?? 0;
+      const matchText = match[0];
+
+      if (matchIndex > previousMatchEnd) {
+        chunks.push({
+          text: text.slice(previousMatchEnd, matchIndex),
+          highlighted: false
+        });
+      }
+
+      chunks.push({
+        text: matchText,
+        highlighted: true
+      });
+
+      previousMatchEnd = matchIndex + matchText.length;
+    }
+
+    if (previousMatchEnd < text.length) {
+      chunks.push({
+        text: text.slice(previousMatchEnd),
+        highlighted: false
+      });
+    }
+
+    return chunks;
   }
 }

@@ -53,7 +53,15 @@
         {/each}
       </span>
       {#if kind === 'text'}
-        <p class="preview-text">{@html hit.text}</p>
+        <p class="preview-text">
+          {#each hit.previewChunks ?? [] as chunk}
+            {#if chunk.highlighted}
+              <mark>{chunk.text}</mark>
+            {:else}
+              {chunk.text}
+            {/if}
+          {/each}
+        </p>
       {/if}
     {/each}
   </div>

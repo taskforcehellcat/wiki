@@ -5,7 +5,12 @@ export type Hit = {
   // basically the path to the hit(s)
   breadcrumbs: Array<Breadcrumb>;
   // the text in witch the index occurred or the heading or article name
-  text?: string;
+  previewChunks?: Array<PreviewChunk>;
+};
+
+export type PreviewChunk = {
+  text: string;
+  highlighted: boolean;
 };
 
 export type Breadcrumb = {
