@@ -456,6 +456,12 @@ footer {
   span {
     color: white;
   }
+
+  p {
+    @media (max-width: 800px) {
+      text-align: unset;
+    }
+  }
 }
 
 .no-underline {
