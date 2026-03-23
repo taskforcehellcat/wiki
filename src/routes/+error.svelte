@@ -1,5 +1,6 @@
 <script>
   import { page } from '$app/stores';
+  import { resolve } from '$app/paths';
 </script>
 
 <h1>Fehler {$page.status}: {$page.error?.message}</h1>
@@ -21,4 +22,4 @@
   </p>
 {/if}
 
-<a href="/">Zurück zur Startseite</a>
+<a href={resolve('/')}>Zurück zur Startseite</a>

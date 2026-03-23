@@ -1,10 +1,11 @@
 <script lang="ts">
   import { searchResults } from '$lib/search/stores';
   import type { Hit, HitKind } from './.d.ts';
+  import { resolve } from '$app/paths';
 
   export let kind: HitKind;
 
-  let resultsOfKind: Array<Hit> = [];
+  let resultsOfKind: Array<Hit>;
 
   $: resultsOfKind = $searchResults.filter((hit) => {
     return hit.type == kind;
@@ -43,10 +44,10 @@
       <span>{pageTitle}</span>
       <span>gefunden</span>
     </span>
-    {#each resultsOfKind as hit}
+    {#each resultsOfKind as hit, i (i)}
       <span class="breadcrumbs">
-        {#each hit['breadcrumbs'] as crumb}
-          <a href={crumb.link}>{crumb.display}</a>
+        {#each hit['breadcrumbs'] as crumb (crumb.link)}
+          <a href={resolve(crumb.link)}>{crumb.display}</a>
           <span class="material-icons-round seperator" aria-hidden="true">
             chevron_right
           </span>
@@ -54,7 +55,7 @@
       </span>
       {#if kind === 'text'}
         <p class="preview-text">
-          {#each hit.previewChunks ?? [] as chunk}
+          {#each hit.previewChunks ?? [] as chunk, j (j)}
             {#if chunk.highlighted}
               <mark>{chunk.text}</mark>
             {:else}

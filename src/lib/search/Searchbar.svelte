@@ -10,7 +10,7 @@
     $searchInUse = true;
   }}>
   <span class="placeholder">Wiki durchsuchen...</span>
-  <span><Keys keys={'CTRL, K'} /></span>
+  <span><Keys keys="CTRL, K" /></span>
 </button>
 
 {#if $searchInUse}

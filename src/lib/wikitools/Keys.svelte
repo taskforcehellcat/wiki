@@ -44,6 +44,6 @@
   }
 </script>
 
-{#each keysArrayTranslated as key}
+{#each keysArrayTranslated as key, i (i)}
   <kbd>{key}</kbd>
 {/each}

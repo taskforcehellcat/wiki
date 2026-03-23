@@ -15,10 +15,11 @@
   import TreeView from '$lib/nav/TreeView.svelte';
 
   // --- id conversions ---
-  import { afterUpdate, onMount } from 'svelte';
+  import { afterUpdate } from 'svelte';
   import { browser } from '$app/environment';
 
   import { page } from '$app/state';
+  import { resolve } from '$app/paths';
   import PageMeta from '$lib/metadata/PageMeta.svelte';
   import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
   import type { LayoutData } from './$types';
@@ -53,7 +54,7 @@
   <div id="main" data-theme={$themeId}>
     <div class="wiki">
       <nav class="nav__sidebar" aria-label="Seitennavigation">
-        <a href="/" class="nav__logo">
+        <a href={resolve('/')} class="nav__logo">
           <img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" />
         </a>
 
@@ -80,7 +81,8 @@
             </div>
 
             <div class="wiki-nav__list">
-              {#each anchors as anchor}
+              {#each anchors as anchor (anchor.link)}
+                <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
                 <a href={anchor.link}>{anchor.text}</a>
               {/each}
             </div>
@@ -88,7 +90,7 @@
         {/if}
         <div class="nav__list-title">wiki</div>
         <TreeView menu={data.menu} />
-        <a href="/" class="nav__return">Zurück</a>
+        <a href={resolve('/')} class="nav__return">Zurück</a>
       </nav>
 
       <nav
@@ -97,7 +99,8 @@
         class:nav__overlay--show={isOpen}
         aria-label="Mobile Navigation"
         aria-hidden={!isOpen}>
-        {#each anchors as anchor}
+        {#each anchors as anchor (anchor.link)}
+          <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
           <a href={anchor.link} on:click={() => (isOpen = !isOpen)}>
             {anchor.text}
           </a>

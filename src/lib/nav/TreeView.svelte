@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Article, Directory } from '../../app';
+  import { resolve } from '$app/paths';
 
   export let menu: Array<Directory> = [];
   let expandedId: string | null = null;
@@ -119,10 +120,11 @@
 </script>
 
 <ul role="tree" class="tree-view">
-  {#each menu as dir}
+  {#each menu as dir (dir.id)}
     <li
       role="treeitem"
       aria-expanded={expandedId === dir.id}
+      aria-selected={focusedId === dir.id}
       tabindex={tabindexFor(dir.id)}
       data-treeid={dir.id}
       class="tree-view__item"
@@ -137,15 +139,16 @@
       </button>
       {#if expandedId === dir.id}
         <ul role="group" class="tree-view__group">
-          {#each dir.entries as article}
+          {#each dir.entries as article (article.id)}
             <li
               role="treeitem"
+              aria-selected={focusedId === `${dir.id}/${article.id}`}
               tabindex={tabindexFor(`${dir.id}/${article.id}`)}
               data-treeid={`${dir.id}/${article.id}`}
               class="tree-view__leaf"
               on:keydown={(e) => handleLeafKeydown(e, dir, article)}
               on:focus={() => (focusedId = `${dir.id}/${article.id}`)}>
-              <a href="/{dir.id}/{article.id}" tabindex="-1">
+              <a href={resolve(`/${dir.id}/${article.id}`)} tabindex="-1">
                 {shortName(article)}
               </a>
             </li>

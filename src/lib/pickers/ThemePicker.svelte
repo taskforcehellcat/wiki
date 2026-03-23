@@ -22,7 +22,7 @@
       id="theme-choices"
       transition:slide|local={{ axis: 'x', duration: 500 }}
       data-visible={open}>
-      {#each choices as choice}
+      {#each choices as choice (choice)}
         <div id="theme-choice">
           <input
             type="radio"
@@ -31,7 +31,7 @@
             value={choice}
             aria-label={choiceLabels[choice]}
             bind:group={$themeId} />
-          <label for="theme_{choice}" aria-hidden="true" />
+          <label for="theme_{choice}" aria-hidden="true"></label>
         </div>
       {/each}
     </div>

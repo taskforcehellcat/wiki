@@ -28,7 +28,7 @@
       id="layout-choices"
       transition:slide|local={{ axis: 'x', duration: 500 }}
       data-visible={open}>
-      {#each ['win', 'mac'] as choice}
+      {#each ['win', 'mac'] as choice (choice)}
         <input
           type="radio"
           id={choice}
@@ -36,9 +36,11 @@
           value={choice}
           aria-label={platformLabels[choice]}
           bind:group={platform} />
-        <label for={choice} aria-hidden="true"><div class="symbol" /></label>
+        <label for={choice} aria-hidden="true">
+          <div class="symbol"></div>
+        </label>
       {/each}
-      {#each ['de', 'us'] as choice}
+      {#each ['de', 'us'] as choice (choice)}
         <input
           type="radio"
           id={choice}
@@ -46,7 +48,9 @@
           value={choice}
           aria-label={langLabels[choice]}
           bind:group={lang} />
-        <label for={choice} aria-hidden="true"><div class="symbol" /></label>
+        <label for={choice} aria-hidden="true">
+          <div class="symbol"></div>
+        </label>
       {/each}
     </div>
   {/if}

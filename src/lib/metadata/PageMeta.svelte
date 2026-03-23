@@ -3,7 +3,7 @@
 
   let data = $page.data;
 
-  let title = data.title;
+  let title: string;
   let dir = data.dirslug;
   let article = data.articleslug;
   let description = data.description ?? 'Artikel im TFHC Wiki';

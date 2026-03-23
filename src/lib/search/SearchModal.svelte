@@ -8,8 +8,8 @@
   import ResultsSection from '$lib/search/ResultsSection.svelte';
 
   let rawInput = '';
-  let query = ''; // holds the query
-  let showResults = false; // whether the search bar is currently in use
+  let query: string; // holds the query
+  let showResults: boolean; // whether the search bar is currently in use
   let search = new Search($page.data.posts, $page.data.menu);
 
   $: query = rawInput.trim();
@@ -75,7 +75,8 @@
     if (e.key === 'Escape') {
       $searchInUse = false;
     }
-  }} />
+  }}>
+</div>
 
 <style lang="scss">
   .search {

@@ -10,7 +10,7 @@ export async function load({ params }) {
 
   try {
     post = await import(`../../../content/${dirslug}/${articleslug}.svx`);
-  } catch (e) {
+  } catch {
     throw error(
       404,
       `Not found: ../../../content/${dirslug}/${articleslug}.svx`

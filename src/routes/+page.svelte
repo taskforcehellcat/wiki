@@ -15,7 +15,7 @@
 
   let rawInput = '';
   let query: string; // holds the query
-  let showResults = false; // whether the search bar is currently in use
+  let showResults: boolean; // whether the search bar is currently in use
   let search = new Search(data.posts, data.menu);
 
   $: query = rawInput.trim();

@@ -38,6 +38,7 @@
 <svelte:window on:resize={mouseLeave} />
 
 <span
+  role="button"
   tabindex="0"
   on:touchstart={tapped}
   on:mouseover={mouseOver}

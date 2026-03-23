@@ -44,7 +44,7 @@
 
 <div class="container">
   <div class="image-wrapper">
-    <div bind:this={slideshow} class="slideshow" />
+    <div bind:this={slideshow} class="slideshow"></div>
     <button
       class="button button-left"
       on:click={() => scrollSlide(-1)}

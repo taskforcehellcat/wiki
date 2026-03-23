@@ -20,7 +20,7 @@ export async function load({ fetch }) {
   const response = await fetch(`/api/articles`);
   const articles: Array<Article> = await response.json();
 
-  let menu: Menu = {};
+  const menu: Menu = {};
 
   for (const article of articles) {
     menu[article.directory] ??= {
@@ -38,7 +38,7 @@ export async function load({ fetch }) {
     menu[key].entries.sort((a, b) => sortArticlesByNavIndex(a, b));
   }
 
-  let directories = Object.keys(menu).map(function (key) {
+  const directories = Object.keys(menu).map(function (key) {
     return menu[key];
   });
 

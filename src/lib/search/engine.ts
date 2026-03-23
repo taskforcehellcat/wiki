@@ -28,7 +28,6 @@ export class Search {
   queryLower: string = '';
 
   constructor(articles: Array<Article>, menu: Array<Directory>) {
-    const self = this;
     this.articles = articles;
     this.directoryIdsToDisplay = new Map(
       menu.map((e) => {
@@ -38,39 +37,39 @@ export class Search {
 
     // wha-whats this??? no regexes?? owo
     this.parser = new htmlparser2.Parser({
-      onopentag(name, attributes) {
+      onopentag: (name, attributes) => {
         // handle `li` tags
         if (name === 'li') {
-          self.currentText += ' - ';
+          this.currentText += ' - ';
         }
 
         // update the heading
         if (HEADINGS.includes(name)) {
           // before updating the heading, search the text
-          if (self.currentText.toLowerCase().includes(self.queryLower)) {
-            self.add_hit('text');
+          if (this.currentText.toLowerCase().includes(this.queryLower)) {
+            this.add_hit('text');
           }
 
-          self.currentHeading = {
+          this.currentHeading = {
             content: undefined,
             id: attributes['id']
           };
 
-          self.currentText = '';
+          this.currentText = '';
         }
       },
 
-      ontext(text) {
+      ontext: (text) => {
         // this text might be the content of a new heading
         let textIsHeading = false;
 
-        if (self.currentHeading && !self.currentHeading.content) {
-          self.currentHeading.content = text;
+        if (this.currentHeading && !this.currentHeading.content) {
+          this.currentHeading.content = text;
           textIsHeading = true;
 
           // register hits
-          if (text.toLowerCase().includes(self.queryLower)) {
-            self.add_hit('heading');
+          if (text.toLowerCase().includes(this.queryLower)) {
+            this.add_hit('heading');
           }
         }
 
@@ -81,13 +80,13 @@ export class Search {
           } else if (text.trim() === 'Beispiel:') {
             text = ' (Beispielbox)';
           }
-          self.currentText += text;
+          this.currentText += text;
         }
       },
 
-      onclosetag(name) {
+      onclosetag: (name) => {
         if (name === 'p') {
-          self.currentText += ' ';
+          this.currentText += ' ';
         }
       }
     });
@@ -145,7 +144,7 @@ export class Search {
 
   add_hit(kind: HitKind): void {
     const article = this.currentArticle;
-    let crumbs = this.breadcrumbs(article);
+    const crumbs = this.breadcrumbs(article);
 
     if (kind === 'article') {
       this.hits.push({

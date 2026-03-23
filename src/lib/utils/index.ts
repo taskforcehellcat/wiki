@@ -27,7 +27,7 @@ export const fetchMarkdownPosts = async () => {
       let plainHTML = '';
       try {
         plainHTML = render(data.default).body;
-      } catch (TypeError) {
+      } catch {
         /* TODO: proper handling */
         console.error('Something went wrong rendering the html');
         // NOTE: i've never seen this occurring...
