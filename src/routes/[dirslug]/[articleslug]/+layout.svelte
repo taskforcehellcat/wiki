@@ -12,7 +12,7 @@
   // --- burger menu ---
   import OpenMenuSVG from '$lib/burgermenu/openMenu.svelte';
   import CloseMenuSVG from '$lib/burgermenu/closeMenu.svelte';
-  import Nav from '$lib/nav/Nav.svelte';
+  import TreeView from '$lib/nav/TreeView.svelte';
 
   // --- id conversions ---
   import { afterUpdate, onMount } from 'svelte';
@@ -88,7 +88,7 @@
           </div>
         {/if}
         <div class="nav__list-title">wiki</div>
-        <Nav menu={data.menu} />
+        <TreeView menu={data.menu} />
         <a href="/" class="nav__return">Zurück</a>
       </nav>
 

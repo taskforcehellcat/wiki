@@ -5,7 +5,7 @@
   import '../app.scss';
   import ThemePicker from '$lib/pickers/ThemePicker.svelte';
   import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
-  import Nav from '$lib/nav/Nav.svelte';
+  import TreeView from '$lib/nav/TreeView.svelte';
   import { themeId } from '$lib/pickers/stores';
 
   import { Search } from '$lib/search/engine';
@@ -94,7 +94,7 @@
 
       {#if !$searchInUse}
         <div class="home__nav">
-          <Nav menu={data.menu} />
+          <TreeView menu={data.menu} />
         </div>
       {/if}
     </div>
