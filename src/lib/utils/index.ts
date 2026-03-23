@@ -1,4 +1,5 @@
 import type { Article, ArticleFile } from '../../app';
+import { render } from 'svelte/server';
 
 export const fetchMarkdownPosts = async () => {
   const allArticleFiles = import.meta.glob<ArticleFile>(
@@ -25,7 +26,7 @@ export const fetchMarkdownPosts = async () => {
 
       let plainHTML = '';
       try {
-        plainHTML = data.default['render']()['html'];
+        plainHTML = render(data.default).body;
       } catch (TypeError) {
         /* TODO: proper handling */
         console.error('Something went wrong rendering the html');

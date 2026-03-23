@@ -42,11 +42,8 @@ export type Article = {
 };
 
 // FIXME you should be able to get this dynamically...
+import type { Component } from 'svelte';
 type ArticleFile = {
   metadata: Article['meta'];
-  default: {
-    render: () => {
-      html: string;
-    };
-  };
+  default: Component;
 };

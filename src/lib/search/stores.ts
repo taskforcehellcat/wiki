@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store';
-import type { Hit } from './engine';
+import type { Hit } from './.d';
 
 export const searchResults = writable<Array<Hit>>([]);
 export const searchInUse = writable(false);

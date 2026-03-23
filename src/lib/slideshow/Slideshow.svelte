@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte/internal';
+  import { onMount } from 'svelte';
 
   export let images: Array<string>;
   export let captions: Array<string>;

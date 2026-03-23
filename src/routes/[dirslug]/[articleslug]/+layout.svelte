@@ -18,7 +18,7 @@
   import { afterUpdate, onMount } from 'svelte';
   import { browser } from '$app/environment';
 
-  import { page } from '$app/stores';
+  import { page } from '$app/state';
   import PageMeta from '$lib/metadata/PageMeta.svelte';
   import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
   import type { LayoutData } from './$types';
@@ -109,10 +109,10 @@
         <slot />
       </content>
 
-      {#if $page.status == 200}
+      {#if page.status == 200}
         <footer>
           <p>
-            zuletzt bearbeitet: {new Date($page.data.date).toLocaleString(
+            zuletzt bearbeitet: {new Date(page.data.date).toLocaleString(
               'de-DE',
               {
                 weekday: 'long',
