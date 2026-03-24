@@ -210,6 +210,35 @@ They will look like this when rendered:
 For a list of the mappings used see `src/lib/wikitools/Keys.svelte`, `mapDeUs` and `mapWinMac` respectively.
 Be sure to use the `Keys` component instead of the `<kbd>` tag if your key needs to be mapped!
 
+### Adding Notices
+
+Notices are highlighted boxes used to draw attention to important information. They support four types: `info`, `warning`, `error`, and `success`.
+
+Import and use the `Notice` component:
+
+```html
+<script>
+  import Notice from '$lib/notice/Notice.svelte';
+</script>
+```
+
+Basic usage:
+
+```svelte
+<Notice type="info">This is an info notice.</Notice>
+<Notice type="warning">This is a warning notice.</Notice>
+<Notice type="error">This is an error notice.</Notice>
+<Notice type="success">This is a success notice.</Notice>
+```
+
+The `type` property defaults to `info` if omitted.
+
+To allow the user to dismiss the notice, add the `dismissible` property:
+
+```svelte
+<Notice type="warning" dismissible>This warning can be closed.</Notice>
+```
+
 ### Adding YouTube videos
 
 YouTube videos can be embedded by using the following syntax:

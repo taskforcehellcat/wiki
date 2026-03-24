@@ -8,10 +8,10 @@ nav_index: 6
     import Keys from "$lib/wikitools/Keys.svelte";
     import Tooltip from "$lib/wikitools/Tooltip.svelte";
     import { layoutId } from '$lib/pickers/stores';
-    import Wipbanner from "$lib/wipbanner/wipbanner.svelte";
+    import Notice from '$lib/notice/Notice.svelte';
 </script>
 
-<Wipbanner />
+<Notice type="warning" dismissible>Diese Seite ist noch in Bearbeitung!</Notice>
 
 <style>
     tr {

@@ -5,9 +5,9 @@ nav_index: 3
 ---
 
 <script>
-    import Wipbanner from '$lib/wipbanner/wipbanner.svelte';
+    import Notice from '$lib/notice/Notice.svelte';
 </script>
 
-<Wipbanner />
+<Notice type="warning" dismissible>Diese Seite ist noch in Bearbeitung!</Notice>
 
 Dedizierte Beobachter werden in der Taskforce Hellcat aktuell nicht eingesetzt.
