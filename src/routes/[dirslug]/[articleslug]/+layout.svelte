@@ -160,7 +160,7 @@
     grid-column: 2;
     grid-row: 1;
     gap: 1rem;
-    border-bottom: 1px solid var(--color-border-muted);
+    border-bottom: 1px solid var(--color-border);
     position: sticky;
     top: 0;
     padding-inline: 8rem;
