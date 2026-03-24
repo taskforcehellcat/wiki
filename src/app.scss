@@ -42,6 +42,8 @@ a[href]:not(:where(
   --color-link: #436adf;
   --color-error: #c1a03e;
   --color-theme-picker-border: #666666;
+  --color-scrollbar: #d6dee1;
+  --color-scrollbar-hover: #a8bbbf;
 
   @include markdown.markdown-vars-light;
 }
@@ -66,6 +68,8 @@ a[href]:not(:where(
   --color-link: rgb(193, 37, 37);
   --color-error: #9d884a;
   --color-theme-picker-border: #111111;
+  --color-scrollbar: #4a4a4a;
+  --color-scrollbar-hover: #686868;
 
   @include markdown.markdown-vars-dark;
 }
@@ -114,7 +118,7 @@ body {
   height: 100%;
   overflow-y: overlay;
   background-color: var(--color-bg-primary);
-  scrollbar-color: #d6dee1 transparent;
+  scrollbar-color: var(--color-scrollbar) transparent;
   scroll-padding-top: 7rem;
 
   @media (max-width: 800px) {
@@ -130,14 +134,14 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #d6dee1;
+    background-color: var(--color-scrollbar);
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background-color: #a8bbbf;
+    background-color: var(--color-scrollbar-hover);
   }
 }
 
