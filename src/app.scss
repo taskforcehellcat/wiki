@@ -47,6 +47,8 @@ a[href]:not(:where(
   --color-neutral: #fff;
   --color-border: #3e4c74;
   --color-border-muted: #e6e8eb;
+  --color-btn-bg: hsl(0, 0%, 97%);
+  --color-btn-hover-bg: hsl(0, 0%, 92%);
   --color-nav-hover: #fff;
   --color-wiki-bg: #fff;
   --color-kbd-bg: #f4f4f5;
@@ -75,6 +77,8 @@ a[href]:not(:where(
   --color-neutral: #fff;
   --color-border: #3d3d3d;
   --color-border-muted: #e6e8eb;
+  --color-btn-bg: hsl(0, 0%, 9%);
+  --color-btn-hover-bg: hsl(0, 0%, 12%);
   --color-nav-hover: #fff;
   --color-wiki-bg: url('/images/dark-bg.jpg');
   --color-kbd-bg: #27272a;
