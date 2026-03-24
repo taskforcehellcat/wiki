@@ -1,10 +1,15 @@
 <script lang="ts">
   import type { Article, Directory } from '../../app';
   import { resolve } from '$app/paths';
+  import { page } from '$app/state';
 
   export let menu: Array<Directory> = [];
   let expandedId: string | null = null;
   let focusedId: string | null = null;
+
+  $: if (page.params?.dirslug) {
+    expandedId = page.params.dirslug;
+  }
 
   function visibleIds(): string[] {
     const ids: string[] = [];
@@ -148,7 +153,11 @@
               class="tree-view__leaf"
               on:keydown={(e) => handleLeafKeydown(e, dir, article)}
               on:focus={() => (focusedId = `${dir.id}/${article.id}`)}>
-              <a href={resolve(`/${dir.id}/${article.id}`)} tabindex="-1">
+              <a
+                href={resolve(`/${dir.id}/${article.id}`)}
+                tabindex="-1"
+                class:active={page.params?.dirslug === dir.id &&
+                  page.params?.articleslug === article.id}>
                 {shortName(article)}
               </a>
             </li>

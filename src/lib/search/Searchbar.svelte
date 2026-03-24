@@ -29,6 +29,19 @@
     border: 1px solid var(--color-border);
     padding-inline: 1.5rem;
     border-radius: 0.6rem;
+    transition:
+      background-color 0.2s ease-out,
+      border-color 0.2s ease-out;
+
+    &:hover {
+      background-color: var(--color-bg-secondary);
+      border-color: var(--color-text-muted);
+    }
+
+    &:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px var(--color-text-muted);
+    }
 
     .placeholder {
       content: 'Wiki durchsuchen...';

@@ -293,6 +293,11 @@ content {
   }
 }
 
+.tree-view__leaf a.active {
+  color: var(--color-nav-hover);
+  font-weight: 600;
+}
+
 .material-icons-round {
   vertical-align: text-bottom;
   color: inherit;
