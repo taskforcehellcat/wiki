@@ -94,12 +94,20 @@
 
   #layout-button {
     border: none;
-    height: 3.5rem; // HACK this should probably be dynamic
+    height: 3.5rem;
     width: 3.5rem;
     cursor: pointer;
     color: #687076;
     border-radius: 0.6rem;
     background-color: transparent;
+    transition:
+      color 0.15s ease,
+      background-color 0.15s ease;
+
+    &:hover {
+      color: var(--color-neutral);
+      background-color: rgba(255, 255, 255, 0.06);
+    }
 
     span {
       font-size: 1.8rem;
@@ -141,6 +149,18 @@
       background-position: center;
       background-repeat: no-repeat;
       background-color: var(--color-canvas-default);
+      transition:
+        transform 0.15s ease,
+        filter 0.15s ease;
+
+      &:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
 
       .symbol {
         width: 60%;

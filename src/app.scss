@@ -8,6 +8,11 @@
   font-variant-ligatures: none;
 }
 
+::selection {
+  background-color: rgba(67, 106, 223, 0.25);
+  color: inherit;
+}
+
 // Mark external links
 a[href]:not(:where(
   [href^="#"],
@@ -20,6 +25,19 @@ a[href]:not(:where(
   content: 'launch';
   margin-left: 0.3rem;
   vertical-align: bottom;
+  font-size: 0.85em;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+
+a[href]:not(:where(
+  [href^="#"],
+  [href=""],
+  [href^="/"]:not([href^="//"]),
+  [href*="//taskforcehellcat.de"],
+  [href*="//wiki.taskforcehellcat.de"]
+)):hover:after {
+  opacity: 1;
 }
 
 @mixin theme-light {
@@ -34,16 +52,17 @@ a[href]:not(:where(
   --color-border: #e6e8eb;
   --color-nav-hover: #fff;
   --color-wiki-bg: #fff;
-  --color-kbd-bg: #ebebeb;
-  --color-kbd-text: #494949;
-  --color-kbd-border: #a5a5a5;
-  --color-example-bg: #e7e9eb;
-  --color-example-border: #646464;
+  --color-kbd-bg: #f4f4f5;
+  --color-kbd-text: #3f3f46;
+  --color-kbd-border: #d4d4d8;
+  --color-example-bg: #f4f5f7;
+  --color-example-border: #d1d5db;
   --color-link: #436adf;
   --color-error: #c1a03e;
   --color-theme-picker-border: #666666;
   --color-scrollbar: #d6dee1;
   --color-scrollbar-hover: #a8bbbf;
+  --color-focus-ring: rgba(67, 106, 223, 0.5);
 
   @include markdown.markdown-vars-light;
 }
@@ -60,16 +79,17 @@ a[href]:not(:where(
   --color-border: #3d3d3d;
   --color-nav-hover: #fff;
   --color-wiki-bg: url('/images/dark-bg.jpg');
-  --color-kbd-bg: #1e1e1e;
-  --color-kbd-text: #e6e6e6;
-  --color-kbd-border: #303030;
+  --color-kbd-bg: #27272a;
+  --color-kbd-text: #e4e4e7;
+  --color-kbd-border: #3f3f46;
   --color-example-bg: rgb(15 15 15 / 65%);
-  --color-example-border: #646464;
+  --color-example-border: #3f3f46;
   --color-link: rgb(193, 37, 37);
   --color-error: #9d884a;
   --color-theme-picker-border: #111111;
   --color-scrollbar: #4a4a4a;
   --color-scrollbar-hover: #686868;
+  --color-focus-ring: rgba(147, 162, 207, 0.4);
 
   @include markdown.markdown-vars-dark;
 }
@@ -95,6 +115,9 @@ body {
   font-weight: 430;
   font-size: 12pt;
   background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 #main {
@@ -126,7 +149,7 @@ body {
   }
 
   &::-webkit-scrollbar {
-    width: 20px;
+    width: 14px;
   }
 
   &::-webkit-scrollbar-track {
@@ -135,9 +158,10 @@ body {
 
   &::-webkit-scrollbar-thumb {
     background-color: var(--color-scrollbar);
-    border-radius: 20px;
-    border: 6px solid transparent;
+    border-radius: 14px;
+    border: 4px solid transparent;
     background-clip: content-box;
+    transition: background-color 0.2s ease;
   }
 
   &::-webkit-scrollbar-thumb:hover {
@@ -148,6 +172,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: color 0.15s ease;
 }
 
 h2:first-of-type {
@@ -212,14 +237,16 @@ content {
     outline: none;
 
     > button {
-      outline: auto;
+      outline: 2px solid var(--color-focus-ring, currentColor);
+      outline-offset: 2px;
+      border-radius: 0.2rem;
     }
   }
 
   > button {
     background: none;
     border: none;
-    padding: 0;
+    padding: 0.2rem 0;
     font: inherit;
     color: inherit;
     display: flex;
@@ -234,7 +261,7 @@ content {
     }
 
     .material-icons-round {
-      transition: transform 0.2s ease-out;
+      transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
@@ -252,7 +279,7 @@ content {
     outline: none;
 
     > a {
-      box-shadow: 0 0 0 2px currentColor;
+      box-shadow: 0 0 0 2px var(--color-focus-ring, currentColor);
       border-radius: 0.2rem;
     }
   }
@@ -332,14 +359,20 @@ input {
   height: fit-content;
   width: fit-content;
   gap: 6px;
-  transition: transform 0.1s ease-in-out;
+  transition:
+    transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.15s ease;
 
   img {
     height: 3rem;
   }
 
   &:hover {
-    transform: scale(1.08);
+    transform: scale(1.06);
+  }
+
+  &:active {
+    transform: scale(0.98);
   }
 }
 
@@ -347,6 +380,7 @@ input {
   height: 2rem;
   width: 100%;
   justify-self: end;
+  transition: color 0.2s ease-out;
 
   &:hover {
     color: var(--color-nav-hover);
@@ -388,6 +422,11 @@ input {
   outline: none;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(0.92);
+  }
 }
 
 .nav__overlay {
@@ -426,6 +465,11 @@ input {
   color: var(--color-text-muted);
   display: flex;
   align-items: center;
+  transition: color 0.2s ease-out;
+
+  &:hover {
+    color: var(--color-nav-hover);
+  }
 
   span.material-icons {
     margin-left: -0.7rem;
@@ -452,6 +496,7 @@ ul {
 
 svg .struktur_icon:hover {
   transform: scale(1.1);
+  transition: transform 0.15s ease;
 }
 
 footer {
@@ -465,6 +510,8 @@ footer {
   align-items: center;
   gap: 0.5rem;
   color: var(--color-text-muted);
+  font-size: 1.15rem;
+  letter-spacing: 0.02em;
 
   span {
     color: white;

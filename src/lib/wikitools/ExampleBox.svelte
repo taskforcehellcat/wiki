@@ -28,11 +28,12 @@
   .example-box {
     width: min(100%, 110rem);
     background-color: var(--color-example-bg);
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     border: 1px solid var(--color-example-border);
     margin-bottom: 4rem;
     height: fit-content;
     display: inline-flexbox;
+    overflow: hidden;
 
     > .example-box-header {
       background: none;
@@ -44,14 +45,20 @@
       width: 100%;
       align-items: center;
       display: flex;
-      height: 4rem;
+      height: 4.5rem;
       justify-content: space-between;
       padding-inline: 2rem;
       cursor: pointer;
+      transition: background-color 0.15s ease;
+
+      &:hover {
+        background-color: rgba(128, 128, 128, 0.08);
+      }
 
       .material-icons-round {
         font-size: 20pt;
         margin-right: -4px;
+        transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
 

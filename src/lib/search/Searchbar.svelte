@@ -31,20 +31,26 @@
     border-radius: 0.6rem;
     transition:
       background-color 0.2s ease-out,
-      border-color 0.2s ease-out;
+      border-color 0.2s ease-out,
+      box-shadow 0.2s ease-out;
 
     &:hover {
       background-color: var(--color-bg-secondary);
       border-color: var(--color-text-muted);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
 
     &:focus-visible {
       outline: none;
-      box-shadow: 0 0 0 2px var(--color-text-muted);
+      box-shadow: 0 0 0 2px var(--color-focus-ring, var(--color-text-muted));
+      border-color: transparent;
+    }
+
+    &:active {
+      transform: scale(0.99);
     }
 
     .placeholder {
-      content: 'Wiki durchsuchen...';
       display: inline-block;
       color: #687076;
       font-size: 10pt;

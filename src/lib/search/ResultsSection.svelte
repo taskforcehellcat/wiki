@@ -101,6 +101,7 @@
 
     color: var(--color-bg-secondary);
     font-weight: 600;
+    font-size: 0.85em;
 
     aspect-ratio: 1/1;
     border-radius: 100%;
@@ -112,10 +113,12 @@
 
     grid-column: 2;
     display: block;
+    padding: 0.2rem 0;
 
     a {
       text-transform: uppercase;
       font-weight: 600;
+      font-size: 0.85em;
       letter-spacing: 0.12rem;
       text-decoration: none;
 
@@ -126,12 +129,19 @@
         color: var(--color-neutral);
         &:hover {
           text-decoration: underline;
+          text-underline-offset: 2px;
         }
       }
 
       &:hover:not(:first-child) {
         color: var(--color-neutral);
       }
+    }
+
+    .seperator {
+      font-size: 1.4rem;
+      vertical-align: middle;
+      opacity: 0.5;
     }
 
     .seperator:last-child {
@@ -143,6 +153,9 @@
     grid-column: 2;
     font-style: italic;
     text-align: justify;
+    font-size: 0.95em;
+    line-height: 1.5;
+    opacity: 0.85;
   }
 
   :global(mark) {
@@ -152,8 +165,8 @@
       hsla(54, 95%, 57%, 0.616) 95%,
       hsla(48, 92%, 75%, 0.1)
     );
-    border-radius: 1rem 0;
-    padding: 0.2rem;
+    border-radius: 0.3rem 0;
+    padding: 0.15rem 0.2rem;
 
     color: var(--color-text-secondary);
   }

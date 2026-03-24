@@ -167,6 +167,7 @@
     padding-block: 1.2rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     z-index: 100;
 
@@ -189,7 +190,7 @@
 
   .info-bar__pickers {
     display: flex;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .nav__list-bar {
@@ -202,6 +203,7 @@
     display: inline-block;
     font-size: 13pt;
     margin-bottom: 1.5rem;
+    line-height: 1.65;
   }
 
   :global(
@@ -224,16 +226,43 @@
     width: min(110rem, 100%);
   }
 
+  :global(content h1) {
+    font-size: 2.4rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(content h2) {
+    font-size: 2rem;
+    font-weight: 620;
+    letter-spacing: -0.005em;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  :global(content h3) {
+    font-size: 1.7rem;
+    font-weight: 590;
+    margin-top: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+
   :global(img:not(a > img)) {
     width: min(100%, 60rem);
+    border-radius: 0.4rem;
   }
 
   .nav__list-title {
     color: var(--color-neutral);
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.1rem;
+    font-size: 0.85em;
+    letter-spacing: 0.15rem;
     margin-bottom: -2rem;
+    opacity: 0.7;
   }
 
   .nav__list-wrapper {
@@ -244,15 +273,10 @@
   }
 
   .nav__list-bar {
-    width: 3px;
+    width: 2px;
     background-color: var(--color-bg-secondary);
-    /* background-color: red; */
     height: 100%;
-    border-radius: 0.2rem;
-    -webkit-border-radius: 0.2rem;
-    -moz-border-radius: 0.2rem;
-    -ms-border-radius: 0.2rem;
-    -o-border-radius: 0.2rem;
+    border-radius: 1px;
   }
 
   .wiki-nav__list {
@@ -261,6 +285,7 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 0.8rem 0 0.8rem 0;
+    font-size: 0.95em;
   }
 
   .nav__sidebar {
@@ -274,6 +299,7 @@
     position: sticky;
     top: 0;
     overflow-y: auto;
+    scrollbar-width: none;
 
     @media only screen and (max-width: 800px) {
       grid-row: unset;
@@ -311,14 +337,15 @@
   :global(kbd) {
     color: var(--color-kbd-text);
     background-color: var(--color-kbd-bg);
-    border-radius: 0.2rem;
-    font-family: monospace;
+    border-radius: 0.35rem;
+    font-family: 'Fira Mono', monospace;
+    font-size: 0.9em;
     width: fit-content;
     min-width: 5rem !important;
     text-align: center;
     border: 1px solid var(--color-kbd-border);
-    padding-inline: 0.5rem;
-    font-size: inherit;
+    padding: 0.15rem 0.5rem;
+    box-shadow: 0 1px 0 var(--color-kbd-border);
 
     &:not(kbd:first-of-type) {
       margin-left: 0.1rem;
@@ -346,6 +373,9 @@
     overflow-y: auto;
     flex-direction: column;
     gap: 2rem;
+    font-size: 18pt;
+    font-weight: 500;
+    color: var(--color-text-muted);
 
     @media (max-width: 800px) {
       &.nav__overlay--show {

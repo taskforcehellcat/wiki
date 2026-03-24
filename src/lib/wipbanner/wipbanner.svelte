@@ -42,17 +42,17 @@
     width: min(110rem, 100%);
     height: 5rem;
     position: relative;
-    padding: 0.75rem 1.25rem;
+    padding: 0.75rem 1.5rem;
     margin-bottom: 2.5rem;
-    border: 1px solid transparent;
-    border-radius: 0.3rem;
+    border: 1px solid #f0d78c;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #856404;
-    background-color: #fff3cd;
-    border-color: #ffeeba;
+    color: #92710c;
+    background-color: #fef9e7;
     gap: 0 10px;
+    font-weight: 500;
   }
 
   #wip-banner > div {
@@ -64,11 +64,17 @@
   .wip-close {
     background: none;
     border: none;
-    padding: 0;
+    padding: 0.25rem;
     cursor: pointer;
     color: inherit;
     display: flex;
     align-items: center;
+    border-radius: 0.3rem;
+    transition: background-color 0.15s ease;
+  }
+
+  .wip-close:hover {
+    background-color: rgba(133, 100, 4, 0.1);
   }
 
   .wip-close svg {

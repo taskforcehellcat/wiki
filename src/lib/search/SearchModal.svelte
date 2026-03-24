@@ -30,7 +30,15 @@
     // hide the modal when navigating
     $searchInUse = false;
   });
+
+  function handleKeydown(e: KeyboardEvent) {
+    if (e.key === 'Escape') {
+      $searchInUse = false;
+    }
+  }
 </script>
+
+<svelte:window on:keydown={handleKeydown} />
 
 <div
   class="search dialog"
@@ -86,31 +94,46 @@
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: var(--color-bg-secondary);
-      width: min(75rem, 100%);
+      width: min(75rem, calc(100% - 4rem));
       height: 40rem;
-      border-radius: 1.5rem;
+      border-radius: 1.2rem;
+      border: 1px solid var(--color-border);
 
       display: flex;
       flex-direction: column;
       z-index: 100;
 
-      box-shadow: 1rem 1rem 4rem var(--color-bg-primary);
+      box-shadow:
+        0 24px 48px -12px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(0, 0, 0, 0.1);
+
+      animation: modal-enter 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+      @keyframes modal-enter {
+        from {
+          opacity: 0;
+          transform: translate(-50%, -48%);
+        }
+        to {
+          opacity: 1;
+          transform: translate(-50%, -50%);
+        }
+      }
 
       #input-wrapper {
         width: 100%;
         height: flex;
         display: flex;
         gap: 2rem;
-        border-top-right-radius: 1.5rem;
-        border-bottom: 1px solid var(--color-text-muted);
-        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.2rem;
+        border-bottom: 1px solid var(--color-border);
+        border-top-left-radius: 1.2rem;
         padding-inline: 4rem;
 
         input {
           border-top-right-radius: inherit;
           border-top-left-radius: inherit;
           font-size: 2rem;
-          color: var(--text);
           height: 100%;
           width: 100%;
           color: var(--color-text-muted);
@@ -177,7 +200,9 @@
   }
 
   #bg-tint {
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     position: fixed;
     top: 0;
     left: 0;
@@ -187,5 +212,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: tint-enter 0.15s ease;
+
+    @keyframes tint-enter {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
   }
 </style>

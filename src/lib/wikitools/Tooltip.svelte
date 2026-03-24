@@ -78,15 +78,30 @@
 
   .tooltip {
     color: var(--color-text-primary);
-    border: 1px solid #c4c4c4;
-    box-shadow: 1px 1px 1px #ddd;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     background: var(--color-example-bg);
-    padding: 4px;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
     position: absolute;
     max-width: 50rem;
     text-align: justify;
     display: flex;
     z-index: 99;
+    font-size: 0.9em;
+    line-height: 1.5;
+    animation: tooltip-enter 0.12s ease;
+
+    @keyframes tooltip-enter {
+      from {
+        opacity: 0;
+        transform: translateY(2px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
     @media only screen and (max-width: 1200px) {
       text-align: left !important;
