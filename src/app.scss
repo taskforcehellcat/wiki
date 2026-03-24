@@ -232,6 +232,10 @@ content {
     &:hover {
       color: var(--color-nav-hover);
     }
+
+    .material-icons-round {
+      transition: transform 0.2s ease-out;
+    }
   }
 }
 
