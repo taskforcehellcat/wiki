@@ -10,7 +10,7 @@
     $searchInUse = true;
   }}>
   <span class="placeholder">Wiki durchsuchen...</span>
-  <span><Keys keys="CTRL, K" /></span>
+  <span class="keys"><Keys keys="CTRL, K" /></span>
 </button>
 
 {#if $searchInUse}
@@ -25,8 +25,8 @@
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    background-color: #05294d07;
-    border: 1px solid var(--color-border);
+    background-color: var(--color-btn-bg);
+    border: 1px solid var(--color-border-muted);
     padding-inline: 1.5rem;
     border-radius: 0.6rem;
     transition:
@@ -35,7 +35,7 @@
       box-shadow 0.2s ease-out;
 
     &:hover {
-      background-color: var(--color-bg-secondary);
+      background-color: var(--color-btn-hover-bg);
       border-color: var(--color-text-muted);
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
@@ -74,6 +74,11 @@
         background-position: center;
         margin-inline-end: 1.5rem;
       }
+    }
+
+    .keys {
+      display: inline-flex;
+      align-items: center;
     }
   }
 </style>

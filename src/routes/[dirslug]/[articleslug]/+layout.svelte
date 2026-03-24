@@ -160,7 +160,7 @@
     grid-column: 2;
     grid-row: 1;
     gap: 1rem;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border-muted);
     position: sticky;
     top: 0;
     padding-inline: 8rem;
@@ -240,7 +240,7 @@
     margin-top: 3.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.4rem;
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border-muted);
   }
 
   :global(content h3) {
@@ -262,7 +262,6 @@
     font-size: 0.85em;
     letter-spacing: 0.15rem;
     margin-bottom: -2rem;
-    opacity: 0.7;
   }
 
   .nav__list-wrapper {
@@ -341,7 +340,7 @@
     font-family: 'Fira Mono', monospace;
     font-size: 0.9em;
     width: fit-content;
-    min-width: 5rem !important;
+    min-width: 2rem !important;
     text-align: center;
     border: 1px solid var(--color-kbd-border);
     padding: 0.15rem 0.5rem;

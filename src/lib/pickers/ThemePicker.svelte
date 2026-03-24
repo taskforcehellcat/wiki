@@ -16,10 +16,10 @@
   $: if (browser) localStorage.theme = $themeId;
 </script>
 
-<div id="theme-picker" data-location={location}>
+<div class="picker" data-location={location}>
   {#if open}
     <div
-      id="theme-choices"
+      class="picker__choices"
       transition:slide|local={{ axis: 'x', duration: 500 }}
       data-visible={open}>
       {#each choices as choice (choice)}
@@ -37,7 +37,7 @@
     </div>
   {/if}
   <button
-    id="theme-button"
+    class="picker__button"
     on:click={() => {
       open = !open;
     }}
@@ -48,115 +48,23 @@
 </div>
 
 <style lang="scss">
-  // FIXME theme picker on the homepage
-
-  #theme-picker {
-    &[data-location='home'] {
-      position: absolute;
-      right: 2.5rem;
-      top: 1rem;
-      z-index: 10;
-      width: 5rem;
-    }
-    &[data-location='article'] {
-      position: unset;
-      right: unset;
-      top: unset;
-      z-index: unset;
-
-      display: flex;
-      align-items: center;
-      width: fit-content;
-
-      border: 1px solid var(--color-border);
-      background-color: #05294d07;
-      border-radius: 0.6rem;
-    }
-  }
-
-  #theme-button {
-    border: none;
-    height: 3.5rem;
-    width: 3.5rem;
-    cursor: pointer;
-    color: #687076;
-    border-radius: 0.6rem;
-    background-color: transparent;
-    transition:
-      color 0.15s ease,
-      background-color 0.15s ease;
-
-    &:hover {
-      color: var(--color-neutral);
-      background-color: rgba(255, 255, 255, 0.06);
+  .picker__choices label {
+    &[for='theme_light'] {
+      background: linear-gradient(-45deg, #fff 50%, #101b3b 5%);
     }
 
-    span {
-      font-size: 1.8rem;
-    }
-  }
-
-  #theme-choices {
-    height: 100%;
-    width: fit-content;
-    gap: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    align-items: center;
-
-    border-right: none;
-    border-top-left-radius: 0.6rem;
-    border-bottom-left-radius: 0.6rem;
-
-    &[data-visible='true'] {
-      border-right: 1px solid var(--color-border);
+    &[for='theme_dark'] {
+      background: linear-gradient(-45deg, #0a0a0a 50%, #1b1b1b 5%);
     }
 
-    input {
-      display: none;
-    }
+    &[for='theme_auto'] {
+      background-color: var(--color-bg-primary);
 
-    label {
-      height: 2.5rem;
-      aspect-ratio: 1/1;
-      border-radius: 0.6rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1rem;
-      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
-      transition:
-        transform 0.15s ease,
-        filter 0.15s ease;
-
-      &:hover {
-        transform: scale(1.1);
-        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-      }
-
-      &:active {
-        transform: scale(0.95);
-      }
-
-      &[for='theme_light'] {
-        background: linear-gradient(-45deg, #fff 50%, #101b3b 5%);
-      }
-
-      &[for='theme_dark'] {
-        background: linear-gradient(-45deg, #0a0a0a 50%, #1b1b1b 5%);
-      }
-
-      &[for='theme_auto'] {
-        background-color: var(--color-bg-primary);
-
-        &:after {
-          content: 'A';
-          font-size: 1.5rem;
-          font-weight: 600;
-          color: var(--color-text-muted);
-        }
+      &:after {
+        content: 'A';
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--color-text-muted);
       }
     }
   }

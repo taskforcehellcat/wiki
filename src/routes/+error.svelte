@@ -64,7 +64,7 @@
   .back-link {
     margin-top: 1rem;
     padding: 0.8rem 2rem;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-muted);
     border-radius: 0.5rem;
     color: var(--color-text-muted);
     font-weight: 500;

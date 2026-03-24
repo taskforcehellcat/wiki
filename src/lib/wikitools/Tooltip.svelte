@@ -78,7 +78,7 @@
 
   .tooltip {
     color: var(--color-text-primary);
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-muted);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     background: var(--color-example-bg);
     padding: 0.6rem 1rem;

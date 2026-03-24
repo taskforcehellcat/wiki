@@ -93,7 +93,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: var(--color-bg-secondary);
+      background-color: var(--color-bg-primary);
       width: min(75rem, calc(100% - 4rem));
       height: 40rem;
       border-radius: 1.2rem;
@@ -122,7 +122,6 @@
 
       #input-wrapper {
         width: 100%;
-        height: flex;
         display: flex;
         gap: 2rem;
         border-top-right-radius: 1.2rem;
@@ -164,7 +163,7 @@
         top: 0;
         background: linear-gradient(
           rgba(255, 255, 255, 0) 85%,
-          var(--color-bg-secondary)
+          var(--color-bg-primary)
         );
         pointer-events: none;
         border-radius: inherit;

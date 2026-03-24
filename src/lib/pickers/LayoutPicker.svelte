@@ -22,10 +22,10 @@
   }
 </script>
 
-<div id="layout-picker" data-location={location}>
+<div class="picker" data-location={location}>
   {#if open}
     <div
-      id="layout-choices"
+      class="picker__choices"
       transition:slide|local={{ axis: 'x', duration: 500 }}
       data-visible={open}>
       {#each ['win', 'mac'] as choice (choice)}
@@ -40,6 +40,7 @@
           <div class="symbol"></div>
         </label>
       {/each}
+      <div class="divider" aria-hidden="true"></div>
       {#each ['de', 'us'] as choice (choice)}
         <input
           type="radio"
@@ -55,7 +56,7 @@
     </div>
   {/if}
   <button
-    id="layout-button"
+    class="picker__button"
     on:click={() => {
       open = !open;
     }}
@@ -66,135 +67,49 @@
 </div>
 
 <style lang="scss">
-  // FIXME picker on the homepage
-
-  #layout-picker {
-    &[data-location='home'] {
-      position: absolute;
-      right: 2.5rem;
-      top: 1rem;
-      z-index: 10;
-      width: 5rem;
-    }
-    &[data-location='article'] {
-      position: unset;
-      right: unset;
-      top: unset;
-      z-index: unset;
-
-      display: flex;
-      align-items: center;
-      width: fit-content;
-
-      border: 1px solid var(--color-border);
-      background-color: #05294d07;
-      border-radius: 0.6rem;
-    }
+  .divider {
+    width: 1px;
+    height: 1.8rem;
+    background-color: var(--color-border-muted);
   }
 
-  #layout-button {
-    border: none;
-    height: 3.5rem;
-    width: 3.5rem;
-    cursor: pointer;
-    color: #687076;
-    border-radius: 0.6rem;
-    background-color: transparent;
-    transition:
-      color 0.15s ease,
-      background-color 0.15s ease;
+  .picker__choices label {
+    background-color: var(--color-canvas-default);
+    background-position: center;
+    background-repeat: no-repeat;
 
-    &:hover {
-      color: var(--color-neutral);
-      background-color: rgba(255, 255, 255, 0.06);
+    .symbol {
+      width: 60%;
+      height: 60%;
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+      mask-position: center;
+      -webkit-mask-position: center;
     }
 
-    span {
-      font-size: 1.8rem;
-    }
-  }
-
-  #layout-choices {
-    height: 100%;
-    width: fit-content;
-    gap: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    align-items: center;
-
-    border-right: none;
-    border-top-left-radius: 0.6rem;
-    border-bottom-left-radius: 0.6rem;
-
-    &[data-visible='true'] {
-      border-right: 1px solid var(--color-border);
-    }
-
-    input {
-      display: none;
-    }
-
-    label {
-      height: 2.5rem;
-      aspect-ratio: 1/1;
-      border-radius: 0.6rem;
-      cursor: pointer;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1rem;
-      filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.15));
-      background-color: darkgray;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-color: var(--color-canvas-default);
-      transition:
-        transform 0.15s ease,
-        filter 0.15s ease;
-
-      &:hover {
-        transform: scale(1.1);
-        filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-      }
-
-      &:active {
-        transform: scale(0.95);
-      }
-
+    &[for='win'] {
       .symbol {
-        width: 60%;
-        height: 60%;
-        -webkit-mask-size: 100%;
-        mask-size: 100%;
-        mask-position: center;
-        -webkit-mask-position: center;
+        background-color: var(--color-text-secondary);
+        -webkit-mask-image: url(/images/win.svg);
+        mask-image: url(/images/win.svg);
       }
+    }
+    &[for='mac'] {
+      .symbol {
+        background-color: var(--color-text-secondary);
+        -webkit-mask-image: url(/images/mac.svg);
+        mask-image: url(/images/mac.svg);
+      }
+    }
 
-      &[for='win'] {
-        .symbol {
-          background-color: var(--color-text-secondary);
-          -webkit-mask-image: url(/images/win.svg);
-          mask-image: url(/images/win.svg);
-        }
+    &[for='de'] {
+      .symbol {
+        background-image: url(/images/de.svg);
       }
-      &[for='mac'] {
-        .symbol {
-          background-color: var(--color-text-secondary);
-          -webkit-mask-image: url(/images/mac.svg);
-          mask-image: url(/images/mac.svg);
-        }
-      }
-
-      &[for='de'] {
-        .symbol {
-          background-image: url(/images/de.svg);
-        }
-      }
-      &[for='us'] {
-        .symbol {
-          background-image: url(/images/us.svg);
-        }
+    }
+    &[for='us'] {
+      .symbol {
+        background-image: url(/images/us.svg);
       }
     }
   }
