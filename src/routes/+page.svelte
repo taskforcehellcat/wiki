@@ -111,7 +111,7 @@
 
   .home {
     position: relative;
-    padding-top: 15rem;
+    padding-top: 8%;
     width: 100%;
     min-height: 100%;
     height: fit-content;
