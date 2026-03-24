@@ -666,6 +666,11 @@ footer {
       outline-offset: 2px;
     }
 
+    input:checked + label {
+      outline: 2px solid var(--color-text-muted);
+      outline-offset: 1px;
+    }
+
     label {
       height: 2.5rem;
       aspect-ratio: 1/1;
