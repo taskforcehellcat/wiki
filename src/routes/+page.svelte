@@ -33,7 +33,7 @@
     query = '';
   });
 
-  let homeEl: HTMLDivElement;
+  let homeEl: HTMLElement;
   let homeTopEl: HTMLDivElement;
   let searchEl: HTMLDivElement;
   let homeNavEl: HTMLDivElement;
@@ -74,7 +74,7 @@
       <ThemePicker location="article" />
       <LayoutPicker location="article" />
     </div>
-    <div
+    <main
       class="home"
       id="main-content"
       style="padding-top: {paddingTop}px"
@@ -129,7 +129,7 @@
           <TreeView menu={data.menu} />
         </div>
       {/if}
-    </div>
+    </main>
   </div>
 {/if}
 
