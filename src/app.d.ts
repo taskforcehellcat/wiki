@@ -41,6 +41,19 @@ export type Article = {
   html: string;
 };
 
+export type TreeItem = {
+  id: string;
+  label: string;
+  href?: string;
+  children?: TreeLeaf[];
+};
+
+export type TreeLeaf = {
+  id: string;
+  label: string;
+  href: string;
+};
+
 // FIXME you should be able to get this dynamically...
 import type { Component } from 'svelte';
 type ArticleFile = {

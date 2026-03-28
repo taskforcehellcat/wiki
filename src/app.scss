@@ -510,6 +510,28 @@ content {
       }
     }
   }
+
+  &__link {
+    list-style: none;
+
+    &:focus {
+      outline: none;
+
+      > a {
+        outline: 2px solid var(--color-focus-ring, currentColor);
+        outline-offset: 2px;
+        border-radius: 0.2rem;
+      }
+    }
+
+    a {
+      transition: color 0.2s ease-out;
+
+      &:hover {
+        color: var(--color-nav-hover);
+      }
+    }
+  }
 }
 
 .material-icons-round {
@@ -592,6 +614,7 @@ input {
     display: none;
     flex-direction: column;
     align-items: center;
+    text-align: left;
     gap: 2rem;
     font-size: 18pt;
     font-weight: 500;
@@ -602,7 +625,6 @@ input {
     z-index: 98;
     width: 100%;
     top: 8rem;
-    text-align: center;
     overflow-y: auto;
 
     a {
@@ -846,11 +868,9 @@ footer {
   }
 }
 
-
 @media only screen and (max-width: 800px) {
-  .tree-view:not(.home__nav > .tree-view),
-  .nav__return,
-  .search {
+  .tree-view:not(.home__nav > .tree-view):not(.nav__overlay .tree-view),
+  .nav__return {
     display: none !important;
   }
 }

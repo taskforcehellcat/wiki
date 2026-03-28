@@ -17,7 +17,19 @@
   let rawInput = '';
   let query: string; // holds the query
   let showResults: boolean; // whether the search bar is currently in use
+  import { resolve } from '$app/paths';
+
   let search = new Search(data.posts, data.menu);
+
+  $: wikiItems = data.menu.map((dir) => ({
+    id: dir.id,
+    label: dir.config.title,
+    children: dir.entries.map((article) => ({
+      id: article.id,
+      label: article.meta.title_short || article.meta.title,
+      href: resolve(`/${dir.id}/${article.id}`)
+    }))
+  }));
 
   $: query = rawInput.trim();
   $: $searchInUse = query.length > 0;
@@ -126,7 +138,7 @@
 
       {#if !$searchInUse}
         <div class="home__nav" bind:this={homeNavEl}>
-          <TreeView menu={data.menu} />
+          <TreeView items={wikiItems} />
         </div>
       {/if}
     </main>

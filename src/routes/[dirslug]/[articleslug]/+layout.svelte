@@ -24,28 +24,36 @@
   import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
   import type { LayoutData } from './$types';
 
-  type Anchor = {
-    text: string;
-    link: string;
-  };
+  import type { TreeItem } from '../../../app';
 
   let isOpen = false;
-  let anchors: Array<Anchor> = [];
+  let anchorItems: TreeItem[] = [];
 
   afterUpdate(() => {
-    let tempAnchors: Array<Anchor> = [];
     if (browser) {
+      const items: TreeItem[] = [];
       document.querySelectorAll('h2').forEach((element) => {
-        tempAnchors.push({
-          text: element.innerText,
-          link: '#' + element.id
+        items.push({
+          id: '#' + element.id,
+          label: element.innerText,
+          href: '#' + element.id
         });
       });
-      anchors = tempAnchors;
+      anchorItems = items;
     }
   });
 
   export let data: LayoutData;
+
+  $: wikiItems = data.menu.map((dir) => ({
+    id: dir.id,
+    label: dir.config.title,
+    children: dir.entries.map((article) => ({
+      id: article.id,
+      label: article.meta.title_short || article.meta.title,
+      href: resolve(`/${dir.id}/${article.id}`)
+    }))
+  }));
 </script>
 
 <Popup />
@@ -55,7 +63,11 @@
     <div class="wiki">
       <nav class="nav__sidebar" aria-label="Seitennavigation">
         <a href={resolve('/')} class="nav__logo">
-          <img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" width="179" height="30" />
+          <img
+            src="/images/tfhcwiki_short.svg"
+            alt="TFHC Wiki"
+            width="179"
+            height="30" />
         </a>
 
         <button
@@ -73,23 +85,15 @@
         </button>
 
         <!-- navigation items -->
-        {#if anchors.length > 0}
+        {#if anchorItems.length > 0}
           <div class="nav__list-title">navigation</div>
           <div class="nav__list-wrapper">
-            <div class="nav__list-bar">
-              <!-- <div id="nav__list-bar-thumb" /> -->
-            </div>
-
-            <div class="wiki-nav__list">
-              {#each anchors as anchor (anchor.link)}
-                <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-                <a href={anchor.link}>{anchor.text}</a>
-              {/each}
-            </div>
+            <div class="nav__list-bar"></div>
+            <TreeView items={anchorItems} />
           </div>
         {/if}
         <div class="nav__list-title">wiki</div>
-        <TreeView menu={data.menu} />
+        <TreeView items={wikiItems} />
         <a href={resolve('/')} class="nav__return">Zurück</a>
       </nav>
 
@@ -99,12 +103,18 @@
         class:nav__overlay--show={isOpen}
         aria-label="Mobile Navigation"
         aria-hidden={!isOpen}>
-        {#each anchors as anchor (anchor.link)}
-          <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-          <a href={anchor.link} on:click={() => (isOpen = !isOpen)}>
-            {anchor.text}
-          </a>
-        {/each}
+        {#if anchorItems.length > 0}
+          <div class="nav__overlay-group">
+            <div class="nav__overlay-title">navigation</div>
+            <TreeView
+              items={anchorItems}
+              onLinkClick={() => (isOpen = false)} />
+          </div>
+        {/if}
+        <div class="nav__overlay-group">
+          <div class="nav__overlay-title">wiki</div>
+          <TreeView items={wikiItems} onLinkClick={() => (isOpen = false)} />
+        </div>
       </nav>
 
       <div class="info-bar">
@@ -278,13 +288,14 @@
     border-radius: 1px;
   }
 
-  .wiki-nav__list {
-    display: flex;
+  .nav__list-wrapper :global(.tree-view) {
     gap: 20px;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 0.8rem 0 0.8rem 0;
+    padding: 0.8rem 0;
     font-size: 0.95em;
+  }
+
+  .nav__overlay-group :global(.tree-view) {
+    gap: 2rem;
   }
 
   .nav__sidebar {
@@ -381,5 +392,19 @@
         display: flex;
       }
     }
+  }
+
+  .nav__overlay-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .nav__overlay-title {
+    color: var(--color-neutral);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.65em;
+    letter-spacing: 0.15rem;
   }
 </style>

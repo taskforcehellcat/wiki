@@ -1,9 +1,10 @@
 <script lang="ts">
-  import type { Article, Directory } from '../../app';
-  import { resolve } from '$app/paths';
+  import type { TreeItem } from '../../app';
   import { page } from '$app/state';
 
-  export let menu: Array<Directory> = [];
+  export let items: TreeItem[] = [];
+  export let onLinkClick: (() => void) | undefined = undefined;
+
   let expandedId: string | null = null;
   let focusedId: string | null = null;
 
@@ -13,11 +14,11 @@
 
   function visibleIds(): string[] {
     const ids: string[] = [];
-    for (const dir of menu) {
-      ids.push(dir.id);
-      if (expandedId === dir.id) {
-        for (const article of dir.entries) {
-          ids.push(`${dir.id}/${article.id}`);
+    for (const item of items) {
+      ids.push(item.id);
+      if (item.children && expandedId === item.id) {
+        for (const child of item.children) {
+          ids.push(`${item.id}/${child.id}`);
         }
       }
     }
@@ -28,10 +29,6 @@
     expandedId = expandedId === id ? null : id;
   }
 
-  function shortName(article: Article) {
-    return article.meta.title_short || article.meta.title;
-  }
-
   function focusItem(id: string) {
     focusedId = id;
     document
@@ -39,14 +36,26 @@
       ?.focus();
   }
 
-  function handleDirKeydown(e: KeyboardEvent, dir: Directory) {
+  function handleItemKeydown(e: KeyboardEvent, item: TreeItem) {
     const ids = visibleIds();
-    const idx = ids.indexOf(dir.id);
+    const idx = ids.indexOf(item.id);
+
     switch (e.key) {
       case 'Enter':
-      case ' ':
         e.preventDefault();
-        toggle(dir.id);
+        if (item.children) {
+          toggle(item.id);
+        } else {
+          (e.currentTarget as HTMLElement)
+            .querySelector<HTMLAnchorElement>('a')
+            ?.click();
+        }
+        break;
+      case ' ':
+        if (item.children) {
+          e.preventDefault();
+          toggle(item.id);
+        }
         break;
       case 'ArrowDown':
         e.preventDefault();
@@ -57,16 +66,20 @@
         if (idx > 0) focusItem(ids[idx - 1]);
         break;
       case 'ArrowRight':
-        e.preventDefault();
-        if (expandedId !== dir.id) {
-          expandedId = dir.id;
-        } else if (dir.entries.length > 0) {
-          focusItem(`${dir.id}/${dir.entries[0].id}`);
+        if (item.children) {
+          e.preventDefault();
+          if (expandedId !== item.id) {
+            expandedId = item.id;
+          } else if (item.children.length > 0) {
+            focusItem(`${item.id}/${item.children[0].id}`);
+          }
         }
         break;
       case 'ArrowLeft':
-        e.preventDefault();
-        if (expandedId === dir.id) expandedId = null;
+        if (item.children) {
+          e.preventDefault();
+          if (expandedId === item.id) expandedId = null;
+        }
         break;
       case 'Home':
         e.preventDefault();
@@ -81,13 +94,13 @@
 
   function handleLeafKeydown(
     e: KeyboardEvent,
-    dir: Directory,
-    article: Article
+    item: TreeItem,
+    child: { id: string }
   ) {
     e.stopPropagation();
-    const itemId = `${dir.id}/${article.id}`;
+    const childId = `${item.id}/${child.id}`;
     const ids = visibleIds();
-    const idx = ids.indexOf(itemId);
+    const idx = ids.indexOf(childId);
     switch (e.key) {
       case 'Enter':
         e.preventDefault();
@@ -105,7 +118,7 @@
         break;
       case 'ArrowLeft':
         e.preventDefault();
-        focusItem(dir.id);
+        focusItem(item.id);
         break;
       case 'Home':
         e.preventDefault();
@@ -120,50 +133,68 @@
 
   function tabindexFor(id: string): 0 | -1 {
     if (focusedId !== null) return focusedId === id ? 0 : -1;
-    return menu[0]?.id === id ? 0 : -1;
+    return items[0]?.id === id ? 0 : -1;
   }
 </script>
 
 <ul role="tree" class="tree-view">
-  {#each menu as dir (dir.id)}
-    <li
-      role="treeitem"
-      aria-expanded={expandedId === dir.id}
-      aria-selected={focusedId === dir.id}
-      tabindex={tabindexFor(dir.id)}
-      data-treeid={dir.id}
-      class="tree-view__item"
-      class:tree-view__item--open={expandedId === dir.id}
-      on:keydown={(e) => handleDirKeydown(e, dir)}
-      on:focus={() => (focusedId = dir.id)}>
-      <button on:click={() => toggle(dir.id)} tabindex="-1">
-        {dir.config.title}
-        <i class="material-icons-round noselect" aria-hidden="true">
-          expand_more
-        </i>
-      </button>
-      {#if expandedId === dir.id}
-        <ul role="group" class="tree-view__group">
-          {#each dir.entries as article (article.id)}
-            <li
-              role="treeitem"
-              aria-selected={focusedId === `${dir.id}/${article.id}`}
-              tabindex={tabindexFor(`${dir.id}/${article.id}`)}
-              data-treeid={`${dir.id}/${article.id}`}
-              class="tree-view__leaf"
-              on:keydown={(e) => handleLeafKeydown(e, dir, article)}
-              on:focus={() => (focusedId = `${dir.id}/${article.id}`)}>
-              <a
-                href={resolve(`/${dir.id}/${article.id}`)}
-                tabindex="-1"
-                class:active={page.params?.dirslug === dir.id &&
-                  page.params?.articleslug === article.id}>
-                {shortName(article)}
-              </a>
-            </li>
-          {/each}
-        </ul>
-      {/if}
-    </li>
+  {#each items as item (item.id)}
+    {#if item.children}
+      <li
+        role="treeitem"
+        aria-expanded={expandedId === item.id}
+        aria-selected={focusedId === item.id}
+        tabindex={tabindexFor(item.id)}
+        data-treeid={item.id}
+        class="tree-view__item"
+        class:tree-view__item--open={expandedId === item.id}
+        on:keydown={(e) => handleItemKeydown(e, item)}
+        on:focus={() => (focusedId = item.id)}>
+        <button on:click={() => toggle(item.id)} tabindex="-1">
+          {item.label}
+          <i class="material-icons-round noselect" aria-hidden="true">
+            expand_more
+          </i>
+        </button>
+        {#if expandedId === item.id}
+          <ul role="group" class="tree-view__group">
+            {#each item.children as child (child.id)}
+              <li
+                role="treeitem"
+                aria-selected={focusedId === `${item.id}/${child.id}`}
+                tabindex={tabindexFor(`${item.id}/${child.id}`)}
+                data-treeid={`${item.id}/${child.id}`}
+                class="tree-view__leaf"
+                on:keydown={(e) => handleLeafKeydown(e, item, child)}
+                on:focus={() => (focusedId = `${item.id}/${child.id}`)}>
+                <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+                <a
+                  href={child.href}
+                  tabindex="-1"
+                  class:active={page.params?.dirslug === item.id &&
+                    page.params?.articleslug === child.id}
+                  on:click={onLinkClick}>
+                  {child.label}
+                </a>
+              </li>
+            {/each}
+          </ul>
+        {/if}
+      </li>
+    {:else}
+      <li
+        role="treeitem"
+        aria-selected={focusedId === item.id}
+        tabindex={tabindexFor(item.id)}
+        data-treeid={item.id}
+        class="tree-view__link"
+        on:keydown={(e) => handleItemKeydown(e, item)}
+        on:focus={() => (focusedId = item.id)}>
+        <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
+        <a href={item.href} tabindex="-1" on:click={onLinkClick}>
+          {item.label}
+        </a>
+      </li>
+    {/if}
   {/each}
 </ul>
