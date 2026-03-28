@@ -188,7 +188,7 @@
     }
 
     &.errortext {
-      color: var(--color-error);
+      color: var(--color-warning-text);
 
       display: flex;
       justify-content: center;

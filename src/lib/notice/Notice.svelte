@@ -68,27 +68,27 @@
   }
 
   .notice--info {
-    background-color: var(--callout-info-bg);
-    border-color: var(--callout-info-border);
-    color: var(--callout-info-text);
+    background-color: var(--color-info-bg);
+    border-color: var(--color-info-border);
+    color: var(--color-info-text);
   }
 
   .notice--warning {
-    background-color: var(--callout-warning-bg);
-    border-color: var(--callout-warning-border);
-    color: var(--callout-warning-text);
+    background-color: var(--color-warning-bg);
+    border-color: var(--color-warning-border);
+    color: var(--color-warning-text);
   }
 
   .notice--error {
-    background-color: var(--callout-error-bg);
-    border-color: var(--callout-error-border);
-    color: var(--callout-error-text);
+    background-color: var(--color-error-bg);
+    border-color: var(--color-error-border);
+    color: var(--color-error-text);
   }
 
   .notice--success {
-    background-color: var(--callout-success-bg);
-    border-color: var(--callout-success-border);
-    color: var(--callout-success-text);
+    background-color: var(--color-success-bg);
+    border-color: var(--color-success-border);
+    color: var(--color-success-text);
   }
 
   .notice__content {
@@ -110,19 +110,19 @@
   }
 
   .notice--info .callout__close:hover {
-    background-color: var(--callout-info-hover);
+    background-color: var(--color-info-hover);
   }
 
   .notice--warning .callout__close:hover {
-    background-color: var(--callout-warning-hover);
+    background-color: var(--color-warning-hover);
   }
 
   .notice--error .callout__close:hover {
-    background-color: var(--callout-error-hover);
+    background-color: var(--color-error-hover);
   }
 
   .notice--success .callout__close:hover {
-    background-color: var(--callout-success-hover);
+    background-color: var(--color-success-hover);
   }
 
   .notice__close svg {
