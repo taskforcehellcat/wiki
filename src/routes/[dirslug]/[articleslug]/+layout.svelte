@@ -55,7 +55,7 @@
     <div class="wiki">
       <nav class="nav__sidebar" aria-label="Seitennavigation">
         <a href={resolve('/')} class="nav__logo">
-          <img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" />
+          <img src="/images/tfhcwiki_short.svg" alt="TFHC Wiki" width="179" height="30" />
         </a>
 
         <button

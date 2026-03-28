@@ -14,7 +14,7 @@ _Hinweis:_ Unsere Einheit befindet sich in der Entwicklung. Daher können sich S
 
 ## Organisation
 
-Die Organisation unserer Einheit findet auf unserem <a href="https://discord.taskforcehellcat.de/" class="no-underline"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" alt="Shields.io Grafik mit Link zu unserem Discord" style="vertical-align: middle;"/></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Updates zum Modpack, Anmeldungen zu Ausbildungen und vieles mehr. Fragen jeglicher Art können dort gestellt werden.
+Die Organisation unserer Einheit findet auf unserem <a href="https://discord.taskforcehellcat.de/" class="no-underline"><img src="https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord" alt="Shields.io Grafik mit Link zu unserem Discord" style="vertical-align: middle;" width="123" height="20"/></a> statt. Nachdem unser Regelwerk gelesen und akzeptiert wurde, freuen wir uns über einen Beitritt zu unserem Discord Server. Dort erfolgen Eventankündigungen, Wahlen, Updates zum Modpack, Anmeldungen zu Ausbildungen und vieles mehr. Fragen jeglicher Art können dort gestellt werden.
 
 ## Voraussetzungen
 
