@@ -2,6 +2,7 @@
 <script lang="ts">
   export let data;
 
+  import { onMount } from 'svelte';
   import '../app.scss';
   import ThemePicker from '$lib/pickers/ThemePicker.svelte';
   import LayoutPicker from '$lib/pickers/LayoutPicker.svelte';
@@ -31,6 +32,35 @@
     // reset the query when leaving the site
     query = '';
   });
+
+  let homeEl: HTMLDivElement;
+  let homeTopEl: HTMLDivElement;
+  let searchEl: HTMLDivElement;
+  let homeNavEl: HTMLDivElement;
+
+  let initialNavHeight = 0;
+  let paddingTop = 0;
+
+  function updatePadding() {
+    if (!homeEl || !homeTopEl || !searchEl || initialNavHeight === 0) return;
+    const gap = parseFloat(getComputedStyle(homeEl).gap) || 0;
+    const contentHeight =
+      homeTopEl.offsetHeight +
+      searchEl.offsetHeight +
+      initialNavHeight +
+      gap * 2;
+    paddingTop = Math.max(0, (window.innerHeight - contentHeight) / 2);
+  }
+
+  $: if ($searchInUse) paddingTop = 0;
+  $: if (!$searchInUse && initialNavHeight > 0) updatePadding();
+
+  onMount(() => {
+    initialNavHeight = homeNavEl?.offsetHeight ?? 0;
+    updatePadding();
+    window.addEventListener('resize', updatePadding);
+    return () => window.removeEventListener('resize', updatePadding);
+  });
 </script>
 
 <svelte:head>
@@ -44,8 +74,12 @@
       <ThemePicker location="article" />
       <LayoutPicker location="article" />
     </div>
-    <div class="home" id="main-content">
-      <div class="home__top">
+    <div
+      class="home"
+      id="main-content"
+      style="padding-top: {paddingTop}px"
+      bind:this={homeEl}>
+      <div class="home__top" bind:this={homeTopEl}>
         <a class="home__link" href="https://taskforcehellcat.de/">
           <span class="material-icons-round" aria-hidden="true">
             chevron_left
@@ -59,7 +93,7 @@
       </div>
 
       <!-- search bar -->
-      <div class="search">
+      <div class="search" bind:this={searchEl}>
         <div class="search__bar" class:search__bar--open={$searchInUse}>
           <span class="material-icons-round noselect">search</span>
           <input
@@ -91,7 +125,7 @@
       </div>
 
       {#if !$searchInUse}
-        <div class="home__nav">
+        <div class="home__nav" bind:this={homeNavEl}>
           <TreeView menu={data.menu} />
         </div>
       {/if}
@@ -111,7 +145,6 @@
 
   .home {
     position: relative;
-    padding-top: 8%;
     width: 100%;
     min-height: 100%;
     height: fit-content;
@@ -121,7 +154,6 @@
     align-items: center;
     color: var(--color-text-muted);
     gap: 4rem;
-    padding-bottom: 6rem;
   }
 
   .home__logo {
