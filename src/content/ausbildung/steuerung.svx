@@ -30,7 +30,7 @@ nav_index: 6
 
 </style>
 
-_Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener Waffe eingenommen werden. Diese sind mit &Dagger gekennzeichnet.
+_Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener Waffe eingenommen werden. Diese sind mit <sup>&dagger;</sup> gekennzeichnet.
 
 ## Allgemein
 
@@ -58,21 +58,21 @@ _Hinweis:_ Manche Laufgeschwindigkeiten oder Haltungen können nur mit gezogener
 
 ## Zu Fuß
 
-| Aktion                                                                                                  | Tastenbelegung                                                                |
-| ------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
-| Bewegen                                                                                                 | <Keys keys="W" /> / <Keys keys="A" /> / <Keys keys="S" /> / <Keys keys="D" /> |
-| Lehnen                                                                                                  | <Keys keys="Q" /> / <Keys keys="E" />                                         |
-| Hocken                                                                                                  | <Keys keys="X" />                                                             |
-| Hinlegen                                                                                                | <Keys keys="Y" />                                                             |
-| Wechsel Marsch / Marsch Marsch                                                                          | <Keys keys="CTRL" /> + <Keys keys="C" />                                      |
-| <Tooltip text="nur mit gezogener Waffe möglich">Wechsel langsam/schnell Marsch Marsch &Dagger</Tooltip> | 2x <Keys keys="C" />                                                          |
-| <Tooltip text="nur mit gezogener Waffe möglich">Haltung anpassen &Dagger</Tooltip>                      | <Keys keys="CTRL" /> + <Keys keys="W,A,S,D" />                                |
-| Sprung (Sprint)                                                                                         | <Keys keys="SHIFT" /> + <Keys keys="W" />                                     |
-| Übersteigen                                                                                             | <Keys keys="V" />                                                             |
-| Klettern                                                                                                | <Keys keys="SHIFT" /> + <Keys keys="V" />                                     |
-| Hinsetzen                                                                                               | <Keys keys="Ä" />                                                             |
-| Salutieren                                                                                              | <Keys keys="#" />                                                             |
-| Verschiedene Gesten                                                                                     | <Keys keys="CTRL" /> + <Keys keys="NUMPAD" />                                 |
+| Aktion                                                                                                              | Tastenbelegung                                                                |
+| ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Bewegen                                                                                                             | <Keys keys="W" /> / <Keys keys="A" /> / <Keys keys="S" /> / <Keys keys="D" /> |
+| Lehnen                                                                                                              | <Keys keys="Q" /> / <Keys keys="E" />                                         |
+| Hocken                                                                                                              | <Keys keys="X" />                                                             |
+| Hinlegen                                                                                                            | <Keys keys="Y" />                                                             |
+| Wechsel Marsch / Marsch Marsch                                                                                      | <Keys keys="CTRL" /> + <Keys keys="C" />                                      |
+| <Tooltip text="nur mit gezogener Waffe möglich">Wechsel langsam/schnell Marsch Marsch <sup>&dagger;</sup></Tooltip> | 2x <Keys keys="C" />                                                          |
+| <Tooltip text="nur mit gezogener Waffe möglich">Haltung anpassen <sup>&dagger;</sup></Tooltip>                      | <Keys keys="CTRL" /> + <Keys keys="W,A,S,D" />                                |
+| Sprung (Sprint)                                                                                                     | <Keys keys="SHIFT" /> + <Keys keys="W" />                                     |
+| Übersteigen                                                                                                         | <Keys keys="V" />                                                             |
+| Klettern                                                                                                            | <Keys keys="SHIFT" /> + <Keys keys="V" />                                     |
+| Hinsetzen                                                                                                           | <Keys keys="Ä" />                                                             |
+| Salutieren                                                                                                          | <Keys keys="#" />                                                             |
+| Verschiedene Gesten                                                                                                 | <Keys keys="CTRL" /> + <Keys keys="NUMPAD" />                                 |
 
 ## Waffen
 
