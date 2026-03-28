@@ -106,23 +106,23 @@
     display: flex;
     align-items: center;
     border-radius: 0.3rem;
-    transition: background-color 0.15s ease;
+    transition: color 0.15s ease;
   }
 
-  .notice--info .callout__close:hover {
-    background-color: var(--color-info-hover);
+  .notice--info .notice__close:hover {
+    color: var(--color-info-hover);
   }
 
-  .notice--warning .callout__close:hover {
-    background-color: var(--color-warning-hover);
+  .notice--warning .notice__close:hover {
+    color: var(--color-warning-hover);
   }
 
-  .notice--error .callout__close:hover {
-    background-color: var(--color-error-hover);
+  .notice--error .notice__close:hover {
+    color: var(--color-error-hover);
   }
 
-  .notice--success .callout__close:hover {
-    background-color: var(--color-success-hover);
+  .notice--success .notice__close:hover {
+    color: var(--color-success-hover);
   }
 
   .notice__close svg {

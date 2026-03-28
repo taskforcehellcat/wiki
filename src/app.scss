@@ -81,6 +81,56 @@ a[href]:not(:where(
   }
 }
 
+:root {
+  --color-red-50: oklch(97.1% 0.013 17.38);
+  --color-red-100: oklch(93.6% 0.032 17.717);
+  --color-red-200: oklch(88.5% 0.062 18.334);
+  --color-red-300: oklch(80.8% 0.114 19.571);
+  --color-red-400: oklch(70.4% 0.191 22.216);
+  --color-red-500: oklch(63.7% 0.237 25.331);
+  --color-red-600: oklch(57.7% 0.245 27.325);
+  --color-red-700: oklch(50.5% 0.213 27.518);
+  --color-red-800: oklch(44.4% 0.177 26.899);
+  --color-red-900: oklch(39.6% 0.141 25.723);
+  --color-red-950: oklch(25.8% 0.092 26.042);
+
+  --color-yellow-50: oklch(98.7% 0.026 102.212);
+  --color-yellow-100: oklch(97.3% 0.071 103.193);
+  --color-yellow-200: oklch(94.5% 0.129 101.54);
+  --color-yellow-300: oklch(90.5% 0.182 98.111);
+  --color-yellow-400: oklch(85.2% 0.199 91.936);
+  --color-yellow-500: oklch(79.5% 0.184 86.047);
+  --color-yellow-600: oklch(68.1% 0.162 75.834);
+  --color-yellow-700: oklch(55.4% 0.135 66.442);
+  --color-yellow-800: oklch(47.6% 0.114 61.907);
+  --color-yellow-900: oklch(42.1% 0.095 57.708);
+  --color-yellow-950: oklch(28.6% 0.066 53.813);
+
+  --color-green-50: oklch(98.2% 0.018 155.826);
+  --color-green-100: oklch(96.2% 0.044 156.743);
+  --color-green-200: oklch(92.5% 0.084 155.995);
+  --color-green-300: oklch(87.1% 0.15 154.449);
+  --color-green-400: oklch(79.2% 0.209 151.711);
+  --color-green-500: oklch(72.3% 0.219 149.579);
+  --color-green-600: oklch(62.7% 0.194 149.214);
+  --color-green-700: oklch(52.7% 0.154 150.069);
+  --color-green-800: oklch(44.8% 0.119 151.328);
+  --color-green-900: oklch(39.3% 0.095 152.535);
+  --color-green-950: oklch(26.6% 0.065 152.934);
+
+  --color-blue-50: oklch(97% 0.014 254.604);
+  --color-blue-100: oklch(93.2% 0.032 255.585);
+  --color-blue-200: oklch(88.2% 0.059 254.128);
+  --color-blue-300: oklch(80.9% 0.105 251.813);
+  --color-blue-400: oklch(70.7% 0.165 254.624);
+  --color-blue-500: oklch(62.3% 0.214 259.815);
+  --color-blue-600: oklch(54.6% 0.245 262.881);
+  --color-blue-700: oklch(48.8% 0.243 264.376);
+  --color-blue-800: oklch(42.4% 0.199 265.638);
+  --color-blue-900: oklch(37.9% 0.146 265.522);
+  --color-blue-950: oklch(28.2% 0.091 267.935);
+}
+
 @mixin theme-light {
   --color-surface: #fff;
   --color-bg-primary: #101b3b;
@@ -107,25 +157,33 @@ a[href]:not(:where(
   --color-scrollbar-hover: #a8bbbf;
   --color-focus-ring: rgba(67, 106, 223, 0.5);
 
-  --color-error-bg: #f8d7da;
-  --color-error-border: #f5c2c7;
-  --color-error-hover: #f8d7da;
-  --color-error-text: #842029;
+  --color-error-bg: var(--color-red-50);
+  --color-error-border: var(--color-red-100);
+  --color-error-hover: var(--color-red-900);
+  --color-error-title: var(--color-red-800);
+  --color-error-text: var(--color-red-700);
+  --color-error-icon: var(--color-red-400);
 
-  --color-info-bg: #fefefe;
-  --color-info-border: #fdfdfe;
-  --color-info-hover: #fefefe;
-  --color-info-text: #636464;
+  --color-info-bg: var(--color-blue-50);
+  --color-info-border: var(--color-blue-100);
+  --color-info-hover: var(--color-blue-900);
+  --color-info-title: var(--color-blue-800);
+  --color-info-text: var(--color-blue-700);
+  --color-info-icon: var(--color-blue-400);
 
-  --color-success-bg: #d1e7dd;
-  --color-success-border: #badbcc;
-  --color-success-hover: #d1e7dd;
-  --color-success-text: #0f5132;
+  --color-success-bg: var(--color-green-50);
+  --color-success-border: var(--color-green-100);
+  --color-success-hover: var(--color-green-900);
+  --color-success-title: var(--color-green-800);
+  --color-success-text: var(--color-green-700);
+  --color-success-icon: var(--color-green-400);
 
-  --color-warning-bg: #fff3cd;
-  --color-warning-border: #ffecb5;
-  --color-warning-hover: #fff3cd;
-  --color-warning-text: #664d03;
+  --color-warning-bg: var(--color-yellow-50);
+  --color-warning-border: var(--color-yellow-100);
+  --color-warning-hover: var(--color-yellow-900);
+  --color-warning-title: var(--color-yellow-800);
+  --color-warning-text: var(--color-yellow-700);
+  --color-warning-icon: var(--color-yellow-400);
 
   @include markdown.markdown-vars-light;
 }
@@ -156,25 +214,33 @@ a[href]:not(:where(
   --color-scrollbar-hover: #686868;
   --color-focus-ring: rgba(147, 162, 207, 0.4);
 
-  --color-error-bg: #f8d7da;
-  --color-error-border: #f5c2c7;
-  --color-error-hover: #f8d7da;
-  --color-error-text: #842029;
+  --color-error-bg: oklch(from var(--color-red-500) l c h / 0.15);
+  --color-error-border: oklch(from var(--color-red-500) l c h / 0.25);
+  --color-error-hover: oklch(from var(--color-red-500) l c h / 0.15);
+  --color-error-title: var(--color-red-200);
+  --color-error-text: var(--color-red-300);
+  --color-error-icon: var(--color-red-400);
 
-  --color-info-bg: #fefefe;
-  --color-info-border: #fdfdfe;
-  --color-info-hover: #fefefe;
-  --color-info-text: #636464;
+  --color-info-bg: oklch(from var(--color-blue-500) l c h / 0.1);
+  --color-info-border: oklch(from var(--color-blue-500) l c h / 0.2);
+  --color-info-hover: oklch(from var(--color-blue-500) l c h / 0.1);
+  --color-info-title: var(--color-blue-200);
+  --color-info-text: var(--color-blue-300);
+  --color-info-icon: var(--color-blue-400);
 
-  --color-success-bg: #d1e7dd;
-  --color-success-border: #badbcc;
-  --color-success-hover: #d1e7dd;
-  --color-success-text: #0f5132;
+  --color-success-bg: oklch(from var(--color-green-500) l c h / 0.1);
+  --color-success-border: oklch(from var(--color-green-500) l c h / 0.2);
+  --color-success-hover: oklch(from var(--color-green-600) l c h / 0.1);
+  --color-success-title: var(--color-green-200);
+  --color-success-text: var(--color-green-300);
+  --color-success-icon: var(--color-green-400);
 
-  --color-warning-bg: #fff3cd;
-  --color-warning-border: #ffecb5;
-  --color-warning-hover: #fff3cd;
-  --color-warning-text: #664d03;
+  --color-warning-bg: oklch(from var(--color-yellow-500) l c h / 0.1);
+  --color-warning-border: oklch(from var(--color-yellow-500) l c h / 0.15);
+  --color-warning-hover: oklch(from var(--color-yellow-500) l c h / 0.1);
+  --color-warning-title: var(--color-yellow-200);
+  --color-warning-text: var(--color-yellow-300);
+  --color-warning-icon: var(--color-yellow-400);
 
   @include markdown.markdown-vars-dark;
 }
@@ -283,7 +349,7 @@ h3 {
 
 content {
   width: 100%;
-  padding: 4.4rem 8rem 10rem;
+  padding: clamp(2rem, 5.5vw, 4.4rem) clamp(3rem, 10vw, 8rem) 10rem;
   color: var(--color-text-primary);
   background: var(--color-wiki-bg) !important;
   background-color: var(--color-bg-primary);
@@ -294,10 +360,6 @@ content {
     @media only screen and (max-width: 1200px) {
       text-align: left;
     }
-  }
-
-  @media only screen and (max-width: 800px) {
-    padding: 2rem 3rem 10rem;
   }
 }
 

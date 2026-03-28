@@ -219,6 +219,6 @@
   }
 
   .search__error {
-    color: var(--color-error);
+    color: var(--color-warning-text);
   }
 </style>
