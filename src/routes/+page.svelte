@@ -153,6 +153,7 @@
     flex-direction: column;
     align-items: center;
     color: var(--color-text-muted);
+    padding-inline: 2rem;
     gap: 4rem;
   }
 
@@ -171,9 +172,13 @@
     gap: 0.5rem;
   }
 
+  .search {
+    width: min(80rem, 100%);
+  }
+
   .search__bar {
     background-color: var(--color-bg-secondary);
-    width: 80rem;
+    width: 100%;
     height: 3rem;
     border-radius: 0.8rem;
     display: flex;
@@ -211,7 +216,7 @@
 
   .search__results {
     height: fit-content;
-    width: 80rem;
+    width: 100%;
     background-color: var(--color-bg-secondary);
     padding: 1rem 3.5rem 3.5rem 3.5rem;
     border-bottom-left-radius: 0.8rem;
