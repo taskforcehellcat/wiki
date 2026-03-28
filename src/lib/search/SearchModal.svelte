@@ -6,6 +6,7 @@
   import { Search } from '$lib/search/engine';
   import { searchInUse, searchResults } from '$lib/search/stores';
   import ResultsSection from '$lib/search/ResultsSection.svelte';
+  import Notice from '$lib/notice/Notice.svelte';
 
   let rawInput = '';
   let query: string; // holds the query
@@ -61,14 +62,12 @@
         <ResultsSection kind="heading" />
         <ResultsSection kind="text" />
       {:else}
-        <span class="search errortext">
-          <p>Es wurden keine Übereinstimmungen gefunden!</p>
-        </span>
+        <Notice type="warning">
+          Es wurden keine Übereinstimmungen gefunden!
+        </Notice>
       {/if}
     {:else}
-      <span class="search errortext">
-        <p>Bitte mindestens drei Zeichen eingeben!</p>
-      </span>
+      <Notice type="info">Bitte mindestens drei Zeichen eingeben!</Notice>
     {/if}
   </div>
 </div>
@@ -185,16 +184,6 @@
       &::-webkit-scrollbar {
         width: 0;
       }
-    }
-
-    &.errortext {
-      color: var(--color-warning-text);
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      height: 100%;
     }
   }
 
