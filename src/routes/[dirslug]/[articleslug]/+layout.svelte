@@ -211,7 +211,7 @@
   :global(p) {
     text-align: justify;
     display: inline-block;
-    font-size: 13pt;
+    font-size: var(--font-size-base);
     margin-bottom: 1.5rem;
     line-height: 1.65;
   }
@@ -237,24 +237,23 @@
   }
 
   :global(content h1) {
-    font-size: 2.4rem;
+    font-size: var(--font-size-h1);
     font-weight: 650;
     letter-spacing: -0.01em;
     margin-bottom: 0.5rem;
   }
 
   :global(content h2) {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     font-weight: 620;
     letter-spacing: -0.005em;
     margin-top: 3.5rem;
     margin-bottom: 1rem;
     padding-bottom: 0.4rem;
-    border-bottom: 1px solid var(--color-border-muted);
   }
 
   :global(content h3) {
-    font-size: 1.7rem;
+    font-size: var(--font-size-h3);
     font-weight: 590;
     margin-top: 2.5rem;
     margin-bottom: 0.75rem;
@@ -383,7 +382,7 @@
     overflow-y: auto;
     flex-direction: column;
     gap: 2rem;
-    font-size: 18pt;
+    font-size: var(--font-size-xl);
     font-weight: 500;
     color: var(--color-text-muted);
 
@@ -398,6 +397,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
   }
 
   .nav__overlay-title {

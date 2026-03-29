@@ -42,7 +42,7 @@
   }
 
   .error-page h1 {
-    font-size: 2rem;
+    font-size: var(--font-size-h2);
     font-weight: 620;
     margin-bottom: 0.5rem;
   }

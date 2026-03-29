@@ -36,7 +36,7 @@
 
     &:hover {
       background-color: var(--color-btn-hover-bg);
-      border-color: var(--color-text-muted);
+      border-color: var(--color-border);
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
     }
 
@@ -52,8 +52,8 @@
 
     .placeholder {
       display: inline-block;
-      color: #687076;
-      font-size: 10pt;
+      color: var(--color-text-muted);
+      font-size: var(--font-size-xs);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -68,7 +68,6 @@
         width: 1.5rem;
         font-family: 'Material Icons Round';
         font-size: 2.1rem;
-        color: #687076;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;

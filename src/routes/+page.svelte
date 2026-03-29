@@ -170,7 +170,7 @@
   }
 
   .home__logo {
-    font-size: 35pt;
+    font-size: var(--font-size-3xl);
     font-weight: 300;
     color: var(--color-neutral);
     text-align: center;
@@ -204,7 +204,7 @@
       box-shadow 0.2s ease;
 
     &:focus-within {
-      border-color: var(--color-text-muted);
+      border-color: var(--color-border);
     }
   }
 
@@ -212,12 +212,12 @@
     width: 100%;
     height: 24px;
     color: var(--color-text-muted);
-    font-size: 14pt;
+    font-size: var(--font-size-md);
     font-weight: 300;
   }
 
   .search__bar .material-icons-round {
-    font-size: 20pt;
+    font-size: var(--font-size-2xl);
     color: var(--color-text-muted);
   }
 

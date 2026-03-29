@@ -56,7 +56,7 @@
       }
 
       .material-icons-round {
-        font-size: 20pt;
+        font-size: var(--font-size-2xl);
         margin-right: -4px;
         transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       }

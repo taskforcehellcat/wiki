@@ -42,7 +42,7 @@
   }
 
   .error-page h1 {
-    font-size: 2.4rem;
+    font-size: var(--font-size-h1);
     font-weight: 650;
     color: var(--color-neutral);
     letter-spacing: -0.01em;

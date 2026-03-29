@@ -58,9 +58,9 @@
   <div class="search results">
     {#if showResults}
       {#if $searchResults.length !== 0}
-        <ResultsSection kind="article" />
-        <ResultsSection kind="heading" />
-        <ResultsSection kind="text" />
+        <ResultsSection kind="article" {query} />
+        <ResultsSection kind="heading" {query} />
+        <ResultsSection kind="text" {query} />
       {:else}
         <Notice type="warning">
           Es wurden keine Übereinstimmungen gefunden!
@@ -92,11 +92,12 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: var(--color-bg-primary);
+      background-color: var(--color-search-modal-bg);
       width: min(75rem, calc(100% - 4rem));
       height: 40rem;
       border-radius: 1.2rem;
       border: 1px solid var(--color-border);
+      z-index: 1;
 
       display: flex;
       flex-direction: column;
@@ -122,20 +123,23 @@
       #input-wrapper {
         width: 100%;
         display: flex;
-        gap: 2rem;
+        gap: 1.5rem;
         border-top-right-radius: 1.2rem;
         border-bottom: 1px solid var(--color-border);
         border-top-left-radius: 1.2rem;
-        padding-inline: 4rem;
+        padding-inline: 2rem;
+        box-shadow:
+          0 2px 20px -10px rgba(0, 0, 0, 0.2),
+          0 0 0 1px rgba(0, 0, 0, 0.1);
 
         input {
           border-top-right-radius: inherit;
           border-top-left-radius: inherit;
-          font-size: 2rem;
+          font-size: var(--font-size-base);
           height: 100%;
           width: 100%;
-          color: var(--color-text-muted);
-          padding-block: 2rem;
+          color: var(--color-text-primary);
+          padding-block: 1.5rem;
           display: flex;
           align-items: center;
         }
@@ -146,7 +150,7 @@
           width: fit-content;
           font-size: 2.8rem;
           font-family: 'Material Icons Round';
-          color: var(--color-text-muted);
+          color: var(--color-text-primary);
           display: flex;
           align-items: center;
         }
@@ -158,11 +162,10 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        left: 0;
-        top: 0;
+        z-index: 1;
         background: linear-gradient(
           rgba(255, 255, 255, 0) 85%,
-          var(--color-bg-primary)
+          var(--color-search-modal-bg)
         );
         pointer-events: none;
         border-radius: inherit;
@@ -177,7 +180,7 @@
       margin-bottom: 0;
       padding-bottom: 5rem;
       padding-top: 2rem;
-      color: var(--color-text-muted);
+      color: var(--color-text-primary);
 
       overflow-y: scroll;
       scrollbar-width: none;

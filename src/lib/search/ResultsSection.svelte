@@ -1,9 +1,28 @@
 <script lang="ts">
   import { searchResults } from '$lib/search/stores';
-  import type { Hit, HitKind } from './.d.ts';
+  import type { Hit, HitKind, PreviewChunk } from './.d.ts';
   import { resolve } from '$app/paths';
 
   export let kind: HitKind;
+  export let query: string = '';
+
+  function highlightText(text: string): Array<PreviewChunk> {
+    if (!query) return [{ text, highlighted: false }];
+    const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(escaped, 'gi');
+    const chunks: Array<PreviewChunk> = [];
+    let prev = 0;
+    for (const match of text.matchAll(regex)) {
+      const idx = match.index ?? 0;
+      if (idx > prev) chunks.push({ text: text.slice(prev, idx), highlighted: false });
+      chunks.push({ text: match[0], highlighted: true });
+      prev = idx + match[0].length;
+    }
+    if (prev < text.length) chunks.push({ text: text.slice(prev), highlighted: false });
+    return chunks;
+  }
+
+  const asRoute = (link: string) => link as '/' | `/${string}/${string}`;
 
   let resultsOfKind: Array<Hit>;
 
@@ -42,12 +61,16 @@
     <span class="hit-count"><div>{hitCount}</div></span>
     <span class="heading">
       <span>{pageTitle}</span>
-      <span>gefunden</span>
+      <span>gefunden:</span>
     </span>
     {#each resultsOfKind as hit, i (i)}
       <span class="breadcrumbs">
         {#each hit['breadcrumbs'] as crumb (crumb.link)}
-          <a href={resolve(crumb.link)}>{crumb.display}</a>
+          <a href={resolve(asRoute(crumb.link))}>
+            {#each highlightText(crumb.display) as chunk, k (k)}
+              {#if chunk.highlighted}<mark>{chunk.text}</mark>{:else}{chunk.text}{/if}
+            {/each}
+          </a>
           <span class="material-icons-round seperator" aria-hidden="true">
             chevron_right
           </span>
@@ -85,10 +108,10 @@
     font-size: large;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 
     span:not(:last-of-type) {
-      margin-right: 1rem;
-      color: var(--color-neutral);
+      font-weight: 600;
     }
   }
 
@@ -99,34 +122,35 @@
     align-items: center;
     justify-content: center;
 
-    color: var(--color-bg-secondary);
     font-weight: 600;
     font-size: 0.85em;
 
     aspect-ratio: 1/1;
     border-radius: 100%;
-    background-color: var(--color-text-muted);
+    background-color: var(--color-bg-secondary);
+
+    color: var(--color-neutral);
   }
 
   .breadcrumbs {
-    color: var(--color-text-muted);
+    color: var(--color-text-primary);
 
     grid-column: 2;
     display: block;
     padding: 0.2rem 0;
 
     a {
-      text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 0.85em;
       letter-spacing: 0.12rem;
       text-decoration: none;
 
-      color: var(--color-text-muted);
+      color: var(--color-text-secondary);
       transition: color 0.2s ease-out;
 
       &:last-of-type {
-        color: var(--color-neutral);
+        color: var(--color-text-primary);
+        font-weight: 600;
         &:hover {
           text-decoration: underline;
           text-underline-offset: 2px;
@@ -134,7 +158,7 @@
       }
 
       &:hover:not(:first-child) {
-        color: var(--color-neutral);
+        color: var(--color-text-muted);
       }
     }
 
@@ -156,18 +180,5 @@
     font-size: 0.95em;
     line-height: 1.5;
     opacity: 0.85;
-  }
-
-  :global(mark) {
-    background: linear-gradient(
-      -100deg,
-      hsla(48, 100%, 67%, 0.3),
-      hsla(54, 95%, 57%, 0.616) 95%,
-      hsla(48, 92%, 75%, 0.1)
-    );
-    border-radius: 0.3rem 0;
-    padding: 0.15rem 0.2rem;
-
-    color: var(--color-text-secondary);
   }
 </style>

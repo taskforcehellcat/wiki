@@ -130,6 +130,18 @@ a[href]:not(:where(
   --color-blue-800: oklch(42.4% 0.199 265.638);
   --color-blue-900: oklch(37.9% 0.146 265.522);
   --color-blue-950: oklch(28.2% 0.091 267.935);
+
+  --font-size-xs: 10pt;
+  --font-size-sm: 12pt;
+  --font-size-base: 13pt;
+  --font-size-md: 14pt;
+  --font-size-lg: 15pt;
+  --font-size-xl: 18pt;
+  --font-size-2xl: 20pt;
+  --font-size-3xl: 35pt;
+  --font-size-h1: 2.4rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.7rem;
 }
 
 @mixin theme-light {
@@ -141,10 +153,11 @@ a[href]:not(:where(
   --color-text-secondary: #101b3b;
   --color-text-muted: #94a2cf;
   --color-neutral: #fff;
-  --color-border: #3e4c74;
+  --color-border: #bababa;
   --color-border-muted: #e6e8eb;
   --color-btn-bg: hsl(0, 0%, 97%);
   --color-btn-hover-bg: hsl(0, 0%, 92%);
+  --color-btn-text: #697396;
   --color-nav-hover: #fff;
   --color-wiki-bg: #fff;
   --color-kbd-bg: #f4f4f5;
@@ -157,6 +170,8 @@ a[href]:not(:where(
   --color-scrollbar: #d6dee1;
   --color-scrollbar-hover: #a8bbbf;
   --color-focus-ring: rgba(67, 106, 223, 0.5);
+  --color-search-modal-bg: rgba(255, 255, 255);
+  --color-highlight: rgba(250, 229, 41, 0.8);
 
   --color-error-bg: var(--color-red-50);
   --color-error-border: var(--color-red-100);
@@ -202,6 +217,7 @@ a[href]:not(:where(
   --color-border-muted: #e6e8eb;
   --color-btn-bg: hsl(0, 0%, 9%);
   --color-btn-hover-bg: hsl(0, 0%, 12%);
+  --color-btn-text: #a8a8a8;
   --color-nav-hover: #fff;
   --color-wiki-bg: url('/images/dark-bg.jpg');
   --color-kbd-bg: #27272a;
@@ -214,6 +230,8 @@ a[href]:not(:where(
   --color-scrollbar: #4a4a4a;
   --color-scrollbar-hover: #686868;
   --color-focus-ring: rgba(147, 162, 207, 0.4);
+  --color-search-modal-bg: rgba(18, 18, 18, 0.95);
+  --color-highlight: rgba(233, 171, 0, 0.5);
 
   --color-error-bg: oklch(from var(--color-red-500) l c h / 0.15);
   --color-error-border: oklch(from var(--color-red-500) l c h / 0.25);
@@ -265,7 +283,7 @@ body {
     'Helvetica Neue',
     sans-serif;
   font-weight: 430;
-  font-size: 12pt;
+  font-size: var(--font-size-sm);
   background-color: var(--color-bg-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -340,6 +358,30 @@ h2,
 h3 {
   color: var(--color-text-primary);
   display: block;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  outline: none;
+  height: 3.5rem;
+  width: 3.5rem;
+  cursor: pointer;
+  color: var(--color-btn-text);
+  border-radius: 0.6rem;
+  background-color: transparent;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-focus-ring);
+  }
+
+  .material-icons-round {
+    font-size: 1.8rem;
+  }
 }
 
 .example-box {
@@ -617,7 +659,7 @@ input {
     align-items: center;
     text-align: left;
     gap: 2rem;
-    font-size: 18pt;
+    font-size: var(--font-size-xl);
     font-weight: 500;
     padding-top: 10rem;
     color: var(--color-text-muted);
@@ -645,14 +687,14 @@ input {
 
   &__nav {
     .tree-view {
-      font-size: 15pt;
+      font-size: var(--font-size-lg);
       font-weight: 500;
       gap: 15px;
       letter-spacing: 0.12rem;
     }
 
     .tree-view__leaf a {
-      font-size: 13pt;
+      font-size: var(--font-size-base);
       font-weight: 400;
       letter-spacing: initial;
     }
@@ -781,29 +823,6 @@ footer {
     }
   }
 
-  &__button {
-    border: none;
-    outline: none;
-    height: 3.5rem;
-    width: 3.5rem;
-    cursor: pointer;
-    color: #687076;
-    border-radius: 0.6rem;
-    background-color: transparent;
-    transition:
-      color 0.15s ease,
-      background-color 0.15s ease;
-
-    &:focus-visible {
-      outline: none;
-      box-shadow: 0 0 0 2px var(--color-focus-ring, var(--color-text-muted));
-    }
-
-    span {
-      font-size: 1.8rem;
-    }
-  }
-
   &__choices {
     height: 100%;
     width: fit-content;
@@ -874,4 +893,10 @@ footer {
   .nav__return {
     display: none !important;
   }
+}
+
+mark {
+  background-color: var(--color-highlight);
+  border-radius: 0.3rem;
+  color: inherit;
 }
