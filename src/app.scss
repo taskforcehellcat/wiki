@@ -31,7 +31,7 @@
     url('/fonts/GeneralSans-Variable.woff2') format('woff2'),
     url('/fonts/GeneralSans-Variable.woff') format('woff');
   font-weight: 200 700;
-  font-display: optional;
+  font-display: swap;
   font-style: normal;
 }
 
@@ -41,7 +41,7 @@
     url('/fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
     url('/fonts/GeneralSans-VariableItalic.woff') format('woff');
   font-weight: 200 700;
-  font-display: optional;
+  font-display: swap;
   font-style: italic;
 }
 
