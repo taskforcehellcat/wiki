@@ -11,15 +11,10 @@
 
   import { Search } from '$lib/search/engine';
   import { searchInUse, searchResults } from '$lib/search/stores';
-  import ResultsSection from '$lib/search/ResultsSection.svelte';
   import { beforeNavigate } from '$app/navigation';
 
-  let rawInput = '';
-  let query: string; // holds the query
-  let showResults: boolean; // whether the search bar is currently in use
   import { resolve } from '$app/paths';
-
-  let search = new Search(data.posts, data.menu);
+  import Searchbar from '$lib/search/Searchbar.svelte';
 
   $: wikiItems = data.menu.map((dir) => ({
     id: dir.id,
@@ -30,20 +25,6 @@
       href: resolve(`/${dir.id}/${article.id}`)
     }))
   }));
-
-  $: query = rawInput.trim();
-  $: $searchInUse = query.length > 0;
-
-  $: if (query.length > 2) {
-    $searchResults = search.query(query);
-  }
-
-  $: showResults = query.length > 2;
-
-  beforeNavigate(() => {
-    // reset the query when leaving the site
-    query = '';
-  });
 
   let homeEl: HTMLElement;
   let homeTopEl: HTMLDivElement;
@@ -63,9 +44,6 @@
       gap * 2;
     paddingTop = Math.max(0, (window.innerHeight - contentHeight) / 2);
   }
-
-  $: if ($searchInUse) paddingTop = 0;
-  $: if (!$searchInUse && initialNavHeight > 0) updatePadding();
 
   onMount(() => {
     initialNavHeight = homeNavEl?.offsetHeight ?? 0;
@@ -104,36 +82,8 @@
           alt="Task Force Hellcat Logo" />
       </div>
 
-      <!-- search bar -->
-      <div class="search" bind:this={searchEl}>
-        <div class="search__bar" class:search__bar--open={$searchInUse}>
-          <span class="material-icons-round noselect">search</span>
-          <input
-            type="text"
-            name="search"
-            placeholder="Wiki durchsuchen…"
-            aria-label="Wiki durchsuchen"
-            bind:value={rawInput} />
-        </div>
-        {#if $searchInUse}
-          <div class="search__results">
-            {#if showResults}
-              {#if $searchResults.length !== 0}
-                <ResultsSection kind="article" />
-                <ResultsSection kind="heading" />
-                <ResultsSection kind="text" />
-              {:else}
-                <span class="search__error">
-                  Es wurden keine Übereinstimmungen gefunden!
-                </span>
-              {/if}
-            {:else}
-              <span class="search__error">
-                Bitte mindestens drei Zeichen eingeben!
-              </span>
-            {/if}
-          </div>
-        {/if}
+      <div class="home__search" bind:this={searchEl}>
+        <Searchbar />
       </div>
 
       {#if !$searchInUse}
@@ -184,58 +134,54 @@
     gap: 0.5rem;
   }
 
-  .search {
+  .home__search {
     width: min(80rem, 100%);
-  }
 
-  .search__bar {
-    background-color: var(--color-bg-secondary);
-    width: 100%;
-    height: 3rem;
-    border-radius: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 3.5rem;
-    border: 1px solid transparent;
-    transition:
-      border-color 0.2s ease,
-      box-shadow 0.2s ease;
-
-    &:focus-within {
-      border-color: var(--color-border);
+    :global(#search-bar .placeholder) {
+      font-size: var(--font-size-lg);
     }
-  }
 
-  .search__bar input {
-    width: 100%;
-    height: 24px;
-    color: var(--color-text-muted);
-    font-size: var(--font-size-md);
-    font-weight: 300;
-  }
+    :global(#search-bar .placeholder::before) {
+      font-size: var(--font-size-xl);
+    }
 
-  .search__bar .material-icons-round {
-    font-size: var(--font-size-2xl);
-    color: var(--color-text-muted);
-  }
+    :global(#search-bar) {
+      background-color: var(--color-bg-secondary);
+      width: 100%;
+      height: 2.5rem;
+      padding: 3.5rem;
+      border: 1px solid transparent;
+      border-radius: 1.5rem;
+      transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
 
-  .search__bar--open {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
+      &:hover {
+        border-color: var(--color-border-muted);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      }
 
-  .search__results {
-    height: fit-content;
-    width: 100%;
-    background-color: var(--color-bg-secondary);
-    padding: 1rem 3.5rem 3.5rem 3.5rem;
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
-  }
+      &:focus-within {
+        border-color: var(--color-border);
+      }
+    }
 
-  .search__error {
-    color: var(--color-warning-text);
+    :global(kbd) {
+      color: var(--color-kbd-text);
+      background-color: var(--color-kbd-bg);
+      border-radius: 0.35rem;
+      font-family: 'Fira Mono', monospace;
+      font-size: 1.5rem;
+      width: fit-content;
+      min-width: 2rem !important;
+      text-align: center;
+      border: 1px solid var(--color-kbd-border);
+      padding: 0.15rem 0.5rem;
+      box-shadow: 0 1px 0 var(--color-kbd-border);
+
+      &:not(kbd:first-of-type) {
+        margin-left: 0.1rem;
+      }
+    }
   }
 </style>
