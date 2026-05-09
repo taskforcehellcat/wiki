@@ -9,4 +9,8 @@ package/
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .netlify/
+.vercel
+.output
+.idea
+.vscode/
 /.claude
