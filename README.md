@@ -3,7 +3,28 @@
 [![](https://img.shields.io/website?down_color=red&down_message=offline&label=TFHC%20Wiki&up_color=green&up_message=online&url=https%3A%2F%2Fwiki.taskforcehellcat.de%2F)](https://wiki.taskforcehellcat.de)
 [![TFHC Discord](https://img.shields.io/discord/629333468299526164?color=green&label=Discord&logo=Discord)](https://discord.taskforcehellcat.de/)
 
-Contents:
+## Setup
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- npm (bundled with Node.js)
+
+### Install
+
+```bash
+npm install
+```
+
+### Run
+
+```bash
+npm run dev
+```
+
+---
+
+## Contents:
 
 - [Adding new pages](#adding-new-pages)
 - [Markdown formatting](#markdown-formatting)
