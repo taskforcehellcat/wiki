@@ -35,6 +35,11 @@
     "vite-plugin-dynamic-import": "^1.6.0"
   },
   "type": "module",
+  "overrides": {
+    "@sveltejs/kit": {
+      "cookie": "^0.7.0"
+    }
+  },
   "dependencies": {
     "@fontsource/fira-mono": "^5.2.7",
     "cookie": "^1.1.1",
