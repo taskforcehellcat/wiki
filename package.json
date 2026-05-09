@@ -3,14 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "yarn run format & vite dev",
+    "dev": "npm run format & vite dev",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check . && eslint .",
-    "format": "prettier --write --list-different .",
-    "preinstall": "npx only-allow yarn"
+    "format": "prettier --write --list-different ."
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -32,8 +31,7 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.11",
-    "vite-plugin-dynamic-import": "^1.6.0",
-    "yarn-upgrade-all": "^0.8.1"
+    "vite-plugin-dynamic-import": "^1.6.0"
   },
   "type": "module",
   "dependencies": {
@@ -43,8 +41,6 @@
     "only-allow": "^1.2.2",
     "rehype-slug": "^6.0.0",
     "svast-utils": "^0.0.6",
-    "svelte-parse": "^0.1.1",
-    "yarn": "^1.22.22"
-  },
-  "packageManager": "yarn@4.9.1"
+    "svelte-parse": "^0.1.1"
+  }
 }
