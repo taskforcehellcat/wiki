@@ -15,7 +15,7 @@
   import TreeView from '$lib/nav/TreeView.svelte';
 
   // --- id conversions ---
-  import { afterUpdate } from 'svelte';
+  import { afterUpdate, onMount } from 'svelte';
   import { browser } from '$app/environment';
 
   import { page } from '$app/state';
@@ -28,6 +28,7 @@
 
   let isOpen = false;
   let anchorItems: TreeItem[] = [];
+  let activeAnchor: string | null = null;
 
   afterUpdate(() => {
     if (browser) {
@@ -40,7 +41,96 @@
         });
       });
       anchorItems = items;
+      // recompute highlight when the article (and its headings) change
+      updateActiveAnchor();
     }
+  });
+
+  // while a click-to-scroll is animating, keep the highlight on the
+  // clicked entry
+  let scrollLock = false;
+  let unlockTimer: ReturnType<typeof setTimeout> | undefined;
+
+  function lockScrollspy(href: string) {
+    activeAnchor = href;
+    scrollLock = true;
+
+    const container = document.getElementById('main');
+    clearTimeout(unlockTimer);
+
+    // release once the scroll has settled: poll scrollTop until it stops
+    // changing
+    let lastTop = NaN;
+    const settle = () => {
+      const top = container?.scrollTop ?? 0;
+      if (top === lastTop) {
+        scrollLock = false;
+      } else {
+        lastTop = top;
+        unlockTimer = setTimeout(settle, 100);
+      }
+    };
+    unlockTimer = setTimeout(settle, 100);
+  }
+
+  // --- scrollspy: highlight the heading currently in view ---
+  function updateActiveAnchor() {
+    if (scrollLock) return;
+
+    const headings = document.querySelectorAll<HTMLElement>('content h2');
+    if (headings.length === 0) {
+      activeAnchor = null;
+      return;
+    }
+
+    const container = document.getElementById('main');
+
+    // a trailing section can be too short to ever scroll its heading up to
+    // the threshold — once we hit the bottom, the last heading is current
+    if (
+      container &&
+      container.scrollTop + container.clientHeight >= container.scrollHeight - 2
+    ) {
+      activeAnchor = '#' + headings[headings.length - 1].id;
+      return;
+    }
+
+    // match the scroll-padding-top of the scroll container: clicking an
+    // anchor lands its heading at exactly that offset, so a heading counts
+    // as "current" the moment its top reaches (or passes) that line
+    const pad = container
+      ? parseFloat(getComputedStyle(container).scrollPaddingTop)
+      : NaN;
+    const threshold = (Number.isNaN(pad) ? 70 : pad) + 4;
+
+    let current = '#' + headings[0].id;
+    for (const h of headings) {
+      if (h.getBoundingClientRect().top <= threshold) {
+        current = '#' + h.id;
+      } else {
+        break;
+      }
+    }
+    activeAnchor = current;
+  }
+
+  onMount(() => {
+    const container = document.getElementById('main');
+    if (!container) return;
+
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        updateActiveAnchor();
+        ticking = false;
+      });
+    };
+
+    container.addEventListener('scroll', onScroll, { passive: true });
+    updateActiveAnchor();
+    return () => container.removeEventListener('scroll', onScroll);
   });
 
   export let data: LayoutData;
@@ -88,8 +178,10 @@
         {#if anchorItems.length > 0}
           <div class="nav__list-title">navigation</div>
           <div class="nav__list-wrapper">
-            <div class="nav__list-bar"></div>
-            <TreeView items={anchorItems} />
+            <TreeView
+              items={anchorItems}
+              activeId={activeAnchor}
+              onLinkClick={(item) => item.href && lockScrollspy(item.href)} />
           </div>
         {/if}
         <div class="nav__list-title">wiki</div>
@@ -108,7 +200,11 @@
             <div class="nav__overlay-title">navigation</div>
             <TreeView
               items={anchorItems}
-              onLinkClick={() => (isOpen = false)} />
+              activeId={activeAnchor}
+              onLinkClick={(item) => {
+                if (item.href) lockScrollspy(item.href);
+                isOpen = false;
+              }} />
           </div>
         {/if}
         <div class="nav__overlay-group">
@@ -191,6 +287,9 @@
   content {
     grid-column: 2;
     grid-row: 2;
+    // scroll room so the last heading can scroll under the info-bar
+    // and become the active nav entry
+    padding-bottom: 50vh;
   }
 
   footer {
@@ -203,11 +302,6 @@
     gap: 0.75rem;
   }
 
-  .nav__list-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
   :global(p) {
     text-align: justify;
     display: inline-block;
@@ -274,23 +368,31 @@
   }
 
   .nav__list-wrapper {
-    display: flex;
-    gap: 15px;
     height: fit-content;
     box-sizing: unset;
   }
 
-  .nav__list-bar {
-    width: 2px;
-    background-color: var(--color-bg-secondary);
-    height: 100%;
-    border-radius: 1px;
-  }
-
+  // continuous muted line on the container; the active entry draws an
+  // accent border over just its own segment, gaps keep the muted line
   .nav__list-wrapper :global(.tree-view) {
     gap: 20px;
-    padding: 0.8rem 0;
+    padding: 0.4rem 0;
     font-size: 0.95em;
+    border-left: 2px solid var(--color-bg-secondary);
+  }
+
+  .nav__list-wrapper :global(.tree-view__link) {
+    margin-left: -2px;
+    border-left: 2px solid transparent;
+    transition: border-color 0.2s ease-out;
+  }
+
+  .nav__list-wrapper :global(.tree-view__link a) {
+    padding-left: 15px;
+  }
+
+  .nav__list-wrapper :global(.tree-view__link:has(a.active)) {
+    border-left-color: var(--color-nav-hover);
   }
 
   .nav__overlay-group :global(.tree-view) {

@@ -3,7 +3,8 @@
   import { page } from '$app/state';
 
   export let items: TreeItem[] = [];
-  export let onLinkClick: (() => void) | undefined = undefined;
+  export let onLinkClick: ((item: TreeItem) => void) | undefined = undefined;
+  export let activeId: string | null = null;
 
   let expandedId: string | null = null;
   let focusedId: string | null = null;
@@ -173,7 +174,7 @@
                   tabindex="-1"
                   class:active={page.params?.dirslug === item.id &&
                     page.params?.articleslug === child.id}
-                  on:click={onLinkClick}>
+                  on:click={() => onLinkClick?.(item)}>
                   {child.label}
                 </a>
               </li>
@@ -191,7 +192,11 @@
         on:keydown={(e) => handleItemKeydown(e, item)}
         on:focus={() => (focusedId = item.id)}>
         <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-        <a href={item.href} tabindex="-1" on:click={onLinkClick}>
+        <a
+          href={item.href}
+          tabindex="-1"
+          class:active={activeId != null && item.href === activeId}
+          on:click={() => onLinkClick?.(item)}>
           {item.label}
         </a>
       </li>

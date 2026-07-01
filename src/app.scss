@@ -312,7 +312,7 @@ body {
   overflow-y: overlay;
   background-color: var(--color-bg-primary);
   scrollbar-color: var(--color-scrollbar) transparent;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 10rem;
 
   @media (max-width: 800px) {
     scroll-padding-top: 11rem;
@@ -572,6 +572,11 @@ content {
 
       &:hover {
         color: var(--color-nav-hover);
+      }
+
+      &.active {
+        color: var(--color-nav-hover);
+        font-weight: 600;
       }
     }
   }
