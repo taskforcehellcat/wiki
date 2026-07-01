@@ -6,7 +6,9 @@ function updateThemeColor() {
   requestAnimationFrame(() => {
     const main = document.getElementById('main');
     if (!main) return;
-    const color = getComputedStyle(main).getPropertyValue('--color-bg-primary').trim();
+    const color = getComputedStyle(main)
+      .getPropertyValue('--color-bg-primary')
+      .trim();
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta && color) meta.setAttribute('content', color);
   });
@@ -18,7 +20,9 @@ export const themeId = writable(
 
 if (browser) {
   themeId.subscribe(() => updateThemeColor());
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => updateThemeColor());
+  window
+    .matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', () => updateThemeColor());
 }
 
 export const layoutId = writable(

@@ -287,8 +287,8 @@
   content {
     grid-column: 2;
     grid-row: 2;
-    // scroll room so the last heading can scroll under the info-bar
-    // and become the active nav entry
+    /* scroll room so the last heading can scroll under the info-bar
+       and become the active nav entry */
     padding-bottom: 50vh;
   }
 
@@ -372,8 +372,8 @@
     box-sizing: unset;
   }
 
-  // continuous muted line on the container; the active entry draws an
-  // accent border over just its own segment, gaps keep the muted line
+  /* continuous muted line on the container; the active entry draws an
+     accent border over just its own segment, gaps keep the muted line */
   .nav__list-wrapper :global(.tree-view) {
     gap: 20px;
     padding: 0.4rem 0;

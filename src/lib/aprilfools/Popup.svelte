@@ -102,11 +102,11 @@
 
 <style lang="scss">
   .fancy-scrollbar {
-    // firefox
+    /* firefox */
     scrollbar-width: thin;
     scrollbar-color: #e0e0e0 #fff;
 
-    // chrome
+    /* chrome */
     &::-webkit-scrollbar {
       width: 1rem;
     }

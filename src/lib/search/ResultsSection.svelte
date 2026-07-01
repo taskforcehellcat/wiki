@@ -14,11 +14,13 @@
     let prev = 0;
     for (const match of text.matchAll(regex)) {
       const idx = match.index ?? 0;
-      if (idx > prev) chunks.push({ text: text.slice(prev, idx), highlighted: false });
+      if (idx > prev)
+        chunks.push({ text: text.slice(prev, idx), highlighted: false });
       chunks.push({ text: match[0], highlighted: true });
       prev = idx + match[0].length;
     }
-    if (prev < text.length) chunks.push({ text: text.slice(prev), highlighted: false });
+    if (prev < text.length)
+      chunks.push({ text: text.slice(prev), highlighted: false });
     return chunks;
   }
 
@@ -68,7 +70,9 @@
         {#each hit['breadcrumbs'] as crumb (crumb.link)}
           <a href={resolve(asRoute(crumb.link))}>
             {#each highlightText(crumb.display) as chunk, k (k)}
-              {#if chunk.highlighted}<mark>{chunk.text}</mark>{:else}{chunk.text}{/if}
+              {#if chunk.highlighted}<mark>
+                  {chunk.text}
+                </mark>{:else}{chunk.text}{/if}
             {/each}
           </a>
           <span class="material-icons-round seperator" aria-hidden="true">
