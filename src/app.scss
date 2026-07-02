@@ -25,9 +25,7 @@
 
 @font-face {
   font-family: 'GeneralSans-Variable';
-  src:
-    url('/fonts/GeneralSans-Variable.woff2') format('woff2'),
-    url('/fonts/GeneralSans-Variable.woff') format('woff');
+  src: url('/fonts/GeneralSans-Variable.woff2') format('woff2');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -35,9 +33,7 @@
 
 @font-face {
   font-family: 'GeneralSans-VariableItalic';
-  src:
-    url('/fonts/GeneralSans-VariableItalic.woff2') format('woff2'),
-    url('/fonts/GeneralSans-VariableItalic.woff') format('woff');
+  src: url('/fonts/GeneralSans-VariableItalic.woff2') format('woff2');
   font-weight: 200 700;
   font-display: swap;
   font-style: italic;
